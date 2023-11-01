@@ -266,6 +266,10 @@ mw
 | 人形外观配置|
 | [CharacterEvent](../classes/mw.CharacterEvent.md)  |
 | 角色输入事件|
+| [ChatBubble](../classes/mw.ChatBubble.md)  |
+| 聊天头顶气泡|
+| [ChatBubbleConfig](../classes/mw.ChatBubbleConfig.md)  |
+| 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIVerticalCollation
+[UI](../groups/UI.UI.md) / UIVerticalCollation
 
 # UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 
-<span class="content-big">
-
 自动布局子项布局排序 - 垂直排序
-
-</span>
 
 ## Table of contents
 

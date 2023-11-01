@@ -1,24 +1,12 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / GameObject
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / GameObject
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
-<span class="content-big">
-
 场景中所有实体的基类
-
-</span>
-
-<span class="content-big">
 
 Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象均继承自GameObject。
 
-</span>
-
-<span class="content-big">
-
 提供复制删除物体，查找获取物体、子物体、脚本等功能。
-
-</span>
 
 <span style="font-size: 14px;">
 

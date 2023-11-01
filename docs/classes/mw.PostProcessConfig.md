@@ -1,12 +1,8 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / PostProcessConfig
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcessConfig
 
 # PostProcessConfig <Badge type="tip" text="Class" /> <Score text="PostProcessConfig" />
 
-<span class="content-big">
-
 后处理对象属性配置
-
-</span>
 
 ## Table of contents
 

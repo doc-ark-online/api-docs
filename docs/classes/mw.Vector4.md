@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Vector4
+[TYPE](../groups/TYPE.TYPE.md) / Vector4
 
 # Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 
-<span class="content-big">
-
 由分量 (x,y,z,w) 组成的4D齐次向量
-
-</span>
 
 ## Table of contents
 

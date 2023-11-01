@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / PhysicsThruster
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / PhysicsThruster
 
 # PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 
-<span class="content-big">
-
 推进器
-
-</span>
 
 ::: warning Precautions
 

@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / EnvironmentSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / EnvironmentSettings
 
 # EnvironmentSettings <Badge type="tip" text="Class" /> <Score text="EnvironmentSettings" />
 
-<span class="content-big">
-
 环境设置
-
-</span>
 
 **`Effect`**
 

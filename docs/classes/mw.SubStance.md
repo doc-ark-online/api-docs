@@ -1,42 +1,18 @@
-[ANIMATIONS](../groups/Core.ANIMATIONS.md) / SubStance
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / SubStance
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
-<span class="content-big">
-
 二级姿态
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 二级姿态是动画系统的拓展, 用于实现独立于基础姿态外的复杂动画逻辑(如持枪, 攀爬等)。
-
-</span>
-
-<span class="content-big">
 
 基二级姿态资源同基础姿态（Stance）也是一个外部的资源,打包后生成的文件被上传到资源服务器, 你可以在本地资源库中的基础姿态分类下查找并下载它们。
 
-</span>
-
-<span class="content-big">
-
 - 同样拥有 loadSubStance 、play、stop等功能
 
-</span>
-
-<span class="content-big">
-
 - 还有额外出色的混合模式，详见 StanceBlendMode 。
-
-</span>
 
 ## Hierarchy
 

@@ -2,11 +2,7 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-<span class="content-big">
-
 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
-
-</span>
 
 <span style="font-size: 14px;">
 

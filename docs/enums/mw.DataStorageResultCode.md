@@ -1,12 +1,8 @@
-[DATA](../groups/Core.DATA.md) / DataStorageResultCode
+[DATA](../groups/DATA.DATA.md) / DataStorageResultCode
 
 # DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
 
-<span class="content-big">
-
 数据储存返回代码
-
-</span>
 
 ## Table of contents
 

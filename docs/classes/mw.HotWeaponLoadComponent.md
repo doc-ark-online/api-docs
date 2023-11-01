@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponLoadComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponLoadComponent
 
 # HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
-<span class="content-big">
-
 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑
-
-</span>
 
 <span style="font-size: 14px;">
 

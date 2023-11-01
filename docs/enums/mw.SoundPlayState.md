@@ -1,12 +1,8 @@
-[SOUNDS](../groups/Core.SOUNDS.md) / SoundPlayState
+[SOUNDS](../groups/SOUNDS.SOUNDS.md) / SoundPlayState
 
 # SoundPlayState <Badge type="tip" text="Enumeration" /> <Score text="SoundPlayState" />
 
-<span class="content-big">
-
 音效播放状态
-
-</span>
 
 ## Table of contents
 

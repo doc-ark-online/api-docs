@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / CharacterType
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterType
 
 # CharacterType <Badge type="tip" text="Enumeration" /> <Score text="CharacterType" />
 
-<span class="content-big">
-
 形象类型
-
-</span>
 
 <span style="font-size: 14px;">
 

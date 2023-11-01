@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraShakeInfo
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraShakeInfo
 
 # CameraShakeInfo <Badge type="tip" text="Interface" /> <Score text="CameraShakeInfo" />
 
-<span class="content-big">
-
 抖动数据
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / AvatarSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / AvatarSettings
 
 # AvatarSettings <Badge type="tip" text="Class" /> <Score text="AvatarSettings" />
 
-<span class="content-big">
-
 控制一些优化项的开启关闭
-
-</span>
 
 <span style="font-size: 14px;">
 

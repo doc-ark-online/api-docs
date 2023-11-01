@@ -1,42 +1,18 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ProjectileMovement
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovement
 
 # ProjectileMovement <Badge type="tip" text="Class" /> <Score text="ProjectileMovement" />
 
-<span class="content-big">
-
 投掷物移动功能类
-
-</span>
-
-<span class="content-big">
 
 ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体，比如子弹、火箭、投掷物等。
 
-</span>
-
-<span class="content-big">
-
 想象一下，你在游戏中控制着一个角色，你想让他发射一颗子弹。这时，你可以使用 ProjectileMovement 组件来处理子弹的移动。
-
-</span>
-
-<span class="content-big">
 
 这个组件的作用就像是给子弹贴上一个引擎，让它能够自动进行飞行。你只需要设置子弹的速度和方向，组件就会根据这些参数自动计算子弹的轨迹，并将其移动到正确的位置。这样，你就不需要手动编写复杂的移动逻辑，而是交给 ProjectileMovement 来处理。
 
-</span>
-
-<span class="content-big">
-
 除了基本的移动功能，ProjectileMovement 还提供了一些其他的特性。例如，你可以设置子弹的最大飞行距离或生命周期，超过这个距离或时间后，子弹会自动销毁。还可以设置子弹的碰撞检测，当子弹与其他物体碰撞时，可以触发相应的效果或伤害。
 
-</span>
-
-<span class="content-big">
-
 绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步。
-
-</span>
 
 ## Implements
 

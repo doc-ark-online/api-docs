@@ -1,12 +1,8 @@
-[SOUND](../groups/Core.SOUND.md) / SoundService
+[SOUND](../groups/SOUND.SOUND.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-<span class="content-big">
-
 音效管理器
-
-</span>
 
 ## Table of contents
 

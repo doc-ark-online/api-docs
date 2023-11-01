@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / KeyEvent
+[UI](../groups/UI.UI.md) / KeyEvent
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
-<span class="content-big">
-
 按键事件
-
-</span>
 
 ## Table of contents
 

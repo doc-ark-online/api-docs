@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / InputTextLimit
+[UI](../groups/UI.UI.md) / InputTextLimit
 
 # InputTextLimit <Badge type="tip" text="Enumeration" /> <Score text="InputTextLimit" />
 
-<span class="content-big">
-
 输入框限制
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[SOUNDS](../groups/Core.SOUNDS.md) / AttenuationDistanceModel
+[SOUNDS](../groups/SOUNDS.SOUNDS.md) / AttenuationDistanceModel
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 
-<span class="content-big">
-
 音效衰减函数模型
-
-</span>
 
 ## Table of contents
 

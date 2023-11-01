@@ -2,11 +2,7 @@
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
-<span class="content-big">
-
 通用对象池，可用于各种类型对象的复用
-
-</span>
 
 <span style="font-size: 14px;">
 

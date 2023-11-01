@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / IntegratedMover
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / IntegratedMover
 
 # IntegratedMover <Badge type="tip" text="Class" /> <Score text="IntegratedMover" />
 
-<span class="content-big">
-
 运动器组件
-
-</span>
 
 <span style="font-size: 14px;">
 

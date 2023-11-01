@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlateBrushWithGuid
+[UI](../groups/UI.UI.md) / SlateBrushWithGuid
 
 # SlateBrushWithGuid <Badge type="tip" text="Class" /> <Score text="SlateBrushWithGuid" />
 
-<span class="content-big">
-
 贴图信息
-
-</span>
 
 ## Table of contents
 

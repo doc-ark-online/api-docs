@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / QueryUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / QueryUtil
 
 # QueryUtil <Badge type="tip" text="Class" /> <Score text="QueryUtil" />
 
-<span class="content-big">
-
 射线检测工具
-
-</span>
 
 ## Table of contents
 

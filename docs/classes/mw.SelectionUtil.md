@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / SelectionUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / SelectionUtil
 
 # SelectionUtil <Badge type="tip" text="Class" /> <Score text="SelectionUtil" />
 
-<span class="content-big">
-
 描边绘制工具
-
-</span>
 
 ## Table of contents
 

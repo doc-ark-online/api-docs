@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAimComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponAimComponent
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
-<span class="content-big">
-
 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近
-
-</span>
 
 <span style="font-size: 14px;">
 

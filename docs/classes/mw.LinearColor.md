@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / LinearColor
+[TYPE](../groups/TYPE.TYPE.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
-<span class="content-big">
-
 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0
-
-</span>
 
 ## Table of contents
 

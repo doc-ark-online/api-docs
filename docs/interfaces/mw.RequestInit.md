@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / RequestInit
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / RequestInit
 
 # RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
 
-<span class="content-big">
-
 HTTP请求信息的对象
-
-</span>
 
 ## Table of contents
 

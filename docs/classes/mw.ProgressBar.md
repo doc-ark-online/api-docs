@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ProgressBar
+[UI](../groups/UI.UI.md) / ProgressBar
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
-<span class="content-big">
-
 UI进度条
-
-</span>
 
 ## Hierarchy
 

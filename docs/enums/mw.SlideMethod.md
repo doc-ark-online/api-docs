@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlideMethod
+[UI](../groups/UI.UI.md) / SlideMethod
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 
-<span class="content-big">
-
 进度条滑动的方式
-
-</span>
 
 ## Table of contents
 

@@ -2,11 +2,7 @@
 
 # ILeaderboardPanelView <Badge type="tip" text="Interface" /> <Score text="ILeaderboardPanelView" />
 
-<span class="content-big">
-
 排行榜面板的UI结构接口
-
-</span>
 
 ## Hierarchy
 

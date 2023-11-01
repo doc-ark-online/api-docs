@@ -2,11 +2,7 @@
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
-<span class="content-big">
-
 面板类的基类，可用于控制一个界面
-
-</span>
 
 ::: warning Precautions
 

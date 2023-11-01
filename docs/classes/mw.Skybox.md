@@ -1,18 +1,10 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / Skybox
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / Skybox
 
 # Skybox <Badge type="tip" text="Class" /> <Score text="Skybox" />
 
-<span class="content-big">
-
 天空盒
 
-</span>
-
-<span class="content-big">
-
 ----------------------------------
-
-</span>
 
 <span style="font-size: 14px;">
 
@@ -22,7 +14,7 @@
 
 创建一个名为"SkyboxExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制天空盒的亮度 *键切换预设
 ```ts
-@Component
+@Core.Class
 export default class SkyboxExample extends mw.Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected async onStart(): Promise<void> {

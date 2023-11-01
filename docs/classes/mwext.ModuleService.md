@@ -2,11 +2,7 @@
 
 # ModuleService <Badge type="tip" text="Class" /> <Score text="ModuleService" />
 
-<span class="content-big">
-
 模块管理
-
-</span>
 
 <span style="font-size: 14px;">
 

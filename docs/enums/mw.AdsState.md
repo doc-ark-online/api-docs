@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / AdsState
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsState
 
 # AdsState <Badge type="tip" text="Enumeration" /> <Score text="AdsState" />
 
-<span class="content-big">
-
 广告状态，调用show方法的时候可能返回的广告状态
-
-</span>
 
 ## Table of contents
 

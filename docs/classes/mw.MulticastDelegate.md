@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / MulticastDelegate
+[TYPE](../groups/TYPE.TYPE.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
-<span class="content-big">
-
 多播委托接口
-
-</span>
 
 **`Effect`**
 

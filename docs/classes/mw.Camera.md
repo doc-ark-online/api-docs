@@ -1,72 +1,28 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Camera
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Camera
 
 # Camera <Badge type="tip" text="Class" /> <Score text="Camera" />
 
-<span class="content-big">
-
 摄像机
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 Camera 对象定义 3D 游戏世界的视图。
-
-</span>
-
-<span class="content-big">
 
 Camera 的位置在哪里？
 
-</span>
-
-<span class="content-big">
-
 在游戏的一个实例中，每个客户端都有自己的与其关联的 Camera 对象。 相机对象仅存在于查看者的客户端上，驻留在该用户的本地中，因此不能直接从服务器进行编辑。
-
-</span>
-
-<span class="content-big">
 
 每个客户端的特定 Camera 对象都可以通过该客户端上 Camera.currentCamera 属性进行访问。
 
-</span>
-
-<span class="content-big">
-
 Camera 对象如何工作？
-
-</span>
-
-<span class="content-big">
 
 相机的属性定义了 3D 游戏世界的当前视图。 其中最重要的是：
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.worldTransform 表示相机的位置和方向。
-
-</span>
-
-<span class="content-big">
 
 - Camera.currentCamera.rotationMode 属性调整相机的旋转模式，是否跟随人物旋转而旋转、相机固定不旋转、可由鼠标右键控制旋转三种模式。Camera.currentCamera.positionMode 属性调整相机的位置模式。
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.fov 表示可见的可观察世界的范围。
-
-</span>
 
 ## Hierarchy
 

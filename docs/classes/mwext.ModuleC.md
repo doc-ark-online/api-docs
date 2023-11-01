@@ -2,11 +2,7 @@
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
-<span class="content-big">
-
 客户端模块的基类
-
-</span>
 
 ::: warning Precautions
 

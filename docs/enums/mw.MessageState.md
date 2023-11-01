@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / MessageState
+[TYPE](../groups/TYPE.TYPE.md) / MessageState
 
 # MessageState <Badge type="tip" text="Enumeration" /> <Score text="MessageState" />
 
-<span class="content-big">
-
 发送消息的状态
-
-</span>
 
 ## Table of contents
 

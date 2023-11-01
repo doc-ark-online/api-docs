@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / TimeUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / TimeUtil
 
 # TimeUtil <Badge type="tip" text="Class" /> <Score text="TimeUtil" />
 
-<span class="content-big">
-
 时间工具
-
-</span>
 
 ## Table of contents
 

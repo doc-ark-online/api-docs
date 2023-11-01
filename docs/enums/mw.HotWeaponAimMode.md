@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAimMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponAimMode
 
 # HotWeaponAimMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponAimMode" />
 
-<span class="content-big">
-
 热武器瞄准模式
-
-</span>
 
 ## Table of contents
 

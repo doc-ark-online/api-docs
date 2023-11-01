@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / CustomShapeType
+[AVATAR](../groups/AVATAR.AVATAR.md) / CustomShapeType
 
 # CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 
-<span class="content-big">
-
 碰撞体形状类型
-
-</span>
 
 ## Table of contents
 

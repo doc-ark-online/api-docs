@@ -38,6 +38,8 @@ Classes
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [UI](groups/UI.UI.md) |
+| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
+| [ChatBubbleConfig](classes/mw.ChatBubbleConfig.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 颜色选择器 | [UI](groups/UI.UI.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [TYPE](groups/TYPE.TYPE.md) |

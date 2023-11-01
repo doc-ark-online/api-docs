@@ -2,11 +2,7 @@
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
-<span class="content-big">
-
 服务端数据中心，管理所有玩家的数据
-
-</span>
 
 <span style="font-size: 14px;">
 

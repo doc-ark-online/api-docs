@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Button
+[UI](../groups/UI.UI.md) / Button
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-<span class="content-big">
-
 按钮,无默认text
-
-</span>
 
 ## Hierarchy
 

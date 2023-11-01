@@ -2,11 +2,7 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
-<span class="content-big">
-
 客户端数据中心，里面存放着当前玩家的数据
-
-</span>
 
 <span style="font-size: 14px;">
 

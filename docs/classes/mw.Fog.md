@@ -1,54 +1,22 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / Fog
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / Fog
 
 # Fog <Badge type="tip" text="Class" /> <Score text="Fog" />
 
-<span class="content-big">
-
 环境雾
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 环境雾是一种大气效果，可以模拟雾、大气灰尘等渲染真实的大气效果，在场景中制造云雾缭绕的氛围感。
-
-</span>
-
-<span class="content-big">
 
 环境雾中的属性与方法均为 static ， Fog 直接调用即可设置环境雾。其中比较常用的有：
 
-</span>
-
-<span class="content-big">
-
 - enabled 静态属性开启设为 TRUE 才可使用环境雾功能。
-
-</span>
-
-<span class="content-big">
 
 - directionalInscatteringColor 静态属性表示雾的颜色。
 
-</span>
-
-<span class="content-big">
-
 - density 静态属性表示雾的密度。
 
-</span>
-
-<span class="content-big">
-
 - startDistance 静态属性表示雾与摄像机的距离。
-
-</span>
 
 ## Table of contents
 

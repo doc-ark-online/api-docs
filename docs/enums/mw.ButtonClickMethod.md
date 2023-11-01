@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ButtonClickMethod
+[UI](../groups/UI.UI.md) / ButtonClickMethod
 
 # ButtonClickMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonClickMethod" />
 
-<span class="content-big">
-
 按钮点击响应规则
-
-</span>
 
 ## Table of contents
 

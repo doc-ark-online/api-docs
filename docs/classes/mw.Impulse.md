@@ -1,54 +1,22 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / Impulse
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / Impulse
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 
-<span class="content-big">
-
 冲量
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 冲量是一个瞬间爆发力，为对象提供单一且即时的电源，是一种将力集中在一帧上的感觉。
-
-</span>
-
-<span class="content-big">
 
 冲量对象是如何工作的呢 ？
 
-</span>
-
-<span class="content-big">
-
 - 创建一个冲量对象。可手动将左侧栏中逻辑对象中的冲量拖入场景中，在属性面板中调整参数；也可以在脚本中动态创建冲量对象。
-
-</span>
-
-<span class="content-big">
 
 - 设置冲量对象属性 enable 为 true ，才可触发冲量效果。
 
-</span>
-
-<span class="content-big">
-
 - impulseVector 属性表示力的方向。
 
-</span>
-
-<span class="content-big">
-
 - impulseRadialForce 属性表示力的大小。
-
-</span>
 
 <span style="font-size: 14px;">
 

@@ -1,12 +1,8 @@
-[INPUT](../groups/Core.INPUT.md) / InputUtil
+[INPUT](../groups/INPUT.INPUT.md) / InputUtil
 
 # InputUtil <Badge type="tip" text="Class" /> <Score text="InputUtil" />
 
-<span class="content-big">
-
 输入事件工具
-
-</span>
 
 <span style="font-size: 14px;">
 

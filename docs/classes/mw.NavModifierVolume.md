@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / NavModifierVolume
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / NavModifierVolume
 
 # NavModifierVolume <Badge type="tip" text="Class" /> <Score text="NavModifierVolume" />
 
-<span class="content-big">
-
 寻路动态修饰区
-
-</span>
 
 ## Hierarchy
 

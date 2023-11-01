@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / AssetType
+[TYPE](../groups/TYPE.TYPE.md) / AssetType
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 
-<span class="content-big">
-
 资源类型
-
-</span>
 
 ## Table of contents
 

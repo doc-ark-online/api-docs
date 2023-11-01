@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ProjectileInst
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileInst
 
 # ProjectileInst <Badge type="tip" text="Class" /> <Score text="ProjectileInst" />
 
-<span class="content-big">
-
 投掷物发射器专用实例对象
-
-</span>
 
 ## Hierarchy
 

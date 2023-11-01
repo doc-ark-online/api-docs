@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / MulticastGameObjectDelegate
+[TYPE](../groups/TYPE.TYPE.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
-<span class="content-big">
-
 广播代理
-
-</span>
 
 <span style="font-size: 14px;">
 

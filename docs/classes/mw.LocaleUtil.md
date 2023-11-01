@@ -1,12 +1,8 @@
-[LOCALIZATION](../groups/Core.LOCALIZATION.md) / LocaleUtil
+[LOCALIZATION](../groups/LOCALIZATION.LOCALIZATION.md) / LocaleUtil
 
 # LocaleUtil <Badge type="tip" text="Class" /> <Score text="LocaleUtil" />
 
-<span class="content-big">
-
 本地化工具
-
-</span>
 
 ## Table of contents
 

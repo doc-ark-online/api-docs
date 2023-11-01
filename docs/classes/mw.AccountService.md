@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / AccountService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / AccountService
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
-<span class="content-big">
-
 用户账号信息管理服务
-
-</span>
 
 ## Table of contents
 
@@ -22,7 +18,7 @@
 | 生成分享Id|
 | **[dataShowToOther](mw.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void`  |
 | 设置数据是否公开给其他用户|
-| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse), `index?`: `number`): `void`  |
+| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`): `void`  |
 | 下载角色形象并应用到当前角色身上|
 | **[fillAvatar](mw.AccountService.md#fillavatar)**(`img`: [`Image`](mw.Image.md)): `void`  |
 | 将头像赋值到Image变量上|
@@ -38,7 +34,7 @@
 | 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void`  |
 | 将角色形象数据应用至角色|
-| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse), `index?`: `number`, `openStatus?`: `number`): `void`  |
+| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`, `openStatus?`: `number`): `void`  |
 | 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
 
 ## Methods
@@ -143,7 +139,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 要应用换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:默认没有回调 |
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` `number` | 角色位(0-5) default:0,主角资源位 |
 
 
@@ -440,7 +436,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 要上传换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:默认没有回调 |
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` `number` | 角色位(0-5) default:0,主角资源位 |
 | `openStatus?` `number` | 开发状态 default:1,默认是开放状态 |
 

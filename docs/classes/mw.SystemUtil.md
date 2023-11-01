@@ -1,18 +1,10 @@
-[UTILITY](../groups/Core.UTILITY.md) / SystemUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / SystemUtil
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 
-<span class="content-big">
-
 状态信息获取工具
 
-</span>
-
-<span class="content-big">
-
 判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息
-
-</span>
 
 ## Table of contents
 

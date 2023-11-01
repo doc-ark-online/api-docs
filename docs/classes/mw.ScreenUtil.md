@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / ScreenUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / ScreenUtil
 
 # ScreenUtil <Badge type="tip" text="Class" /> <Score text="ScreenUtil" />
 
-<span class="content-big">
-
 屏幕视口工具
-
-</span>
 
 ## Table of contents
 

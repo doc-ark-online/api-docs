@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / CameraControlType
+[UI](../groups/UI.UI.md) / CameraControlType
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
-<span class="content-big">
-
 相机控制模式
-
-</span>
 
 ## Table of contents
 

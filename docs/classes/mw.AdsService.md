@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / AdsService
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsService
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
-<span class="content-big">
-
 广告服务，支持激励/插屏类型
-
-</span>
 
 ::: warning Precautions
 

@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / GizmoModeType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / GizmoModeType
 
 # GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
 
-<span class="content-big">
-
 gizmo模式
-
-</span>
 
 ## Table of contents
 

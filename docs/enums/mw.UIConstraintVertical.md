@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIConstraintVertical
+[UI](../groups/UI.UI.md) / UIConstraintVertical
 
 # UIConstraintVertical <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintVertical" />
 
-<span class="content-big">
-
 对齐策略垂直规则
-
-</span>
 
 ## Table of contents
 

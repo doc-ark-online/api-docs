@@ -1,42 +1,18 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Player
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Player
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
-<span class="content-big">
-
 角色管理器
-
-</span>
-
-<span class="content-big">
 
 Player 包含当前连接到MW服务器的Player对象。它负责管理角色的各种唯一标识符（ID）并提供创建、获取并管理玩家的功能。
 
-</span>
-
-<span class="content-big">
-
 角色管理器类会维护一个字典，用于存储所有角色的唯一标识符。用于区分不同的角色。
-
-</span>
-
-<span class="content-big">
 
 角色管理器会提供方法来添加、删除和检索角色的ID。当创建一个新角色时，该角色的ID会被分配并添加到管理器的列表中。当角色不再存在时，该ID会被从列表中删除。通过这些方法，可以方便地管理角色的ID集合。
 
-</span>
-
-<span class="content-big">
-
 角色管理器还提供获取玩家的功能。通过玩家的ID，可以轻松地从管理器中获取对应的角色对象。这样，其他部分的代码可以使用玩家的ID来获取与之相关联的角色实例，进行进一步的处理和操作。
 
-</span>
-
-<span class="content-big">
-
 值得注意的是可通过Player.localPlayer.character获取本地玩家角色，开启本地角色玩家的配置。
-
-</span>
 
 ## Table of contents
 
@@ -867,20 +843,20 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
 
 </span>
 
-```ts
+* ``` typescript
   // 服务端每个玩家进入游戏时会自动创建一个实例
-  @Component
+  @Core.Class
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property({replicated: true, onChanged: "onRepTest"})
+      @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
-          console.log(`onRepTest path: ${path} value: ${value} oldVal: ${oldVal}`);
+          console.log(`onRepTest path: $`{path}` value: $`{value}` oldVal: $`{oldVal}``);
       }
   }
 
-  @Component
+  @Core.Class
   export default class PlayerStateExample extends mw.Script {
 
       protected onStart(): void {
@@ -891,7 +867,7 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
               const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
-              console.log(`test: ${playerState.test}`);
+              console.log(`test: $`{playerState.test}``);
           });
 
       }
@@ -903,10 +879,10 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
           const playerState = luckPlayer.getPlayerState(GamePlayerState);
-          playerState.test = `random: ${ Math.floor(Math.random() * 100)}`;
+          playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
       }
   }
-```
+```ts
 
 #### Type parameters
 
@@ -960,7 +936,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -985,7 +961,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```
+```ts
 
 ___
 
@@ -1007,7 +983,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_GetAllPlayers extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1020,7 +996,7 @@ export default class Example_Player_GetAllPlayers extends Script {
                 Player.getAllPlayers().forEach((value) => {
                     if(value.playerId == player.playerId) {
                         console.log(" Player " + player.userId + " This is me");
-                        let crown = GameObject.spawn({guid: "27087"}) as Model;
+                        let crown = GameObject.spawn(`{guid: "27087"}`) as Model;
                         crown.setCollision(CollisionStatus.Off);
                         value.character.attachToSlot(crown, HumanoidSlotType.Rings);
                     } else {
@@ -1038,7 +1014,7 @@ export default class Example_Player_GetAllPlayers extends Script {
         }
     }
 }
-```
+```ts
 
 ___
 
@@ -1071,7 +1047,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_GetControllerRotation extends Script {
     // 声明变量
@@ -1102,7 +1078,7 @@ export default class Example_Player_GetControllerRotation extends Script {
         }
     }
 }
-```
+```ts
 
 ___
 
@@ -1135,7 +1111,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1160,7 +1136,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```
+```ts
 
 ___
 
@@ -1183,7 +1159,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_SetControllerRotation extends Script {
     // 声明变量
@@ -1214,7 +1190,7 @@ export default class Example_Player_SetControllerRotation extends Script {
         }
     }
 }
-```
+```ts
 
 ___
 
@@ -1242,7 +1218,7 @@ ___
 
 </span>
 
-```ts
+```
 @Component
 export default class Example_Player_SpawnDefaultCharacter extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1271,4 +1247,4 @@ export default class Example_Player_SpawnDefaultCharacter extends Script {
         }
     }
 }
-```
+```ts

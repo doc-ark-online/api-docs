@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / MathUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / MathUtil
 
 # MathUtil <Badge type="tip" text="Class" /> <Score text="MathUtil" />
 
-<span class="content-big">
-
 数学库工具
-
-</span>
 
 ## Table of contents
 

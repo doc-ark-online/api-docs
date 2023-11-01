@@ -1,60 +1,24 @@
-[AVATAR](../groups/Core.AVATAR.md) / CharacterDescription
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterDescription
 
 # CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
 
-<span class="content-big">
-
 人形外观配置
-
-</span>
-
-<span class="content-big">
 
 什么是 CharacterDescription 呢？
 
-</span>
-
-<span class="content-big">
-
 - CharacterDescription是一个用于存储 advance 和 base 装备的 Character 描述。
-
-</span>
-
-<span class="content-big">
 
 - 人形外观分为高级人形和基础人形。高级人形可更改人物的服装（衬衫、裤子、裙子...)、头部（脸型、嘴巴、鼻子、头发...）等外观； 基础人形可从左侧角色/NPC中基础人形形象中选择你喜欢的整体形象。
 
-</span>
-
-<span class="content-big">
-
 CharacterDescription 如何使用呢？
-
-</span>
-
-<span class="content-big">
 
 - CharacterDescription 本质是一个嵌套的只读对象类型，用于存储一些角色设置的高级信息。这些信息按照层级结构进行组织，其中每个层级都是一个只读对象类型。
 
-</span>
-
-<span class="content-big">
-
 - 在 Character 类中有一个名为 description 的属性，他的返回值类型为 CharacterDescription ，使用角色类中 description 的属性调用。
-
-</span>
-
-<span class="content-big">
 
 - MW编辑器为您提供了大量的美术模型资源，请在左侧 美术对象-角色栏 中翻找，并标有GUID供你使用。
 
-</span>
-
-<span class="content-big">
-
 详情可参考下面列出的参数，开始对你的人性外观自定义修改吧~
-
-</span>
 
 ## Table of contents
 

@@ -1,54 +1,22 @@
-[ANIMATIONS](../groups/Core.ANIMATIONS.md) / Stance
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
-<span class="content-big">
-
 基础姿态
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 基础姿态包含了地面, 飞行和游泳的动画状态机。当你不进行任何修改直接进入游戏时, 角色的走跑跳等各种动作都是由它表现的。
-
-</span>
-
-<span class="content-big">
 
 基础姿态资源是一个外部资源,你可以在本地资源库中的基础姿态分类下查找并下载它们。
 
-</span>
-
-<span class="content-big">
-
 Stance 如何工作的呢？
-
-</span>
-
-<span class="content-big">
 
 - 想要播放基础姿态, 首先需要执行Character类中的 loadStance 方法。加载一个基础姿态对象。
 
-</span>
-
-<span class="content-big">
-
 - 可以修改这个基础姿态对象的一些属性, 调用 play 方法。基础姿态资源会在调用 play 时进行异步的下载加载。
 
-</span>
-
-<span class="content-big">
-
 - 想要停止一个基础姿态对象, 可以直接对基础姿态对象调用 stop。
-
-</span>
 
 ## Hierarchy
 

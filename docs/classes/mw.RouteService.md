@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / RouteService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RouteService
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
-<span class="content-big">
-
 游戏管理器
-
-</span>
 
 ## Table of contents
 

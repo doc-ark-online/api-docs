@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIHugContentHorizontally
+[UI](../groups/UI.UI.md) / UIHugContentHorizontally
 
 # UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentHorizontally" />
 
-<span class="content-big">
-
 自动布局容器水平适应规则
-
-</span>
 
 ## Table of contents
 

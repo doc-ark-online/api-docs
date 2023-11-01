@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / RoomSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / RoomSettings
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
-<span class="content-big">
-
 房间设置
-
-</span>
 
 <span style="font-size: 14px;">
 

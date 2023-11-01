@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Action2
+[TYPE](../groups/TYPE.TYPE.md) / Action2
 
 # Action2<T1, T2\> <Badge type="tip" text="Class" /> <Score text="Action2<T1, T2\>" />
 
-<span class="content-big">
-
 两个参数的代理
-
-</span>
 
 ## Type parameters
 

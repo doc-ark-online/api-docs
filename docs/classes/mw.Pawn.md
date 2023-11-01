@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / Pawn
+[AVATAR](../groups/AVATAR.AVATAR.md) / Pawn
 
 # Pawn <Badge type="tip" text="Class" /> <Score text="Pawn" />
 
-<span class="content-big">
-
 Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。
-
-</span>
 
 ## Hierarchy
 

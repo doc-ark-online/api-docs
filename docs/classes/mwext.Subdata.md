@@ -2,11 +2,7 @@
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 
-<span class="content-big">
-
 数据控制类的基类
-
-</span>
 
 ## Table of contents
 

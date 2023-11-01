@@ -1,24 +1,12 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Trigger
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Trigger
 
 # Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 
-<span class="content-big">
-
 触发器
-
-</span>
-
-<span class="content-big">
 
 当与触发器交互时，可以触发事件。所有触发器都差不多，区别在于形状不同——有盒体和球体——触发器通过这些形状来判断其他对象是否碰撞并激活了它。
 
-</span>
-
-<span class="content-big">
-
 触发器是一个很有用的工具。你可以使用触发器实现很多有趣的玩法，比如创建一个脚本放在放在触发器子级，同时在触发器子级放置一个金币模型，使用 onEnter 事件，完成角色进入触发器范围，金币消失的效果。
-
-</span>
 
 ::: warning Precautions
 

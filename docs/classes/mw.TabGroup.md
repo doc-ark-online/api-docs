@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TabGroup
+[UI](../groups/UI.UI.md) / TabGroup
 
 # TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
-<span class="content-big">
-
 选项卡组
-
-</span>
 
 ## Type parameters
 

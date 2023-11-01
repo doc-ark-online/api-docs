@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TouchPad
+[UI](../groups/UI.UI.md) / TouchPad
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
-<span class="content-big">
-
 摄像机滑动区
-
-</span>
 
 ## Hierarchy
 

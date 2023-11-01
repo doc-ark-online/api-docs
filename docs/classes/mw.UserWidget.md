@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UserWidget
+[UI](../groups/UI.UI.md) / UserWidget
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
-<span class="content-big">
-
 UI控件的集合,预制体UI
-
-</span>
 
 ## Hierarchy
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ScrollBarDefaultLocation
+[UI](../groups/UI.UI.md) / ScrollBarDefaultLocation
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
-<span class="content-big">
-
 滚动条默认位置
-
-</span>
 
 ## Table of contents
 

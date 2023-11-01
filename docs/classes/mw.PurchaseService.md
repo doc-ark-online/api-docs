@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / PurchaseService
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
-<span class="content-big">
-
 应用内购服务
-
-</span>
 
 ## Table of contents
 

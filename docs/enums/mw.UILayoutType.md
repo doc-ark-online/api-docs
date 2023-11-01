@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UILayoutType
+[UI](../groups/UI.UI.md) / UILayoutType
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
-<span class="content-big">
-
 自动布局排版规则-容器类型
-
-</span>
 
 ## Table of contents
 

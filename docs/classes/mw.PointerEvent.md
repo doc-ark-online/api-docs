@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / PointerEvent
+[UI](../groups/UI.UI.md) / PointerEvent
 
 # PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 
-<span class="content-big">
-
 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类
-
-</span>
 
 ## Table of contents
 

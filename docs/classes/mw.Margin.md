@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Margin
+[UI](../groups/UI.UI.md) / Margin
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
-<span class="content-big">
-
 基础的边距，提供4个方向的数值修改
-
-</span>
 
 ## Table of contents
 

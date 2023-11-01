@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / AdsType
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsType
 
 # AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 
-<span class="content-big">
-
 广告类型
-
-</span>
 
 ## Table of contents
 

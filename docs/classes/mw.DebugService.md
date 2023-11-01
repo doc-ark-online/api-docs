@@ -1,14 +1,10 @@
-[DEBUGGING](../groups/Core.DEBUGGING.md) / DebugService
+[DEBUGGING](../groups/DEBUGGING.DEBUGGING.md) / DebugService
 
 # DebugService <Badge type="tip" text="Class" /> <Score text="DebugService" />
 
 **`Instance`**
 
-<span class="content-big">
-
 debug调试服务
-
-</span>
 
 ## Table of contents
 

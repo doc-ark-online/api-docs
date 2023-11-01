@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / TweenSequence
+[UTILITY](../groups/UTILITY.UTILITY.md) / TweenSequence
 
 # TweenSequence <Badge type="tip" text="Class" /> <Score text="TweenSequence" />
 
-<span class="content-big">
-
 序列工具类，主要用于获取连续的ID
-
-</span>
 
 ## Table of contents
 

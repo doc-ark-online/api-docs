@@ -1,12 +1,8 @@
-[DATA](../groups/Core.DATA.md) / DataStorageResult
+[DATA](../groups/DATA.DATA.md) / DataStorageResult
 
 # DataStorageResult <Badge type="tip" text="Interface" /> <Score text="DataStorageResult" />
 
-<span class="content-big">
-
 数据储存返回值
-
-</span>
 
 ## Table of contents
 

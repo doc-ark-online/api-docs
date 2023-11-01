@@ -1,24 +1,12 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / PostProcess
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcess
 
 # PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 
-<span class="content-big">
-
 后处理
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 后处理是指在渲染完成后对图像进行处理的一系列技术和效果。后处理通常用于增强或修改最终渲染图像的对比度、饱和度等特性，以达到特定的视觉效果或风格。
-
-</span>
 
 <span style="font-size: 14px;">
 

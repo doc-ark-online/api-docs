@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / HitResult
+[TYPE](../groups/TYPE.TYPE.md) / HitResult
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 
-<span class="content-big">
-
 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。
-
-</span>
 
 <span style="font-size: 14px;">
 

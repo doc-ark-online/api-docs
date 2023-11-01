@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponFireComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponFireComponent
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
-<span class="content-big">
-
 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
-
-</span>
 
 <span style="font-size: 14px;">
 

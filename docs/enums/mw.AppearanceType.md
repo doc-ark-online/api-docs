@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / AppearanceType
+[AVATAR](../groups/AVATAR.AVATAR.md) / AppearanceType
 
 # AppearanceType <Badge type="tip" text="Enumeration" /> <Score text="AppearanceType" />
 
-<span class="content-big">
-
 形象类型
-
-</span>
 
 <span style="font-size: 14px;">
 

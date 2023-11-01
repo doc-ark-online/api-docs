@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIObject
+[UI](../groups/UI.UI.md) / UIObject
 
 # UIObject <Badge type="tip" text="Class" /> <Score text="UIObject" />
 
-<span class="content-big">
-
 UI对象组件
-
-</span>
 
 ## Hierarchy
 

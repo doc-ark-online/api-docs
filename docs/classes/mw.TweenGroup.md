@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / TweenGroup
+[UTILITY](../groups/UTILITY.UTILITY.md) / TweenGroup
 
 # TweenGroup <Badge type="tip" text="Class" /> <Score text="TweenGroup" />
 
-<span class="content-big">
-
 补间组，用于同时控制多个补间对象
-
-</span>
 
 ## Table of contents
 

@@ -1,18 +1,10 @@
-[UTILITY](../groups/Core.UTILITY.md) / WindowUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / WindowUtil
 
 # WindowUtil <Badge type="tip" text="Class" /> <Score text="WindowUtil" />
 
-<span class="content-big">
-
 窗口设置工具。
 
-</span>
-
-<span class="content-big">
-
 可设置窗口聚焦失焦时触发某种行为，获取分辨率等功能。
-
-</span>
 
 <span style="font-size: 14px;">
 

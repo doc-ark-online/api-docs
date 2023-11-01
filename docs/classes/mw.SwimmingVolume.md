@@ -1,24 +1,12 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SwimmingVolume
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SwimmingVolume
 
 # SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
 
-<span class="content-big">
-
 游泳区域
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 拖入 SwimmingVolume 调整游泳区域的大小，角色进入游泳区域会切换成游泳状态。
-
-</span>
 
 <span style="font-size: 14px;">
 

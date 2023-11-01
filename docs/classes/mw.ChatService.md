@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / ChatService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / ChatService
 
 # ChatService <Badge type="tip" text="Class" /> <Score text="ChatService" />
 
-<span class="content-big">
-
 聊天服务
-
-</span>
 
 ## Table of contents
 

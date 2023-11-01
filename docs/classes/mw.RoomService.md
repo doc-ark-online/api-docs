@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / RoomService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RoomService
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-<span class="content-big">
-
 MGS以及玩家信息、数据、头像等相关API。
-
-</span>
 MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，如发布游戏后的左上角聊天、好友相关信息服务。
 
 ## Table of contents

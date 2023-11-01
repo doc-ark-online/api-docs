@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / InitialOscillatorOffset
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / InitialOscillatorOffset
 
 # InitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="InitialOscillatorOffset" />
 
-<span class="content-big">
-
 定义如何开始(从零开始，或者从随机值开始)
-
-</span>
 
 ## Table of contents
 

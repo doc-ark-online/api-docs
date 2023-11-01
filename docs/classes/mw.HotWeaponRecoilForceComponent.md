@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponRecoilForceComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponRecoilForceComponent
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
-<span class="content-big">
-
 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）
-
-</span>
 
 <span style="font-size: 14px;">
 

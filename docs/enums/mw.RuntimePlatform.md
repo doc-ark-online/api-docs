@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / RuntimePlatform
+[TYPE](../groups/TYPE.TYPE.md) / RuntimePlatform
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 
-<span class="content-big">
-
 运行平台
-
-</span>
 
 ## Table of contents
 

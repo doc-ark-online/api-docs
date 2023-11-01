@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponReloadComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
-<span class="content-big">
-
 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
-
-</span>
 
 <span style="font-size: 14px;">
 

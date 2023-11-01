@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIFontGlyph
+[UI](../groups/UI.UI.md) / UIFontGlyph
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 
-<span class="content-big">
-
 字体类型
-
-</span>
 
 ## Table of contents
 

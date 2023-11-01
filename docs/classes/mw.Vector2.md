@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Vector2
+[TYPE](../groups/TYPE.TYPE.md) / Vector2
 
 # Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
-<span class="content-big">
-
 由分量 (x,y) 组成的二维空间中的向量
-
-</span>
 
 ## Table of contents
 

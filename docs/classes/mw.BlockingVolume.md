@@ -1,24 +1,12 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / BlockingVolume
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / BlockingVolume
 
 # BlockingVolume <Badge type="tip" text="Class" /> <Score text="BlockingVolume" />
 
-<span class="content-big">
-
 禁行区
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 用于控制角色是否可以进出此区域。
-
-</span>
 
 ::: warning Precautions
 

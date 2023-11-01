@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / GraphicsSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / GraphicsSettings
 
 # GraphicsSettings <Badge type="tip" text="Class" /> <Score text="GraphicsSettings" />
 
-<span class="content-big">
-
 图片画质设置
-
-</span>
 
 <span style="font-size: 14px;">
 

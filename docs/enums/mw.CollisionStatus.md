@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / CollisionStatus
+[TYPE](../groups/TYPE.TYPE.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 
-<span class="content-big">
-
 碰撞属性状态
-
-</span>
 
 ## Table of contents
 

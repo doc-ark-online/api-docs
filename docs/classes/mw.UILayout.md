@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UILayout
+[UI](../groups/UI.UI.md) / UILayout
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 
-<span class="content-big">
-
 容器自动布局规则
-
-</span>
 
 ## Table of contents
 

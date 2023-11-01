@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / NetStatus
+[TYPE](../groups/TYPE.TYPE.md) / NetStatus
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 
-<span class="content-big">
-
 同步状态
-
-</span>
 
 ## Table of contents
 

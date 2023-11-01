@@ -1,12 +1,8 @@
-[SOUND](../groups/Core.SOUND.md) / Sound
+[SOUND](../groups/SOUND.SOUND.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
-<span class="content-big">
-
 音效
-
-</span>
 
 <span style="font-size: 14px;">
 

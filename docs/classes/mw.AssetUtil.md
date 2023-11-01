@@ -1,24 +1,12 @@
-[UTILITY](../groups/Core.UTILITY.md) / AssetUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / AssetUtil
 
 # AssetUtil <Badge type="tip" text="Class" /> <Score text="AssetUtil" />
 
-<span class="content-big">
-
 资源管理工具
-
-</span>
-
-<span class="content-big">
 
 在使用左侧工具栏中的资源时，需要预先下载并加载。
 
-</span>
-
-<span class="content-big">
-
 可使用asyncDownloadAsset接口在代码中动态下载对应资源。也可将资源手动拖入编辑器右边优先加载队列中。
-
-</span>
 
 ## Table of contents
 

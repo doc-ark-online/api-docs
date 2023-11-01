@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / ScriptingSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / ScriptingSettings
 
 # ScriptingSettings <Badge type="tip" text="Class" /> <Score text="ScriptingSettings" />
 
-<span class="content-big">
-
 全局的脚本配置信息
-
-</span>
 
 <span style="font-size: 14px;">
 

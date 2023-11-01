@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / GizmoSpaceType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / GizmoSpaceType
 
 # GizmoSpaceType <Badge type="tip" text="Enumeration" /> <Score text="GizmoSpaceType" />
 
-<span class="content-big">
-
 gizmo空间
-
-</span>
 
 ## Table of contents
 

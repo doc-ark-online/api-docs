@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / StringUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / StringUtil
 
 # StringUtil <Badge type="tip" text="Class" /> <Score text="StringUtil" />
 
-<span class="content-big">
-
 字符串工具
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / OscillatorWaveform
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / OscillatorWaveform
 
 # OscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="OscillatorWaveform" />
 
-<span class="content-big">
-
 振荡器波形
-
-</span>
 
 ## Table of contents
 

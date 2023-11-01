@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Matrix3x3
+[TYPE](../groups/TYPE.TYPE.md) / Matrix3x3
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 
-<span class="content-big">
-
 三维矩阵
-
-</span>
 
 ::: warning Precautions
 

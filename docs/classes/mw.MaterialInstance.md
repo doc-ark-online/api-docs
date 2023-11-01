@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / MaterialInstance
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / MaterialInstance
 
 # MaterialInstance <Badge type="tip" text="Class" /> <Score text="MaterialInstance" />
 
-<span class="content-big">
-
 材质实例类
-
-</span>
 
 <span style="font-size: 14px;">
 

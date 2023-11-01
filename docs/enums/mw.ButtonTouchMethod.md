@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ButtonTouchMethod
+[UI](../groups/UI.UI.md) / ButtonTouchMethod
 
 # ButtonTouchMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonTouchMethod" />
 
-<span class="content-big">
-
 按钮触摸响应规则
-
-</span>
 
 ## Table of contents
 

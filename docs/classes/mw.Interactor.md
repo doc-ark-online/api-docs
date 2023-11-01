@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Interactor
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Interactor
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
-<span class="content-big">
-
 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现
-
-</span>
 
 <span style="font-size: 14px;">
 

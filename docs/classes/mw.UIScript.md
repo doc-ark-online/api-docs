@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIScript
+[UI](../groups/UI.UI.md) / UIScript
 
 # UIScript <Badge type="tip" text="Class" /> <Score text="UIScript" />
 
-<span class="content-big">
-
 UI的驱动脚本基类
-
-</span>
 
 ## Hierarchy
 

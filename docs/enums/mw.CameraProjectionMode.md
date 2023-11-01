@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraProjectionMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraProjectionMode
 
 # CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
 
-<span class="content-big">
-
 摄像机镜头模式
-
-</span>
 
 ## Table of contents
 

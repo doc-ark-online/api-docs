@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / StaleButton
+[UI](../groups/UI.UI.md) / StaleButton
 
 # StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 
-<span class="content-big">
-
 按钮
-
-</span>
 
 ## Hierarchy
 

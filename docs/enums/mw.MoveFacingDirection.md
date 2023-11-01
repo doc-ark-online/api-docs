@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / MoveFacingDirection
+[AVATAR](../groups/AVATAR.AVATAR.md) / MoveFacingDirection
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 
-<span class="content-big">
-
 运动时面朝方向
-
-</span>
 
 ## Table of contents
 

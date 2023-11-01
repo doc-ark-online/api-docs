@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIWidget
+[UI](../groups/UI.UI.md) / UIWidget
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
-<span class="content-big">
-
 世界UI组件
-
-</span>
 
 ## Hierarchy
 

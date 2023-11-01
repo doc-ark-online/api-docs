@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SpringArm
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SpringArm
 
 # SpringArm <Badge type="tip" text="Class" /> <Score text="SpringArm" />
 
-<span class="content-big">
-
 弹簧臂
-
-</span>
 
 ## Table of contents
 

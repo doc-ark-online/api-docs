@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / MovementMode
+[AVATAR](../groups/AVATAR.AVATAR.md) / MovementMode
 
 # MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 
-<span class="content-big">
-
 角色状态
-
-</span>
 
 ## Table of contents
 
