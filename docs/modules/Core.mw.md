@@ -2328,9 +2328,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:发送Http请求
-
 </span>
 
 ```ts
@@ -2570,9 +2568,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts
@@ -3449,9 +3445,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts

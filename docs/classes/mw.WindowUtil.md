@@ -7,9 +7,7 @@
 可设置窗口聚焦失焦时触发某种行为，获取分辨率等功能。
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为WindowExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在控制台打印出屏幕的分辨率大小。
-
 </span>
 
 ```ts
@@ -96,9 +94,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"NewScript"的脚本,放置在对象管理器对象子级中,打开脚本,输入以下代码保存,运行游戏,将屏幕切出会显示"游戏窗口失焦，屏幕切出"的log,将屏幕切回，将显示"游戏窗口聚焦，屏幕显现"的log。
-
 </span>
 
 ```ts
@@ -129,9 +125,7 @@ export default class NewScript extends Script {
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts

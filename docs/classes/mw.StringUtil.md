@@ -35,9 +35,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
-
 </span>
 
 ```ts
@@ -71,9 +69,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台
-
 </span>
 
 ```ts
@@ -114,9 +110,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world!
-
 </span>
 
 ```ts
@@ -156,9 +150,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false
-
 </span>
 
 ```ts
@@ -204,9 +196,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过
-
 </span>
 
 ```ts

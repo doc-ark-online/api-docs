@@ -40,9 +40,7 @@ Delegate的实现方案, 其实就是制造了一个对象去链接函数的地�
 
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"DelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 5 。
-
 </span>
 
 ```ts

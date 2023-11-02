@@ -35,9 +35,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示富文本字体的效果。代码如下：
-
 </span>
 
 ```ts
@@ -82,9 +80,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"MetaWorld is funny"的效果。代码如下：
-
 </span>
 
 ```ts

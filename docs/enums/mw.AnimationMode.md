@@ -5,9 +5,7 @@
 动画模式
 
 <span style="font-size: 14px;">
-
 使用示例:
-
 </span>
 
 ```ts

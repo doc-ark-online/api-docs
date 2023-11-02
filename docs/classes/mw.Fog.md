@@ -99,9 +99,7 @@
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
@@ -124,9 +122,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
@@ -199,9 +195,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
@@ -220,9 +214,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
@@ -291,9 +283,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
@@ -316,9 +306,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
@@ -391,9 +379,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
@@ -416,9 +402,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
@@ -491,9 +475,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
@@ -516,9 +498,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
@@ -591,9 +571,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
@@ -616,9 +594,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
@@ -691,9 +667,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
@@ -716,9 +690,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
@@ -791,9 +763,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
@@ -812,9 +782,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
@@ -883,9 +851,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
@@ -908,9 +874,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
@@ -981,9 +945,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
@@ -1006,9 +968,7 @@ export default class FogExample extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
@@ -1048,9 +1008,7 @@ export default class FogExample extends Script {
 
 
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾预设

@@ -44,9 +44,7 @@
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 通过脚本动态创建载具并绑定控制逻辑。创建一个名为"VehicleExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。按下 Q 键创建载具，走到触发器范围自动上车，WASD 进行驾驶，F 键下车。代码如下:
-
 </span>
 
 ```ts
@@ -818,9 +816,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 用按钮和摇杆控制载具
-
 </span>
 
 ```ts
@@ -884,9 +880,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 用按钮和摇杆控制载具
-
 </span>
 
 ```ts

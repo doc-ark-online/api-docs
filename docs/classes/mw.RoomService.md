@@ -80,9 +80,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -117,9 +115,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -148,9 +144,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
-
 </span>
 
 ```ts
@@ -203,9 +197,7 @@ ___
 服务端调用
 
 <span style="font-size: 14px;">
-
 使用示例:
-
 </span>
 
 ```ts

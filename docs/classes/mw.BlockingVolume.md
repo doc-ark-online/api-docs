@@ -15,9 +15,7 @@
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:请尽量放置在场景中，通过动态查找获取。不推荐动态生成，不支持重叠使用。
-
 </span>
 
 创建一个名为"BlockingVolExample"的脚本,放置在对象栏中,打开脚本,输入以下代码，替换GUID保存,运行游戏,你将可以通过该GUID对应的禁行区.代码如下:
@@ -185,9 +183,7 @@ export default class BlockingVolExample extends Script {
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 针对此禁行区为其他GameObject添加通行许可
-
 </span>
 
 ```ts
@@ -223,9 +219,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 重置该禁行区发布的所有通行许可
-
 </span>
 
 ```ts
@@ -267,9 +261,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 获取此禁行区对某GameObject的通行许可
-
 </span>
 
 ```ts
@@ -300,9 +292,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 针对此禁行区为其他GameObject移除通行许可
-
 </span>
 
 ```ts
@@ -338,9 +328,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 开放该禁行区
-
 </span>
 
 ```ts
