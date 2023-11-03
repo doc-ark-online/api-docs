@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraPositionMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraPositionMode
 
 # CameraPositionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraPositionMode" />
 
-<span class="content-big">
-
 摄像机位置模式
-
-</span>
 
 ## Table of contents
 

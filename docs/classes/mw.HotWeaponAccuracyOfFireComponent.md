@@ -1,35 +1,17 @@
-[玩法](../groups/Core.玩法.md) / HotWeaponAccuracyOfFireComponent
+[玩法](../groups/玩法.玩法.md) / HotWeaponAccuracyOfFireComponent
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
-<span class="content-big">
-
 热武器射击精度组件
-
-</span>
-
-<span class="content-big">
 
 武器射击精度是指武器在射击时的命中目标的准确性和精度程度。它描述了武器在使用时弹道路径的稳定性和预测性，以及射击的命中率和精度。控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度.
 
-</span>
-
-<span class="content-big">
-
 武器射击精度可以用一个简单的比喻来描述：它就像是你打篮球时的投篮准确度。
-
-</span>
-
-<span class="content-big">
 
 当你投篮时，你希望篮球准确地进入篮筐，而不是偏离目标。这就是投篮的精度。在武器射击中，精度指的是武器发射的子弹能够准确地命中目标，而不是随意地朝着其他方向飞行。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
-
 </span>
 
 ```ts

@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / GizmoCoordinateType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / GizmoCoordinateType
 
 # GizmoCoordinateType <Badge type="tip" text="Enumeration" /> <Score text="GizmoCoordinateType" />
 
-<span class="content-big">
-
 gizmo坐标轴类型
-
-</span>
 
 ## Table of contents
 

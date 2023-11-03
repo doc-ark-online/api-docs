@@ -1,17 +1,11 @@
-[ANIMATIONS](../groups/Core.ANIMATIONS.md) / AnimationMode
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / AnimationMode
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
-<span class="content-big">
-
 动画模式
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:
-
 </span>
 
 ```ts

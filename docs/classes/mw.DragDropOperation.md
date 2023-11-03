@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / DragDropOperation
+[UI](../groups/UI.UI.md) / DragDropOperation
 
 # DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 
-<span class="content-big">
-
 UI 拖拽事件
-
-</span>
 
 ## Table of contents
 

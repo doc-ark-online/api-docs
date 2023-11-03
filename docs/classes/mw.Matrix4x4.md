@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Matrix4x4
+[TYPE](../groups/TYPE.TYPE.md) / Matrix4x4
 
 # Matrix4x4 <Badge type="tip" text="Class" /> <Score text="Matrix4x4" />
 
-<span class="content-big">
-
 四维矩阵
-
-</span>
 
 ::: warning Precautions
 

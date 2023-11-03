@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TextBlock
+[UI](../groups/UI.UI.md) / TextBlock
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
-<span class="content-big">
-
 UI文本
-
-</span>
 
 ## Hierarchy
 
@@ -1159,7 +1155,6 @@ ___
 | `inEnableUnderline` `boolean` | 设置是否开启下划线 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1167,6 +1162,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### setFontColorByHex <Score text="setFontColorByHex" /> 

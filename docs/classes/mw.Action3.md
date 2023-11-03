@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Action3
+[TYPE](../groups/TYPE.TYPE.md) / Action3
 
 # Action3<T1, T2, T3\> <Badge type="tip" text="Class" /> <Score text="Action3<T1, T2, T3\>" />
 
-<span class="content-big">
-
 三个参数的代理
-
-</span>
 
 ## Type parameters
 
@@ -49,7 +45,7 @@
 | 清除所有监听|
 | **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`  |
 | 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `number` \, `thisArg?`: `any`): `void`  |
+| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`  |
 | 移除一个监听方法|
 :::
 

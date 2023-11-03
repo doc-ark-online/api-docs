@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / DragPivot
+[UI](../groups/UI.UI.md) / DragPivot
 
 # DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
 
-<span class="content-big">
-
 拖拽的锚点
-
-</span>
 
 ## Table of contents
 

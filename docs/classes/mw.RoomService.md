@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / RoomService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RoomService
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-<span class="content-big">
-
 MGS以及玩家信息、数据、头像等相关API。
-
-</span>
 MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，如发布游戏后的左上角聊天、好友相关信息服务。
 
 ## Table of contents
@@ -23,7 +19,7 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 | 获取当前环境是否支持MGS功能|
 | **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
 | 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
-| **[kick](mw.RoomService.md#kick)**(`player`: `number` \, `message?`: `string`): `void`  |
+| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void`  |
 | 将某一玩家踢下线|
 | **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void`  |
 | 注册聊天回调|
@@ -84,9 +80,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -121,9 +115,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -152,9 +144,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
-
 </span>
 
 ```ts
@@ -199,7 +189,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) | 踢下线的Player |
+| `player` `number`  [`Player`](mw.Player.md) | 踢下线的Player |
 | :------ | :------ |
 | `message?` `string` | usage：踢出玩家时触发退出UI弹出的信息 |
 
@@ -207,9 +197,7 @@ ___
 服务端调用
 
 <span style="font-size: 14px;">
-
 使用示例:
-
 </span>
 
 ```ts

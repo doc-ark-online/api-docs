@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIHugContent
+[UI](../groups/UI.UI.md) / UIHugContent
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
-<span class="content-big">
-
 容器自动布局大小适应规则
-
-</span>
 
 ## Table of contents
 

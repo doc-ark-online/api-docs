@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / PurchaseService
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
-<span class="content-big">
-
 应用内购服务
-
-</span>
 
 ## Table of contents
 
@@ -203,9 +199,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
-
 </span>
 
 ```ts
@@ -260,9 +254,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:将代码片段放入脚本中即可
-
 </span>
 
 ```ts
@@ -295,9 +287,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
-
 </span>
 
 ```ts
@@ -316,7 +306,7 @@ export default class PurchaseExample extends mw.Script {
         player.character.name = "ArkCount: " + arkCount;
     }
 }
-`
+```
 
 ___
 
@@ -341,12 +331,10 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
-
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -362,7 +350,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -387,12 +375,10 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
-
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -408,7 +394,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -432,12 +418,10 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
-
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -453,7 +437,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -466,12 +450,10 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
-
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -485,7 +467,7 @@ export default class PurchaseExample extends mw.Script {
         PurchaseService.openPremiumMemberPurchasePage();
     }
 }
-```ts
+```
 
 ___
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Image
+[UI](../groups/UI.UI.md) / Image
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
-<span class="content-big">
-
 UI 图片
-
-</span>
 
 ## Hierarchy
 
@@ -117,6 +113,7 @@ UI 图片
 
 
 ## Accessors
+
 ___
 
 ### imageColor <Score text="imageColor" /> 
@@ -352,7 +349,6 @@ ___
 
 | `inMargin` [`Margin`](mw.Margin.md) | 图片边距 |
 | :------ | :------ |
-
 
 </td>
 </tr></tbody>

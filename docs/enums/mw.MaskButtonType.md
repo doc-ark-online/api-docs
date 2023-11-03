@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / MaskButtonType
+[UI](../groups/UI.UI.md) / MaskButtonType
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 
-<span class="content-big">
-
 遮罩类型
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / PropertyStatus
+[TYPE](../groups/TYPE.TYPE.md) / PropertyStatus
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 
-<span class="content-big">
-
 属性状态
-
-</span>
 
 ## Table of contents
 

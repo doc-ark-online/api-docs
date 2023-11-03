@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIChildCollation
+[UI](../groups/UI.UI.md) / UIChildCollation
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
-<span class="content-big">
-
 容器自动布局子项排序规则
-
-</span>
 
 ## Table of contents
 

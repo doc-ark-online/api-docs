@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SpringArm
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SpringArm
 
 # SpringArm <Badge type="tip" text="Class" /> <Score text="SpringArm" />
 
-<span class="content-big">
-
 弹簧臂
-
-</span>
 
 ## Table of contents
 
@@ -24,6 +20,12 @@
 | 使用控制器控制旋转|
 | **[worldTransform](mw.SpringArm.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
 | 弹簧臂世界变换|
+| **[zoomDistanceRange](mw.SpringArm.md#zoomdistancerange)**(): [`Vector2`](mw.Vector2.md)  |
+| 摄像机放缩距离范围|
+| **[zoomEnabled](mw.SpringArm.md#zoomenabled)**(): `boolean`  |
+| 是否开启摄像机放缩距离|
+| **[zoomScale](mw.SpringArm.md#zoomscale)**(): `number`  |
+| 摄像机放缩距离输入比例|
 
 ## Accessors
 
@@ -93,9 +95,7 @@
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏。创建一个名为"Example_SpringArm_CollisionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞。你可以看到禁用摄像机弹簧杆碰撞摄像机碰撞柱子不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -197,9 +197,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏。创建一个名为"Example_SpringArm_CollisionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞。你可以看到禁用摄像机弹簧杆碰撞摄像机碰撞柱子不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -295,9 +293,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“3”，增加摄像机弹簧臂的长度，按住键盘“4”，减少摄像机弹簧臂的长度.你将在场景中看到摄像机弹簧杆伸缩的效果.代码如下:
-
 </span>
 
 ```ts
@@ -389,9 +385,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_LocalTransform"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原.你将在场景中看到摄像机偏移的效果并在控制台看到打印的变化后的摄像机弹簧臂的本地变换.代码如下:
-
 </span>
 
 ```ts
@@ -489,9 +483,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
-
 </span>
 
 ```ts
@@ -583,19 +575,425 @@ ___
 | :------ | :------ |
 
 
+
 </td>
 </tr></tbody>
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_WorldTransform"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原.你将在场景中看到摄像机偏移的效果并在控制台看到打印的变化后的摄像机弹簧臂的世界变换.代码如下:
-
 </span>
 
 ```ts
 @Component
 export default class Example_SpringArm_WorldTransform extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+___
+
+### zoomDistanceRange <Score text="zoomDistanceRange" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **zoomDistanceRange**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **zoomDistanceRange**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+摄像机放缩距离范围
+
+
+::: warning Precautions
+
+双指或鼠标滚轮放缩摄像机弹簧臂长度范围，默认值60~500
+
+:::
+
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+摄像机放缩距离范围
+
+
+::: warning Precautions
+
+双指或鼠标滚轮放缩摄像机弹簧臂长度范围，默认值60~500
+
+:::
+
+
+#### Parameters
+
+| `value` | [`Vector2`](mw.Vector2.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+___
+
+### zoomEnabled <Score text="zoomEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **zoomEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **zoomEnabled**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否开启摄像机放缩距离
+
+
+::: warning Precautions
+
+是否开启双指或鼠标滚轮放缩摄像机弹簧臂长度，默认开启,仅在当前摄像机弹簧臂长度处于摄像机放缩距离范围内时生效
+
+:::
+
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+是否开启摄像机放缩距离
+
+
+::: warning Precautions
+
+是否开启双指或鼠标滚轮放缩摄像机弹簧臂长度，默认开启,仅在当前摄像机弹簧臂长度处于摄像机放缩距离范围内时生效
+
+:::
+
+
+#### Parameters
+
+| `value` | `boolean` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+___
+
+### zoomScale <Score text="zoomScale" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **zoomScale**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **zoomScale**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+摄像机放缩距离输入比例
+
+
+::: warning Precautions
+
+控制双指距离或鼠标滚轮滚动变化单位距离时，摄像机弹簧臂长度变化大小，默认值1, 范围是0-10
+
+:::
+
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+摄像机放缩距离输入比例
+
+
+::: warning Precautions
+
+控制双指距离或鼠标滚轮滚动变化单位距离时，摄像机弹簧臂长度变化大小，默认值1, 范围是0-10
+
+:::
+
+
+#### Parameters
+
+| `value` | `number` |
+| :------ | :------ |
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前摄像机
+            let myCamera = Camera.currentCamera;
+            // 添加一个按键方法：按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.log("摄像机弹簧臂的本地变换 " + myCamera.springArm.localTransform);
+                console.log("摄像机弹簧臂的世界变换 " + myCamera.springArm.worldTransform);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCamera.springArm.useControllerRotation = false;
+                setTimeout(() => {
+                    myCamera.springArm.useControllerRotation = true;
+                }, 5000);
+            });
+            // 添加一个按键方法：按住键盘“3”，增加摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.springArm.length += 1;
+            });
+            // 添加一个按键方法：按住键盘“4”，减少摄像机弹簧臂的长度
+            InputUtil.onKeyPress(Keys.Four, () => {
+                myCamera.springArm.length -= 1;
+            });
+        }
+    }
+}
+```
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
+</span>
+
+```ts
+@Class
+export default class Example_SpringArm_UseControllerRotation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行

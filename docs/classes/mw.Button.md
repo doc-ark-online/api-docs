@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Button
+[UI](../groups/UI.UI.md) / Button
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-<span class="content-big">
-
 按钮,无默认text
-
-</span>
 
 ## Hierarchy
 
@@ -118,6 +114,7 @@
 
 
 ## Accessors
+
 ___
 
 ### clickMethod <Score text="clickMethod" /> 
@@ -1158,7 +1155,6 @@ ___
 | `inBoolean` `boolean` | 是否套用不同的按下方案 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1166,6 +1162,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / BodyPartTypeV1
+[AVATAR](../groups/AVATAR.AVATAR.md) / BodyPartTypeV1
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 
-<span class="content-big">
-
 V1角色部位
-
-</span>
 
 ## Table of contents
 

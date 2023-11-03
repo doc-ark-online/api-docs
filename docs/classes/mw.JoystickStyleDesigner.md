@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / JoystickStyleDesigner
+[UI](../groups/UI.UI.md) / JoystickStyleDesigner
 
 # JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
-<span class="content-big">
-
 摇杆信息
-
-</span>
 
 ## Table of contents
 

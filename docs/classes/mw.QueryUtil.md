@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / QueryUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / QueryUtil
 
 # QueryUtil <Badge type="tip" text="Class" /> <Score text="QueryUtil" />
 
-<span class="content-big">
-
 射线检测工具
-
-</span>
 
 ## Table of contents
 
@@ -52,9 +48,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用矩形范围检测的基本流程
-
 </span>
 
 ```ts
@@ -92,9 +86,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用盒体射线检测的基本流程
-
 </span>
 
 ```ts
@@ -130,9 +122,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用圆柱范围检测的基本流程
-
 </span>
 
 ```ts
@@ -170,9 +160,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用胶囊体射线检测的基本流程
-
 </span>
 
 ```ts
@@ -209,9 +197,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用射线检测的基本流程
-
 </span>
 
 ```ts
@@ -246,9 +232,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用球形范围检测的基本流程
-
 </span>
 
 ```ts
@@ -285,9 +269,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例展示使用球体射线检测的基本流程
-
 </span>
 
 ```ts

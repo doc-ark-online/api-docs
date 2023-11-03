@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UILayoutPacket
+[UI](../groups/UI.UI.md) / UILayoutPacket
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 
-<span class="content-big">
-
 自动布局排版规则-排列规则
-
-</span>
 
 ## Table of contents
 

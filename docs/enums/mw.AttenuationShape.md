@@ -1,12 +1,8 @@
-[SOUNDS](../groups/Core.SOUNDS.md) / AttenuationShape
+[SOUNDS](../groups/SOUNDS.SOUNDS.md) / AttenuationShape
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
-<span class="content-big">
-
 音效衰减形状
-
-</span>
 
 ## Table of contents
 

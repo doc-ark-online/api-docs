@@ -1,90 +1,34 @@
-[玩法](../groups/Core.玩法.md) / HotWeapon
+[玩法](../groups/玩法.玩法.md) / HotWeapon
 
 # HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 
-<span class="content-big">
-
 热武器
-
-</span>
-
-<span class="content-big">
 
 热武器功能是指游戏中武器的使用和管理机制，它使得玩家可以在战斗中使用各种类型的武器。
 
-</span>
-
-<span class="content-big">
-
 我们可以将热武器功能类比为现实生活中的枪械。想象你正在玩一款真实的射击游戏。你手持一把火力强大的热武器，可以进行射击。当你按下射击按钮时，武器会发射子弹，产生火花和声音效果，仿佛你真的在战斗中。
-
-</span>
-
-<span class="content-big">
 
 射击并不是无限制的。你的武器需要装填弹药才能进行射击。所以，你需要按下上膛按钮来将新的弹药装入武器。这样，你就能够继续射击，而不必担心弹药用尽。
 
-</span>
-
-<span class="content-big">
-
 当你的弹药接近用尽时，你需要进行换弹操作。你按下换弹按钮，角色会迅速将弹夹从武器中取出，并插入一新的装满子弹的弹夹。这样，你就能够继续战斗，而不必等待重新装填现有弹夹。
-
-</span>
-
-<span class="content-big">
 
 在射击过程中，你会感受到武器的后坐力效果。后坐力是由于子弹离开枪口时的反冲所产生的力量。你会感觉到武器稍微后退，仿佛你真的在使用真实的武器。这为游戏增添了一定的现实感和沉浸感。
 
-</span>
-
-<span class="content-big">
-
 热武器功能为玩家提供了更多的战术选择和策略性。
-
-</span>
-
-<span class="content-big">
 
 总之
 
-</span>
-
-<span class="content-big">
-
 1. 射击 - 玩家按下开火键,武器会射出子弹或光线。
-
-</span>
-
-<span class="content-big">
 
 2. 上膛 - 每次射击后,都需要加载下一发弹药进入膛室。
 
-</span>
-
-<span class="content-big">
-
 3. 换弹 - 当弹夹为空时,需要更换新的弹夹。
-
-</span>
-
-<span class="content-big">
 
 4. 后坐力 - 射击时会产生后坐力,让准星会稍稍偏移。
 
-</span>
-
-<span class="content-big">
-
 equip是热武器的核心函数，人物和热武器交互的通道。当热武器实例调用equip接口，并传入角色及角色插槽相关参数，传入的角色才可与热武器交互。
 
-</span>
-
-<span class="content-big">
-
 HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWeapon对象时使用。创建出一个热武器实例后，可调用HotWeapon类中accuracyOfFireComponent、aimComponent、fireComponent等变量，调节功能细节。
-
-</span>
 
 ::: warning Precautions
 
@@ -93,9 +37,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample1"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,在本地资源库中搜索80484、4172、4171动画资源,拖入对象管理器中的优先加载目录。运行游戏,按键1、2、3、4你将在场景中看到一个热武器设置参数，添加委托，绑定按键，以及人物换弹的效果,代码如下:
-
 </span>
 
 ```ts
@@ -342,11 +284,17 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 ::: details 点击查看继承
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
 | 复制对象|
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`  |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
@@ -365,15 +313,13 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -437,9 +383,7 @@ ___
 服务器装备时执行绑定函数
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample2"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器添加装备委托的效果,代码如下:
-
 </span>
 
 ```ts
@@ -748,7 +692,6 @@ ___
 | `isEnabled` `boolean` |  换弹组件启用状态 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -756,6 +699,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### breakLoad <Score text="breakLoad" /> 
@@ -826,9 +770,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample7"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器装备到角色的效果,代码如下:
-
 </span>
 
 ```ts
@@ -875,9 +817,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample5"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
-
 </span>
 
 ```ts
@@ -909,9 +849,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample6"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
-
 </span>
 
 ```ts
@@ -940,9 +878,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample11"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个获取热武器状态的效果,代码如下:
-
 </span>
 
 ```ts
@@ -976,9 +912,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample3"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到热武器调用当前方法的效果,代码如下:
-
 </span>
 
 ```ts
@@ -1040,9 +974,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample10"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器上膛、停止上膛的效果,代码如下:
-
 </span>
 
 ```ts
@@ -1082,9 +1014,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample9"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器换弹，中止换弹的效果,代码如下:
-
 </span>
 
 ```ts
@@ -1119,9 +1049,7 @@ ___
 调用端自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"HotWeaponSample8"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开火，停止开火的效果,代码如下:
-
 </span>
 
 ```ts

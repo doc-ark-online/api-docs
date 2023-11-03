@@ -1,12 +1,8 @@
-[MONETIZATION](../groups/Core.MONETIZATION.md) / consumeKeyStatus
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / consumeKeyStatus
 
 # consumeKeyStatus <Badge type="tip" text="Enumeration" /> <Score text="consumeKeyStatus" />
 
-<span class="content-big">
-
 大会员扣除钥匙订单返回状态信息
-
-</span>
 
 ## Table of contents
 

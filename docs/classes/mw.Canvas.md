@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Canvas
+[UI](../groups/UI.UI.md) / Canvas
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
-<span class="content-big">
-
 可挂载叶子节点的根节点，以及提供各种自动布局功能
-
-</span>
 
 ## Hierarchy
 
@@ -441,7 +437,6 @@ ___
 | `clip` `boolean` | 是否裁剪 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -449,6 +444,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

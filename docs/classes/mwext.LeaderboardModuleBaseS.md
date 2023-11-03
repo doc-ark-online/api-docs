@@ -2,11 +2,7 @@
 
 # LeaderboardModuleBaseS<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardModuleBaseS<T\>" />
 
-<span class="content-big">
-
 排行榜模块-服务端
-
-</span>
 
 ## Type parameters
 
@@ -37,14 +33,14 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[addPlayer](mwext.LeaderboardModuleBaseS.md#addplayer)**(`player`: `number` \, `data`: `Object`): `boolean`  |
+| **[addPlayer](mwext.LeaderboardModuleBaseS.md#addplayer)**(`player`: `number`  [`Player`](mw.Player.md), `data`: `Object`): `boolean`  |
 | :-----|
 | 向排行榜添加一个玩家|
 | **[clear](mwext.LeaderboardModuleBaseS.md#clear)**(): `void`  |
 | 清除排行榜|
-| **[removePlayer](mwext.LeaderboardModuleBaseS.md#removeplayer)**(`player`: `number` \): `boolean`  |
+| **[removePlayer](mwext.LeaderboardModuleBaseS.md#removeplayer)**(`player`: `number`  [`Player`](mw.Player.md)): `boolean`  |
 | 从排行榜移除一个玩家|
-| **[setPlayerValue](mwext.LeaderboardModuleBaseS.md#setplayervalue)**(`player`: `number` \, `fieldId`: `number`, `value`: `string` \): `void`  |
+| **[setPlayerValue](mwext.LeaderboardModuleBaseS.md#setplayervalue)**(`player`: `number`  [`Player`](mw.Player.md), `fieldId`: `number`, `value`: `string`  `number`): `void`  |
 | 设置玩家的一个字段值|
 
 
@@ -53,9 +49,9 @@
 | **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T`  |
 | :-----|
 | 获取"全部客户端"调用对象|
-| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T`  |
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number`  [`Player`](mw.Player.md)): `T`  |
 | 根据玩家获取"单客户端"调用对象|
-| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S`  |
+| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string`  `number`  [`Player`](mw.Player.md)): `S`  |
 | 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void`  |
 | 生命周期方法-创建模块时调用|
@@ -88,7 +84,7 @@
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 | `data` `Object` |  玩家数据 |
 
@@ -118,7 +114,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 
 #### Returns
@@ -137,9 +133,9 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 | `fieldId` `number` |  字段ID |
-| `value` `string` \| `number` |  字段的值 |
+| `value` `string`  `number` |  字段的值 |
 
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UserWidgetPrefab
+[UI](../groups/UI.UI.md) / UserWidgetPrefab
 
 # UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
-<span class="content-big">
-
 ui预制体
-
-</span>
 
 ## Hierarchy
 

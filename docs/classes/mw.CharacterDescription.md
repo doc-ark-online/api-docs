@@ -1,60 +1,24 @@
-[AVATAR](../groups/Core.AVATAR.md) / CharacterDescription
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterDescription
 
 # CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
 
-<span class="content-big">
-
 人形外观配置
-
-</span>
-
-<span class="content-big">
 
 什么是 CharacterDescription 呢？
 
-</span>
-
-<span class="content-big">
-
 - CharacterDescription是一个用于存储 advance 和 base 装备的 Character 描述。
-
-</span>
-
-<span class="content-big">
 
 - 人形外观分为高级人形和基础人形。高级人形可更改人物的服装（衬衫、裤子、裙子...)、头部（脸型、嘴巴、鼻子、头发...）等外观； 基础人形可从左侧角色/NPC中基础人形形象中选择你喜欢的整体形象。
 
-</span>
-
-<span class="content-big">
-
 CharacterDescription 如何使用呢？
-
-</span>
-
-<span class="content-big">
 
 - CharacterDescription 本质是一个嵌套的只读对象类型，用于存储一些角色设置的高级信息。这些信息按照层级结构进行组织，其中每个层级都是一个只读对象类型。
 
-</span>
-
-<span class="content-big">
-
 - 在 Character 类中有一个名为 description 的属性，他的返回值类型为 CharacterDescription ，使用角色类中 description 的属性调用。
-
-</span>
-
-<span class="content-big">
 
 - MW编辑器为您提供了大量的美术模型资源，请在左侧 美术对象-角色栏 中翻找，并标有GUID供你使用。
 
-</span>
-
-<span class="content-big">
-
 详情可参考下面列出的参数，开始对你的人性外观自定义修改吧~
-
-</span>
 
 ## Table of contents
 
@@ -74,9 +38,7 @@ CharacterDescription 如何使用呢？
 高级人形对象外观配置类 与 base 互斥
 
 <span style="font-size: 14px;">
-
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
-
 </span>
 
 ```ts
@@ -195,35 +157,35 @@ export default class CharacterStyleExample extends Script {
 | `bodyFeatures.waist.waistFrontalScale?` `number` | **`Description`** 腰部前后缩放 |
 | `bodyFeatures.waist.waistHorizontalScale?` `number` | **`Description`** 腰部左右缩放 |
 | `bodyFeatures.waist.waistVerticalScale?` `number` | **`Description`** 腰部上下缩放 |
-| `clothing?` `{ `gloves?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }```` ; `design?`: ````{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `lowerCloth?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `shoes?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `upperCloth?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  }  } | **`Description`** 装扮 |
-| `clothing.gloves?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 手套 |
-| `clothing.gloves.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
+| `clothing?` `{ `gloves?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }```` ; `design?`: ````{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `lowerCloth?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `shoes?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  } ; `upperCloth?`: ```{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }``` ; `design?`: ````{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }```` ; `pattern?`: ````{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }````  }\> ; `style?`: `string`  }  } | **`Description`** 装扮 |
+| `clothing.gloves?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 手套 |
+| `clothing.gloves.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
 | `clothing.gloves.style?` `string` | **`Description`** 手套样式 |
-| `clothing.lowerCloth?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 下装 |
-| `clothing.lowerCloth.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
+| `clothing.lowerCloth?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 下装 |
+| `clothing.lowerCloth.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
 | `clothing.lowerCloth.style?` `string` | **`Description`** 下装样式 |
-| `clothing.shoes?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 鞋 |
-| `clothing.shoes.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
+| `clothing.shoes?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 鞋 |
+| `clothing.shoes.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
 | `clothing.shoes.style?` `string` | **`Description`** 鞋子样式 |
-| `clothing.upperCloth?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 上装 |
-| `clothing.upperCloth.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
+| `clothing.upperCloth?` `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 上装 |
+| `clothing.upperCloth.part?` `ArrayLike`<`{ `color?`: { `areaColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
 | `clothing.upperCloth.style?` `string` | **`Description`** 上装样式 |
-| `hair?` `{ `backHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  } ; `frontHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  }  } | **`Description`** 发型 |
-| `hair.backHair?` `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 后发 |
-| `hair.backHair.accessories?` `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
-| `hair.backHair.color?` `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
-| `hair.backHair.color.color?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
+| `hair?` `{ `backHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`` ; `design?`: ``{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  } ; `frontHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: ``{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  }  } | **`Description`** 发型 |
+| `hair.backHair?` `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 后发 |
+| `hair.backHair.accessories?` `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
+| `hair.backHair.color?` `{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
+| `hair.backHair.color.color?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
 | `hair.backHair.color.gradientArea?` `number` | **`Description`** 渐变区域 |
-| `hair.backHair.color.gradientColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
+| `hair.backHair.color.gradientColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
 | `hair.backHair.highlight?` `{ `highlightStyle?`: `string`  }` | **`Description`** 高光 |
 | `hair.backHair.highlight.highlightStyle?` `string` | **`Description`** 高光样式 |
 | `hair.backHair.style?` `string` | **`Description`** 样式 |
-| `hair.frontHair?` `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 前发 |
-| `hair.frontHair.accessories?` `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
-| `hair.frontHair.color?` `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
-| `hair.frontHair.color.color?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
+| `hair.frontHair?` `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 前发 |
+| `hair.frontHair.accessories?` `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
+| `hair.frontHair.color?` `{ `color?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
+| `hair.frontHair.color.color?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
 | `hair.frontHair.color.gradientArea?` `number` | **`Description`** 渐变区域 |
-| `hair.frontHair.color.gradientColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
+| `hair.frontHair.color.gradientColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
 | `hair.frontHair.highlight?` `{ `highlightStyle?`: `string`  }` | **`Description`** 高光 |
 | `hair.frontHair.highlight.highlightStyle?` `string` | **`Description`** 高光样式 |
 | `hair.frontHair.style?` `string` | **`Description`** 样式 |
@@ -313,48 +275,48 @@ export default class CharacterStyleExample extends Script {
 | `headFeatures.nose.overall?` `{ `noseOverallFrontalShift?`: `number` ; `noseOverallVerticalShift?`: `number`  }` | **`Description`** 整体 |
 | `headFeatures.nose.overall.noseOverallFrontalShift?` `number` | **`Description`** 鼻子整体前后移动 |
 | `headFeatures.nose.overall.noseOverallVerticalShift?` `number` | **`Description`** 鼻子整体上下移动 |
-| `makeup?` `{ `blush?`: { `blushColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `blushStyle?`: `string`  }` ; `bodyDecal?`: `ArrayLike`<``{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }``\> ; `coloredContacts?`: `{ `decal?`: { `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` ; `highlight?`: `{ `lowerHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` ; `style?`: `{ `leftPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`  } ; `eyeShadow?`: `{ `eyeshadowStyle?`: `string` ; `eyeshaowColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `eyebrows?`: `{ `eyebrowColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `eyebrowStyle?`: `string`  }` ; `eyelashes?`: `{ `eyelashColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `eyelashStyle?`: `string`  }` ; `faceDecal?`: `ArrayLike`<``{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }``\> ; `headDecal?`: `{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalStyle?`: `string`  }` ; `lipstick?`: `{ `lipstickColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `lipstickStyle?`: `string`  }` ; `skinTone?`: `{ `skinColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`  } | **`Description`** 化妆 |
-| `makeup.blush?` `{ `blushColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `blushStyle?`: `string`  }` | **`Description`** 腮红 |
-| `makeup.blush.blushColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 腮红颜色 |
+| `makeup?` `{ `blush?`: { `blushColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `blushStyle?`: `string`  }` ; `bodyDecal?`: `ArrayLike`<``{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }``\> ; `coloredContacts?`: `{ `decal?`: { `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` ; `highlight?`: `{ `lowerHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` ; `style?`: `{ `leftPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`  } ; `eyeShadow?`: `{ `eyeshadowStyle?`: `string` ; `eyeshaowColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` ; `eyebrows?`: `{ `eyebrowColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `eyebrowStyle?`: `string`  }` ; `eyelashes?`: `{ `eyelashColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `eyelashStyle?`: `string`  }` ; `faceDecal?`: `ArrayLike`<``{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }``\> ; `headDecal?`: `{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalStyle?`: `string`  }` ; `lipstick?`: `{ `lipstickColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `lipstickStyle?`: `string`  }` ; `skinTone?`: `{ `skinColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`  } | **`Description`** 化妆 |
+| `makeup.blush?` `{ `blushColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `blushStyle?`: `string`  }` | **`Description`** 腮红 |
+| `makeup.blush.blushColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 腮红颜色 |
 | `makeup.blush.blushStyle?` `string` | **`Description`** 腮红样式 |
-| `makeup.bodyDecal?` `ArrayLike`<`{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }`\> | **`Description`** 身体贴花 |
-| `makeup.coloredContacts?` `{ `decal?`: { `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` ; `highlight?`: `{ `lowerHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` ; `style?`: `{ `leftPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`  } | **`Description`** 美瞳 |
-| `makeup.coloredContacts.decal?` `{ `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` | **`Description`** 贴花 |
-| `makeup.coloredContacts.decal.pupilColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色 |
+| `makeup.bodyDecal?` `ArrayLike`<`{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }`\> | **`Description`** 身体贴花 |
+| `makeup.coloredContacts?` `{ `decal?`: { `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` ; `highlight?`: `{ `lowerHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` ; `style?`: `{ `leftPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }`  } | **`Description`** 美瞳 |
+| `makeup.coloredContacts.decal?` `{ `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilHorizontalPosition?`: `number` ; `pupilSizeScale?`: `number` ; `pupilStyle?`: `string` ; `pupilVerticalPosition?`: `number`  }` | **`Description`** 贴花 |
+| `makeup.coloredContacts.decal.pupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色 |
 | `makeup.coloredContacts.decal.pupilHorizontalPosition?` `number` | **`Description`** 瞳孔左右位置 |
 | `makeup.coloredContacts.decal.pupilSizeScale?` `number` | **`Description`** 瞳孔大小缩放 |
 | `makeup.coloredContacts.decal.pupilStyle?` `string` | **`Description`** 瞳孔样式 |
 | `makeup.coloredContacts.decal.pupilVerticalPosition?` `number` | **`Description`** 瞳孔上下位置 |
-| `makeup.coloredContacts.highlight?` `{ `lowerHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` | **`Description`** 高光 |
-| `makeup.coloredContacts.highlight.lowerHighlightColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 下高光颜色 |
+| `makeup.coloredContacts.highlight?` `{ `lowerHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `lowerHighlightStyle?`: `string` ; `upperHighlightColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `upperHighlightStyle?`: `string`  }` | **`Description`** 高光 |
+| `makeup.coloredContacts.highlight.lowerHighlightColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 下高光颜色 |
 | `makeup.coloredContacts.highlight.lowerHighlightStyle?` `string` | **`Description`** 下高光样式 |
-| `makeup.coloredContacts.highlight.upperHighlightColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 上高光颜色 |
+| `makeup.coloredContacts.highlight.upperHighlightColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 上高光颜色 |
 | `makeup.coloredContacts.highlight.upperHighlightStyle?` `string` | **`Description`** 上高光样式 |
-| `makeup.coloredContacts.style?` `{ `leftPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 样式 |
-| `makeup.coloredContacts.style.leftPupilColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 左瞳孔颜色，二次元风格生效 |
-| `makeup.coloredContacts.style.pupilColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色, 除二次元以外风格生效 |
+| `makeup.coloredContacts.style?` `{ `leftPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `pupilStyle?`: `string` ; `rightPupilColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 样式 |
+| `makeup.coloredContacts.style.leftPupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 左瞳孔颜色，二次元风格生效 |
+| `makeup.coloredContacts.style.pupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色, 除二次元以外风格生效 |
 | `makeup.coloredContacts.style.pupilStyle?` `string` | **`Description`** 瞳孔样式 |
-| `makeup.coloredContacts.style.rightPupilColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 右瞳孔颜色，二次元风格生效 |
-| `makeup.eyeShadow?` `{ `eyeshadowStyle?`: `string` ; `eyeshaowColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 眼影 |
+| `makeup.coloredContacts.style.rightPupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 右瞳孔颜色，二次元风格生效 |
+| `makeup.eyeShadow?` `{ `eyeshadowStyle?`: `string` ; `eyeshaowColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 眼影 |
 | `makeup.eyeShadow.eyeshadowStyle?` `string` | **`Description`** 眼影样式 |
-| `makeup.eyeShadow.eyeshaowColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 眼影颜色 |
-| `makeup.eyebrows?` `{ `eyebrowColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `eyebrowStyle?`: `string`  }` | **`Description`** 眉毛 |
-| `makeup.eyebrows.eyebrowColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 眉毛颜色 |
+| `makeup.eyeShadow.eyeshaowColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 眼影颜色 |
+| `makeup.eyebrows?` `{ `eyebrowColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `eyebrowStyle?`: `string`  }` | **`Description`** 眉毛 |
+| `makeup.eyebrows.eyebrowColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 眉毛颜色 |
 | `makeup.eyebrows.eyebrowStyle?` `string` | **`Description`** 眉毛样式 |
-| `makeup.eyelashes?` `{ `eyelashColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `eyelashStyle?`: `string`  }` | **`Description`** 睫毛 |
-| `makeup.eyelashes.eyelashColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 睫毛颜色 |
+| `makeup.eyelashes?` `{ `eyelashColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `eyelashStyle?`: `string`  }` | **`Description`** 睫毛 |
+| `makeup.eyelashes.eyelashColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 睫毛颜色 |
 | `makeup.eyelashes.eyelashStyle?` `string` | **`Description`** 睫毛样式 |
-| `makeup.faceDecal?` `ArrayLike`<`{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }`\> | **`Description`** 脸部贴花 |
-| `makeup.headDecal?` `{ `decalColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `decalStyle?`: `string`  }` | **`Description`** 头部贴花 |
-| `makeup.headDecal.decalColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 贴花颜色 |
+| `makeup.faceDecal?` `ArrayLike`<`{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalHorizontalShift?`: `number` ; `decalOverallRotation?`: `number` ; `decalOverallScale?`: `number` ; `decalStyle?`: `string` ; `decalVerticalShift?`: `number`  }`\> | **`Description`** 脸部贴花 |
+| `makeup.headDecal?` `{ `decalColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `decalStyle?`: `string`  }` | **`Description`** 头部贴花 |
+| `makeup.headDecal.decalColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 贴花颜色 |
 | `makeup.headDecal.decalStyle?` `string` | **`Description`** 贴花样式 |
-| `makeup.lipstick?` `{ `lipstickColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `lipstickStyle?`: `string`  }` | **`Description`** 口红 |
-| `makeup.lipstick.lipstickColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 口红颜色 |
+| `makeup.lipstick?` `{ `lipstickColor?`: `string`  [`LinearColor`](mw.LinearColor.md) ; `lipstickStyle?`: `string`  }` | **`Description`** 口红 |
+| `makeup.lipstick.lipstickColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 口红颜色 |
 | `makeup.lipstick.lipstickStyle?` `string` | **`Description`** 口红样式 |
-| `makeup.skinTone?` `{ `skinColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 肤色 |
-| `makeup.skinTone.skinColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
-| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\>  } | 插槽和物品 |
-| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\> | **`Description`** 插槽数据 |
+| `makeup.skinTone?` `{ `skinColor?`: `string`  [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 肤色 |
+| `makeup.skinTone.skinColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
+| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>  } | 插槽和物品 |
+| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\> | **`Description`** 插槽数据 |
 
 ___
 
@@ -365,9 +327,7 @@ ___
 基础人形对象外观配置类 与 advance 互斥
 
 <span style="font-size: 14px;">
-
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
-
 </span>
 
 ```ts

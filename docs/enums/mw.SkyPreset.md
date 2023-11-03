@@ -1,12 +1,8 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / SkyPreset
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / SkyPreset
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 
-<span class="content-big">
-
 天空盒预设枚举
-
-</span>
 
 ## Table of contents
 

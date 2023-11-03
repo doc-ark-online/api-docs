@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / ExpressionType
+[AVATAR](../groups/AVATAR.AVATAR.md) / ExpressionType
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 
-<span class="content-big">
-
 表情类型
-
-</span>
 
 ## Table of contents
 

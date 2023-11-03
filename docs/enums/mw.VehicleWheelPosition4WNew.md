@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / VehicleWheelPosition4WNew
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / VehicleWheelPosition4WNew
 
 # VehicleWheelPosition4WNew <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4WNew" />
 
-<span class="content-big">
-
 四轮载具车轮位置
-
-</span>
 
 ## Table of contents
 

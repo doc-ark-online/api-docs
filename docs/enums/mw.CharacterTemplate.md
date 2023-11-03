@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / CharacterTemplate
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterTemplate
 
 # CharacterTemplate <Badge type="tip" text="Enumeration" /> <Score text="CharacterTemplate" />
 
-<span class="content-big">
-
 角色体型
-
-</span>
 
 ## Table of contents
 

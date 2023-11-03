@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / ImpulseForceType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ImpulseForceType
 
 # ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 
-<span class="content-big">
-
 冲量力类型
-
-</span>
 
 ## Table of contents
 

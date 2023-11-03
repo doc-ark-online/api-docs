@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlateVisibility
+[UI](../groups/UI.UI.md) / SlateVisibility
 
 # SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 
-<span class="content-big">
-
 UI节点显示规则
-
-</span>
 
 ## Table of contents
 

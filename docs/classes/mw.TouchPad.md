@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TouchPad
+[UI](../groups/UI.UI.md) / TouchPad
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
-<span class="content-big">
-
 摄像机滑动区
-
-</span>
 
 ## Hierarchy
 
@@ -95,6 +91,7 @@
 
 
 ## Accessors
+
 ___
 
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
@@ -185,7 +182,6 @@ ___
 | `inScale` [`Vector2`](mw.Vector2.md) | 缩放值 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -193,6 +189,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / AssetIconData
+[UI](../groups/UI.UI.md) / AssetIconData
 
 # AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 
-<span class="content-big">
-
 资源ICON信息
-
-</span>
 
 ## Table of contents
 

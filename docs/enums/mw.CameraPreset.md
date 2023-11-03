@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraPreset
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraPreset
 
 # CameraPreset <Badge type="tip" text="Enumeration" /> <Score text="CameraPreset" />
 
-<span class="content-big">
-
 摄像机模式
-
-</span>
 
 ## Table of contents
 

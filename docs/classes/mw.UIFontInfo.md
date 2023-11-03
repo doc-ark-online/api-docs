@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIFontInfo
+[UI](../groups/UI.UI.md) / UIFontInfo
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
-<span class="content-big">
-
 字体信息
-
-</span>
 
 ## Table of contents
 

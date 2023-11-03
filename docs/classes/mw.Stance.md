@@ -1,54 +1,22 @@
-[ANIMATIONS](../groups/Core.ANIMATIONS.md) / Stance
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
-<span class="content-big">
-
 基础姿态
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 基础姿态包含了地面, 飞行和游泳的动画状态机。当你不进行任何修改直接进入游戏时, 角色的走跑跳等各种动作都是由它表现的。
-
-</span>
-
-<span class="content-big">
 
 基础姿态资源是一个外部资源,你可以在本地资源库中的基础姿态分类下查找并下载它们。
 
-</span>
-
-<span class="content-big">
-
 Stance 如何工作的呢？
-
-</span>
-
-<span class="content-big">
 
 - 想要播放基础姿态, 首先需要执行Character类中的 loadStance 方法。加载一个基础姿态对象。
 
-</span>
-
-<span class="content-big">
-
 - 可以修改这个基础姿态对象的一些属性, 调用 play 方法。基础姿态资源会在调用 play 时进行异步的下载加载。
 
-</span>
-
-<span class="content-big">
-
 - 想要停止一个基础姿态对象, 可以直接对基础姿态对象调用 stop。
-
-</span>
 
 ## Hierarchy
 
@@ -134,9 +102,7 @@ Stance 如何工作的呢？
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
-
 </span>
 
 ```ts
@@ -180,9 +146,7 @@ export default class Example_Stance_AimOffsetEnabled extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
-
 </span>
 
 ```ts
@@ -251,9 +215,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AssetId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
-
 </span>
 
 ```ts
@@ -320,9 +282,7 @@ export default class Example_Stance_AssetId extends Script {
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
-
 </span>
 
 ```ts
@@ -387,9 +347,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
-
 </span>
 
 ```ts

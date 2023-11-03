@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / WidgetSpaceMode
+[UI](../groups/UI.UI.md) / WidgetSpaceMode
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
-<span class="content-big">
-
 UI空间位置枚举
-
-</span>
 
 ## Table of contents
 

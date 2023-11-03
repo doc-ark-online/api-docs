@@ -2,11 +2,7 @@
 
 # ModuleS<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleS<T, S\>" />
 
-<span class="content-big">
-
 服务端模块的基类
-
-</span>
 
 ::: warning Precautions
 
@@ -15,9 +11,7 @@
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息
-
 </span>
 
 ```ts
@@ -119,9 +113,9 @@ class PlayerModuleData extends Subdata {
 | **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T`  |
 | :-----|
 | 获取"全部客户端"调用对象|
-| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T`  |
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number`  [`Player`](mw.Player.md)): `T`  |
 | 根据玩家获取"单客户端"调用对象|
-| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S`  |
+| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string`  `number`  [`Player`](mw.Player.md)): `S`  |
 | 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void`  |
 | 生命周期方法-创建模块时调用|
@@ -271,7 +265,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家id |
 | :------ | :------ |
 
 #### Returns
@@ -290,7 +284,7 @@ ___
 
 #### Parameters
 
-| `player` `string` \| `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家userId\|目标玩家instanceId |
+| `player` `string`  `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家userId目标玩家instanceId |
 | :------ | :------ |
 
 #### Returns

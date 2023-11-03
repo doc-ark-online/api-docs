@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / DispatchEventResult
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / DispatchEventResult
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 
-<span class="content-big">
-
 事件发送的结果
-
-</span>
 
 ## Table of contents
 

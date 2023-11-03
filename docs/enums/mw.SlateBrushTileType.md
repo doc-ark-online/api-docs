@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlateBrushTileType
+[UI](../groups/UI.UI.md) / SlateBrushTileType
 
 # SlateBrushTileType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushTileType" />
 
-<span class="content-big">
-
 图片画刷填充模式
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIHugContentVertically
+[UI](../groups/UI.UI.md) / UIHugContentVertically
 
 # UIHugContentVertically <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentVertically" />
 
-<span class="content-big">
-
 自动布局容器垂直适应规则
-
-</span>
 
 ## Table of contents
 

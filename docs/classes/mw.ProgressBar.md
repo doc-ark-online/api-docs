@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ProgressBar
+[UI](../groups/UI.UI.md) / ProgressBar
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
-<span class="content-big">
-
 UI进度条
-
-</span>
 
 ## Hierarchy
 
@@ -143,6 +139,7 @@ UI进度条
 
 
 ## Accessors
+
 ___
 
 ### backgroundImageColor <Score text="backgroundImageColor" /> 
@@ -1344,7 +1341,6 @@ ___
 | `inSize` [`Vector2`](mw.Vector2.md) | 滑块图片大小 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1352,6 +1348,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

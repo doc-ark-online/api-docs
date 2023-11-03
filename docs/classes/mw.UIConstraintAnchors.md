@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIConstraintAnchors
+[UI](../groups/UI.UI.md) / UIConstraintAnchors
 
 # UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
 
-<span class="content-big">
-
 节点对齐规则
-
-</span>
 
 ## Table of contents
 

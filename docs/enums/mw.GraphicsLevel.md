@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / GraphicsLevel
+[TYPE](../groups/TYPE.TYPE.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 
-<span class="content-big">
-
 画质等级
-
-</span>
 
 ## Table of contents
 

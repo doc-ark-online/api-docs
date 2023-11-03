@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / MessageChannelReceiver
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / MessageChannelReceiver
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 
-<span class="content-big">
-
 枚举各个通道的使用与接收方
-
-</span>
 
 ## Table of contents
 

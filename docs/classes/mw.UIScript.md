@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIScript
+[UI](../groups/UI.UI.md) / UIScript
 
 # UIScript <Badge type="tip" text="Class" /> <Score text="UIScript" />
 
-<span class="content-big">
-
 UI的驱动脚本基类
-
-</span>
 
 ## Hierarchy
 
@@ -49,7 +45,7 @@ UI的驱动脚本基类
 | 创建DragDrop事件|
 | **[remove](mw.UIScript.md#remove)**(): `void`  |
 | 移除UI对象|
-| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean` \, `...params`: `any`[]): `void`  |
+| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void`  |
 | 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void`  |
 | 添加一个全局的行为记录|
@@ -191,9 +187,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
-
 </span>
 
 ```ts
@@ -211,9 +205,7 @@ mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级�
 ]
 ```
 <span style="font-size: 14px;">
-
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
-
 </span>
 
 ```ts
@@ -453,7 +445,7 @@ ___
 
 #### Parameters
 
-| `inVisible` `boolean` \| [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
+| `inVisible` `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
 | :------ | :------ |
 | `...params` `any`[] |  传递给onShow的参数 |
 

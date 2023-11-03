@@ -1,102 +1,38 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / AdvancedVehicle
+[玩法](../groups/玩法.玩法.md) / AdvancedVehicle
 
 # AdvancedVehicle <Badge type="tip" text="Class" /> <Score text="AdvancedVehicle" />
 
-<span class="content-big">
-
 四轮载具
-
-</span>
-
-<span class="content-big">
 
 四轮载具是指模拟四个车轮的交通工具，例如汽车、卡车等。它们被设计成能够在游戏中自由移动、加速和转向，给玩家带来真实的驾驶体验。
 
-</span>
-
-<span class="content-big">
-
 四轮载具通过模拟真实的物理来提供逼真的驾驶感觉。它们会考虑到车辆的重量、引擎的动力、车轮的摩擦力等因素。当你加速时，引擎会产生动力，四个轮子会转动，并且车辆会加速。当你转动方向时，车辆会根据轮子的转向角度来改变方向。
-
-</span>
-
-<span class="content-big">
 
 1. 载具由什么组成的呢 ？
 
-</span>
-
-<span class="content-big">
-
 载具模型简单来说可以总结为车身 + 轮胎 + 弹簧的模型。
-
-</span>
-
-<span class="content-big">
 
 - 车身位置额外存在一个带有一定偏移的质心（质量中心简称质心，指物质系统上被认为质量集中于此的一个假想点。）属性，表示整个车的刚体质量中心；
 
-</span>
-
-<span class="content-big">
-
 - 轮胎也就是车身下面不考虑自身质量的物体，每个轮胎相较于车身的质心也有一个偏移值；
-
-</span>
-
-<span class="content-big">
 
 - 弹簧指的是轮胎将车身承载起来的效果，也就是将现实载具的悬浮功能转化为一个弹簧模型。
 
-</span>
-
-<span class="content-big">
-
 车身主要用于储存基础属性，包括质量、车辆骨骼模型、车辆形状等；轮胎主要负责计算轮胎力，也就是与地面平行的平面上的力，包括横向力与纵向力；弹簧则主要负责计算垂直于地面的悬浮力，实现跟现实载具一样的效果。
-
-</span>
-
-<span class="content-big">
 
 在车辆行驶的过程中，轮胎力是主要贡献：轮胎的纵向力使得车辆能够前进，而轮胎的横向力让车辆能够正常的转弯。悬浮力的主要功能是让车辆不会掉到地上，而是“飘”在空中，也就像是分摊承载着车辆的重量；并且在车辆有加减速或是转弯等总加速度会产生让车身倾斜的扭矩的情况下，能够正常表现出“颠簸”的感觉。
 
-</span>
-
-<span class="content-big">
-
 2. 载具如何使用呢 ？
-
-</span>
-
-<span class="content-big">
 
 左侧栏从逻辑对象列表直接用鼠标拖一个高级轮式载具对象进入场景或对象管理器，即可生成一个四轮载具；当然你也可以动态生成一个载具逻辑对象。
 
-</span>
-
-<span class="content-big">
-
 高级轮式载具会自带一个触发器和一个交互物逻辑对象。用来触发交互事件，并绑定交互对象及开车动画。运行时进入触发器范围即可开启驾驶模式。WASD控制车身行驶，F下车。
-
-</span>
-
-<span class="content-big">
 
 3. 如何DIY自己的车辆 ？
 
-</span>
-
-<span class="content-big">
-
 在左侧栏中搜索车辆模型及挂件，放入高级轮式载具子级。
 
-</span>
-
-<span class="content-big">
-
 点击高级轮式载具属性面板，在载具属性动力轮组中绑定车轮吸附车轮模型。
-
-</span>
 
 ::: warning Precautions
 
@@ -108,9 +44,7 @@
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 通过脚本动态创建载具并绑定控制逻辑。创建一个名为"VehicleExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。按下 Q 键创建载具，走到触发器范围自动上车，WASD 进行驾驶，F 键下车。代码如下:
-
 </span>
 
 ```ts
@@ -221,7 +155,35 @@ export default class VehicleSample extends Script {
                 // 设置载具的驾驶员，此时开始模拟物理，可以驾驶。
                 this.vehicle.owner = chara.player;
                 // 调整一些参数。
-                this.adjustVehicleParams();
+                const handle_press_one = InputUtil.onKeyDown(Keys.One, () => {
+                    // 按下 1 调整载具质量
+                    this.adjustVehicleMass();
+                });
+                this.ControlEventsHandle.push(handle_press_one);
+
+                const handle_press_two = InputUtil.onKeyDown(Keys.Two, () => {
+                    // 按下 2 调整载具摩擦力系数
+                    this.adjustVehicleFriction();
+                });
+                this.ControlEventsHandle.push(handle_press_two);
+
+                const handle_press_three = InputUtil.onKeyDown(Keys.Three, () => {
+                    // 按下 3 调整载具发动机最大转速
+                    this.adjustVehicleMaxEngineRPM();
+                });
+                this.ControlEventsHandle.push(handle_press_three);
+
+                const handle_press_four = InputUtil.onKeyDown(Keys.Four, () => {
+                    // 按下 4 调整载具加速度
+                    this.adjustVehicleAcceleration();
+                });
+                this.ControlEventsHandle.push(handle_press_four);
+
+                const handle_press_five = InputUtil.onKeyDown(Keys.Five, () => {
+                    // 按下 5 调整载具制动力矩
+                    this.adjustVehicleBrakingTorque();
+                });
+                this.ControlEventsHandle.push(handle_press_five);
 
                 this.VehicleKeyEvents();
             }
@@ -308,10 +270,49 @@ export default class VehicleSample extends Script {
         this.controlEventsHandle = [];
     }
 
-    // 调整载具参数。
-    private adjustVehicleParams(): void {
-        // 将质量从 1500 改成 10000 Kg。
-        this.vehicle.mass = 10000;
+    // 调整载具质量（1500与10000来回切换）。
+    private adjustVehicleMass(): void {
+        if (this.vehicle.mass == 1500) {
+            this.vehicle.mass = 10000;
+        } else {
+            this.vehicle.mass = 1500;
+        }
+    }
+
+    // 调整载具摩擦力系数（0.01与3来回切换）。
+    private adjustVehicleFriction(): void {
+        if (this.vehicle.friction == 3) {
+            this.vehicle.friction = 0.01;
+        } else {
+            this.vehicle.friction = 3;
+        }
+    }
+
+    // 调整载具发动机最大转速（1000与6000来回切换）。
+    private adjustVehicleMaxEngineRPM(): void {
+        if (this.vehicle.maxEngineRPM == 6000) {
+            this.vehicle.maxEngineRPM = 1000;
+        } else {
+            this.vehicle.maxEngineRPM = 6000;
+        }
+    }
+
+    // 调整载具加速度（0.1与1来回切换）。
+    private adjustVehicleAcceleration(): void {
+        if (this.vehicle.acceleration == 1) {
+            this.vehicle.acceleration = 0.1;
+        } else {
+            this.vehicle.acceleration = 1;
+        }
+    }
+
+    // 调整载具制动力矩（0与1500来回切换）。
+    private adjustVehicleBrakingTorque(): void {
+        if (this.vehicle.brakingTorque == 1500) {
+            this.vehicle.brakingTorque = 0;
+        } else {
+            this.vehicle.brakingTorque = 1500;
+        }
     }
 }
 ```
@@ -336,21 +337,23 @@ export default class VehicleSample extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[brakingTorque](mw.AdvancedVehicle.md#brakingtorque)**(): `number`  |
+| **[acceleration](mw.AdvancedVehicle.md#acceleration)**(): `number`  |
 | :-----|
-| 获取当前制动力矩，单位：牛*米（N*m）。|
+| 设置加速度。|
+| **[brakingTorque](mw.AdvancedVehicle.md#brakingtorque)**(): `number`  |
+| 设置制动力矩。单位：牛*米（N*m）|
 | **[currentGearLevel](mw.AdvancedVehicle.md#currentgearlevel)**(): `number`  |
 | 设置当前档位级别。|
 | **[driveMode](mw.AdvancedVehicle.md#drivemode)**(): [`VehicleDriveMode4WNew`](../enums/mw.VehicleDriveMode4WNew.md)  |
 | 获取载具驱动模式。|
 | **[friction](mw.AdvancedVehicle.md#friction)**(): `number`  |
-| 获取载具摩擦力系数。|
+| 设置载具车轮摩擦力系数|
 | **[handbrakeInputEnable](mw.AdvancedVehicle.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void`  |
 | 是否进行手刹，true-进行制动, false-取消制动。|
 | **[mass](mw.AdvancedVehicle.md#mass)**(): `number`  |
 | 设置载具质量，单位：千克（kg）。|
 | **[maxEngineRPM](mw.AdvancedVehicle.md#maxenginerpm)**(): `number`  |
-| 获取最大发动机转速，单位：转/分（r/min）。|
+| 设置最大发动机转速。单位：转/分（r/min）|
 | **[maxGearLevel](mw.AdvancedVehicle.md#maxgearlevel)**(): `number`  |
 | 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
 | **[owner](mw.AdvancedVehicle.md#owner)**(`inOwner`: [`Player`](mw.Player.md)): `void`  |
@@ -407,15 +410,23 @@ export default class VehicleSample extends Script {
 | 获取车轮半径，单位：厘米（cm）。|
 | **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void`  |
 | 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
+| **[setWheelRadius](mw.AdvancedVehicle.md#setwheelradius)**(`wheelId`: `number`, `Radius`: `number`): `void`  |
+| 设置车轮半径，单位：厘米（cm）。|
 
 
 ::: details 点击查看继承
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
 | 复制对象|
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`  |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
@@ -434,15 +445,13 @@ export default class VehicleSample extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -468,6 +477,57 @@ export default class VehicleSample extends Script {
 ## Properties
 
 ## Accessors
+
+### acceleration <Score text="acceleration" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **acceleration**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **acceleration**(`acceleration`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取加速度。
+
+
+#### Returns
+
+| `number` | 载具发动机转速 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置加速度。
+
+
+**`Range`**
+
+[0.01, 100]
+
+#### Parameters
+
+| `acceleration` `number` |  新的载具发动机转速 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
 ___
 
 ### brakingTorque <Score text="brakingTorque" /> 
@@ -479,12 +539,17 @@ ___
 • `get` **brakingTorque**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **brakingTorque**(`Torque`): `void`
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
 
 
-获取当前制动力矩，单位：牛*米（N*m）。
+获取制动力矩。单位：牛*米（N*m）
 
 **`Info`**
 
@@ -495,6 +560,27 @@ ___
 
 | `number` | 当前制动力矩 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置制动力矩。单位：牛*米（N*m）
+
+**`Effect`**
+
+
+**`Range`**
+
+[0, 1000000]
+
+#### Parameters
+
+| `Torque` `number` |  新的制动力矩 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -598,6 +684,11 @@ ___
 • `get` **friction**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **friction**(`friction`): `void` <Badge type="tip" text="client" />
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
@@ -610,6 +701,25 @@ ___
 
 | `number` | 载具摩擦力系数 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置载具车轮摩擦力系数
+
+
+**`Range`**
+
+[0.01, 8]
+
+#### Parameters
+
+| `friction` `number` |  新的摩擦力系数 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -721,18 +831,42 @@ ___
 • `get` **maxEngineRPM**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **maxEngineRPM**(`RPM`): `void` <Badge type="tip" text="client" />
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
 
 
-获取最大发动机转速，单位：转/分（r/min）。
+获取最大发动机转速。单位：转/分（r/min）
 
 
 #### Returns
 
 | `number` | 载具发动机转速 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置最大发动机转速。单位：转/分（r/min）
+
+
+**`Range`**
+
+[100, 5000000]
+
+#### Parameters
+
+| `RPM` `number` |  新的载具发动机转速 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -881,9 +1015,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 用按钮和摇杆控制载具
-
 </span>
 
 ```ts
@@ -947,9 +1079,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 用按钮和摇杆控制载具
-
 </span>
 
 ```ts
@@ -1019,14 +1149,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| `number` | 车轮数量 |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### gearDown <Score text="gearDown" /> 
@@ -1165,3 +1296,25 @@ ___
 ::: warning Precautions
 
 最终的裁剪距离会和画质等级有关
+
+:::
+
+___
+
+### setWheelRadius <Score text="setWheelRadius" /> 
+
+• **setWheelRadius**(`wheelId`, `Radius`): `void` 
+
+设置车轮半径，单位：厘米（cm）。
+
+#### Parameters
+
+| `wheelId` `number` |  根据序号指定车轮 |
+| :------ | :------ |
+| `Radius` `number` |  指定车轮半径 |
+
+
+
+::: warning Precautions
+
+注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。仅在上车前生效，上车后调用此接口无效果。

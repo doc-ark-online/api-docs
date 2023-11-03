@@ -177,6 +177,8 @@ mw
 | 音效播放状态|
 | [StanceBlendMode](../enums/mw.StanceBlendMode.md)  |
 | 姿态混合模式|
+| [TeleportStatus](../enums/mw.TeleportStatus.md)  |
+| 传送状态|
 | [TextCommit](../enums/mw.TextCommit.md)  |
 | 输入提交模式|
 | [TextJustify](../enums/mw.TextJustify.md)  |
@@ -252,10 +254,6 @@ mw
 | 控制一些优化项的开启关闭|
 | [BlockingVolume](../classes/mw.BlockingVolume.md)  |
 | 禁行区|
-| [BubbleUI](../classes/mw.BubbleUI.md)  |
-| 聊天头顶ui|
-| [BubbleUIManager](../classes/mw.BubbleUIManager.md)  |
-| 聊天头顶ui|
 | [Button](../classes/mw.Button.md)  |
 | 按钮,无默认text|
 | [Camera](../classes/mw.Camera.md)  |
@@ -270,12 +268,12 @@ mw
 | 人形外观配置|
 | [CharacterEvent](../classes/mw.CharacterEvent.md)  |
 | 角色输入事件|
-| [ChatBubble](../classes/mw.ChatBubble.md)  |
-| 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |
 | 颜色选择器|
+| [Component](../classes/mw.Component.md)  |
+| :----- |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
 | 屏幕坐标转换结果|
 | [DataStorage](../classes/mw.DataStorage.md)  |
@@ -417,7 +415,9 @@ mw
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
 | 屏幕视口工具|
 | [Script](../classes/mw.Script.md)  |
-| 脚本管理|
+| 脚本的基类|
+| [ScriptManager](../classes/mw.ScriptManager.md)  |
+| 脚本管理类|
 | [ScriptingSettings](../classes/mw.ScriptingSettings.md)  |
 | 全局的脚本配置信息|
 | [ScrollBox](../classes/mw.ScrollBox.md)  |
@@ -450,10 +450,14 @@ mw
 | 状态信息获取工具|
 | [TabGroup](../classes/mw.TabGroup.md)  |
 | 选项卡组|
+| [TeleportService](../classes/mw.TeleportService.md)  |
+| 多场景和传送服务|
 | [TextBlock](../classes/mw.TextBlock.md)  |
 | UI文本|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
+| [TouchInputUtil](../classes/mw.TouchInputUtil.md)  |
+| 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开)|
 | [TouchPad](../classes/mw.TouchPad.md)  |
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |
@@ -519,6 +523,12 @@ mw
 | HTTP请求信息的对象|
 | [Response](../interfaces/mw.Response.md)  |
 | HTTP响应信息的对象|
+| [RoomInfo](../interfaces/mw.RoomInfo.md)  |
+| 玩家所在的房间信息|
+| [TeleportOptions](../interfaces/mw.TeleportOptions.md)  |
+| 传送时可额外提供的信息|
+| [TeleportResult](../interfaces/mw.TeleportResult.md)  |
+| 传送请求的结果|
 | [TypeName](../interfaces/mw.TypeName.md)  |
 | 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 
@@ -582,6 +592,8 @@ mw
 | 选项卡组-点击事件type|
 | **[TeamMatchFailureInfo](Core.mw.md#teammatchfailureinfo)**: `Object`  |
 | 组队跳游戏请求失败回调|
+| **[TeleportData](Core.mw.md#teleportdata)**: `string`  `string`[]  `Record`<`string`, `any`\>  `Record`<`string`, `any`\>[]  |
+| 传送时可携带的数据类型|
 | **[TransactionType](Core.mw.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void`  |
 | 商城通信回调消息格式|
 | **[TweenEasingFunction](Core.mw.md#tweeneasingfunction)**: (`amount`: `number`) => `number`  |
@@ -644,7 +656,7 @@ mw
 | **[Property](Core.mw.md#property)**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void`  |
 | :-----|
 | 属性支持同步|
-| **[RemoteFunction](Core.mw.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void`  |
+| **[RemoteFunction](Core.mw.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`, `descriptor`: `PropertyDescriptor`) => `void`  |
 | 函数支持Rpc调用|
 | **[Serializable](Core.mw.md#serializable)**<`T`: extends `ConstructorType`\>(`type`: `T`): `T`: extends `ConstructorType`  |
 | 类型支持属性同步|
@@ -656,6 +668,8 @@ mw
 | 异步请求资源的ICON信息|
 | **[asyncCaptureAvatar](Core.mw.md#asynccaptureavatar)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\>  |
 | 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[asyncCaptureAvatarMSAA](Core.mw.md#asynccaptureavatarmsaa)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `SampleCount`: `number`, `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\>  |
+| 异步对指定虚拟角色进行截取(开启MSAA)，截图保存在本地固定路径下|
 | **[asyncGetQualityGameList](Core.mw.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\>  |
 | 获取优质作品列表|
 | **[asyncGetReleaseGameData](Core.mw.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`, `bDownload?`: `boolean`): `Promise`<[`ReleaseGameData`](Core.mw.md#releasegamedata)\>  |
@@ -674,6 +688,8 @@ mw
 | 中断所有的DragDrop|
 | **[captureAvatar](Core.mw.md#captureavatar)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void`  |
 | 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[captureAvatarMSAA](Core.mw.md#captureavatarmsaa)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `SampleCount`: `number`, `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void`  |
+| 模拟MSAA对指定虚拟角色截取图像，截图保存在本地固定路径下|
 | **[clearUselessLocalMaterials](Core.mw.md#clearuselesslocalmaterials)**(`IgnoreMatGuids?`: `string`[]): `void`  |
 | 清除项目中没有引用的本地材质资源|
 | **[convertScreenLocationToWorldSpace](Core.mw.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md)  |
@@ -706,6 +722,8 @@ mw
 | 获取当前鼠标所在的绝对位置|
 | **[getDragDroppingContent](Core.mw.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/mw.DragDropOperation.md)  |
 | 获取当前的DragDrop事件|
+| **[getGameTransmissionData](Core.mw.md#getgametransmissiondata)**(): `string`  |
+| 蓝军自定义启动参数，每个游戏可以是不一样的，推荐使用一个JSON字符串|
 | **[getGizmo](Core.mw.md#getgizmo)**(): [`Gizmo`](../classes/mw.Gizmo.md)  |
 | 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](Core.mw.md#getheadsculpture)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void`  |
@@ -1331,7 +1349,7 @@ ___
 
 | `bDownloaded` `boolean` | 是否已下载到本地 |
 | :------ | :------ |
-| `gameCover` `string` | (bDownloaded=true:本地文件路径\|bDownloaded=false:服务器URL) |
+| `gameCover` `string` | (bDownloaded=true:本地文件路径bDownloaded=false:服务器URL) |
 | `gameName` `string` | 游戏名称 |
 
 ___
@@ -1418,6 +1436,14 @@ ___
 | `failedReason` `string` | 失败原因 |
 | :------ | :------ |
 | `playerIds` `number`[] | 组队玩家的playerId数组 |
+
+___
+
+### TeleportData <Score text="TeleportData" /> 
+
+Ƭ **TeleportData**: `string`  `string`[]  `Record`<`string`, `any`\>  `Record`<`string`, `any`\>[]
+
+传送时可携带的数据类型
 
 ___
 
@@ -1821,7 +1847,7 @@ ___
 
 ### RemoteFunction <Score text="RemoteFunction" /> 
 
-• **RemoteFunction**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+• **RemoteFunction**(`...options`): (`target`: `unknown`, `propertyKey`: `string`, `descriptor`: `PropertyDescriptor`) => `void` 
 
 函数支持Rpc调用
 
@@ -1932,6 +1958,32 @@ ___
 | `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
 | `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
 | `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
+| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` `number` |  视场; |
+| `fileName` `string` |  文件名 |
+
+#### Returns
+
+| `Promise`<`string`\> | 生成的截图的本地绝对路径 |
+| :------ | :------ |
+
+___
+
+### asyncCaptureAvatarMSAA <Score text="asyncCaptureAvatarMSAA" /> 
+
+• **asyncCaptureAvatarMSAA**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `SampleCount`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+异步对指定虚拟角色进行截取(开启MSAA)，截图保存在本地固定路径下
+
+
+#### Parameters
+
+| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
+| :------ | :------ |
+| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
+| `SampleCount` `number` |  MSAA采样, 推荐设置为4(移动)或8(桌面) |
 | `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
 | `fov` `number` |  视场; |
 | `fileName` `string` |  文件名 |
@@ -2099,6 +2151,35 @@ ___
 | `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
 | `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
 | `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
+| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` `number` |  视场; |
+| `fileName` `string` |  文件名 |
+| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+___
+
+### captureAvatarMSAA <Score text="captureAvatarMSAA" /> 
+
+• **captureAvatarMSAA**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `SampleCount`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
+
+模拟MSAA对指定虚拟角色截取图像，截图保存在本地固定路径下
+
+
+::: warning Precautions
+
+后处理(曝光，色调映射等)对抗锯齿截图效果影响较大
+
+:::
+
+#### Parameters
+
+| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
+| :------ | :------ |
+| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
+| `SampleCount` `number` |  MSAA采样, 推荐设置为4(移动)或8(桌面) |
 | `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
 | `fov` `number` |  视场; |
 | `fileName` `string` |  文件名 |
@@ -2328,9 +2409,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:发送Http请求
-
 </span>
 
 ```ts
@@ -2415,6 +2494,20 @@ ___
 #### Returns
 
 | [`DragDropOperation`](../classes/mw.DragDropOperation.md) | 返回当前的DragDrop事件 |
+| :------ | :------ |
+
+___
+
+### getGameTransmissionData <Score text="getGameTransmissionData" /> 
+
+• **getGameTransmissionData**(): `string` <Badge type="tip" text="client" />
+
+蓝军自定义启动参数，每个游戏可以是不一样的，推荐使用一个JSON字符串
+
+
+#### Returns
+
+| `string` | 自定义启动参数的字符串形式 |
 | :------ | :------ |
 
 ___
@@ -2570,14 +2663,12 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts
-@Core.Class
-export default class NewScript extends mw.Script {
+@Component
+export default class NewScript extends Script {
   //当脚本被实例后，会在第一帧更新前调用此函数
   protected onStart(): void {
     //获取当前用户上传的所有的预制体
@@ -3449,14 +3540,12 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts
-@Core.Class
-export default class NewScript extends mw.Script {
+@Component
+export default class NewScript extends Script {
   //当脚本被实例后，会在第一帧更新前调用此函数
   protected onStart(): void {
     //把guid='23C1ED241027B9E0'的预制体上传到服务器上，预制体的名字=我的预制体，缩略图=C:/icon.png

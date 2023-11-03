@@ -2,11 +2,7 @@
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
-<span class="content-big">
-
 面板类的基类，可用于控制一个界面
-
-</span>
 
 ::: warning Precautions
 
@@ -92,6 +88,7 @@
 [BaseView](mwext.BaseView.md).[constructor](mwext.BaseView.md#constructor)
 
 ## Accessors
+
 ___
 
 ### size <Score text="size" /> 
@@ -158,14 +155,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| `T` |  |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### onAdded <Score text="onAdded" /> 

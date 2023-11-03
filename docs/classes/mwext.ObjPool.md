@@ -2,16 +2,10 @@
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
-<span class="content-big">
-
 通用对象池，可用于各种类型对象的复用
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会在玩家当前位置按照对象池中已有方块生成一个方块并在5秒后进行回收坐标回归到原点,频繁按F客户端日志会提示对象池中没有对象，按G键会销毁所有处于回收状态方块
-
 </span>
 
 ```ts

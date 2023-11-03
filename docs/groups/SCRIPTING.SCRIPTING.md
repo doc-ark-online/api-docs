@@ -7,7 +7,8 @@ SCRIPTING
 | :-----|
 | [Event](../classes/mw.Event.md) <br> 事件 |
 | [EventListener](../classes/mw.EventListener.md) <br> 事件监听器 |
-| [Script](../classes/mw.Script.md) <br> 脚本管理 |
+| [Script](../classes/mw.Script.md) <br> 脚本的基类 |
+| [ScriptManager](../classes/mw.ScriptManager.md) <br> 脚本管理类 |
 
 
 | Enums |

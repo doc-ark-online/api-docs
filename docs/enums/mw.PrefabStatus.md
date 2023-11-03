@@ -1,12 +1,8 @@
-[DATATYPE](../groups/Core.DATATYPE.md) / PrefabStatus
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / PrefabStatus
 
 # PrefabStatus <Badge type="tip" text="Enumeration" /> <Score text="PrefabStatus" />
 
-<span class="content-big">
-
 预制体审核状态
-
-</span>
 
 ## Table of contents
 

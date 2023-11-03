@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / MoveControlMode
+[AVATAR](../groups/AVATAR.AVATAR.md) / MoveControlMode
 
 # MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 
-<span class="content-big">
-
 移动控制模式
-
-</span>
 
 ## Table of contents
 

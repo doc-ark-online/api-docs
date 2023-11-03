@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / MaskButton
+[UI](../groups/UI.UI.md) / MaskButton
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 
-<span class="content-big">
-
 遮罩
-
-</span>
 
 ## Hierarchy
 
@@ -193,6 +189,7 @@
 
 
 ## Accessors
+
 ___
 
 ### circleCenter <Score text="circleCenter" /> 
@@ -2061,7 +2058,6 @@ ___
 | `inUseWeight` `boolean` | 是否裁剪 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -2069,6 +2065,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

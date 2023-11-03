@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / EventListener
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / EventListener
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
-<span class="content-big">
-
 事件监听器
-
-</span>
 
 ## Table of contents
 

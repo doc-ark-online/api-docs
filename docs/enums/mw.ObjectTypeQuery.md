@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / ObjectTypeQuery
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ObjectTypeQuery
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 
-<span class="content-big">
-
 碰撞检测通道
-
-</span>
 
 ## Table of contents
 

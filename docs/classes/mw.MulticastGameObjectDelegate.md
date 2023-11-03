@@ -1,17 +1,11 @@
-[TYPE](../groups/Core.TYPE.md) / MulticastGameObjectDelegate
+[TYPE](../groups/TYPE.TYPE.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
-<span class="content-big">
-
 广播代理
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"MultidelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 5 。
-
 </span>
 
 ```ts

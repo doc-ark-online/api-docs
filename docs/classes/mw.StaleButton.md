@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / StaleButton
+[UI](../groups/UI.UI.md) / StaleButton
 
 # StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 
-<span class="content-big">
-
 按钮
-
-</span>
 
 ## Hierarchy
 
@@ -187,6 +183,7 @@
 
 
 ## Accessors
+
 ___
 
 ### clickMethod <Score text="clickMethod" /> 
@@ -1904,7 +1901,6 @@ ___
 | `inEnableUnderline` `boolean` | 设置是否开启下划线 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1912,6 +1908,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

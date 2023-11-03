@@ -1,17 +1,13 @@
-[SOUND](../groups/Core.SOUND.md) / SoundService
+[SOUND](../groups/SOUND.SOUND.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-<span class="content-big">
-
 音效管理器
-
-</span>
 
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\>  |
+| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string`  `number`\>  |
 | :-----|
 | 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)|
 
@@ -26,7 +22,7 @@
 | **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\>  |
 | :-----|
 | 根据播放id获取一个3DSound|
-| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number`  |
+| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md), `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number`  |
 | 在目标播放3D音效|
 | **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void`  |
 | 播放背景音乐|
@@ -47,14 +43,12 @@
 
 ### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
-▪ `Static` `Readonly` **onPlaySoundComplete**: [`Action1`](mw.Action1.md)<`string` \| `number`\>
+▪ `Static` `Readonly` **onPlaySoundComplete**: [`Action1`](mw.Action1.md)<`string`  `number`\>
 
 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效
-
 </span>
 
 ```ts
@@ -226,9 +220,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
-
 </span>
 
 ```ts
@@ -270,7 +262,7 @@ ___
 
 | `assetId` `string` |  资源Id |
 | :------ | :------ |
-| `target` `string` \| [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
+| `target` `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID  GameObject  世界坐标) |
 | `loopCount?` `number` |  循环次数 default: 1 |
 | `volume?` `number` |  音量 default: 1 |
 | `params?` `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
@@ -285,9 +277,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
-
 </span>
 
 ```ts
@@ -338,9 +328,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
-
 </span>
 
 ```ts
@@ -389,9 +377,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
-
 </span>
 
 ```ts
@@ -431,9 +417,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
-
 </span>
 
 ```ts
@@ -478,9 +462,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效
-
 </span>
 
 ```ts
@@ -523,9 +505,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
-
 </span>
 
 ```ts
@@ -569,9 +549,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
-
 </span>
 
 ```ts
@@ -616,9 +594,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
-
 </span>
 
 ```ts

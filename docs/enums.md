@@ -174,6 +174,7 @@ Enums
 ## T
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [TeleportStatus](enums/mw.TeleportStatus.md) | 传送状态 | [DATATYPE](groups/DATATYPE.DATATYPE.md) |
 | [TextCommit](enums/mw.TextCommit.md) | 输入提交模式 | [UI](groups/UI.UI.md) |
 | [TextJustify](enums/mw.TextJustify.md) | 文本排列对齐规则 | [UI](groups/UI.UI.md) |
 | [TextVerticalJustify](enums/mw.TextVerticalJustify.md) | 文本排列垂直对齐规则 | [UI](groups/UI.UI.md) |

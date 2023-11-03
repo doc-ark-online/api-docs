@@ -1,90 +1,34 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Model
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Model
 
 # Model <Badge type="tip" text="Class" /> <Score text="Model" />
 
-<span class="content-big">
-
 物理模拟与材质设置
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 在游戏中添加物理效果有助于提升场景的沉浸感，因为这能促使玩家相信他们的确在与模拟内容进行交互，并且能以某种方式得到反馈。
-
-</span>
-
-<span class="content-big">
 
 物理模拟 如何工作呢？
 
-</span>
-
-<span class="content-big">
-
 Model的属性定义了静态模型具有物理特性，其中较为重要的是：
-
-</span>
-
-<span class="content-big">
 
 - 静态模型实例 physicsEnabled 属性为 True 可开启物理模拟。
 
-</span>
-
-<span class="content-big">
-
 - mass 属性表示重力的大小。
-
-</span>
-
-<span class="content-big">
 
 - friction 属性表示摩擦力的大小。
 
-</span>
-
-<span class="content-big">
-
 - restitution 属性表示弹力。
-
-</span>
-
-<span class="content-big">
 
 - lockPosition 属性表示约束，约束哪个轴指在这个轴向不会发生变动。
 
-</span>
-
-<span class="content-big">
-
 材质如何自定义设置呢？
-
-</span>
-
-<span class="content-big">
 
 材质 是可以应用到网格物体静态模型上的资源，用它可控制场景的可视外观。
 
-</span>
-
-<span class="content-big">
-
 - setMaterial 方法更换静态模型材质，传入左侧材质资源ID。
 
-</span>
-
-<span class="content-big">
-
 - setStaticMeshAsset 方法更换静态模型，传入左侧静态模型资源ID。
-
-</span>
 
 ::: warning Precautions
 
@@ -93,9 +37,7 @@ Model的属性定义了静态模型具有物理特性，其中较为重要的是
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ModelExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以通过F1键，在场景中动态生成模型并模拟物理.代码如下:
-
 </span>
 
 ```ts
@@ -236,11 +178,17 @@ export default class ModelExample extends Script {
 
 ::: details 点击查看继承
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
 | 复制对象|
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`  |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
@@ -259,15 +207,13 @@ export default class ModelExample extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -291,6 +237,7 @@ export default class ModelExample extends Script {
 
 
 ## Properties
+
 ___
 
 ### onTouch <Score text="onTouch" /> 
@@ -945,7 +892,6 @@ ___
 | `value` | `number` |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -953,6 +899,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### createMaterialInstance <Score text="createMaterialInstance" /> 

@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / ConvertScreenResult
+[TYPE](../groups/TYPE.TYPE.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
-<span class="content-big">
-
 屏幕坐标转换结果
-
-</span>
 
 ## Table of contents
 

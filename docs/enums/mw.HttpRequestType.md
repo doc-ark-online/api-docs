@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HttpRequestType
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HttpRequestType
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 
-<span class="content-big">
-
 开发给用户用的Http请求类型枚举
-
-</span>
 
 ## Table of contents
 

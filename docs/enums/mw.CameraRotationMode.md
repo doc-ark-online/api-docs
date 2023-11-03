@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraRotationMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraRotationMode
 
 # CameraRotationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraRotationMode" />
 
-<span class="content-big">
-
 摄像机旋转模式
-
-</span>
 
 ## Table of contents
 

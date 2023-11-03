@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIScrollBoxAnimationType
+[UI](../groups/UI.UI.md) / UIScrollBoxAnimationType
 
 # UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 
-<span class="content-big">
-
 滚动框动画类型
-
-</span>
 
 ## Table of contents
 

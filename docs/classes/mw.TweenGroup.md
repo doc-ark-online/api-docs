@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / TweenGroup
+[UTILITY](../groups/UTILITY.UTILITY.md) / TweenGroup
 
 # TweenGroup <Badge type="tip" text="Class" /> <Score text="TweenGroup" />
 
-<span class="content-big">
-
 补间组，用于同时控制多个补间对象
-
-</span>
 
 ## Table of contents
 
@@ -104,9 +100,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
-
 </span>
 
 ```ts

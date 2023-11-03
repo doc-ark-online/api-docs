@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UITransform
+[UI](../groups/UI.UI.md) / UITransform
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
-<span class="content-big">
-
 节点Transform
-
-</span>
 
 ## Table of contents
 

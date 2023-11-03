@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / SelectionUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / SelectionUtil
 
 # SelectionUtil <Badge type="tip" text="Class" /> <Score text="SelectionUtil" />
 
-<span class="content-big">
-
 描边绘制工具
-
-</span>
 
 ## Table of contents
 
@@ -38,9 +34,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
-
 </span>
 
 ```ts
@@ -104,9 +98,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
-
 </span>
 
 ```ts

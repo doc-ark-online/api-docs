@@ -1,12 +1,8 @@
-[DATATYPE](../groups/Core.DATATYPE.md) / UploadPrefabResultType
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / UploadPrefabResultType
 
 # UploadPrefabResultType <Badge type="tip" text="Enumeration" /> <Score text="UploadPrefabResultType" />
 
-<span class="content-big">
-
 移动编辑器上传预制体返回状态
-
-</span>
 
 ## Table of contents
 

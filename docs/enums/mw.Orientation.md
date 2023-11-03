@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Orientation
+[UI](../groups/UI.UI.md) / Orientation
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
-<span class="content-big">
-
 滚动框类型
-
-</span>
 
 ## Table of contents
 

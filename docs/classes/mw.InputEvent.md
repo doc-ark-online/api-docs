@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / InputEvent
+[UI](../groups/UI.UI.md) / InputEvent
 
 # InputEvent <Badge type="tip" text="Class" /> <Score text="InputEvent" />
 
-<span class="content-big">
-
 输入事件
-
-</span>
 
 ## Table of contents
 

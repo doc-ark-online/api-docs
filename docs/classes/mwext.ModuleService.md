@@ -2,16 +2,10 @@
 
 # ModuleService <Badge type="tip" text="Class" /> <Score text="ModuleService" />
 
-<span class="content-big">
-
 模块管理
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ModuleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会先输出hud模块开始的日志，再输出player模块开始的日志，按下F键和G键你在客户端日志都会看到player模块的信息
-
 </span>
 
 ```ts
@@ -116,10 +110,10 @@ class PlayerModuleData extends Subdata {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>, `type?`: `number`, `...params`: `any`[]): `any`  |
+| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`  |
 | :-----|
 | 调用一个模块的onExecute方法|
-| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \  |
+| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>  |
 | 根据类型获取一个模块|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`  |
 | 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
@@ -153,7 +147,7 @@ class PlayerModuleData extends Subdata {
 
 #### Type parameters
 
-| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \| [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
+| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
 | :------ | :------ |
 
 ___
@@ -177,7 +171,7 @@ ___
 
 #### Type parameters
 
-| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \| [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
+| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
 | :------ | :------ |
 
 ___

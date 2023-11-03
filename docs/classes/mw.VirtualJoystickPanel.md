@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / VirtualJoystickPanel
+[UI](../groups/UI.UI.md) / VirtualJoystickPanel
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 
-<span class="content-big">
-
 摇杆
-
-</span>
 
 ## Hierarchy
 
@@ -1130,7 +1126,6 @@ ___
 | `Value` `number` | 复位时间 以秒为单位 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1138,6 +1133,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### resetJoyStick <Score text="resetJoyStick" /> 

@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponState
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponState
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 
-<span class="content-big">
-
 热武器状态
-
-</span>
 
 ## Table of contents
 

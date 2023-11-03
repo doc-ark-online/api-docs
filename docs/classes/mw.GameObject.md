@@ -1,29 +1,15 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / GameObject
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / GameObject
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
-<span class="content-big">
-
 场景中所有实体的基类
-
-</span>
-
-<span class="content-big">
 
 Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象均继承自GameObject。
 
-</span>
-
-<span class="content-big">
-
 提供复制删除物体，查找获取物体、子物体、脚本等功能。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下:
-
 </span>
 
 ```ts
@@ -129,11 +115,17 @@ export default class GameObjectExample extends Script {
 | 当前物体世界变换|
 
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
 | 复制对象|
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`  |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
@@ -152,15 +144,13 @@ export default class GameObjectExample extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -239,7 +229,7 @@ ___
 
 #### Returns
 
-| `string` | mw.Base.gameObjectId |
+| `string` |  |
 | :------ | :------ |
 
 </td>
@@ -544,6 +534,45 @@ ___
 
 ## Methods
 
+### addComponent <Score text="addComponent" /> 
+
+• **addComponent**<`T`\>(`constructor`, `bInReplicates?`): `T`
+
+添加一个脚本组件
+
+#### Parameters
+
+| `constructor` (...`args`: `unknown`[]) => `T` | ScriptComponentClass 添加脚本的类型 |
+| :------ | :------ |
+| `bInReplicates?` `boolean` | 是否开启同步 |
+
+#### Returns
+
+| `T` | T 新添加的脚本组件 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
+
+___
+
+### addScriptToObject <Score text="addScriptToObject" /> 
+
+• **addScriptToObject**(`script`): `void` 
+
+附加脚本
+
+#### Parameters
+
+| `script` [`Script`](mw.Script.md) | 脚本 |
+| :------ | :------ |
+
+
+
+___
+
 ### asyncReady <Score text="asyncReady" /> 
 
 • **asyncReady**(): `Promise`<[`GameObject`](mw.GameObject.md)\> 
@@ -573,6 +602,21 @@ ___
 
 | [`GameObject`](mw.GameObject.md) | 克隆的对象 |
 | :------ | :------ |
+
+
+___
+
+### delScriptFromObject <Score text="delScriptFromObject" /> 
+
+• **delScriptFromObject**(`script`): `void` 
+
+移除脚本
+
+#### Parameters
+
+| `script` [`Script`](mw.Script.md) | 脚本 |
+| :------ | :------ |
+
 
 
 ___
@@ -747,55 +791,63 @@ ___
 
 ___
 
-### getScript <Score text="getScript" /> 
+### getComponent <Score text="getComponent" /> 
 
-• **getScript**(`id`): [`Script`](mw.Script.md) 
+• **getComponent**<`T`\>(`constructor?`): `T`
 
-获得当前物体下的指定脚本
+获取指定类型的组件
 
-#### Parameters
+#### Type parameters
 
-| `id` `string` | 脚本唯一标识 |
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
 | :------ | :------ |
-
-#### Returns
-
-| [`Script`](mw.Script.md) | Script |
-| :------ | :------ |
-
 
 ___
 
-### getScriptByName <Score text="getScriptByName" /> 
+### getComponentPropertys <Score text="getComponentPropertys" /> 
 
-• **getScriptByName**(`name`): [`Script`](mw.Script.md) 
+• **getComponentPropertys**<`T`\>(`constructor`): `Map`<`string`, `IPropertyOptions`\>
 
-获得当前物体下的指定脚本
+获取脚本组件属性
 
 #### Parameters
 
-| `name` `string` | 名字 |
+| `constructor` (...`args`: `unknown`[]) => `T` | ScriptComponentClass 添加脚本的类型 |
 | :------ | :------ |
 
 #### Returns
 
-| [`Script`](mw.Script.md) | Script |
+| `Map`<`string`, `IPropertyOptions`\> | 组件所有属性 Map<key: IPropertyOptions> |
 | :------ | :------ |
 
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
+
+#### Returns
+
+| `T` | 脚本组件 |
+| :------ | :------ |
+| :------ | :------ |
+
+#### Returns
+
+| `Map`<`string`, `IPropertyOptions`\> | 组件所有属性 Map<key: IPropertyOptions> |
+| :------ | :------ |
 
 ___
 
-### getScripts <Score text="getScripts" /> 
+### getComponents <Score text="getComponents" /> 
 
-• **getScripts**(): [`Script`](mw.Script.md)[] 
+• **getComponents**<`T`\>(`constructor?`): `T`[]
 
-获得当前物体下的所有脚本
+获取指定类型的所有组件
 
-#### Returns
+#### Type parameters
 
-| [`Script`](mw.Script.md)[] | Array`<Script>` |
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
 | :------ | :------ |
-
 
 ___
 
@@ -821,7 +873,7 @@ ___
 
 #### Parameters
 
-| `status` `boolean` \| [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
+| `status` `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
 | :------ | :------ |
 | `propagateToChildren?` `boolean` |  是否设置子物体 default:false |
 
@@ -887,9 +939,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts
@@ -1020,9 +1070,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts

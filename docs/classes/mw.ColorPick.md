@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ColorPick
+[UI](../groups/UI.UI.md) / ColorPick
 
 # ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
-<span class="content-big">
-
 颜色选择器
-
-</span>
 
 ## Hierarchy
 
@@ -103,6 +99,7 @@
 
 
 ## Accessors
+
 ___
 
 ### color <Score text="color" /> 
@@ -268,14 +265,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

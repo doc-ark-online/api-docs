@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / CollisionType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / CollisionType
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 
-<span class="content-big">
-
 碰撞类型
-
-</span>
 
 ## Table of contents
 

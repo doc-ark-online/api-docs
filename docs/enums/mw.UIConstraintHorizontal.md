@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIConstraintHorizontal
+[UI](../groups/UI.UI.md) / UIConstraintHorizontal
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 
-<span class="content-big">
-
 对齐策略水平规则
-
-</span>
 
 ## Table of contents
 

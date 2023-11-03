@@ -13,7 +13,7 @@ Classes
 | [Action2](classes/mw.Action2.md) | 两个参数的代理 | [TYPE](groups/TYPE.TYPE.md) |
 | [Action3](classes/mw.Action3.md) | 三个参数的代理 | [TYPE](groups/TYPE.TYPE.md) |
 | [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
-| [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [玩法](groups/玩法.玩法.md) |
 | [Animation](classes/mw.Animation.md) | 动画 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [AssetIconData](classes/mw.AssetIconData.md) | 资源ICON信息 | [UI](groups/UI.UI.md) |
 | [AssetUtil](classes/mw.AssetUtil.md) | 资源管理工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
@@ -26,8 +26,6 @@ Classes
 | [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [BubbleUI](classes/mw.BubbleUI.md) | 聊天头顶ui | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
-| [BubbleUIManager](classes/mw.BubbleUIManager.md) | 聊天头顶ui | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [Button](classes/mw.Button.md) | 按钮,无默认text | [UI](groups/UI.UI.md) |
 
 
@@ -40,7 +38,6 @@ Classes
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [UI](groups/UI.UI.md) |
-| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 颜色选择器 | [UI](groups/UI.UI.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [TYPE](groups/TYPE.TYPE.md) |
@@ -108,7 +105,7 @@ Classes
 | [InputEvent](classes/mw.InputEvent.md) | 输入事件 | [UI](groups/UI.UI.md) |
 | [InputUtil](classes/mw.InputUtil.md) | 输入事件工具 | [INPUT](groups/INPUT.INPUT.md) |
 | [IntegratedMover](classes/mw.IntegratedMover.md) | 运动器组件 | [玩法](groups/玩法.玩法.md) |
-| [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [玩法](groups/玩法.玩法.md) |
+| [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## J
@@ -173,7 +170,7 @@ Classes
 | :-----| :-----| :-----|
 | [PanelWidget](classes/mw.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [UI](groups/UI.UI.md) |
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [AVATAR](groups/AVATAR.AVATAR.md) |
-| [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
+| [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [UI](groups/UI.UI.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
@@ -204,7 +201,8 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScreenUtil](classes/mw.ScreenUtil.md) | 屏幕视口工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
-| [Script](classes/mw.Script.md) | 脚本管理 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [Script](classes/mw.Script.md) | 脚本的基类 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [ScriptManager](classes/mw.ScriptManager.md) | 脚本管理类 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [ScriptingSettings](classes/mw.ScriptingSettings.md) | 全局的脚本配置信息 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [UI](groups/UI.UI.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 描边绘制工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
@@ -227,8 +225,10 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [TabGroup](classes/mw.TabGroup.md) | 选项卡组 | [UI](groups/UI.UI.md) |
+| [TeleportService](classes/mw.TeleportService.md) | 多场景和传送服务 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [TextBlock](classes/mw.TextBlock.md) | UI文本 | [UI](groups/UI.UI.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [TouchInputUtil](classes/mw.TouchInputUtil.md) | 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开) | [INPUT](groups/INPUT.INPUT.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [UI](groups/UI.UI.md) |
 | [Transform](classes/mw.Transform.md) | 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。 | [TYPE](groups/TYPE.TYPE.md) |
 | [Trigger](classes/mw.Trigger.md) | 触发器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |

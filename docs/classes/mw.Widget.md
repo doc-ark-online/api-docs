@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Widget
+[UI](../groups/UI.UI.md) / Widget
 
 # Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 
-<span class="content-big">
-
 可挂载叶子节点的根节点，以及提供各种自动布局功能
-
-</span>
 
 ## Hierarchy
 

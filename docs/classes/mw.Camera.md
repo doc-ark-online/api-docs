@@ -1,72 +1,28 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Camera
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Camera
 
 # Camera <Badge type="tip" text="Class" /> <Score text="Camera" />
 
-<span class="content-big">
-
 摄像机
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 Camera 对象定义 3D 游戏世界的视图。
-
-</span>
-
-<span class="content-big">
 
 Camera 的位置在哪里？
 
-</span>
-
-<span class="content-big">
-
 在游戏的一个实例中，每个客户端都有自己的与其关联的 Camera 对象。 相机对象仅存在于查看者的客户端上，驻留在该用户的本地中，因此不能直接从服务器进行编辑。
-
-</span>
-
-<span class="content-big">
 
 每个客户端的特定 Camera 对象都可以通过该客户端上 Camera.currentCamera 属性进行访问。
 
-</span>
-
-<span class="content-big">
-
 Camera 对象如何工作？
-
-</span>
-
-<span class="content-big">
 
 相机的属性定义了 3D 游戏世界的当前视图。 其中最重要的是：
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.worldTransform 表示相机的位置和方向。
-
-</span>
-
-<span class="content-big">
 
 - Camera.currentCamera.rotationMode 属性调整相机的旋转模式，是否跟随人物旋转而旋转、相机固定不旋转、可由鼠标右键控制旋转三种模式。Camera.currentCamera.positionMode 属性调整相机的位置模式。
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.fov 表示可见的可观察世界的范围。
-
-</span>
 
 ## Hierarchy
 
@@ -155,7 +111,7 @@ Camera 对象如何工作？
 | **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void`  |
 | :-----|
 | 相机锁定目标|
-| **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md) \): `void`  |
+| **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void`  |
 | 摄像机朝向目标|
 | **[unlock](mw.Camera.md#unlock)**(): `void`  |
 | 取消锁定目标|
@@ -169,11 +125,17 @@ Camera 对象如何工作？
 
 ::: details 点击查看继承
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
 | 复制对象|
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`  |
+| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`  |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
@@ -192,15 +154,13 @@ Camera 对象如何工作？
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -224,6 +184,7 @@ Camera 对象如何工作？
 
 
 ## Properties
+
 ___
 
 ### onSwitchComplete <Score text="onSwitchComplete" /> 
@@ -240,9 +201,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"CameraExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -301,9 +260,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏创建一个名为"Camera_SpringArm"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞，按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测。你可以看到禁用这些属性产生的不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -345,6 +302,7 @@ ___
 • `Private` **updateOccludeEnableStatus**: `any`
 
 ## Accessors
+
 ___
 
 ### downAngleLimit <Score text="downAngleLimit" /> 
@@ -407,9 +365,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_DownAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
-
 </span>
 
 ```ts
@@ -521,9 +477,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -547,9 +501,7 @@ export default class Example_Camera_FixedElevation extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -635,9 +587,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -668,9 +618,7 @@ export default class Example_Camera_FixedElevation extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -762,9 +710,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -875,9 +821,7 @@ FOV，也就是透视模式下的水平视野角度，FOV越大，可见的视�
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FOV"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“2”，增大摄像机FOV,按住键盘“3”，减少摄像机FOV.你将在场景中看到摄像机FOV变化的效果.代码如下:
-
 </span>
 
 ```ts
@@ -988,9 +932,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_MaxLagDistance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置最大位置延迟距离为200,你将在场景中看到摄像机位置延迟后摄像机最远只延迟200cm的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1072,9 +1014,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到摄像机位置延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1176,9 +1116,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置位置延迟恢复速度为1,你将在场景中看到摄像机位置延迟后摄像机缓慢恢复位置的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1280,9 +1218,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“2”，切换摄像机的位置模式.你将在场景中看到摄像机不同位置模式的效果并在控制台看到打印的摄像机当前位置模式.代码如下:
-
 </span>
 
 ```ts
@@ -1359,9 +1295,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Camera_Preset"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机预设.你将在场景中看到摄像机不同预设的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1463,9 +1397,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1576,9 +1508,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1689,9 +1619,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“3”，切换摄像机的旋转模式.你将在场景中看到摄像机不同旋转模式的效果并在控制台看到打印的摄像机当前旋转模式.代码如下:
-
 </span>
 
 ```ts
@@ -1793,9 +1721,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_UpAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1877,9 +1803,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"CurrentCamera"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1925,6 +1849,7 @@ i++) {
 | :------ | :------ |
 
 ## Methods
+
 ___
 
 ### lock <Score text="lock" /> 
@@ -1956,9 +1881,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Lock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2018,15 +1941,13 @@ ___
 
 #### Parameters
 
-| `target` [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) | 目标 |
+| `target` [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) | 目标 |
 | :------ | :------ |
 
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2087,9 +2008,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Unlock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2156,9 +2075,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Shake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2194,9 +2111,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_StopShake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2244,9 +2159,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Switch"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts

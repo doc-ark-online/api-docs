@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HttpRequestURL
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HttpRequestURL
 
 # HttpRequestURL <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestURL" />
 
-<span class="content-big">
-
 开发给用户用的URL枚举，需要与C++层的枚举对应
-
-</span>
 
 ## Table of contents
 

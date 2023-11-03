@@ -5,10 +5,10 @@ GAMEPLAY
 ## Table of contents
 | Classes |
 | :-----|
-| [AdvancedVehicle](../classes/mw.AdvancedVehicle.md) <br> 四轮载具 |
 | [BlockingVolume](../classes/mw.BlockingVolume.md) <br> 禁行区 |
 | [Camera](../classes/mw.Camera.md) <br> 摄像机 |
 | [GameObject](../classes/mw.GameObject.md) <br> 场景中所有实体的基类 |
+| [Interactor](../classes/mw.Interactor.md) <br> 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 |
 | [MaterialInstance](../classes/mw.MaterialInstance.md) <br> 材质实例类 |
 | [Model](../classes/mw.Model.md) <br> 物理模拟与材质设置 |
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区 |

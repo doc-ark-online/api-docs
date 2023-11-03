@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Gizmo
+[TYPE](../groups/TYPE.TYPE.md) / Gizmo
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 
-<span class="content-big">
-
 Gizmo
-
-</span>
 
 **`Instance`**
 
@@ -74,7 +70,7 @@ Gizmo
 | 设置缩放网格大小|
 
 ### Methods <Score text="Methods" /> 
-| **[addIgnoreActor](mw.Gizmo.md#addignoreactor)**(`actor`: [`GameObject`](mw.GameObject.md) \): `void`  |
+| **[addIgnoreActor](mw.Gizmo.md#addignoreactor)**(`actor`: [`GameObject`](mw.GameObject.md)  `Base`): `void`  |
 | :-----|
 | 添加需要被坐标轴忽略的object|
 | **[attachActorToGizmo](mw.Gizmo.md#attachactortogizmo)**(`Actor`: [`GameObject`](mw.GameObject.md), `IsRecordChange?`: `boolean`): `void`  |
@@ -1239,7 +1235,7 @@ ___
 
 #### Parameters
 
-| `actor` [`GameObject`](mw.GameObject.md) \| `Base` | 忽略的object |
+| `actor` [`GameObject`](mw.GameObject.md)  `Base` | 忽略的object |
 | :------ | :------ |
 
 

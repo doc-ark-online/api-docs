@@ -1,16 +1,12 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / Script
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / Script
 
 # Script <Badge type="tip" text="Class" /> <Score text="Script" />
 
-<span class="content-big">
-
-脚本管理
-
-</span>
+脚本的基类
 
 ## Hierarchy
 
-- `Component`
+- `Base`
 
   ↳ **`Script`**
 
@@ -19,51 +15,51 @@
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[bIsDestroy](mw.Script.md#bisdestroy)**: `any`  |
+| **[scriptGuid](mw.Script.md#scriptguid)**: `any`  |
 | :----- |
-| **[getNetStatus](mw.Script.md#getnetstatus)**: `any` |
-| **[mwRepObj](mw.Script.md#mwrepobj)**: `any` |
+| **[target](mw.Script.md#target)**: `any` |
 
 ### Accessors <Score text="Accessors" /> 
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
-| :-----|
-| 脚本对应的GameObject|
+| :----- |
 | **[guid](mw.Script.md#guid)**(): `string` |
-| **[name](mw.Script.md#name)**(): `string` |
+| **[useUpdate](mw.Script.md#useupdate)**(): `boolean`  |
+| 设置组件是否使用更新|
 
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.Script.md#destroy)**(): `void`  |
 | :----- |
 | **[isRunningClient](mw.Script.md#isrunningclient)**(): `boolean`  |
 | 是否为客户端|
-| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
+| **[onDestroy](mw.Script.md#ondestroy)**(): `void`  |
+| 周期函数 被销毁时调用|
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`  |
+| 属性被同步事件 ClientOnly|
+| **[onStart](mw.Script.md#onstart)**(): `void`  |
+| 周期函数 脚本开始执行时调用|
+| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`  |
+| 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 
 #### Parameters
 
-| `data` | `ActorInfo` |
+| `dataComponent` | `MWActorScriptComponent` |
 | :------ | :------ |
 
 #### Overrides
 
-mw.Component.constructor
+mw.Base.constructor
 
 ## Properties
 
-### bIsDestroy <Score text="bIsDestroy" /> 
+### scriptGuid <Score text="scriptGuid" /> 
 
-• `Private` **bIsDestroy**: `any`
-
-___
-
-### getNetStatus <Score text="getNetStatus" /> 
-
-• `Private` **getNetStatus**: `any`
+• `Private` **scriptGuid**: `any`
 
 ___
 
-### mwRepObj <Score text="mwRepObj" /> 
+### target <Score text="target" /> 
 
-• `Private` **mwRepObj**: `any`
+• `Private` **target**: `any`
 
 ## Accessors
 
@@ -73,20 +69,17 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **gameObject**(): [`GameObject`](mw.GameObject.md) 
+• `get` **gameObject**(): [`GameObject`](mw.GameObject.md)
 
 </th>
 <th style="text-align: left">
 
-• `set` **gameObject**(`target`): `void` 
+• `set` **gameObject**(`value`): `void`
 
 </th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
-
-
-脚本对应的GameObject
 
 
 #### Returns
@@ -99,12 +92,9 @@ ___
 <td style="text-align: left">
 
 
-脚本对应的GameObject
-
-
 #### Parameters
 
-| `target` | [`GameObject`](mw.GameObject.md) |
+| `value` | [`GameObject`](mw.GameObject.md) |
 | :------ | :------ |
 
 
@@ -124,29 +114,9 @@ ___
 • `get` **guid**(): `string`
 
 </th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-#### Returns
-
-| `string` | mw.Component.guid |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### name <Score text="name" /> 
-
-<table class="get-set-table">
-<thead><tr>
 <th style="text-align: left">
 
-• `get` **name**(): `string`
+• `set` **guid**(`value`): `void`
 
 </th>
 </tr></thead>
@@ -156,18 +126,82 @@ ___
 
 #### Returns
 
+| `string` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `value` | `string` |
+| :------ | :------ |
+
+
+
 </td>
 </tr></tbody>
 </table>
 
-| `string` |  |
+___
+
+### useUpdate <Score text="useUpdate" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **useUpdate**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **useUpdate**(`v`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取组件是否使用更新
+
+
+#### Returns
+
+| `boolean` |  |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置组件是否使用更新
+
+
+#### Parameters
+
+| `v` | `boolean` |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+
 
 ## Methods
 
 ### destroy <Score text="destroy" /> 
 
-• **destroy**(): `void`
+• **destroy**(): `void` <Badge type="tip" text="other" />
+
+@description销毁组件对象
+
+服务端
 
 ___
 
@@ -179,91 +213,68 @@ ___
 
 #### Returns
 
-| `boolean` | mw.Component.isRunningClient |
+| `boolean` | true为客户端 |
 | :------ | :------ |
+
 
 
 #### Returns
 
-| `boolean` | mw.Component.isRunningClient |
+| `boolean` | true为客户端 |
 | :------ | :------ |
 
 ___
 
-### spawnScript <Score text="spawnScript" /> 
+### onDestroy <Score text="onDestroy" /> 
 
-• `Static` **spawnScript**<`T`\>(`scriptClass`, `bInReplicates?`): `Promise`<`T`\>
+• `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
 
-动态创建脚本
+周期函数 被销毁时调用
 
-#### Type parameters
 
-| `T` | extends [`Script`](mw.Script.md)<`T`\> |
-| :------ | :------ |
+周期函数
 
-#### Parameters
+___
 
-| `scriptClass` (...`args`: `unknown`[]) => `T` | - |
-| :------ | :------ |
-| `bInReplicates?` `boolean` | `{boolean}` 是否同步 |
+### onReplicated <Score text="onReplicated" /> 
 
-#### Returns
+• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` <Badge type="tip" text="other" />
 
-| `Promise`<`T`\> | 脚本对象 |
-| :------ | :------ |
-
-• `Static` **spawnScript**<`T`\>(`scriptAssetId`, `bInReplicates?`): `Promise`<`T`\>
-
-#### Type parameters
-
-| `T` | extends [`Script`](mw.Script.md)<`T`\> |
-| :------ | :------ |
+属性被同步事件 ClientOnly
 
 #### Parameters
 
-| `scriptAssetId` | `string` |
+| `path` `string` | 属性路径 |
 | :------ | :------ |
-| `bInReplicates?` | `boolean` |
+| `value` `unknown` | 属性值 |
+| `oldVal` `unknown` | 同步前的值 |
 
-#### Returns
 
-| `Promise`<`T`\> |  |
-| :------ | :------ |
+周期函数
 
-• `Static` **spawnScript**<`T`\>(`scriptClass`, `bInReplicates?`, `target?`): `Promise`<`T`\>
+___
 
-#### Type parameters
+### onStart <Score text="onStart" /> 
 
-| `T` | extends [`Script`](mw.Script.md)<`T`\> |
-| :------ | :------ |
+• `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
+
+周期函数 脚本开始执行时调用
+
+
+周期函数
+
+___
+
+### onUpdate <Score text="onUpdate" /> 
+
+• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
+
+周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
 
 #### Parameters
 
-| `scriptClass` | (...`args`: `unknown`[]) => `T` |
-| :------ | :------ |
-| `bInReplicates?` | `boolean` |
-| `target?` | [`GameObject`](mw.GameObject.md) |
-
-#### Returns
-
-| `Promise`<`T`\> |  |
+| `dt` `number` | 与上一帧的延迟 单位:秒 |
 | :------ | :------ |
 
-• `Static` **spawnScript**<`T`\>(`scriptAssetId`, `bInReplicates?`, `target?`): `Promise`<`T`\>
 
-#### Type parameters
-
-| `T` | extends [`Script`](mw.Script.md)<`T`\> |
-| :------ | :------ |
-
-#### Parameters
-
-| `scriptAssetId` | `string` |
-| :------ | :------ |
-| `bInReplicates?` | `boolean` |
-| `target?` | [`GameObject`](mw.GameObject.md) |
-
-#### Returns
-
-| `Promise`<`T`\> |  |
-| :------ | :------ |
+周期函数

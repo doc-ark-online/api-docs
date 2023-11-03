@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Geometry
+[UI](../groups/UI.UI.md) / Geometry
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
-<span class="content-big">
-
 几何坐标信息
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlateColor
+[UI](../groups/UI.UI.md) / SlateColor
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 
-<span class="content-big">
-
 UI颜色管理
-
-</span>
 
 ## Table of contents
 

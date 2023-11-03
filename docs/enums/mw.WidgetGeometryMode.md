@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / WidgetGeometryMode
+[UI](../groups/UI.UI.md) / WidgetGeometryMode
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 
-<span class="content-big">
-
 UI形状枚举
-
-</span>
 
 ## Table of contents
 

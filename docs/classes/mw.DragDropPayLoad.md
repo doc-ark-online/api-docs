@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / DragDropPayLoad
+[UI](../groups/UI.UI.md) / DragDropPayLoad
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
-<span class="content-big">
-
 拖拽事件数据传递类
-
-</span>
 
 ## Table of contents
 

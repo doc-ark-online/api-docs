@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / ReleaseStatus
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / ReleaseStatus
 
 # ReleaseStatus <Badge type="tip" text="Enumeration" /> <Score text="ReleaseStatus" />
 
-<span class="content-big">
-
 UGC 发布的状态
-
-</span>
 
 ## Table of contents
 

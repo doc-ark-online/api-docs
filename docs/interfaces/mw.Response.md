@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Response
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Response
 
 # Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 
-<span class="content-big">
-
 HTTP响应信息的对象
-
-</span>
 
 ## Table of contents
 

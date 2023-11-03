@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / ImpulseType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ImpulseType
 
 # ImpulseType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseType" />
 
-<span class="content-big">
-
 冲量的应用方式
-
-</span>
 
 ## Table of contents
 

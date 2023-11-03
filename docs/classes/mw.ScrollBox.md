@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ScrollBox
+[UI](../groups/UI.UI.md) / ScrollBox
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
-<span class="content-big">
-
 滑动框
-
-</span>
 
 ## Hierarchy
 
@@ -1053,15 +1049,15 @@ ___
 | :------ | :------ |
 
 
-是否支持惯性
 
 </td>
 </tr></tbody>
 </table>
 
-
+是否支持惯性
 
 ## Methods
+
 ___
 
 ### endInertialScrolling <Score text="endInertialScrolling" /> 

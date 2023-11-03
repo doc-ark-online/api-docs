@@ -3,11 +3,6 @@ PHYSICS
 # PHYSICS <Badge type="tip" text="Groups" /> <Score text="PHYSICS" />
 
 ## Table of contents
-| Classes |
-| :-----|
-| [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器 |
-
-
 | Enums |
 | :-----|
 | [CollisionType](../enums/mw.CollisionType.md) <br> 碰撞类型 |
