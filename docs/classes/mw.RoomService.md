@@ -36,7 +36,7 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 | **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void`  |
 | 向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能|
 | **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`  |
-| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
+| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效|
 
 ## Methods
 
@@ -384,7 +384,7 @@ ___
 
 • `Static` **showUserProfile**(`resp`, `userId`): `void` 
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
+若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效
 
 #### Parameters
 
