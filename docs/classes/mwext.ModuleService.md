@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ModuleService
+[拓展](../groups/Extension.拓展.md) / ModuleService
 
 # ModuleService <Badge type="tip" text="Class" /> <Score text="ModuleService" />
 
@@ -36,7 +36,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
         }
     }
     //优先启动模块需要在onExecute中调用该函数,编辑器会等待fun执行完毕后再执行其他模块的onStart
-    protected async onExecuteStart(fun: Function): Promise<void> {
+    protected async onExecuteStart(fun: Function): `Promise`<`void`\> {
         await TimeUtil.delaySecond(1);
         console.log("-----------客户端-hud模块准备结束-----------");
         fun();
@@ -110,18 +110,18 @@ class PlayerModuleData extends Subdata {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`  |
+| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: `TypeName`<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`   |
 | :-----|
 | 调用一个模块的onExecute方法|
-| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>  |
+| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: `TypeName`<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
 | 根据类型获取一个模块|
-| **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`  |
+| **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`   |
 | 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
-| **[ready](mwext.ModuleService.md#ready)**(): `Promise`<`void`\>  |
+| **[ready](mwext.ModuleService.md#ready)**(): `Promise`<`void`\>   |
 | 注册的模块是否就绪|
-| **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md)  |
+| **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: `TypeName`<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: `TypeName`<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md)   |
 | 注册模块|
-| **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md)  |
+| **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md) <Badge type="tip" text="client" />  |
 | 设置客户端第一个要启动的模块|
 
 ## Methods
@@ -134,7 +134,7 @@ class PlayerModuleData extends Subdata {
 
 #### Parameters
 
-| `moduleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块 |
+| `moduleClass` `TypeName`<`T`\> |  模块 |
 | :------ | :------ |
 | `type?` `number` |  给onExecute方法传递的操作类型，需要各个模块自己定义 default: 0 |
 | `...params` `any`[] |  给onExecute方法传递的参数，需要各个模块自己定义 |
@@ -143,7 +143,6 @@ class PlayerModuleData extends Subdata {
 
 | `any` | onExecute方法return的结果 |
 | :------ | :------ |
-
 
 #### Type parameters
 
@@ -160,14 +159,13 @@ ___
 
 #### Parameters
 
-| `ModuleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块类型 |
+| `ModuleClass` `TypeName`<`T`\> |  模块类型 |
 | :------ | :------ |
 
 #### Returns
 
 | `T` | 模块对象 |
 | :------ | :------ |
-
 
 #### Type parameters
 
@@ -186,7 +184,6 @@ ___
 
 | `string` | log字符串 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -213,7 +210,6 @@ ___
 
 :::
 
-
 ___
 
 ### registerModule <Score text="registerModule" /> 
@@ -224,16 +220,15 @@ ___
 
 #### Parameters
 
-| `ServerModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
+| `ServerModuleType` `TypeName`<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
 | :------ | :------ |
-| `ClientModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
-| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default: null |
+| `ClientModuleType` `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
+| `ModuleDataType?` `TypeName`<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default: null |
 
 #### Returns
 
 | [`ModuleService`](mwext.ModuleService.md) | ModuleService自身，可用作链式调用 |
 | :------ | :------ |
-
 
 ___
 
@@ -245,11 +240,10 @@ ___
 
 #### Parameters
 
-| `ModuleClass` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块类 |
+| `ModuleClass` `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块类 |
 | :------ | :------ |
 
 #### Returns
 
 | [`ModuleService`](mwext.ModuleService.md) | ModuleService自身，可用作链式调用 |
 | :------ | :------ |
-

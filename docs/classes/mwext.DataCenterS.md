@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / DataCenterS
+[拓展](../groups/Extension.拓展.md) / DataCenterS
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
@@ -60,26 +60,26 @@ class PlayerModuleData extends Subdata {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
+| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: `Action1`<`Player`\>  |
 | :-----|
 | 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
-| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
+| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: `Action1`<`Player`\>  |
 | 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 ### Methods <Score text="Methods" /> 
-| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  [`Player`](mw.Player.md), `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
+| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  `Player`, `SubdataType`: `TypeName`<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <Badge type="tip" text="server" />  |
 | :-----|
 | 获取玩家的子数据|
-| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[]  |
+| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[] <Badge type="tip" text="server" />  |
 | 获取在线且数据就绪的所有玩家ID|
-| **[setDataSource](mwext.DataCenterS.md#setdatasource)**(`gameId`: `string`): `void`  |
+| **[setDataSource](mwext.DataCenterS.md#setdatasource)**(`gameId`: `string`): `void` <Badge type="tip" text="server" />  |
 | 设置数据来源|
 
 ## Properties
 
 ### onPlayerJoin <Score text="onPlayerJoin" /> 
 
-▪ `Static` `Readonly` **onPlayerJoin**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
+▪ `Static` `Readonly` **onPlayerJoin**: `Action1`<`Player`\>
 
 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的
 
@@ -87,7 +87,7 @@ ___
 
 ### onPlayerLeave <Score text="onPlayerLeave" /> 
 
-▪ `Static` `Readonly` **onPlayerLeave**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
+▪ `Static` `Readonly` **onPlayerLeave**: `Action1`<`Player`\>
 
 玩家离开游戏的委托，可用作玩家最后的数据处理
 
@@ -101,15 +101,14 @@ ___
 
 #### Parameters
 
-| `player` `string`  `number`  [`Player`](mw.Player.md) |  玩家玩家userId玩家instanceId |
+| `player` `string`  `number`  `Player` |  玩家玩家userId玩家instanceId |
 | :------ | :------ |
-| `SubdataType` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类 |
+| `SubdataType` `TypeName`<`T`\> |  数据类 |
 
 #### Returns
 
 | `T` | 数据对象 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
@@ -156,7 +155,6 @@ ___
 
 | `number`[] | 玩家id数组 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
@@ -209,5 +207,4 @@ ___
 
 | `gameId` `string` |  数据源的gameId，需要在开发者后台进行授权 |
 | :------ | :------ |
-
 

@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / GameObjPoolSourceType
+[拓展](../groups/Extension.拓展.md) / GameObjPoolSourceType
 
 # GameObjPoolSourceType <Badge type="tip" text="Enumeration" /> <Score text="GameObjPoolSourceType" />
 

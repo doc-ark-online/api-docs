@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / Subdata
+[拓展](../groups/Extension.拓展.md) / Subdata
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 
@@ -7,7 +7,7 @@
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md)  |
+| **[onDataChange](mwext.Subdata.md#ondatachange)**: `Action`  |
 | :-----|
 | 数据变化的委托|
 
@@ -19,23 +19,23 @@
 | 数据版本号，数据有变化需要重写，和currentVersion配合使用，可实现数据升级|
 
 ### Methods <Score text="Methods" /> 
-| **[getSavedProperty](mwext.Subdata.md#getsavedproperty)**<`T`: \>(`propertyName`: `string`): `T`:   |
+| **[getSavedProperty](mwext.Subdata.md#getsavedproperty)**<`T`: \>(`propertyName`: `string`): `T`:    |
 | :-----|
 | 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)|
-| **[initDefaultData](mwext.Subdata.md#initdefaultdata)**(): `void`  |
+| **[initDefaultData](mwext.Subdata.md#initdefaultdata)**(): `void`   |
 | 初始化默认数据，需要请复写|
-| **[onDataInit](mwext.Subdata.md#ondatainit)**(): `void`  |
+| **[onDataInit](mwext.Subdata.md#ondatainit)**(): `void`   |
 | 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级|
-| **[save](mwext.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](mwext.Subdata.md)  |
+| **[save](mwext.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](mwext.Subdata.md) <Badge type="tip" text="server" />  |
 | 保存数据|
-| **[syncToClient](mwext.Subdata.md#synctoclient)**(): [`Subdata`](mwext.Subdata.md)  |
+| **[syncToClient](mwext.Subdata.md#synctoclient)**(): [`Subdata`](mwext.Subdata.md) <Badge type="tip" text="server" />  |
 | 向客户端同步数据|
 
 ## Properties
 
 ### onDataChange <Score text="onDataChange" /> 
 
-• `Readonly` **onDataChange**: [`Action`](mw.Action.md)
+• `Readonly` **onDataChange**: `Action`
 
 数据变化的委托
 
@@ -130,7 +130,6 @@ ___
 | `T` | 属性值 |
 | :------ | :------ |
 
-
 #### Type parameters
 
 | Name |
@@ -144,7 +143,6 @@ ___
 • `Protected` **initDefaultData**(): `void` 
 
 初始化默认数据，需要请复写
-
 
 
 ___
@@ -161,7 +159,6 @@ ___
 这个方法调用完成后，你需要保证currentVersion和version是相等的
 
 :::
-
 
 ___
 
@@ -181,7 +178,6 @@ ___
 | [`Subdata`](mwext.Subdata.md) | 自身 |
 | :------ | :------ |
 
-
 ___
 
 ### syncToClient <Score text="syncToClient" /> 
@@ -194,4 +190,3 @@ ___
 
 | [`Subdata`](mwext.Subdata.md) | 自身 |
 | :------ | :------ |
-

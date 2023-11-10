@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ModuleC
+[拓展](../groups/Extension.拓展.md) / ModuleC
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
@@ -109,26 +109,26 @@ class PlayerModuleData extends Subdata {
 | **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
 | 本地玩家的模块数据|
-| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md)  |
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): `Player` <Badge type="tip" text="client" />  |
 | 获取当前玩家|
-| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number`  |
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前玩家ID|
-| **[server](mwext.ModuleC.md#server)**(): `T`  |
+| **[server](mwext.ModuleC.md#server)**(): `T` <Badge type="tip" text="client" />  |
 | 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
 
 ### Methods <Score text="Methods" /> 
-| **[onAwake](mwext.ModuleC.md#onawake)**(): `void`  |
+| **[onAwake](mwext.ModuleC.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 生命周期方法-创建模块时调用|
-| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void`  |
+| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-销毁模块调用|
-| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void`  |
+| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-进入场景调用|
-| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void`  |
+| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
 | 外部调用本模块的某个操作|
-| **[onStart](mwext.ModuleC.md#onstart)**(): `void`  |
+| **[onStart](mwext.ModuleC.md#onstart)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-启动模块时调用|
-| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void`  |
+| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-刷新模块调用|
 
 #### Type parameters
@@ -172,7 +172,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Protected` `get` **localPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />
+• `Protected` `get` **localPlayer**(): `Player` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -182,10 +182,9 @@ ___
 
 获取当前玩家
 
-
 #### Returns
 
-| [`Player`](mw.Player.md) |  |
+| `Player` |  |
 | :------ | :------ |
 
 </td>
@@ -209,7 +208,6 @@ ___
 
 
 获取当前玩家ID
-
 
 #### Returns
 
@@ -238,7 +236,6 @@ ___
 
 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法
 
-
 #### Returns
 
 </td>
@@ -257,7 +254,6 @@ ___
 生命周期方法-创建模块时调用
 
 
-
 ___
 
 ### onDestroy <Score text="onDestroy" /> 
@@ -265,7 +261,6 @@ ___
 • `Protected` **onDestroy**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-销毁模块调用
-
 
 
 ___
@@ -280,7 +275,6 @@ ___
 
 | `sceneType` `number` |  场景类型(预留) |
 | :------ | :------ |
-
 
 
 ___
@@ -298,7 +292,6 @@ ___
 | `...params` `any`[] |  操作参数 |
 
 
-
 ___
 
 ### onStart <Score text="onStart" /> 
@@ -306,7 +299,6 @@ ___
 • `Protected` **onStart**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-启动模块时调用
-
 
 
 ___
@@ -321,5 +313,4 @@ ___
 
 | `dt` `number` |  两帧之间的时间差(单位：秒) |
 | :------ | :------ |
-
 

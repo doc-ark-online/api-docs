@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardModule
+[拓展](../groups/Extension.拓展.md) / LeaderboardModule
 
 # LeaderboardModule <Badge type="tip" text="Class" /> <Score text="LeaderboardModule" />
 
@@ -9,28 +9,28 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[addField](mwext.LeaderboardModule.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
+| **[addField](mwext.LeaderboardModule.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 添加一个字段|
-| **[addPlayer](mwext.LeaderboardModule.md#addplayer)**(`player`: `number`  [`Player`](mw.Player.md), `data?`: `any`): `void`  |
+| **[addPlayer](mwext.LeaderboardModule.md#addplayer)**(`player`: `number`  `Player`, `data?`: `any`): `void` <Badge type="tip" text="server" />  |
 | 向排行榜添加一个玩家|
-| **[clear](mwext.LeaderboardModule.md#clear)**(): `void`  |
+| **[clear](mwext.LeaderboardModule.md#clear)**(): `void` <Badge type="tip" text="server" />  |
 | 清除排行榜|
-| **[hidePanel](mwext.LeaderboardModule.md#hidepanel)**(): `void`  |
+| **[hidePanel](mwext.LeaderboardModule.md#hidepanel)**(): `void` <Badge type="tip" text="client" />  |
 | 隐藏UI|
-| **[removePlayer](mwext.LeaderboardModule.md#removeplayer)**(`player`: `number`  [`Player`](mw.Player.md)): `void`  |
+| **[removePlayer](mwext.LeaderboardModule.md#removeplayer)**(`player`: `number`  `Player`): `void` <Badge type="tip" text="server" />  |
 | 从排行榜移除一个玩家|
-| **[setPlayerValue](mwext.LeaderboardModule.md#setplayervalue)**(`player`: `number`  [`Player`](mw.Player.md), `fieldId`: `number`, `value`: `string`  `number`): `void`  |
+| **[setPlayerValue](mwext.LeaderboardModule.md#setplayervalue)**(`player`: `number`  `Player`, `fieldId`: `number`, `value`: `string`  `number`): `void` <Badge type="tip" text="server" />  |
 | 设置一个玩家的一个字段值|
-| **[setSortFields](mwext.LeaderboardModule.md#setsortfields)**(`...fieldIds`: `number`[]): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
+| **[setSortFields](mwext.LeaderboardModule.md#setsortfields)**(`...fieldIds`: `number`[]): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) <Badge type="tip" text="client" />  |
 | 设置排序字段，可以设置多字段排序，只支持从大到小排序|
-| **[setSortMethod](mwext.LeaderboardModule.md#setsortmethod)**(`fn`: (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
+| **[setSortMethod](mwext.LeaderboardModule.md#setsortmethod)**(`fn`: (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) <Badge type="tip" text="client" />  |
 | 设置排序的方法|
-| **[setStyle](mwext.LeaderboardModule.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
+| **[setStyle](mwext.LeaderboardModule.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) <Badge type="tip" text="client" />  |
 | 设置样式|
-| **[showPanel](mwext.LeaderboardModule.md#showpanel)**(`hideCallback?`: () => `void`): `void`  |
+| **[showPanel](mwext.LeaderboardModule.md#showpanel)**(`hideCallback?`: () => `void`): `void` <Badge type="tip" text="client" />  |
 | 显示UI|
-| **[showRankField](mwext.LeaderboardModule.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
+| **[showRankField](mwext.LeaderboardModule.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) <Badge type="tip" text="client" />  |
 | 显示排名|
 
 ## Methods
@@ -53,7 +53,6 @@
 | typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) | 返回自己，可用于链式调用 |
 | :------ | :------ |
 
-
 ___
 
 ### addPlayer <Score text="addPlayer" /> 
@@ -64,10 +63,9 @@ ___
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
+| `player` `number`  `Player` |  玩家对象玩家id |
 | :------ | :------ |
 | `data?` `any` |  玩家数据 default: `{}` |
-
 
 
 ___
@@ -79,7 +77,6 @@ ___
 清除排行榜
 
 
-
 ___
 
 ### hidePanel <Score text="hidePanel" /> 
@@ -87,7 +84,6 @@ ___
 • `Static` **hidePanel**(): `void` <Badge type="tip" text="client" />
 
 隐藏UI
-
 
 
 ___
@@ -100,9 +96,8 @@ ___
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
+| `player` `number`  `Player` |  玩家对象玩家id |
 | :------ | :------ |
-
 
 
 ___
@@ -115,11 +110,10 @@ ___
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
+| `player` `number`  `Player` |  玩家对象玩家id |
 | :------ | :------ |
 | `fieldId` `number` |  字段的ID |
 | `value` `string`  `number` |  字段的值 |
-
 
 
 ___
@@ -140,7 +134,6 @@ ___
 | typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) | 返回自己，可用于链式调用 |
 | :------ | :------ |
 
-
 ___
 
 ### setSortMethod <Score text="setSortMethod" /> 
@@ -158,7 +151,6 @@ ___
 
 | typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) | 返回自己，可用于链式调用 |
 | :------ | :------ |
-
 
 ___
 
@@ -181,7 +173,6 @@ ___
 | typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) | 返回自己，可用于链式调用 |
 | :------ | :------ |
 
-
 ___
 
 ### showPanel <Score text="showPanel" /> 
@@ -194,7 +185,6 @@ ___
 
 | `hideCallback?` () => `void` |  Panel关闭的回调 default: null |
 | :------ | :------ |
-
 
 
 ___
@@ -216,4 +206,3 @@ ___
 
 | typeof [`LeaderboardModule`](mwext.LeaderboardModule.md) | 返回自己，可用于链式调用 |
 | :------ | :------ |
-
