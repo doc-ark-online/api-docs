@@ -5,3 +5,5 @@ dist
 .temp
 .env
 updateVersion.mjs
+
+test.*

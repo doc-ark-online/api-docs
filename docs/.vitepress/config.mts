@@ -1003,8 +1003,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       { text: '反馈方式', link: '/start.md' }
     ]
   },
-  ...custom
-  // ...dealConfigSidebarV2()
+  // ...custom
+  ...dealConfigSidebarV2()
 ]
 
 export default defineConfigWithTheme<DefaultTheme.Config>({

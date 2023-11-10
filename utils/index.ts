@@ -25,12 +25,13 @@ interface GroupsConfig {
 
 interface GroupsConfigV2 {
   [key: string]: {
-    file: {
+    file?: {
       file_name: string
       file_path: string
       name: string
-    }[]
+    }
     children?: GroupsConfigV2
+    no_children_files?: GroupsConfigV2
   }
 }
 
@@ -164,40 +165,23 @@ export function dealConfigSidebarV2() {
 function configToSidebarGroup(configs: GroupsConfigV2) {
   const arr: DefaultTheme.SidebarGroup[] = []
   Object.entries(configs).forEach(([key, value]) => {
-    if (value.children) {
-      arr.push({
-        text: key,
-        collapsed: true,
-        collapsible: true,
-        items: [
-          ...configToSidebarGroup(value.children),
-          ...value.file.map((item) => {
-            return {
-              text: item.name,
-              link: item.file_path,
-              collapsed: false,
-              collapsible: false
-            }
-          })
-        ]
-      })
-    } else {
-      arr.push({
-        text: key,
-        collapsed: true,
-        collapsible: true,
-        items: [
-          ...value.file.map((item) => {
-            return {
-              text: item.name,
-              link: item.file_path,
-              collapsed: false,
-              collapsible: false
-            }
-          })
-        ]
-      })
-    }
+    arr.push({
+      text: key,
+      collapsed: true,
+      collapsible: true,
+      link: value.file?.file_path,
+      items: [
+        ...configToSidebarGroup(value.children ?? {}),
+        ...Object.entries(value.no_children_files ?? {}).map(([key, value]) => {
+          return {
+            text: key,
+            link: value.file?.file_path,
+            collapsed: false,
+            collapsible: false
+          }
+        })
+      ]
+    })
   })
   return arr
 }

@@ -10,7 +10,7 @@
     "docs:build": "vitepress build docs",
     "docker:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "tscc": "tsc ./utils/index.ts && node ./utils/index.js",
+    "tscc": "tsc test.ts && node test.js",
     "prettier:fix": "prettier --write docs/** --ignore-path .gitignore"
   },
   "devDependencies": {
