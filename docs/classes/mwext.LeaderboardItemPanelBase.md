@@ -25,7 +25,7 @@
 
 ::: details 点击查看继承
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.BasePanel.md#size)**(): `Vector2`  |
+| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
 | 面板尺寸|
 | **[view](mwext.BasePanel.md#view)**(): `T`  |
@@ -37,7 +37,7 @@
 | **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 显示在画布上调用，需要请复写|
-| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: `TextBlock`): `void` <Badge type="tip" text="client" />  |
+| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <Badge type="tip" text="client" />  |
 | 设置字段内容后调用，需要请复写|
 
 
@@ -60,7 +60,7 @@
 
 #### Parameters
 
-| `viewClass` `TypeName`<`T`\> |  界面类 |
+| `viewClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
 | :------ | :------ |
 
 #### Overrides
@@ -129,5 +129,5 @@ ___
 | `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
 | `fieldValue` `string`  `number` |  字段显示内容 |
 | `textBlockIndex` `number` |  文本控件索引 |
-| `textBlock` `TextBlock` |  文本控件 |
+| `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 

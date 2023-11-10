@@ -60,14 +60,14 @@ class PlayerModuleData extends Subdata {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: `Action1`<`Player`\>  |
+| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
 | :-----|
 | 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
-| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: `Action1`<`Player`\>  |
+| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
 | 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 ### Methods <Score text="Methods" /> 
-| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  `Player`, `SubdataType`: `TypeName`<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <Badge type="tip" text="server" />  |
+| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  [`Player`](mw.Player.md), `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <Badge type="tip" text="server" />  |
 | :-----|
 | 获取玩家的子数据|
 | **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[] <Badge type="tip" text="server" />  |
@@ -79,7 +79,7 @@ class PlayerModuleData extends Subdata {
 
 ### onPlayerJoin <Score text="onPlayerJoin" /> 
 
-▪ `Static` `Readonly` **onPlayerJoin**: `Action1`<`Player`\>
+▪ `Static` `Readonly` **onPlayerJoin**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
 
 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的
 
@@ -87,7 +87,7 @@ ___
 
 ### onPlayerLeave <Score text="onPlayerLeave" /> 
 
-▪ `Static` `Readonly` **onPlayerLeave**: `Action1`<`Player`\>
+▪ `Static` `Readonly` **onPlayerLeave**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
 
 玩家离开游戏的委托，可用作玩家最后的数据处理
 
@@ -101,9 +101,9 @@ ___
 
 #### Parameters
 
-| `player` `string`  `number`  `Player` |  玩家玩家userId玩家instanceId |
+| `player` `string`  `number`  [`Player`](mw.Player.md) |  玩家玩家userId玩家instanceId |
 | :------ | :------ |
-| `SubdataType` `TypeName`<`T`\> |  数据类 |
+| `SubdataType` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类 |
 
 #### Returns
 
