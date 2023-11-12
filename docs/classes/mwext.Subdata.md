@@ -7,7 +7,7 @@
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md)  |
+| **[onDataChange](mwext.Subdata.md#ondatachange)**: `Action`  |
 | :-----|
 | 数据变化的委托|
 
@@ -35,7 +35,7 @@
 
 ### onDataChange <Score text="onDataChange" /> 
 
-• `Readonly` **onDataChange**: [`Action`](mw.Action.md)
+• `Readonly` **onDataChange**: `Action`
 
 数据变化的委托
 

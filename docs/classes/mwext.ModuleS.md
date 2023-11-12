@@ -104,7 +104,7 @@ class PlayerModuleData extends Subdata {
 | **[currentData](mwext.ModuleS.md#currentdata)**(): `S`  |
 | :-----|
 | 调用服务器方法的玩家的DataOwner|
-| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): [`Player`](mw.Player.md) <Badge type="tip" text="server" />  |
+| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): `Player` <Badge type="tip" text="server" />  |
 | 调用服务器方法的玩家|
 | **[currentPlayerId](mwext.ModuleS.md#currentplayerid)**(): `number` <Badge type="tip" text="server" />  |
 | 获取调用服务器方法的玩家ID|
@@ -113,9 +113,9 @@ class PlayerModuleData extends Subdata {
 | **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T` <Badge type="tip" text="server" />  |
 | :-----|
 | 获取"全部客户端"调用对象|
-| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number`  [`Player`](mw.Player.md)): `T` <Badge type="tip" text="server" />  |
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number`  `Player`): `T` <Badge type="tip" text="server" />  |
 | 根据玩家获取"单客户端"调用对象|
-| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string`  `number`  [`Player`](mw.Player.md)): `S` <Badge type="tip" text="server" />  |
+| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string`  `number`  `Player`): `S` <Badge type="tip" text="server" />  |
 | 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void` <Badge type="tip" text="server" />  |
 | 生命周期方法-创建模块时调用|
@@ -123,11 +123,11 @@ class PlayerModuleData extends Subdata {
 | 生命周期方法-销毁模块调用|
 | **[onExecute](mwext.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <Badge type="tip" text="server" />  |
 | 外部调用本模块的某个操作|
-| **[onPlayerEnterGame](mwext.ModuleS.md#onplayerentergame)**(`player`: [`Player`](mw.Player.md)): `void` <Badge type="tip" text="server" />  |
+| **[onPlayerEnterGame](mwext.ModuleS.md#onplayerentergame)**(`player`: `Player`): `void` <Badge type="tip" text="server" />  |
 | 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)|
-| **[onPlayerJoined](mwext.ModuleS.md#onplayerjoined)**(`player`: [`Player`](mw.Player.md)): `void` <Badge type="tip" text="server" />  |
+| **[onPlayerJoined](mwext.ModuleS.md#onplayerjoined)**(`player`: `Player`): `void` <Badge type="tip" text="server" />  |
 | 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)|
-| **[onPlayerLeft](mwext.ModuleS.md#onplayerleft)**(`player`: [`Player`](mw.Player.md)): `void` <Badge type="tip" text="server" />  |
+| **[onPlayerLeft](mwext.ModuleS.md#onplayerleft)**(`player`: `Player`): `void` <Badge type="tip" text="server" />  |
 | 生命周期方法-玩家离开房间|
 | **[onStart](mwext.ModuleS.md#onstart)**(): `void` <Badge type="tip" text="server" />  |
 | 生命周期方法-启动模块时调用|
@@ -181,7 +181,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **currentPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="server" />
+• `get` **currentPlayer**(): `Player` <Badge type="tip" text="server" />
 
 </th>
 </tr></thead>
@@ -199,7 +199,7 @@ ___
 
 #### Returns
 
-| [`Player`](mw.Player.md) |  |
+| `Player` |  |
 | :------ | :------ |
 
 </td>
@@ -262,7 +262,7 @@ ___
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家id |
+| `player` `number`  `Player` |  目标玩家目标玩家id |
 | :------ | :------ |
 
 #### Returns
@@ -280,7 +280,7 @@ ___
 
 #### Parameters
 
-| `player` `string`  `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家userId目标玩家instanceId |
+| `player` `string`  `number`  `Player` |  目标玩家目标玩家userId目标玩家instanceId |
 | :------ | :------ |
 
 #### Returns
@@ -331,7 +331,7 @@ ___
 
 #### Parameters
 
-| `player` [`Player`](mw.Player.md) |  玩家 |
+| `player` `Player` |  玩家 |
 | :------ | :------ |
 
 
@@ -345,7 +345,7 @@ ___
 
 #### Parameters
 
-| `player` [`Player`](mw.Player.md) |  玩家 |
+| `player` `Player` |  玩家 |
 | :------ | :------ |
 
 
@@ -359,7 +359,7 @@ ___
 
 #### Parameters
 
-| `player` [`Player`](mw.Player.md) |  玩家 |
+| `player` `Player` |  玩家 |
 | :------ | :------ |
 
 
