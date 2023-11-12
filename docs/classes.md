@@ -195,7 +195,7 @@ Classes
 | :-----| :-----| :-----|
 | [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
-| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 | [TYPE](groups/TYPE.TYPE.md) |
+| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量。 | [TYPE](groups/TYPE.TYPE.md) |
 | [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 
 

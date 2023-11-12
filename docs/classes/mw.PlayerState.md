@@ -8,9 +8,8 @@ PlayerState基类
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
 </span>
 
-* ``` typescript
+``` typescript
   // 服务端每个玩家进入游戏时会自动创建一个实例
-  @Core.Class
   export class GamePlayerState extends mw.PlayerState {
 
       @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
@@ -21,7 +20,7 @@ PlayerState基类
       }
   }
 
-  @Core.Class
+  @Component
   export default class PlayerStateExample extends mw.Script {
 
       protected onStart(): void {
@@ -47,7 +46,7 @@ PlayerState基类
           playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
       }
   }
-```ts
+```
 
 ## Hierarchy
 
@@ -62,7 +61,7 @@ PlayerState基类
 
 ::: details 点击查看继承
 ### Accessors <Score text="Accessors" /> 
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
 | :-----|
 | 脚本对应的GameObject|
 | **[name](mw.Script.md#name)**(): `string` |

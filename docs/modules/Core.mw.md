@@ -409,7 +409,7 @@ mw
 | [RoomSettings](../classes/mw.RoomSettings.md)  |
 | 房间设置|
 | [Rotation](../classes/mw.Rotation.md)  |
-| 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。|
+| 由分量 (x,y,z) 组成的三维空间中的旋转量。|
 | [RouteService](../classes/mw.RouteService.md)  |
 | 游戏管理器|
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
