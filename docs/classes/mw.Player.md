@@ -817,7 +817,7 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
 </span>
 
-* ``` typescript
+```ts
   // 服务端每个玩家进入游戏时会自动创建一个实例
   @Core.Class
   export class GamePlayerState extends mw.PlayerState {
@@ -856,7 +856,7 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
           playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
       }
   }
-```ts
+```
 
 #### Type parameters
 
@@ -908,7 +908,7 @@ ___
 使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -933,7 +933,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -953,7 +953,7 @@ ___
 使用示例:将使用到的资源:“27087”拖入优先加载栏。创建一个名为"Example_Player_GetAllPlayers"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在服务端添加一个【打印游戏内全部玩家信息】事件监听器,监听事件后在场景中看到一个皇冠在玩家角色的头顶生成的效果并在控制台打印玩家们的userId,遇到发起事件的客户端玩家时提示This is me.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetAllPlayers extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -984,7 +984,7 @@ export default class Example_Player_GetAllPlayers extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1015,7 +1015,7 @@ ___
 使用示例:创建一个名为"Example_Player_GetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetControllerRotation extends Script {
     // 声明变量
@@ -1046,7 +1046,7 @@ export default class Example_Player_GetControllerRotation extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1077,7 +1077,7 @@ ___
 使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1102,7 +1102,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1123,7 +1123,7 @@ ___
 使用示例:创建一个名为"Example_Player_SetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_SetControllerRotation extends Script {
     // 声明变量
@@ -1154,7 +1154,7 @@ export default class Example_Player_SetControllerRotation extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1180,7 +1180,7 @@ ___
 使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下:
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_SpawnDefaultCharacter extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1209,4 +1209,4 @@ export default class Example_Player_SpawnDefaultCharacter extends Script {
         }
     }
 }
-```ts
+```
