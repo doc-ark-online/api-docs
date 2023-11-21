@@ -59,7 +59,7 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
 | 获取控制器的旋转|
 | **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string`  `number`): [`Player`](mw.Player.md)  |
-| 获取玩家，根据userid找到对应的玩家|
+| 获取玩家，根据userId找到对应的玩家|
 | **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void`  |
 | 覆写控制器的旋转|
 | **[spawnDefaultCharacter](mw.Player.md#spawndefaultcharacter)**(): [`Character`](mw.Character.md)  |
@@ -1054,7 +1054,7 @@ ___
 
 • `Static` **getPlayer**(`uniqueId`): [`Player`](mw.Player.md) 
 
-获取玩家，根据userid找到对应的玩家
+获取玩家，根据userId找到对应的玩家
 
 #### Parameters
 
