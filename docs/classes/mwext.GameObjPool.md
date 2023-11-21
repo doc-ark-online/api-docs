@@ -148,9 +148,7 @@ export default class GameObjPoolExample extends Script {
     public createCube(): void {
         const cubeAssetId = "197386";
         //创建10个方块 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //回收该对象但不隐藏
@@ -196,9 +194,7 @@ export default class GameObjPoolExample extends Script {
         const cubeAssetId = "197386";
         const cubeAssetId2 = "7675";
         //创建10个方块 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //只回收前5个方块
@@ -210,9 +206,7 @@ i++) {
             });
         }
         //创建10个球体 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 300, 0);
                 //只回收前5个球体

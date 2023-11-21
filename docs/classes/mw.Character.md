@@ -3876,16 +3876,12 @@ export default class Example_MaxStepHeight extends Script {
          if(SystemUtil.isServer()) {
             // 创建5个不同高度的立方体：10，20，40，80，160
             let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
+            for (let i = 0; i < cubeHeight.length; i++) {
                 GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
             }
             // 创建5个不同坡度的锥体:1，30，45，60，89
             let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
+            for (let i = 0; i < coneAngle.length; i++) {
                 console.log("1111");
                 GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
             }
@@ -5447,16 +5443,12 @@ export default class Example_WalkableFloorAngle extends Script {
          if(SystemUtil.isServer()) {
             // 创建5个不同高度的立方体：10，20，40，80，160
             let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
+            for (let i = 0; i < cubeHeight.length; i++) {
                 GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
             }
             // 创建5个不同坡度的锥体:1，30，45，60，89
             let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
+            for (let i = 0; i < coneAngle.length; i++) {
                 console.log("1111");
                 GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
             }
