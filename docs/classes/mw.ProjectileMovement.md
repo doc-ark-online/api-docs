@@ -626,9 +626,7 @@ export default class Example_ProjectileMovement_Destroy extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0;
-i < 5;
-i++) {
+           for (let i = 0; i < 5; i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;
@@ -716,9 +714,7 @@ export default class Example_ProjectileMovement extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0;
-i < 5;
-i++) {
+           for (let i = 0; i < 5; i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;
@@ -1253,9 +1249,7 @@ export default class Example_ProjectileMovement extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0;
-i < 5;
-i++) {
+           for (let i = 0; i < 5; i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;

@@ -99,9 +99,7 @@ export default class Example_SpringArm_CollisionEnabled extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
@@ -201,9 +199,7 @@ export default class Example_SpringArm_CollisionEnabled extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
