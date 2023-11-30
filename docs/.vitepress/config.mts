@@ -1,5 +1,4 @@
-import type { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
-import { dealConfigSidebar, dealItem } from '../../utils'
+import type { DefaultTheme } from 'doc-theme-323'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
@@ -1021,6 +1020,29 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       {
         rel: 'icon',
         href: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/tab-logo.png'
+      }
+    ],
+    [
+      'script',
+      {},
+      `
+    window.PandoraConfig = {
+      base: {
+        index_type: 'cDEwMTE2/wl',
+        selfpackagename: 'com.metaverse.creator.api',
+      },
+      other: {
+        appkey: 'cDEwMTE2',
+        zone: 'zh',
+        baseUrl: 'https://push.233leyuan.com'
+      }
+    }
+    `
+    ],
+    [
+      'script',
+      {
+        src: 'https://wstatic-01-ali.233leyuan.com/common/pandora/5.2.4/pandora_sdk.min.js'
       }
     ],
     [

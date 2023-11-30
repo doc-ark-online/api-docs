@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from 'fs'
 import * as path from 'path'
-import { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
+import { DefaultTheme } from 'doc-theme-323'
 import { globSync } from 'glob'
 
 /**根据文件夹生成对应的子类 */
