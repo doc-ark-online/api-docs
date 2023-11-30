@@ -306,18 +306,18 @@ class PlayerModuleData extends Subdata {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: `TypeName`<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`   |
+| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`   |
 | :-----|
 | 调用一个模块的onExecute方法|
-| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: `TypeName`<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
+| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
 | 2. 让外部代码进行调用（比如在UI脚本里需要使用到模块里的方法）。|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`   |
 | 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
 | **[ready](mwext.ModuleService.md#ready)**(): `Promise`<`void`\>   |
 | 注册的模块是否就绪|
-| **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: `TypeName`<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: `TypeName`<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md)   |
+| **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md)   |
 | 4. 让C和S关联同一份数据（数据由S端获取，玩家上线以及每次服务端save数据的时候，会同步给客户端）。|
-| **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md) <Badge type="tip" text="client" />  |
+| **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md) <Badge type="tip" text="client" />  |
 | 设置客户端第一个要启动的模块|
 
 ## Methods
@@ -330,7 +330,7 @@ class PlayerModuleData extends Subdata {
 
 #### Parameters
 
-| `moduleClass` `TypeName`<`T`\> |  模块 |
+| `moduleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块 |
 | :------ | :------ |
 | `type?` `number` |  给onExecute方法传递的操作类型，需要各个模块自己定义 default: 0 |
 | `...params` `any`[] |  给onExecute方法传递的参数，需要各个模块自己定义 |
@@ -355,7 +355,7 @@ ___
 
 #### Parameters
 
-| `ModuleClass` `TypeName`<`T`\> |  模块类型 |
+| `ModuleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块类型 |
 | :------ | :------ |
 
 #### Returns
@@ -420,10 +420,10 @@ ___
 
 #### Parameters
 
-| `ServerModuleType` `TypeName`<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
+| `ServerModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
 | :------ | :------ |
-| `ClientModuleType` `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
-| `ModuleDataType?` `TypeName`<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default: null |
+| `ClientModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
+| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default: null |
 
 #### Returns
 
@@ -448,7 +448,7 @@ ___
 
 #### Parameters
 
-| `ModuleClass` `TypeName`<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块类 |
+| `ModuleClass` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块类 |
 | :------ | :------ |
 
 #### Returns
