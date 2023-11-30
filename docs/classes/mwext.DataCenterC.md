@@ -1,4 +1,4 @@
-[拓展](../groups/Extension.拓展.md) / DataCenterC
+[基类](../groups/Extension.基类.md) / DataCenterC
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 

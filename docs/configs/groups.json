@@ -1514,6 +1514,15 @@
         },
         "no_children_files": null,
         "children": null
+      },
+      "BubbleOdin": {
+        "file": {
+          "file_name": "mw.BubbleOdin.md",
+          "file_path": "classes/mw.BubbleOdin.md",
+          "name": "BubbleOdin"
+        },
+        "no_children_files": null,
+        "children": null
       }
     }
   },
@@ -1780,6 +1789,82 @@
         },
         "no_children_files": null,
         "children": null
+      }
+    }
+  },
+  "基类": {
+    "file": {
+      "file_name": "基类.基类.md",
+      "file_path": "groups/基类.基类.md",
+      "name": "基类"
+    },
+    "no_children_files": null,
+    "children": {
+      "数据拓展": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "Subdata": {
+            "file": {
+              "file_name": "mwext.Subdata.md",
+              "file_path": "classes/mwext.Subdata.md",
+              "name": "Subdata"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "DataCenterS": {
+            "file": {
+              "file_name": "mwext.DataCenterS.md",
+              "file_path": "classes/mwext.DataCenterS.md",
+              "name": "DataCenterS"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "DataCenterC": {
+            "file": {
+              "file_name": "mwext.DataCenterC.md",
+              "file_path": "classes/mwext.DataCenterC.md",
+              "name": "DataCenterC"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "C&S拓展": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "ModuleS": {
+            "file": {
+              "file_name": "mwext.ModuleS.md",
+              "file_path": "classes/mwext.ModuleS.md",
+              "name": "ModuleS"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ModuleC": {
+            "file": {
+              "file_name": "mwext.ModuleC.md",
+              "file_path": "classes/mwext.ModuleC.md",
+              "name": "ModuleC"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ModuleService": {
+            "file": {
+              "file_name": "mwext.ModuleService.md",
+              "file_path": "classes/mwext.ModuleService.md",
+              "name": "ModuleService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
       }
     }
   }

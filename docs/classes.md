@@ -14,8 +14,8 @@ Classes
 ## D
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [DataCenterC](classes/mwext.DataCenterC.md) | 客户端数据中心，里面存放着当前玩家的数据 | [拓展](groups/拓展.拓展.md) |
-| [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据 | [拓展](groups/拓展.拓展.md) |
+| [DataCenterC](classes/mwext.DataCenterC.md) | 客户端数据中心，里面存放着当前玩家的数据 | [基类](groups/基类.基类.md) |
+| [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据。 | [基类](groups/基类.基类.md) |
 
 
 ## G
@@ -37,9 +37,9 @@ Classes
 ## M
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [拓展](groups/拓展.拓展.md) |
-| [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [拓展](groups/拓展.拓展.md) |
-| [ModuleService](classes/mwext.ModuleService.md) | 模块管理 | [拓展](groups/拓展.拓展.md) |
+| [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [基类](groups/基类.基类.md) |
+| [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [基类](groups/基类.基类.md) |
+| [ModuleService](classes/mwext.ModuleService.md) | 服务端客户端及数据模块管理 | [基类](groups/基类.基类.md) |
 
 
 ## O
@@ -51,5 +51,5 @@ Classes
 ## S
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [Subdata](classes/mwext.Subdata.md) | 数据控制类的基类 | [拓展](groups/拓展.拓展.md) |
+| [Subdata](classes/mwext.Subdata.md) | 数据控制类的基类 | [基类](groups/基类.基类.md) |
 

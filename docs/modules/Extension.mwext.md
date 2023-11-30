@@ -22,7 +22,7 @@ mwext
 | [DataCenterC](../classes/mwext.DataCenterC.md)  |
 | 客户端数据中心，里面存放着当前玩家的数据|
 | [DataCenterS](../classes/mwext.DataCenterS.md)  |
-| 服务端数据中心，管理所有玩家的数据|
+| 服务端数据中心，管理所有玩家的数据。|
 | [GameObjPool](../classes/mwext.GameObjPool.md)  |
 | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存|
 | [LeaderboardItemPanelBase](../classes/mwext.LeaderboardItemPanelBase.md)  |
@@ -40,7 +40,7 @@ mwext
 | [ModuleS](../classes/mwext.ModuleS.md)  |
 | 服务端模块的基类|
 | [ModuleService](../classes/mwext.ModuleService.md)  |
-| 模块管理|
+| 服务端客户端及数据模块管理|
 | [ObjPool](../classes/mwext.ObjPool.md)  |
 | 通用对象池，可用于各种类型对象的复用|
 | [Subdata](../classes/mwext.Subdata.md)  |

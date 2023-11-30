@@ -1,14 +1,14 @@
-[拓展](../groups/Extension.拓展.md) / ModuleC
+[基类](../groups/Extension.基类.md) / ModuleC
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
 客户端模块的基类
 
-::: warning Precautions
+所有的客户端模块都必须继承这个类，才能被 ModuleService 管理。
 
-所有的客户端模块都必须继承这个类，才能被ModuleService管理
+注意：继承自 ModuleC 类中的方法名。当方法名前缀为"net_XXX"的方法才能在继承 ModuleS 中调用。
 
-:::
+继承自 ModuleC 的脚本享有的生命周期为：
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为ModuleCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会输出player模块每个生命周期执行的日志，按下F键你将在客户端以及服务端日志中看到玩家等级的信息
