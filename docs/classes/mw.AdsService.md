@@ -153,16 +153,16 @@ export default class AdsExample extends mw.Script {
     private async playAd(type: AdsType): Promise<void> {
         let player = await mw.Player.localPlayer;
         if (!AdsService.isActive(type)) {
-            player.character.name = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
+            player.character.displayName = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
             return;
         }
         AdsService.isReady(type, (isReady) => {
             if (!isReady) {
-                player.character.name = type == AdsType.Reward ? "激励广告未准备好" : "插屏广告未准备好";
+                player.character.displayName = type == AdsType.Reward ? "激励广告未准备好" : "插屏广告未准备好";
                 return;
             }
             AdsService.showAd(type, async (isSuccess) => {
-                if (isSuccess) player.character.name = type == AdsType.Reward ? "激励广告播放成功" : "插屏广告播放成功";
+                if (isSuccess) player.character.displayName = type == AdsType.Reward ? "激励广告播放成功" : "插屏广告播放成功";
                 await TimeUtil.delaySecond(10);
                 type == AdsType.Reward ? this.playAd(AdsType.Interstitial) : this.playAd(AdsType.Reward);
             });

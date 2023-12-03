@@ -150,11 +150,11 @@ export default class Example_Player_OnPlayerDisconnect extends Script {
             Player.onPlayerLeave.add((player) => {
                 console.log("Player " + player.userId + " Left the Game");
             });
-            // 给【玩家断线】委托添加一个函数，打印玩家加入游戏消息
+            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
             Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
-            // 给【玩家重连】委托添加一个函数，打印玩家离开游戏消息
+            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
@@ -164,11 +164,11 @@ export default class Example_Player_OnPlayerDisconnect extends Script {
             // 获取当前客户端的玩家(自己)
             let myself = Player.localPlayer;
             // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
         }
@@ -210,11 +210,11 @@ export default class Example_Player_OnPlayerJoin extends Script {
             Player.onPlayerLeave.add((player) => {
                 console.log("Player " + player.userId + " Left the Game");
             });
-            // 给【玩家断线】委托添加一个函数，打印玩家加入游戏消息
+            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
             Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
-            // 给【玩家重连】委托添加一个函数，打印玩家离开游戏消息
+            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
@@ -224,11 +224,11 @@ export default class Example_Player_OnPlayerJoin extends Script {
             // 获取当前客户端的玩家(自己)
             let myself = Player.localPlayer;
             // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
         }
@@ -270,11 +270,11 @@ export default class Example_Player_OnPlayerLeave extends Script {
             Player.onPlayerLeave.add((player) => {
                 console.log("Player " + player.userId + " Left the Game");
             });
-            // 给【玩家断线】委托添加一个函数，打印玩家加入游戏消息
+            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
             Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
-            // 给【玩家重连】委托添加一个函数，打印玩家离开游戏消息
+            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
@@ -284,11 +284,11 @@ export default class Example_Player_OnPlayerLeave extends Script {
             // 获取当前客户端的玩家(自己)
             let myself = Player.localPlayer;
             // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
         }
@@ -330,11 +330,11 @@ export default class Example_Player_OnPlayerReconnect extends Script {
             Player.onPlayerLeave.add((player) => {
                 console.log("Player " + player.userId + " Left the Game");
             });
-            // 给【玩家断线】委托添加一个函数，打印玩家加入游戏消息
+            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
             Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
-            // 给【玩家重连】委托添加一个函数，打印玩家离开游戏消息
+            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
@@ -344,11 +344,11 @@ export default class Example_Player_OnPlayerReconnect extends Script {
             // 获取当前客户端的玩家(自己)
             let myself = Player.localPlayer;
             // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerDisconnect.add((player) => {
                 console.log("Player " + player.userId + " is disconnected");
             });
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerJoin.add((player) => {
+            Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
             });
         }
