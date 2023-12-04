@@ -29,12 +29,12 @@ CharacterDescription 在 CharacterDescription 高级人形配置有留有 slotAn
 ### Properties <Score text="Properties" /> 
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string`  [`GameObject`](mw.GameObject.md), `attachmentOffset?`: [`Transform`](mw.Transform.md)): `void`   |
+| **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string`  [`GameObject`](mw.GameObject.md), `attachmentOffset?`: [`Transform`](mw.Transform.md)): `number`   |
 | :-----|
 | 向当前外观插槽中添加一个挂件|
 | **[clear](mw.CharacterDecoration.md#clear)**(`isDestroy?`: `boolean`): `void`   |
 | 清空当前外观插槽的所有挂件|
-| **[delete](mw.CharacterDecoration.md#delete)**(`attachmentGameObject`: [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void`   |
+| **[delete](mw.CharacterDecoration.md#delete)**(`attachmentElement`: `number`  [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void`   |
 | 从当前插槽中删除一个挂件|
 
 ## Properties
@@ -45,7 +45,7 @@ ___
 
 ### add <Score text="add" /> 
 
-• **add**(`decoration`, `attachmentOffset?`): `void` 
+• **add**(`decoration`, `attachmentOffset?`): `number` 
 
 向当前外观插槽中添加一个挂件
 
@@ -55,6 +55,10 @@ ___
 | :------ | :------ |
 | `attachmentOffset?` [`Transform`](mw.Transform.md) | 挂件transform信息 default:null |
 
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
 
 ::: warning Precautions
 
@@ -162,13 +166,13 @@ ___
 
 ### delete <Score text="delete" /> 
 
-• **delete**(`attachmentGameObject`, `isDestroy?`): `void` 
+• **delete**(`attachmentElement`, `isDestroy?`): `void` 
 
 从当前插槽中删除一个挂件
 
 #### Parameters
 
-| `attachmentGameObject` [`GameObject`](mw.GameObject.md) | 挂件 |
+| `attachmentElement` `number`  [`GameObject`](mw.GameObject.md) | 挂件 |
 | :------ | :------ |
 | `isDestroy?` `boolean` | 是否销毁 default:false |
 

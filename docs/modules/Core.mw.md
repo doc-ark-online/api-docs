@@ -407,15 +407,13 @@ mw
 | [RoomSettings](../classes/mw.RoomSettings.md)  |
 | 房间设置|
 | [Rotation](../classes/mw.Rotation.md)  |
-| 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。|
+| 由分量 (x,y,z) 组成的三维空间中的旋转量。|
 | [RouteService](../classes/mw.RouteService.md)  |
 | 游戏管理器|
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
 | 屏幕视口工具|
 | [Script](../classes/mw.Script.md)  |
 | 脚本的基类|
-| [ScriptManager](../classes/mw.ScriptManager.md)  |
-| 脚本管理类|
 | [ScriptingSettings](../classes/mw.ScriptingSettings.md)  |
 | 全局的脚本配置信息|
 | [ScrollBox](../classes/mw.ScrollBox.md)  |

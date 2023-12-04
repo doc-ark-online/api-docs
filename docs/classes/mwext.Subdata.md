@@ -32,6 +32,10 @@
 
 3. 通过改写 ModuleService 中的示例，数据控制中心如何使用：
 
+<span style="font-size: 14px;">
+使用示例: C&S 和数据模块组合。
+</span>
+
 ```ts
 @Component
 export default class GameStart extends Script {

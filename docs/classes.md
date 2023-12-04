@@ -23,8 +23,8 @@ Classes
 ## B
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [拓展](groups/拓展.拓展.md) |
-| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [拓展](groups/拓展.拓展.md) |
+| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [界面](groups/界面.界面.md) |
+| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [界面](groups/界面.界面.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
 | [Button](classes/mw.Button.md) | 按钮,无默认text | [界面](groups/界面.界面.md) |
 
@@ -75,7 +75,7 @@ Classes
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [拓展](groups/拓展.拓展.md) |
+| [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
 | [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
@@ -123,11 +123,11 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageUtil](classes/mw.LanguageUtil.md) | 多语言工具 | [工具](groups/工具.工具.md) |
-| [LeaderboardItemPanelBase](classes/mwext.LeaderboardItemPanelBase.md) | 排行榜主界面中的子UI，用来显示一条记录 | [拓展](groups/拓展.拓展.md) |
-| [LeaderboardMainPanelBase](classes/mwext.LeaderboardMainPanelBase.md) | 排行榜主界面 | [拓展](groups/拓展.拓展.md) |
-| [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [拓展](groups/拓展.拓展.md) |
-| [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [拓展](groups/拓展.拓展.md) |
-| [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [拓展](groups/拓展.拓展.md) |
+| [LeaderboardItemPanelBase](classes/mwext.LeaderboardItemPanelBase.md) | 排行榜主界面中的子UI，用来显示一条记录 | [界面](groups/界面.界面.md) |
+| [LeaderboardMainPanelBase](classes/mwext.LeaderboardMainPanelBase.md) | 排行榜主界面 | [界面](groups/界面.界面.md) |
+| [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [界面](groups/界面.界面.md) |
+| [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [界面](groups/界面.界面.md) |
+| [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [界面](groups/界面.界面.md) |
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
 | [LinearColor](classes/mw.LinearColor.md) | 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
@@ -160,7 +160,7 @@ Classes
 ## O
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ObjPool](classes/mwext.ObjPool.md) | 通用对象池，可用于各种类型对象的复用 | [拓展](groups/拓展.拓展.md) |
+| [ObjPool](classes/mwext.ObjPool.md) | 通用对象池，可用于各种类型对象的复用 | [基类](groups/基类.基类.md) |
 | [ObjectLauncher](classes/mw.ObjectLauncher.md) | 投掷物发射器 | [玩法](groups/玩法.玩法.md) |
 
 
@@ -192,7 +192,7 @@ Classes
 | :-----| :-----| :-----|
 | [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [服务](groups/服务.服务.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [设置](groups/设置.设置.md) |
-| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 | [基础类型](groups/基础类型.基础类型.md) |
+| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量。 | [基础类型](groups/基础类型.基础类型.md) |
 | [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [服务](groups/服务.服务.md) |
 
 
@@ -201,7 +201,6 @@ Classes
 | :-----| :-----| :-----|
 | [ScreenUtil](classes/mw.ScreenUtil.md) | 屏幕视口工具 | [工具](groups/工具.工具.md) |
 | [Script](classes/mw.Script.md) | 脚本的基类 | [基类](groups/基类.基类.md) |
-| [ScriptManager](classes/mw.ScriptManager.md) | 脚本管理类 | [基类](groups/基类.基类.md) |
 | [ScriptingSettings](classes/mw.ScriptingSettings.md) | 全局的脚本配置信息 | [设置](groups/设置.设置.md) |
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [界面](groups/界面.界面.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 描边绘制工具 | [工具](groups/工具.工具.md) |

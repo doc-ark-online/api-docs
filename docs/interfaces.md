@@ -19,14 +19,14 @@ Interfaces
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjectInfo](interfaces/mw.GameObjectInfo.md) | 构建物体的信息 | [基础类型](groups/基础类型.基础类型.md) |
+| [GameObjectInfo](interfaces/mw.GameObjectInfo.md) | 构建物体的信息 | [基类](groups/基类.基类.md) |
 
 
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 排行榜面板一条数据的UI结构接口 | [拓展](groups/拓展.拓展.md) |
-| [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 排行榜面板的UI结构接口 | [拓展](groups/拓展.拓展.md) |
+| [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 排行榜面板一条数据的UI结构接口 | [界面](groups/界面.界面.md) |
+| [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 排行榜面板的UI结构接口 | [界面](groups/界面.界面.md) |
 
 
 ## P

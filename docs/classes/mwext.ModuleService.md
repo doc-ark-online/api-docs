@@ -10,6 +10,8 @@
 
 在游戏开发中，将游戏分为客户端和服务端有以下几个主要原因：
 
+![Module](https://cdn.233xyx.com/online/Ny9vZo8dRAHV1701435586204.png)
+
 - 分工合作：客户端和服务端各自负责不同的任务和功能。客户端主要处理玩家的输入、渲染和展示游戏画面，而服务端负责处理游戏的逻辑、数据存储和多玩家之间的通信。这种分工合作可以提高游戏的性能和效率。
 
 - 安全性和防作弊：将游戏逻辑和关键数据处理放在服务端可以提高游戏的安全性。客户端只负责输入和显示，而服务端拥有最终决策权，可以防止客户端作弊和修改游戏规则。通过服务端验证和控制玩家的操作，可以维护游戏的公平性和防止外挂的出现。
@@ -26,13 +28,19 @@
 
 - 从服务器到一个特定客户端的通信。例如，新玩家加入游戏，服务器会用一组物品填充该玩家的背包。
 
+![Module](https://cdn.233xyx.com/online/wVrPfW2rClRK1701435672610.png)
+
 - 从任何客户端到服务器的通信。例如，玩家按P键喝下隐形药水，并告诉服务器使该玩家的角色对所有其他玩家隐形。
+
+![Module](https://cdn.233xyx.com/online/vZeLfP3Ex5yG1701435716734.png)
 
 - 服务器和所有连接的客户端之间的通信。例如，服务端会通知所有玩家某个玩家使用了隐形药水。
 
+![Module](https://cdn.233xyx.com/online/dgEIk8mdMj461701435757560.png)
+
 这里不需要你考虑HTTP、websocket或RPC等复杂的通信方式，只需要按照一定的格式搭建你的客户端服务端代码即可。
 
-服务端开发费用通常是多人游戏开发成本的重要组成部分，可能占到总体开发费用的30%到50%甚至更多，具体比例会因游戏的特点而有所不同。口袋方舟会免费为您提供多人游戏服务器！
+服务端开发费用通常是多人游戏开发成本的重要组成部分，可能占到总体开发费用的30%到50%甚至更多，具体比例会因游戏的特点而有所不同，口袋方舟会免费为您提供多人游戏服务器。
 
 3. 哪些逻辑写在客户端哪些逻辑写在服务端？
 
@@ -42,21 +50,25 @@
 
 例如，当玩家角色要施放技能，整个过程是这样的：
 
-首先，客户端向服务端发送“释放技能”的指令。服务端于是回应客户端，“在某地以某个方向释放了某个技能”。
+首先，客户端向服务端发送“释放技能”的指令。服务端回应客户端：“在某地以某个方向释放了某个技能”。
 
-然后，客户端根据这些信息创建出特效，并让特效沿着指定方向飞行。而服务端则会运用碰撞检测逻辑来判断技能是否与敌方英雄碰撞。
+然后，客户端根据这些信息创建出特效，并让特效沿着指定方向飞行。服务端则会运用碰撞检测逻辑来判断技能是否与敌方英雄碰撞。
 
 当技能与敌方英雄相撞时，服务端将告知客户端，客户端便立即删除特效，并按照服务端的指示，为被击中的英雄减血，同时播放受击特效。
 
 总之，客户端的主要任务是根据服务端传来的数据来呈现游戏的结果，而无法对游戏核心逻辑进行实质性的改变。这样的设计确保了游戏的一致性，使得所有玩家在游戏世界中都能享受相同的游戏体验。
 
-4. 数据如何处理？
+4. 游戏中的数据如何处理？
 
 请看 subdata 类。
 
 5. 使用步骤：
 
-->（1）编写模块C和模块S以及模块数据
+->（1）编写模块C端和模块S端以及模块数据
+
+<span style="font-size: 14px;">
+使用示例: C&S 代码架构。
+</span>
 
 ```ts
 // 模块C（客户端）
@@ -83,6 +95,10 @@ export class MyModuleData extends Subdata {
 
 ->（2）注册模块
 
+<span style="font-size: 14px;">
+使用示例: C&S 注册模块。
+</span>
+
 ```ts
 @Component
 export default class GameStart extends Script {
@@ -96,6 +112,10 @@ export default class GameStart extends Script {
 以下一个非常简单例子，告诉你 ModuleService 如何管理 C&S 代码。
 
 ![Module](https://cdn.233xyx.com/online/oJafgxHSRWF31701254464484.png)
+
+<span style="font-size: 14px;">
+使用示例: C&S 代码示例。
+</span>
 
 ```ts
 @Component
@@ -144,6 +164,10 @@ class AppleModC extends ModuleC<AppleModS,null> {
 注：这里只是初步探讨 ModuleService ModuleC ModuleS 的使用方法，考虑到真实做游戏时，需要数据（苹果数量）单独存储，存在客户端容易发生作弊；完整示例请看 Subdata 。
 
 不使用 ModuleService 时，同样的功能书写为下：
+
+<span style="font-size: 14px;">
+使用示例: 不使用 C&S 代码架构的使用示例。
+</span>
 
 ```ts
 @Component
@@ -423,7 +447,7 @@ ___
 | `ServerModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
 | :------ | :------ |
 | `ClientModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
-| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default: null |
+| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default:null |
 
 #### Returns
 

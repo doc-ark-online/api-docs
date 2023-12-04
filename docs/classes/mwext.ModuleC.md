@@ -8,7 +8,9 @@
 
 注意：继承自 ModuleC 类中的方法名。当方法名前缀为"net_XXX"的方法才能在继承 ModuleS 中调用。
 
-继承自 ModuleC 的脚本享有的生命周期为：
+在 Script 类中说过，继承自 Script 的类享受onStart、OnUpdate、OnDestroy脚本的生命周期，在此基础之上，当在onStart()函数中注册了客户端服务端以及数据模块之后
+
+ModuleService.registerModule(YourModS, YourModC, YourData);
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为ModuleCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会输出player模块每个生命周期执行的日志，按下F键你将在客户端以及服务端日志中看到玩家等级的信息

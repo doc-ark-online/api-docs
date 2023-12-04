@@ -1,4 +1,4 @@
-[拓展](../groups/Extension.拓展.md) / ObjPool
+[基类](../groups/Extension.基类.md) / ObjPool
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 

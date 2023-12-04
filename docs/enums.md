@@ -66,7 +66,7 @@ Enums
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [拓展](groups/拓展.拓展.md) |
+| [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [基类](groups/基类.基类.md) |
 | [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [基础类型](groups/基础类型.基础类型.md) |
 | [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |

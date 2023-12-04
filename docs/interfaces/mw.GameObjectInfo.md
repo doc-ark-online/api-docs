@@ -1,4 +1,4 @@
-[基础类型](../groups/基础类型.基础类型.md) / GameObjectInfo
+[基类](../groups/基类.基类.md) / GameObjectInfo
 
 # GameObjectInfo <Badge type="tip" text="Interface" /> <Score text="GameObjectInfo" />
 

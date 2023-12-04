@@ -2222,6 +2222,24 @@
             },
             "no_children_files": null,
             "children": null
+          },
+          "RequestInit": {
+            "file": {
+              "file_name": "mw.RequestInit.md",
+              "file_path": "interfaces/mw.RequestInit.md",
+              "name": "RequestInit"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Response": {
+            "file": {
+              "file_name": "mw.Response.md",
+              "file_path": "interfaces/mw.Response.md",
+              "name": "Response"
+            },
+            "no_children_files": null,
+            "children": null
           }
         }
       },
@@ -2363,6 +2381,21 @@
             "children": null
           }
         }
+      },
+      "载具": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "AdvancedVehicle": {
+            "file": {
+              "file_name": "mw.AdvancedVehicle.md",
+              "file_path": "classes/mw.AdvancedVehicle.md",
+              "name": "AdvancedVehicle"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
       }
     },
     "no_children_files": {
@@ -2401,7 +2434,77 @@
       "file_path": "groups/界面.界面.md",
       "name": "界面"
     },
-    "children": null,
+    "children": {
+      "排行榜": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "ILeaderboardPanelView": {
+            "file": {
+              "file_name": "mwext.ILeaderboardPanelView.md",
+              "file_path": "interfaces/mwext.ILeaderboardPanelView.md",
+              "name": "ILeaderboardPanelView"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ILeaderboardItemView": {
+            "file": {
+              "file_name": "mwext.ILeaderboardItemView.md",
+              "file_path": "interfaces/mwext.ILeaderboardItemView.md",
+              "name": "ILeaderboardItemView"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "LeaderboardModuleBaseC": {
+            "file": {
+              "file_name": "mwext.LeaderboardModuleBaseC.md",
+              "file_path": "classes/mwext.LeaderboardModuleBaseC.md",
+              "name": "LeaderboardModuleBaseC"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "LeaderboardItemPanelBase": {
+            "file": {
+              "file_name": "mwext.LeaderboardItemPanelBase.md",
+              "file_path": "classes/mwext.LeaderboardItemPanelBase.md",
+              "name": "LeaderboardItemPanelBase"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "LeaderboardMainPanelBase": {
+            "file": {
+              "file_name": "mwext.LeaderboardMainPanelBase.md",
+              "file_path": "classes/mwext.LeaderboardMainPanelBase.md",
+              "name": "LeaderboardMainPanelBase"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "LeaderboardModule": {
+            "file": {
+              "file_name": "mwext.LeaderboardModule.md",
+              "file_path": "classes/mwext.LeaderboardModule.md",
+              "name": "LeaderboardModule"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "LeaderboardModuleBaseS": {
+            "file": {
+              "file_name": "mwext.LeaderboardModuleBaseS.md",
+              "file_path": "classes/mwext.LeaderboardModuleBaseS.md",
+              "name": "LeaderboardModuleBaseS"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      }
+    },
     "no_children_files": {
       "SlateColor": {
         "file": {
@@ -2750,6 +2853,24 @@
           "file_name": "mw.UserWidgetPrefab.md",
           "file_path": "classes/mw.UserWidgetPrefab.md",
           "name": "UserWidgetPrefab"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "BaseView": {
+        "file": {
+          "file_name": "mwext.BaseView.md",
+          "file_path": "classes/mwext.BaseView.md",
+          "name": "BaseView"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "BasePanel": {
+        "file": {
+          "file_name": "mwext.BasePanel.md",
+          "file_path": "classes/mwext.BasePanel.md",
+          "name": "BasePanel"
         },
         "no_children_files": null,
         "children": null
@@ -3178,6 +3299,30 @@
             "children": null
           }
         }
+      },
+      "对象池": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "ObjPool": {
+            "file": {
+              "file_name": "mwext.ObjPool.md",
+              "file_path": "classes/mwext.ObjPool.md",
+              "name": "ObjPool"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "GameObjPool": {
+            "file": {
+              "file_name": "mwext.GameObjPool.md",
+              "file_path": "classes/mwext.GameObjPool.md",
+              "name": "GameObjPool"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
       }
     },
     "no_children_files": {
@@ -3204,6 +3349,15 @@
           "file_name": "mw.ScriptManager.md",
           "file_path": "classes/mw.ScriptManager.md",
           "name": "ScriptManager"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GameObjectInfo": {
+        "file": {
+          "file_name": "mw.GameObjectInfo.md",
+          "file_path": "interfaces/mw.GameObjectInfo.md",
+          "name": "GameObjectInfo"
         },
         "no_children_files": null,
         "children": null

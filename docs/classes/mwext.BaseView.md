@@ -1,4 +1,4 @@
-[拓展](../groups/Extension.拓展.md) / BaseView
+[界面](../groups/Extension.界面.md) / BaseView
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 

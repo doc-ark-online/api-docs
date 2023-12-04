@@ -6,12 +6,20 @@
 
 所有的服务端模块都必须继承这个类，才能被 ModuleService 管理。
 
-注意：继承自 ModuleS 类中的方法名。当方法名前缀为"net_XXX"的方法才能在继承 ModuleC 中调用。
+注意：继承自 ModuleS 类中的方法名。当方法名前缀为"net_XXX"的方法才能在客户端中调用。
 
-继承自 ModuleS 的脚本享有的生命周期为：
+在 Script 类中说过，继承自 Script 的类享受onStart()、onUpdate()、onDestroy() 脚本的生命周期，在此基础之上，当在onStart()函数中注册了客户端服务端以及数据模块之后
+
+ModuleService.registerModule(YourModS, YourModC, YourData);
+
+继承自 ModuleS 的类也封装了一套生命周期。
+
+继承自 ModuleS 的生命周期为：
+
+![Module](https://cdn.233xyx.com/online/CnYyNlTulPcV1701529193879.png)
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息
+使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息。
 </span>
 
 ```ts

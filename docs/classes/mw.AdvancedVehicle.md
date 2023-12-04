@@ -149,7 +149,7 @@ export default class VehicleSample extends Script {
             // 判断是否是玩家角色触碰的触发器，且是当前玩家。
             if (chara && chara.player == await mw.Player.asyncGetLocalPlayer()) {
                 // 关闭角色碰撞，避免与载具发生相互作用。
-                chara.setCollision(CollisionStatus.On);
+                chara.setCollision(CollisionStatus.Off);
                 // 激活交互物，让角色坐在车上。
                 this.interactor.enter(chara, mw.HumanoidSlotType.Buttocks, "14015");
                 // 设置载具的驾驶员，此时开始模拟物理，可以驾驶。
@@ -408,6 +408,7 @@ export default class VehicleSample extends Script {
 | 获取轮胎绑定对象。|
 | **[getWheelRadius](mw.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number`   |
 | 获取车轮半径，单位：厘米（cm）。|
+| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void` |
 | **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
 | 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setWheelRadius](mw.AdvancedVehicle.md#setwheelradius)**(`wheelId`: `number`, `Radius`: `number`): `void`   |
@@ -1251,6 +1252,12 @@ ___
 
 ___
 
+### onDestroy <Score text="onDestroy" /> 
+
+• `Protected` **onDestroy**(): `void`
+
+___
+
 ### setCullDistance <Score text="setCullDistance" /> 
 
 • **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
@@ -1268,6 +1275,7 @@ ___
 最终的裁剪距离会和画质等级有关
 
 :::
+
 
 ___
 
