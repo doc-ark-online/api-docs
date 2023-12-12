@@ -2,7 +2,11 @@
 
 # PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
 
-UI的PanelWidget可以挂载子节点
+UI 控件中，可以挂载子控件的父类。
+
+---------------------
+
+注：029版本会更新，此类会废弃，所有的控件均可挂载子控件。029之前的版本只允许 ScrollBox、Canvas、Button挂载子控件。
 
 ## Hierarchy
 

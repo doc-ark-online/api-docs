@@ -115,7 +115,7 @@ ___
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -179,7 +179,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): `Promise`<`void`\> {
+      protected async onStart(): Promise<void> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {
@@ -224,7 +224,7 @@ ___
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -284,7 +284,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): `Promise`<`void`\> {
+      protected async onStart(): Promise<void> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {

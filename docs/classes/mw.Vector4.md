@@ -2,7 +2,11 @@
 
 # Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 
-由分量 (x,y,z,w) 组成的4D齐次向量
+齐次向量
+
+------------------
+
+由分量 (x,y,z,w) 组成的 4D 齐次向量
 
 ## Table of contents
 
@@ -22,7 +26,7 @@
 | :-----|
 | 计算向量长度 (模)|
 | **[magnitude](mw.Vector4.md#magnitude)**(`a`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求向量长度|
+| 向量长度|
 | **[negative](mw.Vector4.md#negative)**(): [`Vector4`](mw.Vector4.md)  |
 | 返回各个分量取反的新向量|
 | **[normalized](mw.Vector4.md#normalized)**(): [`Vector4`](mw.Vector4.md)  |
@@ -30,7 +34,7 @@
 | **[sqrLength](mw.Vector4.md#sqrlength)**(): `number`  |
 | 计算向量长度 (模)的平方|
 | **[sqrMagnitude](mw.Vector4.md#sqrmagnitude)**(`a`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求向量长度平方|
+| 向量长度平方|
 | **[negOne](mw.Vector4.md#negone)**(): [`Vector4`](mw.Vector4.md)  |
 | (-1, -1, -1, -1)|
 | **[one](mw.Vector4.md#one)**(): [`Vector4`](mw.Vector4.md)  |
@@ -41,77 +45,77 @@
 ### Methods <Score text="Methods" /> 
 | **[add](mw.Vector4.md#add)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
 | :-----|
-| 计算ab两个向量相加|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[clone](mw.Vector4.md#clone)**(`a`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
 | 获得指定向量的拷贝|
 | **[divide](mw.Vector4.md#divide)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a除以向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[equals](mw.Vector4.md#equals)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `epsilon?`: `number`): `boolean`   |
-| 排除浮点数误差的向量近似等价判断|
+| 判断两向量排除浮点数误差是否近似等价|
 | **[fromString](mw.Vector4.md#fromstring)**(`str`: `string`, `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 通过一个字符串创建 Vector4 对象|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[multiply](mw.Vector4.md#multiply)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a乘以向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[normalize](mw.Vector4.md#normalize)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 归一化向量|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[strictEquals](mw.Vector4.md#strictequals)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): `boolean`   |
-| 向量等价判断|
+| 判断两向量是否相等|
 | **[subtract](mw.Vector4.md#subtract)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a减去向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[toString](mw.Vector4.md#tostring)**(): `string`   |
 | 输出为格式化字符串|
 | **[add](mw.Vector4.md#add-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算ab两个向量相加|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[ceil](mw.Vector4.md#ceil)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量向上取整|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[clone](mw.Vector4.md#clone-1)**(`a`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
 | 获得指定向量的拷贝|
 | **[copy](mw.Vector4.md#copy)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 将向量a的值赋给向量b|
+| 向量 a 的值赋给向量 b|
 | **[distance](mw.Vector4.md#distance)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求两向量的欧氏距离|
+| 两向量的欧氏距离|
 | **[divide](mw.Vector4.md#divide-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a除以向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[dot](mw.Vector4.md#dot)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 向量点积 (数量积)|
+| 点积|
 | **[equals](mw.Vector4.md#equals-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `epsilon?`: `number`): `boolean`   |
-| 排除浮点数误差的向量近似等价判断|
+| 判断两向量排除浮点数误差是否近似等价|
 | **[floor](mw.Vector4.md#floor)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量向下取整|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[fromString](mw.Vector4.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 通过一个字符串创建 Vector4 对象|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[invert](mw.Vector4.md#invert)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量取倒数，接近 0 时返回 Infinity|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[invertSafe](mw.Vector4.md#invertsafe)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md), `epsilon?`: `number`): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量取倒数，接近 0 时返回 0|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[lerp](mw.Vector4.md#lerp)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `t`: `number`, `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量线性插值： A + t * (B - A)|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[magnitude](mw.Vector4.md#magnitude-1)**(`a`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求向量长度|
+| 向量长度|
 | **[max](mw.Vector4.md#max)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量最大值|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[min](mw.Vector4.md#min)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量最小值|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[moveTowards](mw.Vector4.md#movetowards)**(`current`: [`Vector4`](mw.Vector4.md), `target`: [`Vector4`](mw.Vector4.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 向目标向量移动|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[multiply](mw.Vector4.md#multiply-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a乘以向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[negate](mw.Vector4.md#negate)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量取负|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[normalize](mw.Vector4.md#normalize-1)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 归一化向量|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[round](mw.Vector4.md#round)**(`a`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 逐元素向量四舍五入取整|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[set](mw.Vector4.md#set)**(`a`: [`Vector4`](mw.Vector4.md), `x`: `number`, `y`: `number`, `z`: `number`, `w`: `number`): [`Vector4`](mw.Vector4.md)   |
 | 设置向量值|
 | **[sqrMagnitude](mw.Vector4.md#sqrmagnitude-1)**(`a`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求向量长度平方|
+| 向量长度平方|
 | **[squaredDistance](mw.Vector4.md#squareddistance)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): `number`   |
-| 求两向量的欧氏距离平方|
+| 两向量的欧氏距离平方|
 | **[strictEquals](mw.Vector4.md#strictequals-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md)): `boolean`   |
-| 向量等价判断|
+| 判断两向量是否相等|
 | **[subtract](mw.Vector4.md#subtract-1)**(`a`: [`Vector4`](mw.Vector4.md), `b`: [`Vector4`](mw.Vector4.md), `outer?`: [`Vector4`](mw.Vector4.md)): [`Vector4`](mw.Vector4.md)   |
-| 计算向量a减去向量b|
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 
 用给定的 x 值设定给 x，y，z，w
 
@@ -201,7 +205,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -299,7 +303,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -397,9 +401,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -419,7 +423,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -436,7 +440,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `b` `number` | 数字b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
@@ -448,19 +452,15 @@ ___
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算向量a除以向量b
+向量 a 除以向量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -476,7 +476,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
@@ -495,7 +495,7 @@ ___
 
 #### Parameters
 
-| `str` `string` | 向量a |
+| `str` `string` | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -517,7 +517,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `b` `number` | 数字b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
@@ -529,19 +529,15 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算向量a乘以向量b
+向量 a 乘以向量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -570,9 +566,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -592,9 +588,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -623,19 +619,15 @@ ___
 
 • `Static` **add**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算ab两个向量相加
+两个向量相加
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -653,7 +645,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -662,11 +654,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素向上取整得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -678,7 +666,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -692,13 +680,13 @@ ___
 
 • `Static` **copy**(`a`, `b`): [`Vector4`](mw.Vector4.md) 
 
-将向量a的值赋给向量b
+向量 a 的值赋给向量 b
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -711,13 +699,13 @@ ___
 
 • `Static` **distance**(`a`, `b`): `number` 
 
-求两向量的欧氏距离
+两向量的欧氏距离
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -732,15 +720,11 @@ ___
 
 遍历向量a的每个分量除以数字b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `b` `number` | 数字b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
@@ -752,19 +736,15 @@ ___
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算向量a除以向量b
+向量 a 除以向量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -778,13 +758,13 @@ ___
 
 • `Static` **dot**(`a`, `b`): `number` 
 
-向量点积 (数量积)
+点积
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -797,13 +777,13 @@ ___
 
 • `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` 
 
-排除浮点数误差的向量近似等价判断
+判断两向量排除浮点数误差是否近似等价
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `epsilon?` `number` | 最小误差数 对象 default:1.e-8 |
 
 #### Returns
@@ -821,7 +801,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -830,11 +810,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素向下取整得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -844,15 +820,11 @@ ___
 
 通过一个字符串创建 Vector4 对象
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `str` `string` | 向量a |
+| `str` `string` | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -871,7 +843,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -880,11 +852,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素取倒数得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -896,7 +864,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 | `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
@@ -906,11 +874,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素取倒数得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -918,13 +882,13 @@ ___
 
 • `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-逐元素向量线性插值： A + t * (B - A)
+向量 a 每个元素线性插值： a + t  * (b - a)
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `t` `number` | 插值 |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -933,11 +897,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 插值得到的 Vector4 向量 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -945,11 +905,11 @@ ___
 
 • `Static` **magnitude**(`a`): `number` 
 
-求向量长度
+向量长度
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -967,9 +927,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -977,11 +937,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素取最大值得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -993,9 +949,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1003,11 +959,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素向量取最小值得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1030,11 +982,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 移动后的位置 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1042,17 +990,13 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-遍历向量a的每个分量乘以数字b
+向量 a 的每个分量乘以标量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `b` `number` | 数字b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
@@ -1064,19 +1008,15 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算向量a乘以向量b
+向量 a 乘以向量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1094,7 +1034,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -1103,11 +1043,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素取负得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1119,7 +1055,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -1128,11 +1064,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 归一化后得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1144,7 +1076,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
@@ -1153,11 +1085,7 @@ ___
 | [`Vector4`](mw.Vector4.md) | 逐元素四舍五入取整得到的 Vector4 对象 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1169,7 +1097,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 | `x` `number` | x 分量 |
 | `y` `number` | y 分量 |
@@ -1187,11 +1115,11 @@ ___
 
 • `Static` **sqrMagnitude**(`a`): `number` 
 
-求向量长度平方
+向量长度平方
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -1205,13 +1133,13 @@ ___
 
 • `Static` **squaredDistance**(`a`, `b`): `number` 
 
-求两向量的欧氏距离平方
+两向量的欧氏距离平方
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -1224,13 +1152,13 @@ ___
 
 • `Static` **strictEquals**(`a`, `b`): `boolean` 
 
-向量等价判断
+判断两向量是否相等
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 
 #### Returns
 
@@ -1243,19 +1171,15 @@ ___
 
 • `Static` **subtract**(`a`, `b`, `outer?`): [`Vector4`](mw.Vector4.md) 
 
-计算向量a减去向量b
+向量 a 减去向量 b
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector4`](mw.Vector4.md) | 向量a |
+| `a` [`Vector4`](mw.Vector4.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector4`](mw.Vector4.md) | 向量b |
+| `b` [`Vector4`](mw.Vector4.md) | 向量 b |
 | `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
 
 #### Returns

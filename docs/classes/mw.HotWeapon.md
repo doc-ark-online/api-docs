@@ -197,7 +197,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | **[onEquip](mw.HotWeapon.md#onequip)**: `MulticastDelegateInterface`<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>  |
 | 此委托可双端执行。当你在服务端调用时，角色装备上热武器时会在服务端执行自定义绑定函数；在客户端调用时，角色装备上热武器时会在客户端执行自定义绑定函数。|
 | **[onUnequip](mw.HotWeapon.md#onunequip)**: `MulticastDelegateInterface`<() => `void`\>  |
-| 此委托可双端执行。当你在服务端调用时，角色卸载热武器时会在服务端执行自定义绑定函数；在客户端调用时，角色卸载热武器时会在客户端执行自定义绑定函数。|
+| 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
 | **[recoilForceComponent](mw.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md)  |
 | 后坐力功能。|
 | **[reloadComponent](mw.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](mw.HotWeaponReloadComponent.md)  |
@@ -528,9 +528,7 @@ ___
 
 • **onUnequip**: `MulticastDelegateInterface`<() => `void`\>
 
-卸载热武器时执行绑定函数
-
-此委托可双端执行。当你在服务端调用时，角色卸载热武器时会在服务端执行自定义绑定函数；在客户端调用时，角色卸载热武器时会在客户端执行自定义绑定函数。
+服务器卸载时执行绑定函数。使用示例见属性 onEquipped
 
 ___
 
@@ -623,7 +621,7 @@ export default class HotWeaponReloadSample1 extends Script {
 <td style="text-align: left">
 
 
-获取是否开启了射击精度组件。
+是否开启了射击精度组件。
 
 #### Returns
 
@@ -671,7 +669,7 @@ ___
 <td style="text-align: left">
 
 
-获取是否开启了瞄准组件。
+是否开启了瞄准组件。
 
 #### Returns
 
@@ -719,7 +717,7 @@ ___
 <td style="text-align: left">
 
 
-获取是否开启了上膛组件。
+是否开启了上膛组件。
 
 #### Returns
 
@@ -815,7 +813,7 @@ ___
 <td style="text-align: left">
 
 
-获取是否开启了换弹组件。
+是否开启了换弹组件。
 
 #### Returns
 
@@ -989,7 +987,7 @@ export default class weapon extends Script {
    private hotweapon:HotWeapon;
    private gun:Model;
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
        if(SystemUtil.isServer()) {
            this.hotweapon = await GameObject.asyncSpawn<HotWeapon>("HotWeapon",{
                replicates:true,

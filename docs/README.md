@@ -12,4 +12,15 @@ typing-md / [Exports](modules.md)
 3. 通过 node 命令处理 zip 包
 4. 通过下面的命令拿到 new_docs.zip
 
-curl -F "zip_file=@docs.zip" http://spidergamecheck.233leyuan.com:6002/common/api_convert -v --output new_docs.zip
+-
+
+1. 拿到转化后的 md 内容
+   curl -F "zip_file=@docs.zip" http://spidergamecheck.233leyuan.com:6002/common/api_convert -v --output new_docs.zip
+2. 拿到用于 algolia 和 vscode 插件搜索的 json 数据
+   curl -F "zip_file=@docs.zip" http://spidergamecheck.233leyuan.com:6002/common/algolia_index -v --output new_docs.json
+3. 拿到教程文档的 algolia 上搜索的数据
+   curl -F "zip_file=@learning-docs.zip" http://spidergamecheck.233leyuan.com:6002/common/docs_index?tags=learning-docs -v --output learning-docs-index.json
+4. 拿到产品文档的 algolia 上搜索的数据
+   curl -F "zip_file=@product-docs.zip" http://spidergamecheck.233leyuan.com:6002/common/docs_index?tags=product-docs -v --output product-docs-index.json
+5. 拿到 API 文档的 algolia 上搜索的数据。目前主要用 2 的方式为主
+   curl -F "zip_file=@api-docs.zip" http://spidergamecheck.233leyuan.com:6002/common/docs_index?tags=api-docs -v --output api-docs-index.json

@@ -2,7 +2,58 @@
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
-世界UI组件
+世界 UI
+
+----------------------
+
+1. UI 界面分为两种：屏幕 UI 和世界 UI。
+
+UIWidget 是专门用来制作世界 UI 的。屏幕 UI 的详细制作方式请参考 UIService 或 UserWidget。
+
+![界面](https://cdn.233xyx.com/online/jf2eFfCbfVmJ1701944462027.png)
+
+2. UIWidget 有两种方式制作世界 UI ：
+
+- :cactus: 动态加载（只使用代码动态创建一个世界 UI）
+
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个世界 UI - 滑动条
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+
+    user:UserWidget;
+    widget:UIWidget;
+    progressBar:ProgressBar;
+
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            this.creatUI();
+            this.widget = GameObject.spawn<UIWidget>("UIWidget",{replicates:false});
+            this.widget.worldTransform.position = new Vector(0,0,100);
+            this.widget.setTargetUIWidget(this.user);
+        }
+    }
+
+    public creatUI(){
+        this.user = UserWidget.newObject();
+
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
+
+        this.user.rootContent = rootCanvas;
+
+        this.progressBar = ProgressBar.newObject(rootCanvas);
+    }
+}
+```
+
+- :cactus: 在对象管理器中提前在物体上挂载世界 UI 逻辑对象，在属性面板中放置对应的 UIPrefab。
+
+![界面](https://cdn.233xyx.com/online/CwCG1XOsbH4V1701944484681.png)
 
 ## Hierarchy
 

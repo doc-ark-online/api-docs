@@ -2,7 +2,7 @@
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 
-遮罩
+遮罩按钮
 
 ## Hierarchy
 
@@ -171,7 +171,7 @@
 | **[setPressedImageColorDecimal](mw.MaskButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.MaskButton.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`MaskButton`](mw.MaskButton.md) <Badge type="tip" text="client" />  |
-| 创建 Mask 控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
+| 当 parent 和 InName 与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -2138,7 +2138,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`MaskButton`](mw.MaskButton.md) <Badge type="tip" text="client" />
 
-创建 Mask 控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
+创建 Mask 控件
 
 #### Parameters
 
@@ -2150,3 +2150,5 @@ ___
 
 | [`MaskButton`](mw.MaskButton.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当 parent 和 InName 与已有的对象相同时，旧的对象会被销毁

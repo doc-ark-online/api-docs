@@ -207,7 +207,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await mw.asyncGetCurrentPlayer();
         RouteService.addJumpGameCallback((id: string, data: string) => {
             player.character.characterName = "JumpGame :" + data + "from " + id;
@@ -263,7 +263,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         await TimeUtil.delaySecond(10);
         RouteService.enterDressUpGame();
     }
@@ -374,7 +374,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         await TimeUtil.delaySecond(10);
         RouteService.enterSquareGame();
     }
@@ -432,7 +432,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "gameId:" + RouteService.getGameId();
     }
@@ -471,7 +471,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "游戏版本:" + RouteService.getGameVersion();
     }
@@ -523,7 +523,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "短游戏ID:" + RouteService.getMGSGameId();
     }

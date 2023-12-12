@@ -56,9 +56,9 @@ mwext
 ### Type Aliases <Score text="Type" /> 
 | **[LeaderboardModuleTypeC](Extension.mwext.md#leaderboardmoduletypec)**: [`LeaderboardModuleBaseC`](../classes/mwext.LeaderboardModuleBaseC.md)<`any`\>  |
 | :-----|
-| 排行榜模块-客户端type|
+| 排行榜模块-客户端|
 | **[LeaderboardModuleTypeS](Extension.mwext.md#leaderboardmoduletypes)**: [`LeaderboardModuleBaseS`](../classes/mwext.LeaderboardModuleBaseS.md)<`any`\>  |
-| 排行榜模块-服务端type|
+| 排行榜模块-服务端|
 | **[LeaderboardPlayerData](Extension.mwext.md#leaderboardplayerdata)**: `Object`  |
 | 排行榜玩家数据类型|
 
@@ -68,7 +68,7 @@ mwext
 
 Ƭ **LeaderboardModuleTypeC**: [`LeaderboardModuleBaseC`](../classes/mwext.LeaderboardModuleBaseC.md)<`any`\>
 
-排行榜模块-客户端type
+排行榜模块-客户端
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 Ƭ **LeaderboardModuleTypeS**: [`LeaderboardModuleBaseS`](../classes/mwext.LeaderboardModuleBaseS.md)<`any`\>
 
-排行榜模块-服务端type
+排行榜模块-服务端
 
 ___
 

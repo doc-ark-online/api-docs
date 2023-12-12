@@ -73,7 +73,7 @@
 ### Methods <Score text="Methods" /> 
 | **[newObject](mw.TouchPad.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `InName?`: `string`): [`TouchPad`](mw.TouchPad.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -192,7 +192,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](mw.TouchPad.md) <Badge type="tip" text="client" />
 
-创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 TouchPad 控件
 
 #### Parameters
 
@@ -204,3 +204,5 @@ ___
 
 | [`TouchPad`](mw.TouchPad.md) | 返回创建的控件 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

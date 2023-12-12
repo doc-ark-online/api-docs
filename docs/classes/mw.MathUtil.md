@@ -451,7 +451,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let clamp = MathUtil.clamp(20, 0, 10);
         console.log(`clamp: ${clamp}`);
     }
@@ -491,7 +491,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的cos值
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let cos = MathUtil.cos(Math.PI);
         console.log(`cos: ${cos}`);
     }
@@ -529,7 +529,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let degree = 180;
         let radians = MathUtil.degreesToRadians(degree);
         console.log(`degreesToRadians: ${radians}`);
@@ -570,7 +570,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let fmod = MathUtil.fmod(20, 3);
         console.log(`fmod: ${fmod}`);
     }
@@ -617,7 +617,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let lerp = MathUtil.lerp(1, 10, 0.5);
         console.log(`lerp: ${lerp}`);
     }
@@ -656,7 +656,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let radian = Math.PI;
         let degrees = MathUtil.radiansToDegrees(radian);
         console.log(`radiansToDegrees: ${degrees}`);
@@ -697,7 +697,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let randomFloat = MathUtil.randomFloat(1, 10);
         console.log(`randomFloat: ${randomFloat}`);
     }
@@ -737,7 +737,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let randomInt = MathUtil.randomInt(1, 10);
         console.log(`randomInt: ${randomInt}`);
     }
@@ -777,7 +777,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的sin值
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let sin = MathUtil.sin(Math.PI / 2);
         console.log(`sin: ${sin}`);
     }
@@ -816,7 +816,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的tan值
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let tan = MathUtil.tan(Math.PI / 4);
         console.log(`tan: ${tan}`);
     }

@@ -18,7 +18,7 @@ export default class WindowExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         let viewportSize = WindowUtil.getViewportSize();
         // X=1920 Y=1080
@@ -39,7 +39,7 @@ export default class WindowExample extends Script {
 ### Methods <Score text="Methods" /> 
 | **[getViewportSize](mw.WindowUtil.md#getviewportsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
+| 此方法仅在客户端调用生效。|
 
 ## Accessors
 
@@ -123,6 +123,8 @@ export default class NewScript extends Script {
 | [`Vector2`](mw.Vector2.md) | 返回屏幕的分辨率大小。 |
 | :------ | :------ |
 
+此方法仅在客户端调用生效。
+
 <span style="font-size: 14px;">
 使用示例:调用方法
 </span>
@@ -130,5 +132,6 @@ export default class NewScript extends Script {
 ```ts
 let viewportSize = WindowUtil.getViewportSize();
 console.log(`viewportSize ${viewportSize}`);
-// X=1920 Y=1080
+
+// 打印输出为：X=1920 Y=1080
 ```

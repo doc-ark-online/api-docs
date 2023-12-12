@@ -2,7 +2,7 @@
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
-UI进度条
+进度条
 
 ## Hierarchy
 
@@ -121,7 +121,7 @@ UI进度条
 ### Methods <Score text="Methods" /> 
 | **[newObject](mw.ProgressBar.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ProgressBar`](mw.ProgressBar.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 创建 ProgressBar 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1305,7 +1305,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`ProgressBar`](mw.ProgressBar.md) <Badge type="tip" text="client" />
 
-创建 ProgressBar 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 ProgressBar 控件
 
 #### Parameters
 
@@ -1317,3 +1317,5 @@ ___
 
 | [`ProgressBar`](mw.ProgressBar.md) | 创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

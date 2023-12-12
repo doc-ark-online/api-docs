@@ -46,7 +46,7 @@ export default class StringExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         StringUtil.clipboardCopy("hello world!");
     }
 
@@ -79,7 +79,7 @@ export default class StringExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let text = StringUtil.clipboardPaste();
         console.log("clipboardPaste", text);
     }
@@ -119,7 +119,7 @@ export default class StringExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let targetString = StringUtil.format("{0} {1}{2}", "hello", "world", "!");
         console.log(targetString);
     }
@@ -158,7 +158,7 @@ export default class StringExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let isEmpty1 = StringUtil.isEmpty("hello world!");
         console.log("isEmpty1: " + isEmpty1);
     }
@@ -203,7 +203,7 @@ export default class StringExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         StringUtil.maskWordCheck("自杀之王").then(result => {
             if (!result.result) {
                 console.log("屏蔽字检测不通过");

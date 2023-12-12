@@ -30,7 +30,7 @@
 
 4. 实现生动的动画：还能赋予角色生动的动画效果。能够让角色在游戏中跳跃、奔跑、战斗，甚至是展现出各种特殊技能和动作。
 
-![角色](https://cdn.233xyx.com/online/tvpw408Rwxu81701244971116.png)
+![角色](https://cdn.233xyx.com/online/17KojkcDWZuD1702177797656.png)
 
 其中比较重要的：
 
@@ -39,6 +39,22 @@
 - loadAnimation 函数将左侧动画资源加载在角色身上，使角色自如的使用多种动作。
 
 - description 属性更改角色外观，左侧栏中提供角色大量的衣服、饰品等资源，传入资源ID字符串进行随意更换外观。
+
+<span style="font-size: 14px;">
+使用示例: 生成一个角色
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+         GameObject.asyncSpawn<Model>("183107",{transform: new Transform(new Vector(100,0,0),new Rotation(0,0,0),new Vector(1,1,1))}).then(()=>{
+             console.log("233娘 success！");
+         });
+     }
+}
+```
 
 ## Hierarchy
 
@@ -205,8 +221,6 @@
 | loadStance会将给定的基础姿态加载到角色上，返回一个可播放的基础姿态 stance 类型。|
 | **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md)   |
 | 为角色加载一个二级姿态|
-| **[lookAt](mw.Character.md#lookat)**(`target`: [`Vector`](mw.Vector.md)): `void`   |
-| 角色面朝目标点|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void`   |
 | 为角色设置不同形状不同大小的碰撞体|
 | **[setDescription](mw.Character.md#setdescription)**(`data`: `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md)): `void`   |
@@ -3582,16 +3596,12 @@ export default class Example_MaxStepHeight extends Script {
          if(SystemUtil.isServer()) {
             // 创建5个不同高度的立方体：10，20，40，80，160
             let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
+            for (let i = 0; i < cubeHeight.length; i++) {
                 GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
             }
             // 创建5个不同坡度的锥体:1，30，45，60，89
             let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
+            for (let i = 0; i < coneAngle.length; i++) {
                 console.log("1111");
                 GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
             }
@@ -4947,16 +4957,12 @@ export default class Example_WalkableFloorAngle extends Script {
          if(SystemUtil.isServer()) {
             // 创建5个不同高度的立方体：10，20，40，80，160
             let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
+            for (let i = 0; i < cubeHeight.length; i++) {
                 GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
             }
             // 创建5个不同坡度的锥体:1，30，45，60，89
             let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
+            for (let i = 0;i < coneAngle.length;i++) {
                 console.log("1111");
                 GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
             }
@@ -6131,100 +6137,6 @@ export default class Example_Character extends Script {
                     myCharacter.currentSubStance.stop();
                 }
             });
-        }
-    }
-}
-```
-
-___
-
-### lookAt <Score text="lookAt" /> 
-
-• **lookAt**(`target`): `void` 
-
-角色面朝目标点
-
-#### Parameters
-
-| `target` [`Vector`](mw.Vector.md) | 目标点 |
-| :------ | :------ |
-
-
-<span style="font-size: 14px;">
-使用示例:将使用到的资源:"122180,122182,122174,132631,75354"拖入优先加载栏。创建一个名为"Example_Character_LookAt"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成一个生成大炮模型，5s周期从炮口生成炮弹并发射。在客户端添加一个【Look】事件监听器，当炮弹生成时获取炮弹对象，并播放音效特效。当炮弹发射时，角色会看向炮弹，你可以看到角色一直面朝炮弹的效果。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_Character_LookAt extends Script {
-    // 声明变量
-    cannon_ball: GameObject;
-    stride: Vector;
-    displacement: Vector;
-    currentTime: number;
-    currentPos: Vector;
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        this.useUpdate = true;
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成大炮模型
-            let cannon_base = GameObject.spawn("122180",{transform: new Transform(new Vector(750, -750, 0), new Rotation(0, 0, -90), Vector.one.multiply(2))});
-            let cannon_tube  = GameObject.spawn("122182",{transform: new Transform(new Vector(750, -750, 250), new Rotation(0, 30, 90), Vector.one.multiply(2))});
-            // 5s周期从炮口生成炮弹
-            TimeUtil.setInterval(() => {
-                this.cannon_ball = GameObject.spawn("122174",{transform: new Transform(new Vector(750, -480, 330), Rotation.zero, Vector.one.multiply(3))});
-                this.displacement = Vector.multiply(cannon_tube.worldTransform.getForwardVector(), 1000, this.displacement);
-                this.currentTime = 0;
-                this.currentPos = this.cannon_ball.worldTransform.position.clone();
-                setTimeout(() => {
-                    this.cannon_ball.destroy();
-                    this.cannon_ball = null;
-                }, 3000);
-                mw.Event.dispatchEventToAllClient("LOOK", this.cannon_ball.guid);
-            }, 5);
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 在客户端添加一个【Look】事件监听器，当炮弹生成时获取炮弹对象，并播放音效特效。
-            mw.Event.addServerListener("LOOK", (guid: string) => {
-                setTimeout(() => {
-                    this.cannon_ball = GameObject.findGameObjectByGuid(guid);
-                    EffectService.playAtPosition("132631", this.cannon_ball.worldTransform.position)
-                    SoundService.playSound("75354");
-                }, 100);
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            if(this.cannon_ball) {
-                // 计算当前帧弹药移动步长
-                this.stride = Vector.multiply(this.displacement, dt, this.stride);
-                // 添加重力
-                this.stride.z -= (50 * 9.8 * (Math.pow(this.currentTime + dt, 2) - Math.pow(this.currentTime, 2)));
-                this.cannon_ball.worldTransform.rotation = this.stride.toRotation();
-                this.currentTime += dt;
-                // 计算出当前更新位置
-                this.currentPos.x += this.stride.x;
-                this.currentPos.y += this.stride.y;
-                this.currentPos.z += this.stride.z;
-                // 更新弹药实体位置
-                this.cannon_ball.worldTransform.position = this.currentPos;
-            }
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            if(this.cannon_ball) {
-                // 获取当前客户端的玩家(自己)
-                let myPlayer = Player.localPlayer;
-                // 获取当前玩家控制的角色
-                let myCharacter = myPlayer.character;
-                // 看向炮弹
-                myCharacter.lookAt(this.cannon_ball.worldTransform.position);
-            }
         }
     }
 }

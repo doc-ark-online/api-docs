@@ -139,7 +139,7 @@ export default class AdsExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         await TimeUtil.delaySecond(10);
         this.playAd(AdsType.Reward);
     }

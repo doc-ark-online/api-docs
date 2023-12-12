@@ -60,7 +60,7 @@ export default class SoundExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const player = await Player.asyncGetLocalPlayer();
         const boomSoundAssetId = "13896";
         //在玩家当前坐标处播放爆炸音效
@@ -223,7 +223,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const player = await mw.asyncGetCurrentPlayer();
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
@@ -278,7 +278,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
@@ -327,7 +327,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         SoundService.playBGM(bgmSoundAssetId, 1);
     }
@@ -374,7 +374,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         InputUtil.onKeyDown(Keys.F, () => {
@@ -412,7 +412,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
@@ -455,12 +455,10 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0;i < 10;i++) {
             mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
                 obj.worldLocation = new mw.Vector(i * 300, 0, 0);
                 SoundService.play3DSound(bgmSoundAssetId, obj, 0);
@@ -496,7 +494,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         const boomSoundAssetId2 = "20479";
@@ -538,7 +536,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         let isPlay = false;
         InputUtil.onKeyDown(Keys.F, () => {
@@ -581,7 +579,7 @@ export default class SoundExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         let isPlay = false;

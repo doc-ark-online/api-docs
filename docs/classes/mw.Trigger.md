@@ -22,7 +22,7 @@
 @Component
 export default class TriggerExample extends Script {
     //当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         // 获取当前脚本所挂载的触发器
         let Trigger = this.gameObject as Trigger
         // 对进入触发器事件进行绑定

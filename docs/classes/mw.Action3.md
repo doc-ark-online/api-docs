@@ -38,7 +38,7 @@
 ### Methods <Score text="Methods" /> 
 | **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number`   |
 | :-----|
-| 添加一个监听方法(有重复过滤)|
+| 添加一个监听方法|
 | **[call](mw.Action.md#call)**(`...params`: `any`): `void`   |
 | 执行|
 | **[clear](mw.Action.md#clear)**(): `void`   |

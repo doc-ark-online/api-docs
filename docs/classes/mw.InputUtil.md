@@ -128,7 +128,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
@@ -180,7 +180,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
@@ -230,7 +230,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
@@ -280,7 +280,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
@@ -330,7 +330,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
@@ -380,7 +380,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
@@ -432,7 +432,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
@@ -484,7 +484,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
@@ -534,7 +534,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，可以通过shift锁定鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setMouseLockable(true);
@@ -577,7 +577,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.bindButton(Keys.SpaceBar, btn.button);
         setTimeout(() => {
@@ -588,7 +588,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: mw.StaleButton;
+    public button: StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -596,23 +596,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = mw.UserWidget.newObject();
+        let ui = UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = mw.Canvas.newObject();
-        rootCanvas.size = new mw.Vector2(1920, 1080);
-        rootCanvas.position = mw.Vector2.zero;
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = mw.StaleButton.newObject(rootCanvas);
-        this.button.position = new mw.Vector2(1700, 310);
-        this.button.size = new mw.Vector2(150, 50);
+        this.button = StaleButton.newObject(rootCanvas);
+        this.button.position = new Vector2(1700, 310);
+        this.button.size = new Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = mw.LinearColor.red;
-        this.button.visibility = mw.SlateVisibility.Visible;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {
@@ -656,7 +656,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyDown(Keys.F, () => {
             const result = InputUtil.convertScreenLocationToWorldSpace(960, 540);
             const startLoc = result.worldPosition;
@@ -701,7 +701,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyDown(Keys.F, () => {
             console.log("F key pressed");
         })
@@ -742,7 +742,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyPress(Keys.F, () => {
             console.log("F key up");
         })
@@ -782,7 +782,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyUp(Keys.F, () => {
             console.log("F key up");
         })
@@ -879,7 +879,7 @@ ___
 
 #### Returns
 
-| [`ConvertScreenResult`](mw.ConvertScreenResult.md) | 屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO |
+| [`ConvertScreenResult`](mw.ConvertScreenResult.md) | 屏幕坐标转换结果，默认值为 Vector.ZERO |
 | :------ | :------ |
 
 <span style="font-size: 14px;">
@@ -895,10 +895,10 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
-            let playerPos = (await mw.asyncGetCurrentPlayer()).character.worldLocation;
+            let playerPos = Player.localPlayer.character.worldTransform.position;
             let result = InputUtil.projectWorldPositionToWidgetPosition(playerPos);
             if (result) {
                 btn.button.position = result.screenPosition;
@@ -909,7 +909,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: mw.StaleButton;
+    public button: StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -917,23 +917,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = mw.UserWidget.newObject();
+        let ui = UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = mw.Canvas.newObject();
-        rootCanvas.size = new mw.Vector2(1920, 1080);
-        rootCanvas.position = mw.Vector2.zero;
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = mw.StaleButton.newObject(rootCanvas);
-        this.button.position = new mw.Vector2(1700, 310);
-        this.button.size = new mw.Vector2(150, 50);
+        this.button = StaleButton.newObject(rootCanvas);
+        this.button.position = new Vector2(1700, 310);
+        this.button.size = new Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = mw.LinearColor.red;
-        this.button.visibility = mw.SlateVisibility.Visible;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {
@@ -972,7 +972,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.bindButton(Keys.SpaceBar, btn.button);
         setTimeout(() => {
@@ -983,7 +983,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: mw.StaleButton;
+    public button: StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -991,23 +991,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = mw.UserWidget.newObject();
+        let ui = UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = mw.Canvas.newObject();
-        rootCanvas.size = new mw.Vector2(1920, 1080);
-        rootCanvas.position = mw.Vector2.zero;
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = mw.StaleButton.newObject(rootCanvas);
-        this.button.position = new mw.Vector2(1700, 310);
-        this.button.size = new mw.Vector2(150, 50);
+        this.button = StaleButton.newObject(rootCanvas);
+        this.button.position = new Vector2(1700, 310);
+        this.button.size = new Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = mw.LinearColor.red;
-        this.button.visibility = mw.SlateVisibility.Visible;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {

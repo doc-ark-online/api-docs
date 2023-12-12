@@ -2,15 +2,15 @@
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
-UI控件的集合,预制体UI
+自定义控件
+
+UI控件的集合，预制体UI
 
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
 
   ↳ **`UserWidget`**
-
-  ↳↳ [`UserWidgetPrefab`](mw.UserWidgetPrefab.md)
 
 ## Table of contents
 
@@ -79,7 +79,7 @@ UI控件的集合,预制体UI
 | **[findChildByPath](mw.UserWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 通过相对路径查找节点|
 | **[removeRootContent](mw.UserWidget.md#removerootcontent)**(): `void` <Badge type="tip" text="client" />  |
-| 移除根Canvas,会销毁根Canvas，无法再次使用|
+| 移除根Canvas，会销毁根Canvas，无法再次使用|
 | **[newObject](mw.UserWidget.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md)): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
 | 创建 UserWidget 控件|
 
@@ -206,6 +206,57 @@ ___
 | :------ | :------ |
 
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像，PC环境下为白图
+</span>
+
+```ts
+@Component
+export default class AccountExample extends Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        let button = new ButtonUI();
+    }
+}
+
+class ButtonUI {
+    public button:StaleButton;
+
+    constructor() {
+        this.creatUI();
+    }
+
+    private creatUI() {
+        let size = WindowUtil.getViewportSize();
+
+        // 创建一个UI对象
+        let ui = UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+
+        // 创建一个画布组件
+        let canvas = Canvas.newObject();
+        canvas.size = new Vector2(1920, 1080);
+        canvas.position = Vector2.zero;
+        // 将Ui的根画布设置为canvas
+        ui.rootContent = canvas;
+
+        this.button = StaleButton.newObject(canvas);
+        this.button.size = new Vector2(size.x / 14, size.y / 20);
+        this.button.text = "StaleButton";
+        this.button.fontSize = 18;
+        this.button.transitionEnable = true;
+        InputUtil.bindButton(Keys.X, this.button);
+        this.button.setPressedImageColorDecimal(200, 200, 200, 255);
+        this.button.onClicked.add(() => {
+        // 当按下按钮执行以下逻辑
+            console.log("The \"StaleButton\" button was pressed ~");
+        })
+    }
+}
+```
+
 ___
 
 ### findChildByPath <Score text="findChildByPath" /> 
@@ -230,7 +281,7 @@ ___
 
 • **removeRootContent**(): `void` <Badge type="tip" text="client" />
 
-移除根Canvas,会销毁根Canvas，无法再次使用
+移除根Canvas，会销毁根Canvas，无法再次使用
 
 
 ___

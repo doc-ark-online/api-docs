@@ -15,7 +15,7 @@ Classes
 | [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [服务](groups/服务.服务.md) |
 | [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [玩法](groups/玩法.玩法.md) |
 | [Animation](classes/mw.Animation.md) | 动画 | [动画](groups/动画.动画.md) |
-| [AssetIconData](classes/mw.AssetIconData.md) | 资源ICON信息 | [界面](groups/界面.界面.md) |
+| [AssetIconData](classes/mw.AssetIconData.md) | 资源 icon 信息 | [界面](groups/界面.界面.md) |
 | [AssetUtil](classes/mw.AssetUtil.md) | 资源管理工具 | [工具](groups/工具.工具.md) |
 | [AvatarSettings](classes/mw.AvatarSettings.md) | 控制一些优化项的开启关闭 | [设置](groups/设置.设置.md) |
 
@@ -26,20 +26,20 @@ Classes
 | [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [界面](groups/界面.界面.md) |
 | [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [界面](groups/界面.界面.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
-| [Button](classes/mw.Button.md) | 按钮,无默认text | [界面](groups/界面.界面.md) |
+| [Button](classes/mw.Button.md) | 按钮 | [界面](groups/界面.界面.md) |
 
 
 ## C
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Camera](classes/mw.Camera.md) | 摄像机 | [玩法](groups/玩法.玩法.md) |
-| [Canvas](classes/mw.Canvas.md) | 可挂载叶子节点的根节点，以及提供各种自动布局功能 | [界面](groups/界面.界面.md) |
+| [Canvas](classes/mw.Canvas.md) | 容器 | [界面](groups/界面.界面.md) |
 | [Character](classes/mw.Character.md) | 角色 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [界面](groups/界面.界面.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [服务](groups/服务.服务.md) |
-| [ColorPick](classes/mw.ColorPick.md) | 颜色选择器 | [界面](groups/界面.界面.md) |
+| [ColorPick](classes/mw.ColorPick.md) | 调色板 | [界面](groups/界面.界面.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [输入](groups/输入.输入.md) |
 
 
@@ -79,7 +79,6 @@ Classes
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
 | [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
-| [Gizmo](classes/mw.Gizmo.md) | Gizmo | [基础类型](groups/基础类型.基础类型.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -99,9 +98,9 @@ Classes
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [Image](classes/mw.Image.md) | UI 图片 | [界面](groups/界面.界面.md) |
+| [Image](classes/mw.Image.md) | 图片 | [界面](groups/界面.界面.md) |
 | [Impulse](classes/mw.Impulse.md) | 冲量 | [玩法](groups/玩法.玩法.md) |
-| [InputBox](classes/mw.InputBox.md) | UI的输入框 | [界面](groups/界面.界面.md) |
+| [InputBox](classes/mw.InputBox.md) | 输入框 | [界面](groups/界面.界面.md) |
 | [InputUtil](classes/mw.InputUtil.md) | 输入事件工具 | [输入](groups/输入.输入.md) |
 | [IntegratedMover](classes/mw.IntegratedMover.md) | 运动器组件 | [玩法](groups/玩法.玩法.md) |
 | [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [玩法](groups/玩法.玩法.md) |
@@ -137,7 +136,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Margin](classes/mw.Margin.md) | 基础的边距，提供4个方向的数值修改 | [界面](groups/界面.界面.md) |
-| [MaskButton](classes/mw.MaskButton.md) | 遮罩 | [界面](groups/界面.界面.md) |
+| [MaskButton](classes/mw.MaskButton.md) | 遮罩按钮 | [界面](groups/界面.界面.md) |
 | [MaterialInstance](classes/mw.MaterialInstance.md) | 材质实例类 | [玩法](groups/玩法.玩法.md) |
 | [MathUtil](classes/mw.MathUtil.md) | 数学库工具 | [工具](groups/工具.工具.md) |
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
@@ -167,14 +166,14 @@ Classes
 ## P
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [PanelWidget](classes/mw.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [界面](groups/界面.界面.md) |
+| [PanelWidget](classes/mw.PanelWidget.md) | UI 控件中，可以挂载子控件的父类。 | [界面](groups/界面.界面.md) |
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [界面](groups/界面.界面.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [场景](groups/场景.场景.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [场景](groups/场景.场景.md) |
-| [ProgressBar](classes/mw.ProgressBar.md) | UI进度条 | [界面](groups/界面.界面.md) |
+| [ProgressBar](classes/mw.ProgressBar.md) | 进度条 | [界面](groups/界面.界面.md) |
 | [ProjectileInst](classes/mw.ProjectileInst.md) | 投掷物发射器专用实例对象 | [玩法](groups/玩法.玩法.md) |
 | [ProjectileMovement](classes/mw.ProjectileMovement.md) | 投掷物移动功能类 | [玩法](groups/玩法.玩法.md) |
 | [PurchaseService](classes/mw.PurchaseService.md) | 应用内购服务 | [服务](groups/服务.服务.md) |
@@ -192,7 +191,7 @@ Classes
 | :-----| :-----| :-----|
 | [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [服务](groups/服务.服务.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [设置](groups/设置.设置.md) |
-| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量。 | [基础类型](groups/基础类型.基础类型.md) |
+| [Rotation](classes/mw.Rotation.md) | 欧拉角 | [基础类型](groups/基础类型.基础类型.md) |
 | [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [服务](groups/服务.服务.md) |
 
 
@@ -206,7 +205,7 @@ Classes
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 描边绘制工具 | [工具](groups/工具.工具.md) |
 | [Skybox](classes/mw.Skybox.md) | 天空盒 | [场景](groups/场景.场景.md) |
 | [SlateBrushWithGuid](classes/mw.SlateBrushWithGuid.md) | 贴图信息 | [界面](groups/界面.界面.md) |
-| [SlateColor](classes/mw.SlateColor.md) | UI颜色管理 | [界面](groups/界面.界面.md) |
+| [SlateColor](classes/mw.SlateColor.md) | 颜色管理 | [界面](groups/界面.界面.md) |
 | [Sound](classes/mw.Sound.md) | 音效 | [场景](groups/场景.场景.md) |
 | [SoundService](classes/mw.SoundService.md) | 音效管理器 | [场景](groups/场景.场景.md) |
 | [SpringArm](classes/mw.SpringArm.md) | 弹簧臂 | [玩法](groups/玩法.玩法.md) |
@@ -224,10 +223,10 @@ Classes
 | :-----| :-----| :-----|
 | [TabGroup](classes/mw.TabGroup.md) | 选项卡组 | [界面](groups/界面.界面.md) |
 | [TeleportService](classes/mw.TeleportService.md) | 多场景和传送服务 | [服务](groups/服务.服务.md) |
-| [TextBlock](classes/mw.TextBlock.md) | UI文本 | [界面](groups/界面.界面.md) |
+| [TextBlock](classes/mw.TextBlock.md) | 文本 | [界面](groups/界面.界面.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [工具](groups/工具.工具.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [界面](groups/界面.界面.md) |
-| [Transform](classes/mw.Transform.md) | 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。 | [基础类型](groups/基础类型.基础类型.md) |
+| [Transform](classes/mw.Transform.md) | 三维变换 | [基础类型](groups/基础类型.基础类型.md) |
 | [Trigger](classes/mw.Trigger.md) | 触发器 | [玩法](groups/玩法.玩法.md) |
 | [Tween](classes/mw.Tween.md) | 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 | [工具](groups/工具.工具.md) |
 | [TweenGroup](classes/mw.TweenGroup.md) | 补间组，用于同时控制多个补间对象 | [工具](groups/工具.工具.md) |
@@ -243,27 +242,26 @@ Classes
 | [UIFontInfo](classes/mw.UIFontInfo.md) | 字体信息 | [界面](groups/界面.界面.md) |
 | [UIHugContent](classes/mw.UIHugContent.md) | 容器自动布局大小适应规则 | [界面](groups/界面.界面.md) |
 | [UILayout](classes/mw.UILayout.md) | 容器自动布局规则 | [界面](groups/界面.界面.md) |
-| [UIObject](classes/mw.UIObject.md) | UI对象组件 | [界面](groups/界面.界面.md) |
-| [UIScript](classes/mw.UIScript.md) | UI的驱动脚本基类 | [界面](groups/界面.界面.md) |
-| [UIService](classes/mw.UIService.md) | UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 | [界面](groups/界面.界面.md) |
+| [UIObject](classes/mw.UIObject.md) | UI 对象 | [界面](groups/界面.界面.md) |
+| [UIScript](classes/mw.UIScript.md) | UI 的驱动脚本基类 | [界面](groups/界面.界面.md) |
+| [UIService](classes/mw.UIService.md) | UI 管理类 | [界面](groups/界面.界面.md) |
 | [UITransform](classes/mw.UITransform.md) | 节点Transform | [界面](groups/界面.界面.md) |
-| [UIWidget](classes/mw.UIWidget.md) | 世界UI组件 | [界面](groups/界面.界面.md) |
-| [UserWidget](classes/mw.UserWidget.md) | UI控件的集合,预制体UI | [界面](groups/界面.界面.md) |
-| [UserWidgetPrefab](classes/mw.UserWidgetPrefab.md) | ui预制体 | [界面](groups/界面.界面.md) |
+| [UIWidget](classes/mw.UIWidget.md) | 世界 UI | [界面](groups/界面.界面.md) |
+| [UserWidget](classes/mw.UserWidget.md) | 自定义控件 | [界面](groups/界面.界面.md) |
 
 
 ## V
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [Vector](classes/mw.Vector.md) | 由分量 (x,y,z) 组成的三维空间中的向量 | [基础类型](groups/基础类型.基础类型.md) |
-| [Vector2](classes/mw.Vector2.md) | 由分量 (x,y) 组成的二维空间中的向量 | [基础类型](groups/基础类型.基础类型.md) |
-| [Vector4](classes/mw.Vector4.md) | 由分量 (x,y,z,w) 组成的4D齐次向量 | [基础类型](groups/基础类型.基础类型.md) |
+| [Vector](classes/mw.Vector.md) | 三维向量 | [基础类型](groups/基础类型.基础类型.md) |
+| [Vector2](classes/mw.Vector2.md) | 二维向量 | [基础类型](groups/基础类型.基础类型.md) |
+| [Vector4](classes/mw.Vector4.md) | 齐次向量 | [基础类型](groups/基础类型.基础类型.md) |
 | [VirtualJoystickPanel](classes/mw.VirtualJoystickPanel.md) | 摇杆 | [界面](groups/界面.界面.md) |
 
 
 ## W
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [Widget](classes/mw.Widget.md) | 可挂载叶子节点的根节点，以及提供各种自动布局功能 | [界面](groups/界面.界面.md) |
+| [Widget](classes/mw.Widget.md) | 控件的基类 | [界面](groups/界面.界面.md) |
 | [WindowUtil](classes/mw.WindowUtil.md) | 窗口设置工具。 | [工具](groups/工具.工具.md) |
 

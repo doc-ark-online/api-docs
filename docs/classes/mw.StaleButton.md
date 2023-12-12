@@ -4,6 +4,48 @@
 
 文本按钮
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为"NewScript"的脚本，放置在对象管理器对象子级中，打开脚本，输入以下代码保存，运行游戏，屏幕显示一个按钮。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            if(SystemUtil.isClient()){
+                let mainui = UIService.create(UI_Main);
+                UIService.showUI(mainui);
+                UIService.canvas.addChild(mainui.button);
+            }
+        }
+    }
+}
+class UI_Main extends UIScript {
+
+    button: StaleButton = undefined;
+
+    public onAwake() {
+        let size = WindowUtil.getViewportSize();
+
+        this.button = StaleButton.newObject();
+        this.button.transform = new UITransform(size.x/2,size.y/2,size.x / 14, size.y / 20);
+
+        this.button.size = new Vector2(size.x / 14, size.y / 20);
+        this.button.text = "StaleButton";
+        this.button.fontSize = 18;
+        this.button.transitionEnable = true;
+        InputUtil.bindButton(Keys.X, this.button);
+        this.button.setPressedImageColorDecimal(200, 200, 200, 255);
+        this.button.onClicked.add(() => {
+            // 当按下按钮执行以下逻辑
+            console.log("The \"StaleButton\" button was pressed ~");
+        });
+    }
+}
+```
+
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
@@ -165,7 +207,7 @@
 | **[setPressedImageColorDecimal](mw.StaleButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按下颜色,指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.StaleButton.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`StaleButton`](mw.StaleButton.md) <Badge type="tip" text="client" />  |
-| 创建 StaleButton 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1981,11 +2023,11 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`StaleButton`](mw.StaleButton.md) <Badge type="tip" text="client" />
 
-创建 StaleButton 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 StaleButton 控件
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Parent对象 default:null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的父级 Canvas 对象 default:null |
 | :------ | :------ |
 | `inName?` `string` | 创建控件的名称 default:null |
 
@@ -1993,3 +2035,5 @@ ___
 
 | [`StaleButton`](mw.StaleButton.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁

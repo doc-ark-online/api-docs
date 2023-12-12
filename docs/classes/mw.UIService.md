@@ -2,16 +2,129 @@
 
 # UIService <Badge type="tip" text="Class" /> <Score text="UIService" />
 
-**`Instance`**
+UI 管理类
 
-UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
-需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
+1. 关于 UI 的一些名词解释
 
-::: warning Precautions
+- UIPrefab/世界 UI/屏幕 UI/UI 脚本
 
-单例类，请使用getInstance获取对象
+![界面](https://cdn.233xyx.com/online/XVi27WrsxLq71701944498622.png)
 
-:::
+2. 屏幕 UI 是如何使用并启动的呢？
+
+你有三种方式使用并启动你游戏中的屏幕 UI：
+
+- :cactus: 通过 UIService 来控制继承自 UIScript 的脚本，来管理你的屏幕 UI。
+
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个屏幕 UI - 按钮。
+</span>
+
+```ts
+ @Component
+ export default class NewScript extends Script {
+
+     protected onStart(): void {
+         if(SystemUtil.isClient()){
+             UIService.show(NewUIScript);
+         }
+     }
+ }
+
+ class NewUIScript extends UIScript {
+
+     button:StaleButton;
+
+     protected onStart() {
+         //设置能否每帧触发onUpdate
+         this.canUpdate = false;
+         this.layer = UILayerMiddle;
+
+         this.button = StaleButton.newObject(this.rootCanvas);
+
+         this.button.text = "按下变红";
+         this.button.transitionEnable = true;
+         this.button.pressedImagColor = LinearColor.red;
+         this.button.visibility = SlateVisibility.Visible;
+         this.button.onClicked.add(() => {
+             console.log("click");
+         })
+     }
+ }
+```
+
+当然如果 UIPrefab 挂载了某一个继承自 UIScript 的脚本，也是可以用 UIService 管理。不用手动挂载在对象管理器中。
+
+- :cactus: 对象管理器挂载 UIPrefab 启动屏幕 UI。
+
+- :cactus: 使用 UserWidget 和代码自定义创建屏幕 UI。
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为 NewExample 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
+</span>
+
+```ts
+@Component
+export default class NewExample extends Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.onKeyDown(Keys.F, async () => {
+            let playerPos = Player.localPlayer.character.worldTransform.position;
+            let result = InputUtil.projectWorldPositionToWidgetPosition(playerPos);
+            if (result) {
+                btn.button.position = result.screenPosition;
+            }
+        })
+    }
+
+}
+
+class ButtonUI {
+    public button: StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = StaleButton.newObject(rootCanvas);
+        this.button.position = new Vector2(1700, 310);
+        this.button.size = new Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
+
+不论你是用 UIPrefab 创建了一个屏幕 UI，还是使用代码动态编辑了一个屏幕 UI，都可以达到你想要的效果。
+
+可以继承此类，自带一个全局 UI 作为 UI 的总节点。需要在全局调用，否则会自动在第一个 UI 生成时自动生成一个默认的管理类。
 
 ## Table of contents
 

@@ -2,7 +2,7 @@
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
-UI文本
+文本
 
 ## Hierarchy
 
@@ -125,7 +125,7 @@ UI文本
 | **[setShadowColorDecimal](mw.TextBlock.md#setshadowcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果， 指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.TextBlock.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`TextBlock`](mw.TextBlock.md) <Badge type="tip" text="client" />  |
-| 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1219,7 +1219,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](mw.TextBlock.md) <Badge type="tip" text="client" />
 
-创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 TextBlock 控件
 
 #### Parameters
 
@@ -1231,3 +1231,5 @@ ___
 
 | [`TextBlock`](mw.TextBlock.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

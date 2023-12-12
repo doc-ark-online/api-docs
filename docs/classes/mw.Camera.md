@@ -215,9 +215,7 @@ export default class CameraExample extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+            for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
@@ -268,9 +266,7 @@ export default class Camera_SpringArm extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
@@ -1732,9 +1728,7 @@ export default class CurrentCamera extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
@@ -2082,9 +2076,7 @@ export default class Example_Camera_Switch extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));

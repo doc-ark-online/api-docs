@@ -20,7 +20,7 @@
 @Component
 export default class BlockingVolExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         // 获取当前玩家
         let player =  mw.Player.asyncGetLocalPlayer()[0];
         // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID

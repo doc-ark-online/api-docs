@@ -2,7 +2,7 @@
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 
-UI颜色管理
+颜色管理
 
 ## Table of contents
 

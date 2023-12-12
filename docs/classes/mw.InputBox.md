@@ -2,7 +2,7 @@
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
-UI的输入框
+输入框
 
 ## Hierarchy
 
@@ -137,7 +137,7 @@ UI的输入框
 | **[setTextJustification](mw.InputBox.md#settextjustification)**(`inTextJustification`: [`TextJustify`](../enums/mw.TextJustify.md)): `void` <Badge type="tip" text="client" />  |
 | 设置输入框的对齐方式|
 | **[newObject](mw.InputBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`InputBox`](mw.InputBox.md) <Badge type="tip" text="client" />  |
-| 创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1361,7 +1361,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](mw.InputBox.md) <Badge type="tip" text="client" />
 
-创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 InputBox 控件
 
 #### Parameters
 
@@ -1373,3 +1373,5 @@ ___
 
 | [`InputBox`](mw.InputBox.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

@@ -36,7 +36,7 @@ export default class HotWeaponAimSample1 extends Script {
 ### Properties <Score text="Properties" /> 
 | **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|
-| 服务器端开始瞄准代理。|
+| 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
 | **[onStartAim](mw.HotWeaponAimComponent.md#onstartaim)**: `MulticastDelegateInterface`<() => `void`\>  |
 | 服务器端开始瞄准代理|
 
@@ -45,7 +45,7 @@ export default class HotWeaponAimSample1 extends Script {
 | :-----|
 | Set瞄准时的第一/第三人称模式。|
 | **[aimingZoom](mw.HotWeaponAimComponent.md#aimingzoom)**(): `number`   |
-| Set模拟瞄准时的瞄准镜放大倍数。|
+| Set模拟瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例|
 | **[cameraOffsetDistanceInThirdPersonMode](mw.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number`   |
 | Set第三人称瞄准时的连接相机弹簧组件的长度。|
 | **[defaultCameraSpringArmLength](mw.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number`   |
@@ -62,7 +62,7 @@ export default class HotWeaponAimSample1 extends Script {
 
 • **onEndAim**: `MulticastDelegateInterface`<() => `void`\>
 
-服务器端开始瞄准代理。
+服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
@@ -157,7 +157,7 @@ Get第一人称瞄准时的瞄准镜放大倍数。
 <td style="text-align: left">
 
 
-Set模拟瞄准时的瞄准镜放大倍数。
+Set模拟瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例
 
 ::: warning Precautions
 

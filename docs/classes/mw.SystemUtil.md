@@ -63,7 +63,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         console.log("当前程序的运行平台", SystemUtil.currentPlatform)
     }
 
@@ -204,7 +204,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         console.log("当前环境", SystemUtil.getCurrentEnv())
     }
 
@@ -236,7 +236,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         console.log("当前编辑器版本号", SystemUtil.getEditorVersion())
     }
 
@@ -268,7 +268,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         console.log("当前完整编辑器版本号", SystemUtil.getFullEditorVersion())
     }
 
@@ -300,7 +300,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         const gameId = SystemUtil.getGameId();
         console.log(`gameId: ${gameId}`);
@@ -334,7 +334,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         const version = SystemUtil.getVersion();
         console.log(`version: ${version}`);
@@ -368,7 +368,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (SystemUtil.isClient()) {
             console.log("当前是客户端");
         } else if (SystemUtil.isServer()) {
@@ -404,7 +404,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         console.log("当前是否是移动端", SystemUtil.isMobile())
     }
 
@@ -436,7 +436,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (SystemUtil.isClient()) {
             console.log("当前是客户端");
         } else if (SystemUtil.isServer()) {

@@ -16,7 +16,7 @@
      public async addNumbers(object: GameObject): `Promise`<`void`\> {
          console.log(object.gameObjectId);
      }
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
 
          // 实例化 MulticastGameObjectDelegate 类
          const delegateInstance = new MulticastGameObjectDelegate();

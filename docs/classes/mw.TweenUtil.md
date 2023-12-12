@@ -14,7 +14,7 @@
 @Component
 export default class TweenExample extends Script {
 
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         this.useUpdate = true;
         if (SystemUtil.isClient()) {
             let char = (await Player.asyncGetLocalPlayer()).character;

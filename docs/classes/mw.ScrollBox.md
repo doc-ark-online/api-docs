@@ -75,7 +75,7 @@
 | **[scrollToStart](mw.ScrollBox.md#scrolltostart)**(): `void` <Badge type="tip" text="client" />  |
 | 滚动到开始位置|
 | **[newObject](mw.ScrollBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ScrollBox`](mw.ScrollBox.md) <Badge type="tip" text="client" />  |
-| 创建 ScrollBox 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1043,7 +1043,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`ScrollBox`](mw.ScrollBox.md) <Badge type="tip" text="client" />
 
-创建 ScrollBox 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 ScrollBox 控件
 
 #### Parameters
 
@@ -1055,3 +1055,5 @@ ___
 
 | [`ScrollBox`](mw.ScrollBox.md) | 创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

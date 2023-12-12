@@ -44,7 +44,7 @@ Model的属性定义了静态模型具有物理特性，其中较为重要的是
 @Component
 export default class ModelExample extends Script {
     //当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if(SystemUtil.isClient())
             {
                 InputUtil.onKeyDown(Keys.F1,()=>{

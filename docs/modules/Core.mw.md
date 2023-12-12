@@ -247,7 +247,7 @@ mw
 | [Animation](../classes/mw.Animation.md)  |
 | 动画|
 | [AssetIconData](../classes/mw.AssetIconData.md)  |
-| 资源ICON信息|
+| 资源 icon 信息|
 | [AssetUtil](../classes/mw.AssetUtil.md)  |
 | 资源管理工具|
 | [AvatarSettings](../classes/mw.AvatarSettings.md)  |
@@ -255,11 +255,11 @@ mw
 | [BlockingVolume](../classes/mw.BlockingVolume.md)  |
 | 禁行区|
 | [Button](../classes/mw.Button.md)  |
-| 按钮,无默认text|
+| 按钮|
 | [Camera](../classes/mw.Camera.md)  |
 | 摄像机|
 | [Canvas](../classes/mw.Canvas.md)  |
-| 可挂载叶子节点的根节点，以及提供各种自动布局功能|
+| 容器|
 | [Character](../classes/mw.Character.md)  |
 | 角色|
 | [CharacterDecoration](../classes/mw.CharacterDecoration.md)  |
@@ -271,7 +271,7 @@ mw
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |
-| 颜色选择器|
+| 调色板|
 | [Component](../classes/mw.Component.md)  |
 | :----- |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
@@ -306,8 +306,6 @@ mw
 | 几何坐标信息|
 | [GestureDelegate](../classes/mw.GestureDelegate.md)  |
 | 手势代理类|
-| [Gizmo](../classes/mw.Gizmo.md)  |
-| Gizmo|
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md)  |
 | 图片画质设置|
 | [HitResult](../classes/mw.HitResult.md)  |
@@ -327,11 +325,11 @@ mw
 | [HotWeaponReloadComponent](../classes/mw.HotWeaponReloadComponent.md)  |
 | 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑|
 | [Image](../classes/mw.Image.md)  |
-| UI 图片|
+| 图片|
 | [Impulse](../classes/mw.Impulse.md)  |
 | 冲量|
 | [InputBox](../classes/mw.InputBox.md)  |
-| UI的输入框|
+| 输入框|
 | [InputUtil](../classes/mw.InputUtil.md)  |
 | 输入事件工具|
 | [IntegratedMover](../classes/mw.IntegratedMover.md)  |
@@ -353,7 +351,7 @@ mw
 | [Margin](../classes/mw.Margin.md)  |
 | 基础的边距，提供4个方向的数值修改|
 | [MaskButton](../classes/mw.MaskButton.md)  |
-| 遮罩|
+| 遮罩按钮|
 | [MaterialInstance](../classes/mw.MaterialInstance.md)  |
 | 材质实例类|
 | [MathUtil](../classes/mw.MathUtil.md)  |
@@ -375,7 +373,7 @@ mw
 | [ObjectLauncher](../classes/mw.ObjectLauncher.md)  |
 | 投掷物发射器|
 | [PanelWidget](../classes/mw.PanelWidget.md)  |
-| UI的PanelWidget可以挂载子节点|
+| UI 控件中，可以挂载子控件的父类。|
 | [Pawn](../classes/mw.Pawn.md)  |
 | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md)  |
@@ -391,7 +389,7 @@ mw
 | [PostProcessConfig](../classes/mw.PostProcessConfig.md)  |
 | 后处理对象属性配置|
 | [ProgressBar](../classes/mw.ProgressBar.md)  |
-| UI进度条|
+| 进度条|
 | [ProjectileInst](../classes/mw.ProjectileInst.md)  |
 | 投掷物发射器专用实例对象|
 | [ProjectileMovement](../classes/mw.ProjectileMovement.md)  |
@@ -407,7 +405,7 @@ mw
 | [RoomSettings](../classes/mw.RoomSettings.md)  |
 | 房间设置|
 | [Rotation](../classes/mw.Rotation.md)  |
-| 由分量 (x,y,z) 组成的三维空间中的旋转量。|
+| 欧拉角|
 | [RouteService](../classes/mw.RouteService.md)  |
 | 游戏管理器|
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
@@ -425,7 +423,7 @@ mw
 | [SlateBrushWithGuid](../classes/mw.SlateBrushWithGuid.md)  |
 | 贴图信息|
 | [SlateColor](../classes/mw.SlateColor.md)  |
-| UI颜色管理|
+| 颜色管理|
 | [Sound](../classes/mw.Sound.md)  |
 | 音效|
 | [SoundService](../classes/mw.SoundService.md)  |
@@ -449,13 +447,13 @@ mw
 | [TeleportService](../classes/mw.TeleportService.md)  |
 | 多场景和传送服务|
 | [TextBlock](../classes/mw.TextBlock.md)  |
-| UI文本|
+| 文本|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
 | [TouchPad](../classes/mw.TouchPad.md)  |
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |
-| 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。|
+| 三维变换|
 | [Trigger](../classes/mw.Trigger.md)  |
 | 触发器|
 | [Tween](../classes/mw.Tween.md)  |
@@ -477,29 +475,27 @@ mw
 | [UILayout](../classes/mw.UILayout.md)  |
 | 容器自动布局规则|
 | [UIObject](../classes/mw.UIObject.md)  |
-| UI对象组件|
+| UI 对象|
 | [UIScript](../classes/mw.UIScript.md)  |
-| UI的驱动脚本基类|
+| UI 的驱动脚本基类|
 | [UIService](../classes/mw.UIService.md)  |
-| UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。|
+| UI 管理类|
 | [UITransform](../classes/mw.UITransform.md)  |
 | 节点Transform|
 | [UIWidget](../classes/mw.UIWidget.md)  |
-| 世界UI组件|
+| 世界 UI|
 | [UserWidget](../classes/mw.UserWidget.md)  |
-| UI控件的集合,预制体UI|
-| [UserWidgetPrefab](../classes/mw.UserWidgetPrefab.md)  |
-| ui预制体|
+| 自定义控件|
 | [Vector](../classes/mw.Vector.md)  |
-| 由分量 (x,y,z) 组成的三维空间中的向量|
+| 三维向量|
 | [Vector2](../classes/mw.Vector2.md)  |
-| 由分量 (x,y) 组成的二维空间中的向量|
+| 二维向量|
 | [Vector4](../classes/mw.Vector4.md)  |
-| 由分量 (x,y,z,w) 组成的4D齐次向量|
+| 齐次向量|
 | [VirtualJoystickPanel](../classes/mw.VirtualJoystickPanel.md)  |
 | 摇杆|
 | [Widget](../classes/mw.Widget.md)  |
-| 可挂载叶子节点的根节点，以及提供各种自动布局功能|
+| 控件的基类|
 | [WindowUtil](../classes/mw.WindowUtil.md)  |
 | 窗口设置工具。|
 
@@ -718,7 +714,7 @@ mw
 | 获取当前的DragDrop事件|
 | **[getGameTransmissionData](Core.mw.md#getgametransmissiondata)**(): `string` <Badge type="tip" text="client" />  |
 | 蓝军自定义启动参数，每个游戏可以是不一样的，推荐使用一个JSON字符串|
-| **[getGizmo](Core.mw.md#getgizmo)**(): [`Gizmo`](../classes/mw.Gizmo.md) <Badge type="tip" text="client" />  |
+| **[getGizmo](Core.mw.md#getgizmo)**(): `mw.Gizmo` <Badge type="tip" text="client" />  |
 | 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](Core.mw.md#getheadsculpture)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 对指定虚拟角色进行截取后上传到服务器|
@@ -2462,13 +2458,13 @@ ___
 
 ### getGizmo <Score text="getGizmo" /> 
 
-• **getGizmo**(): [`Gizmo`](../classes/mw.Gizmo.md) <Badge type="tip" text="client" />
+• **getGizmo**(): `mw.Gizmo` <Badge type="tip" text="client" />
 
 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
 
 #### Returns
 
-| [`Gizmo`](../classes/mw.Gizmo.md) | 返回编辑态的坐标轴 |
+| `mw.Gizmo` | 返回编辑态的坐标轴 |
 | :------ | :------ |
 
 ___
@@ -2611,9 +2607,7 @@ export default class NewScript extends Script {
   protected onStart(): void {
     //获取当前用户上传的所有的预制体
     mw.getMyPrefabs(0,20).then(item =>{
-      for (let Index: number = 0;
-Index < item.PrefabInfos.length;
-++Index) {
+      for (let Index: number = 0;Index < item.PrefabInfos.length;++Index) {
         console.log(item.PrefabInfos[Index].Guid);
       }
     });

@@ -2,6 +2,10 @@
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
+容器
+
+----------------------
+
 可挂载叶子节点的根节点，以及提供各种自动布局功能
 
 ## Hierarchy
@@ -34,7 +38,7 @@
 ### Methods <Score text="Methods" /> 
 | **[newObject](mw.Canvas.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -435,7 +439,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />
 
-创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建Canvas控件
 
 #### Parameters
 
@@ -447,3 +451,5 @@ ___
 
 | [`Canvas`](mw.Canvas.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

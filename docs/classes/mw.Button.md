@@ -2,7 +2,11 @@
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-按钮,无默认text
+按钮
+
+-------------------------
+
+无默认文本
 
 ## Hierarchy
 
@@ -88,7 +92,7 @@
 | **[setPressedImageColorDecimal](mw.Button.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按下颜色指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />  |
-| 创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
@@ -1275,7 +1279,7 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />
 
-创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建Button控件
 
 #### Parameters
 
@@ -1287,3 +1291,5 @@ ___
 
 | [`Button`](mw.Button.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

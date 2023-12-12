@@ -159,7 +159,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像,PC环境下为白图
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像，PC环境下为白图
 </span>
 
 ```ts
@@ -171,7 +171,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let imgUI = new ImageUI();
         AccountService.fillAvatar(imgUI.image);
     }
@@ -237,7 +237,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let name = AccountService.getNickName();
         console.log("获取玩家昵称", name);
     }
@@ -274,7 +274,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldTransform.position = new Vector(0, 0, 200);
@@ -314,7 +314,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let userId = AccountService.getUserId();
         console.log("获取平台的用户Id", userId);
     }
@@ -387,7 +387,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldTransform.position = new Vector(0, 0, 200);

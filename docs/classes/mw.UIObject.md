@@ -2,7 +2,13 @@
 
 # UIObject <Badge type="tip" text="Class" /> <Score text="UIObject" />
 
-UI对象组件
+UI 对象
+
+----------------------------
+
+当你 UIPrefab 制作完成挂载到对象管理器中时，他便成为场景中的一份子，可以使用 GameObject 来查找。
+
+此类中的方法均在客户端调用。
 
 ## Hierarchy
 
@@ -26,11 +32,11 @@ UI对象组件
 ### Accessors <Score text="Accessors" /> 
 | **[uiPath](mw.UIObject.md#uipath)**(): `string` <Badge type="tip" text="client" />  |
 | :-----|
-| 返回ui文件的路径|
+| 获取挂载在对象管理器的 UIPrefab 完整路径|
 | **[uiScript](mw.UIObject.md#uiscript)**(): [`UIScript`](mw.UIScript.md) <Badge type="tip" text="other" />  |
-| 得到UI脚本|
+| 获取在对象管理器中的 UIPrefab 上挂载的脚本|
 | **[uiWidgetBase](mw.UIObject.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 获取该对象下所绑定的UI控件的集合|
+| 获取该对象下所绑定的 UI 根控件|
 
 
 ::: details 点击查看继承
@@ -140,17 +146,34 @@ ___
 <td style="text-align: left">
 
 
-返回ui文件的路径
+获取挂载在对象管理器的 UIPrefab 完整路径
+
 
 #### Returns
 
-| `string` | ui文件路径 |
+| `string` | UIPrefab 路径 |
 | :------ | :------ |
 
 </td>
 </tr></tbody>
 </table>
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为"NewScript"默认脚本脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。代码如下：
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            // 传入的ID需要修改为你编辑器中挂载在对象管理器中的UIPrefab ID
+            let ui = GameObject.findGameObjectById("28504DC8") as UIObject;
+            console.log("The complete path of this UIPrefab is:" + ui.uiPath);
+        }
+    }
+}
+```
 ___
 
 ### uiScript <Score text="uiScript" /> 
@@ -167,7 +190,8 @@ ___
 <td style="text-align: left">
 
 
-得到UI脚本
+获取在对象管理器中的 UIPrefab 上挂载的脚本
+
 
 #### Returns
 
@@ -178,6 +202,22 @@ ___
 </tr></tbody>
 </table>
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为"NewScript"默认脚本脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。代码如下：
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart    (): void {
+        if(SystemUtil.isClient()){
+            // 传入的ID需要修改为你编辑器中挂载在对象管理器中的UIPrefab ID
+            let ui = GameObject.findGameObjectById("28504DC8") as UIObject;
+            console.log("The name of the script root control mounted by this UIPrefab:" + ui.uiScript.rootCanvas.name);
+        }
+    }
+}
+```
 ___
 
 ### uiWidgetBase <Score text="uiWidgetBase" /> 
@@ -194,7 +234,8 @@ ___
 <td style="text-align: left">
 
 
-获取该对象下所绑定的UI控件的集合
+获取该对象下所绑定的 UI 根控件
+
 
 #### Returns
 
@@ -202,7 +243,23 @@ ___
 </tr></tbody>
 </table>
 
-| [`UserWidget`](mw.UserWidget.md) | UI控件的集合:UserWidget |
+<span style="font-size: 14px;">
+使用示例:创建一个名为"NewScript"默认脚本脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。代码如下：
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            // 传入的ID需要修改为你编辑器中挂载在对象管理器中的UIPrefab ID
+            let ui = GameObject.findGameObjectById("28504DC8") as UIObject;
+            console.log("The name of the script canvas mounted by this UIPrefab:" + ui.uiWidgetBase.name);
+        }
+    }
+}
+```
+| [`UserWidget`](mw.UserWidget.md) | UIPrefab 中的根控件 |
 | :------ | :------ |
 
 ## Methods
