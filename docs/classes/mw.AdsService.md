@@ -15,7 +15,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[showTimeout](mw.AdsService.md#showtimeout)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置广告超时时间|
+| 获取广告超时时间|
 
 ### Methods <Score text="Methods" /> 
 | **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean` <Badge type="tip" text="client" />  |
@@ -145,7 +145,7 @@ export default class AdsExample extends mw.Script {
     }
 
     //播放广告
-    private async playAd(type: AdsType): `Promise`<`void`\> {
+    private async playAd(type: AdsType): Promise<void> {
         let player = await mw.Player.localPlayer;
         if (!AdsService.isActive(type)) {
             player.character.name = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";

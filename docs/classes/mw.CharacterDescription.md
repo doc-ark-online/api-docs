@@ -27,7 +27,7 @@ CharacterDescription 如何使用呢？
 ### Properties <Score text="Properties" /> 
 | **[advance](mw.CharacterDescription.md#advance)**: `Object`  |
 | :-----|
-| 7. 插槽(clothing)部分|
+| 高级人形对象外观配置类|
 | **[base](mw.CharacterDescription.md#base)**: `Object`  |
 | 基础人形对象外观配置类 与 advance 互斥|
 
@@ -119,7 +119,7 @@ export default class CharacterStyleExample extends Script {
             // 给【角色换装完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter, HumanoidSlotType.Root);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 defaultStyle = myCharacter.getDescription();
             });
@@ -137,13 +137,13 @@ export default class CharacterStyleExample extends Script {
                     // 腮红为75674
                     myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 前发为57731，后发为63910
-                    myCharacter.description.advance.hair.frontHair.description = "57731";
-                    myCharacter.description.advance.hair.backHair.description = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.description.advance.clothing.upperCloth.description = "58694";
-                    myCharacter.description.advance.clothing.lowerCloth.description = "58700";
-                    myCharacter.description.advance.clothing.gloves.description = "60384";
-                    myCharacter.description.advance.clothing.shoes.description = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
@@ -373,6 +373,7 @@ export default class CharacterStyleExample extends Script {
 | `slotAndDecoration?`  | 插槽和物品 |
 | `slotAndDecoration.slot`  | **`Description`** 插槽数据 |
 
+
 ___
 
 ### base <Score text="base" /> 
@@ -406,7 +407,7 @@ export default class CharacterStyleExample extends Script {
             // 给【角色换装完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter, HumanoidSlotType.Root);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 defaultStyle = myCharacter.getDescription();
             });
@@ -424,13 +425,13 @@ export default class CharacterStyleExample extends Script {
                     // 腮红为75674
                     myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 前发为57731，后发为63910
-                    myCharacter.description.advance.hair.frontHair.description = "57731";
-                    myCharacter.description.advance.hair.backHair.description = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.description.advance.clothing.upperCloth.description = "58694";
-                    myCharacter.description.advance.clothing.lowerCloth.description = "58700";
-                    myCharacter.description.advance.clothing.gloves.description = "60384";
-                    myCharacter.description.advance.clothing.shoes.description = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观

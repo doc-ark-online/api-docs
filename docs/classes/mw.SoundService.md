@@ -458,7 +458,7 @@ export default class SoundExample extends mw.Script {
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
-        for (let i = 0;i < 10;i++) {
+        for (let i = 0; i < 10; i++) {
             mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
                 obj.worldLocation = new mw.Vector(i * 300, 0, 0);
                 SoundService.play3DSound(bgmSoundAssetId, obj, 0);

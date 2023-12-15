@@ -13,26 +13,26 @@
 | :-----|
 | 获取是否既不能听也不能说功能，false为否既不能听也不能说；true为既可以听也可以说。|
 | **[voiceChatEnabled](mw.ChatService.md#voicechatenabled)**(): `boolean` <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 获取是否既不能听也不能说功能，false为否既不能听也不能说；true为既可以听也可以说。|
 
 ### Methods <Score text="Methods" /> 
 | **[asyncBroadcastMessage](mw.ChatService.md#asyncbroadcastmessage)**(`type`: [`MessageType`](../enums/mw.MessageType.md), `content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />  |
 | :-----|
-| note: 开启聊天框聊天功能，接口才可生效|
+| 发送富文本消息到聊天窗口中，禁止回调中调用该接口。|
 | **[asyncCloseMic](mw.ChatService.md#asyncclosemic)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 关闭自己的语音。|
 | **[asyncMuteAll](mw.ChatService.md#asyncmuteall)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 一键屏蔽所有玩家的语音。|
 | **[asyncMutePlayer](mw.ChatService.md#asyncmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="other" />  |
-| note: 开启语音功能，接口才可生效|
+| 屏蔽指定玩家的语音。|
 | **[asyncOpenMic](mw.ChatService.md#asyncopenmic)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 打开自己的语音。|
 | **[asyncSendMessage](mw.ChatService.md#asyncsendmessage)**(`content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="client" />  |
-| note: 开启聊天框聊天功能，接口才可生效|
+| 发送快捷语消息，自动携带发送者名称。与聊天框中输入语言一致。不支持富文本。|
 | **[asyncUnmuteAll](mw.ChatService.md#asyncunmuteall)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 一键打开所有玩家的语音。|
 | **[asyncUnmutePlayer](mw.ChatService.md#asyncunmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| note: 开启语音功能，接口才可生效|
+| 打开指定玩家的语音。|
 | **[sendAudio](mw.ChatService.md#sendaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `openAudio`: `boolean`, `openId`: `string`): `void` |
 
 ## Accessors

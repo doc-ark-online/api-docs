@@ -17,20 +17,20 @@ Transform 由平移、旋转和缩放组成。
 ### Accessors <Score text="Accessors" /> 
 | **[position](mw.Transform.md#position)**(): [`Vector`](mw.Vector.md)  |
 | :-----|
-| 设置位置信息|
+| 获取位置信息|
 | **[rotation](mw.Transform.md#rotation)**(): [`Rotation`](mw.Rotation.md)  |
-| 设置旋转信息|
+| 获取旋转信息|
 | **[scale](mw.Transform.md#scale)**(): [`Vector`](mw.Vector.md)  |
-| 设置缩放信息|
+| 获取缩放信息|
 | **[identity](mw.Transform.md#identity)**(): [`Transform`](mw.Transform.md)  |
-| 位置：(0, 0, 0)，旋转：(0, 0, 0)，缩放：(1, 1, 1)|
+| 获取一个单位 Transform|
 
 ### Methods <Score text="Methods" /> 
 | **[clone](mw.Transform.md#clone)**(): [`Transform`](mw.Transform.md)   |
 | :-----|
 | 克隆一个新的 Transform|
 | **[fromString](mw.Transform.md#fromstring)**(`str`: `string`, `outer?`: [`Transform`](mw.Transform.md)): [`Transform`](mw.Transform.md)   |
-| 如果 outer 不为空, 返回 outer,否则返回一个新的 Transform 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined|
+| 通过字符串创建一个 Transform|
 | [getForwardVector](mw.Transform.md#getforwardvector)  |
 | :----- |
 | **[getRightVector](mw.Transform.md#getrightvector)**(): [`Vector`](mw.Vector.md)   |
@@ -52,7 +52,7 @@ Transform 由平移、旋转和缩放组成。
 | **[transformPosition](mw.Transform.md#transformposition)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 本地坐标转化为世界坐标|
 | **[fromString](mw.Transform.md#fromstring-1)**(`str`: `string`, `outer?`: [`Transform`](mw.Transform.md)): [`Transform`](mw.Transform.md)   |
-| 如果 outer 不为空, 返回 outer,否则返回一个新的 Transform 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined|
+| 通过字符串创建一个 Transform|
 
 返回一个新的 Transform
 

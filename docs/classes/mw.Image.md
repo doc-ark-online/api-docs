@@ -15,64 +15,64 @@
 ### Accessors <Score text="Accessors" /> 
 | **[imageColor](mw.Image.md#imagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置图片颜色|
+| 获取图片的颜色|
 | **[imageDrawType](mw.Image.md#imagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置图片绘制类型|
+| 获取图片绘制类型|
 | **[imageGuid](mw.Image.md#imageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置图片id|
+| 获取图片id|
 | **[imageSize](mw.Image.md#imagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置图片大小|
+| 获取图片大小|
 | **[margin](mw.Image.md#margin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置图片的边距|
+| 获取图片边距|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
@@ -95,10 +95,10 @@
 | **[setImageColorDecimal](mw.Image.md#setimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置图片颜色,指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.Image.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Image`](mw.Image.md) <Badge type="tip" text="client" />  |
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建 Image 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

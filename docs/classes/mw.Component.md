@@ -8,7 +8,7 @@
 | **[guid](mw.Component.md#guid)**(): `string`  |
 | :----- |
 | **[useUpdate](mw.Component.md#useupdate)**(): `boolean`   |
-| 设置对象是否使用更新|
+| 获取对象是否使用更新|
 
 ### Methods <Score text="Methods" /> 
 | **[isRunningClient](mw.Component.md#isrunningclient)**(): `boolean`   |

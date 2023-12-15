@@ -16,7 +16,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.recoilForceEnable = true;
+            hotWeapon.recoilForceEnabled = true;
             hotWeapon.recoilForceComponent.minHorizontalOffset = 1
             hotWeapon.recoilForceComponent.maxHorizontalOffset = 1
             hotWeapon.recoilForceComponent.minVerticalOffset = 1
@@ -26,7 +26,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
             hotWeapon.recoilForceComponent.minVerticalJitter = 1;
             hotWeapon.recoilForceComponent.maxVerticalJitter = 1;
         }
-        hotWeapon.recoilForceComponent.onStartRecoilForce.add(() => { console.log("recoilForceComponent.onStartRecoilForce") });
+        hotWeapon.recoilForceComponent.onStartRecoil.add(() => { console.log("recoilForceComponent.onStartRecoilForce") });
     }
 }
 ```
@@ -41,21 +41,21 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[maxHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number`   |
 | :-----|
-| 设置相机水平抖动最大值。|
+| 获取相机水平抖动最大值。|
 | **[maxHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number`   |
-| 设置水平偏移最大值。|
+| 获取水平偏移最大值。|
 | **[maxVerticalJitter](mw.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number`   |
-| 设置相机垂直抖动最大值。|
+| 获取相机垂直抖动最大值。|
 | **[maxVerticalOffset](mw.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number`   |
-| 设置垂直偏移最大值。|
+| 获取垂直偏移最大值。|
 | **[minHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number`   |
-| 设置相机水平抖动最小值。|
+| 获取相机水平抖动最小值。|
 | **[minHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number`   |
-| 设置水平偏移最小值。|
+| 获取水平偏移最小值。|
 | **[minVerticalJitter](mw.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number`   |
-| 设置相机垂直抖动最小值。|
+| 获取相机垂直抖动最小值。|
 | **[minVerticalOffset](mw.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number`   |
-| 设置垂直偏移最小值。|
+| 获取垂直偏移最小值。|
 
 ### Methods <Score text="Methods" /> 
 | **[getDeepJitter](mw.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number`   |

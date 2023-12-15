@@ -50,5 +50,5 @@ export default class ClassExample extends Script {
 
 ```ts
 ScriptingSettings.setGlobalAsyncTimeout(1000 * 10);
-const obj = await GameObject.asyncFind("场景中的物体Guid");
+const obj = await GameObject.asyncFindGameObjectById("场景中的物体Guid");
 ```

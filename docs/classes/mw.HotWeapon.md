@@ -42,7 +42,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 ```ts
  @Component
- export default ponSample1 extends Script {
+ export default class HotWeaponSample1 extends Script {
      protected onStart(): void {
          // 构造
          const hotWeapon = this.gameObject as HotWeapon;
@@ -187,7 +187,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 ### Properties <Score text="Properties" /> 
 | **[accuracyOfFireComponent](mw.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](mw.HotWeaponAccuracyOfFireComponent.md)  |
 | :-----|
-| 此功能可以看做 hotweapon 的功能组件，只限于热武器使用。|
+| 射击精度功能。|
 | **[aimComponent](mw.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](mw.HotWeaponAimComponent.md)  |
 | 瞄准功能。|
 | **[fireComponent](mw.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](mw.HotWeaponFireComponent.md)  |
@@ -195,7 +195,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | **[loadComponent](mw.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](mw.HotWeaponLoadComponent.md)  |
 | 上膛功能。|
 | **[onEquip](mw.HotWeapon.md#onequip)**: `MulticastDelegateInterface`<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>  |
-| 此委托可双端执行。当你在服务端调用时，角色装备上热武器时会在服务端执行自定义绑定函数；在客户端调用时，角色装备上热武器时会在客户端执行自定义绑定函数。|
+| 装备热武器时执行绑定函数|
 | **[onUnequip](mw.HotWeapon.md#onunequip)**: `MulticastDelegateInterface`<() => `void`\>  |
 | 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
 | **[recoilForceComponent](mw.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md)  |
@@ -204,7 +204,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 换弹功能。|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -215,18 +215,18 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 ### Accessors <Score text="Accessors" /> 
 | **[accuracyOfFireEnabled](mw.HotWeapon.md#accuracyoffireenabled)**(): `boolean`   |
 | :-----|
-| 默认开启|
+| 是否开启了射击精度组件。|
 | **[aimEnabled](mw.HotWeapon.md#aimenabled)**(): `boolean`   |
-| 默认开启|
+| 是否开启了瞄准组件。|
 | **[loadEnabled](mw.HotWeapon.md#loadenabled)**(): `boolean`   |
-| 默认开启|
+| 是否开启了上膛组件。|
 | **[recoilForceEnabled](mw.HotWeapon.md#recoilforceenabled)**(): `boolean`   |
-| 默认开启|
+| 获取是否开启了后坐力组件。|
 | **[reloadEnabled](mw.HotWeapon.md#reloadenabled)**(): `boolean`   |
-| 默认开启|
+| 是否开启了换弹组件。|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -238,13 +238,13 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -259,7 +259,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | **[cloneComponentsData](mw.HotWeapon.md#clonecomponentsdata)**(`otherHotWeapon`: [`HotWeapon`](mw.HotWeapon.md)): `void` <Badge type="tip" text="server" />  |
 | 从传入的热武器逻辑对象中拷贝所有组件数据到当前的热武器中。|
 | **[equip](mw.HotWeapon.md#equip)**(`character`: [`Character`](mw.Character.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void` <Badge type="tip" text="other" />  |
-| 如果想将武器装备在角色身上，需要在服务端调用此函数。客户端调用不会报错，但不生效。|
+| 装备热武器到角色的指定插槽位置|
 | **[getBulletLocWhileSpawnOnScreenCenter](mw.HotWeapon.md#getbulletlocwhilespawnonscreencenter)**(): [`Vector`](mw.Vector.md) <Badge type="tip" text="client" />  |
 | 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location|
 | **[getCurrentOwner](mw.HotWeapon.md#getcurrentowner)**(): [`Character`](mw.Character.md)   |
@@ -282,7 +282,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 卸载热武器。|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
@@ -364,7 +364,7 @@ export default class HotWeaponAofSample extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.accuracyOfFireEnable = true;
+            hotWeapon.accuracyOfFireEnabled = true;
             // 影响射击精度的子弹偏移半角的最大值(范围Min~88)
             hotWeapon.accuracyOfFireComponent.maxDispersionHalfAngle = 4;
             // 影响射击精度的子弹偏移半角的最小值(范围0~Max)
@@ -378,7 +378,7 @@ export default class HotWeaponAofSample extends Script {
             // 影响射击精度的子弹偏移半角的每次开火扩张值(范围0~88)
             hotWeapon.accuracyOfFireComponent.dispersionHalfAngleIncreasePerShot = 1;
         } else if (SystemUtil.isClient()) {
-            hotWeapon.accuracyOfFireComponent.onCurrentDispersionChangedClient.add(() => { console.log("accuracyOfFireComponent.onCurrentDispersionChangedClient") });
+            hotWeapon.accuracyOfFireComponent.onCurrentDispersionChange.add(() => { console.log("accuracyOfFireComponent.onCurrentDispersionChangedClient") });
         }
     }
 }
@@ -404,16 +404,15 @@ export default class HotWeaponAimSample1 extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.aimEnable = true;
+            hotWeapon.aimEnabled = true;
             hotWeapon.aimComponent.aimMode = HotWeaponAimMode.ThirdPerson;
-            hotWeapon.aimComponent.scopeTypeIndex = HotWeaponCrossHairType.ThirdPersonCrossHair;
             hotWeapon.aimComponent.aimingZoom = 16;
             hotWeapon.aimComponent.cameraOffsetDistanceInThirdPersonMode = 300;
-            hotWeapon.aimComponent.onAimStartServer.add(() => { console.log("aimComponent.onAimStartClient") });
-            hotWeapon.aimComponent.onAimEndServer.add(() => { console.log("aimComponent.onAimEndClient") });
+            hotWeapon.aimComponent.onStartAim.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onEndAim.add(() => { console.log("aimComponent.onAimEndClient") });
         } else if (SystemUtil.isClient()) {
-            hotWeapon.aimComponent.onAimStartClient.add(() => { console.log("aimComponent.onAimStartClient") });
-            hotWeapon.aimComponent.onAimEndClient.add(() => { console.log("aimComponent.onAimEndClient") });
+            hotWeapon.aimComponent.onStartAim.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onEndAim.add(() => { console.log("aimComponent.onAimEndClient") });
         }
     }
 }
@@ -550,7 +549,7 @@ export default class HotWeaponRecoilForceSample extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.recoilForceEnable = true;
+            hotWeapon.recoilForceEnabled = true;
             hotWeapon.recoilForceComponent.minHorizontalOffset = 1
             hotWeapon.recoilForceComponent.maxHorizontalOffset = 1
             hotWeapon.recoilForceComponent.minVerticalOffset = 1
@@ -560,7 +559,7 @@ export default class HotWeaponRecoilForceSample extends Script {
             hotWeapon.recoilForceComponent.minVerticalJitter = 1;
             hotWeapon.recoilForceComponent.maxVerticalJitter = 1;
         }
-        hotWeapon.recoilForceComponent.onStartRecoilForce.add(() => { console.log("recoilForceComponent.onStartRecoilForce") });
+        hotWeapon.recoilForceComponent.onStartRecoil.add(() => { console.log("recoilForceComponent.onStartRecoilForce") });
     }
 }
 ```

@@ -15,104 +15,104 @@
 ### Accessors <Score text="Accessors" /> 
 | **[autoWrap](mw.InputBox.md#autowrap)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置自动换行|
+| 获取是否自动换行|
 | **[contentColor](mw.InputBox.md#contentcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 获取字体内容颜色|
+| 设置字体内容颜色|
 | **[errorText](mw.InputBox.md#errortext)**(): `string` <Badge type="tip" text="client" />  |
-| 设置错误提示|
+| 获取设置错误提示|
 | **[fontColor](mw.InputBox.md#fontcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置文本颜色|
+| 获取当前的字体的颜色|
 | **[fontLetterSpace](mw.InputBox.md#fontletterspace)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体间距|
+| 获取体间距|
 | **[fontSize](mw.InputBox.md#fontsize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体大小|
+| 获取字体大小|
 | **[glyph](mw.InputBox.md#glyph)**(): [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) <Badge type="tip" text="client" />  |
-| 设置字体字形|
+| 获取字体字形|
 | **[hintString](mw.InputBox.md#hintstring)**(): `string` <Badge type="tip" text="client" />  |
-| 设置提示内容|
+| 获取提示文本内容|
 | **[inputTextLimit](mw.InputBox.md#inputtextlimit)**(): [`InputTextLimit`](../enums/mw.InputTextLimit.md) <Badge type="tip" text="client" />  |
-| 显示输入框的输入格式|
+| 获取输入框的输入格式|
 | **[isRichText](mw.InputBox.md#isrichtext)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否为富文本|
+| 获取是否为富文本|
 | **[onTextChanged](mw.InputBox.md#ontextchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="client" />  |
 | 文本改变事件|
 | **[onTextCommitted](mw.InputBox.md#ontextcommitted)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/mw.TextCommit.md)) => `void`\> <Badge type="tip" text="client" />  |
 | 文本提交事件|
 | **[outlineColor](mw.InputBox.md#outlinecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 获取字体描边颜色|
+| 设置字体描边颜色|
 | **[outlineSize](mw.InputBox.md#outlinesize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体描边宽度|
+| 获取字体描边宽度|
 | **[readOnlyEnable](mw.InputBox.md#readonlyenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可读性|
+| 获取可读性|
 | **[shadowColor](mw.InputBox.md#shadowcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置阴影颜色|
+| 获取字体阴影颜色|
 | **[shadowOffset](mw.InputBox.md#shadowoffset)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置阴影偏移|
+| 获取字体阴影偏移|
 | **[strikethroughEnable](mw.InputBox.md#strikethroughenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启字体删除线|
+| 获取是否开启字体删除线|
 | **[text](mw.InputBox.md#text)**(): `string` <Badge type="tip" [text](mw.InputBox.md#text)="client" />  |
-| 设置文本内容|
+| 获取文本内容|
 | **[textAlign](mw.InputBox.md#textalign)**(): [`TextJustify`](../enums/mw.TextJustify.md) <Badge type="tip" text="client" />  |
-| 设置字体对齐方式|
+| 获取字体对齐方式|
 | **[textHeight](mw.InputBox.md#textheight)**(): `number` <Badge type="tip" text="other" />  |
 | 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)|
 | **[textLengthLimit](mw.InputBox.md#textlengthlimit)**(): `number` <Badge type="tip" text="client" />  |
-| 设置当前输入框的字数限制|
+| 获取输入框的字数限制,字数限制不适用与邮箱格式和密码格式|
 | **[textSingleHeight](mw.InputBox.md#textsingleheight)**(): `number` <Badge type="tip" text="client" />  |
 | 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)|
 | **[textVerticalAlign](mw.InputBox.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/mw.TextVerticalJustify.md) <Badge type="tip" text="client" />  |
-| 设置字体垂直对齐方式|
+| 获取字体垂直对齐方式|
 | **[underlineEnable](mw.InputBox.md#underlineenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启字体下划线|
+| 获取是否开启字体下划线|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
@@ -137,10 +137,10 @@
 | **[setTextJustification](mw.InputBox.md#settextjustification)**(`inTextJustification`: [`TextJustify`](../enums/mw.TextJustify.md)): `void` <Badge type="tip" text="client" />  |
 | 设置输入框的对齐方式|
 | **[newObject](mw.InputBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`InputBox`](mw.InputBox.md) <Badge type="tip" text="client" />  |
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建 InputBox 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

@@ -56,7 +56,6 @@ export default class SelectionExample extends Script {
                 this.onTouchMove(index, location);
             }
         })
-        this.touch.setPlayerController();
     }
 
     // 开始触摸屏幕，记录初始位置
@@ -121,13 +120,12 @@ export default class SelectionExample extends Script {
                 this.onTouchEnd(index, location);
             }
         })
-        this.touch.setPlayerController();
     }
 
     //在场景中随机生成一些物体，用于框选
     private creatObjs() {
         const cubeAssetId = "197386";
-        for (let i = 0;i < 50;i++) {
+        for (let i = 0; i < 50; i++) {
             GameObject.asyncSpawn({ guid: cubeAssetId }).then(obj => {
                 obj.worldLocation = new Vector(MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500));
             })

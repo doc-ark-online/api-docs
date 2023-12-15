@@ -159,31 +159,31 @@ export default class VehicleSample extends Script {
                     // 按下 1 调整载具质量
                     this.adjustVehicleMass();
                 });
-                this.ControlEventsHandle.push(handle_press_one);
+                this.controlEventsHandle.push(handle_press_one);
 
                 const handle_press_two = InputUtil.onKeyDown(Keys.Two, () => {
                     // 按下 2 调整载具摩擦力系数
                     this.adjustVehicleFriction();
                 });
-                this.ControlEventsHandle.push(handle_press_two);
+                this.controlEventsHandle.push(handle_press_two);
 
                 const handle_press_three = InputUtil.onKeyDown(Keys.Three, () => {
                     // 按下 3 调整载具发动机最大转速
                     this.adjustVehicleMaxEngineRPM();
                 });
-                this.ControlEventsHandle.push(handle_press_three);
+                this.controlEventsHandle.push(handle_press_three);
 
                 const handle_press_four = InputUtil.onKeyDown(Keys.Four, () => {
                     // 按下 4 调整载具加速度
                     this.adjustVehicleAcceleration();
                 });
-                this.ControlEventsHandle.push(handle_press_four);
+                this.controlEventsHandle.push(handle_press_four);
 
                 const handle_press_five = InputUtil.onKeyDown(Keys.Five, () => {
                     // 按下 5 调整载具制动力矩
                     this.adjustVehicleBrakingTorque();
                 });
-                this.ControlEventsHandle.push(handle_press_five);
+                this.controlEventsHandle.push(handle_press_five);
 
                 this.VehicleKeyEvents();
             }
@@ -328,7 +328,7 @@ export default class VehicleSample extends Script {
 ### Properties <Score text="Properties" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -339,21 +339,21 @@ export default class VehicleSample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[acceleration](mw.AdvancedVehicle.md#acceleration)**(): `number`   |
 | :-----|
-| 设置加速度。|
+| 获取加速度。|
 | **[brakingTorque](mw.AdvancedVehicle.md#brakingtorque)**(): `number`   |
-| 设置制动力矩。单位：牛*米（N*m）|
+| 获取制动力矩。单位：牛*米（N*m）|
 | **[currentGearLevel](mw.AdvancedVehicle.md#currentgearlevel)**(): `number`   |
-| 设置当前档位级别。|
+| 获取当前档位级别。|
 | **[driveMode](mw.AdvancedVehicle.md#drivemode)**(): [`VehicleDriveMode4WNew`](../enums/mw.VehicleDriveMode4WNew.md)   |
 | 获取载具驱动模式。|
 | **[friction](mw.AdvancedVehicle.md#friction)**(): `number`   |
-| 设置载具车轮摩擦力系数|
+| 获取载具摩擦力系数。|
 | **[handbrakeInputEnable](mw.AdvancedVehicle.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 是否进行手刹，true-进行制动, false-取消制动。|
 | **[mass](mw.AdvancedVehicle.md#mass)**(): `number`   |
-| 设置载具质量，单位：千克（kg）。|
+| 获取质量。|
 | **[maxEngineRPM](mw.AdvancedVehicle.md#maxenginerpm)**(): `number`   |
-| 设置最大发动机转速。单位：转/分（r/min）|
+| 获取最大发动机转速。单位：转/分（r/min）|
 | **[maxGearLevel](mw.AdvancedVehicle.md#maxgearlevel)**(): `number`   |
 | 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
 | **[owner](mw.AdvancedVehicle.md#owner)**(`inOwner`: [`Player`](mw.Player.md)): `void` <Badge type="tip" text="client" />  |
@@ -370,7 +370,7 @@ export default class VehicleSample extends Script {
 | 获取车轮数量。|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -382,13 +382,13 @@ export default class VehicleSample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -415,7 +415,7 @@ export default class VehicleSample extends Script {
 | 设置车轮半径，单位：厘米（cm）。|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

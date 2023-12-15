@@ -85,7 +85,7 @@
 | **[scale](mw.Matrix4x4.md#scale)**(`vec`: [`Vector`](mw.Vector.md)): [`Matrix4x4`](mw.Matrix4x4.md)   |
 | 将当前矩阵左乘缩放矩阵的结果赋值给当前矩阵，缩放矩阵由各个轴的缩放给出。|
 | **[set](mw.Matrix4x4.md#set)**(`other`: [`Matrix4x4`](mw.Matrix4x4.md)): [`Matrix4x4`](mw.Matrix4x4.md)   |
-| 设置当前矩阵指定元素值。|
+| 设置当前矩阵使其与指定矩阵相等。|
 | **[strictEquals](mw.Matrix4x4.md#strictequals)**(`other`: [`Matrix4x4`](mw.Matrix4x4.md)): `boolean`   |
 | 判断当前矩阵是否与指定矩阵相等。|
 | **[subtract](mw.Matrix4x4.md#subtract)**(`mat`: [`Matrix4x4`](mw.Matrix4x4.md)): [`Matrix4x4`](mw.Matrix4x4.md)   |

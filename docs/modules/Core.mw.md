@@ -2607,7 +2607,7 @@ export default class NewScript extends Script {
   protected onStart(): void {
     //获取当前用户上传的所有的预制体
     mw.getMyPrefabs(0,20).then(item =>{
-      for (let Index: number = 0;Index < item.PrefabInfos.length;++Index) {
+      for (let Index: number = 0; Index < item.PrefabInfos.length; ++Index) {
         console.log(item.PrefabInfos[Index].Guid);
       }
     });

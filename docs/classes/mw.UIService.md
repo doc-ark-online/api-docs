@@ -144,7 +144,7 @@ class ButtonUI {
 | :-----|
 | 全局所有UI的根canvas|
 | **[uiLogInfoEnable](mw.UIService.md#uiloginfoenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 允许定时输出UIService中管理到的UI的信息|
+| 获取允许定时输出UIService中管理到的UI的信息|
 
 ### Methods <Score text="Methods" /> 
 | **[dumpUIData](mw.UIService.md#dumpuidata)**(): `void` <Badge type="tip" text="client" />  |

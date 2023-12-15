@@ -22,17 +22,15 @@ export default class SoundExample extends Script {
     }
 
     @mw.RemoteFunction(mw.Client)
-    public async createSound(): `Promise`<`void`\> {
+    public async createSound(): Promise<void> {
         const success = await AssetUtil.asyncDownloadAsset(this.sound.assetID);
             if (success) {
                 // 下载完毕创建音效
-                this.sound.object = await GameObject.asyncSpawn<mw.Sound>({
-                   guid:this.sound.assetID
-                });
+                this.sound.object = await GameObject.asyncSpawn<mw.Sound>(this.sound.assetID);
 
                 // 设置音效transform
                 const transform = new Transform(new Vector(500, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
-                this.sound.object.setTransform(transform);
+                this.sound.object.worldTransform = transform;
 
                 // 设置音效为空间音效
                 this.sound.object.isUISound = false;
@@ -40,7 +38,7 @@ export default class SoundExample extends Script {
                 // 设置UI音效形状为球形
                 this.sound.object.attenuationShape = AttenuationShape.Sphere;
                 // 设置音效范围100
-                this.sound.object.shapeExtents = new Vector(100,0,0);
+                this.sound.object.attenuationShapeExtents = new Vector(100,0,0);
                 // 设置音效衰减距离为200
                 this.sound.object.falloffDistance = 200;
                 // 设置音效音量
@@ -72,7 +70,7 @@ export default class SoundExample extends Script {
 | 声音开始事件|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -83,19 +81,19 @@ export default class SoundExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[attenuationDistanceModel](mw.Sound.md#attenuationdistancemodel)**(): [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置音效的衰减方式|
+| 获取音效的衰减方式|
 | **[attenuationShape](mw.Sound.md#attenuationshape)**(): [`AttenuationShape`](../enums/mw.AttenuationShape.md) <Badge type="tip" text="client" />  |
-| 设置音效的形状|
+| 获取音效的形状|
 | **[attenuationShapeExtents](mw.Sound.md#attenuationshapeextents)**(): [`Vector`](mw.Vector.md) <Badge type="tip" text="client" />  |
-| 设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。|
+| 获取音效形状范围|
 | **[falloffDistance](mw.Sound.md#falloffdistance)**(): `number` <Badge type="tip" text="client" />  |
-| 设置衰减距离|
+| 获取衰减距离|
 | **[isLoop](mw.Sound.md#isloop)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置循环播放|
+| 获取是否循环播放|
 | **[isSpatialization](mw.Sound.md#isspatialization)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置音效空间化，若是，则开启空间传播衰减|
+| 获取音效空间化|
 | **[isUISound](mw.Sound.md#isuisound)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否是UI音效，注意：UI音效不依赖游戏逻辑|
+| 获取是否是UI音效|
 | **[playState](mw.Sound.md#playstate)**(): [`SoundPlayState`](../enums/mw.SoundPlayState.md) <Badge type="tip" text="client" />  |
 | 获取音效播放状态|
 | **[timeLength](mw.Sound.md#timelength)**(): `number` <Badge type="tip" text="client" />  |
@@ -103,10 +101,10 @@ export default class SoundExample extends Script {
 | **[timePosition](mw.Sound.md#timeposition)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前已播放时长|
 | **[volume](mw.Sound.md#volume)**(): `number` <Badge type="tip" text="client" />  |
-| 设置音量 0~1|
+| 获取音量比例|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -118,13 +116,13 @@ export default class SoundExample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -142,7 +140,7 @@ export default class SoundExample extends Script {
 | 停止播放音效|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

@@ -116,7 +116,7 @@ class AppleModC extends ModuleC<AppleModS, AppleData> {
 | **[onDataInit](mwext.Subdata.md#ondatainit)**(): `void`   |
 | 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级|
 | **[save](mwext.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](mwext.Subdata.md) <Badge type="tip" text="server" />  |
-| 修改数据时，只有调用了 save 并设置参数为 true 时，才会同步至对应客户端。|
+| 保存数据|
 | **[syncToClient](mwext.Subdata.md#synctoclient)**(): [`Subdata`](mwext.Subdata.md) <Badge type="tip" text="server" />  |
 | 向客户端同步数据|
 

@@ -55,7 +55,7 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 | **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)   |
 | 当前角度旋转一个向量|
 | **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
-| 为当前旋转量设置每个分量|
+| 当前旋转量设置为新的旋转量|
 | **[strictEquals](mw.Rotation.md#strictequals)**(`other`: [`Rotation`](mw.Rotation.md)): `boolean`   |
 | 判断当前角度是否与指定向量相等。|
 | **[subtract](mw.Rotation.md#subtract)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |

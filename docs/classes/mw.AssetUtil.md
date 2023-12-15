@@ -15,7 +15,7 @@
 | :-----|
 | 资源是否加载|
 | **[asyncDownloadAsset](mw.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\>   |
-| 此函数只能传入assetID|
+| 资源下载并加载|
 
 ## Methods
 

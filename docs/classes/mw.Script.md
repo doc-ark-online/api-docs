@@ -4,6 +4,8 @@
 
 脚本的基类
 
+-----------------------------
+
 当你想从无到有开始做一个好玩的游戏时，便开始构思要做一个什么样子的游戏，首先游戏内容一定是丰富多彩的，有各种各样的人物、物品和场景等等...如何填充你的游戏内容呢？
 
 1. 如何填充游戏内容？
@@ -20,9 +22,9 @@
 
 3. 脚本的分类
 
-基本可以大致分为两类：
+可以大致分为两类：
 
-- 继承自 Script 的脚本类，享受编辑器赋予的默认生命周期。
+- :mushroom: 继承自 Script 的脚本类，享受编辑器赋予的默认生命周期。
 
 当在编辑器中点击新建脚本时，会默认生成一个继承自 Script 的脚本类：
 
@@ -49,7 +51,7 @@ export default class GameStart extends Script {
 }
 ```
 
-- 不继承 Script 的其他类。
+- :mushroom: 不继承 Script 的其他类。
 
 例如
 
@@ -71,7 +73,7 @@ class Student extends Person {
 
 4. 脚本是如何工作的？
 
-- 继承自 Script 的脚本类。
+- :mushroom: 继承自 Script 的脚本类。
 
 继承自 Script 的脚本类可以复写 onStart(), onUpdate(), 和 onDestroy() 方法。当你的脚本放在对象管理器中之后，编辑器会自动帮你调用这些函数。
 
@@ -91,7 +93,7 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 
 需要注意的是，帧率可能受到游戏的复杂度、场景中的物体数量、图形效果和计算负荷等因素的影响。如果游戏性能下降，帧率可能会下降，从而导致 onUpdate 函数的调用频率减少。因此，不能假设 onUpdate 函数在固定时间间隔内调用，而应该将其视为每帧都会被调用的函数。
 
-- 不继承 Script 的其他类。
+- :mushroom: 不继承 Script 的其他类。
 
 ## Hierarchy
 
@@ -102,22 +104,24 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
-| :----- |
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
+| :-----|
+| 获取脚本挂载的 gameobject|
 | **[useUpdate](mw.Script.md#useupdate)**(): `boolean`   |
-| 设置组件是否使用更新|
+| 获取脚本是否启用 onUpdate 生命周期函数|
 
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="other" />  |
-| :----- |
+| :-----|
+| 销毁组件对象|
 | **[onDestroy](mw.Script.md#ondestroy)**(): `void` <Badge type="tip" text="other" />  |
-| 周期函数 被销毁时调用|
+| 生命周期函数 - 被销毁时调用|
 | **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <Badge type="tip" text="other" />  |
 | 属性被同步事件 ClientOnly|
 | **[onStart](mw.Script.md#onstart)**(): `void` <Badge type="tip" text="other" />  |
-| 周期函数 脚本开始执行时调用|
+| 生命周期函数 - 脚本开始执行时调用|
 | **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="other" />  |
-| 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| 生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行|
 
 #### Parameters
 
@@ -132,12 +136,12 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **gameObject**(): [`GameObject`](mw.GameObject.md)
+• `get` **gameObject**(): [`GameObject`](mw.GameObject.md) 
 
 </th>
 <th style="text-align: left">
 
-• `set` **gameObject**(`value`): `void`
+• `set` **gameObject**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -145,9 +149,11 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 <td style="text-align: left">
 
 
+获取脚本挂载的 gameobject
+
 #### Returns
 
-| [`GameObject`](mw.GameObject.md) |  |
+| [`GameObject`](mw.GameObject.md) | 挂载游戏对象 |
 | :------ | :------ |
 
 
@@ -155,9 +161,11 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 <td style="text-align: left">
 
 
+设置脚本挂载的 gameobject 对象
+
 #### Parameters
 
-| `value` | [`GameObject`](mw.GameObject.md) |
+| `value` [`GameObject`](mw.GameObject.md) | 传入挂载对象 |
 | :------ | :------ |
 
 
@@ -187,11 +195,11 @@ ___
 <td style="text-align: left">
 
 
-获取组件是否使用更新
+获取脚本是否启用 onUpdate 生命周期函数
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 默认为关闭状态，需要手动开启 |
 | :------ | :------ |
 
 
@@ -199,11 +207,11 @@ ___
 <td style="text-align: left">
 
 
-设置组件是否使用更新
+设置脚本是否启用 onUpdate 生命周期函数
 
 #### Parameters
 
-| `v` | `boolean` |
+| `v` `boolean` |  true 开启 false 关闭 |
 | :------ | :------ |
 
 </td>
@@ -218,7 +226,8 @@ ___
 
 • **destroy**(): `void` <Badge type="tip" text="other" />
 
-@description销毁组件对象
+销毁组件对象
+
 
 ___
 
@@ -226,7 +235,7 @@ ___
 
 • `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
 
-周期函数 被销毁时调用
+生命周期函数 - 被销毁时调用
 
 
 ___
@@ -251,7 +260,7 @@ ___
 
 • `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
 
-周期函数 脚本开始执行时调用
+生命周期函数 - 脚本开始执行时调用
 
 
 ___
@@ -260,7 +269,7 @@ ___
 
 • `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
 
-周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
+生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行
 
 #### Parameters
 

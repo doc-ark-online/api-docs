@@ -24,31 +24,31 @@
 | :-----|
 | 设置允许滚动超过滚动框大小|
 | **[alwaysShowScrollBar](mw.ScrollBox.md#alwaysshowscrollbar)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否一直显示滚动条|
+| 获取是否一直显示滚动条|
 | **[animationType](mw.ScrollBox.md#animationtype)**(): [`UIScrollBoxAnimationType`](../enums/mw.UIScrollBoxAnimationType.md) <Badge type="tip" text="client" />  |
-| 设定动画类型|
+| 获取动画类型|
 | **[defaultLocation](mw.ScrollBox.md#defaultlocation)**(): [`ScrollBarDefaultLocation`](../enums/mw.ScrollBarDefaultLocation.md) <Badge type="tip" text="client" />  |
-| 设置滚动条的默认位置(类型，非具体坐标)|
+| 返回滚动条的默认位置(类型，非具体坐标)|
 | **[elasticMultiplier](mw.ScrollBox.md#elasticmultiplier)**(): `number` <Badge type="tip" text="client" />  |
-| 设定弹性系数|
+| 获取弹性系数|
 | **[onScrollEnd](mw.ScrollBox.md#onscrollend)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 滚动结束事件|
 | **[onUserScrolled](mw.ScrollBox.md#onuserscrolled)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`currentOffset`: `number`) => `void`\> <Badge type="tip" text="client" />  |
 | 滚动事件|
 | **[orientation](mw.ScrollBox.md#orientation)**(): [`Orientation`](../enums/mw.Orientation.md) <Badge type="tip" text="client" />  |
-| 设置滚动方向|
+| 获取滚动方向|
 | **[scrollAxisBrushDrawType](mw.ScrollBox.md#scrollaxisbrushdrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置图片绘制类型|
+| 获取滚动条图片绘制类型|
 | **[scrollAxisBrushGuid](mw.ScrollBox.md#scrollaxisbrushguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置滚动条图片ID|
+| 获取滚动条图片ID|
 | **[scrollAxisBrushMargin](mw.ScrollBox.md#scrollaxisbrushmargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置滚动条图片边距|
+| 获取滚动条图片边距|
 | **[scrollAxisColor](mw.ScrollBox.md#scrollaxiscolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置滚动条图片颜色|
+| 获取滚动条图片颜色|
 | **[scrollBarVisibility](mw.ScrollBox.md#scrollbarvisibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置滚动条是否可见,必须是在SetAlwaysShowScrollbar 为false才生效|
+| 获取滚动条的显示于隐藏|
 | **[scrollOffset](mw.ScrollBox.md#scrolloffset)**(): `number` <Badge type="tip" text="client" />  |
-| 设定滚动框滚动偏移|
+| 获取滚动框偏移|
 | **[scrollOffsetFraction](mw.ScrollBox.md#scrolloffsetfraction)**(): `number` <Badge type="tip" text="client" />  |
 | 获取滚动框距离底部的偏移比例|
 | **[scrollOffsetOfEnd](mw.ScrollBox.md#scrolloffsetofend)**(): `number` <Badge type="tip" text="client" />  |
@@ -58,13 +58,13 @@
 | **[scrollbarPadding](mw.ScrollBox.md#scrollbarpadding)**(`inScrollbarPadding`: [`Margin`](mw.Margin.md)): `void` <Badge type="tip" text="client" />  |
 | 设置滚动条边距|
 | **[scrollbarThickness](mw.ScrollBox.md#scrollbarthickness)**(): `number` <Badge type="tip" text="client" />  |
-| 设置滚动条粗细|
+| 获取滚动条粗细|
 | **[shadowVisibility](mw.ScrollBox.md#shadowvisibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设定阴影显示|
+| 获取阴影显示|
 | **[smoothScrollingEnable](mw.ScrollBox.md#smoothscrollingenable)**(`isSmoothScrolling`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设定鼠标滚动时，滚动速度是否插值运算,限制滚动速度更平滑|
 | **[supportElastic](mw.ScrollBox.md#supportelastic)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设定是否支持惯性|
+| 判断是否支持惯性|
 
 ### Methods <Score text="Methods" /> 
 | **[endInertialScrolling](mw.ScrollBox.md#endinertialscrolling)**(): `void` <Badge type="tip" text="client" />  |
@@ -75,10 +75,10 @@
 | **[scrollToStart](mw.ScrollBox.md#scrolltostart)**(): `void` <Badge type="tip" text="client" />  |
 | 滚动到开始位置|
 | **[newObject](mw.ScrollBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ScrollBox`](mw.ScrollBox.md) <Badge type="tip" text="client" />  |
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建 ScrollBox 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addChild](mw.PanelWidget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|

@@ -75,7 +75,7 @@ class multiPlayer extends player
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[count](mw.Action.md#count)**(): `number`   |
 | :-----|
@@ -86,7 +86,7 @@ class multiPlayer extends player
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number`   |
 | :-----|

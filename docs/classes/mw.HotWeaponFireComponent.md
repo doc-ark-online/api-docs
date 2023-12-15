@@ -46,21 +46,21 @@
 ### Accessors <Score text="Accessors" /> 
 | **[animationAssetId](mw.HotWeaponFireComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。使用示例见类 HotWeaponFireComponent 使用示例|
+| 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[clipSize](mw.HotWeaponFireComponent.md#clipsize)**(): `number`   |
-| 设置当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[currentBullet](mw.HotWeaponFireComponent.md#currentbullet)**(): `number`   |
-| 设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[fireInterval](mw.HotWeaponFireComponent.md#fireinterval)**(): `number`   |
-| 设置开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[fireMode](mw.HotWeaponFireComponent.md#firemode)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)   |
-| 切换设置当前开火模式|
+| 获取当前的开火模式|
 | **[isFireOnScreenCenter](mw.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean`   |
-| 设置是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[multipleShot](mw.HotWeaponFireComponent.md#multipleshot)**(): `number`   |
-| 设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[offsetOfFireOnScreenCenter](mw.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](mw.Vector.md)   |
-| 设置屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
+| 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
 
 ### Methods <Score text="Methods" /> 
 | **[isFiring](mw.HotWeaponFireComponent.md#isfiring)**(): `boolean`   |

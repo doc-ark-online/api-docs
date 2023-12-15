@@ -15,116 +15,116 @@
 ### Accessors <Score text="Accessors" /> 
 | **[backgroundImageColor](mw.ProgressBar.md#backgroundimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置背景图片颜色|
+| 获取背景图片颜色|
 | **[backgroundImageDrawType](mw.ProgressBar.md#backgroundimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置背景图片绘制类型|
+| 获取背景图片绘制类型|
 | **[backgroundImageGuid](mw.ProgressBar.md#backgroundimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置进度条背景图片|
+| 获取背景图片id|
 | **[backgroundImageMargin](mw.ProgressBar.md#backgroundimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置进度条背景图片边距|
+| 获取进度条背景图片边距|
 | **[backgroundImageSize](mw.ProgressBar.md#backgroundimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置背景图片大小|
+| 获取背景图片大小|
 | **[barThickness](mw.ProgressBar.md#barthickness)**(): `number` <Badge type="tip" text="client" />  |
-| 设置进度条厚度|
+| 获取进度条厚度|
 | **[currentValue](mw.ProgressBar.md#currentvalue)**(): `number` <Badge type="tip" text="client" />  |
-| 设置当前值|
+| 获取当前值|
 | **[fillImageColor](mw.ProgressBar.md#fillimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置填充图片颜色|
+| 获取填充图片颜色|
 | **[fillImageDrawType](mw.ProgressBar.md#fillimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="other" />  |
-| 设置填充图片绘制类型|
+| 获取填充图片绘制类型|
 | **[fillImageGuid](mw.ProgressBar.md#fillimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置进度条图片|
+| 获取填充区图片id|
 | **[fillImageMargin](mw.ProgressBar.md#fillimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置进度条图片边距|
+| 获取进度条图片边距|
 | **[fillImageSize](mw.ProgressBar.md#fillimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置填充图片大小|
+| 获取填充图片大小|
 | **[fillType](mw.ProgressBar.md#filltype)**(): [`ProgressBarFillType`](../enums/mw.ProgressBarFillType.md) <Badge type="tip" text="client" />  |
-| 设置进度条填充的方式|
+| 获取进度条填充的方式|
 | **[isRoundedToInt](mw.ProgressBar.md#isroundedtoint)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置当前数值是否取整|
+| 获取当前数值是否取整|
 | **[onSliderValueChanged](mw.ProgressBar.md#onslidervaluechanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="client" />  |
 | Slider值变化事件|
 | **[percent](mw.ProgressBar.md#percent)**(): `number` <Badge type="tip" text="client" />  |
-| 设置当前百分比|
+| 获取当前百分比|
 | **[slideMethod](mw.ProgressBar.md#slidemethod)**(): [`SlideMethod`](../enums/mw.SlideMethod.md) <Badge type="tip" text="client" />  |
-| 设置进度条的滑动方式|
+| 获取进度条的滑动方式|
 | **[sliderButtonPressDelegate](mw.ProgressBar.md#sliderbuttonpressdelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="client" />  |
 | Slider按下事件|
 | **[sliderButtonReleaseDelegate](mw.ProgressBar.md#sliderbuttonreleasedelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="client" />  |
 | Slider抬起事件|
 | **[sliderMaxValue](mw.ProgressBar.md#slidermaxvalue)**(): `number` <Badge type="tip" text="client" />  |
-| 设置拖动条的最大值|
+| 获取拖动条最大值|
 | **[sliderMinValue](mw.ProgressBar.md#sliderminvalue)**(): `number` <Badge type="tip" text="client" />  |
-| 设置拖动条的最小值|
+| 获取拖动条最小值|
 | **[thumbImageColor](mw.ProgressBar.md#thumbimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置滑块图片颜色|
+| 获取滑块图片颜色|
 | **[thumbImageDrawType](mw.ProgressBar.md#thumbimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置滑块图片绘制类型|
+| 获取滑块图片绘制类型|
 | **[thumbImageGuid](mw.ProgressBar.md#thumbimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置拖动条的样式|
+| 获取填充区图片id|
 | **[thumbImageMargin](mw.ProgressBar.md#thumbimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置拖动条图片边距|
+| 获取拖动条图片边距|
 | **[thumbImageSize](mw.ProgressBar.md#thumbimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置滑块图片大小|
+| 获取滑块图片大小|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
 ### Methods <Score text="Methods" /> 
 | **[newObject](mw.ProgressBar.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ProgressBar`](mw.ProgressBar.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建 ProgressBar 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

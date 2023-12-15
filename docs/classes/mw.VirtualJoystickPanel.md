@@ -15,37 +15,37 @@
 ### Accessors <Score text="Accessors" /> 
 | **[activeOpacity](mw.VirtualJoystickPanel.md#activeopacity)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置激活时的透明度|
+| 返回激活时的透明度|
 | **[backgroundDisabledImageId](mw.VirtualJoystickPanel.md#backgrounddisabledimageid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置背景图片禁用状态图片id|
+| 返回背景图片禁用状态图片id|
 | **[backgroundImageDesigner](mw.VirtualJoystickPanel.md#backgroundimagedesigner)**(): [`JoystickStyleDesigner`](mw.JoystickStyleDesigner.md) <Badge type="tip" text="client" />  |
-| 设置输入的背景贴图设置，包括 普通的 点击的 不启用的|
+| 返回输入的背景贴图设置，包括 普通的 点击的  不启用的|
 | **[backgroundImageId](mw.VirtualJoystickPanel.md#backgroundimageid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置背景图片普通状态图片id|
+| 返回中心图片普通状态图片id|
 | **[backgroundImageSize](mw.VirtualJoystickPanel.md#backgroundimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 摇杆背景图片大小|
 | **[backgroundTouchImageId](mw.VirtualJoystickPanel.md#backgroundtouchimageid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置背景图片按压状态图片id|
+| 返回背景图片按压状态图片id|
 | **[center](mw.VirtualJoystickPanel.md#center)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置输入的中心位置|
+| 返回输入的是摇杆中心位置，  不符合预期会返回默认值|
 | **[centerDisableImageId](mw.VirtualJoystickPanel.md#centerdisableimageid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置中心图片禁用状态图片id|
+| 返回中心图片禁用状态图片id|
 | **[centerImageDesigner](mw.VirtualJoystickPanel.md#centerimagedesigner)**(): [`JoystickStyleDesigner`](mw.JoystickStyleDesigner.md) <Badge type="tip" text="client" />  |
-| 设置输入的中心贴图设置，包括 普通的 点击的  不启用的|
+| 返回输入的中心贴图设置，包括 普通的 点击的  不启用的|
 | **[centerImageId](mw.VirtualJoystickPanel.md#centerimageid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置中心图片普通状态图片id|
+| 返回中心图片普通状态图片id|
 | **[centerImageSize](mw.VirtualJoystickPanel.md#centerimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 摇杆按钮图片大小|
 | **[centerTouchImage](mw.VirtualJoystickPanel.md#centertouchimage)**(): `string` <Badge type="tip" text="client" />  |
-| 置中心图片按压状态图片id|
+| 返回中心图片按压状态图片id|
 | **[controlByMouseEnable](mw.VirtualJoystickPanel.md#controlbymouseenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否被鼠标控制，只作用于PC端|
+| 获取是否被鼠标控制，只作用于PC端|
 | **[controlType](mw.VirtualJoystickPanel.md#controltype)**(): [`CameraControlType`](../enums/mw.CameraControlType.md) <Badge type="tip" text="client" />  |
-| 设置输入的摇杆类型，人物的移动和技能摇杆的移动类型|
+| 返回输入的是摇杆类型，  不符合预期会返回默认值|
 | **[inActiveOpacity](mw.VirtualJoystickPanel.md#inactiveopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置未激活时的透明度|
+| 返回未激活时的透明度|
 | **[inputScale](mw.VirtualJoystickPanel.md#inputscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置输入的输入比例|
+| 返回输入的输入比例|
 | **[isLocationFixed](mw.VirtualJoystickPanel.md#islocationfixed)**(): `boolean` <Badge type="tip" text="client" />  |
 | 拖动后，是否固定摇杆位置|
 | **[onInputDir](mw.VirtualJoystickPanel.md#oninputdir)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`vec`: [`Vector2`](mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
@@ -60,53 +60,53 @@
 | 释放摇杆后的复位时间|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
@@ -122,7 +122,7 @@
 | 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

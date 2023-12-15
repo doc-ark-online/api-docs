@@ -28,7 +28,7 @@ export default class InteractorSample extends Script {
         })
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
-                interObj.enter(getCurrentPlayer().character, HumanoidSlotType.Buttocks, "4175");
+                interObj.enter(Player.localPlayer.character, HumanoidSlotType.Buttocks, "4175");
             })
             InputUtil.onKeyDown(Keys.Two, () => {
                 // 不传退出交互时会自动回到交互前的坐标和旋转
@@ -55,7 +55,7 @@ export default class InteractorSample extends Script {
 | 交互结束时执行绑定函数。通常与 leave 成对使用，使用示例详见方法 leave 中示例代码。|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -73,7 +73,7 @@ export default class InteractorSample extends Script {
 | 交互物插槽|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -85,13 +85,13 @@ export default class InteractorSample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -107,7 +107,7 @@ export default class InteractorSample extends Script {
 | 结束交互。通常与 enter 成对使用，使用示例详见方法 enter 中示例代码。|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
@@ -357,7 +357,7 @@ export default class InteractorStartEndSample extends Script {
         })
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
-                interObj.enter(getCurrentPlayer().character, HumanoidSlotType.Buttocks, "4175");
+                interObj.enter(Player.localPlayer.character, HumanoidSlotType.Buttocks, "4175");
             })
             InputUtil.onKeyDown(Keys.Two, () => {
                 // 不传退出交互时会自动回到交互前的坐标和旋转

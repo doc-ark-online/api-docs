@@ -16,16 +16,15 @@ export default class HotWeaponAimSample1 extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.aimEnable = true;
+            hotWeapon.aimEnabled = true;
             hotWeapon.aimComponent.aimMode = HotWeaponAimMode.ThirdPerson;
-            hotWeapon.aimComponent.scopeTypeIndex = HotWeaponCrossHairType.ThirdPersonCrossHair;
             hotWeapon.aimComponent.aimingZoom = 16;
             hotWeapon.aimComponent.cameraOffsetDistanceInThirdPersonMode = 300;
-            hotWeapon.aimComponent.onAimStartServer.add(() => { console.log("aimComponent.onAimStartClient") });
-            hotWeapon.aimComponent.onAimEndServer.add(() => { console.log("aimComponent.onAimEndClient") });
+            hotWeapon.aimComponent.onStartAim.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onEndAim.add(() => { console.log("aimComponent.onAimEndClient") });
         } else if (SystemUtil.isClient()) {
-            hotWeapon.aimComponent.onAimStartClient.add(() => { console.log("aimComponent.onAimStartClient") });
-            hotWeapon.aimComponent.onAimEndClient.add(() => { console.log("aimComponent.onAimEndClient") });
+            hotWeapon.aimComponent.onStartAim.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onEndAim.add(() => { console.log("aimComponent.onAimEndClient") });
         }
     }
 }
@@ -43,13 +42,13 @@ export default class HotWeaponAimSample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[aimMode](mw.HotWeaponAimComponent.md#aimmode)**(): [`HotWeaponAimMode`](../enums/mw.HotWeaponAimMode.md)   |
 | :-----|
-| Set瞄准时的第一/第三人称模式。|
+| Get瞄准时的第一/第三人称模式。|
 | **[aimingZoom](mw.HotWeaponAimComponent.md#aimingzoom)**(): `number`   |
-| Set模拟瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例|
+| Get第一人称瞄准时的瞄准镜放大倍数。|
 | **[cameraOffsetDistanceInThirdPersonMode](mw.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number`   |
-| Set第三人称瞄准时的连接相机弹簧组件的长度。|
+| Get第三人称瞄准时的连接相机弹簧组件的长度。|
 | **[defaultCameraSpringArmLength](mw.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number`   |
-| Set第三人称常态下相机弹簧组件的默认长度。|
+| Get第三人称常态下相机弹簧组件的默认长度。|
 
 ### Methods <Score text="Methods" /> 
 | **[enableAiming](mw.HotWeaponAimComponent.md#enableaiming)**(`enabled`: `boolean`): `void` <Badge type="tip" text="other" />  |

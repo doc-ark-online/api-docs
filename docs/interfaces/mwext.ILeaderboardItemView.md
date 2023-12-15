@@ -20,15 +20,15 @@
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否能触发 UI 中 onUpdate 生命周期函数|
+| 获取是否能触发 UI 中 onUpdate 生命周期函数|
 | **[fullScreen](mw.UIScript.md#fullscreen)**(`inFull`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
 | **[layer](mw.UIScript.md#layer)**(): `number` <Badge type="tip" text="client" />  |
-| 显示可能会影响到 zOrder，使用 UIService 显示 UI 时，会根据 Layer 层级动态设置 zOrder，每一次调用都会重新计算当前 layer 的新 zOrder，确保 UI 位于当前层级的顶端。|
+| 获取 UI 的 Layer 层级|
 | **[rootCanvas](mw.UIScript.md#rootcanvas)**(): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
 | 获取 UI 的根 Canvas 节点|
 | **[uiObject](mw.UIScript.md#uiobject)**(): [`Widget`](mw.Widget.md)  |
@@ -36,14 +36,14 @@
 | **[uiWidgetBase](mw.UIScript.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
 | 获取 UI 顶层控件对象|
 | **[visible](mw.UIScript.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 会触发绑定的脚本生命周期中 OnShow/OnHide 事件，需要传递参数的可以使用 setVisible 方法。|
+| 获取 UI 是否显示|
 :::
 
 
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.UIScript.md#destroy)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -57,9 +57,9 @@
 | **[remove](mw.UIScript.md#remove)**(): `void` <Badge type="tip" text="client" />  |
 | 移除 UI 对象|
 | **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
-| 会触发绑定的脚本的 OnShow/OnHide 事件，可以传递参数。|
+| 设置 UI 是否显示|
 | **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void` <Badge type="tip" text="client" />  |
-| UI 事件通信的一种更加简便的方式。|
+| 添加一个全局行为|
 | **[clearBehavior](mw.UIScript.md#clearbehavior)**(): `void` <Badge type="tip" text="client" />  |
 | 清空全局一个行为|
 | **[getBehavior](mw.UIScript.md#getbehavior)**(`key`: `string`): `any` <Badge type="tip" text="client" />  |

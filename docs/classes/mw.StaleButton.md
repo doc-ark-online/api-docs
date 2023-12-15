@@ -61,35 +61,35 @@ class UI_Main extends UIScript {
 | **[contentColor](mw.StaleButton.md#contentcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 设置字体内容颜色|
 | **[disableImageColor](mw.StaleButton.md#disableimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片颜色|
+| 获取禁用图片颜色|
 | **[disableImageDrawType](mw.StaleButton.md#disableimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片绘制类型|
+| 获取禁用图片绘制类型|
 | **[disableImageGuid](mw.StaleButton.md#disableimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置不可用图片ID|
+| 获取禁用图片ID|
 | **[disableImageMargin](mw.StaleButton.md#disableimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片边距|
+| 获取禁用图片边距|
 | **[disableImageSize](mw.StaleButton.md#disableimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片大小|
+| 获取禁用图片大小|
 | **[focusable](mw.StaleButton.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否获取输入焦点|
+| 获取是否获取输入焦点|
 | **[fontColor](mw.StaleButton.md#fontcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置字体颜色|
+| 获取字体颜色|
 | **[fontLetterSpace](mw.StaleButton.md#fontletterspace)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体间距|
+| 获取字体间距|
 | **[fontSize](mw.StaleButton.md#fontsize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体大小|
+| 获取字体大小|
 | **[glyph](mw.StaleButton.md#glyph)**(): [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) <Badge type="tip" text="client" />  |
-| 设置字体字形|
+| 获取字体字形|
 | **[normalImageColor](mw.StaleButton.md#normalimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置普通图片颜色|
+| 获取普通图片颜色|
 | **[normalImageDrawType](mw.StaleButton.md#normalimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置普通图片绘制类型|
+| 获取普通图片绘制类型|
 | **[normalImageGuid](mw.StaleButton.md#normalimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置正常图片ID|
+| 获取普通图片ID|
 | **[normalImageMargin](mw.StaleButton.md#normalimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置普通图片边距|
+| 获取普通图片边距|
 | **[normalImageSize](mw.StaleButton.md#normalimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置图片大小|
+| 获取图片大小|
 | **[onClicked](mw.StaleButton.md#onclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 点击事件|
 | **[onHovered](mw.StaleButton.md#onhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />  |
@@ -101,88 +101,88 @@ class UI_Main extends UIScript {
 | **[onUnhovered](mw.StaleButton.md#onunhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 未悬浮事件|
 | **[outlineColor](mw.StaleButton.md#outlinecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置字体描边颜色|
+| 获取字体描边颜色|
 | **[outlineSize](mw.StaleButton.md#outlinesize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置字体描边宽度|
+| 获取字体描边宽度|
 | **[pressMethod](mw.StaleButton.md#pressmethod)**(`inPressMethod`: [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置按压模式|
 | **[pressedImagColor](mw.StaleButton.md#pressedimagcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置按压图片颜色|
+| 获取按压图片颜色|
 | **[pressedImageDrawType](mw.StaleButton.md#pressedimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置按压图片绘制类型|
+| 获取按压图片绘制类型|
 | **[pressedImageGuid](mw.StaleButton.md#pressedimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置按下图片ID|
+| 获取按下图片ID|
 | **[pressedImageMargin](mw.StaleButton.md#pressedimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置按压图片边距|
+| 获取按压图片边距|
 | **[pressedImageSize](mw.StaleButton.md#pressedimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置按压图片大小|
+| 获取按压图片大小|
 | **[shadowColor](mw.StaleButton.md#shadowcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置字体阴影颜色|
+| 获取字体阴影颜色|
 | **[shadowOffset](mw.StaleButton.md#shadowoffset)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置字体阴影偏移|
+| 获取字体阴影偏移|
 | **[strikethroughEnable](mw.StaleButton.md#strikethroughenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启字体删除线|
+| 获取是否开启字体删除线|
 | **[text](mw.StaleButton.md#text)**(): `string` <Badge type="tip" [text](mw.StaleButton.md#text)="client" />  |
-| 设置按钮文字|
+| 获取按钮文字|
 | **[textAlign](mw.StaleButton.md#textalign)**(): [`TextJustify`](../enums/mw.TextJustify.md) <Badge type="tip" text="client" />  |
-| 设置字体对齐方式|
+| 获取字体对齐方式|
 | **[textVerticalAlign](mw.StaleButton.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/mw.TextVerticalJustify.md) <Badge type="tip" text="client" />  |
-| 设置字体垂直对齐方式|
+| 获取字体垂直对齐方式|
 | **[touchMethod](mw.StaleButton.md#touchmethod)**(`inTouchMethod`: [`ButtonTouchMethod`](../enums/mw.ButtonTouchMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置触摸模式|
 | **[transitionEnable](mw.StaleButton.md#transitionenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 是否套用不同的按下方案|
+| 获取按钮是否启用过度模式,按下是否有效果|
 | **[underlineEnable](mw.StaleButton.md#underlineenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启字体下划线|
+| 返回是否开启字体下划线|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
@@ -207,10 +207,10 @@ class UI_Main extends UIScript {
 | **[setPressedImageColorDecimal](mw.StaleButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按下颜色,指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.StaleButton.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`StaleButton`](mw.StaleButton.md) <Badge type="tip" text="client" />  |
-| 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁|
+| 创建 StaleButton 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

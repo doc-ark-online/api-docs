@@ -53,29 +53,29 @@ export default class LightingExample extends mw.Script {
 ### Accessors <Score text="Accessors" /> 
 | **[castShadowsEnabled](mw.Lighting.md#castshadowsenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否开启阴影|
+| 获取是否开启阴影|
 | **[directionalLightColor](mw.Lighting.md#directionallightcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置平行光颜色|
+| 获取平行光颜色|
 | **[directionalLightIntensity](mw.Lighting.md#directionallightintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置平行光强度|
+| 获取平行光强度|
 | **[ev100](mw.Lighting.md#ev100)**(): `number` <Badge type="tip" text="client" />  |
-| 设置曝光值|
+| 获取曝光值|
 | **[lightColor](mw.Lighting.md#lightcolor)**(): [`LinearColor`](mw.LinearColor.md)   |
-| 设置偏色值|
+| 获取偏色值|
 | **[pitchAngle](mw.Lighting.md#pitchangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置俯仰角度 （-90 ~ 90）|
+| 获取俯仰角度|
 | **[shadowsDistance](mw.Lighting.md#shadowsdistance)**(): `number` <Badge type="tip" text="client" />  |
-| 设置阴影距离|
+| 获取阴影距离|
 | **[skyLightColor](mw.Lighting.md#skylightcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置天光颜色|
+| 获取天光颜色|
 | **[skyLightIntensity](mw.Lighting.md#skylightintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置天光强度|
+| 获取天光强度|
 | **[temperature](mw.Lighting.md#temperature)**(): `number` <Badge type="tip" text="client" />  |
-| 设置色温 （1000 ~ 14000）|
+| 获取色温|
 | **[temperatureEnabled](mw.Lighting.md#temperatureenabled)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启色温|
+| 获取是否开启色温|
 | **[yawAngle](mw.Lighting.md#yawangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置朝向角度 （-180 ~ 180）|
+| 获取朝向角度|
 
 ## Accessors
 

@@ -51,7 +51,7 @@
 </span>
 
 ```ts
-const goList = boxOverlap(new mw.Vector(0,0,0), new mw.Vector(1000,0,0), 10, 10, true);
+const goList = QueryUtil.boxOverlap(new mw.Vector(0,0,0), new mw.Vector(1000,0,0), true);
 for (const item of goList) {
     // item: 检测到的对象
 }
@@ -88,7 +88,7 @@ ___
 </span>
 
 ```ts
-const ResultList = boxTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), new mw.Vector(10,10,10), new mw.Rotation(0,0,0), true, false, [], false, gameObject);
+const ResultList = QueryUtil.boxTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), new mw.Vector(10,10,10), new mw.Rotation(0,0,0), true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -123,7 +123,7 @@ ___
 </span>
 
 ```ts
-const ResultList = capsuleOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
+const ResultList = QueryUtil.capsuleOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -160,7 +160,7 @@ ___
 </span>
 
 ```ts
-const ResultList = capsuleTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, 10, true, false, [], false, gameObject);
+const ResultList = QueryUtil.capsuleTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, 10, true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -196,7 +196,7 @@ ___
 </span>
 
 ```ts
-const ResultList = lineTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), true, false, [], false, gameObject, false);
+const ResultList = QueryUtil.lineTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), true, false, [], false, gameObject, false);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -230,7 +230,7 @@ ___
 </span>
 
 ```ts
-const ResultList = sphereOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
+const ResultList = QueryUtil.sphereOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -266,7 +266,7 @@ ___
 </span>
 
 ```ts
-const ResultList = sphereTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, true, false, [], false, gameObject);
+const ResultList = QueryUtil.sphereTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }

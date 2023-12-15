@@ -131,7 +131,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+            InputUtil.enableCursorInteractWithUI = !InputUtil.isCursorInteractiveWithUI;
         })
     }
 
@@ -183,7 +183,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+            InputUtil.enableCursorLock = !InputUtil.isCursorLockEnabled;
         })
     }
 
@@ -233,7 +233,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+            InputUtil.enableCursorInteractWithUI = !InputUtil.isCursorInteractiveWithUI;
         })
     }
 
@@ -283,7 +283,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+            InputUtil.enableCursorLock = !InputUtil.isCursorLockEnabled;
         })
     }
 
@@ -333,7 +333,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+            InputUtil.setCursorLocked = !InputUtil.isCursorLocked;
         })
     }
 
@@ -383,7 +383,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+            InputUtil.setCursorVisible = !InputUtil.isCursorVisible;
         })
     }
 
@@ -435,7 +435,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+            InputUtil.setCursorLocked = !InputUtil.isCursorLocked;
         })
     }
 
@@ -487,7 +487,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+            InputUtil.setCursorVisible = !InputUtil.isCursorVisible;
         })
     }
 
@@ -537,11 +537,11 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         //按下F键，可以通过shift锁定鼠标
         InputUtil.onKeyDown(Keys.F, () => {
-            InputUtil.setMouseLockable(true);
+            InputUtil.setMouseLockable = true;
         })
         //按下G键，不可以通过shift锁定鼠标
         InputUtil.onKeyDown(Keys.G, () => {
-            InputUtil.setMouseLockable(false);
+            InputUtil.setMouseLockable = false;
         })
     }
 

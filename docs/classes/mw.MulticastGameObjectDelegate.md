@@ -13,7 +13,7 @@
  export default class ActionExample extends Script {
 
      // 示例函数，满足 GameObjectDelegateFuncType 约束
-     public async addNumbers(object: GameObject): `Promise`<`void`\> {
+     public async addNumbers(object: GameObject): Promise<void> {
          console.log(object.gameObjectId);
      }
      protected async onStart(): Promise<void> {

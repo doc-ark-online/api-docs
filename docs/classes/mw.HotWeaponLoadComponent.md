@@ -43,11 +43,11 @@ export default class HotWeaponLoadSample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。|
+| 获取绑定的动画GUID。|
 | **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean`   |
-| 设置是否开启开火后自动上膛的功能。|
+| 获取是否开启开火后自动上膛的功能。|
 | **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number`   |
-| 设置上膛时间。|
+| 获取上膛时间。|
 
 ## Properties
 

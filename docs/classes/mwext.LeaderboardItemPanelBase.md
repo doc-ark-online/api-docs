@@ -23,7 +23,7 @@
 | 当前显示对象的playerId|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
@@ -41,7 +41,7 @@
 | 设置字段内容后调用，需要请复写|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

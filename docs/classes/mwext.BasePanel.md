@@ -35,7 +35,7 @@
 | 面板所控制的界面|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[holdBackTouch](mwext.BaseView.md#holdbacktouch)**(`value`: `boolean`): `void`  |
 | :-----|
@@ -53,7 +53,7 @@
 | 生命周期方法-构建面板自动触发，只会调用一次|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[getCanvasChildren](mwext.BaseView.md#getcanvaschildren)**<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>(`canvas`: [`Canvas`](mw.Canvas.md), `getType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>): `T`: extends [`Widget`](mw.Widget.md)<`T`\>[] <Badge type="tip" text="client" />  |
 | :-----|

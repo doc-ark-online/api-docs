@@ -92,7 +92,7 @@ export default class ModelExample extends Script {
 | 离开Model事件|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -103,36 +103,36 @@ export default class ModelExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[angularDamping](mw.Model.md#angulardamping)**(): `number`  |
 | :-----|
-| 设置角阻尼|
+| 角阻尼|
 | **[friction](mw.Model.md#friction)**(): `number`  |
-| 设置摩擦力大小|
+| 获取摩擦力大小|
 | **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean`  |
-| 设置是否启用重力|
+| 获取是否启用重力|
 | **[linerDamping](mw.Model.md#linerdamping)**(): `number`  |
-| 设置线性阻尼|
+| 获取线性阻尼|
 | **[lockPositionX](mw.Model.md#lockpositionx)**(): `boolean`  |
-| 设置是否约束位置X|
+| 获取是否约束位置X|
 | **[lockPositionY](mw.Model.md#lockpositiony)**(): `boolean`  |
-| 设置是否约束位置Y|
+| 获取是否约束位置Y|
 | **[lockPositionZ](mw.Model.md#lockpositionz)**(): `boolean`  |
-| 设置是否约束位置Z|
+| 获取是否约束位置Z|
 | **[lockRotationX](mw.Model.md#lockrotationx)**(): `boolean`  |
-| 设置是否约束旋转X|
+| 获取是否约束旋转X|
 | **[lockRotationY](mw.Model.md#lockrotationy)**(): `boolean`  |
-| 设置是否约束旋转Y|
+| 获取是否约束旋转Y|
 | **[lockRotationZ](mw.Model.md#lockrotationz)**(): `boolean`  |
-| 设置是否约束旋转Z|
+| 获取是否约束旋转Z|
 | **[mass](mw.Model.md#mass)**(): `number`  |
-| 设置质量大小|
+| 获取质量大小|
 | **[massEnabled](mw.Model.md#massenabled)**(): `boolean`  |
-| 设置是否启用质量|
+| 获取是否使用质量|
 | **[physicsEnabled](mw.Model.md#physicsenabled)**(): `boolean`  |
-| 设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用|
+| 获取是否模拟物理|
 | **[restitution](mw.Model.md#restitution)**(): `number`  |
-| 设置弹力大小|
+| 获取弹力大小|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -144,13 +144,13 @@ export default class ModelExample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -176,7 +176,7 @@ export default class ModelExample extends Script {
 | 设置静态网格资源|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

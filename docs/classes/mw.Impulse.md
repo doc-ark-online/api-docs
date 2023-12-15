@@ -59,7 +59,7 @@ export default class ImpulseSample extends Script {
 | 发生冲量碰撞后的回调函数|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -70,18 +70,18 @@ export default class ImpulseSample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[enable](mw.Impulse.md#enable)**(): `boolean`   |
 | :-----|
-| 设置是否启用冲量，禁用状态下，不会应用冲量到物体上|
+| 获取是否启用冲量|
 | **[impulseForceType](mw.Impulse.md#impulseforcetype)**(): [`ImpulseForceType`](../enums/mw.ImpulseForceType.md)   |
-| 设置冲量力类型。使用示例详见属性 impulseRadialForce 和 impulseVector 中示例代码。|
+| 获取当前冲量力类型|
 | **[impulseRadialForce](mw.Impulse.md#impulseradialforce)**(): `number`   |
-| 设置径向力的冲量值|
+| 获取径向力的冲量值|
 | **[impulseType](mw.Impulse.md#impulsetype)**(): [`ImpulseType`](../enums/mw.ImpulseType.md)   |
-| 设置冲量应用方式|
+| 获取冲量应用方式，绝对或相对|
 | **[impulseVector](mw.Impulse.md#impulsevector)**(): [`Vector`](mw.Vector.md)   |
-| 设置矢量力的冲量向量|
+| 获取矢量力的冲量向量|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -93,13 +93,13 @@ export default class ImpulseSample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -108,7 +108,7 @@ export default class ImpulseSample extends Script {
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

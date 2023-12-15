@@ -79,28 +79,28 @@ export default class IMExample1 extends Script {
 ### Properties <Score text="Properties" /> 
 | **[onLinearEnable](mw.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
-| 平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| 平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
 | **[onLinearReturn](mw.IntegratedMover.md#onlinearreturn)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| 平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onLinearStart](mw.IntegratedMover.md#onlinearstart)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| 平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onRotationEnable](mw.IntegratedMover.md#onrotationenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| 旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
 | **[onRotationReturn](mw.IntegratedMover.md#onrotationreturn)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| 旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onRotationStart](mw.IntegratedMover.md#onrotationstart)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| 旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onScaleEnable](mw.IntegratedMover.md#onscaleenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| 缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
 | **[onScaleReturn](mw.IntegratedMover.md#onscalereturn)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onScaleStart](mw.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onSwingEnable](mw.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 摆动：延迟启动回调，使用示例详见swingSpeed的getter中的示例代码|
+| 摆动：延迟启动回调|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -111,56 +111,56 @@ export default class IMExample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[enable](mw.IntegratedMover.md#enable)**(): `boolean`   |
 | :-----|
-| 设置启用状态|
+| 获取启用状态|
 | **[linearDelayStartTime](mw.IntegratedMover.md#lineardelaystarttime)**(): `number`   |
-| 设置延时启动平移运动时间，使用示例详见linearSpeed的getter中的示例代码|
+| 获取延时启动平移运行时间|
 | **[linearRepeat](mw.IntegratedMover.md#linearrepeat)**(): `boolean`   |
-| 设置平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码|
+| 获取平移重复运动状态|
 | **[linearRepeatDelay](mw.IntegratedMover.md#linearrepeatdelay)**(): `number`   |
-| 设置平移到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码|
+| 获取平移到达后停顿时间|
 | **[linearRepeatTime](mw.IntegratedMover.md#linearrepeattime)**(): `number`   |
-| 设置平移单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码|
+| 获取平移单程运动时间|
 | **[linearReturnDelay](mw.IntegratedMover.md#linearreturndelay)**(): `number`   |
-| 设置平移返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码|
+| 获取平移返程后停顿时间|
 | **[linearSpeed](mw.IntegratedMover.md#linearspeed)**(): [`Vector`](mw.Vector.md)   |
-| 设置平移速度大小，使用示例详见linearSpeed的getter中的示例代码|
+| 获取平移速度大小|
 | **[motionCoordinate](mw.IntegratedMover.md#motioncoordinate)**(): [`MotionAxis`](../enums/mw.MotionAxis.md)   |
-| 设置运动坐标系|
+| 获取运动坐标系|
 | **[rotationDelayStartTime](mw.IntegratedMover.md#rotationdelaystarttime)**(): `number`   |
-| 设置延时启动旋转运动时间，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取延时启动旋转运行时间|
 | **[rotationRepeat](mw.IntegratedMover.md#rotationrepeat)**(): `boolean`   |
-| 设置旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取旋转重复运动状态|
 | **[rotationRepeatDelay](mw.IntegratedMover.md#rotationrepeatdelay)**(): `number`   |
-| 设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取旋转到达后停顿时间|
 | **[rotationRepeatTime](mw.IntegratedMover.md#rotationrepeattime)**(): `number`   |
-| 设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取旋转单程运动时间|
 | **[rotationReturnDelay](mw.IntegratedMover.md#rotationreturndelay)**(): `number`   |
-| 设置旋转返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取旋转返程后停顿时间|
 | **[rotationSpeed](mw.IntegratedMover.md#rotationspeed)**(): [`Vector`](mw.Vector.md)   |
-| 设置旋转速度大小，使用示例详见rotationSpeed的getter中的示例代码|
+| 获取旋转速度大小|
 | **[scaleDelayStartTime](mw.IntegratedMover.md#scaledelaystarttime)**(): `number`   |
-| 设置延时启动缩放运动时间，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取延时启动缩放运行时间|
 | **[scaleRepeat](mw.IntegratedMover.md#scalerepeat)**(): `boolean`   |
-| 设置缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取缩放重复运动状态|
 | **[scaleRepeatDelay](mw.IntegratedMover.md#scalerepeatdelay)**(): `number`   |
-| 设置缩放到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取缩放到达后停顿时间|
 | **[scaleRepeatTime](mw.IntegratedMover.md#scalerepeattime)**(): `number`   |
-| 设置缩放单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取缩放单程运动时间|
 | **[scaleReturnDelay](mw.IntegratedMover.md#scalereturndelay)**(): `number`   |
-| 设置缩放返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取缩放返程后停顿时间|
 | **[scaleSpeed](mw.IntegratedMover.md#scalespeed)**(): [`Vector`](mw.Vector.md)   |
-| 设置缩放速度大小，使用示例详见scaleSpeed的getter中的示例代码|
+| 获取缩放速度大小|
 | **[smooth](mw.IntegratedMover.md#smooth)**(): `boolean`   |
-| 设置平滑状态，启用后运动速度会由慢逐渐加快，直到最大值|
+| 获取平滑状态|
 | **[swingAngle](mw.IntegratedMover.md#swingangle)**(): `number`   |
-| 设置摆动最大角度，使用示例详见swingSpeed的getter中的示例代码|
+| 获取摆动最大角度|
 | **[swingDelayStartTime](mw.IntegratedMover.md#swingdelaystarttime)**(): `number`   |
-| 设置延时启动摆动运动时间，使用示例详见swingSpeed的getter中的示例代码|
+| 获取延时启动摆动运行时间|
 | **[swingSpeed](mw.IntegratedMover.md#swingspeed)**(): [`Vector`](mw.Vector.md)   |
-| 设置摆动运动速度，使用示例详见swingSpeed的getter中的示例代码|
+| 获取摆动运动速度|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -172,13 +172,13 @@ export default class IMExample1 extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -187,10 +187,10 @@ export default class IMExample1 extends Script {
 ### Methods <Score text="Methods" /> 
 | **[moverReset](mw.IntegratedMover.md#moverreset)**(`OnReset?`: () => `void`): `void`   |
 | :-----|
-| 将运动器状态重置，运动对象同时回到初始位置，使用示例详见linearSpeed、rotationSpeed等getter中的示例代码|
+| 将运动器状态重置，运动对象同时回到初始位置|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
@@ -258,7 +258,7 @@ ___
 
 • **onLinearEnable**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
+平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 • **onLinearReturn**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
+平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 • **onLinearStart**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
+平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -282,7 +282,7 @@ ___
 
 • **onRotationEnable**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
+旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 • **onRotationReturn**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
+旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 • **onRotationStart**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
+旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 • **onScaleEnable**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
+缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 • **onScaleReturn**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
+缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -322,7 +322,7 @@ ___
 
 • **onScaleStart**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
+缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
 
 ___
 
@@ -330,7 +330,7 @@ ___
 
 • **onSwingEnable**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-摆动：延迟启动回调，使用示例详见swingSpeed的getter中的示例代码
+摆动：延迟启动回调
 
 ## Accessors
 
@@ -401,7 +401,7 @@ ___
 <td style="text-align: left">
 
 
-获取延时启动平移运行时间，使用示例详见linearSpeed的getter中的示例代码
+获取延时启动平移运行时间
 
 #### Returns
 
@@ -413,7 +413,7 @@ ___
 <td style="text-align: left">
 
 
-设置延时启动平移运动时间，使用示例详见linearSpeed的getter中的示例代码
+设置延时启动平移运动时间
 
 #### Parameters
 
@@ -447,7 +447,7 @@ ___
 <td style="text-align: left">
 
 
-获取平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码
+获取平移重复运动状态
 
 #### Returns
 
@@ -459,7 +459,7 @@ ___
 <td style="text-align: left">
 
 
-设置平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码
+设置平移重复运动状态
 
 #### Parameters
 
@@ -493,7 +493,7 @@ ___
 <td style="text-align: left">
 
 
-获取平移到达后停顿时间，使用示例详见linearSpeed的getter中的示例代码
+获取平移到达后停顿时间
 
 #### Returns
 
@@ -505,7 +505,7 @@ ___
 <td style="text-align: left">
 
 
-设置平移到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
+设置平移到达后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -539,7 +539,7 @@ ___
 <td style="text-align: left">
 
 
-获取平移单程运动时间，使用示例详见linearSpeed的getter中的示例代码
+获取平移单程运动时间
 
 #### Returns
 
@@ -551,7 +551,7 @@ ___
 <td style="text-align: left">
 
 
-设置平移单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
+设置平移单程运动时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -585,7 +585,7 @@ ___
 <td style="text-align: left">
 
 
-获取平移返程后停顿时间，使用示例详见linearSpeed的getter中的示例代码
+获取平移返程后停顿时间
 
 #### Returns
 
@@ -597,7 +597,7 @@ ___
 <td style="text-align: left">
 
 
-设置平移返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
+设置平移返程后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -646,7 +646,7 @@ ___
 <td style="text-align: left">
 
 
-设置平移速度大小，使用示例详见linearSpeed的getter中的示例代码
+设置平移速度大小
 
 #### Parameters
 
@@ -817,7 +817,7 @@ ___
 <td style="text-align: left">
 
 
-获取延时启动旋转运行时间，使用示例详见rotationSpeed的getter中的示例代码
+获取延时启动旋转运行时间
 
 #### Returns
 
@@ -829,7 +829,7 @@ ___
 <td style="text-align: left">
 
 
-设置延时启动旋转运动时间，使用示例详见rotationSpeed的getter中的示例代码
+设置延时启动旋转运动时间
 
 #### Parameters
 
@@ -863,7 +863,7 @@ ___
 <td style="text-align: left">
 
 
-获取旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码
+获取旋转重复运动状态
 
 #### Returns
 
@@ -875,7 +875,7 @@ ___
 <td style="text-align: left">
 
 
-设置旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码
+设置旋转重复运动状态
 
 #### Parameters
 
@@ -909,7 +909,7 @@ ___
 <td style="text-align: left">
 
 
-获取旋转到达后停顿时间，使用示例详见rotationSpeed的getter中的示例代码
+获取旋转到达后停顿时间
 
 #### Returns
 
@@ -921,7 +921,7 @@ ___
 <td style="text-align: left">
 
 
-设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
+设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -955,7 +955,7 @@ ___
 <td style="text-align: left">
 
 
-获取旋转单程运动时间，使用示例详见rotationSpeed的getter中的示例代码
+获取旋转单程运动时间
 
 #### Returns
 
@@ -967,7 +967,7 @@ ___
 <td style="text-align: left">
 
 
-设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
+设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -1001,7 +1001,7 @@ ___
 <td style="text-align: left">
 
 
-获取旋转返程后停顿时间，使用示例详见rotationSpeed的getter中的示例代码
+获取旋转返程后停顿时间
 
 #### Returns
 
@@ -1013,7 +1013,7 @@ ___
 <td style="text-align: left">
 
 
-设置旋转返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
+设置旋转返程后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -1060,7 +1060,7 @@ ___
 <td style="text-align: left">
 
 
-设置旋转速度大小，使用示例详见rotationSpeed的getter中的示例代码
+设置旋转速度大小
 
 #### Parameters
 
@@ -1185,7 +1185,7 @@ ___
 <td style="text-align: left">
 
 
-获取延时启动缩放运行时间，使用示例详见scaleSpeed的getter中的示例代码
+获取延时启动缩放运行时间
 
 #### Returns
 
@@ -1197,7 +1197,7 @@ ___
 <td style="text-align: left">
 
 
-设置延时启动缩放运动时间，使用示例详见scaleSpeed的getter中的示例代码
+设置延时启动缩放运动时间
 
 #### Parameters
 
@@ -1231,7 +1231,7 @@ ___
 <td style="text-align: left">
 
 
-获取缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码
+获取缩放重复运动状态
 
 #### Returns
 
@@ -1243,7 +1243,7 @@ ___
 <td style="text-align: left">
 
 
-设置缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码
+设置缩放重复运动状态
 
 #### Parameters
 
@@ -1277,7 +1277,7 @@ ___
 <td style="text-align: left">
 
 
-获取缩放到达后停顿时间，使用示例详见scaleSpeed的getter中的示例代码
+获取缩放到达后停顿时间
 
 #### Returns
 
@@ -1289,7 +1289,7 @@ ___
 <td style="text-align: left">
 
 
-设置缩放到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
+设置缩放到达后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -1323,7 +1323,7 @@ ___
 <td style="text-align: left">
 
 
-获取缩放单程运动时间，使用示例详见scaleSpeed的getter中的示例代码
+获取缩放单程运动时间
 
 #### Returns
 
@@ -1335,7 +1335,7 @@ ___
 <td style="text-align: left">
 
 
-设置缩放单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
+设置缩放单程运动时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -1369,7 +1369,7 @@ ___
 <td style="text-align: left">
 
 
-获取缩放返程后停顿时间，使用示例详见scaleSpeed的getter中的示例代码
+获取缩放返程后停顿时间
 
 #### Returns
 
@@ -1381,7 +1381,7 @@ ___
 <td style="text-align: left">
 
 
-设置缩放返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
+设置缩放返程后停顿时间，该属性需要重复运动状态为true时才会生效
 
 #### Parameters
 
@@ -1428,7 +1428,7 @@ ___
 <td style="text-align: left">
 
 
-设置缩放速度大小，使用示例详见scaleSpeed的getter中的示例代码
+设置缩放速度大小
 
 #### Parameters
 
@@ -1599,7 +1599,7 @@ ___
 <td style="text-align: left">
 
 
-获取摆动最大角度，使用示例详见swingSpeed的getter中的示例代码
+获取摆动最大角度
 
 #### Returns
 
@@ -1611,7 +1611,7 @@ ___
 <td style="text-align: left">
 
 
-设置摆动最大角度，使用示例详见swingSpeed的getter中的示例代码
+设置摆动最大角度
 
 #### Parameters
 
@@ -1645,7 +1645,7 @@ ___
 <td style="text-align: left">
 
 
-获取延时启动摆动运行时间，使用示例详见swingSpeed的getter中的示例代码
+获取延时启动摆动运行时间
 
 #### Returns
 
@@ -1657,7 +1657,7 @@ ___
 <td style="text-align: left">
 
 
-设置延时启动摆动运动时间，使用示例详见swingSpeed的getter中的示例代码
+设置延时启动摆动运动时间
 
 #### Parameters
 
@@ -1704,7 +1704,7 @@ ___
 <td style="text-align: left">
 
 
-设置摆动运动速度，使用示例详见swingSpeed的getter中的示例代码
+设置摆动运动速度
 
 #### Parameters
 
@@ -1790,7 +1790,7 @@ ___
 
 • **moverReset**(`OnReset?`): `void` 
 
-将运动器状态重置，运动对象同时回到初始位置，使用示例详见linearSpeed、rotationSpeed等getter中的示例代码
+将运动器状态重置，运动对象同时回到初始位置
 
 #### Parameters
 

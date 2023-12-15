@@ -12,7 +12,7 @@ PlayerState基类
   // 服务端每个玩家进入游戏时会自动创建一个实例
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property({replicated: true, onChanged: "onRepTest"})
+      @Property({replicated: true, onChanged: "onRepTest"})
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
@@ -30,15 +30,15 @@ PlayerState基类
 
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
-              const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
+              const playerState = Player.localPlayer.getPlayerState(GamePlayerState);
               console.log(`test: ${playerState.test}`);
           });
 
       }
 
-      @Core.Function(Core.Server)
+      @RemoteFunction(Server)
       random() {
-          const players = mw.getAllPlayers();
+          const players = Player.getAllPlayers();
           // 随机一个玩家
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
@@ -59,30 +59,32 @@ PlayerState基类
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
-| :----- |
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
+| :-----|
+| 获取脚本挂载的 gameobject|
 | **[useUpdate](mw.Script.md#useupdate)**(): `boolean`   |
-| 设置组件是否使用更新|
+| 获取脚本是否启用 onUpdate 生命周期函数|
 :::
 
 
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="other" />  |
-| :----- |
+| :-----|
+| 销毁组件对象|
 | **[onDestroy](mw.Script.md#ondestroy)**(): `void` <Badge type="tip" text="other" />  |
-| 周期函数 被销毁时调用|
+| 生命周期函数 - 被销毁时调用|
 | **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <Badge type="tip" text="other" />  |
 | 属性被同步事件 ClientOnly|
 | **[onStart](mw.Script.md#onstart)**(): `void` <Badge type="tip" text="other" />  |
-| 周期函数 脚本开始执行时调用|
+| 生命周期函数 - 脚本开始执行时调用|
 | **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="other" />  |
-| 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| 生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行|
 :::
 
 

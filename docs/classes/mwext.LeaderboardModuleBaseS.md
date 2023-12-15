@@ -20,7 +20,7 @@
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[currentData](mwext.ModuleS.md#currentdata)**(): `S`  |
 | :-----|
@@ -44,7 +44,7 @@
 | 设置玩家的一个字段值|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T` <Badge type="tip" text="server" />  |
 | :-----|

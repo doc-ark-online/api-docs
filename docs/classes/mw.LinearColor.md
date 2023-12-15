@@ -9,13 +9,13 @@
 ### Accessors <Score text="Accessors" /> 
 | **[a](mw.LinearColor.md#a)**(): `number`  |
 | :-----|
-| 设置当前 LinearColor 的 a 值|
+| 获取当前 LinearColor 的 a 值|
 | **[b](mw.LinearColor.md#b)**(): `num[b](mw.LinearColor.md#b)er`  |
-| 设置当前 LinearColor 的 b 值|
+| 获取当前 LinearColor 的 b 值|
 | **[g](mw.LinearColor.md#g)**(): `number`  |
-| 设置当前 LinearColor 的 g 值 颜色值的有效范围是|
+| 获取当前 LinearColor 的 g 值|
 | **[r](mw.LinearColor.md#r)**(): `numbe[r](mw.LinearColor.md#r)`  |
-| 设置当前 LinearColor 的 r 值|
+| 获取当前 LinearColor 的 r 值|
 | **[black](mw.LinearColor.md#black)**(): [`LinearColor`](mw.LinearColor.md)  |
 | 黑色 (0, 0, 0, 1)|
 | **[blue](mw.LinearColor.md#blue)**(): [`LinearColor`](mw.LinearColor.md)  |

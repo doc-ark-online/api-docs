@@ -9,7 +9,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[assetID](mw.AssetIconData.md#assetid)**(): `string` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置资源ID|
+| 获取资源ID|
 
 默认构造
 

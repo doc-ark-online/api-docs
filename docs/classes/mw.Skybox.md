@@ -42,65 +42,65 @@ export default class SkyboxExample extends mw.Script {
 ### Accessors <Score text="Accessors" /> 
 | **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置云颜色|
+| 获取云颜色|
 | **[cloudDensity](mw.Skybox.md#clouddensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置云密度|
+| 获取云密度|
 | **[cloudOpacity](mw.Skybox.md#cloudopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置云的透明度|
+| 获取云的透明度|
 | **[cloudSpeed](mw.Skybox.md#cloudspeed)**(): `number` <Badge type="tip" text="client" />  |
-| 设置云速度|
+| 获取云速度|
 | **[cloudTextureID](mw.Skybox.md#cloudtextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置云贴图资源ID|
 | **[cloudVisible](mw.Skybox.md#cloudvisible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启云|
+| 获取是否开启云|
 | **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置月亮颜色|
+| 获取月亮颜色|
 | **[moonIntensity](mw.Skybox.md#moonintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置月亮亮度|
+| 获取月亮亮度|
 | **[moonSize](mw.Skybox.md#moonsize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置月亮大小|
+| 获取月亮大小|
 | **[moonTextureID](mw.Skybox.md#moontextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置月亮贴图资源ID|
 | **[moonVisible](mw.Skybox.md#moonvisible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启月亮|
+| 获取是否开启月亮|
 | **[preset](mw.Skybox.md#preset)**(): [`SkyPreset`](../enums/mw.SkyPreset.md) <Badge type="tip" text="client" />  |
-| 设置预设|
+| 获取预设|
 | **[skyDomeBaseColor](mw.Skybox.md#skydomebasecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置天空盒颜色|
+| 获取天空盒颜色|
 | **[skyDomeBottomColor](mw.Skybox.md#skydomebottomcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置天空下层颜色|
+| 天空下层颜色|
 | **[skyDomeGradientEnabled](mw.Skybox.md#skydomegradientenabled)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启渐变效果|
+| 获取是否开启渐变效果|
 | **[skyDomeHorizontalFallOff](mw.Skybox.md#skydomehorizontalfalloff)**(): `number` <Badge type="tip" text="client" />  |
-| 设置地平线渐出值|
+| 获取地平线渐出值|
 | **[skyDomeIntensity](mw.Skybox.md#skydomeintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置天空盒亮度3|
+| 获取天空盒亮度|
 | **[skyDomeMiddleColor](mw.Skybox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置天空中层颜色|
+| 天空中层颜色|
 | **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置天空盒贴图|
 | **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置天空顶层颜色|
+| 获取天空顶层颜色|
 | **[starDensity](mw.Skybox.md#stardensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置星星密度|
+| 获取星星密度|
 | **[starIntensity](mw.Skybox.md#starintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置星星亮度|
+| 获取星星亮度|
 | **[starTextureID](mw.Skybox.md#startextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置星星贴图资源ID|
 | **[starVisible](mw.Skybox.md#starvisible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启星星|
+| 获取是否开启星星|
 | **[sunColor](mw.Skybox.md#suncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置太阳颜色|
+| 获取太阳颜色|
 | **[sunIntensity](mw.Skybox.md#sunintensity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置太阳光亮度|
+| 获取太阳光亮度|
 | **[sunSize](mw.Skybox.md#sunsize)**(): `number` <Badge type="tip" text="client" />  |
-| 设置太阳大小|
+| 获取太阳大小|
 | **[sunTextureID](mw.Skybox.md#suntextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置太阳贴图资源ID|
 | **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否开启太阳|
+| 获取是否开启太阳|
 | **[yawAngle](mw.Skybox.md#yawangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置天空盒贴图旋转（度）|
+| 获取天空盒贴图旋转（度）|
 
 ### Methods <Score text="Methods" /> 
 | **[refresh](mw.Skybox.md#refresh)**(): `void` <Badge type="tip" text="client" />  |

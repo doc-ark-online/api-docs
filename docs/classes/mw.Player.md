@@ -34,26 +34,26 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | :-----|
 | 控制角色|
 | **[ping](mw.Player.md#ping)**(): `number`   |
-| 网络延迟是指从玩家在游戏中执行某个操作到该操作在其他玩家的游戏中显示出来所需的时间。通常以毫秒（ms）为单位表示。较低的延迟意味着玩家的操作能够快速传输到服务器和其他玩家，并且游戏的响应更加即时。|
+| 用于记录和显示玩家的网络延迟。|
 | **[playerId](mw.Player.md#playerid)**(): `number`   |
-| playerID是运行时ID，每次进入游戏时ID都会更换；userID 是唯一标识玩家ID，不会改变的ID|
+| 玩家ID|
 | **[teamId](mw.Player.md#teamid)**(): `string`   |
 | 队伍ID|
 | **[teleportId](mw.Player.md#teleportid)**(): `string`   |
 | 传送ID|
 | **[userId](mw.Player.md#userid)**(): `string`   |
-| 玩家的用户平台ID。该值是多端同步的，可以作为玩家唯一ID使用。玩家对象准备好后需等待一段时间该值才能准备好。|
+| 用户平台ID|
 | **[localPlayer](mw.Player.md#localplayer)**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />  |
-| 因为在客户端上运行。 对于 Script 对象运行其代码的服务器，此属性为null。|
+| LocalPlayer 是一个只读属性，指的是其客户端正在运行的玩家。|
 
 ### Methods <Score text="Methods" /> 
 | **[control](mw.Player.md#control)**(`pawn`: [`Pawn`](mw.Pawn.md)): `boolean` <Badge type="tip" text="server" />  |
 | :-----|
 | 控制一个Pawn对象|
 | **[getPlayerState](mw.Player.md#getplayerstate)**<`T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>\>(`type`: (...`args`: `unknown`[]) => `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>): `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>  |
-| 总的来说，用于跟踪和存储与每个玩家相关的数据和状态。它帮助游戏管理玩家的个人信息，如得分、生命值等，并在多人游戏中确保玩家状态的同步。通过PlayerState，游戏可以更好地处理多人游戏中的个人和团队数据，以提供更丰富的游戏体验。|
+| 获取PlayerState实例|
 | **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\> <Badge type="tip" text="client" />  |
-| 当正常获取本地玩家时，使用Player.localPlayer即可。|
+| 异步获取本地玩家。通常在UI脚本中使用，当获取还未创建出的本地玩家角色时，会使用此异步加载接口，最长等待10秒，等待本地角色加载出来再获取。|
 | **[asyncGetPlayer](mw.Player.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](mw.Player.md)\>   |
 | 异步获取玩家|
 | **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[]   |
@@ -110,7 +110,7 @@ export default class Example_Player_OnPawnChange extends Script {
             });
             // 添加一个按键方法:按下键盘“1”，向服务端发送事件【创建角色并控制】
             InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchEventToServer("SpawnCharacterAndControl");
+                mw.Event.dispatchToServer("SpawnCharacterAndControl");
             });
         }
     }
@@ -405,7 +405,7 @@ export default class Example_Player_Character extends Script {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
             // 打印本地玩家控制的character对象的guid和名字
-            console.log("My character: " + myPlayer.character.guid + " " + myPlayer.character.displayName);
+            console.log("My character: " + myPlayer.character.gameObjectId + " " + myPlayer.character.displayName);
         }
     }
 }
@@ -636,7 +636,7 @@ ___
 </span>
 
 ```ts
-@Class
+@Component
 export default class Example_Player_TeleportId extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
     protected onStart(): void {
@@ -766,7 +766,7 @@ export default class Example_Player_LocalPlayer extends Script {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
             // 打印本地玩家控制的character对象的guid和名字
-            console.log("My character: " + myPlayer.character.guid + " " + myPlayer.character.displayName);
+            console.log("My character: " + myPlayer.character.gameObjectId + " " + myPlayer.character.displayName);
             // 添加一个按键方法：按下键盘“1”，角色隐身2秒
             InputUtil.onKeyDown(Keys.One, ()  =>  {
                 myPlayer.character.setVisibility(PropertyStatus.Off);
@@ -827,7 +827,7 @@ export default class Example_Player_Control extends Script {
             });
             // 添加一个按键方法:按下键盘“1”，向服务端发送事件【创建角色并控制】
             InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchEventToServer("SpawnCharacterAndControl");
+                mw.Event.dispatchToServer("SpawnCharacterAndControl");
             });
         }
     }
@@ -866,7 +866,7 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
   // 服务端每个玩家进入游戏时会自动创建一个实例
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property({replicated: true, onChanged: "onRepTest"})
+      @Property({replicated: true, onChanged: "onRepTest"})
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
@@ -884,15 +884,15 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
 
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
-              const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
+              const playerState = Player.localPlayer.getPlayerState(GamePlayerState);
               console.log(`test: ${playerState.test}`);
           });
 
       }
 
-      @Core.Function(Core.Server)
+      @RemoteFunction(Server)
       random() {
-          const players = mw.getAllPlayers();
+          const players = Player.getAllPlayers();
           // 随机一个玩家
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
@@ -1008,7 +1008,7 @@ export default class Example_Player_GetAllPlayers extends Script {
                 Player.getAllPlayers().forEach((value) => {
                     if(value.playerId == player.playerId) {
                         console.log(" Player " + player.userId + " This is me");
-                        let crown = GameObject.spawn({guid: "27087"}) as Model;
+                        let crown = GameObject.spawn<Model>("27087");
                         crown.setCollision(CollisionStatus.Off);
                         value.character.attachToSlot(crown, HumanoidSlotType.Rings);
                     } else {
@@ -1021,7 +1021,7 @@ export default class Example_Player_GetAllPlayers extends Script {
         if(SystemUtil.isClient()) {
             // 添加一个按键方法：按下键盘“1”，向服务端发送事件【打印游戏内全部玩家信息】
             InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchEventToServer("PrintPlayersInfo");
+                mw.Event.dispatchToServer("PrintPlayersInfo");
             });
         }
     }
@@ -1243,7 +1243,7 @@ export default class Example_Player_SpawnDefaultCharacter extends Script {
             });
             // 添加一个按键方法：按下键盘“1”，向服务端发送事件【创建角色并控制】
             InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchEventToServer("SpawnCharacterAndControl");
+                mw.Event.dispatchToServer("SpawnCharacterAndControl");
             });
         }
     }

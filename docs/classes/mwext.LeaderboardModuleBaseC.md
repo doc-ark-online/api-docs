@@ -23,7 +23,7 @@
 | 排行榜的UI面板|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
@@ -47,7 +47,7 @@
 | 显示UI面板|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[onAwake](mwext.ModuleC.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

@@ -20,9 +20,9 @@
 | :-----|
 | GUID|
 | **[id](mw.DragDropPayLoad.md#id)**(): `number`  |
-| 设置id|
+| 获取id|
 | **[name](mw.DragDropPayLoad.md#name)**(): `string`  |
-| 设置名字|
+| 获取名字|
 
 ## Properties
 

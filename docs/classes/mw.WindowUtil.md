@@ -39,7 +39,7 @@ export default class WindowExample extends Script {
 ### Methods <Score text="Methods" /> 
 | **[getViewportSize](mw.WindowUtil.md#getviewportsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 此方法仅在客户端调用生效。|
+| 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
 
 ## Accessors
 

@@ -17,7 +17,7 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 ### Properties <Score text="Properties" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -33,7 +33,7 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 | 玩家对象|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -45,13 +45,13 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -65,7 +65,7 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 | 添加后处理描边|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
@@ -258,12 +258,10 @@ export default class Example_Pawn_Player extends Script {
             let myPlayer = Player.localPlayer;
             // 打印玩家(自己)userId和instanceId并对比
             console.log("My userId: " + myPlayer.userId);
-            console.log("My instanceId: " + myPlayer.instanceId);
             // 通过owner获取玩家(自己)并打印userId和instanceId并对比
             let myCharacter = myPlayer.character;
             let mmyPlayer_2 = myCharacter.player;
             console.log("My userId: " + mmyPlayer_2.userId);
-            console.log("My instanceId: " + mmyPlayer_2.instanceId);
         }
     }
 }
@@ -313,7 +311,7 @@ export default class Example_Pawn_Outline extends Script {
         // 下列代码仅在服务端执行
         if(SystemUtil.isServer()) {
             // 创建一个立方体
-            let cube = GameObject.spawn({guid: "197386", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
+            let cube = GameObject.spawn("197386",{ transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
             cube.setCollision(CollisionStatus.Off);
         }
         // 下列代码仅在客户端执行
@@ -383,7 +381,7 @@ export default class Example_Pawn_PostProcessOutline extends Script {
         // 下列代码仅在服务端执行
         if(SystemUtil.isServer()) {
             // 创建一个立方体
-            let cube = GameObject.spawn({guid: "197386", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
+            let cube = GameObject.spawn("197386",{ transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
             cube.setCollision(CollisionStatus.Off);
         }
         // 下列代码仅在客户端执行

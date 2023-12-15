@@ -71,36 +71,36 @@
 | **[onDescriptionComplete](mw.Character.md#ondescriptioncomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionComplete`](../modules/Core.mw.md#ondescriptioncomplete)\>   |
 | 角色外观加载完成时，调用委托|
 | **[onMovementModeChange](mw.Character.md#onmovementmodechange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnMovementModeChange`](../modules/Core.mw.md#onmovementmodechange)\>   |
-| 当角色移动状态切换时执行绑定函数|
+| 移动模式切换时的回调|
 
 ### Accessors <Score text="Accessors" /> 
 | **[brakingDecelerationFlying](mw.Character.md#brakingdecelerationflying)**(): `number`   |
 | :-----|
-| 角色在空中飞行时减速且不施加加速度。|
+| 获取角色的飞行制动速率|
 | **[brakingDecelerationSwimming](mw.Character.md#brakingdecelerationswimming)**(): `number`   |
-| 设置角色游泳制动速率|
+| 获取角色游泳制动速率|
 | **[brakingDecelerationWalking](mw.Character.md#brakingdecelerationwalking)**(): `number`   |
-| 设置角色行走制动速率|
+| 设置角色行走制动速率。|
 | **[canJumpOutOfWater](mw.Character.md#canjumpoutofwater)**(): `boolean`   |
-| 角色通过 swimUp 接口上浮到水面时，可打开此属性跳出水面。|
+| 获取角色是否可以跳出水面到陆地上|
 | **[canStandOn](mw.Character.md#canstandon)**(): `boolean`   |
-| 设置角色是否可以被其他玩家站立。|
+| 获取角色是否可以被其他玩家站立。|
 | **[capsuleCorrectionEnabled](mw.Character.md#capsulecorrectionenabled)**(): `boolean`   |
-| 设置角色当前是否使用胶囊体修正|
+| 获取角色当前是否使用胶囊体修正|
 | **[characterType](mw.Character.md#charactertype)**(): [`CharacterType`](../enums/mw.CharacterType.md)  |
-| 角色类型分为基础人形、高级人形和四足类型。|
+| 获取角色是什么类型|
 | **[collisionExtent](mw.Character.md#collisionextent)**(): [`Vector`](mw.Vector.md)   |
-| 设置包裹角色碰撞体的形状大小|
+| 获取包裹角色碰撞体的形状大小|
 | **[collisionShape](mw.Character.md#collisionshape)**(): [`CustomShapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md)](../enums/mw.CustomShapeType.md)   |
-| 设置角色碰撞形状（胶囊体型、球型、盒型）|
+| 获取角色碰撞形状（胶囊体型、球型、盒型）|
 | **[collisionWithOtherCharacterEnabled](mw.Character.md#collisionwithothercharacterenabled)**(): `boolean`   |
-| 设置角色当前是否可以与其他角色产生碰撞。|
+| 获取角色当前是否可以与其他角色产生碰撞。|
 | **[complexMovementEnabled](mw.Character.md#complexmovementenabled)**(): `boolean`  |
-| 实现了角色的高级移动逻辑和物理模拟，确保角色在游戏世界中按照预期的方式进行移动，并与周围的环境进行交互。|
+| 是否启用复杂移动策略|
 | **[crouchEnabled](mw.Character.md#crouchenabled)**(): `boolean`   |
-| true表示角色可以下蹲，false表示角色不可下蹲。|
+| 获取角色启用下蹲的能力|
 | **[crouchedHeight](mw.Character.md#crouchedheight)**(): `number`   |
-| 设置角色下蹲状态下，碰撞盒的高度。|
+| 获取角色下蹲状态下，碰撞盒的高度。|
 | **[currentAnimation](mw.Character.md#currentanimation)**(): [`Animation`](mw.Animation.md)  |
 | 当前播放的动画对象|
 | **[currentStance](mw.Character.md#currentstance)**(): [`Stance`](mw.Stance.md)  |
@@ -110,55 +110,55 @@
 | **[description](mw.Character.md#description)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
 | 角色外观配置，返回值为CharacterDescription类。调用description变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。|
 | **[displayName](mw.Character.md#displayname)**(): `string`  |
-| 名字为随机初始化的一个英文名，可根据自己的喜好随意更换角色名字。|
+| 获取角色名称|
 | **[driftControl](mw.Character.md#driftcontrol)**(): `number`   |
-| 设置角色在空中的灵活度|
+| 获取角色在空中的灵活度|
 | **[forceUpdateMovement](mw.Character.md#forceupdatemovement)**(`value`: `boolean`): `void`   |
 | 强制更新移动|
 | **[gravityScale](mw.Character.md#gravityscale)**(): `number`   |
-| 设置重力的倍率|
+| 获取重力的倍率|
 | **[groundFriction](mw.Character.md#groundfriction)**(): `number`   |
-| 设置地面摩檫力|
+| 获取地面摩檫力|
 | **[groundFrictionEnabled](mw.Character.md#groundfrictionenabled)**(): `boolean`   |
-| 当角色处于运动状态，制动摩擦用于让角色去停止移动（当没有加速时）。|
+| 获取单独制动摩擦状态|
 | **[horizontalBrakingDecelerationFalling](mw.Character.md#horizontalbrakingdecelerationfalling)**(): `number`   |
-| 设置角色下落制动速率|
+| 获取角色下落制动速率|
 | **[isCrouching](mw.Character.md#iscrouching)**(): `boolean`   |
 | 获取角色是否正在蹲下|
 | **[isDescriptionReady](mw.Character.md#isdescriptionready)**(): `boolean` <Badge type="tip" text="client" />  |
-| 刚进入场景中或角色还未加载出外观衣服等时，isDescriptionReady为false，完全加载完成后变为true。|
+| 获取当前角色外观是否准备完毕。|
 | **[isJumping](mw.Character.md#isjumping)**(): `boolean`   |
 | 获取角色是否正在跳跃|
 | **[isMoving](mw.Character.md#ismoving)**(): `boolean`   |
 | 获取角色是否正在移动|
 | **[jumpEnabled](mw.Character.md#jumpenabled)**(): `boolean`   |
-| true表示角色可以跳跃，false表示角色不可跳跃。|
+| 获取角色是否开启了跳跃能力|
 | **[jumpMaxCount](mw.Character.md#jumpmaxcount)**(): `number`   |
-| 设置角色最大可跳跃次数|
+| 获取角色最大可跳跃次数|
 | **[maxAcceleration](mw.Character.md#maxacceleration)**(): `number`   |
-| 设置角色最大加速度|
+| 获取角色最大加速度|
 | **[maxFallingSpeed](mw.Character.md#maxfallingspeed)**(): `number`   |
 | 设置角色最大下落速度|
 | **[maxFlySpeed](mw.Character.md#maxflyspeed)**(): `number`   |
-| 设置角色最大飞行速度|
+| 获取角色最大飞行速度|
 | **[maxJumpHeight](mw.Character.md#maxjumpheight)**(): `number`   |
-| 设置角色最大跳跃高度|
+| 获取角色最大跳跃高度|
 | **[maxStepHeight](mw.Character.md#maxstepheight)**(): `number`   |
-| 设置角色最大可跨越高度|
+| 获取角色最大可跨越高度|
 | **[maxSwimSpeed](mw.Character.md#maxswimspeed)**(): `number`   |
-| 设置角色最大游泳速度|
+| 获取角色最大游泳速度|
 | **[maxWalkSpeed](mw.Character.md#maxwalkspeed)**(): `number`   |
-| 设置角色的最大行走速度|
+| 获取角色的最大行走速度|
 | **[maxWalkSpeedCrouched](mw.Character.md#maxwalkspeedcrouched)**(): `number`   |
-| 设置角色最大蹲伏行走速度|
+| 获取角色最大蹲伏行走速度|
 | **[meshOffset](mw.Character.md#meshoffset)**(): [`Vector`](mw.Vector.md)   |
-| 设置mesh相对角色坐标点的偏移|
+| 获取mesh相对角色坐标点的偏移|
 | **[moveFacingDirection](mw.Character.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md)   |
-| 设置角色运动时面朝方向。|
+| 获取角色运动面朝方向|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md)   |
-| 设置角色运动正方向|
+| 获取角色运动正方向|
 | **[movementEnabled](mw.Character.md#movementenabled)**(): `boolean`   |
-| 设置角色是否启用移动能力。当你不想让角色移动时可调用此属性。|
+| 获取角色是否启用移动能力|
 | **[movementMode](mw.Character.md#movementmode)**(): [`MovementMode`](../enums/mw.MovementMode.md)   |
 | 获取当前角色移动模式（分为行走、游泳和飞行三种模式）|
 | **[outOfWaterVerticalSpeed](mw.Character.md#outofwaterverticalspeed)**(): `number`   |
@@ -166,22 +166,22 @@
 | **[overheadUI](mw.Character.md#overheadui)**(): [`UIWidget`](mw.UIWidget.md) <Badge type="tip" text="client" />  |
 | 获取角色头顶名字的界面|
 | **[physicsEnabled](mw.Character.md#physicsenabled)**(): `boolean`  |
-| 当 physicsEnabled 设置为 false 时，它仅参与空间查询，而不进行物理模拟。这意味着它不会受到物理引擎的影响，也不会对物理模拟产生任何效果。|
+| 获取角色物理模拟状态|
 | **[ragdollEnabled](mw.Character.md#ragdollenabled)**(): `boolean`  |
-| 角色的布娃娃效果，与其他物体进行交互时，使角色在发生某些条件时可以像布娃娃一样松弛和摆动，而不是保持刚体的僵硬状态。|
+| 获取角色是否启用布娃娃状态。|
 | **[rotateRate](mw.Character.md#rotaterate)**(): `number`   |
-| 设置角色最大转向速度|
+| 获取角色最大转向速度|
 | **[velocity](mw.Character.md#velocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取角色当前移动速度|
 | **[walkableFloorAngle](mw.Character.md#walkablefloorangle)**(): `number`   |
-| 设置角色可行走的最大角度|
+| 获取角色可行走的最大角度|
 | **[nameDisplayDistance](mw.Character.md#namedisplaydistance)**(): `number` <Badge type="tip" text="client" />  |
-| 设置当前客户端所有角色头顶显示名称可见距离，当角色头顶显示名称可见时生效。距离为0时不可见。|
+| 获取当前客户端所有角色头顶显示名称可见距离。|
 | **[nameVisible](mw.Character.md#namevisible)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置当前客户端所有角色头顶显示名称是否可见|
+| 获取当前客户端所有角色头顶显示名称是否可见。|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[customTimeDilation](mw.Pawn.md#customtimedilation)**(): `number`   |
 | :-----|
@@ -194,41 +194,41 @@
 ### Methods <Score text="Methods" /> 
 | **[addImpulse](mw.Character.md#addimpulse)**(`Vector`: [`Vector`](mw.Vector.md), `ignoreMass?`: `boolean`): `void` <Badge type="tip" text="server" />  |
 | :-----|
-| 质量固定为100，受质量影响的算法为: 冲量按位除以质量|
+| 添加冲量|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
-| 效果受 movementDirection 属性影响。如果此时同时有用户输入效果是叠加而不是覆盖。|
+| 沿着给定的方向向量添加移动输入，不会自动应用移动，由开发者在 onUpdate 事件中执行此操作。|
 | **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
-| 只适用于人形角色，附加规则是 KeepRelative，会保留物体之前的 localTransform|
+| 将物体附着到人物角色的指定插槽|
 | **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void`   |
-| 清空角色外观数据，此时角色不具备任何视觉表现。|
+| 清空角色外观数据|
 | **[crouch](mw.Character.md#crouch)**(`isCrouch`: `boolean`): `void`   |
 | 使角色触发一个下蹲行为|
 | **[detachAllFromSlot](mw.Character.md#detachallfromslot)**(`param?`: `Object`): `void`   |
-| 如果不填入插槽则将全部插槽的附着对象分离。仅对高级人型角色生效。|
+| 将角色插槽附着的对象全部分离|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 将物体从插槽中分离|
 | **[getDescription](mw.Character.md#getdescription)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 该接口获取角色当前外观数据的拷贝|
+| 获取角色外观数据|
 | **[getSlotWorldPosition](mw.Character.md#getslotworldposition)**(`slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): [`Vector`](mw.Vector.md)   |
-| 受角色外观中插槽偏移影响，仅对高级人型角色生效。|
+| 获取角色插槽的世界坐标|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md)   |
-| 目前顶点 index 只能从内部工程中查看|
+| 通过头部模型顶点 index 实时获取顶点位置|
 | **[jump](mw.Character.md#jump)**(): `void`   |
 | 使角色触发一个跳跃行为|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
-| loadAnimation 会将给定的动画加载到角色上，返回一个可播放的Animation。|
+| 为角色加载一个动画资源|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
-| loadStance会将给定的基础姿态加载到角色上，返回一个可播放的基础姿态 stance 类型。|
+| 为角色加载一个基础姿态|
 | **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md)   |
 | 为角色加载一个二级姿态|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void`   |
 | 为角色设置不同形状不同大小的碰撞体|
 | **[setDescription](mw.Character.md#setdescription)**(`data`: `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md)): `void`   |
-| setStyle 设置角色的外观，可以传入 CharacterDescription 对象 / 角色外观文件的数组 / 挂件数据文件的 guid。|
+| 设置角色外观数据|
 | **[swimDown](mw.Character.md#swimdown)**(`speed`: `number`): `void`   |
-| 不能超过MaxSwimSpeed(游泳最大速度)|
+| 使角色在水中下潜|
 | **[swimUp](mw.Character.md#swimup)**(`speed`: `number`): `void`   |
-| 不能超过MaxSwimSpeed(游泳最大速度)|
+| 使角色在水中上浮|
 | **[switchToFlying](mw.Character.md#switchtoflying)**(): `void`   |
 | 将角色状态切换为飞行状态|
 | **[switchToSwimming](mw.Character.md#switchtoswimming)**(): `void`   |
@@ -236,10 +236,10 @@
 | **[switchToWalking](mw.Character.md#switchtowalking)**(): `void`   |
 | 将角色状态切换为行走状态|
 | **[syncDescription](mw.Character.md#syncdescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 角色在客户端设置外观后只会更换本地角色的外观，其他客户端角色外观未修改。通过该接口可以将本地外观广播至其他客户端。|
+| 同步角色外观数据|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[setOutline](mw.Pawn.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -290,7 +290,7 @@ export default class Example_Character_OnDescriptionChange extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -842,7 +842,7 @@ export default class Example_Braking extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -1242,7 +1242,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -2025,7 +2025,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -2138,7 +2138,7 @@ export default class Example_Character extends Script {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
             // 打印本地玩家控制的character对象的guid和名字
-            console.log("My character: " + myPlayer.character.guid + " " + myPlayer.character.displayName);
+            console.log("My character: " + myPlayer.character.gameObjectId + " " + myPlayer.character.displayName);
             // 添加一个按键方法：按下键盘“1”，切换角色显示名称
             InputUtil.onKeyDown(Keys.One, () => {
                 myPlayer.character.displayName = names[index % 3];
@@ -2478,7 +2478,7 @@ export default class Example_GroundFriction extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -2578,7 +2578,7 @@ export default class Example_GroundFriction extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -2808,7 +2808,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -2972,7 +2972,7 @@ export default class Example_Character extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -3234,7 +3234,7 @@ export default class Example_Character_MaxAcceleration extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -3855,7 +3855,7 @@ export default class Example_MaxWalkSpeed extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -4792,7 +4792,7 @@ export default class Example_Character_RotateRate extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -4875,7 +4875,7 @@ export default class Example_Character extends Script {
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFriction = !myCharacter.groundFriction;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFriction;
             });
         }
     }
@@ -4962,7 +4962,7 @@ export default class Example_WalkableFloorAngle extends Script {
             }
             // 创建5个不同坡度的锥体:1，30，45，60，89
             let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;i < coneAngle.length;i++) {
+            for (let i = 0; i < coneAngle.length; i++) {
                 console.log("1111");
                 GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
             }
@@ -5146,7 +5146,7 @@ export default class Example_Character extends Script {
             cannon_trigger.onEnter.add((character: Character) => {
                 character.worldTransform.position = new Vector(750, 275, 330);
                 // 向服务器派发【Launch】事件
-                mw.Event.dispatchEventToServer("Launch");
+                mw.Event.dispatchToServer("Launch");
                 // 播放音效特效。
                 EffectService.playAtPosition("132631", new Vector(750, 275, 330))
                 SoundService.playSound("75354");
@@ -5347,7 +5347,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -5671,7 +5671,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -6247,7 +6247,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();
@@ -6813,7 +6813,7 @@ export default class Example_Character extends Script {
             // 给【角色外观描述完成】委托添加函数
             myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.playOnGameObject("161245", myCharacter);
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
                 // 获取角色默认外观风格
                 if(defaultStyle == null) {
                     defaultStyle = myCharacter.getDescription();

@@ -43,9 +43,9 @@ export default class HotWeaponReloadSample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[animationAssetId](mw.HotWeaponReloadComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。|
+| 获取绑定的动画GUID。|
 | **[reloadDuration](mw.HotWeaponReloadComponent.md#reloadduration)**(): `number`   |
-| 设置换弹时间。|
+| 获取换弹时间。|
 
 ## Properties
 

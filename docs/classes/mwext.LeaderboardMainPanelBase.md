@@ -25,7 +25,7 @@
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
@@ -57,7 +57,7 @@
 | 显示"名次"字段，并进行设置，默认不显示|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

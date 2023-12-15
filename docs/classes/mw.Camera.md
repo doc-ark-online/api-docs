@@ -41,7 +41,7 @@ Camera 对象如何工作？
 | **[updateOccludeEnableStatus](mw.Camera.md#updateoccludeenablestatus)**: `any` |
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -52,21 +52,21 @@ Camera 对象如何工作？
 ### Accessors <Score text="Accessors" /> 
 | **[downAngleLimit](mw.Camera.md#downanglelimit)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置摄像机向下角度限制|
+| 获取摄像机向下角度限制|
 | **[fadeObstructionEnabled](mw.Camera.md#fadeobstructionenabled)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否启用透明效果|
+| 获取是否启用透明效果|
 | **[fadeObstructionOpacity](mw.Camera.md#fadeobstructionopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置透明度|
+| 获取透明度|
 | **[fixedElevation](mw.Camera.md#fixedelevation)**(): `boolean` <Badge type="tip" text="client" />  |
 | 固定摄像机高度|
 | **[fov](mw.Camera.md#fov)**(): `number` <Badge type="tip" text="client" />  |
-| 设置摄像机视场|
+| 获取摄像机视场|
 | **[maxLagDistance](mw.Camera.md#maxlagdistance)**(): `number` <Badge type="tip" text="client" />  |
 | 位置最大延迟距离|
 | **[positionLagEnabled](mw.Camera.md#positionlagenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 启用位置延迟|
 | **[positionLagSpeed](mw.Camera.md#positionlagspeed)**(): `number` <Badge type="tip" text="client" />  |
-| 设置摄像机位置延迟速度|
+| 位置延迟速度|
 | **[positionMode](mw.Camera.md#positionmode)**(): [`CameraPositionMode`](../enums/mw.CameraPositionMode.md) <Badge type="tip" text="client" />  |
 | 位置模式|
 | **[preset](mw.Camera.md#preset)**(`value`: [`CameraPreset`](../enums/mw.CameraPreset.md)): `void`  |
@@ -83,7 +83,7 @@ Camera 对象如何工作？
 | 当前摄像机|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -95,13 +95,13 @@ Camera 对象如何工作？
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -123,7 +123,7 @@ Camera 对象如何工作？
 | 切换摄像机|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
@@ -216,7 +216,7 @@ export default class CameraExample extends Script {
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
             for (let i = 0; i < 5; i++) {
-                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+                let camera = GameObject.spawn<Camera>("Camera") as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
@@ -229,7 +229,7 @@ export default class CameraExample extends Script {
             InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
+                Camera.switch(cameraArray[newCamera], 5, CameraSwitchBlendFunction.Linear);
             });
             // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
             InputUtil.onKeyDown(Keys.Two, () => {
@@ -267,7 +267,7 @@ export default class Camera_SpringArm extends Script {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
             for (let i = 0; i < 10; i++) {
-                GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
+                GameObject.spawn<Model>("26950",{transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
         // 下列代码仅在客户端执行
@@ -435,7 +435,6 @@ ___
 
 :::
 
-
 #### Returns
 
 | `boolean` |  |
@@ -465,30 +464,6 @@ ___
 </tr></tbody>
 </table>
 
-<span style="font-size: 14px;">
-使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，固定摄像机高度后跳跃。你将在场景中看到角色跳跃时摄像机跟随角色高度的效。代码如下：
-</span>
-
-```ts
-@Class
-export default class Example_Camera_FixedElevation extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取玩家角色
-            let myCharacter = myPlayer.character;
-            // 获取当前摄像机
-            let myCamera = Camera.currentCamera;
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCamera.transparencyEnabled = true;
-            });
-        }
-    }
-}
-```
 ___
 
 ### fadeObstructionOpacity <Score text="fadeObstructionOpacity" /> 
@@ -553,7 +528,7 @@ ___
 </span>
 
 ```ts
-@Class
+@Component
 export default class Example_Camera_FixedElevation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1154,7 +1129,7 @@ export default class Example_Camera_PositionMode extends Script {
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
             // 打印当前角色摄像机的位置模式和旋转模式
-            console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+            console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
@@ -1166,7 +1141,7 @@ export default class Example_Camera_PositionMode extends Script {
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
             InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
-                console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+                console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
             InputUtil.onKeyDown(Keys.Three, () => {
@@ -1231,7 +1206,7 @@ export default class Camera_Preset extends Script {
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
             // 打印当前角色摄像机的位置模式和旋转模式
-            console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+            console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
@@ -1243,7 +1218,7 @@ export default class Camera_Preset extends Script {
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
             InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
-                console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+                console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
             InputUtil.onKeyDown(Keys.Three, () => {
@@ -1549,7 +1524,7 @@ export default class Example_Camera_RotationMode extends Script {
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
             // 打印当前角色摄像机的位置模式和旋转模式
-            console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+            console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
@@ -1561,7 +1536,7 @@ export default class Example_Camera_RotationMode extends Script {
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
             InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
-                console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
+                console.log("当前角色摄像机的位置模式 " + CameraPositionMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
             InputUtil.onKeyDown(Keys.Three, () => {
@@ -1728,8 +1703,8 @@ export default class CurrentCamera extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-for (let i = 0; i < 5; i++) {
-                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+            for (let i = 0; i < 5; i++) {
+                let camera = GameObject.spawn<Camera>("Camera") as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
@@ -1742,7 +1717,7 @@ for (let i = 0; i < 5; i++) {
             InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
+                Camera.switch(cameraArray[newCamera], 5, CameraSwitchBlendFunction.Linear);
             });
             // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
             InputUtil.onKeyDown(Keys.Two, () => {
@@ -1770,7 +1745,7 @@ ___
 
 | `target` [`GameObject`](mw.GameObject.md) | 目标物体 |
 | :------ | :------ |
-| `val?` `Object` | lockInterval,lockSpeed,lockRange,lockDistance,lockOffset,bPause参数集合。 default:null |
+| `val?` `Object` | lockInterval,lockSpeed,lockRange,lockDistance,lockOffset,bPause参数集合 default:null |
 | `val.bPause?` `boolean` | - |
 | `val.lockDistance?` `number` | - |
 | `val.lockInterval?` `number` | - |
@@ -2076,8 +2051,8 @@ export default class Example_Camera_Switch extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-for (let i = 0; i < 5; i++) {
-                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+            for (let i = 0; i < 5; i++) {
+                let camera = GameObject.spawn<Camera>("Camera") as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
@@ -2090,7 +2065,7 @@ for (let i = 0; i < 5; i++) {
             InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
+                Camera.switch(cameraArray[newCamera], 5, CameraSwitchBlendFunction.Linear);
             });
             // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
             InputUtil.onKeyDown(Keys.Two, () => {

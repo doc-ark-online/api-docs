@@ -293,7 +293,7 @@
 | **[negative](mw.Vector2.md#negative)**(): [`Vector2`](mw.Vector2.md)  |
 | 返回各个分量取反的新 Vector2 对象|
 | **[normalized](mw.Vector2.md#normalized)**(): [`Vector2`](mw.Vector2.md)  |
-| 其大小为1, 但仍指向相同的方向 如果向量太小而无法归一化, 则返回 (0, 0)|
+| 返回一个新的 Vector2 对象|
 | **[sqrLength](mw.Vector2.md#sqrlength)**(): `number`  |
 | 向量长度的平方|
 | **[sqrMagnitude](mw.Vector2.md#sqrmagnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
@@ -316,77 +316,76 @@
 | **[clone](mw.Vector2.md#clone)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 克隆向量 a 得到新的 Vector2 向量|
 | **[divide](mw.Vector2.md#divide)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 的每个分量除以标量 b|
 | **[equals](mw.Vector2.md#equals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`   |
 | 判断两向量排除浮点数误差是否近似等价|
 | **[fromString](mw.Vector2.md#fromstring)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 通过一个字符串创建 Vector2 对象|
 | **[multiply](mw.Vector2.md#multiply)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 的每个分量乘以标量 b|
 | **[normalize](mw.Vector2.md#normalize)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量归一化|
 | **[set](mw.Vector2.md#set)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)   |
 | 设置向量 a 的值|
 | **[strictEquals](mw.Vector2.md#strictequals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`   |
 | 判断两向量是否相等|
 | **[subtract](mw.Vector2.md#subtract)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
-| **[toString](mw.Vector2.md#tostring)**(): `string`   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 减去向量 b|
+| **[toString](mw.Vector2.md#tostring)**(): `string`  |
 | 向量相加  |
 | outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
 | **[angle](mw.Vector2.md#angle)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
 | 两向量夹角角度|
 | **[ceil](mw.Vector2.md#ceil)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 每个元素向上取整|
 | **[clamp](mw.Vector2.md#clamp)**(`v`: [`Vector2`](mw.Vector2.md), `min`: [`Vector2`](mw.Vector2.md), `max`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 设置当前向量的值, 使其各个分量都处于指定的范围内|
 | **[clone](mw.Vector2.md#clone-1)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 克隆向量 a 得到新的 Vector2 向量|
 | **[copy](mw.Vector2.md#copy)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 获得指定向量的拷贝|
 | **[cross](mw.Vector2.md#cross)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
 | 叉积|
 | **[distance](mw.Vector2.md#distance)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
-| ![向量](https://cdn.233xyx.com/online/4oQ9HXb788xI1702205317274.png)|
+| 两向量的欧氏距离|
 | **[divide](mw.Vector2.md#divide-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 的每个分量除以标量 b|
 | **[dot](mw.Vector2.md#dot)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
 | 点积|
 | **[equals](mw.Vector2.md#equals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`   |
 | 判断两向量排除浮点数误差是否近似等价|
 | **[floor](mw.Vector2.md#floor)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 每个元素向下取整|
 | **[fromString](mw.Vector2.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 通过一个字符串创建 Vector2 对象|
 | **[invert](mw.Vector2.md#invert)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 每个元素向量取倒数|
 | **[invertSafe](mw.Vector2.md#invertsafe)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 每个元素向量取倒数|
 | **[lerp](mw.Vector2.md#lerp)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `t`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 每个元素线性插值： a + t  * (b - a)|
 | **[magnitude](mw.Vector2.md#magnitude-1)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
 | 向量长度|
 | **[max](mw.Vector2.md#max)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 取两个向量对应x、y元素最小值最大值|
 | **[min](mw.Vector2.md#min)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 取两个向量对应x、y元素最小值|
 | **[moveTowards](mw.Vector2.md#movetowards)**(`current`: [`Vector2`](mw.Vector2.md), `target`: [`Vector2`](mw.Vector2.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向目标移动|
 | **[multiply](mw.Vector2.md#multiply-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 的每个分量乘以标量 b|
 | **[negate](mw.Vector2.md#negate)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 每个元素向量取负|
 | **[normalize](mw.Vector2.md#normalize-1)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量归一化|
 | **[project](mw.Vector2.md#project)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 在向量 b 上的投影|
 | **[random](mw.Vector2.md#random)**(`range?`: `number`): [`Vector2`](mw.Vector2.md)   |
 | 生成一个在单位圆上均匀分布的随机 Vector2 对象|
 | **[reflect](mw.Vector2.md#reflect)**(`inDirection`: [`Vector2`](mw.Vector2.md), `inNormal`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 反射|
 | **[rotate](mw.Vector2.md#rotate)**(`v`: [`Vector2`](mw.Vector2.md), `radians`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 旋转某度后的向量|
 | **[round](mw.Vector2.md#round)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 每个元素四舍五入取整|
 | **[set](mw.Vector2.md#set-1)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)   |
@@ -400,7 +399,7 @@
 | **[strictEquals](mw.Vector2.md#strictequals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`   |
 | 判断两向量是否相等|
 | **[subtract](mw.Vector2.md#subtract-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
-| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| 向量 a 减去向量 b|
 
 用给定的 x, y 分量构建一个新的 Vector2
 

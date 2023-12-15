@@ -256,7 +256,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
         }
     }
     //优先启动模块需要在onExecute中调用该函数,编辑器会等待fun执行完毕后再执行其他模块的onStart
-    protected async onExecuteStart(fun: Function): `Promise`<`void`\> {
+    protected async onExecuteStart(fun: Function): Promise<void> {
         await TimeUtil.delaySecond(1);
         console.log("-----------客户端-hud模块准备结束-----------");
         fun();
@@ -334,13 +334,13 @@ class PlayerModuleData extends Subdata {
 | :-----|
 | 调用一个模块的onExecute方法|
 | **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
-| 2. 让外部代码进行调用（比如在UI脚本里需要使用到模块里的方法）。|
+| 根据类型获取一个模块。|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`   |
 | 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
 | **[ready](mwext.ModuleService.md#ready)**(): `Promise`<`void`\>   |
 | 注册的模块是否就绪|
 | **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md)   |
-| 4. 让C和S关联同一份数据（数据由S端获取，玩家上线以及每次服务端save数据的时候，会同步给客户端）。|
+| 注册模块是 ModuleService 核心功能。|
 | **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md) <Badge type="tip" text="client" />  |
 | 设置客户端第一个要启动的模块|
 

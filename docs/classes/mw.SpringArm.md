@@ -103,8 +103,8 @@ export default class Example_SpringArm extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;i < 10;i++) {
-                GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
+            for (let i = 0; i < 10; i++) {
+                GameObject.spawn<Model>("26950",{transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
         // 下列代码仅在客户端执行
@@ -201,8 +201,8 @@ export default class Example_SpringArm extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;i < 10;i++) {
-                GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
+            for (let i = 0; i < 10; i++) {
+                GameObject.spawn<Model>("26950",{transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
         // 下列代码仅在客户端执行
@@ -665,7 +665,7 @@ ___
 </span>
 
 ```ts
-@Class
+@Component
 export default class Example_SpringArm_UseControllerRotation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -761,7 +761,7 @@ ___
 </span>
 
 ```ts
-@Class
+@Component
 export default class Example_SpringArm_UseControllerRotation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -856,7 +856,7 @@ ___
 </span>
 
 ```ts
-@Class
+@Component
 export default class Example_SpringArm_UseControllerRotation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {

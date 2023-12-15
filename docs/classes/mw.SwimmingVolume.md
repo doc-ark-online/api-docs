@@ -17,10 +17,8 @@
 export default class SwimmingVolExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected async onStart(): Promise<void> {
-        // 获取当前玩家
-        let player =  asyncGetCurrentPlayer()[0];
         // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
-        let swimmingVolume = await GameObject.asyncFind(`GUID`) as SwimmingVolume;
+        let swimmingVolume = await GameObject.asyncFindGameObjectById(`GUID`) as SwimmingVolume;
         if(SystemUtil.isClient())
         {
             InputUtil.onKeyDown(Keys.F1,()=>{
@@ -48,7 +46,7 @@ export default class SwimmingVolExample extends Script {
 | 离开游泳区域事件|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -62,7 +60,7 @@ export default class SwimmingVolExample extends Script {
 | 获取流体摩擦力|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -74,13 +72,13 @@ export default class SwimmingVolExample extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -89,7 +87,7 @@ export default class SwimmingVolExample extends Script {
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

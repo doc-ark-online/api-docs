@@ -40,15 +40,15 @@ export default class PostProcessExample extends mw.Script {
 ### Accessors <Score text="Accessors" /> 
 | **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
 | :-----|
-| 设置泛光（0 ~ 8）|
+| 获取泛光|
 | **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md)   |
-| 设置后处理属性配置|
+| 获取后处理属性配置|
 | **[contrast](mw.PostProcess.md#contrast)**(): `number`   |
-| 设置全局对比度 （0.2 ~ 5.0）|
+| 获取全局对比度|
 | **[preset](mw.PostProcess.md#preset)**(`newPreset`: [`PostProcessPreset`](../enums/mw.PostProcessPreset.md)): `void` <Badge type="tip" text="client" />  |
 | 设置预设|
 | **[saturation](mw.PostProcess.md#saturation)**(): `number`   |
-| 设置全局饱和度 （0 ~ 2）|
+| 获取全局饱和度|
 
 ## Accessors
 

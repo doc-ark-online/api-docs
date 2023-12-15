@@ -42,19 +42,19 @@
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.Animation.md#assetid)**(): `string`   |
 | :-----|
-| 之后会开启开发者上传其制作的动画资源通道，将其上传到MW编辑器后，可以使用自己上传的动画资源。|
+| 获取动画资源ID。目前是动画资源在编辑器左侧栏中，由美术创作者上传，鼠标指向可看到动画的GUID。|
 | **[isPlaying](mw.Animation.md#isplaying)**(): `boolean`   |
-| true表示动画对象的正在播放，false表示动画对象未播放。|
+| 是否播放|
 | **[length](mw.Animation.md#length)**(): `number`  |
 | 获取动画时长。当前动画对象中关联的动画的时长以秒为单位。|
 | **[loop](mw.Animation.md#loop)**(): `number`   |
-| 设置动画的播放循环次数.|
+| 获取动画播放循环次数。|
 | **[onFinish](mw.Animation.md#onfinish)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
-| 动画播放结束时(在动画不被中断且正常播放完成情况下)执行绑定函数。|
+| 播放结束委托。|
 | **[slot](mw.Animation.md#slot)**(): [`AnimSlot`](../enums/mw.AnimSlot.md)  |
-| 设置动画播放插槽|
+| 获取动画播放插槽|
 | **[speed](mw.Animation.md#speed)**(): `number`   |
-| 设置动画的播放速率|
+| 获取动画的播放速率|
 
 ### Methods <Score text="Methods" /> 
 | **[pause](mw.Animation.md#pause)**(): `boolean`   |

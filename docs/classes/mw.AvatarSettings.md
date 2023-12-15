@@ -28,7 +28,7 @@ export default class ClassExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[optimizationEnabled](mw.AvatarSettings.md#optimizationenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 开启或关闭角色优化(角色裁剪、动画更新率降低等)|
+| 获取角色优化(角色裁剪、动画更新率降低等)|
 
 ### Methods <Score text="Methods" /> 
 | **[setOptimization](mw.AvatarSettings.md#setoptimization)**(`character`: [`Character`](mw.Character.md), `bAnimationBudget`: `boolean`, `bWave`: `boolean`): `void` <Badge type="tip" text="client" />  |

@@ -21,27 +21,27 @@
 | :-----|
 | 设置点击模式|
 | **[disableImageColor](mw.Button.md#disableimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片颜色|
+| 获取禁用图片颜色|
 | **[disableImageDrawType](mw.Button.md#disableimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片绘制类型|
+| 获取禁用图片绘制类型|
 | **[disableImageGuid](mw.Button.md#disableimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置不可用图片ID|
+| 获取禁用图片ID|
 | **[disableImageMargin](mw.Button.md#disableimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片边距|
+| 获取禁用图片边距|
 | **[disableImageSize](mw.Button.md#disableimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片大小|
+| 获取禁用图片大小|
 | **[focusable](mw.Button.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否获取输入焦点|
+| 获取是否获取输入焦点|
 | **[normalImageColor](mw.Button.md#normalimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置普通图片颜色|
+| 获取普通图片颜色|
 | **[normalImageDrawType](mw.Button.md#normalimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置普通图片绘制类型|
+| 获取普通图片绘制类型|
 | **[normalImageGuid](mw.Button.md#normalimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置正常图片ID|
+| 获取普通图片ID|
 | **[normalImageMargin](mw.Button.md#normalimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置普通图片边距|
+| 获取普通图片边距|
 | **[normalImageSize](mw.Button.md#normalimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置图片大小|
+| 获取图片大小|
 | **[onClicked](mw.Button.md#onclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 点击事件|
 | **[onHovered](mw.Button.md#onhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
@@ -53,21 +53,21 @@
 | **[onUnhovered](mw.Button.md#onunhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 未悬浮事件|
 | **[pressedImageColor](mw.Button.md#pressedimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置按压图片颜色|
+| 获取按压图片颜色|
 | **[pressedImageDrawType](mw.Button.md#pressedimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置按压图片绘制类型|
+| 获取按压图片绘制类型|
 | **[pressedImageGuid](mw.Button.md#pressedimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置按下图片ID|
+| 获取按下图片ID|
 | **[pressedImageMargin](mw.Button.md#pressedimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置按压图片边距|
+| 获取按压图片边距|
 | **[pressedImageSize](mw.Button.md#pressedimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置按压图片大小|
+| 获取按压图片大小|
 | **[pressedMethod](mw.Button.md#pressedmethod)**(`inPressedMethod`: [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置按压模式|
 | **[touchMethod](mw.Button.md#touchmethod)**(`inTouchMethod`: [`ButtonTouchMethod`](../enums/mw.ButtonTouchMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置触摸模式|
 | **[transitionEnable](mw.Button.md#transitionenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 是否套用不同的按下方案|
+| 按钮是否启用过度模式,按下是否有效果|
 
 ### Methods <Score text="Methods" /> 
 | **[isPressed](mw.Button.md#ispressed)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -92,10 +92,10 @@
 | **[setPressedImageColorDecimal](mw.Button.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按下颜色指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />  |
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建Button控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addChild](mw.PanelWidget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|

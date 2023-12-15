@@ -208,9 +208,9 @@ export default class RouteExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
+        let player = Player.localPlayer;
         RouteService.addJumpGameCallback((id: string, data: string) => {
-            player.character.characterName = "JumpGame :" + data + "from " + id;
+            player.character.displayName = "JumpGame :" + data + "from " + id;
         })
     }
 }
@@ -433,8 +433,8 @@ export default class RouteExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
-        player.character.characterName = "gameId:" + RouteService.getGameId();
+        let player = Player.localPlayer;
+        player.character.displayName = "gameId:" + RouteService.getGameId();
     }
 }
 ```
@@ -472,8 +472,8 @@ export default class RouteExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
-        player.character.characterName = "游戏版本:" + RouteService.getGameVersion();
+        let player = Player.localPlayer;
+        player.character.displayName = "游戏版本:" + RouteService.getGameVersion();
     }
 }
 ```
@@ -524,8 +524,8 @@ export default class RouteExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
-        player.character.characterName = "短游戏ID:" + RouteService.getMGSGameId();
+        let player = Player.localPlayer;
+        player.character.displayName = "短游戏ID:" + RouteService.getMGSGameId();
     }
 }
 ```

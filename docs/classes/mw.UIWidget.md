@@ -66,7 +66,7 @@ export default class NewScript extends Script {
 ### Properties <Score text="Properties" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
@@ -77,34 +77,34 @@ export default class NewScript extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[distanceScaleFactor](mw.UIWidget.md#distancescalefactor)**(): `number`  |
 | :-----|
-| 设置缩放距离系数|
+| 获取缩放距离系数|
 | **[drawSize](mw.UIWidget.md#drawsize)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置实际渲染大小|
+| 获取实际渲染大小|
 | **[extraParam](mw.UIWidget.md#extraparam)**(): `string`  |
-| 设置扩展参数|
+| 获取扩展参数|
 | **[headUIMaxVisibleDistance](mw.UIWidget.md#headuimaxvisibledistance)**(): `number`  |
-| 设置最大头顶UI可见距离|
+| 获取最大头顶UI可见距离|
 | **[hideByDistanceEnable](mw.UIWidget.md#hidebydistanceenable)**(): `boolean`  |
-| 设置是否启用最大可见距离|
+| 获取是否启用最大可见距离|
 | **[interaction](mw.UIWidget.md#interaction)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置世界UI交互状态|
+| 获取世界UI交互状态|
 | **[isEnemy](mw.UIWidget.md#isenemy)**(): `boolean`  |
-| 设置是否作为敌方玩家，敌方玩家不显示头顶UI|
+| 获取是否作为敌方玩家，敌方玩家不显示头顶UI|
 | **[occlusionEnable](mw.UIWidget.md#occlusionenable)**(): `boolean`  |
-| 设置是否可被遮挡|
+| 获取是否可被遮挡|
 | **[pivot](mw.UIWidget.md#pivot)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置锚点位置|
+| 获取锚点位置|
 | **[scaledByDistanceEnable](mw.UIWidget.md#scaledbydistanceenable)**(): `boolean`  |
-| 设置是否开启近大远小|
+| 获取是否开启近大远小|
 | **[selfOcclusion](mw.UIWidget.md#selfocclusion)**(): `boolean`  |
-| 设置是否可被自己遮挡|
+| 获取是否可被自己遮挡|
 | **[translucentSortPriority](mw.UIWidget.md#translucentsortpriority)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
+| 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
 | **[widgetSpace](mw.UIWidget.md#widgetspace)**(): [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md)  |
-| 设置显示方式|
+| 获取显示方式|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
@@ -116,13 +116,13 @@ export default class NewScript extends Script {
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string`   |
-| 设置物体名称|
+| 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
-| 设置父物体|
+| 获取当前父物体|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
-| 设置当前物体的标签|
+| 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
@@ -140,7 +140,7 @@ export default class NewScript extends Script {
 | 通过GUID设置UI|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|

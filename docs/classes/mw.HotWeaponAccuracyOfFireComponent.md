@@ -52,24 +52,24 @@ export default class HotWeaponAofSample1 extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[defaultDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#defaultdispersionhalfangle)**(): `number`   |
 | :-----|
-| 设置子弹随机发散范围的默认半径。|
+| 获取子弹随机发散范围的默认半径。|
 | **[dispersionHalfAngleDecreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangledecreasespeed)**(): `number`   |
-| 设置子弹随机发散范围半径的收缩速度。|
+| 获取子弹随机发散范围半径的收缩速度。|
 | **[dispersionHalfAngleIncreasePerShot](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasepershot)**(): `number`   |
-| 设置子弹随机发散范围半径在每次射击后的扩张值。|
+| 获取子弹随机发散范围半径在每次射击后的扩张值。|
 | **[dispersionHalfAngleIncreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasespeed)**(): `number`   |
-| 设置子弹随机发散范围半径的扩张速度。|
+| 获取子弹随机发散范围半径的扩张速度。|
 | **[maxDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#maxdispersionhalfangle)**(): `number`   |
-| 设置子弹随机发散范围的最大半径。|
+| 获取子弹随机发散范围的最大半径。|
 | **[minDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#mindispersionhalfangle)**(): `number`   |
-| 设置子弹随机发散范围的最小半径。|
+| 获取子弹随机发散范围的最小半径。|
 
 ### Methods <Score text="Methods" /> 
 | **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number`   |
 | :-----|
 | 获取当前子弹随机发散范围半径实际值|
 | **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 以预设位置处生成子弹，需要以 预设位置 + 该矢量 + 最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向|
+| 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
 | **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number`   |
 | 设置目标子弹随机发散范围半径实际值|
 

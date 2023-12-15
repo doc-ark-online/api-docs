@@ -59,6 +59,8 @@ export default class ScreenExample extends Script {
     private onTouchBegin(index: number, location: Vector2): mw.GameObject{
        return ScreenUtil.getGameObjectByScreenPosition(location.x, location.y)[0].gameObject;
     }
+}
+```
 
 ___
 
@@ -77,7 +79,7 @@ ___
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置
 </span>
 
-```
+```ts
 @Component
 export default class ScreenExample extends Script {
     touch: TouchInput;

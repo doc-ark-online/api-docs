@@ -15,138 +15,138 @@
 ### Accessors <Score text="Accessors" /> 
 | **[circleCenter](mw.MaskButton.md#circlecenter)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置圆形遮罩的中心旋转点|
+| 获取圆形遮罩的中心旋转点|
 | **[circleValue](mw.MaskButton.md#circlevalue)**(): `number` <Badge type="tip" text="client" />  |
-| 设置圆形遮罩的遮挡百分值|
+| 获取圆形遮罩的遮挡百分值|
 | **[clickMethod](mw.MaskButton.md#clickmethod)**(): [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md) <Badge type="tip" text="client" />  |
-| 设置点击模式|
+| 获取点击模式|
 | **[clickedDelegate](mw.MaskButton.md#clickeddelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 点击事件|
 | **[disableImageColor](mw.MaskButton.md#disableimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片颜色|
+| 获取禁用图片颜色|
 | **[disableImageDrawType](mw.MaskButton.md#disableimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片绘制类型|
+| 获取禁用图片绘制类型|
 | **[disableImageGuid](mw.MaskButton.md#disableimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置不可用图片ID|
+| 获取禁用图片ID|
 | **[disableImageMargin](mw.MaskButton.md#disableimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片边距|
+| 获取禁用图片边距|
 | **[disableImageSize](mw.MaskButton.md#disableimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置禁用图片大小|
+| 获取禁用图片大小|
 | **[enableTransition](mw.MaskButton.md#enabletransition)**(`inBoolean`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 是否套用不同的按下方案|
 | **[fanShapedRotated](mw.MaskButton.md#fanshapedrotated)**(): `number` <Badge type="tip" text="client" />  |
-| 设置扇形遮罩的旋转|
+| 获取扇形遮罩的旋转|
 | **[fanShapedRotatedCenter](mw.MaskButton.md#fanshapedrotatedcenter)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置扇形遮罩的中心旋转点|
+| 获取扇形遮罩的中心旋转点|
 | **[fanShapedValue](mw.MaskButton.md#fanshapedvalue)**(): `number` <Badge type="tip" text="client" />  |
-| 设置扇形遮罩的遮罩进度|
+| 获取扇形遮罩的遮罩进度|
 | **[focusable](mw.MaskButton.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否获取输入焦点|
+| 获取是否获取输入焦点|
 | **[hoveredDelegate](mw.MaskButton.md#hovereddelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 悬浮事件|
 | **[inverseOpacity](mw.MaskButton.md#inverseopacity)**(): `boolean` <Badge type="tip" text="client" />  |
-| 反转透明度权重|
+| 获取反转透明度权重|
 | **[isTransitionEnable](mw.MaskButton.md#istransitionenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 按钮是否启用过度模式,按下是否有效果|
 | **[maskImageColor](mw.MaskButton.md#maskimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置遮罩图片颜色|
+| 获取遮罩图片颜色|
 | **[maskImageGuid](mw.MaskButton.md#maskimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置遮罩图片ID|
+| 获取设置遮罩图片ID|
 | **[maskOpacity](mw.MaskButton.md#maskopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置遮挡处的底图的透明度|
+| 获取遮挡处的底图的透明度|
 | **[maskTextureOpacity](mw.MaskButton.md#masktextureopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置遮挡处的遮挡图的透明度|
+| 获取遮挡处的遮挡图的透明度|
 | **[maskType](mw.MaskButton.md#masktype)**(): [`MaskButtonType`](../enums/mw.MaskButtonType.md) <Badge type="tip" text="client" />  |
-| 设置遮罩裁剪类型|
+| 获取遮罩裁剪类型|
 | **[normalImageColor](mw.MaskButton.md#normalimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置普通图片颜色|
+| 获取普通图片颜色|
 | **[normalImageDrawType](mw.MaskButton.md#normalimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置普通图片绘制类型|
+| 获取普通图片绘制类型|
 | **[normalImageGuid](mw.MaskButton.md#normalimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置普通图片ID|
+| 获取普通图片ID|
 | **[normalImageMargin](mw.MaskButton.md#normalimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置普通图片边距|
+| 获取普通图片边距|
 | **[normalImageSize](mw.MaskButton.md#normalimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置图片大小|
+| 获取图片大小|
 | **[pressedDelegate](mw.MaskButton.md#presseddelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 按下事件|
 | **[pressedImageColor](mw.MaskButton.md#pressedimagecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
-| 设置按压图片颜色|
+| 获取按压图片颜色|
 | **[pressedImageDrawType](mw.MaskButton.md#pressedimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />  |
-| 设置按压图片绘制类型|
+| 获取按压图片绘制类型|
 | **[pressedImageGuid](mw.MaskButton.md#pressedimageguid)**(): `string` <Badge type="tip" text="client" />  |
-| 设置按下图片ID|
+| 获取按下图片ID|
 | **[pressedImageMargin](mw.MaskButton.md#pressedimagemargin)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置按压图片边距|
+| 获取按压图片边距|
 | **[pressedImageSize](mw.MaskButton.md#pressedimagesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置按压图片大小|
+| 获取按压图片大小|
 | **[pressedMethod](mw.MaskButton.md#pressedmethod)**(): [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md) <Badge type="tip" text="client" />  |
-| 设置按压模式|
+| 获取按压模式|
 | **[releasedDelegate](mw.MaskButton.md#releaseddelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 释放事件|
 | **[roundBoxPercentOffset](mw.MaskButton.md#roundboxpercentoffset)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置矩形大小边距偏移|
+| 获取矩形百分比大小边距偏移|
 | **[roundBoxRadius](mw.MaskButton.md#roundboxradius)**(): `number`  |
-| 设置角半径|
+| 获取设置的角半径|
 | **[roundBoxSharpness](mw.MaskButton.md#roundboxsharpness)**(): `number`  |
-| 设置的圆角锐化度|
+| 获取设置的圆角锐化度|
 | **[roundBoxUVRatio](mw.MaskButton.md#roundboxuvratio)**(): `number`  |
-| 设置圆角调节大小|
+| 获取圆角调节大小|
 | **[touchMethod](mw.MaskButton.md#touchmethod)**(): [`ButtonTouchMethod`](../enums/mw.ButtonTouchMethod.md) <Badge type="tip" text="client" />  |
-| 设置触摸模式|
+| 获取触摸模式|
 | **[unHoveredDelegate](mw.MaskButton.md#unhovereddelegate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 未悬浮事件|
 | **[useMaskTextureOpacity](mw.MaskButton.md#usemasktextureopacity)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置遮罩轮廓是否裁剪底图|
+| 获取遮罩轮廓是否裁剪底图|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
+| 获取是否自动设置大小|
 | **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
 | **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的布局|
+| 获取控件的布局|
 | **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
 | **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置可用性|
+| 是否可用|
 | **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
-| 设定名字|
+| 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的位置|
+| 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染透明度 0 ~ 1|
+| 获取渲染透明度|
 | **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染缩放|
+| 获取渲染缩放|
 | **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染错切形变|
+| 获取渲染错切形变|
 | **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
-| 设置渲染的角度|
+| 获取渲染的角度|
 | **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置渲染锚点|
+| 获取渲染锚点|
 | **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 设置控件的大小|
+| 获取大小|
 | **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
-| 设置控件的大小和位置|
+| 得到控件的大小和位置|
 | **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
-| 设置可见性|
+| 获取可见性|
 | **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
 | **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
-| 设置zoder|
+| 获取zorder|
 :::
 
 
@@ -171,10 +171,10 @@
 | **[setPressedImageColorDecimal](mw.MaskButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](mw.MaskButton.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`MaskButton`](mw.MaskButton.md) <Badge type="tip" text="client" />  |
-| 当 parent 和 InName 与已有的对象相同时，旧的对象会被销毁|
+| 创建 Mask 控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|

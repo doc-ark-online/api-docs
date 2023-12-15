@@ -19,29 +19,29 @@
 ### Accessors <Score text="Accessors" /> 
 | **[autoLayoutContainerRule](mw.Canvas.md#autolayoutcontainerrule)**(): [`UILayoutType`](../enums/mw.UILayoutType.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置自动布局排版规则-容器类型|
+| 获取自动布局排版规则-容器类型|
 | **[autoLayoutEnable](mw.Canvas.md#autolayoutenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否自动布局|
+| 获取是否时自动布局|
 | **[autoLayoutHugContent](mw.Canvas.md#autolayouthugcontent)**(): [`UIHugContent`](mw.UIHugContent.md) <Badge type="tip" text="client" />  |
-| 设置宽高随内容大小还是固定大小|
+| 获取宽高随内容大小还是固定大小|
 | **[autoLayoutPacketRule](mw.Canvas.md#autolayoutpacketrule)**(): [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) <Badge type="tip" text="client" />  |
-| 设置自动布局排版规则-排列规则|
+| 获取自动布局排版规则-排列规则|
 | **[autoLayoutPadding](mw.Canvas.md#autolayoutpadding)**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />  |
-| 设置边缘间距|
+| 获取边缘间距|
 | **[autoLayoutRule](mw.Canvas.md#autolayoutrule)**(): [`UILayout`](mw.UILayout.md) <Badge type="tip" text="client" />  |
-| 设置完整的布局规则|
+| 获取完整的布局规则|
 | **[autoLayoutSpacing](mw.Canvas.md#autolayoutspacing)**(): `number` <Badge type="tip" text="client" />  |
-| 设置自动布局间隔|
+| 获取自动布局间隔|
 | **[clipEnable](mw.Canvas.md#clipenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 设置是否裁剪|
+| 获取是否裁剪|
 
 ### Methods <Score text="Methods" /> 
 | **[newObject](mw.Canvas.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| 创建Canvas控件|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
 | **[addChild](mw.PanelWidget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
