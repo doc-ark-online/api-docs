@@ -11,7 +11,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   // },
   {
     text: '口袋方舟指引',
-    collapsed: false,
+    collapsed: true,
     collapsible: true,
     items: [
       { text: '介绍', link: '/index.md' },
