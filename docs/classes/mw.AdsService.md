@@ -121,7 +121,7 @@ ___
 
 • `Static` **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
-展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
+展示广告
 
 #### Parameters
 
