@@ -905,32 +905,18 @@ ___
 
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下:
+使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,代码如下:
 </span>
 
 ```ts
 @Component
-export default class Example_Player_GetPlayer extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
+export default class NewScript extends Script {
+
+    /** 当脚本被实例后，会在第一帧更新前调用此函数 */
     protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 添加一个按键方法：按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字
-            InputUtil.onKeyDown(Keys.One, () => {
-                // 获取当前客户端的玩家(自己)并打印userId和playerId
-                let myself = Player.localPlayer;
-                console.log("My userId: " + myself.userId);
-                console.log("My playerId: " + myself.playerId);
-                // 通过userId获取玩家(自己)并打印userId和playerId
-                let myself_2 = Player.getPlayer(myself.userId);
-                console.log("myself_2 userId: " + myself_2.userId);
-                console.log("myself_2 playerId: " + myself_2.playerId);
-                // 通过playerId获取玩家(自己)并打印userId和playerId
-                let myself_3 = Player.getPlayer(myself.playerId);
-                console.log("myself_3 userId: " + myself_3.userId);
-                console.log("myself_3 playerId: " + myself_3.playerId);
-            });
-        }
+        Player.asyncGetPlayer(Player.localPlayer.playerId).then((player)=>{
+            console.log(player.playerId);    
+        });
     }
 }
 ```
