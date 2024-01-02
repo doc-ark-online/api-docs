@@ -667,7 +667,7 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
-当前旋转量减去一个旋转量
+当前旋转量乘以一个旋转量
 
 
 ::: warning Precautions
