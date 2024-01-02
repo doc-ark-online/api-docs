@@ -774,6 +774,20 @@ ___
 | `T` | extends [`Script`](mw.Script.md)<`T`\> |
 | :------ | :------ |
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为"NewScript1"的脚本，通过 getComponent 获取 NewScript 脚本，代码如下：
+</span>
+
+```ts
+import NewScript from "./NewScript";
+@Component
+export default class NewScript1 extends Script {
+
+    protected onStart(): void {
+        const script = this.gameObject.getComponent(NewScript);
+    }
+}
+```
 ___
 
 ### getComponentPropertys <Score text="getComponentPropertys" /> 
