@@ -61,9 +61,9 @@
 ### Methods <Score text="Methods" /> 
 | **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 生命周期-被添加到父节点时候触发，可能会多次调用|
+| 生命周期方法 - 被添加到父节点时候触发，可能会多次调用|
 | **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
-| 生命周期方法-构建面板自动触发，只会调用一次|
+| 生命周期方法 - 构建面板自动触发，只会调用一次|
 :::
 
 
@@ -87,10 +87,10 @@
 
 #### Parameters
 
-| `fieldId` `number` |  字段ID |
+| `fieldId` `number` |  字段 ID<br> range: 依据 ID 长度而定<br> type: |
 | :------ | :------ |
-| `fieldName` `string` |  字段的标题 |
-| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null |
+| `fieldName` `string` |  字段的标题<br> range: |
+| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分)  <br> default:  null<br> range:不做限制 |
 
 #### Returns
 
@@ -135,11 +135,11 @@ ___
 
 #### Parameters
 
-| `rankIndex` `number` |  名次索引(0开始) |
+| `rankIndex` `number` |  名次索引(0开始)<br> range: 合理即可，不做限制<br> type: 整数 |
 | :------ | :------ |
-| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string`  `number` |  字段显示内容 |
-| `textBlockIndex` `number` |  文本控件索引 |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull)<br> range: 合理即可，不做限制<br> type: 整数 |
+| `fieldValue` `string`  `number` |  字段显示内容<br> range: 合理即可，不做限制<br> type: 整数 |
+| `textBlockIndex` `number` |  文本控件索引<br> range: 合理即可，不做限制<br> type: 整数 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 
 
@@ -209,11 +209,11 @@ ___
 
 #### Parameters
 
-| `title` `string` |  UI标题 |
+| `title` `string` |  UI 标题<br> range: UI 标题信息 |
 | :------ | :------ |
 | `fieldsAutoLayout` `boolean` |  字段是否自动布局(true-均匀分布, false-所摆即所得） |
-| `showPlayerNum` `number` |  最多显示的玩家数量 |
-| `itemSpacing` `number` |  每条数据的间距 |
+| `showPlayerNum` `number` |  最多显示的玩家数量<br> range:合理即可<br> type: 整数 |
+| `itemSpacing` `number` |  每条数据的间距<br> range:合理即可<br> type: 整数 |
 
 #### Returns
 
@@ -230,10 +230,10 @@ ___
 
 #### Parameters
 
-| `fieldName` `string` |  字段标题 |
+| `fieldName` `string` |  字段标题<br> range: 依据 ID 长度而定<br> type: |
 | :------ | :------ |
-| `valueStyle?` `string` |  字段值样式 default: null |
-| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null |
+| `valueStyle?` `string` |  字段值样式  <br> default:  null<br> range:不做限制 |
+| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null)  <br> default:  null<br> range:不做限制 |
 
 #### Returns
 

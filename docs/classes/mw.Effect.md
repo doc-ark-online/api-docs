@@ -26,7 +26,7 @@ export default class EffectExample extends Script {
     }
 
     @RemoteFunction(Client)
-    public async createEffect(): Promise<void> {
+    public async createEffect(): `Promise`<`void`\> {
         const success = await mw.AssetUtil.asyncDownloadAsset(this.effect.assetID);
             if (success) {
                 // 下载完毕创建特效
@@ -131,7 +131,7 @@ export default class EffectExample extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -149,7 +149,7 @@ export default class EffectExample extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -157,25 +157,27 @@ export default class EffectExample extends Script {
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| 获取所有子对象包围盒中心点 (不包含父对象,父对象不可用返回 [0,0,0] )|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -341,7 +343,7 @@ ___
 
 #### Parameters
 
-| `onSuccess?` () => `void` | 特效播放完成后回调 default: null |
+| `onSuccess?` () => `void` | 特效播放完成后回调  <br> default:  null |
 | :------ | :------ |
 
 
@@ -355,7 +357,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 想要设置的颜色参数名字长度 |
 | :------ | :------ |
 | `value` [`LinearColor`](mw.LinearColor.md) | 颜色变量 |
 
@@ -370,7 +372,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 想要设置的颜色参数名字长度 |
 | :------ | :------ |
 | `maxValue` [`LinearColor`](mw.LinearColor.md) | 颜色变量最大值 |
 | `minValue` [`LinearColor`](mw.LinearColor.md) | 颜色变量最小值 |
@@ -386,7 +388,7 @@ ___
 
 #### Parameters
 
-| `inCullDistance` `number` | 裁剪距离 |
+| `inCullDistance` `number` | 裁剪距离<br> range: 建议 (2000, 4000)<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -406,9 +408,9 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 想要设置的特效标量参数名字长度 |
 | :------ | :------ |
-| `value` `number` | 标量值 |
+| `value` `number` | 标量值<br> range: 不做限制<br> type: 浮点数 |
 
 
 ___
@@ -421,10 +423,10 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 想要设置的特效标量参数名字长度 |
 | :------ | :------ |
-| `maxValue` `number` | 标量最大值 |
-| `minValue` `number` | 标量最小值 |
+| `maxValue` `number` | 标量最大值<br> range: 不做限制<br> type: 浮点数 |
+| `minValue` `number` | 标量最小值<br> range: 不做限制<br> type: 浮点数 |
 
 
 ___
@@ -437,7 +439,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 想要设置的特效标量参数名字长度 |
 | :------ | :------ |
 | `value` [`Vector`](mw.Vector.md) | 向量值 |
 
@@ -452,7 +454,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 合理即可<br> range: 想要设置的特效标量参数名字长度 |
 | :------ | :------ |
 | `maxValue` [`Vector`](mw.Vector.md) | 向量最大值 |
 | `minValue` [`Vector`](mw.Vector.md) | 向量最小值 |

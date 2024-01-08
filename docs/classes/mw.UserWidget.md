@@ -202,7 +202,7 @@ ___
 
 #### Parameters
 
-| `zOrder` `number` | 添加到屏幕的层级关系 |
+| `zOrder` `number` | 添加到屏幕的层级关系<br> range:不做限制<br> type:整数 |
 | :------ | :------ |
 
 
@@ -267,7 +267,7 @@ ___
 
 #### Parameters
 
-| `inPath` `string` | 路径 |
+| `inPath` `string` | 路径<br> range: |
 | :------ | :------ |
 
 #### Returns
@@ -294,7 +294,7 @@ ___
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Outer对象 default:null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Outer对象  <br> default: null |
 | :------ | :------ |
 
 #### Returns

@@ -19,10 +19,10 @@
 
 #### Parameters
 
-| `NormalGUID` `string` | 普通资源 |
+| `NormalGUID` `string` | 普通资源<br> range:字符串长度依据 ID 长度而定 |
 | :------ | :------ |
-| `TouchGUID` `string` | 按压资源 |
-| `DisableGUID` `string` | 禁用资源 |
+| `TouchGUID` `string` | 按压资源<br> range:字符串长度依据 ID 长度而定 |
+| `DisableGUID` `string` | 禁用资源<br> range:字符串长度依据 ID 长度而定 |
 
 ## Properties
 

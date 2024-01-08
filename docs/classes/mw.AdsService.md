@@ -24,7 +24,7 @@
 | **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 广告是否准备好|
 | **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
+| 展示广告|
 
 ## Accessors
 
@@ -117,7 +117,7 @@ ___
 
 • `Static` **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
-展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
+展示广告
 
 #### Parameters
 
@@ -139,13 +139,13 @@ export default class AdsExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         this.playAd(AdsType.Reward);
     }
 
     //播放广告
-    private async playAd(type: AdsType): Promise<void> {
+    private async playAd(type: AdsType): `Promise`<`void`\> {
         let player = await mw.Player.localPlayer;
         if (!AdsService.isActive(type)) {
             player.character.name = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";

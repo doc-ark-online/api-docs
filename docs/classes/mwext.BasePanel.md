@@ -6,7 +6,7 @@
 
 ::: warning Precautions
 
-注意：如子类重写onAwake，onAdded方法，请调用super的对应方法
+注意：如子类重写 onAwake，onAdded 方法，请调用 super 的对应方法
 
 :::
 
@@ -48,9 +48,9 @@
 ### Methods <Score text="Methods" /> 
 | **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 生命周期-被添加到父节点时候触发，可能会多次调用|
+| 生命周期方法 - 被添加到父节点时候触发，可能会多次调用|
 | **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
-| 生命周期方法-构建面板自动触发，只会调用一次|
+| 生命周期方法 - 构建面板自动触发，只会调用一次|
 
 
 ::: details click
@@ -170,7 +170,7 @@ ___
 
 • `Protected` **onAdded**(): `void` <Badge type="tip" text="client" />
 
-生命周期-被添加到父节点时候触发，可能会多次调用
+生命周期方法 - 被添加到父节点时候触发，可能会多次调用
 
 
 ___
@@ -179,5 +179,5 @@ ___
 
 • `Protected` **onAwake**(): `void` <Badge type="tip" text="client" />
 
-生命周期方法-构建面板自动触发，只会调用一次
+生命周期方法 - 构建面板自动触发，只会调用一次
 

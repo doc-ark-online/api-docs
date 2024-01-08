@@ -169,7 +169,7 @@
 
 | `fn` `Function` |  方法 |
 | :------ | :------ |
-| `thisArg?` `any` |  域，以下示例可以为您解释域的概念 default: undefined |
+| `thisArg?` `any` |  域，以下示例可以为您解释域的概念  <br> default:  undefined |
 
 #### Returns
 
@@ -358,5 +358,5 @@ ___
 
 | `fn` `number`  `Function` |  方法监听唯一标识 |
 | :------ | :------ |
-| `thisArg?` `any` |  域 default: undefined |
+| `thisArg?` `any` |  域  <br> default:  undefined |
 

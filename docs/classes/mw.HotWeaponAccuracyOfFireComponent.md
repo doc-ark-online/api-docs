@@ -124,7 +124,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径值 <br> default: <br> range: |
+| `NewValue` `number` |  新设置的圆型范围半径值  <br> default:   <br> range:<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -176,7 +176,7 @@ ___
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径每秒变化量 default: |
+| `NewValue` `number` |  新设置的圆型范围半径每秒变化量  <br> default:  |
 | :------ | :------ |
 
 
@@ -228,7 +228,7 @@ ___
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径增量 default: |
+| `NewValue` `number` |  新设置的圆型范围半径增量  <br> default:  |
 | :------ | :------ |
 
 
@@ -280,7 +280,7 @@ ___
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径每秒变化量 default: |
+| `NewValue` `number` |  新设置的圆型范围半径每秒变化量  <br> default:  |
 | :------ | :------ |
 
 
@@ -332,7 +332,7 @@ ___
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径值 default: |
+| `NewValue` `number` |  新设置的圆型范围半径值  <br> default:  |
 | :------ | :------ |
 
 
@@ -384,7 +384,7 @@ ___
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径值 default: |
+| `NewValue` `number` |  新设置的圆型范围半径值  <br> default:  |
 | :------ | :------ |
 
 </td>
@@ -416,7 +416,7 @@ ___
 
 #### Parameters
 
-| `shootDir` [`Vector`](mw.Vector.md) |  未发生偏移的最初子弹飞行方向 default: |
+| `shootDir` [`Vector`](mw.Vector.md) |  未发生偏移的最初子弹飞行方向  <br> default:  |
 | :------ | :------ |
 
 #### Returns

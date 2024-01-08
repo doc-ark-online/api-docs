@@ -77,6 +77,7 @@ Enums
 ## H
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [HideInEditorState](enums/mw.HideInEditorState.md) | 是否在编辑器里隐藏 | [基础类型](groups/基础类型.基础类型.md) |
 | [HotWeaponAimMode](enums/mw.HotWeaponAimMode.md) | 热武器瞄准模式 | [玩法](groups/玩法.玩法.md) |
 | [HotWeaponFireMode](enums/mw.HotWeaponFireMode.md) | 热武器开火模式 | [玩法](groups/玩法.玩法.md) |
 | [HotWeaponState](enums/mw.HotWeaponState.md) | 热武器状态 | [玩法](groups/玩法.玩法.md) |

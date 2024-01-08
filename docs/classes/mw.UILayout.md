@@ -29,7 +29,7 @@
 
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔<br> range:不做限制<br> type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
@@ -44,7 +44,7 @@
 
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔<br> range:不做限制<br> type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |

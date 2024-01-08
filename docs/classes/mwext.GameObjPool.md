@@ -2,7 +2,7 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
+用于缓存 GameObject 的对象池，适用资源库资源、场景对象、预制体的复用缓存
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
@@ -66,9 +66,9 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID<br> range: 依据资源 ID 长度而定 |
 | :------ | :------ |
-| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型  <br> default:  资源库中的资源 |
 
 #### Returns
 
@@ -122,9 +122,9 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID<br> range: 依据资源 ID 长度而定 |
 | :------ | :------ |
-| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型  <br> default:  资源库中的资源 |
 
 
 <span style="font-size: 14px;">
@@ -236,7 +236,7 @@ ___
 
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+使用示例:创建一个名为 GameObjPoolExample 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 </span>
 
 ```ts
@@ -271,9 +271,9 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID<br> range: 依据资源 ID 长度而定 |
 | :------ | :------ |
-| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型  <br> default:  资源库中的资源 |
 
 #### Returns
 

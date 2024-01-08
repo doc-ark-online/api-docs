@@ -78,7 +78,7 @@
 | :------ | :------ |
 | `selectCallBack` (`index`: `number`) => `void` | 选择标签的回调方法 |
 | `thisArg` `any` | 域 |
-| `defaultIndex?` `number` | 默认选择的标签索引 default:0 |
+| `defaultIndex?` `number` | 默认选择的标签索引  <br> default: 0<br> range:<br> type:整数 |
 
 
 ___
@@ -91,9 +91,9 @@ ___
 
 #### Parameters
 
-| `index` `number` | 标签索引 |
+| `index` `number` | 标签索引<br> range:不做限制<br> type:整数 |
 | :------ | :------ |
-| `ignoreSame?` `boolean` | 是否忽略相同索引 default:true |
+| `ignoreSame?` `boolean` | 是否忽略相同索引  <br> default: true |
 
 #### Returns
 

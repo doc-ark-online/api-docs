@@ -11,7 +11,7 @@
 ```ts
  @Component
 export default class InteractorSample extends Script {
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {
@@ -109,7 +109,7 @@ export default class InteractorSample extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -127,7 +127,7 @@ export default class InteractorSample extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -135,25 +135,27 @@ export default class InteractorSample extends Script {
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| 获取所有子对象包围盒中心点 (不包含父对象,父对象不可用返回 [0,0,0] )|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -330,8 +332,8 @@ ___
 
 | `character` [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
 | :------ | :------ |
-| `slot?` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  交互插槽，不传默认以属性 slot 为准 default: 属性 slot |
-| `animationId?` `string` |  交互姿态，不传默认以属性 animationId 为准 default: 属性 animationId |
+| `slot?` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  交互插槽，不传默认以属性 slot 为准  <br> default:  属性 slot |
+| `animationId?` `string` |  交互姿态，不传默认以属性 animationId 为准  <br> default:  属性 animationId<br> range: 依据动画资源 ID 决定字符串长度 |
 
 #### Returns
 
@@ -345,7 +347,7 @@ ___
 ```ts
 @Component
 export default class InteractorStartEndSample extends Script {
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {
@@ -388,7 +390,7 @@ ___
 ```ts
 @Component
 export default class InteractorGetInteractCharacterSample extends Script {
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {
@@ -409,10 +411,10 @@ ___
 
 #### Parameters
 
-| `position?` [`Vector`](mw.Vector.md) |  结束位置 default: 玩家开始交互前的坐标为准 |
+| `position?` [`Vector`](mw.Vector.md) |  结束位置  <br> default:  玩家开始交互前的坐标为准 |
 | :------ | :------ |
-| `rotation?` [`Rotation`](mw.Rotation.md) |  结束旋转量 default: 玩家开始交互前的旋转为准，如果玩家开始前的姿态是倾斜的，内部不会纠正 |
-| `animationId?` `string` |  新姿态，default: 玩家开始交互前的姿态（动画会转姿态） |
+| `rotation?` [`Rotation`](mw.Rotation.md) |  结束旋转量  <br> default:  玩家开始交互前的旋转为准，如果玩家开始前的姿态是倾斜的，内部不会纠正 |
+| `animationId?` `string` |  新姿态， <br> default:  玩家开始交互前的姿态（动画会转姿态）<br> range: 依据动画资源 ID 决定字符串长度 |
 
 #### Returns
 

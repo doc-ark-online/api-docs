@@ -25,7 +25,7 @@
 
 #### Parameters
 
-| `textkey` `string` | 需要查找的翻译的key |
+| `textkey` `string` | 需要查找的翻译的 key<br> range: 不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -43,7 +43,7 @@ ___
 
 #### Parameters
 
-| `textkey` `string` | 用户多语言配置表收集的Key |
+| `textkey` `string` | 用户多语言配置表收集的 Key<br> range: 不做限制 |
 | :------ | :------ |
 
 #### Returns

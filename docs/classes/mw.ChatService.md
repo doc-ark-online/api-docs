@@ -33,7 +33,6 @@
 | 一键打开所有玩家的语音。|
 | **[asyncUnmutePlayer](mw.ChatService.md#asyncunmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 打开指定玩家的语音。|
-| **[sendAudio](mw.ChatService.md#sendaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `openAudio`: `boolean`, `openId`: `string`): `void` |
 
 ## Accessors
 
@@ -103,7 +102,7 @@ note: 开启语音功能，接口才可生效
 
 #### Parameters
 
-| `voice` | `boolean` |
+| `voice` `boolean` |  开启或者关闭  <br> default: true |
 | :------ | :------ |
 
 
@@ -126,14 +125,14 @@ note: 开启语音功能，接口才可生效
 
 | `type` [`MessageType`](../enums/mw.MessageType.md) | 发送消息类型 |
 | :------ | :------ |
-| `content` `string` | 消息内容 |
+| `content` `string` | 消息内容<br> range:小于 1200 个字符串长度 |
 
 #### Returns
 
 | `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> | 发送消息的结果 |
 | :------ | :------ |
 
-限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
+限制每个消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
 
 note: 开启聊天框聊天功能，接口才可生效
 
@@ -151,7 +150,7 @@ note: 开启聊天框聊天功能，接口才可生效
 
      @mw.RemoteFunction(mw.Server)
      public Mgs(){
-         let type: mw.MessageType.Room;
+         let<br> type: mw.MessageType.Room;
          // content内容可以是富文本格式文字。
          // 富文本可使文本实现不同字号、不同颜色等多种效果。
          // <b>以粗体显示文本。eg:We are <b>not</b> amused. =>not字体为粗体
@@ -231,7 +230,7 @@ ___
 
 #### Parameters
 
-| `userId` | `string` |
+| `userId` `string` |  玩家的 userid  <br> default: null<br> range: 依据 userId 长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -294,7 +293,7 @@ ___
 
 #### Parameters
 
-| `content` `string` | 消息内容 |
+| `content` `string` | 消息内容<br> range:小于 128 个字符串长度 |
 | :------ | :------ |
 
 #### Returns
@@ -358,7 +357,7 @@ ___
 
 #### Parameters
 
-| `userId` | `string` |
+| `userId` `string` |  玩家的 userid  <br> default: null<br> range: 依据 userId 的长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -381,17 +380,3 @@ note: 开启语音功能，接口才可生效
      }
  }
 ```
-
-___
-
-### sendAudio <Score text="sendAudio" /> 
-
-• `Static` **sendAudio**(`resp`, `openAudio`, `openId`): `void`
-
-#### Parameters
-
-| `resp` | [`MGSResponse`](../modules/Core.mw.md#mgsresponse) |
-| :------ | :------ |
-| `openAudio` | `boolean` |
-| `openId` | `string` |
-

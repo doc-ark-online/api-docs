@@ -102,9 +102,9 @@ ___
 | `relatedObject` [`GameObject`](mw.GameObject.md) | 寻路作用对象 |
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) | 被跟随目标 |
-| `radius?` `number` | 距目标半径 default:0 |
-| `OnSuccess?` () => `void` | 成功回调 default:null |
-| `OnFail?` () => `void` | 失败回调 default:null |
+| `radius?` `number` | 距目标半径  <br> default: 0<br> range: 不做限制<br> type: 浮点型 |
+| `OnSuccess?` () => `void` | 成功回调  <br> default: null |
+| `OnFail?` () => `void` | 失败回调  <br> default: null |
 
 
 <span style="font-size: 14px;">
@@ -115,7 +115,7 @@ ___
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -166,9 +166,9 @@ ___
 | `relatedObject` [`GameObject`](mw.GameObject.md) | 寻路作用对象 |
 | :------ | :------ |
 | `position` [`Vector`](mw.Vector.md) | 目标位置 |
-| `radius?` `number` | 距目标半径 default:0 |
-| `OnSuccess?` () => `void` | 成功回调 default:null |
-| `OnFail?` () => `void` | 失败回调 default:null |
+| `radius?` `number` | 距目标半径  <br> default: 0<br> range: 不做限制<br> type: 浮点型 |
+| `OnSuccess?` () => `void` | 成功回调  <br> default: null |
+| `OnFail?` () => `void` | 失败回调  <br> default: null |
 
 
 <span style="font-size: 14px;">
@@ -179,7 +179,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): Promise<void> {
+      protected async onStart(): `Promise`<`void`\> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {
@@ -217,14 +217,14 @@ ___
 
 
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）。同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：
 </span>
 
 ```ts
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -284,7 +284,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): Promise<void> {
+      protected async onStart(): `Promise`<`void`\> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {

@@ -92,7 +92,7 @@ UI 控件中，可以挂载子控件的父类。
 | **[removeChild](mw.PanelWidget.md#removechild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | 移除节点,会销毁UI无法在使用|
 | **[removeChildAt](mw.PanelWidget.md#removechildat)**(`index`: `number`): `void` <Badge type="tip" text="client" />  |
-| 移除第几个节点,会销毁UI无法再使用|
+| 移除第几个节点，会销毁 UI 无法再使用|
 
 
 ::: details click
@@ -135,7 +135,7 @@ ___
 
 #### Parameters
 
-| `inPath` `string` | 查找路径 |
+| `inPath` `string` | 查找路径<br> range: |
 | :------ | :------ |
 
 #### Returns
@@ -153,7 +153,7 @@ ___
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标<br> range:不做限制<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -171,7 +171,7 @@ ___
 
 #### Parameters
 
-| `name` `string` | 名字 |
+| `name` `string` | 名字<br> range: 名字长度决定 |
 | :------ | :------ |
 
 #### Returns
@@ -226,10 +226,10 @@ ___
 
 • **removeChildAt**(`index`): `void` <Badge type="tip" text="client" />
 
-移除第几个节点,会销毁UI无法再使用
+移除第几个节点，会销毁 UI 无法再使用
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标<br> range:不做限制<br> type:整数 |
 | :------ | :------ |
 

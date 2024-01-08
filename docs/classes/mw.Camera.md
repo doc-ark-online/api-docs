@@ -38,7 +38,6 @@ Camera 对象如何工作？
 | 切换摄像机完成的回调|
 | **[springArm](mw.Camera.md#springarm)**: [`SpringArm`](mw.SpringArm.md) <Badge type="tip" text="client" />  |
 | 弹簧臂|
-| **[updateOccludeEnableStatus](mw.Camera.md#updateoccludeenablestatus)**: `any` |
 
 
 ::: details click
@@ -125,7 +124,7 @@ Camera 对象如何工作？
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -143,7 +142,7 @@ Camera 对象如何工作？
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -151,25 +150,27 @@ Camera 对象如何工作？
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| 获取所有子对象包围盒中心点 (不包含父对象,父对象不可用返回 [0,0,0] )|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -288,12 +289,6 @@ export default class Camera_SpringArm extends Script {
     }
 }
 ```
-
-___
-
-### updateOccludeEnableStatus <Score text="updateOccludeEnableStatus" /> 
-
-• `Private` **updateOccludeEnableStatus**: `any`
 
 ## Accessors
 
@@ -1745,7 +1740,7 @@ ___
 
 | `target` [`GameObject`](mw.GameObject.md) | 目标物体 |
 | :------ | :------ |
-| `val?` `Object` | lockInterval,lockSpeed,lockRange,lockDistance,lockOffset,bPause参数集合 default:null |
+| `val?` `Object` | lockInterval,lockSpeed,lockRange,lockDistance,lockOffset,bPause参数集合  <br> default: null |
 | `val.bPause?` `boolean` | - |
 | `val.lockDistance?` `number` | - |
 | `val.lockInterval?` `number` | - |
@@ -1950,7 +1945,7 @@ ___
 
 | `shakeInfo` [`CameraShakeInfo`](../interfaces/mw.CameraShakeInfo.md) |  抖动信息 |
 | :------ | :------ |
-| `duration?` `number` |  持续时间(秒) default: 1 |
+| `duration?` `number` |  持续时间(秒)  <br> default:  1<br> range: 不做限制<br> type: 浮点数 |
 
 
 <span style="font-size: 14px;">
@@ -2024,11 +2019,11 @@ ___
 
 #### Parameters
 
-| `newCamera` [`Camera`](mw.Camera.md) |  想要切换的目标摄像机对象,当传入的参数类型为Transform时会使用该Transform的位置跟旋转生成一个Camera再进行切换 |
+| `newCamera` [`Camera`](mw.Camera.md) |  想要切换的目标摄像机对象，当传入的参数类型为 Transform 时会使用该 Transform 的位置跟旋转生成一个 Camera 再进行切换。 |
 | :------ | :------ |
-| `blendTime?` `number` |  混合时间(秒) default: 0 |
-| `blendFunc?` [`CameraSwitchBlendFunction`](../enums/mw.CameraSwitchBlendFunction.md) |  切换时用到的混合函数 default: Linear |
-| `blendExp?` `number` |  混合额外变量,用于控制混合时的快慢程度,具体作用看枚举SwitchCameraBlendFunction default: 0 |
+| `blendTime?` `number` |  混合时间(秒)  <br> default:  0<br> range: 不做限制<br> type: 浮点数 |
+| `blendFunc?` [`CameraSwitchBlendFunction`](../enums/mw.CameraSwitchBlendFunction.md) |  切换时用到的混合函数  <br> default:  Linear |
+| `blendExp?` `number` |  混合额外变量，用于控制混合时的快慢程度，具体作用看枚举 SwitchCameraBlendFunction  <br> default:  0<br> range: 不做限制<br> type: 浮点数 |
 
 #### Returns
 

@@ -61,7 +61,7 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
 
@@ -83,14 +83,14 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 ```ts
  @Component
  export default class EventSample extends Script {
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
          if(SystemUtil.isClient()){
              Event.dispatchToServer("eventOne");
          }
-         // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
+         // 在服务器执行客户端发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
          if (SystemUtil.isServer()){
              Event.addClientListener("eventOne" ,()=>{console.log("ok")});
@@ -109,7 +109,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
@@ -124,7 +124,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 |
 
@@ -143,7 +143,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
@@ -158,7 +158,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
 
@@ -180,9 +180,9 @@ ___
 ```ts
 @Component
  export default class EventSample extends Script {
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
-         // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
+         // 在客户端执行服务器发来的 eventOne 事件,并在服务端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
          if(SystemUtil.isClient()){
              Event.addServerListener("eventOne",()=>{console.log("ok")});
@@ -208,9 +208,9 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
-| `data` `string` | 带的数据 |
+| `data` `string` | 携带的数据  <br> range: 长度不做限制。 |
 
 
 ___
@@ -223,9 +223,9 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
-| `data` `string` | 携带的数据 |
+| `data` `string` | 携带的数据  <br> range: 长度不做限制。 |
 
 
 ___
@@ -238,7 +238,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 
@@ -260,9 +260,9 @@ ___
 ```ts
 @Component
  export default class EventSample extends Script {
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
-         // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
+         // 在客户端执行服务器发来的 eventOne 事件,并在服务端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
          if(SystemUtil.isClient()){
              Event.addServerListener("eventOne",()=>{console.log("ok")});
@@ -290,7 +290,7 @@ ___
 
 | `player` [`Player`](mw.Player.md) | 客户端 |
 | :------ | :------ |
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | `...params` `unknown`[] | 可变长参数 |
 
 #### Returns
@@ -314,7 +314,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，与添加事件名配对。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 事件内容 |
 
@@ -333,7 +333,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名  <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 
@@ -355,14 +355,14 @@ ___
 ```ts
  @Component
  export default class EventSample extends Script {
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
          if(SystemUtil.isClient()){
              Event.dispatchToServer("eventOne");
          }
-         // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
+         // 在服务器执行客户端发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
          if (SystemUtil.isServer()){
              Event.addClientListener("eventOne" ,()=>{console.log("ok")});

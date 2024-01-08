@@ -59,7 +59,7 @@
 | **[removeChild](mw.PanelWidget.md#removechild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | 移除节点,会销毁UI无法在使用|
 | **[removeChildAt](mw.PanelWidget.md#removechildat)**(`index`: `number`): `void` <Badge type="tip" text="client" />  |
-| 移除第几个节点,会销毁UI无法再使用|
+| 移除第几个节点，会销毁 UI 无法再使用|
 :::
 
 
@@ -443,9 +443,9 @@ ___
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象  <br> default: null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称  <br> default: null<br> range:设置合理的名称即可 |
 
 #### Returns
 

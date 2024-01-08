@@ -44,24 +44,24 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | **[userId](mw.Player.md#userid)**(): `string`   |
 | 用户平台ID|
 | **[localPlayer](mw.Player.md#localplayer)**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />  |
-| LocalPlayer 是一个只读属性，指的是其客户端正在运行的玩家。|
+| 客户端正在运行的玩家。|
 
 ### Methods <Score text="Methods" /> 
 | **[control](mw.Player.md#control)**(`pawn`: [`Pawn`](mw.Pawn.md)): `boolean` <Badge type="tip" text="server" />  |
 | :-----|
-| 控制一个Pawn对象|
-| **[getPlayerState](mw.Player.md#getplayerstate)**<`T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>\>(`type`: (...`args`: `unknown`[]) => `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>): `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>  |
-| 获取PlayerState实例|
+| 控制一个 Pawn 对象|
+| **[getPlayerState](mw.Player.md#getplayerstate)**<`T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>\>(`type`: (...`args`: `unknown`[]) => `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>): `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>   |
+| 获取 PlayerState 实例|
 | **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\> <Badge type="tip" text="client" />  |
-| 异步获取本地玩家。通常在UI脚本中使用，当获取还未创建出的本地玩家角色时，会使用此异步加载接口，最长等待10秒，等待本地角色加载出来再获取。|
+| 异步获取本地玩家。|
 | **[asyncGetPlayer](mw.Player.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](mw.Player.md)\>   |
 | 异步获取玩家|
 | **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[]   |
-| 获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。|
+| 获取当前所有玩家。|
 | **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <Badge type="tip" text="client" />  |
 | 获取控制器的旋转|
 | **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string`  `number`): [`Player`](mw.Player.md)   |
-| 获取玩家，根据userid找到对应的玩家|
+| 根据 userid 获取玩家|
 | **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void` <Badge type="tip" text="client" />  |
 | 覆写控制器的旋转|
 | **[spawnDefaultCharacter](mw.Player.md#spawndefaultcharacter)**(): [`Character`](mw.Character.md)   |
@@ -82,10 +82,9 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 :::
 
 <span style="font-size: 14px;">
-使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_OnPawnChange"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_OnPawnChange"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
 </span>
 
-你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
 ```ts
 @Component
 export default class Example_Player_OnPawnChange extends Script {
@@ -133,10 +132,9 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_OnPlayerDisconnect"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例:创建一个名为"Example_Player_OnPlayerDisconnect"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【玩家断线】委托添加一个函数：打印玩家断线游戏消息。在控制台中看到断线玩家的用户ID和断线通知。代码如下：
 </span>
 
-你将给【玩家断线】委托添加一个函数：打印玩家断线游戏消息。在控制台中看到断线玩家的用户ID和断线通知。代码如下：
 ```ts
 @Component
 export default class Example_Player_OnPlayerDisconnect extends Script {
@@ -193,10 +191,9 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_OnPlayerJoin"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例:创建一个名为"Example_Player_OnPlayerJoin"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【玩家加入】委托添加一个函数：打印玩家加入游戏消息。在控制台中看到加入玩家的用户ID和加入通知。代码如下：
 </span>
 
-你将给【玩家加入】委托添加一个函数：打印玩家加入游戏消息。在控制台中看到加入玩家的用户ID和加入通知。代码如下：
 ```ts
 @Component
 export default class Example_Player_OnPlayerJoin extends Script {
@@ -312,10 +309,9 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_OnPlayerReconnect"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例:创建一个名为"Example_Player_OnPlayerReconnect"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【玩家重连】委托添加一个函数：打印玩家重连游戏消息。在控制台中看到重连玩家的用户ID和重连通知。代码如下：
 </span>
 
-你将给【玩家重连】委托添加一个函数：打印玩家重连游戏消息。在控制台中看到重连玩家的用户ID和重连通知。代码如下：
 ```ts
 @Component
 export default class Example_Player_OnPlayerReconnect extends Script {
@@ -735,15 +731,13 @@ ___
 <td style="text-align: left">
 
 
-LocalPlayer 是一个只读属性，指的是其客户端正在运行的玩家。
+客户端正在运行的玩家。
 
-因为在客户端上运行。 对于 Script 对象运行其代码的服务器，此属性为null。
+LocalPlayer 是一个只读属性。
 
-::: warning Precautions
+因为在客户端上运行。 对于 Script 对象运行其代码的服务器，此属性为 null。
 
 当前客户端对应的玩家。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
-
-:::
 
 
 #### Returns
@@ -787,7 +781,7 @@ export default class Example_Player_LocalPlayer extends Script {
 
 • **control**(`pawn`): `boolean` <Badge type="tip" text="server" />
 
-控制一个Pawn对象
+控制一个 Pawn 对象
 
 #### Parameters
 
@@ -838,13 +832,13 @@ ___
 
 ### getPlayerState <Score text="getPlayerState" /> 
 
-• **getPlayerState**<`T`\>(`type`): `T`
+• **getPlayerState**<`T`\>(`type`): `T` 
 
-获取PlayerState实例
+获取 PlayerState 实例
 
 #### Parameters
 
-| `type` (...`args`: `unknown`[]) => `T` | PlayerState派生类 |
+| `type` (...`args`: `unknown`[]) => `T` |  PlayerState 派生类  <br> default:  null |
 | :------ | :------ |
 
 #### Returns
@@ -852,11 +846,11 @@ ___
 | `T` | PlayerState实例 |
 | :------ | :------ |
 
-PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。它存储了与每个玩家相关的信息，这样游戏就可以根据需要随时访问和更新这些信息。
+PlayerState 对象的作用是帮助游戏追踪和管理玩家的个人数据。它存储了与每个玩家相关的信息，这样游戏就可以根据需要随时访问和更新这些信息。
 
-举个例子来说，假设你正在玩一款多人射击游戏。每个玩家都有一个PlayerState对象，其中包含了玩家的得分、击杀数和死亡数等数据。当玩家击败敌人时，游戏会将得分加到对应玩家的PlayerState中。这样，游戏就可以根据每个玩家的PlayerState来显示排行榜或者判断胜负。
+举个例子来说，假设你正在玩一款多人射击游戏。每个玩家都有一个 PlayerState 对象，其中包含了玩家的得分、击杀数和死亡数等数据。当玩家击败敌人时，游戏会将得分加到对应玩家的PlayerState中。这样，游戏就可以根据每个玩家的PlayerState来显示排行榜或者判断胜负。
 
-总的来说，用于跟踪和存储与每个玩家相关的数据和状态。它帮助游戏管理玩家的个人信息，如得分、生命值等，并在多人游戏中确保玩家状态的同步。通过PlayerState，游戏可以更好地处理多人游戏中的个人和团队数据，以提供更丰富的游戏体验。
+总的来说，用于跟踪和存储与每个玩家相关的数据和状态。它帮助游戏管理玩家的个人信息，如得分、生命值等，并在多人游戏中确保玩家状态的同步。通过 PlayerState，游戏可以更好地处理多人游戏中的个人和团队数据，以提供更丰富的游戏体验。
 
 <span style="font-size: 14px;">
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值。
@@ -913,20 +907,18 @@ ___
 
 • `Static` **asyncGetLocalPlayer**(): `Promise`<[`Player`](mw.Player.md)\> <Badge type="tip" text="client" />
 
-异步获取本地玩家。通常在UI脚本中使用，当获取还未创建出的本地玩家角色时，会使用此异步加载接口，最长等待10秒，等待本地角色加载出来再获取。
+异步获取本地玩家。
 
 #### Returns
 
 | `Promise`<[`Player`](mw.Player.md)\> | 返回本地玩家 |
 | :------ | :------ |
 
-当正常获取本地玩家时，使用Player.localPlayer即可。
+通常在UI脚本中使用，当获取还未创建出的本地玩家角色时，会使用此异步加载接口，最长等待10秒，等待本地角色加载出来再获取。
 
-::: warning Precautions
+当正常获取本地玩家时，使用 Player.localPlayer 即可。
 
-仅在UI脚本中需要使用此异步方法获取localPlayer。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
-
-:::
+仅在UI脚本中需要使用此异步方法获取 localPlayer。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
 
 ___
 
@@ -938,7 +930,7 @@ ___
 
 #### Parameters
 
-| `playerId` | `number` |
+| `playerId` `number` | 玩家ID<br> range: 依据玩家 ID 决定<br> type: 整数 |
 | :------ | :------ |
 
 #### Returns
@@ -947,33 +939,17 @@ ___
 | :------ | :------ |
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例:创建一个名为"NewScript"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏
 </span>
 
-你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果。代码如下：
 ```ts
 @Component
-export default class Example_Player_GetPlayer extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
+export default class NewScript extends Script {
+
     protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 添加一个按键方法：按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字
-            InputUtil.onKeyDown(Keys.One, () => {
-                // 获取当前客户端的玩家(自己)并打印userId和playerId
-                let myself = Player.localPlayer;
-                console.log("My userId: " + myself.userId);
-                console.log("My playerId: " + myself.playerId);
-                // 通过userId获取玩家(自己)并打印userId和playerId
-                let myself_2 = Player.getPlayer(myself.userId);
-                console.log("myself_2 userId: " + myself_2.userId);
-                console.log("myself_2 playerId: " + myself_2.playerId);
-                // 通过playerId获取玩家(自己)并打印userId和playerId
-                let myself_3 = Player.getPlayer(myself.playerId);
-                console.log("myself_3 userId: " + myself_3.userId);
-                console.log("myself_3 playerId: " + myself_3.playerId);
-            });
-        }
+        Player.asyncGetPlayer(Player.localPlayer.playerId).then((player)=>{
+            console.log(player.playerId);
+        });
     }
 }
 ```
@@ -984,12 +960,14 @@ ___
 
 • `Static` **getAllPlayers**(): [`Player`](mw.Player.md)[] 
 
-获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。
+获取当前所有玩家。
 
 #### Returns
 
 | [`Player`](mw.Player.md)[] | 服务器中所有玩家的数组 |
 | :------ | :------ |
+
+此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:“27087”拖入优先加载栏。创建一个名为"Example_Player_GetAllPlayers"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务端添加一个【打印游戏内全部玩家信息】事件监听器，监听事件后在场景中看到一个皇冠在玩家角色的头顶生成的效果并在控制台打印玩家们的 userId，遇到发起事件的客户端玩家时提示 This is me。 代码如下：
@@ -1038,7 +1016,7 @@ ___
 
 #### Parameters
 
-| `outer?` [`Rotation`](mw.Rotation.md) | 接收旋转的变量 default:undefined |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收旋转的变量  <br> default: undefined |
 | :------ | :------ |
 
 #### Returns
@@ -1053,7 +1031,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_GetControllerRotation"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将获取当前控制器输入的旋转并叠加步长进行覆盖，按下键盘“1”，开始 / 停止覆写控制器的旋转。在场景中看到摄像机环绕角色旋转的效果。代码如下：
+使用示例:创建一个名为"Example_Player_GetControllerRotation"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将获取当前控制器输入的旋转并叠加步长进行覆盖，按下键盘“1”，开始或者停止覆写控制器的旋转。在场景中看到摄像机环绕角色旋转的效果。代码如下：
 </span>
 
 ```ts
@@ -1095,7 +1073,7 @@ ___
 
 • `Static` **getPlayer**(`uniqueId`): [`Player`](mw.Player.md) 
 
-获取玩家，根据userid找到对应的玩家
+根据 userid 获取玩家
 
 #### Parameters
 
@@ -1159,7 +1137,7 @@ ___
 
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_SetControllerRotation"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将获取当前控制器输入的旋转并叠加步长进行覆盖，按下键盘“1”，开始 / 停止覆写控制器的旋转。在场景中看到摄像机环绕角色旋转的效果。代码如下：
+使用示例:创建一个名为"Example_Player_SetControllerRotation"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将获取当前控制器输入的旋转并叠加步长进行覆盖，按下键盘“1”，开始或者停止覆写控制器的旋转。在场景中看到摄像机环绕角色旋转的效果。代码如下：
 </span>
 
 ```ts
@@ -1215,10 +1193,9 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，
+使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制】。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
 </span>
 
-你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制】。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
 ```ts
 @Component
 export default class Example_Player_SpawnDefaultCharacter extends Script {

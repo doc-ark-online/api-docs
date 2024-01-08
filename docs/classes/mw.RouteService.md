@@ -48,11 +48,11 @@
 | **[isInDressUpGame](mw.RouteService.md#isindressupgame)**(): `boolean` <Badge type="tip" text="client" />  |
 | 判断当前游戏是不是角色展示/编辑游戏|
 | **[notifyCharacterLoaded](mw.RouteService.md#notifycharacterloaded)**(): `void` <Badge type="tip" text="client" />  |
-| 通知233/Playza角色形象加载完毕|
+| 通知平台角色形象加载完毕|
 | **[notifyGameLoadingState](mw.RouteService.md#notifygameloadingstate)**(`newState`: `number`): `void` <Badge type="tip" text="client" />  |
-| 通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)|
+| 通知 平台 当前游戏加载状态(收到这个协议，233 停止下载，清除 Temp 文件)|
 | **[requestGameId](mw.RouteService.md#requestgameid)**(`targetMgsGameId`: `string`): `Promise`<`string`\>   |
-| 用内容库MGSGameId来换取gameId|
+| 用内容库 MGSGameId 来换取 gameId|
 | **[requestMGSGameId](mw.RouteService.md#requestmgsgameid)**(`targetGameId`: `string`): `Promise`<`string`\>   |
 | 用gameId来换取内容库MGSGameId|
 | **[requestRefreshView](mw.RouteService.md#requestrefreshview)**(): `void` <Badge type="tip" text="client" />  |
@@ -207,7 +207,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         RouteService.addJumpGameCallback((id: string, data: string) => {
             player.character.displayName = "JumpGame :" + data + "from " + id;
@@ -226,7 +226,7 @@ ___
 
 #### Parameters
 
-| `teamId` `string` |  目标teamId |
+| `teamId` `string` |  目标 teamId<br> range: 字符串长度依据 teamId 长度而定 |
 | :------ | :------ |
 
 
@@ -240,7 +240,7 @@ ___
 
 #### Parameters
 
-| `carryingData?` `string` |  跳游戏携带的数据 default: undefined |
+| `carryingData?` `string` |  跳游戏携带的数据  <br> default:  undefined<br> range:不做限制 |
 | :------ | :------ |
 
 
@@ -263,7 +263,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         RouteService.enterDressUpGame();
     }
@@ -280,10 +280,10 @@ ___
 
 #### Parameters
 
-| `targetGameId` `string` |  目标游戏的GameId，一般来说，这里会是模板游戏的gameId |
+| `targetGameId` `string` |  目标游戏的GameId，一般来说，这里会是模板游戏的gameId<br> range:依据 targetGameId 长度而定 |
 | :------ | :------ |
-| `gamePath` `string` |  本地游戏工程的路径 |
-| `carryingData?` `string` |  跳游戏携带的数据 default: undefined |
+| `gamePath` `string` |  本地游戏工程的路径<br> range:依据 gamePath 路径长度而定 |
+| `carryingData?` `string` |  跳游戏携带的数据  <br> default:  undefined<br> range:不做限制 |
 
 
 ::: warning Precautions
@@ -302,9 +302,9 @@ ___
 
 #### Parameters
 
-| `targetGameId` `string` |  要跳转的目标游戏ID，GameId |
+| `targetGameId` `string` |  要跳转的目标游戏 ID，GameId<br> range:依据 targetGameId 长度而定 |
 | :------ | :------ |
-| `carryingData?` `string` |  跳游戏携带的数据 default: undefined |
+| `carryingData?` `string` |  跳游戏携带的数据  <br> default:  undefined<br> range:不做限制 |
 
 
 <span style="font-size: 14px;">
@@ -330,10 +330,10 @@ ___
 
 #### Parameters
 
-| `targetGameId` `string` |  要跳转的游戏的GameId |
+| `targetGameId` `string` |  要跳转的游戏的 GameId<br> range: 依据 targetGameId 长度而定 |
 | :------ | :------ |
 | `teammatePlayerIds` `string`[] |  队友的playerId数组 |
-| `carryingData?` `Record`<`string`, `unknown`\>[] |  要带入新游戏的数据 default: undefined |
+| `carryingData?` `Record`<`string`, `unknown`\>[] |  要带入新游戏的数据  <br> default:  undefined<br> range:不做限制 |
 
 #### Returns
 
@@ -350,9 +350,9 @@ ___
 
 #### Parameters
 
-| `squareMgsGameId?` `string` |  新的广场游戏GameId，如果为空，则使用各环境默认的广场游戏Id default: null |
+| `squareMgsGameId?` `string` |  新的广场游戏 GameId，如果为空，则使用各环境默认的广场游戏 Id  <br> default:  null<br> range:字符串长度依据 squareMgsGameId 而定 |
 | :------ | :------ |
-| `carryingData?` `string` |  跳游戏携带的数据 default: undefined |
+| `carryingData?` `string` |  跳游戏携带的数据  <br> default:  undefined<br> range:不做限制 |
 
 
 ::: warning Precautions
@@ -374,7 +374,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         RouteService.enterSquareGame();
     }
@@ -432,7 +432,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         player.character.displayName = "gameId:" + RouteService.getGameId();
     }
@@ -471,7 +471,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         player.character.displayName = "游戏版本:" + RouteService.getGameVersion();
     }
@@ -523,7 +523,7 @@ export default class RouteExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         player.character.displayName = "短游戏ID:" + RouteService.getMGSGameId();
     }
@@ -540,7 +540,7 @@ ___
 
 #### Parameters
 
-| `teamId` `string` |  要查询的teamId |
+| `teamId` `string` |  要查询的 teamId<br> range: 字符串长度依据 teamId 长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -573,12 +573,12 @@ ___
 
 • `Static` **notifyCharacterLoaded**(): `void` <Badge type="tip" text="client" />
 
-通知233/Playza角色形象加载完毕
+通知平台角色形象加载完毕
 
 
 ::: warning Precautions
 
-只在233/Playza内使用时生效
+只在平台内使用时生效
 
 :::
 
@@ -588,17 +588,17 @@ ___
 
 • `Static` **notifyGameLoadingState**(`newState`): `void` <Badge type="tip" text="client" />
 
-通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)
+通知 平台 当前游戏加载状态(收到这个协议，233 停止下载，清除 Temp 文件)
 
 #### Parameters
 
-| `newState` `number` |  状态Id。newState = 1 : 游戏加载成功，newState = 2 ：游戏加载失败 |
+| `newState` `number` |  状态 Id。newState = 1 : 游戏加载成功，newState = 2 ：游戏加载失败<br> range:1,2<br> type: 整数 |
 | :------ | :------ |
 
 
 ::: warning Precautions
 
-只在233/Playza内使用时生效
+只在平台内使用时生效
 
 :::
 
@@ -608,11 +608,11 @@ ___
 
 • `Static` **requestGameId**(`targetMgsGameId`): `Promise`<`string`\> 
 
-用内容库MGSGameId来换取gameId
+用内容库 MGSGameId 来换取 gameId
 
 #### Parameters
 
-| `targetMgsGameId` `string` |  目标游戏的内容库gameId |
+| `targetMgsGameId` `string` |  目标游戏的内容库gameId<br> range:依据 targetMgsGameId 长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -630,7 +630,7 @@ ___
 
 #### Parameters
 
-| `targetGameId` `string` |  目标游戏的gameId |
+| `targetGameId` `string` |  目标游戏的 gameId<br> range:依据 targetGameId 长度决定 |
 | :------ | :------ |
 
 #### Returns
@@ -663,10 +663,10 @@ ___
 
 #### Parameters
 
-| `newState` `number` |  新模式。newState = 1 为“角色展示模式”，newState = 2 为“角色编辑模式” |
+| `newState` `number` |  新模式。newState = 1 为“角色展示模式”，newState = 2 为“角色编辑模式”<br> range:1,2<br> type:整数 |
 | :------ | :------ |
 
 
 ::: warning Precautions
 
-只在233/Playza内使用时生效
+只在 平台 内使用时生效

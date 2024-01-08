@@ -34,23 +34,23 @@ ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体�
 ### Accessors <Score text="Accessors" /> 
 | **[acceleration](mw.ProjectileMovement.md#acceleration)**(): `number`  |
 | :-----|
-| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。|
+| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。|
 | **[gravityScale](mw.ProjectileMovement.md#gravityscale)**(): `number`  |
-| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。|
+| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。|
 | **[homingAcceleration](mw.ProjectileMovement.md#homingacceleration)**(): `number`  |
-| 朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。|
+| 朝向目标对象的加速度（cm/s）。 <br> default:  10000。range: [0, 10000]。|
 | **[homingTarget](mw.ProjectileMovement.md#homingtarget)**(): [`GameObject`](mw.GameObject.md)  |
-| 投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。|
+| 投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。 <br> default:  null。|
 | **[initialSpeed](mw.ProjectileMovement.md#initialspeed)**(): `number`  |
-| 投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效|
+| 投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]，发射之后设置不会生效|
 | **[isRotationFollowsVelocity](mw.ProjectileMovement.md#isrotationfollowsvelocity)**(): `boolean`  |
-| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。|
+| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。|
 | **[lifeSpan](mw.ProjectileMovement.md#lifespan)**(): `number`  |
-| 投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。|
+| 投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。|
 | **[maxSpeed](mw.ProjectileMovement.md#maxspeed)**(): `number`  |
-| 投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。|
+| 投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。|
 | **[speedRetention](mw.ProjectileMovement.md#speedretention)**(): `number`  |
-| 碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。|
+| 碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。 <br> default:  0.6。range: [0, 1]。|
 | **[status](mw.ProjectileMovement.md#status)**(): [`ProjectileMovementStatus`](../enums/mw.ProjectileMovementStatus.md)  |
 | 投掷物当前状态|
 
@@ -81,7 +81,7 @@ ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体�
 
 | `relatedGameObject` [`GameObject`](mw.GameObject.md) |  新的关联的逻辑对象，将为之生成组件 |
 | :------ | :------ |
-| `config?` [`ProjectileMovementConfig`](../interfaces/mw.ProjectileMovementConfig.md) |  批量读取配置 default: null |
+| `config?` [`ProjectileMovementConfig`](../interfaces/mw.ProjectileMovementConfig.md) |  批量读取配置  <br> default:  null |
 
 ## Properties
 
@@ -136,7 +136,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。
 
 #### Returns
 
@@ -148,7 +148,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。
 
 #### Parameters
 
@@ -186,7 +186,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。
 
 #### Returns
 
@@ -198,7 +198,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。
 
 #### Parameters
 
@@ -236,7 +236,7 @@ ___
 <td style="text-align: left">
 
 
-朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。
+朝向目标对象的加速度（cm/s）。 <br> default:  10000。range: [0, 10000]。
 
 #### Returns
 
@@ -248,7 +248,7 @@ ___
 <td style="text-align: left">
 
 
-朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。
+朝向目标对象的加速度（cm/s）。 <br> default:  10000。range: [0, 10000]。
 
 #### Parameters
 
@@ -286,7 +286,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。
+投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。 <br> default:  null。
 
 #### Returns
 
@@ -298,7 +298,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。
+投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。 <br> default:  null。
 
 #### Parameters
 
@@ -336,7 +336,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效
+投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]，发射之后设置不会生效
 
 #### Returns
 
@@ -348,7 +348,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效
+投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]，发射之后设置不会生效
 
 #### Parameters
 
@@ -386,7 +386,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。
 
 #### Returns
 
@@ -398,7 +398,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。
 
 #### Parameters
 
@@ -436,7 +436,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
+投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。
 
 #### Returns
 
@@ -448,7 +448,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
+投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。
 
 #### Parameters
 
@@ -486,7 +486,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
+投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。
 
 #### Returns
 
@@ -498,7 +498,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
+投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。
 
 #### Parameters
 
@@ -536,7 +536,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。
+碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。 <br> default:  0.6。range: [0, 1]。
 
 #### Returns
 
@@ -548,7 +548,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。
+碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。 <br> default:  0.6。range: [0, 1]。
 
 #### Parameters
 
@@ -602,7 +602,7 @@ ___
 
 #### Parameters
 
-| `destroyWithObject?` `boolean` |  是否与对象一起删除 default: true |
+| `destroyWithObject?` `boolean` |  是否与对象一起删除  <br> default:  true |
 | :------ | :------ |
 
 
@@ -614,7 +614,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Destroy extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -701,7 +701,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -779,8 +779,8 @@ ___
 
 | `startDirection` [`Vector`](mw.Vector.md) |  发射方向 |
 | :------ | :------ |
-| `density` `number` |  预测点密度，等同于模拟的帧率，值越大轨迹越精细，性能消耗越大 |
-| `duration` `number` |  预测时长，等同于模拟时长，值越大轨迹轨迹越长，性能消耗越大 |
+| `density` `number` |  预测点密度，等同于模拟的帧率<br> range: 不做限制，值越大轨迹越精细，性能消耗越大<br> type: 浮点数 |
+| `duration` `number` |  预测时长，等同于模拟时长<br> range: 不做限制，值越大轨迹轨迹越长，性能消耗越大<br> type: 浮点数 |
 
 #### Returns
 
@@ -814,7 +814,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -901,7 +901,7 @@ ___
 
 #### Parameters
 
-| `direction` [`Vector`](mw.Vector.md) |  发射方向，direction 如果是 (0,0,0), 会被重置为默认值 default: (1,0,0) |
+| `direction` [`Vector`](mw.Vector.md) |  发射方向，direction 如果是 (0,0,0), 会被重置为默认值  <br> default:  (1,0,0) |
 | :------ | :------ |
 
 
@@ -919,7 +919,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1023,7 +1023,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1127,7 +1127,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1230,7 +1230,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1324,7 +1324,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {

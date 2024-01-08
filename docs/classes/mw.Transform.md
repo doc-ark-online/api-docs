@@ -266,9 +266,9 @@ ___
 
 #### Parameters
 
-| `str` `string` | 读取的字符串数据 |
+| `str` `string` | 读取的字符串数据<br> range:"0.000000,0.000000,0.0000000.000000,0.000000,0.0000001.000000,1.000000,1.000000" |
 | :------ | :------ |
-| `outer?` [`Transform`](mw.Transform.md) | 接受结果的Transform default:null |
+| `outer?` [`Transform`](mw.Transform.md) | 接受结果的Transform  <br> default: null |
 
 #### Returns
 
@@ -277,7 +277,7 @@ ___
 
 #### Parameters
 
-| `str` `string` | 读取的字符串数据 |
+| `str` `string` | 读取的字符串数据<br> range:"0.000000,0.000000,0.0000000.000000,0.000000,0.0000001.000000,1.000000,1.000000" |
 | :------ | :------ |
 
 
@@ -376,7 +376,7 @@ ___
 
 | `axis` [`Vector`](mw.Vector.md) | 旋转轴 |
 | :------ | :------ |
-| `angle` `number` | 旋转的角度值 |
+| `angle` `number` | 旋转的角度值  <br> range: 无限制<br> type:浮点数 |
 
 
 ___
@@ -442,9 +442,9 @@ ___
 
 #### Parameters
 
-| `str` `string` | 读取的字符串数据 |
+| `str` `string` | 读取的字符串数据<br> range:"0.000000,0.000000,0.0000000.000000,0.000000,0.0000001.000000,1.000000,1.000000" |
 | :------ | :------ |
-| `outer?` [`Transform`](mw.Transform.md) | 接受结果的Transform default:null |
+| `outer?` [`Transform`](mw.Transform.md) | 接受结果的Transform  <br> default: null |
 
 #### Returns
 

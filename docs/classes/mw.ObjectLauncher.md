@@ -69,27 +69,27 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 ### Accessors <Score text="Accessors" /> 
 | **[acceleration](mw.ObjectLauncher.md#acceleration)**(): `number`  |
 | :-----|
-| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。|
+| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。|
 | **[capsuleHalfLength](mw.ObjectLauncher.md#capsulehalflength)**(): `number`  |
-| 投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。|
+| 投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。 <br> default:  50。range: [1, 1000]。|
 | **[capsuleRadius](mw.ObjectLauncher.md#capsuleradius)**(): `number`  |
-| 投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。|
+| 投掷物碰撞胶囊体的半径（cm）。 <br> default:  25。range: [1, 1000]。|
 | **[collisionVelocityRetention](mw.ObjectLauncher.md#collisionvelocityretention)**(): `number`  |
-| 碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。|
+| 碰撞后投掷物保持原来速度的比例。0表示。 <br> default:  0.6。range: [0, 1]。|
 | **[gravityScale](mw.ObjectLauncher.md#gravityscale)**(): `number`  |
-| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。|
+| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。|
 | **[initialSpeed](mw.ObjectLauncher.md#initialspeed)**(): `number`  |
-| 投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。|
+| 投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]。|
 | **[isRotationFollowsVelocity](mw.ObjectLauncher.md#isrotationfollowsvelocity)**(): `boolean`  |
-| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。|
+| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。|
 | **[isShouldBounce](mw.ObjectLauncher.md#isshouldbounce)**(): `boolean`  |
-| 决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。|
+| 决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。 <br> default:  true。|
 | **[isShouldReplicateDelegates](mw.ObjectLauncher.md#isshouldreplicatedelegates)**(): `boolean`  |
 | 投掷物触发对应事件时是否广播（仅双端发射器生效），true：广播。false：仅本地|
 | **[lifeSpan](mw.ObjectLauncher.md#lifespan)**(): `number`  |
-| 投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。|
+| 投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。|
 | **[maxSpeed](mw.ObjectLauncher.md#maxspeed)**(): `number`  |
-| 投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。|
+| 投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。|
 
 
 ::: details click
@@ -128,7 +128,7 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -146,7 +146,7 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -154,25 +154,27 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| 获取所有子对象包围盒中心点 (不包含父对象,父对象不可用返回 [0,0,0] )|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -224,7 +226,7 @@ ___
  @Component
  export default class Example_ObjectLauncher_OnHomingFail extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑在服务端执行
          if(SystemUtil.isServer()) {
@@ -324,7 +326,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。
 
 #### Returns
 
@@ -336,7 +338,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。 <br> default:  0，range: [-10000,10000]。
 
 #### Parameters
 
@@ -370,7 +372,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。
+投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。 <br> default:  50。range: [1, 1000]。
 
 #### Returns
 
@@ -382,7 +384,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。
+投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。 <br> default:  50。range: [1, 1000]。
 
 #### Parameters
 
@@ -416,7 +418,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。
+投掷物碰撞胶囊体的半径（cm）。 <br> default:  25。range: [1, 1000]。
 
 #### Returns
 
@@ -428,7 +430,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。
+投掷物碰撞胶囊体的半径（cm）。 <br> default:  25。range: [1, 1000]。
 
 #### Parameters
 
@@ -462,7 +464,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。
+碰撞后投掷物保持原来速度的比例。0表示。 <br> default:  0.6。range: [0, 1]。
 
 #### Returns
 
@@ -474,7 +476,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。
+碰撞后投掷物保持原来速度的比例。0表示。 <br> default:  0.6。range: [0, 1]。
 
 #### Parameters
 
@@ -508,7 +510,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。
 
 #### Returns
 
@@ -520,7 +522,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。 <br> default:  1，range: [-10, 10]。
 
 #### Parameters
 
@@ -554,7 +556,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。
+投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]。
 
 #### Returns
 
@@ -566,7 +568,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。
+投掷物的初始运动速度（cm/s）， <br> default:  5000，range: [1,100000]。
 
 #### Parameters
 
@@ -600,7 +602,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。
 
 #### Returns
 
@@ -612,7 +614,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。 <br> default:  true。
 
 #### Parameters
 
@@ -646,7 +648,7 @@ ___
 <td style="text-align: left">
 
 
-决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。
+决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。 <br> default:  true。
 
 #### Returns
 
@@ -658,7 +660,7 @@ ___
 <td style="text-align: left">
 
 
-决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。
+决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。 <br> default:  true。
 
 #### Parameters
 
@@ -738,7 +740,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
+投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。
 
 #### Returns
 
@@ -750,7 +752,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
+投掷物存在的最长时间（s），0意味着没有限制。 <br> default:  10。range: [0, 1000]。
 
 #### Parameters
 
@@ -784,7 +786,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
+投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。
 
 #### Returns
 
@@ -796,7 +798,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
+投掷物的最大运动速度（cm/s），0意味着没有限制。 <br> default:  0，range: [0,100000]。
 
 #### Parameters
 
@@ -824,12 +826,12 @@ ___
 | `startPosition` [`Vector`](mw.Vector.md) |  发射起始位置 |
 | :------ | :------ |
 | `startDirection` [`Vector`](mw.Vector.md) |  发射起始方向 |
-| `density` `number` |  预测结果的点密度（个/秒），值越大路径点越细，性能消耗越大 |
-| `duration` `number` |  预测的时长 |
+| `density` `number` |  预测结果的点密度（个/秒），值越大路径点越细，性能消耗越大。<br> range:(0, density * duration + 1]<br> type: 浮点数 |
+| `duration` `number` |  预测的时长。<br> range: 不做限制<br> type: 浮点数 |
 
 #### Returns
 
-| [`Vector`](mw.Vector.md)[] | 路径轨迹点，预测结果的点的最大数量为 density * duration + 1 |
+| [`Vector`](mw.Vector.md)[] | 路径轨迹点，预测结果的点的最大数量为 density * duration + 1。 |
 | :------ | :------ |
 
 ::: warning Precautions
@@ -848,11 +850,11 @@ ___
 
 #### Parameters
 
-| `childObjectId` `string` |  发射对象的 id |
+| `childObjectId` `string` |  发射对象的 id。<br> range: 字符串长度取决于 ID 长度。 |
 | :------ | :------ |
-| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
-| `direction?` [`Vector`](mw.Vector.md) |  发射起始方向 default: 发射对象的正前方 |
-| `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例 default: false |
+| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置  <br> default:  发射对象的位置 |
+| `direction?` [`Vector`](mw.Vector.md) |  发射起始方向  <br> default:  发射对象的正前方 |
+| `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例  <br> default:  false |
 
 #### Returns
 
@@ -873,7 +875,7 @@ ___
 @Component
  export default class Example_ObjectLauncher_Acceleration extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑在服务端执行
          if(SystemUtil.isServer()) {
@@ -930,13 +932,13 @@ ___
 
 #### Parameters
 
-| `childObjectId` `string` |  发射对象的 id |
+| `childObjectId` `string` |  发射对象的 id。<br> range: 字符串长度取决于 ID 长度 |
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) |  追踪目标 |
-| `targetingAcceleration?` `number` |  追踪加速度 default: 10000 |
-| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
-| `direction?` [`Vector`](mw.Vector.md) |  发射起始方向 default: 发射对象的正前方 |
-| `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例 default: false |
+| `targetingAcceleration?` `number` |  追踪加速度  <br> default:  10000<br> range: 不做限制<br> type: 浮点数 |
+| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置  <br> default:  发射对象的位置 |
+| `direction?` [`Vector`](mw.Vector.md) |  发射起始方向  <br> default:  发射对象的正前方 |
+| `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例  <br> default:  false |
 
 #### Returns
 
@@ -958,7 +960,7 @@ ___
  @Component
  export default class Example_ObjectLauncher_OnHomingFail extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑在服务端执行
          if(SystemUtil.isServer()) {

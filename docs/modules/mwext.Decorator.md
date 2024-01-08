@@ -31,7 +31,7 @@ Decorator
 
 #### Parameters
 
-| `fnName` `string` |  要自动执行的方法名 |
+| `fnName` `string` |  要自动执行的方法名<br> range: 方法名 |
 | :------ | :------ |
 
 #### Returns
@@ -68,7 +68,7 @@ ___
 
 #### Parameters
 
-| `name?` `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
+| `name?` `string` |  持久化后的属性名，不写会用变量名存储  <br> default:  undefined<br> range: 不做限制，合理即可 |
 | :------ | :------ |
 
 #### Returns

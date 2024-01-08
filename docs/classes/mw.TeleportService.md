@@ -8,7 +8,8 @@
 
 ### Properties <Score text="Properties" /> 
 | **[teleportTypeToString](mw.TeleportService.md#teleporttypetostring)**: `any`  |
-| :----- |
+| :-----|
+| 传送类型变为字符串|
 
 ### Methods <Score text="Methods" /> 
 | **[asyncGetPlayerRoomInfo](mw.TeleportService.md#asyncgetplayerroominfo)**(`userId`: `string`): `Promise`<[`RoomInfo`](../interfaces/mw.RoomInfo.md)\>   |
@@ -31,6 +32,8 @@
 
 ▪ `Static` `Private` **teleportTypeToString**: `any`
 
+传送类型变为字符串
+
 ## Methods
 
 ### asyncGetPlayerRoomInfo <Score text="asyncGetPlayerRoomInfo" /> 
@@ -41,7 +44,7 @@
 
 #### Parameters
 
-| `userId` `string` | 目标玩家的userId |
+| `userId` `string` | 目标玩家的 userId<br> range: 依据 roomid 的长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -94,11 +97,11 @@ ___
 
 #### Parameters
 
-| `gameId` `string` | 要传送的目标游戏Id，该值可以在创作者平台的游戏详情页找到 default: |
+| `gameId` `string` | 要传送的目标游戏Id，该值可以在创作者平台的游戏详情页找到  <br> default: <br> range: 依据 gameId 的长度决定 |
 | :------ | :------ |
-| `userIds` `string`[] | 要传送的玩家userId数组 default: |
-| `sceneName?` `string` | 要传送的目标场景名称 default:undefined |
-| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息 default:undefined |
+| `userIds` `string`[] | 要传送的玩家userId数组  <br> default: <br> range: 依据 userIds 的长度决定 |
+| `sceneName?` `string` | 要传送的目标场景名称  <br> default: undefined<br> range: 依据 sceneName 的长度决定 |
+| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息  <br> default: undefined |
 
 #### Returns
 
@@ -178,10 +181,10 @@ ___
 
 #### Parameters
 
-| `roomId` `string` | 要传送的目标游戏Id default: |
+| `roomId` `string` | 要传送的目标游戏Id  <br> default: undefined<br> range: 依据 roomid 的长度决定 |
 | :------ | :------ |
-| `userIds` `string`[] | 要传送的玩家userId数组 default: |
-| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息 default:undefined |
+| `userIds` `string`[] | 要传送的玩家userId数组  <br> default: undefined<br> range: 依据 roomid 的长度决定 |
+| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息  <br> default: undefined |
 
 #### Returns
 
@@ -274,10 +277,10 @@ ___
 
 #### Parameters
 
-| `sceneName` `string` | 要传送的目标场景名称 default: |
+| `sceneName` `string` | 要传送的目标场景名称  <br> default: <br> range: 依据场景名称而定 |
 | :------ | :------ |
-| `userIds` `string`[] | 要传送的玩家userId数组 default: |
-| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息 default:undefined |
+| `userIds` `string`[] | 要传送的玩家 userId 数组  <br> default: <br> range: 数组大小自定义 |
+| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息  <br> default: undefined |
 
 #### Returns
 
@@ -363,7 +366,7 @@ ___
 
 #### Parameters
 
-| `teleportId` `string` | 要查询的传送Id default: |
+| `teleportId` `string` | 要查询的传送Id  <br> default: <br> range:依据 teleportId 长度而定的 |
 | :------ | :------ |
 
 #### Returns
@@ -408,7 +411,7 @@ ___
 
 #### Parameters
 
-| `teleportId` `string` | 要查询的传送Id default: |
+| `teleportId` `string` | 要查询的传送Id  <br> default: <br> range: 依据 teleportId 的长度决定 |
 | :------ | :------ |
 
 #### Returns

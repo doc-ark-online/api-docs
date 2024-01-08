@@ -19,11 +19,11 @@
 | **[tintColor](mw.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](mw.SlateColor.md)  |
 | 颜色|
 
-通过资源id构造对象
+通过资源 id 构造对象
 
 #### Parameters
 
-| `InGUID` `string` | 资源id |
+| `InGUID` `string` | 资源 id<br> range:字符串长度依据 ID 长度而定 |
 | :------ | :------ |
 
 ## Properties

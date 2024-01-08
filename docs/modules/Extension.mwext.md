@@ -24,7 +24,7 @@ mwext
 | [DataCenterS](../classes/mwext.DataCenterS.md)  |
 | 服务端数据中心，管理所有玩家的数据。|
 | [GameObjPool](../classes/mwext.GameObjPool.md)  |
-| 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存|
+| 用于缓存 GameObject 的对象池，适用资源库资源、场景对象、预制体的复用缓存|
 | [LeaderboardItemPanelBase](../classes/mwext.LeaderboardItemPanelBase.md)  |
 | 排行榜主界面中的子UI，用来显示一条记录|
 | [LeaderboardMainPanelBase](../classes/mwext.LeaderboardMainPanelBase.md)  |

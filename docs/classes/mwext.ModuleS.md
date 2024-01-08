@@ -324,7 +324,7 @@ ___
 
 #### Parameters
 
-| `type` `number` |  操作类型 |
+| `type` `number` |  操作类型<br> range:<br> type: |
 | :------ | :------ |
 | `...params` `any`[] |  操作参数 |
 
@@ -390,6 +390,6 @@ ___
 
 #### Parameters
 
-| `dt` `number` |  两帧之间的时间差(单位：秒) |
+| `dt` `number` |  两帧之间的时间差(单位：秒)<br> range:<br> type:浮点数 |
 | :------ | :------ |
 

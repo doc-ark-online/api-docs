@@ -16,7 +16,8 @@ EffectService 中很多静态方法可直接调用，其中：
 
 ### Properties <Score text="Properties" /> 
 | **[checkPlayParams](mw.EffectService.md#checkplayparams)**: `any`  |
-| :----- |
+| :-----|
+| 检查玩家参数|
 
 ### Methods <Score text="Methods" /> 
 | **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\> <Badge type="tip" text="client" />  |
@@ -31,13 +32,15 @@ EffectService 中很多静态方法可直接调用，其中：
 | **[stopAll](mw.EffectService.md#stopall)**(): `void` <Badge type="tip" text="other" />  |
 | 停止所有特效|
 | **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md)): `void` <Badge type="tip" text="other" />  |
-| 停止目标对象上所有资源Id的特效|
+| 停止目标对象上所有资源 Id 的特效|
 
 ## Properties
 
 ### checkPlayParams <Score text="checkPlayParams" /> 
 
 ▪ `Static` `Private` **checkPlayParams**: `any`
+
+检查玩家参数
 
 ## Methods
 
@@ -49,7 +52,7 @@ EffectService 中很多静态方法可直接调用，其中：
 
 #### Parameters
 
-| `playId` `number` |  播放id |
+| `playId` `number` |  播放的唯一标识，音效资源 ID，等同于 assetId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。<br> range: 字符串长度依据资源 ID 长度而定<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -89,10 +92,10 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。<br> range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 | `position` [`Vector`](mw.Vector.md) |  世界坐标 |
-| `params?` `Object` |  播放参数 |
+| `params?` `Object` |  播放参数  <br> default:  查看以下数值 |
 | `params.duration?` `number` | - |
 | `params.loopCount?` `number` | - |
 | `params.rotation?` [`Rotation`](mw.Rotation.md) | - |
@@ -129,10 +132,10 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。<br> range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) |  目标GameObject |
-| `params?` `Object` |  播放参数，slotType-挂点类型(默认null)，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，默认0，设置此字段将忽略loopCount），position-坐标偏移(默认Vector.zero)，rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
+| `params?` `Object` |  播放参数，slotType-挂点类型(默认null)，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，默认0，设置此字段将忽略loopCount），position-坐标偏移(默认Vector.zero)，rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one)  <br> default:  undefined |
 | `params.duration?` `number` | - |
 | `params.loopCount?` `number` | - |
 | `params.position?` [`Vector`](mw.Vector.md) | - |
@@ -173,7 +176,7 @@ ___
 
 #### Parameters
 
-| `playId` `number` |  播放的唯一标识 |
+| `playId` `number` |  播放的唯一标识，音效资源 ID，等同于 assetId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。<br> range: 字符串长度依据资源 ID 长度而定<br> type:整数 |
 | :------ | :------ |
 
 
@@ -234,11 +237,11 @@ ___
 
 • `Static` **stopEffectFromHost**(`source`, `target`): `void` <Badge type="tip" text="other" />
 
-停止目标对象上所有资源Id的特效
+停止目标对象上所有资源 Id 的特效
 
 #### Parameters
 
-| `source` `string` |  特效源，playEffect的第一个参数 |
+| `source` `string` |  特效源，playEffect 的第一个参数。range: |
 | :------ | :------ |
 | `target` [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md) |  目标对象(Player或NPC或GameObject) |
 

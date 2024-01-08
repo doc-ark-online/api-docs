@@ -14,6 +14,7 @@ Classes
 | [Action3](classes/mw.Action3.md) | 三个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
 | [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [服务](groups/服务.服务.md) |
 | [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [玩法](groups/玩法.玩法.md) |
+| [AnalyticsService](classes/mw.AnalyticsService.md) | 分析服务 | [服务](groups/服务.服务.md) |
 | [Animation](classes/mw.Animation.md) | 动画 | [动画](groups/动画.动画.md) |
 | [AssetIconData](classes/mw.AssetIconData.md) | 资源 icon 信息 | [界面](groups/界面.界面.md) |
 | [AssetUtil](classes/mw.AssetUtil.md) | 资源管理工具 | [工具](groups/工具.工具.md) |
@@ -75,7 +76,7 @@ Classes
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
+| [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存 GameObject 的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
 | [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
@@ -128,7 +129,7 @@ Classes
 | [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [界面](groups/界面.界面.md) |
 | [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [界面](groups/界面.界面.md) |
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
-| [LinearColor](classes/mw.LinearColor.md) | 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
+| [LinearColor](classes/mw.LinearColor.md) | 线性RGBA颜色 | [基础类型](groups/基础类型.基础类型.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
@@ -170,6 +171,7 @@ Classes
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
+| [PlayerState](classes/mw.PlayerState.md) | PlayerState基类 | [角色系统](groups/角色系统.角色系统.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [界面](groups/界面.界面.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [场景](groups/场景.场景.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [场景](groups/场景.场景.md) |
@@ -245,7 +247,7 @@ Classes
 | [UIObject](classes/mw.UIObject.md) | UI 对象 | [界面](groups/界面.界面.md) |
 | [UIScript](classes/mw.UIScript.md) | UI 的驱动脚本基类 | [界面](groups/界面.界面.md) |
 | [UIService](classes/mw.UIService.md) | UI 管理类 | [界面](groups/界面.界面.md) |
-| [UITransform](classes/mw.UITransform.md) | 节点Transform | [界面](groups/界面.界面.md) |
+| [UITransform](classes/mw.UITransform.md) | Transform | [界面](groups/界面.界面.md) |
 | [UIWidget](classes/mw.UIWidget.md) | 世界 UI | [界面](groups/界面.界面.md) |
 | [UserWidget](classes/mw.UserWidget.md) | 自定义控件 | [界面](groups/界面.界面.md) |
 

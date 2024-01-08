@@ -9,7 +9,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> <Badge type="tip" text="client" />  |
 | :-----|
-| 获取Ark币余额更新的委托|
+| 获取 Ark 币余额更新的委托|
 | **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> <Badge type="tip" text="server" />  |
 | 获取订单发货的委托|
 | **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> <Badge type="tip" text="server" />  |
@@ -52,11 +52,11 @@
 <td style="text-align: left">
 
 
-获取Ark币余额更新的委托
+获取 Ark 币余额更新的委托
 
 ::: warning Precautions
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 平台 内使用时生效
 
 :::
 
@@ -89,7 +89,7 @@ ___
 
 ::: warning Precautions
 
-1. 只在支持IAP的233/Playza/口袋方舟内使用时生效
+1. 只在支持 IAP 的 平台 内使用时生效
 2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 :::
@@ -123,7 +123,7 @@ ___
 
 ::: warning Precautions
 
-1. 只在支持大会员的233/Playza/口袋方舟内使用时生效
+1. 只在支持大会员的平台内使用时生效
 2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 :::
@@ -157,7 +157,7 @@ ___
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 平台 内使用时生效
 
 :::
 
@@ -180,16 +180,16 @@ ___
 
 #### Parameters
 
-| `boxId` `string` | 宝箱ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 |
+| `boxId` `string` | 宝箱 ID，代表一种福利，暂时自定义id。后续会在开发者平台配制<br> range:依据 boxId 长度 |
 | :------ | :------ |
-| `number` `number` | 领取的宝箱数量 default: 1 |
-| `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
-| `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
+| `number` `number` | 领取的宝箱数量  <br> default:  1<br> range: 不做限制<br> type: 整数 |
+| `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为 1  <br> default:  1<br> range: 1<br> type:整数 |
+| `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status 大会员扣除钥匙下单状态 |
 
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 平台 内使用时生效
 
 :::
 
@@ -241,10 +241,10 @@ ___
 
 #### Parameters
 
-| `currentPage` `number` | 查找第几页 type:整形 range:1-65535 |
+| `currentPage` `number` | 查找第几页  <br> type:整数型  <br> range:（1, 65535) |
 | :------ | :------ |
-| `pageSize` `number` | 每页大小 type:整形 range:1-100 |
-| `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数，total总页数为-1时表示查找失败，currentPage查找第几页，bill查询结果 |
+| `pageSize` `number` | 每页大小  <br> type:整数型  <br> range:(1, 100) |
+| `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数 |
 
 
 <span style="font-size: 14px;">
@@ -275,7 +275,7 @@ ___
 
 ::: warning Precautions
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持IAP的平台内使用时生效
 
 :::
 
@@ -292,7 +292,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = await  mw.Player.localPlayer;
         await TimeUtil.delaySecond(5);
         let arkCount = PurchaseService.getArkBalance();
@@ -313,12 +313,12 @@ ___
 
 | `getUserKeyNumberResult` (`keyNumber`: `number`) => `void` | 结果回调，查询到结果后执行回调函数。keyNumber : 剩余钥匙数量 |
 | :------ | :------ |
-| `keyType?` `number` | 搜索的钥匙类型，暂时只有类型1 default: 1 |
+| `keyType?` `number` | 搜索的钥匙类型，暂时只有类型 1  <br> default:  1<br> range: 1<br> type: 整数 |
 
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 平台 内使用时生效
 
 :::
 
@@ -335,7 +335,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         PurchaseService.getUserKeyNumber(keyNumber => {
             player.character.displayName = "当前用户剩余钥匙数量：", keyNumber.toString();
@@ -361,7 +361,7 @@ ___
 ::: warning Precautions
 
 暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步），
-只在支持大会员的233/Playza/口袋方舟内使用时生效
+只在支持大会员的平台内使用时生效
 
 :::
 
@@ -378,7 +378,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         PurchaseService.isPremiumMember(isSupport => {
             player.character.displayName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
@@ -420,7 +420,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = Player.localPlayer;
         PurchaseService.isPremiumMemberSupported(isSupport => {
             player.character.displayName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
@@ -451,7 +451,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         PurchaseService.openPremiumMemberPurchasePage();
     }
@@ -468,12 +468,12 @@ ___
 
 #### Parameters
 
-| `commodityId` `string` |  商品Id |
+| `commodityId` `string` |  商品Id<br> range: 依据商品 ID 长度而定 |
 | :------ | :------ |
-| `amount` `number` |  数量 |
-| `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
+| `amount` `number` |  数量<br> range:不做限制<br> type:整数 |
+| `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调 |
 
 
 ::: warning Precautions
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 平台 内使用时生效

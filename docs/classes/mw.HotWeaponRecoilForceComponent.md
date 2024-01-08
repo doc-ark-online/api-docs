@@ -121,7 +121,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 #### Parameters
 
-| `value` `number` |  相机水平抖动最大值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  相机水平抖动最大值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -173,7 +173,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  水平偏移最大值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  水平偏移最大值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -225,7 +225,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  新相机垂直抖动最大值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  新相机垂直抖动最大值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -277,7 +277,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  垂直偏移最大值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  垂直偏移最大值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -329,7 +329,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  新相机水平抖动最小值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  新相机水平抖动最小值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -381,7 +381,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  水平偏移最小值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  水平偏移最小值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -433,7 +433,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  新相机垂直抖动最小值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  新相机垂直抖动最小值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -485,7 +485,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  垂直偏移最小值 <br> default: 0 <br> range: [-5, 5] |
+| `value` `number` |  垂直偏移最小值  <br> default:  0  <br> range: [-5, 5]<br> type:浮点数 |
 | :------ | :------ |
 
 </td>

@@ -82,17 +82,17 @@
 | **[setDisableImageColorByHex](mw.Button.md#setdisableimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505|
 | **[setDisableImageColorDecimal](mw.Button.md#setdisableimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置不可用颜色指定R、G、B、A设置颜色 0 ~255|
+| 设置不可用颜色|
 | **[setNormalImageColorByHex](mw.Button.md#setnormalimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置正常颜色指定Hex的颜色文本设定颜色 #05050505|
+| 设置正常颜色指定 Hex 的颜色文本设定颜色 #05050505|
 | **[setNormalImageColorDecimal](mw.Button.md#setnormalimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置正常颜色 指定R、G、B、A设置颜色 0 ~255|
+| 设置正常颜色|
 | **[setPressedImageColorByHex](mw.Button.md#setpressedimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置按下颜色指定Hex的颜色文本设定颜色 #05050505|
+| 设置按下颜色指定 Hex 的颜色文本设定颜色 #05050505|
 | **[setPressedImageColorDecimal](mw.Button.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置按下颜色指定R、G、B、A设置颜色 0 ~255|
+| 设置按下颜色|
 | **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />  |
-| 创建Button控件|
+| 创建 Button 控件|
 
 
 ::: details click
@@ -113,7 +113,7 @@
 | **[removeChild](mw.PanelWidget.md#removechild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | 移除节点,会销毁UI无法在使用|
 | **[removeChildAt](mw.PanelWidget.md#removechildat)**(`index`: `number`): `void` <Badge type="tip" text="client" />  |
-| 移除第几个节点,会销毁UI无法再使用|
+| 移除第几个节点，会销毁 UI 无法再使用|
 :::
 
 
@@ -1148,7 +1148,7 @@ ___
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` | 图片文件路径<br> range:路径长度 |
 | :------ | :------ |
 
 
@@ -1162,7 +1162,7 @@ ___
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` | 图片文件路径<br> range:路径长度 |
 | :------ | :------ |
 
 
@@ -1176,7 +1176,7 @@ ___
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` | 图片文件路径<br> range:路径长度 |
 | :------ | :------ |
 
 
@@ -1190,7 +1190,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串<br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1200,15 +1200,15 @@ ___
 
 • **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置不可用颜色指定R、G、B、A设置颜色 0 ~255
+设置不可用颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -1217,11 +1217,11 @@ ___
 
 • **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置正常颜色指定Hex的颜色文本设定颜色 #05050505
+设置正常颜色指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串<br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1231,15 +1231,15 @@ ___
 
 • **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置正常颜色 指定R、G、B、A设置颜色 0 ~255
+设置正常颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -1248,11 +1248,11 @@ ___
 
 • **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置按下颜色指定Hex的颜色文本设定颜色 #05050505
+设置按下颜色指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串<br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1262,15 +1262,15 @@ ___
 
 • **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置按下颜色指定R、G、B、A设置颜色 0 ~255
+设置按下颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -1279,13 +1279,13 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />
 
-创建Button控件
+创建 Button 控件
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default: null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象  <br> default:  null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称  <br> default: null<br> range:设置合理的名称即可 |
 
 #### Returns
 

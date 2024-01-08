@@ -72,7 +72,7 @@ export default class NewExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
             let playerPos = Player.localPlayer.character.worldTransform.position;
@@ -144,7 +144,7 @@ class ButtonUI {
 | :-----|
 | 全局所有UI的根canvas|
 | **[uiLogInfoEnable](mw.UIService.md#uiloginfoenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取允许定时输出UIService中管理到的UI的信息|
+| 获取允许定时输出 UIService 中管理到的 UI 的信息|
 
 ### Methods <Score text="Methods" /> 
 | **[dumpUIData](mw.UIService.md#dumpuidata)**(): `void` <Badge type="tip" text="client" />  |
@@ -153,7 +153,7 @@ class ButtonUI {
 | **[init](mw.UIService.md#init)**(): `void` <Badge type="tip" text="client" />  |
 | 初始化UIManger|
 | **[addUILayerMap](mw.UIService.md#adduilayermap)**(`layer`: `number`, `startZOrder`: `number`): `void` <Badge type="tip" text="client" />  |
-| 添加UI的管理层|
+| 添加 UI 的管理层|
 | **[create](mw.UIService.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建一个界面|
 | **[destroy](mw.UIService.md#destroy)**(): `void` <Badge type="tip" text="client" />  |
@@ -259,7 +259,7 @@ ___
 <td style="text-align: left">
 
 
-获取允许定时输出UIService中管理到的UI的信息
+获取允许定时输出 UIService 中管理到的 UI 的信息
 
 #### Returns
 
@@ -271,7 +271,7 @@ ___
 <td style="text-align: left">
 
 
-允许定时输出UIService中管理到的UI的信息
+允许定时输出 UIService 中管理到的 UI 的信息
 
 #### Parameters
 
@@ -308,13 +308,13 @@ ___
 
 • `Static` `Protected` **addUILayerMap**(`layer`, `startZOrder`): `void` <Badge type="tip" text="client" />
 
-添加UI的管理层
+添加 UI 的管理层
 
 #### Parameters
 
-| `layer` `number` | layer的序列号 |
+| `layer` `number` | layer 的序列号<br> range: 不做限制<br> type:整数 |
 | :------ | :------ |
-| `startZOrder` `number` | 该层开始的zOrder |
+| `startZOrder` `number` | 该层开始的 zOrder<br> range: 不做限制<br> type:整数 |
 
 
 ___
@@ -403,7 +403,7 @@ ___
 
 | `PanelClass` () => `T` | 界面类型 |
 | :------ | :------ |
-| `bNeedNew?` `boolean` | 没有找到的有缓存的UI界面时，是否需要新建一个 default:true |
+| `bNeedNew?` `boolean` | 没有找到的有缓存的UI界面时，是否需要新建一个  <br> default: true |
 
 #### Returns
 
@@ -542,7 +542,7 @@ ___
 
 | `panel` [`UIScript`](mw.UIScript.md) | 界面 |
 | :------ | :------ |
-| `layer?` `number` | 图层 default:UILayer.UILayerMiddle |
+| `layer?` `number` | 图层  <br> default: UILayer.UILayerMiddle<br> range:不做限制，可使用 UILayerMiddle 类型枚举<br> type: 整数 |
 | `...params` `any`[] | 显示参数(这个参数可以传递给界面的onShow方法) |
 
 #### Returns

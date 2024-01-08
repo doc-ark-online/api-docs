@@ -17,7 +17,7 @@ export default class DataCenterCExample extends Script {
     }
 
     //等待玩家数据准备好并输出玩家数据的等级
-    public async traceLevel(): Promise<void> {
+    public async traceLevel(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             //等待玩家数据准备好
             await DataCenterC.ready();
@@ -91,7 +91,7 @@ export default class DataCenterCExample extends Script {
     }
 
     //等待玩家数据准备好并输出玩家数据的等级
-    public async traceLevel(): Promise<void> {
+    public async traceLevel(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             //等待玩家数据准备好
             await DataCenterC.ready();

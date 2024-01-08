@@ -472,7 +472,7 @@ ___
 
 #### Parameters
 
-| `dragKey` [`Keys`](../enums/mw.Keys.md) | 触发按键 default:mw.Keys |
+| `dragKey` [`Keys`](../enums/mw.Keys.md) | 触发按键  <br> default: mw.Keys |
 | :------ | :------ |
 
 #### Returns
@@ -511,10 +511,10 @@ ___
 
 | `inVisualWidget` [`Widget`](mw.Widget.md) | 拖拽显示的UI控件 |
 | :------ | :------ |
-| `inTag?` `string` | 标签文本 default:"" |
-| `inPayLoad?` `any` | 拖拽事件数据信息 default:null |
-| `inPivot?` [`DragPivot`](../enums/mw.DragPivot.md) | 拖拽显示UI的锚点 default:UIType.DragPivot.TopLeft |
-| `inOffset?` [`Vector2`](mw.Vector2.md) | 拖拽显示UI相对于锚点的偏移的百分比 default:vector2(0,0) |
+| `inTag?` `string` | 标签文本  <br> default: ""<br> range:不做限制 |
+| `inPayLoad?` `any` | 拖拽事件数据信息  <br> default: null |
+| `inPivot?` [`DragPivot`](../enums/mw.DragPivot.md) | 拖拽显示UI的锚点  <br> default: UIType.DragPivot.TopLeft |
+| `inOffset?` [`Vector2`](mw.Vector2.md) | 拖拽显示UI相对于锚点的偏移的百分比  <br> default: vector2(0,0) |
 
 #### Returns
 
@@ -557,7 +557,7 @@ ___
 
 #### Parameters
 
-| `key` `string` |  行为标记 |
+| `key` `string` |  行为标记<br> range:字符串长度不受限制，合理即可 |
 | :------ | :------ |
 | `value` `any` |  行为值 |
 
@@ -625,7 +625,7 @@ ___
 
 #### Parameters
 
-| `key` `string` |  行为标记 |
+| `key` `string` |  行为标记<br> range:字符串长度不受限制，合理即可 |
 | :------ | :------ |
 
 #### Returns
@@ -685,6 +685,6 @@ ___
 
 #### Parameters
 
-| `key` `string` |  行为标记 |
+| `key` `string` |  行为标记<br> range:字符串长度不受限制，合理即可 |
 | :------ | :------ |
 

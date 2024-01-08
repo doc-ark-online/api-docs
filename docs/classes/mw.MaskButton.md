@@ -157,19 +157,19 @@
 | **[setDisableImageColorByHex](mw.MaskButton.md#setdisableimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505|
 | **[setDisableImageColorDecimal](mw.MaskButton.md#setdisableimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置禁用颜色指定R、G、B、A设置颜色 0 ~255|
+| 设置禁用颜色|
 | **[setMaskImageColorByHex](mw.MaskButton.md#setmaskimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置遮罩图片颜色指定Hex的颜色文本设定颜色 #05050505|
 | **[setMaskImageColorDecimal](mw.MaskButton.md#setmaskimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置遮罩图片颜色指定R、G、B、A设置颜色 0 ~255|
+| 设置遮罩图片颜色|
 | **[setNormalImageColorByHex](mw.MaskButton.md#setnormalimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置普通图片颜色指定Hex的颜色文本设定颜色 #05050505|
 | **[setNormalImageColorDecimal](mw.MaskButton.md#setnormalimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置普通图片颜色 指定R、G、B、A设置颜色 0 ~255|
+| 设置普通图片颜色|
 | **[setPressedImageColorByHex](mw.MaskButton.md#setpressedimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置按压图片颜色指定Hex的颜色文本设定颜色 #05050505|
 | **[setPressedImageColorDecimal](mw.MaskButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255|
+| 设置按压图片颜色|
 | **[newObject](mw.MaskButton.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`MaskButton`](mw.MaskButton.md) <Badge type="tip" text="client" />  |
 | 创建 Mask 控件|
 
@@ -2018,7 +2018,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串<br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -2028,15 +2028,15 @@ ___
 
 • **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置禁用颜色指定R、G、B、A设置颜色 0 ~255
+设置禁用颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -2049,7 +2049,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串 <br> <br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -2059,15 +2059,15 @@ ___
 
 • **setMaskImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置遮罩图片颜色指定R、G、B、A设置颜色 0 ~255
+设置遮罩图片颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -2080,7 +2080,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串  <br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -2090,15 +2090,15 @@ ___
 
 • **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置普通图片颜色 指定R、G、B、A设置颜色 0 ~255
+设置普通图片颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -2111,7 +2111,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串<br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -2121,15 +2121,15 @@ ___
 
 • **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置按压图片颜色指定R、G、B、A设置颜色 0 ~255
+设置按压图片颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。  <br> range:[0, 255]<br> type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。  <br> range:[0, 255]<br> type: 整数 |
+| `B` `number` | 颜色 B 值。  <br> range:[0, 255]<br> type: 整数 |
+| `A` `number` | 颜色 透明度。  <br> range:[0, 255]<br> type: 整数 |
 
 
 ___
@@ -2142,9 +2142,9 @@ ___
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default: null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象  <br> default:  null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称  <br> default:  null  <br> <br> range:设置合理的名称即可 |
 
 #### Returns
 

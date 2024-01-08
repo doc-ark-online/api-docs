@@ -53,11 +53,11 @@ ___
 
 | `decoration` `string`  [`GameObject`](mw.GameObject.md) | 挂件 |
 | :------ | :------ |
-| `attachmentOffset?` [`Transform`](mw.Transform.md) | 挂件transform信息 default:null |
+| `attachmentOffset?` [`Transform`](mw.Transform.md) | 挂件transform信息  <br> default: null |
 
 #### Returns
 
-| `number` |  |
+| `number` | 插槽的 index |
 | :------ | :------ |
 
 ::: warning Precautions
@@ -117,7 +117,7 @@ ___
 
 #### Parameters
 
-| `isDestroy?` `boolean` | 是否销毁 default:false |
+| `isDestroy?` `boolean` | 是否销毁  <br> default: false |
 | :------ | :------ |
 
 
@@ -174,7 +174,7 @@ ___
 
 | `attachmentElement` `number`  [`GameObject`](mw.GameObject.md) | 挂件 |
 | :------ | :------ |
-| `isDestroy?` `boolean` | 是否销毁 default:false |
+| `isDestroy?` `boolean` | 是否销毁  <br> default: false |
 
 
 <span style="font-size: 14px;">

@@ -128,7 +128,7 @@ ___
 
 #### Parameters
 
-| `GUID` `string` |  需要设置的蒙太奇动画 GUID |
+| `GUID` `string` |  需要设置的蒙太奇动画 GUID<br> range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 
 
@@ -180,7 +180,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  当前弹夹容量 <br> default: 30 <br> range: [1, 1000] |
+| `value` `number` |  当前弹夹容量  <br> default:  30  <br> range: [1, 1000]<br> type:整数 |
 | :------ | :------ |
 
 
@@ -226,7 +226,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  新弹夹中子弹数量 <br> default: 0 <br> range: [0, clipSize] |
+| `value` `number` |  新弹夹中子弹数量  <br> default:  0  <br> range: [0, clipSize]<br> type:整数 |
 | :------ | :------ |
 
 
@@ -278,7 +278,7 @@ ___
 
 #### Parameters
 
-| `interval` `number` |  开火间隙 <br> default: 0.1 <br> range: [0.01, 10] |
+| `interval` `number` |  开火间隙  <br> default:  0.1  <br> range: [0.01, 10]<br> type:浮点数 |
 | :------ | :------ |
 
 
@@ -330,7 +330,7 @@ ___
 
 #### Parameters
 
-| `newFireMode` [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) |  新的热武器开火模式 <br> default: 默认为单发 HotWeaponFireMode.SingleFire |
+| `newFireMode` [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) |  新的热武器开火模式  <br> default:  默认为单发 HotWeaponFireMode.SingleFire |
 | :------ | :------ |
 
 
@@ -434,7 +434,7 @@ ___
 
 #### Parameters
 
-| `count` `number` |  一次开火发射的子弹数量 <br> default: 1 <br> range: [1, 100] |
+| `count` `number` |  一次开火发射的子弹数量  <br> default:  1  <br> range: [1, 100]<br> type:整数 |
 | :------ | :------ |
 
 

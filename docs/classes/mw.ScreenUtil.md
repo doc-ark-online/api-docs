@@ -25,12 +25,12 @@
 
 #### Parameters
 
-| `sceneX` `number` | 视口坐标X |
+| `sceneX` `number` | 视口坐标 X<br> range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2<br> type: 浮点数 |
 | :------ | :------ |
-| `sceneY` `number` | 视口坐标Y |
-| `distance?` `number` | 检测距离 default:100000 |
-| `multiTrace?` `boolean` | 是否获取多个GameObject default:false |
-| `onRay?` `boolean` | 是否开启射线显示效果 default:false |
+| `sceneY` `number` | 视口坐标 Y<br> range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2<br> type: 浮点数 |
+| `distance?` `number` | 检测距离  <br> default: 100000<br> range: 不做限制，type: 浮点数 |
+| `multiTrace?` `boolean` | 是否获取多个GameObject  <br> default: false |
+| `onRay?` `boolean` | 是否开启射线显示效果  <br> default: false |
 
 #### Returns
 

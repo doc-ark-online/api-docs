@@ -23,7 +23,7 @@
 @Component
 export default class LightingExample extends mw.Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if(SystemUtil.isClient())
         {
             mw.InputUtil.onKeyDown(Keys.Add,()=>{

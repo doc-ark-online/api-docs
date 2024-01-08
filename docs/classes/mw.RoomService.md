@@ -12,31 +12,31 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 | :-----|
 | 获取当前的环境|
 | **[getMGSRoomId](mw.RoomService.md#getmgsroomid)**(): `string`   |
-| 获取MGS平台的RoomId|
+| 获取 MGS 平台的 RoomId|
 | **[getRoomId](mw.RoomService.md#getroomid)**(): `string`   |
 | 获取游戏的RoomMgr分配的RoomId|
 | **[isSupported](mw.RoomService.md#issupported)**(): `boolean`   |
 | 获取当前环境是否支持MGS功能|
 | **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`   |
-| 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
-| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void` <Badge type="tip" text="other" />  |
+| 游戏方可调用 joinAudio 加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
+| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void` <Badge type="tip" text="server" />  |
 | 将某一玩家踢下线|
 | **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void`   |
 | 注册聊天回调|
 | **[reportLogInfo](mw.RoomService.md#reportloginfo)**(`eventName`: `string`, `eventDesc`: `string`, `jsonData`: `string`): `void`   |
-| 游戏方调用reportLogInfo接口上报运营所需的埋点数据|
+| 游戏方调用 reportLogInfo 接口上报运营所需的埋点数据|
 | **[requestSaveImage](mw.RoomService.md#requestsaveimage)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
 | 向233发起imageModify并获得回调|
 | **[requestSavePortrait](mw.RoomService.md#requestsaveportrait)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
 | 向233发起editProfile并获得回调|
 | **[requestShareScreenShot](mw.RoomService.md#requestsharescreenshot)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
-| 向233发起shareScreenshot并获得回调|
+| 向 233 发起 shareScreenshot 并获得回调|
 | **[showExitGameDialog](mw.RoomService.md#showexitgamedialog)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`   |
-| 游戏方可调用showExitGameDialog来显示退出游戏确认框|
+| 游戏方可调用 showExitGameDialog 来显示退出游戏确认框|
 | **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void`   |
-| 向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能|
+| 向 233 发起 showFloatingLayer 来展开悬浮层的内容，可展开聊天/好友功能|
 | **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`   |
-| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
+| 若需要查看 233 玩家的资料信息，可通过调用 showUserProfile 进行查看， SDK 会弹出资料卡片弹窗|
 
 ## Methods
 
@@ -64,16 +64,16 @@ ___
 
 • `Static` **getMGSRoomId**(): `string` 
 
-获取MGS平台的RoomId
+获取 MGS 平台的 RoomId
 
 #### Returns
 
-| `string` | MGS平台的RoomId |
+| `string` | MGS 平台的 RoomId |
 | :------ | :------ |
 
 ::: warning Precautions
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 :::
 
@@ -112,7 +112,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
+使用示例:创建一个名为 RoomExample 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
 </span>
 
 ```ts
@@ -160,7 +160,7 @@ ___
 
 • `Static` **joinAudio**(`resp`): `void` 
 
-游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）
+游戏方可调用 joinAudio 加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）
 
 #### Parameters
 
@@ -178,19 +178,19 @@ ___
 
 ### kick <Score text="kick" /> 
 
-• `Static` **kick**(`player`, `message?`): `void` <Badge type="tip" text="other" />
+• `Static` **kick**(`player`, `message?`): `void` <Badge type="tip" text="server" />
 
 将某一玩家踢下线
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) | 踢下线的Player |
+| `player` `number`  [`Player`](mw.Player.md) |  踢下线的 Player |
 | :------ | :------ |
-| `message?` `string` | usage：踢出玩家时触发退出UI弹出的信息 |
+| `message?` `string` |  踢出玩家时触发退出 UI 弹出的信息  <br> default: null<br> range: 提示适合长度的信息即可 |
 
 
 <span style="font-size: 14px;">
-使用示例:
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下 G 键，踢出角色。
 </span>
 
 ```ts
@@ -238,20 +238,43 @@ ___
 
 :::
 
+<span style="font-size: 14px;">
+使用示例:创建一个名为 ChatMsgDemoScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏
+</span>
+
+```ts
+@Component
+export default class ChatMsgDemoScript extends Script {
+
+    protected onStart(): void {
+        // 只在客户端注册，因为回调只在客户端触发
+        if (SystemUtil.isClient()) {
+            // 按照要求的格式声明回调。回调中的数据就是聊天消息，这里我们将收到的聊天消息打印到日志窗口
+            const callback = (receivedMsg: string) => {
+                console.log(`We received chat message[${receivedMsg}] from MGS.`)
+            };
+
+            // 注册聊天回调之后，当有玩家在MGS聊天框中发送消息，就会触发注册的回调
+            RoomService.registerMGSChatMessageEvent(callback);
+        }
+    }
+}
+```
+
 ___
 
 ### reportLogInfo <Score text="reportLogInfo" /> 
 
 • `Static` **reportLogInfo**(`eventName`, `eventDesc`, `jsonData`): `void` 
 
-游戏方调用reportLogInfo接口上报运营所需的埋点数据
+游戏方调用 reportLogInfo 接口上报运营所需的埋点数据
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称<br> range:字符串长度不做限制，制定适合长度的字符串即可 |
 | :------ | :------ |
-| `eventDesc` `string` | 事件描述 |
-| `jsonData` `string` | 发送的json数据 |
+| `eventDesc` `string` | 事件描述<br> range:字符串长度不做限制，制定适合长度的字符串即可 |
+| `jsonData` `string` | 发送的 json 数据<br> range:字符串长度不做限制，制定适合长度的字符串即可 |
 
 
 ::: warning Precautions
@@ -272,7 +295,7 @@ ___
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `mgsData` `string` | 要保存的图片Url地址 |
+| `mgsData` `string` | 要保存的图片 Url 地址<br> range:地址 |
 
 
 ::: warning Precautions
@@ -293,7 +316,7 @@ ___
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `mgsData` `string` | 要保存的mgs数据 |
+| `mgsData` `string` | 要保存的 mgs 数据<br> range:制定适合长度的字符串数据即可 |
 
 
 ::: warning Precautions
@@ -308,13 +331,13 @@ ___
 
 • `Static` **requestShareScreenShot**(`resp`, `mgsData`): `void` 
 
-向233发起shareScreenshot并获得回调
+向 233 发起 shareScreenshot 并获得回调
 
 #### Parameters
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `mgsData` `string` | 要保存的图片Url地址 |
+| `mgsData` `string` | 要保存的图片 Url 地址<br> range:地址 |
 
 
 ::: warning Precautions
@@ -329,7 +352,7 @@ ___
 
 • `Static` **showExitGameDialog**(`resp`): `void` 
 
-游戏方可调用showExitGameDialog来显示退出游戏确认框
+游戏方可调用 showExitGameDialog 来显示退出游戏确认框
 
 #### Parameters
 
@@ -349,18 +372,18 @@ ___
 
 • `Static` **showFloatingLayer**(`resp`, `tab`): `void` 
 
-向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能
+向 233 发起 showFloatingLayer 来展开悬浮层的内容，可展开聊天/好友功能
 
 #### Parameters
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `tab` `number` | 悬浮层功能位置 取值(0: 聊天 1: 好友) |
+| `tab` `number` | 悬浮层功能位置<br> range:取值(0: 聊天 1: 好友)<br> type:整数 |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 :::
 
@@ -370,13 +393,13 @@ ___
 
 • `Static` **showUserProfile**(`resp`, `userId`): `void` 
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
+若需要查看 233 玩家的资料信息，可通过调用 showUserProfile 进行查看， SDK 会弹出资料卡片弹窗
 
 #### Parameters
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `userId` `string` | 要显示的用户的userId |
+| `userId` `string` | 要显示的用户的 userId<br> range: 依据 userid 长度而定 |
 
 
 ::: warning Precautions

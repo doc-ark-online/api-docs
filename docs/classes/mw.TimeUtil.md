@@ -9,20 +9,20 @@
 ### Properties <Score text="Properties" /> 
 | **[onEnterFrame](mw.TimeUtil.md#onenterframe)**: [`Action1`](mw.Action1.md)<`number`\>  |
 | :-----|
-| 帧刷新事件(参数deltaTime)|
+| 帧刷新事件 (参数 deltaTime )|
 | **[traceFrameTime](mw.TimeUtil.md#traceframetime)**: `boolean`  |
 | 是否输出每帧的执行时间|
 
 ### Methods <Score text="Methods" /> 
 | **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void`   |
 | :-----|
-| 清除delayExecute|
+| 清除 delayExecute|
 | **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`   |
-| 清除setInterval|
+| 清除 setInterval|
 | **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`   |
 | 延迟一定帧数执行方法|
 | **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>   |
-| 延迟一定秒数,用于异步方法中间的等待|
+| 延迟一定秒数，用于异步方法中间的等待|
 | **[deltatime](mw.TimeUtil.md#deltatime)**(): `number`   |
 | 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`   |
@@ -40,7 +40,7 @@
 
 ▪ `Static` **onEnterFrame**: [`Action1`](mw.Action1.md)<`number`\>
 
-帧刷新事件(参数deltaTime)
+帧刷新事件 (参数 deltaTime )
 
 ::: warning Precautions
 
@@ -60,7 +60,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.onEnterFrame.add(this.onEnterFrame, this);
     }
@@ -86,11 +86,11 @@ ___
 
 • `Static` **clearDelayExecute**(`id`): `void` 
 
-清除delayExecute
+清除 delayExecute
 
 #### Parameters
 
-| `id` `number` |  delayExecute方法返回的ID |
+| `id` `number` |  delayExecute 方法返回的 ID  <br> range: 根据 ID 长度而定。<br> type: 整数 |
 | :------ | :------ |
 
 
@@ -106,7 +106,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let id = TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -125,11 +125,11 @@ ___
 
 • `Static` **clearInterval**(`id`): `void` 
 
-清除setInterval
+清除 setInterval
 
 #### Parameters
 
-| `id` `number` |  setInterval方法返回的ID |
+| `id` `number` |  setInterval 方法返回的 ID  <br> range: 根据 ID 长度而定。<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -145,7 +145,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -178,7 +178,7 @@ ___
 
 | `handler` () => `void` |  执行的方法 |
 | :------ | :------ |
-| `frameNum?` `number` |  要延迟的帧数 default: 1 |
+| `frameNum?` `number` |  要延迟的帧数  <br> default:  1  <br> range: 根据你想要延迟的帧数而定，不做限制。<br> type: 整数 |
 
 #### Returns
 
@@ -197,7 +197,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -213,11 +213,11 @@ ___
 
 • `Static` **delaySecond**(`second`): `Promise`<`void`\> 
 
-延迟一定秒数,用于异步方法中间的等待
+延迟一定秒数，用于异步方法中间的等待
 
 #### Parameters
 
-| `second` `number` |  时间(单位：秒) |
+| `second` `number` |  时间(单位：秒)  <br> range: 不限制<br> type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -237,7 +237,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delaySecond(5).then(() => {
             console.log("5 seconds later");
@@ -297,7 +297,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         InputUtil.onKeyDown(Keys.F, () => {
             const elapsedTime = TimeUtil.elapsedTime();
@@ -318,9 +318,9 @@ ___
 
 #### Parameters
 
-| `timeData` `Date` | 标准时间, 时间戳等 |
+| `timeData` `Date` | 标准时间，时间戳等 |
 | :------ | :------ |
-| `format?` `string` | 日期字符造串 default:outer |
+| `format?` `string` | 日期字符串  <br> default: outer<br> range: 传入时间格式，如：1996-01-20 |
 
 #### Returns
 
@@ -339,7 +339,7 @@ export default class TimeExample extends Script {
        this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
        if (!SystemUtil.isClient()) return;
        const time = TimeUtil.parseTime(new Date());
        console.log(`time:${time}`);
@@ -360,12 +360,12 @@ ___
 
 | `handler` () => `void` |  要执行的方法 |
 | :------ | :------ |
-| `timeout` `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` () => `boolean` |  退出的判断方法 返回true停止 default: null |
+| `timeout` `number` |  间隔时间（最小时间为两帧时间差 单位：秒）  <br> range:[0, +∞]<br> type: 浮点数 |
+| `exitJudge?` () => `boolean` |  退出的判断方法 返回 true 停止  <br> default:  null |
 
 #### Returns
 
-| `number` | 用于停止的ID |
+| `number` | 用于停止的 ID |
 | :------ | :------ |
 
 <span style="font-size: 14px;">
@@ -380,7 +380,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -429,7 +429,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         const time = TimeUtil.time();
         console.log(`time stamp:${time}`);

@@ -20,8 +20,6 @@
 
 - 网络通信：客户端和服务端之间通过网络进行通信，实现玩家之间的互动。服务端充当中间人的角色，接收和处理客户端的请求，并将相应的信息传递给其他客户端，实现玩家之间的实时交流和互动。通过服务端的网络架构，可以确保游戏在不同玩家之间的流畅运行，并处理网络延迟和连接问题。
 
-- 扩展性和灵活性：将游戏逻辑和数据处理分离到服务端，可以使游戏具有更好的扩展性和灵活性。通过对服务端进行修改和增强，可以轻松地引入新的功能和扩展游戏的规模。客户端可以更专注于用户界面和交互体验，而服务端则负责处理游戏的核心逻辑和数据管理。
-
 2. 客户端和服务端之间如何通信？
 
 编辑器默认为多人游戏。并采用客户端-服务器模型运行。口袋方舟服务器是维护体验状态的最终权威，负责将所有连接的客户端与服务器保持同步。
@@ -256,7 +254,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
         }
     }
     //优先启动模块需要在onExecute中调用该函数,编辑器会等待fun执行完毕后再执行其他模块的onStart
-    protected async onExecuteStart(fun: Function): Promise<void> {
+    protected async onExecuteStart(fun: Function): `Promise`<`void`\> {
         await TimeUtil.delaySecond(1);
         console.log("-----------客户端-hud模块准备结束-----------");
         fun();
@@ -332,7 +330,7 @@ class PlayerModuleData extends Subdata {
 ### Methods <Score text="Methods" /> 
 | **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`   |
 | :-----|
-| 调用一个模块的onExecute方法|
+| 调用一个模块的 onExecute 方法|
 | **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
 | 根据类型获取一个模块。|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`   |
@@ -350,14 +348,14 @@ class PlayerModuleData extends Subdata {
 
 • `Static` **callExecute**<`T`\>(`moduleClass`, `type?`, `...params`): `any` 
 
-调用一个模块的onExecute方法
+调用一个模块的 onExecute 方法
 
 #### Parameters
 
 | `moduleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块 |
 | :------ | :------ |
-| `type?` `number` |  给onExecute方法传递的操作类型，需要各个模块自己定义 default: 0 |
-| `...params` `any`[] |  给onExecute方法传递的参数，需要各个模块自己定义 |
+| `type?` `number` |  给 onExecute 方法传递的操作类型，需要各个模块自己定义  <br> default:  0<br> range:<br> type: |
+| `...params` `any`[] |  给 onExecute 方法传递的参数，需要各个模块自己定义 |
 
 #### Returns
 
@@ -389,7 +387,7 @@ ___
 
 1. 实现跨模块调用（模块之间相互调用其方法）。
 
-2. 让外部代码进行调用（比如在UI脚本里需要使用到模块里的方法）。
+2. 让外部代码进行调用（比如在 UI 脚本里需要使用到模块里的方法）。
 
 #### Type parameters
 
@@ -447,20 +445,20 @@ ___
 | `ServerModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
 | :------ | :------ |
 | `ClientModuleType` [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
-| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型 default:null |
+| `ModuleDataType?` [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\> |  模块的数据类型  <br> default: null |
 
 #### Returns
 
 | [`ModuleService`](mwext.ModuleService.md) | ModuleService 自身，可用作链式调用 |
 | :------ | :------ |
 
-1. 将各个模块都添加到ModuleService中，方便获取和管理。
+1. 将各个模块都添加到 ModuleService 中，方便获取和管理。
 
-2. 按注册顺序依次执行各个模块的onAwake、onStart、onEnterScene。
+2. 按注册顺序依次执行各个模块的 onAwake、onStart、onEnterScene。
 
-3. 将由"net_"开头的方法注册成网络方法。
+3. 将由 "net_" 开头的方法注册成网络方法。
 
-4. 让C和S关联同一份数据（数据由S端获取，玩家上线以及每次服务端save数据的时候，会同步给客户端）。
+4. 让 C 和 S 关联同一份数据（数据由S端获取，玩家上线以及每次服务端 save 数据的时候，会同步给客户端）。
 
 ___
 

@@ -82,7 +82,7 @@ mw
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
 | [HideInEditorState](../enums/mw.HideInEditorState.md)  |
-| :----- |
+| 是否在编辑器里隐藏|
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |
@@ -244,6 +244,8 @@ mw
 | 广告服务，支持激励/插屏类型|
 | [AdvancedVehicle](../classes/mw.AdvancedVehicle.md)  |
 | 四轮载具|
+| [AnalyticsService](../classes/mw.AnalyticsService.md)  |
+| 分析服务|
 | [Animation](../classes/mw.Animation.md)  |
 | 动画|
 | [AssetIconData](../classes/mw.AssetIconData.md)  |
@@ -272,8 +274,6 @@ mw
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |
 | 调色板|
-| [Component](../classes/mw.Component.md)  |
-| :----- |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
 | 屏幕坐标转换结果|
 | [DataStorage](../classes/mw.DataStorage.md)  |
@@ -345,7 +345,7 @@ mw
 | [Lighting](../classes/mw.Lighting.md)  |
 | 光照|
 | [LinearColor](../classes/mw.LinearColor.md)  |
-| 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0|
+| 线性RGBA颜色|
 | [LocaleUtil](../classes/mw.LocaleUtil.md)  |
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
@@ -481,7 +481,7 @@ mw
 | [UIService](../classes/mw.UIService.md)  |
 | UI 管理类|
 | [UITransform](../classes/mw.UITransform.md)  |
-| 节点Transform|
+| Transform|
 | [UIWidget](../classes/mw.UIWidget.md)  |
 | 世界 UI|
 | [UserWidget](../classes/mw.UserWidget.md)  |
@@ -687,11 +687,11 @@ mw
 | **[createUI](Core.mw.md#createui)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建UIPrefab|
 | **[createUIByName](Core.mw.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 创建UIPrefab|
+| 创建 UIPrefab|
 | **[createUIByPath](Core.mw.md#createuibypath)**(`UIPath`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 创建UIPrefab|
+| 创建 UIPrefab|
 | **[createUIOnlyClass](Core.mw.md#createuionlyclass)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
-| 创建空的UI|
+| 创建空的 UI|
 | **[endActorPropertiesChange](Core.mw.md#endactorpropertieschange)**(`target`: `Base`): `void` <Badge type="tip" text="client" />  |
 | 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](Core.mw.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <Badge type="tip" text="client" />  |
@@ -701,13 +701,13 @@ mw
 | **[fetch](Core.mw.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/mw.RequestInit.md)): `Promise`<[`Response`](../interfaces/mw.Response.md)\>   |
 | HTTP请求|
 | **[findUIScript](Core.mw.md#finduiscript)**(`UI`: [`Widget`](../classes/mw.Widget.md)): [`UIScript`](../classes/mw.UIScript.md) <Badge type="tip" text="client" />  |
-| 获取UI脚本|
+| 获取 UI 脚本|
 | **[generalHttpRequest](Core.mw.md#generalhttprequest)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/mw.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean`   |
-| 通用Http请求|
+| 通用 Http 请求|
 | **[getAbsoluteSize](Core.mw.md#getabsolutesize)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 返回绝对空间中几何图形的大小|
 | **[getAssetIconDataByAssetID](Core.mw.md#getasseticondatabyassetid)**(`asset`: `string`): [`AssetIconData`](../classes/mw.AssetIconData.md) <Badge type="tip" text="client" />  |
-| 获取资源的ICON信息|
+| 获取资源的 ICON 信息|
 | **[getCurrentMousePosition](Core.mw.md#getcurrentmouseposition)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取当前鼠标所在的绝对位置|
 | **[getDragDroppingContent](Core.mw.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/mw.DragDropOperation.md) <Badge type="tip" text="client" />  |
@@ -755,7 +755,7 @@ mw
 | **[getTwoFingerMoveGestureDelegate](Core.mw.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
 | 获取双指滑动的代理|
 | **[getUrlParameter](Core.mw.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string`   |
-| 获取url参数|
+| 获取 url 参数|
 | **[getViewportScale](Core.mw.md#getviewportscale)**(): `number` <Badge type="tip" text="client" />  |
 | 获取应用于视口和所有小部件的当前DPI Scale。|
 | **[getViewportSize](Core.mw.md#getviewportsize)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
@@ -785,7 +785,7 @@ mw
 | **[redo](Core.mw.md#redo)**(): `void` <Badge type="tip" text="client" />  |
 | 执行恢复操作|
 | **[releaseAssetIconTextureFromCache](Core.mw.md#releaseasseticontexturefromcache)**(`asset`: `string`): `void` <Badge type="tip" text="client" />  |
-| 尝试标记资源的ICON图为待释放的等待释放|
+| 尝试标记资源的 ICON 图为待释放的等待释放|
 | **[saveProject](Core.mw.md#saveproject)**(): `void`   |
 | 保存当前游戏项目|
 | **[screenShot](Core.mw.md#screenshot)**(`Resolution`: [`Vector2`](../classes/mw.Vector2.md), `StartPoint`: [`Vector2`](../classes/mw.Vector2.md), `Width`: `number`, `Height`: `number`, `callback`: (`dataString`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
@@ -1086,7 +1086,7 @@ usage: id
 
 **`Param`**
 
-usage: 资源id入库前为空
+usage: 资源id入库前为空 <br> range: 依据资源 ID 长度而定
 
 **`Param`**
 
@@ -1557,7 +1557,7 @@ usage: 移动编辑器上传预制体返回状态
 
 **`Param`**
 
-usage: 资源标识
+usage: 资源标识 <br> range: 字符串长度依据资源 ID 长度而定
 
 #### Type declaration
 
@@ -1813,7 +1813,7 @@ ___
 
 #### Parameters
 
-| `option?` `IPropertyOptions` | 配置 default:配置 |
+| `option?` `IPropertyOptions` | 配置  <br> default: 配置 |
 | :------ | :------ |
 
 #### Returns
@@ -1993,10 +1993,10 @@ ___
 
 #### Parameters
 
-| `gameId` `string` | 消费态游戏Id |
+| `gameId` `string` | 消费态游戏Id<br> range:字符串长度依据 gameId 长度而定 |
 | :------ | :------ |
-| `version?` `string` | 消费态游戏版本号 default:"" |
-| `bDownload?` `boolean` | 是否下载到本地 default:true |
+| `version?` `string` | 消费态游戏版本号  <br> default: "" |
+| `bDownload?` `boolean` | 是否下载到本地  <br> default: true |
 
 #### Returns
 
@@ -2116,7 +2116,7 @@ ___
 | `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
 | `fov` `number` |  视场; |
 | `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径  <br> default: null |
 
 
 ___
@@ -2144,7 +2144,7 @@ ___
 | `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
 | `fov` `number` |  视场; |
 | `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径  <br> default: null |
 
 
 ___
@@ -2163,7 +2163,7 @@ ___
 
 #### Parameters
 
-| `IgnoreMatGuids?` `string`[] | 清除时即使未使用也不清除的材质资源Guid default:[] |
+| `IgnoreMatGuids?` `string`[] | 清除时即使未使用也不清除的材质资源Guid  <br> default: [] |
 | :------ | :------ |
 
 
@@ -2177,7 +2177,7 @@ ___
 
 #### Parameters
 
-| `ScreenX` `number` |  屏幕X轴坐标值 default: |
+| `ScreenX` `number` |  屏幕X轴坐标值  <br> default:  |
 | :------ | :------ |
 | `ScreenY` `number` |  屏幕Y轴坐标值 |
 
@@ -2201,9 +2201,9 @@ ___
 
 #### Parameters
 
-| `UIPrefabName` `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径,为空的话等于createUIOnlyClass |
+| `UIPrefabName` `string` | 指定 UI 自定义控件的相对于工程的路径或则相对于 UI 目录的路径，为空的话等于 createUIOnlyClass<br> range: 路径长度不做限制 |
 | :------ | :------ |
-| `panelClass` () => `T` | 继承至UI身上脚本的派生类 |
+| `panelClass` () => `T` | 继承至 UI 身上脚本的派生类 |
 
 #### Returns
 
@@ -2216,11 +2216,11 @@ ___
 
 • **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />
 
-创建UIPrefab
+创建 UIPrefab
 
 #### Parameters
 
-| `UIPrefabName` `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+| `UIPrefabName` `string` | 指定 UI 自定义控件的相对于工程的路径或则相对于 UI 目录的路径<br> range: 路径长度不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -2234,11 +2234,11 @@ ___
 
 • **createUIByPath**(`UIPath`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />
 
-创建UIPrefab
+创建 UIPrefab
 
 #### Parameters
 
-| `UIPath` `string` | 创建UI 的完整路径 |
+| `UIPath` `string` | 创建 UI 的完整路径<br> range: 路径长度 |
 | :------ | :------ |
 
 #### Returns
@@ -2252,7 +2252,7 @@ ___
 
 • **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="client" />
 
-创建空的UI
+创建空的 UI
 
 #### Type parameters
 
@@ -2261,7 +2261,7 @@ ___
 
 #### Parameters
 
-| `panelClass` () => `T` | 指定UI控件身上的行为脚本 |
+| `panelClass` () => `T` | 指定 UI 控件身上的行为脚本 |
 | :------ | :------ |
 
 #### Returns
@@ -2295,7 +2295,7 @@ ___
 
 | `target` `Base` | 记录的对象 |
 | :------ | :------ |
-| `bIsGizmoActor?` `boolean` | 是否是gizmo actor default:false |
+| `bIsGizmoActor?` `boolean` | 是否是gizmo actor  <br> default: false |
 
 
 ___
@@ -2322,9 +2322,9 @@ HTTP请求
 
 #### Parameters
 
-| `url` `string` | url |
+| `url` `string` | url<br> range: 不做限制 |
 | :------ | :------ |
-| `init?` [`RequestInit`](../interfaces/mw.RequestInit.md) | 请求信息 default:请求信息 |
+| `init?` [`RequestInit`](../interfaces/mw.RequestInit.md) | 请求信息  <br> default: 请求信息 |
 
 #### Returns
 
@@ -2337,7 +2337,7 @@ ___
 
 • **findUIScript**(`UI`): [`UIScript`](../classes/mw.UIScript.md) <Badge type="tip" text="client" />
 
-获取UI脚本
+获取 UI 脚本
 
 #### Parameters
 
@@ -2355,7 +2355,7 @@ ___
 
 • **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` 
 
-通用Http请求
+通用 Http 请求
 
 <span style="font-size: 14px;">
 使用示例:发送Http请求
@@ -2370,7 +2370,7 @@ generalHttpRequest(Response,Url,Param,JsonContent)
 | `response` [`HttpResponse`](Core.mw.md#httpresponse) | OnHttpResponse |
 | :------ | :------ |
 | `requestUrl` [`HttpRequestURL`](../enums/mw.HttpRequestURL.md) | EHttpRequestURL |
-| `param` `string` | string |
+| `param` `string` | string<br> range: 不做限制 |
 | `jsonContent` `any` | any |
 | `requestType` [`HttpRequestType`](../enums/mw.HttpRequestType.md) | 0是Get 1是Post |
 
@@ -2403,11 +2403,11 @@ ___
 
 • **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/mw.AssetIconData.md) <Badge type="tip" text="client" />
 
-获取资源的ICON信息
+获取资源的 ICON 信息
 
 #### Parameters
 
-| `asset` `string` | 指定资源的id |
+| `asset` `string` | 指定资源的 id<br> range: 依据资源 ID 长度而定。 |
 | :------ | :------ |
 
 #### Returns
@@ -2485,7 +2485,7 @@ ___
 | `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
 | `fov` `number` |  视场; |
 | `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径  <br> default: null |
 
 
 ___
@@ -2781,13 +2781,13 @@ ___
 
 • **getUrlParameter**(`url`, `parameterName`): `string` 
 
-获取url参数
+获取 url 参数
 
 #### Parameters
 
-| `url` `string` | url |
+| `url` `string` | url<br> range: 不做限制，依据具体的 url 的长度 |
 | :------ | :------ |
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名<br> range: 不做限制 |
 
 #### Returns
 
@@ -2845,8 +2845,8 @@ Http请求接口
 
 | `response` [`HttpResponse`](Core.mw.md#httpresponse) |  请求的回调 |
 | :------ | :------ |
-| `paramUrl` `string` |  请求的参数和值 |
-| `jsonContent` `string` |  请求数据内容，json格式 |
+| `paramUrl` `string` |  请求的参数和值<br> range: 不做限制 |
+| `jsonContent` `string` |  请求数据内容，json格式<br> range: 不做限制 |
 | `requestType` [`HttpRequestType`](../enums/mw.HttpRequestType.md) |  请求类型。HttpRequestType枚举值 |
 
 #### Returns
@@ -2954,7 +2954,7 @@ ___
 
 | `InGameName` `string` | 游戏名称 |
 | :------ | :------ |
-| `InExtraData?` `string` | 游戏扩展数据 default:"" |
+| `InExtraData?` `string` | 游戏扩展数据  <br> default: "" |
 
 #### Returns
 
@@ -2973,7 +2973,7 @@ ___
 
 | `worldLocation` [`Vector`](../classes/mw.Vector.md) |  世界坐标 |
 | :------ | :------ |
-| `playerViewportRelative?` `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+| `playerViewportRelative?` `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用） <br> default: false |
 
 #### Returns
 
@@ -3003,12 +3003,6 @@ ___
 
 连续截图，生成GIF素材发送给服务器
 
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
 #### Parameters
 
 | `Character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
@@ -3037,11 +3031,11 @@ ___
 
 • **releaseAssetIconTextureFromCache**(`asset`): `void` <Badge type="tip" text="client" />
 
-尝试标记资源的ICON图为待释放的等待释放
+尝试标记资源的 ICON 图为待释放的等待释放
 
 #### Parameters
 
-| `asset` `string` | 指定资源的id |
+| `asset` `string` | 指定资源的 id<br> range: 依据资源 ID 长度而定。 |
 | :------ | :------ |
 
 
@@ -3075,7 +3069,7 @@ ___
 | `StartPoint` [`Vector2`](../classes/mw.Vector2.md) | 截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
 | `Width` `number` | 截图区域的宽度 |
 | `Height` `number` | 截图区域的高度 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径  <br> default: null |
 
 
 ___
@@ -3126,7 +3120,7 @@ ___
 
 | `screenPosition` [`Vector2`](../classes/mw.Vector2.md) | 屏幕位置 |
 | :------ | :------ |
-| `isIncludeWindowPosition?` `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default:false |
+| `isIncludeWindowPosition?` `boolean` | 是否移除游戏窗口位置(在窗口模式下有用)  <br> default: false |
 
 #### Returns
 
@@ -3146,7 +3140,7 @@ ___
 | `geometry` [`Geometry`](../classes/mw.Geometry.md) | 集合体 |
 | :------ | :------ |
 | `screenPosition` [`Vector2`](../classes/mw.Vector2.md) | 屏幕位置 |
-| `isIncludeWindowPosition?` `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default: false |
+| `isIncludeWindowPosition?` `boolean` | 是否移除游戏窗口位置(在窗口模式下有用)  <br> default:  false |
 
 #### Returns
 
@@ -3160,12 +3154,6 @@ ___
 • **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="client" />
 
 将角色数据ID连同角色截图一同发给MGS
-
-::: warning Precautions
-
-Playza定制接口
-
-:::
 
 #### Parameters
 
@@ -3270,10 +3258,10 @@ ___
 
 #### Parameters
 
-| `InWidgetToFocus?` [`Widget`](../classes/mw.Widget.md) | 响应输入模式的widget default:null |
+| `InWidgetToFocus?` [`Widget`](../classes/mw.Widget.md) | 响应输入模式的widget  <br> default: null |
 | :------ | :------ |
-| `InMouseLockMode?` [`MouseLockMode`](../enums/mw.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
-| `hideCursorDuringCapture?` `boolean` | 是否隐藏光标 default:true |
+| `InMouseLockMode?` [`MouseLockMode`](../enums/mw.MouseLockMode.md) | 鼠标锁定的输入模式  <br> default: UIType.MouseLockMode.DoNotLock |
+| `hideCursorDuringCapture?` `boolean` | 是否隐藏光标  <br> default: true |
 
 
 ___
@@ -3295,9 +3283,9 @@ ___
 
 #### Parameters
 
-| `InWidgetToFocus?` [`Widget`](../classes/mw.Widget.md) | 响应输入模式的widget default:null |
+| `InWidgetToFocus?` [`Widget`](../classes/mw.Widget.md) | 响应输入模式的widget  <br> default: null |
 | :------ | :------ |
-| `InMouseLockMode?` [`MouseLockMode`](../enums/mw.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+| `InMouseLockMode?` [`MouseLockMode`](../enums/mw.MouseLockMode.md) | 鼠标锁定的输入模式  <br> default: UIType.MouseLockMode.DoNotLock |
 
 
 ___
@@ -3450,7 +3438,7 @@ export default class NewScript extends Script {
 
 #### Parameters
 
-| `assetId` `string` | 预制体资源Id |
+| `assetId` `string` | 预制体资源Id<br> range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 | `name` `string` | 名字 |
 | `imagePath` `string` | 512*512的透明png缩略图 |
@@ -3468,18 +3456,12 @@ ___
 
 上传角色头像或全身照到服务器后发送到MGS
 
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
 #### Parameters
 
 | `filePath` `string` | 图片路径 |
 | :------ | :------ |
-| `fileType` `number` | 图片类型 default:0-全身照,1-男性头像 2-女性头像 |
-| `callbackURL?` (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+| `fileType` `number` | 图片类型  <br> default: 0-全身照,1-男性头像 2-女性头像 |
+| `callbackURL?` (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL  <br> default: null，可选参数 |
 
 
 ___
@@ -3490,19 +3472,13 @@ ___
 
 上传角色头像及全身照到服务器后发送到MGS
 
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
 #### Parameters
 
 | `gender` `number` | 角色性别，1-男 2-女 0-未知 |
 | :------ | :------ |
 | `portraitPath` `string` | 头像照路径 |
 | `fullPicPath` `string` | 全身照路径 |
-| `callbackURL?` (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+| `callbackURL?` (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL  <br> default: null，可选参数 |
 
 
 ___
@@ -3533,7 +3509,7 @@ url解码
 
 #### Parameters
 
-| `str` `string` | 内容 |
+| `str` `string` | 内容<br> range: 不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -3551,7 +3527,7 @@ url转码
 
 #### Parameters
 
-| `str` `string` | 内容 |
+| `str` `string` | 内容<br> range: 不做限制 |
 | :------ | :------ |
 
 #### Returns

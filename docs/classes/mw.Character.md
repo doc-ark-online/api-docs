@@ -106,9 +106,9 @@
 | **[currentStance](mw.Character.md#currentstance)**(): [`Stance`](mw.Stance.md)  |
 | 获取当前正在播放的基础姿态|
 | **[currentSubStance](mw.Character.md#currentsubstance)**(): [`SubStance`](mw.SubStance.md)  |
-| 获取当前正在播放的二级姿态，二级姿态类型为SubStance|
+| 获取当前正在播放的二级姿态，二级姿态类型为 SubStance|
 | **[description](mw.Character.md#description)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 角色外观配置，返回值为CharacterDescription类。调用description变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。|
+| 角色外观配置|
 | **[displayName](mw.Character.md#displayname)**(): `string`  |
 | 获取角色名称|
 | **[driftControl](mw.Character.md#driftcontrol)**(): `number`   |
@@ -196,7 +196,7 @@
 | :-----|
 | 添加冲量|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
-| 沿着给定的方向向量添加移动输入，不会自动应用移动，由开发者在 onUpdate 事件中执行此操作。|
+| 沿着给定的方向向量添加移动输入|
 | **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
 | 将物体附着到人物角色的指定插槽|
 | **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void`   |
@@ -540,7 +540,7 @@ ___
 
 #### Parameters
 
-| `InBrakingDecelerationFlying` `number` | 制动速率。 <br> range: (0,+∞) |
+| `InBrakingDecelerationFlying` `number` | 制动速率。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -657,7 +657,7 @@ ___
 
 #### Parameters
 
-| `InBrakingDecelerationSwimming` `number` |  制动速率。 <br> range: (0,+∞) |
+| `InBrakingDecelerationSwimming` `number` |  制动速率。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -804,7 +804,7 @@ ___
 
 #### Parameters
 
-| `InBrakingDecelerationWalking` `number` |  行走制动速率 <br> range: (0,+∞) |
+| `InBrakingDecelerationWalking` `number` |  行走制动速率  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -1749,7 +1749,7 @@ ___
 
 #### Parameters
 
-| `InCrouchedHeight` `number` |  碰撞盒高度。 <br> range: (0,+∞) |
+| `InCrouchedHeight` `number` |  碰撞盒高度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -1917,7 +1917,7 @@ ___
 <td style="text-align: left">
 
 
-获取当前正在播放的二级姿态，二级姿态类型为SubStance
+获取当前正在播放的二级姿态，二级姿态类型为 SubStance
 
 
 #### Returns
@@ -1986,7 +1986,9 @@ ___
 <td style="text-align: left">
 
 
-角色外观配置，返回值为CharacterDescription类。调用description变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。
+角色外观配置
+
+返回值为 CharacterDescription 类。调用 description 变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。
 
 
 #### Returns
@@ -2113,7 +2115,7 @@ ___
 
 #### Parameters
 
-| `inName` `string` |  想要更改的角色名称 |
+| `inName` `string` |  想要更改的角色名称  <br> range:设置合理的名称即可 |
 | :------ | :------ |
 
 
@@ -2188,7 +2190,7 @@ ___
 
 #### Parameters
 
-| `InAirControl` `number` |  制动速率。 <br> range: [0,1] |
+| `InAirControl` `number` |  制动速率。  <br> range: [0,1] |
 | :------ | :------ |
 
 
@@ -2355,7 +2357,7 @@ ___
 
 #### Parameters
 
-| `newGravityScale` `number` |  制动速率。 <br> range: (0,10] |
+| `newGravityScale` `number` |  制动速率。  <br> range: (0,10] |
 | :------ | :------ |
 
 
@@ -2638,7 +2640,7 @@ ___
 
 #### Parameters
 
-| `InBrakingDecelerationFalling` `number` |  制动速率。 <br> range: (0,+∞) |
+| `InBrakingDecelerationFalling` `number` |  制动速率。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3114,7 +3116,7 @@ ___
 
 #### Parameters
 
-| `InJumpMaxCount` `number` |  跳跃次数。 <br> range: (0,+∞) |
+| `InJumpMaxCount` `number` |  跳跃次数。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3196,7 +3198,7 @@ ___
 
 #### Parameters
 
-| `InMaxAcceleration` `number` |  最大加速度。 <br> range: (0,+∞) |
+| `InMaxAcceleration` `number` |  最大加速度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3294,7 +3296,7 @@ ___
 
 #### Parameters
 
-| `speed` `number` |  下落速度。 <br> range: (0,+∞) |
+| `speed` `number` |  下落速度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3375,7 +3377,7 @@ ___
 
 #### Parameters
 
-| `InMaxFlySpeed` `number` |  最大飞行速度。 <br> range: (0,+∞) |
+| `InMaxFlySpeed` `number` |  最大飞行速度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3492,7 +3494,7 @@ ___
 
 #### Parameters
 
-| `InMaxJumpHeight` `number` |  制动速率。 <br> range: (0,+∞) |
+| `InMaxJumpHeight` `number` |  制动速率。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3574,7 +3576,7 @@ ___
 
 #### Parameters
 
-| `InMaxStepHeight` `number` |  最大可跨越高度。 <br> range: (0,+∞) |
+| `InMaxStepHeight` `number` |  最大可跨越高度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3676,7 +3678,7 @@ ___
 
 #### Parameters
 
-| `InMaxSwimSpeed` `number` |  最大游泳速度。<br> range: (0,+∞) |
+| `InMaxSwimSpeed` `number` |  最大游泳速度。 <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3817,7 +3819,7 @@ ___
 
 #### Parameters
 
-| `InMaxWalkSpeed` `number` |  最大行走速度 <br> range: (0,+∞) |
+| `InMaxWalkSpeed` `number` |  最大行走速度  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -3925,7 +3927,7 @@ ___
 
 #### Parameters
 
-| `maxSpeed` `number` |  最大蹲伏行走速度 <br> range: (0,+∞) |
+| `maxSpeed` `number` |  最大蹲伏行走速度  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -4412,7 +4414,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  出水速度。 <br> range: (0,+∞) |
+| `value` `number` |  出水速度。  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -4532,7 +4534,7 @@ ___
 
 #### Returns
 
-| [`UIWidget`](mw.UIWidget.md) | 头顶UIWidget对象 |
+| [`UIWidget`](mw.UIWidget.md) | 头顶 UIWidget 对象 |
 | :------ | :------ |
 
 </td>
@@ -4644,7 +4646,7 @@ ___
 
 #### Returns
 
-| `boolean` | true表示启用，false表示禁用。 |
+| `boolean` | true 表示启用，false 表示禁用。 |
 | :------ | :------ |
 
 
@@ -4935,7 +4937,7 @@ ___
 
 #### Parameters
 
-| `InWalkableFloorAngle` `number` |  可行走的最大角度。<br> range: [0,) |
+| `InWalkableFloorAngle` `number` |  可行走的最大角度。 <br> range: [0,) |
 | :------ | :------ |
 
 
@@ -5046,7 +5048,7 @@ ___
 
 #### Parameters
 
-| `range` `number` |  显示名称可见距离 <br> range: (0,+∞) |
+| `range` `number` |  显示名称可见距离  <br> range: (0,+∞) |
 | :------ | :------ |
 
 
@@ -5115,7 +5117,7 @@ ___
 
 | `Vector` [`Vector`](mw.Vector.md) | 应用的冲量 |
 | :------ | :------ |
-| `ignoreMass?` `boolean` | 是否忽略质量对冲量的影响 default:false |
+| `ignoreMass?` `boolean` | 是否忽略质量对冲量的影响  <br> default: false |
 
 
 质量固定为100，受质量影响的算法为: 冲量按位除以质量
@@ -5162,13 +5164,15 @@ ___
 
 • **addMovement**(`direction`): `void` 
 
-沿着给定的方向向量添加移动输入，不会自动应用移动，由开发者在 onUpdate 事件中执行此操作。
+沿着给定的方向向量添加移动输入
 
 #### Parameters
 
 | `direction` [`Vector`](mw.Vector.md) | 输入的方向 |
 | :------ | :------ |
 
+
+不会自动应用移动，由开发者在 onUpdate 事件中执行此操作。
 
 效果受 movementDirection 属性影响。如果此时同时有用户输入效果是叠加而不是覆盖。
 
@@ -5313,9 +5317,9 @@ ___
 
 #### Parameters
 
-| `appearance?` `boolean` | 是否清空形象数据 default:true |
+| `appearance?` `boolean` | 是否清空形象数据  <br> default: true |
 | :------ | :------ |
-| `slotAndDecoration?` `boolean` | 是否清空插槽和物品数据 default:true |
+| `slotAndDecoration?` `boolean` | 是否清空插槽和物品数据  <br> default: true |
 
 
 清空角色外观数据，此时角色不具备任何视觉表现。
@@ -5463,7 +5467,7 @@ ___
 
 #### Parameters
 
-| `param?` `Object` |  (可选参数)插槽数据，以下两个为 param 的数据结构 slotName: mw.HumanoidSlotType; isDestroy: boolean |
+| `param?` `Object` |  (可选参数)插槽数据，以下两个为 param 的数据结构 slotName: mw.HumanoidSlotType; isDestroy: boolean  <br> default: null |
 | :------ | :------ |
 | `param.isDestroy?` `boolean` |  是否销毁这些分离的插槽 |
 | `param.slotName?` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) | usage：分离的插槽名称 |
@@ -5820,7 +5824,7 @@ ___
 
 #### Parameters
 
-| `index` `number` |  模型顶点index |
+| `index` `number` |  模型顶点 index  <br> range: 根据骨架网格物体顶点的数据而定。<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -5955,7 +5959,7 @@ ___
 
 #### Parameters
 
-| `assetId` `string` | 动画资源ID（编辑器左侧栏动画，选中某一个动画资源右键可复制资源ID） |
+| `assetId` `string` | 动画资源 ID（编辑器左侧栏动画，选中某一个动画资源右键可复制资源ID）  <br> range:字符串长度根据具体的资源 ID 而定 |
 | :------ | :------ |
 
 #### Returns
@@ -6027,7 +6031,7 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  基础姿态资源ID |
+| `assetId` `string` |  基础姿态资源ID  <br> range:字符串长度根据具体的资源 ID 而定 |
 | :------ | :------ |
 
 #### Returns
@@ -6092,7 +6096,7 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  姿态资源ID或动画资源ID |
+| `assetId` `string` |  姿态资源 ID 或动画资源 ID  <br> range:字符串长度根据具体的资源 ID 而定 |
 | :------ | :------ |
 
 #### Returns
@@ -6304,7 +6308,7 @@ ___
 
 #### Parameters
 
-| `speed` `number` | 下潜速度 |
+| `speed` `number` | 下潜速度  <br> range: 不做限制。<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -6411,11 +6415,11 @@ ___
 
 #### Parameters
 
-| `speed` `number` | 上浮速度 |
+| `speed` `number` | 上浮速度  <br> range: 不做限制。<br> type: 浮点数 |
 | :------ | :------ |
 
 
-不能超过MaxSwimSpeed(游泳最大速度)
+不能超过 MaxSwimSpeed (游泳最大速度)
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimUp"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成拱形容器并适配游泳区域。按下键盘“1”，角色切换游泳。按下键盘“4”，角色修改最大游泳速度进行喷射加速。你可以看到的角色最大游泳速度变化的效果。代码如下：
@@ -6779,9 +6783,9 @@ ___
 
 #### Parameters
 
-| `appearance?` `boolean` | 角色同步 default:true |
+| `appearance?` `boolean` | 角色同步  <br> default: true |
 | :------ | :------ |
-| `slotAndDecoration?` `boolean` | 插槽和装饰同步 default:true |
+| `slotAndDecoration?` `boolean` | 插槽和装饰同步  <br> default: true |
 
 
 角色在客户端设置外观后只会更换本地角色的外观，其他客户端角色外观未修改。通过该接口可以将本地外观广播至其他客户端。

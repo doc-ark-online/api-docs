@@ -127,23 +127,23 @@
 
 #### Parameters
 
-| `m00?` `number` | 第 0 列第 0 行的元素 default:1 |
+| `m00?` `number` | 第 0 列第 0 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第 0 列第 1 行的元素 default:0 |
-| `m02?` `number` | 第 0 列第 2 行的元素 default:0 |
-| `m03?` `number` | 第 0 列第 3 行的元素 default:0 |
-| `m10?` `number` | 第 1 列第 0 行的元素 default:0 |
-| `m11?` `number` | 第 1 列第 1 行的元素 default:1 |
-| `m12?` `number` | 第 1 列第 2 行的元素 default:0 |
-| `m13?` `number` | 第 1 列第 3 行的元素 default:0 |
-| `m20?` `number` | 第 2 列第 0 行的元素 default:0 |
-| `m21?` `number` | 第 2 列第 1 行的元素 default:0 |
-| `m22?` `number` | 第 2 列第 2 行的元素 default:1 |
-| `m23?` `number` | 第 2 列第 3 行的元素 default:0 |
-| `m30?` `number` | 第 3 列第 0 行的元素 default:0 |
-| `m31?` `number` | 第 3 列第 1 行的元素 default:0 |
-| `m32?` `number` | 第 3 列第 2 行的元素 default:0 |
-| `m33?` `number` | 第 3 列第 3 行的元素 default:1 |
+| `m01?` `number` | 第 0 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m02?` `number` | 第 0 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m03?` `number` | 第 0 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m10?` `number` | 第 1 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m11?` `number` | 第 1 列第 1 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
+| `m12?` `number` | 第 1 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m13?` `number` | 第 1 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m20?` `number` | 第 2 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m21?` `number` | 第 2 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m22?` `number` | 第 2 列第 2 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
+| `m23?` `number` | 第 2 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m30?` `number` | 第 3 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m31?` `number` | 第 3 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m32?` `number` | 第 3 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m33?` `number` | 第 3 列第 3 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
 
 ## Properties
 
@@ -342,7 +342,7 @@ ___
 
 | `other` [`Matrix4x4`](mw.Matrix4x4.md) | 比对的矩阵 |
 | :------ | :------ |
-| `epsilon?` `number` | 误差值 default:mw.MathUtil.EPSILON |
+| `epsilon?` `number` | 误差值  <br> default: MathUtil.EPSILON  <br> range: 建议传入小于 1 的值。<br> type:浮点数 |
 
 #### Returns
 
@@ -397,7 +397,7 @@ ___
 
 #### Parameters
 
-| `outer?` [`Quaternion`](mw.Quaternion.md) | 接收旋转数据的 Quaternion 对象, default:null |
+| `outer?` [`Quaternion`](mw.Quaternion.md) | 接收旋转数据的 Quaternion 对象,  <br> default: null |
 | :------ | :------ |
 
 #### Returns
@@ -421,7 +421,7 @@ ___
 
 #### Parameters
 
-| `outer?` [`Vector`](mw.Vector.md) | 接收缩放数据的 Vector 对象 default:null |
+| `outer?` [`Vector`](mw.Vector.md) | 接收缩放数据的 Vector 对象  <br> default: null |
 | :------ | :------ |
 
 #### Returns
@@ -445,7 +445,7 @@ ___
 
 #### Parameters
 
-| `outer?` [`Vector`](mw.Vector.md) | 接收位移数据的 Vector 对象 default:null |
+| `outer?` [`Vector`](mw.Vector.md) | 接收位移数据的 Vector 对象  <br> default: null |
 | :------ | :------ |
 
 #### Returns
@@ -480,7 +480,7 @@ ___
 
 | `a` [`Matrix4x4`](mw.Matrix4x4.md) | 原矩阵 |
 | :------ | :------ |
-| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象 default:null |
+| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象  <br> default: null |
 
 #### Returns
 
@@ -506,7 +506,7 @@ ___
 
 #### Parameters
 
-| `scalar` `number` | 对矩阵整体缩放的数 |
+| `scalar` `number` | 对矩阵整体缩放的数<br> range:不做限制<br> type:浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -526,8 +526,8 @@ ___
 
 | `axis` [`Vector`](mw.Vector.md) | 绕的旋转轴 |
 | :------ | :------ |
-| `rad` `number` | 旋转的弧度 |
-| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
+| `rad` `number` | 旋转的弧度  <br> range: 无限制<br> type:浮点数 |
+| `epsilon?` `number` | 最小误差数  <br> default: MathDefine.EPSILON  <br> range: 建议传入小于 1 的值。<br> type:浮点数 |
 
 #### Returns
 
@@ -576,23 +576,23 @@ ___
 
 #### Parameters
 
-| `m00?` `number` | 第 0 列第 0 行的元素 default:1 |
+| `m00?` `number` | 第 0 列第 0 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第 0 列第 1 行的元素 default:0 |
-| `m02?` `number` | 第 0 列第 2 行的元素 default:0 |
-| `m03?` `number` | 第 0 列第 3 行的元素 default:0 |
-| `m10?` `number` | 第 1 列第 0 行的元素 default:0 |
-| `m11?` `number` | 第 1 列第 1 行的元素 default:1 |
-| `m12?` `number` | 第 1 列第 2 行的元素 default:0 |
-| `m13?` `number` | 第 1 列第 3 行的元素 default:0 |
-| `m20?` `number` | 第 2 列第 0 行的元素 default:0 |
-| `m21?` `number` | 第 2 列第 1 行的元素 default:0 |
-| `m22?` `number` | 第 2 列第 2 行的元素 default:1 |
-| `m23?` `number` | 第 2 列第 3 行的元素 default:0 |
-| `m30?` `number` | 第 3 列第 0 行的元素 default:0 |
-| `m31?` `number` | 第 3 列第 1 行的元素 default:0 |
-| `m32?` `number` | 第 3 列第 2 行的元素 default:0 |
-| `m33?` `number` | 第 3 列第 3 行的元素 default:1 |
+| `m01?` `number` | 第 0 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m02?` `number` | 第 0 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m03?` `number` | 第 0 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m10?` `number` | 第 1 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m11?` `number` | 第 1 列第 1 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
+| `m12?` `number` | 第 1 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m13?` `number` | 第 1 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m20?` `number` | 第 2 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m21?` `number` | 第 2 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m22?` `number` | 第 2 列第 2 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
+| `m23?` `number` | 第 2 列第 3 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m30?` `number` | 第 3 列第 0 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m31?` `number` | 第 3 列第 1 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m32?` `number` | 第 3 列第 2 行的元素  <br> default: 0<br> range:不做限制<br> type: 浮点数 |
+| `m33?` `number` | 第 3 列第 3 行的元素  <br> default: 1<br> range:不做限制<br> type: 浮点数 |
 
 #### Returns
 
@@ -678,7 +678,7 @@ ___
 
 | `a` [`Matrix4x4`](mw.Matrix4x4.md) | 被转置的原矩阵 |
 | :------ | :------ |
-| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象 default:null |
+| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象  <br> default: null |
 
 #### Returns
 
@@ -725,7 +725,7 @@ ___
 
 | `a` [`Matrix4x4`](mw.Matrix4x4.md) | 原矩阵 |
 | :------ | :------ |
-| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象 default:null |
+| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象  <br> default: null |
 
 #### Returns
 
@@ -745,7 +745,7 @@ ___
 | `m` [`Matrix4x4`](mw.Matrix4x4.md) | 四维矩阵 |
 | :------ | :------ |
 | `a` [`Vector`](mw.Vector.md) | 三维向量 |
-| `outer?` [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象 default:null |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象  <br> default: null |
 
 #### Returns
 
@@ -771,7 +771,7 @@ ___
 | `m` [`Matrix4x4`](mw.Matrix4x4.md) | 四维矩阵 |
 | :------ | :------ |
 | `a` [`Vector4`](mw.Vector4.md) | 四维向量 |
-| `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
+| `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象  <br> default: null |
 
 #### Returns
 
@@ -797,7 +797,7 @@ ___
 | `m` [`Matrix4x4`](mw.Matrix4x4.md) | 被乘的四维矩阵 |
 | :------ | :------ |
 | `a` [`Vector`](mw.Vector.md) | 乘以矩阵的三维向量 |
-| `outer?` [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象 default:null |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象  <br> default: null |
 
 #### Returns
 
@@ -823,7 +823,7 @@ ___
 | `m` [`Matrix4x4`](mw.Matrix4x4.md) | 被乘的四维矩阵 |
 | :------ | :------ |
 | `a` [`Vector2`](mw.Vector2.md) | 乘以矩阵的二维向量 |
-| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
+| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象  <br> default: null |
 
 #### Returns
 
@@ -849,7 +849,7 @@ ___
 | `m` [`Matrix4x4`](mw.Matrix4x4.md) | 被乘的四维矩阵 |
 | :------ | :------ |
 | `a` [`Vector4`](mw.Vector4.md) | 乘以矩阵的四维向量 |
-| `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象 default:null |
+| `outer?` [`Vector4`](mw.Vector4.md) | 接收结果的 Vector4 对象  <br> default: null |
 
 #### Returns
 
@@ -880,7 +880,7 @@ ___
 
 | `a` [`Matrix4x4`](mw.Matrix4x4.md) | 被转置的原矩阵 |
 | :------ | :------ |
-| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象 default:null |
+| `outer?` [`Matrix4x4`](mw.Matrix4x4.md) | 接收结果的 Matrix4x4 对象  <br> default: null |
 
 #### Returns
 

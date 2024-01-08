@@ -408,7 +408,8 @@ export default class VehicleSample extends Script {
 | 获取轮胎绑定对象。|
 | **[getWheelRadius](mw.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number`   |
 | 获取车轮半径，单位：厘米（cm）。|
-| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void` |
+| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void`   |
+| 销毁|
 | **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
 | 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setWheelRadius](mw.AdvancedVehicle.md#setwheelradius)**(`wheelId`: `number`, `Radius`: `number`): `void`   |
@@ -417,7 +418,7 @@ export default class VehicleSample extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -435,7 +436,7 @@ export default class VehicleSample extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -443,25 +444,27 @@ export default class VehicleSample extends Script {
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| 获取所有子对象包围盒中心点 (不包含父对象,父对象不可用返回 [0,0,0] )|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -512,13 +515,9 @@ export default class VehicleSample extends Script {
 
 设置加速度。
 
-**`Range`**
-
-[0.01, 100]
-
 #### Parameters
 
-| `acceleration` `number` |  新的加速系数 default: 1 |
+| `acceleration` `number` |  新的加速系数  <br> default:  1<br> range: [0.01, 100]<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -550,8 +549,6 @@ ___
 
 获取制动力矩。单位：牛*米（N*m）
 
-**`Info`**
-
 车辆制动力矩是指应用于车辆制动系统的力矩，用于减速或停止车辆运动。它是制动系统产生的力矩，通过制动器（如刹车盘和刹车片）施加到车轮上，从而减少车轮的旋转速度。
 
 #### Returns
@@ -566,13 +563,9 @@ ___
 
 设置制动力矩。单位：牛*米（N*m）
 
-**`Range`**
-
-[0, 1000000]
-
 #### Parameters
 
-| `Torque` `number` |  新的制动力矩 default: 1500 |
+| `Torque` `number` |  新的制动力矩  <br> default:  1500<br> range:[0, 1000000]<br> type:浮点类型数值 |
 | :------ | :------ |
 
 
@@ -616,10 +609,6 @@ ___
 
 设置当前档位级别。
 
-**`Range`**
-
-[-1, 设定的最大档位]
-
 ::: warning Precautions
 
 1. 注意输入参数的取值范围。
@@ -629,7 +618,7 @@ ___
 
 #### Parameters
 
-| `level` `number` |  将要切换到的档位 default: 0 |
+| `level` `number` |  将要切换到的档位  <br> default:  0<br> range: [-1, 设定的最大档位]<br> type:整形数值类型 |
 | :------ | :------ |
 
 
@@ -700,13 +689,9 @@ ___
 
 设置载具车轮摩擦力系数
 
-**`Range`**
-
-[0.01, 8]
-
 #### Parameters
 
-| `friction` `number` |  新的摩擦力系数 default: 3 |
+| `friction` `number` |  新的摩擦力系数  <br> default:  3<br> range: [0.01, 8]<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -741,7 +726,7 @@ ___
 
 #### Parameters
 
-| `useHandbrake` `boolean` |  是否进行手刹，true-进行制动, false-取消制动。 default: false |
+| `useHandbrake` `boolean` |  是否进行手刹，true-进行制动, false-取消制动。  <br> default:  false |
 | :------ | :------ |
 
 
@@ -785,10 +770,6 @@ ___
 
 设置载具质量，单位：千克（kg）。
 
-**`Range`**
-
-[0.01, 100000]
-
 ::: warning Precautions
 
 1. 注意输入参数的取值范围。设置较小的质量，会出现载具抖动等非预期表现。
@@ -798,7 +779,7 @@ ___
 
 #### Parameters
 
-| `mass` `number` |  设置值 default: 1500 |
+| `mass` `number` |  设置值  <br> default:  1500<br> range: [0.01, 100000]<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -842,13 +823,9 @@ ___
 
 设置最大发动机转速。单位：转/分（r/min）
 
-**`Range`**
-
-[100, 5000000]
-
 #### Parameters
 
-| `RPM` `number` |  新的载具发动机转速 default: 6000 |
+| `RPM` `number` |  新的载具发动机转速  <br> default:  6000<br> range: [100, 5000000]<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -945,7 +922,7 @@ ___
 
 #### Parameters
 
-| `shouldSimulate` `boolean` |  是否启用物理模拟。true-启用，false-不启用 default: true |
+| `shouldSimulate` `boolean` |  是否启用物理模拟。true-启用，false-不启用  <br> default:  true |
 | :------ | :------ |
 
 
@@ -972,10 +949,6 @@ ___
 
 控制载具左/右转向，设置转向幅度，取值范围[-1,1]，大于0时右转，小于0则左转。
 
-**`Range`**
-
-[-1, 1]，大于0时右转，小于0则左转。
-
 ::: warning Precautions
 
 1. 注意输入参数的取值范围。输入100和1没有区别。
@@ -986,7 +959,7 @@ ___
 
 #### Parameters
 
-| `newInput` `number` |  设置值 default: 0 |
+| `newInput` `number` |  设置值  <br> default:  0<br> range: [-1, 1]，大于0时右转，小于0则左转。type:浮点型数值。 |
 | :------ | :------ |
 
 
@@ -1035,10 +1008,6 @@ ___
 
 控制载具前进/后退，设置油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。
 
-**`Range`**
-
-[-1, 1]，大于0时加速，小于0则减速。
-
 ::: warning Precautions
 
 1. 注意输入参数的取值范围。输入100和1没有区别。
@@ -1049,7 +1018,7 @@ ___
 
 #### Parameters
 
-| `newInput` `number` |  设置值 default: 0 |
+| `newInput` `number` |  设置值  <br> default:  0<br> range: [-1, 1]，大于0时加速，小于0则减速。<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -1164,7 +1133,7 @@ ___
 
 #### Parameters
 
-| `gearLevel` `number` |  指定档位级别 |
+| `gearLevel` `number` |  指定档位级别<br> range: [0, 1]<br> type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -1188,7 +1157,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮  <br> range: 0.1.2.3 四个参数<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1196,11 +1165,7 @@ ___
 | `number` | 指定车轮最大转向角度 |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
@@ -1212,7 +1177,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮  <br> range: 0.1.2.3 四个参数<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1220,11 +1185,7 @@ ___
 | `string` | 指定轮胎绑定对象GUID |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
@@ -1236,7 +1197,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮  <br> range: 0.1.2.3 四个参数<br> type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1244,17 +1205,16 @@ ___
 | `number` | 指定车轮半径 |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void`
+• `Protected` **onDestroy**(): `void` 
+
+销毁
+
 
 ___
 
@@ -1266,7 +1226,7 @@ ___
 
 #### Parameters
 
-| `inCullDistance` `number` | 裁剪距离 |
+| `inCullDistance` `number` | 裁剪距离<br> range: 建议 (2000, 4000)<br> type: 浮点数 |
 | :------ | :------ |
 
 
@@ -1275,7 +1235,6 @@ ___
 最终的裁剪距离会和画质等级有关
 
 :::
-
 
 ___
 
@@ -1287,11 +1246,9 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮  <br> range: 0.1.2.3 四个参数<br> type:整数 |
 | :------ | :------ |
-| `Radius` `number` |  指定车轮半径 |
+| `Radius` `number` |  指定车轮半径<br> range:不做限制，合理即可<br> type: 浮点数 |
 
-
-::: warning Precautions
 
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。仅在上车前生效，上车后调用此接口无效果。

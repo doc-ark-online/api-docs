@@ -205,6 +205,6 @@ ___
 
 #### Parameters
 
-| `gameId` `string` |  数据源的gameId，需要在开发者后台进行授权 |
+| `gameId` `string` |  数据源的gameId，需要在开发者后台进行授权<br> range:字符串长度依据 gameId 长度而定 |
 | :------ | :------ |
 

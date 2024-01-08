@@ -18,7 +18,7 @@ export default class WindowExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let viewportSize = WindowUtil.getViewportSize();
         // X=1920 Y=1080
@@ -126,7 +126,7 @@ export default class NewScript extends Script {
 此方法仅在客户端调用生效。
 
 <span style="font-size: 14px;">
-使用示例:调用方法
+使用示例:
 </span>
 
 ```ts

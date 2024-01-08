@@ -85,9 +85,9 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  要为当前补间组中所有补间对象设置的时间，不是deltaTime。 default: 当前时间 |
+| `time?` `number` |  要为当前补间组中所有补间对象设置的时间，不是 deltaTime。  <br> default:  当前时间  <br> range: [0, +∞]<br> type: 浮点数 |
 | :------ | :------ |
-| `preserve?` `boolean` |  已经结束的补间对象，是否在补间组中继续保留 default: false |
+| `preserve?` `boolean` |  已经结束的补间对象，是否在补间组中继续保留  <br> default:  false |
 
 #### Returns
 
