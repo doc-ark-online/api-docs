@@ -202,7 +202,7 @@ export default class NewScript extends Script {
             Player.spawnDefaultCharacter();
         }
 
-       let player =  mw.Player.asyncGetLocalPlayer()[0];
+       let player = await mw.Player.asyncGetLocalPlayer();
 
         if(SystemUtil.isClient()) {
            mw.InputUtil.onKeyDown(Keys.G,()=>{
