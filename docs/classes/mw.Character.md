@@ -855,7 +855,6 @@ export default class Example_BrakingDecelerationWalking extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -2626,7 +2625,6 @@ export default class Example_GroundFriction extends Script {
             // 设置角色行走制动速率为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
@@ -2736,7 +2734,6 @@ export default class Example_GroundFrictionEnabled extends Script {
             // 设置角色行走制动速率为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
@@ -3164,7 +3161,6 @@ export default class Example_Character_IsMoving extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -3462,7 +3458,6 @@ export default class Example_Character_MaxAcceleration extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -4153,7 +4148,6 @@ export default class Example_MaxWalkSpeed extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -5261,7 +5255,6 @@ export default class Example_Character_RotateRate extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -5345,7 +5338,6 @@ export default class Example_Character_Velocity extends Script {
             // 设置角色最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
             // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
