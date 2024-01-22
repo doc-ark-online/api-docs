@@ -25,7 +25,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     // core
     {
       text: '基类',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -418,7 +417,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //sence
     {
       text: '场景特效',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -485,7 +483,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //service
     {
       text: '服务',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
