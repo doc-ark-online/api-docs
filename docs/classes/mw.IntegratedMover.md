@@ -24,9 +24,9 @@ export default class IMExample1 extends Script {
           // 创建一个长方体
           this.Obj1 = await GameObject.asyncSpawn("197386") as GameObject;
           // 设置起始位置
-          this.Obj1.setWorldLocation(new Vector(300.0, -100.0, 300.0));
+          this.Obj1.worldTransform.position = new Vector(300.0, -100.0, 300.0);
           // 设置起始缩放
-          this.Obj1.setWorldScale(new Vector(0.5, 2.0, 0.5));
+          this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
           // 创建一个运动器，并将运动器挂载到长方体上
           this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
@@ -46,8 +46,8 @@ export default class IMExample1 extends Script {
 
           // 用同样的方式创建第二个长方体与第二个运动器
           this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
-          this.Obj2.setWorldLocation(new Vector(300.0, -100.0, 150.0));
-          this.Obj2.setWorldScale(new Vector(0.5, 2.0, 0.5));
+          this.Obj2.worldTransform.position = new Vector(300.0, -100.0, 150.0);
+          this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
           this.IM2 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
           this.IM2.attachToGameObject(this.Obj2);
           this.IM2.enable = true;
@@ -1062,11 +1062,11 @@ export default class IMExample3 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
+            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1430,11 +1430,11 @@ export default class IMExample4 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(1.0, 1.0, 1.0));
-            this.Obj2.setWorldScale(new mw.Vector(1.0, 1.0, 1.0));
+            this.Obj1.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
+            this.Obj2.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1704,11 +1704,11 @@ export default class IMExample5 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
+            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
