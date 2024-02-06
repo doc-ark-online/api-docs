@@ -202,7 +202,7 @@ export default class NewScript extends Script {
             Player.spawnDefaultCharacter();
         }
 
-       let player =  mw.Player.asyncGetLocalPlayer()[0];
+       let player = await mw.Player.asyncGetLocalPlayer();
 
         if(SystemUtil.isClient()) {
            mw.InputUtil.onKeyDown(Keys.G,()=>{
@@ -238,6 +238,24 @@ ___
 
 :::
 
+```ts
+@Component
+export default class ChatMsgDemoScript extends Script {
+
+    protected onStart(): void {
+        // 只在客户端注册，因为回调只在客户端触发
+        if (SystemUtil.isClient()) {
+            // 按照要求的格式声明回调。回调中的数据就是聊天消息，这里我们将收到的聊天消息打印到日志窗口
+            const callback = (receivedMsg: string) => {
+                console.log(`We received chat message[${receivedMsg}] from MGS.`)
+            };
+    
+            // 注册聊天回调之后，当有玩家在MGS聊天框中发送消息，就会触发注册的回调
+            RoomService.registerMGSChatMessageEvent(callback);
+        }
+    }
+}
+```
 ___
 
 ### reportLogInfo <Score text="reportLogInfo" /> 

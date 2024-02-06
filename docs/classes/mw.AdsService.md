@@ -24,7 +24,7 @@
 | **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 广告是否准备好|
 | **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
+| 展示广告|
 
 ## Accessors
 
@@ -117,7 +117,7 @@ ___
 
 • `Static` **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
-展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
+展示广告
 
 #### Parameters
 
