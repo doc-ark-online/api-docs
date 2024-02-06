@@ -1118,6 +1118,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
             text: '028 版本',
             link: 'https://api-docs-028.ark.online/',
             path: true
+          },
+          {
+            text: '029 版本',
+            link: 'https://api-docs-029.ark.online/',
+            path: true
           }
         ]
       }
