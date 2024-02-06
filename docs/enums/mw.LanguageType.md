@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / LanguageType
+[基础类型](../groups/基础类型.基础类型.md) / LanguageType
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 

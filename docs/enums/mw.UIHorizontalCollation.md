@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIHorizontalCollation
+[界面](../groups/界面.界面.md) / UIHorizontalCollation
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 

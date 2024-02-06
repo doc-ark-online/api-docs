@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / FogPreset
+[场景](../groups/场景.场景.md) / FogPreset
 
 # FogPreset <Badge type="tip" text="Enumeration" /> <Score text="FogPreset" />
 

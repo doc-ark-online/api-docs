@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / Margin
+[界面](../groups/界面.界面.md) / Margin
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
@@ -19,23 +19,22 @@
 
 使用一个值初始化四个值的构造方法
 
-
 #### Parameters
 
-| `In` `number` | 初始化值 |
+| `In` `number` | 初始化值 range:不做限制 type: 浮点数 |
 | :------ | :------ |
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
 
-对每个值赋值的构造方法
+构造
 
 #### Parameters
 
-| `InLeft` `number` | 左值 |
+| `InLeft` `number` | 左值 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `InTop` `number` | 上值 |
-| `InRight` `number` | 右值 |
-| `InBottom` `number` | 下值 |
+| `InTop` `number` | 上值 range:不做限制 type: 浮点数 |
+| `InRight` `number` | 右值 range:不做限制 type: 浮点数 |
+| `InBottom` `number` | 下值 range:不做限制 type: 浮点数 |
 
 ## Properties
 

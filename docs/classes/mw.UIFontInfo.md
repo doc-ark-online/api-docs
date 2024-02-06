@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIFontInfo
+[界面](../groups/界面.界面.md) / UIFontInfo
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 

@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / GraphicsSettings
+[设置](../groups/设置.设置.md) / GraphicsSettings
 
 # GraphicsSettings <Badge type="tip" text="Class" /> <Score text="GraphicsSettings" />
 
@@ -37,125 +37,57 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Methods <Score text="Methods" /> 
-| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+### Accessors <Score text="Accessors" /> 
+| **[occlusionCullingEnabled](mw.GraphicsSettings.md#occlusioncullingenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取当前CPU画质等级|
-| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
-| 获取默认CPU画质等级|
-| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
-| 获取默认GPU画质等级|
-| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
-| 获取当前GPU画质等级|
-| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
-| 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
-| 设置当前GPU画质等级|
-| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
-| 设置CPU和GPU的画质等级|
+| 获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)|
+
+### Methods <Score text="Methods" /> 
+
+## Accessors
+
+### occlusionCullingEnabled <Score text="occlusionCullingEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **occlusionCullingEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **occlusionCullingEnabled**(`Enabled`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+
+#### Returns
+
+| `boolean` | 当前是否开启遮挡剔除。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+
+#### Parameters
+
+| `Enabled` `boolean` | 是否开启遮挡剔除 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+
 
 ## Methods
-
-### getCPULevel <Score text="getCPULevel" /> 
-
-• `Static` **getCPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取当前CPU画质等级
-
-#### Returns
-
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
-| :------ | :------ |
-
-
-___
-
-### getDefaultCPULevel <Score text="getDefaultCPULevel" /> 
-
-• `Static` **getDefaultCPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取默认CPU画质等级
-
-#### Returns
-
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
-| :------ | :------ |
-
-
-___
-
-### getDefaultGPULevel <Score text="getDefaultGPULevel" /> 
-
-• `Static` **getDefaultGPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取默认GPU画质等级
-
-#### Returns
-
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
-| :------ | :------ |
-
-
-___
-
-### getGPULevel <Score text="getGPULevel" /> 
-
-• `Static` **getGPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取当前GPU画质等级
-
-#### Returns
-
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
-| :------ | :------ |
-
-
-___
-
-### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
-
-• `Static` **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="client" />
-
-设置当前CPU画质等级
-
-#### Parameters
-
-| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
-| :------ | :------ |
-
-
-
-___
-
-### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
-
-• `Static` **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="client" />
-
-设置当前GPU画质等级
-
-#### Parameters
-
-| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
-| :------ | :------ |
-
-
-
-___
-
-### setGraphicsLevel <Score text="setGraphicsLevel" /> 
-
-• `Static` **setGraphicsLevel**(`CPULevel`, `GPULevel`): `void` <Badge type="tip" text="client" />
-
-设置CPU和GPU的画质等级
-
-#### Parameters
-
-| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
-| :------ | :------ |
-| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
-
-
-
-::: warning Precautions
-
-移动端设置的值不可超过Type.GraphicsLevel.Cinematic2,设置的值超过会被强制转为Type.GraphicsLevel.Cinematic2

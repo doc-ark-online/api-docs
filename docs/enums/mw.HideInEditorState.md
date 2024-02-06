@@ -1,6 +1,8 @@
-[mw](../modules/Core.mw.md) / HideInEditorState
+[基础类型](../groups/基础类型.基础类型.md) / HideInEditorState
 
 # HideInEditorState <Badge type="tip" text="Enumeration" /> <Score text="HideInEditorState" />
+
+是否在编辑器里隐藏
 
 ## Table of contents
 

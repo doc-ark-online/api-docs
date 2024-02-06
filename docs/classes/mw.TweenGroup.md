@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / TweenGroup
+[工具](../groups/工具.工具.md) / TweenGroup
 
 # TweenGroup <Badge type="tip" text="Class" /> <Score text="TweenGroup" />
 
@@ -7,16 +7,16 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.TweenGroup.md#add)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void`  |
+| **[add](mw.TweenGroup.md#add)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void`   |
 | :-----|
 | 将指定补间对象加入当前补间组|
-| **[getAll](mw.TweenGroup.md#getall)**(): [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[]  |
+| **[getAll](mw.TweenGroup.md#getall)**(): [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[]   |
 | 获取当前补间组中所有补间对象|
-| **[remove](mw.TweenGroup.md#remove)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void`  |
+| **[remove](mw.TweenGroup.md#remove)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void`   |
 | 将指定补间对象移出当前补间组并删除|
-| **[removeAll](mw.TweenGroup.md#removeall)**(): `void`  |
+| **[removeAll](mw.TweenGroup.md#removeall)**(): `void`   |
 | 移除当前补间组中所有补间对象|
-| **[update](mw.TweenGroup.md#update)**(`time?`: `number`, `preserve?`: `boolean`): `boolean`  |
+| **[update](mw.TweenGroup.md#update)**(`time?`: `number`, `preserve?`: `boolean`): `boolean`   |
 | 更新补间组|
 
 ## Methods
@@ -33,7 +33,6 @@
 | :------ | :------ |
 
 
-
 ___
 
 ### getAll <Score text="getAll" /> 
@@ -46,7 +45,6 @@ ___
 
 | [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[] | 补间对象数组 |
 | :------ | :------ |
-
 
 ___
 
@@ -62,7 +60,6 @@ ___
 | :------ | :------ |
 
 
-
 ___
 
 ### removeAll <Score text="removeAll" /> 
@@ -70,7 +67,6 @@ ___
 • **removeAll**(): `void` 
 
 移除当前补间组中所有补间对象
-
 
 
 ::: warning Precautions
@@ -89,7 +85,7 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  要为当前补间组中所有补间对象设置的时间，不是deltaTime。 default: 当前时间 |
+| `time?` `number` |  要为当前补间组中所有补间对象设置的时间，不是 deltaTime。 default: 当前时间 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 | `preserve?` `boolean` |  已经结束的补间对象，是否在补间组中继续保留 default: false |
 
@@ -97,7 +93,6 @@ ___
 
 | `boolean` | 是否还有补间对象未结束。true-有未结束的补间对象；false-均已结束 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。

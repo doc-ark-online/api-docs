@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIConstraintHorizontal
+[界面](../groups/界面.界面.md) / UIConstraintHorizontal
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 

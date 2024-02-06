@@ -1,4 +1,4 @@
-[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / Animation
+[动画](../groups/动画.动画.md) / Animation
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
@@ -16,7 +16,7 @@
 
 如何使用 Animation ？
 
-- 想要播放一个动画资源, 需要执行 Character 中 loadAnimation 方法, 下载并加载一个动画资源。
+- 想要播放一个动画资源， 需要执行 Character 中 loadAnimation 方法, 下载并加载一个动画资源。
 
 - loop 、length、speed 属性修改动画姿态对象；调用 play 方法, 播放这个动画资源。
 
@@ -29,42 +29,48 @@
 - 在调用 play 时, 会自动根据当前角色的网络状态及所处的端判断是否进行网络同步。
 
 - 如果角色在服务端, 则在所有客户端执行动画播放（动画首先在服务器上创建并复制到客户端）;
-如果角色在客户端, 则直接在本地播放动画.
+如果角色在客户端, 则直接在本地播放动画。
 
 ::: warning Precautions
 
-请不要直接使用new创建，loadAnimation可以返回动画, 以进行更加精细的动画控制。
+请不要直接使用new创建，loadAnimation可以返回动画， 以进行更加精细的动画控制。
 
 :::
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.Animation.md#assetid)**(): `string`  |
+| **[assetId](mw.Animation.md#assetid)**(): `string`   |
 | :-----|
-| 之后会开启开发者上传其制作的动画资源通道，将其上传到MW编辑器后，可以使用自己上传的动画资源。|
-| **[isPlaying](mw.Animation.md#isplaying)**(): `boolean`  |
+| 获取动画资源ID。目前是动画资源在编辑器左侧栏中，由美术创作者上传，鼠标指向可看到动画的GUID。|
+| **[blendInTime](mw.Animation.md#blendintime)**(): `number`  |
+| 获取动画混出时间|
+| **[blendOutTime](mw.Animation.md#blendouttime)**(): `number`  |
+| 获取动画混出时间|
+| **[isPlaying](mw.Animation.md#isplaying)**(): `boolean`   |
 | 是否播放|
 | **[length](mw.Animation.md#length)**(): `number`  |
 | 获取动画时长。当前动画对象中关联的动画的时长以秒为单位。|
-| **[loop](mw.Animation.md#loop)**(): `number`  |
-| 设置动画的播放循环次数.|
-| **[onFinish](mw.Animation.md#onfinish)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
-| 动画播放结束时(在动画不被中断且正常播放完成情况下)执行绑定函数。|
+| **[loop](mw.Animation.md#loop)**(): `number`   |
+| 获取动画播放循环次数。|
+| **[onFinish](mw.Animation.md#onfinish)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
+| 播放结束委托。|
 | **[slot](mw.Animation.md#slot)**(): [`AnimSlot`](../enums/mw.AnimSlot.md)  |
-| 设置动画播放插槽|
-| **[speed](mw.Animation.md#speed)**(): `number`  |
-| 设置动画的播放速率|
+| 获取动画播放插槽|
+| **[speed](mw.Animation.md#speed)**(): `number`   |
+| 获取动画的播放速率|
+| **[startTime](mw.Animation.md#starttime)**(): `number`   |
+| 获取动画开始时间|
 
 ### Methods <Score text="Methods" /> 
-| **[pause](mw.Animation.md#pause)**(): `boolean`  |
+| **[pause](mw.Animation.md#pause)**(): `boolean`   |
 | :-----|
 | 暂停动画|
-| **[play](mw.Animation.md#play)**(): `boolean`  |
+| **[play](mw.Animation.md#play)**(): `boolean`   |
 | 播放动画。从动画资源的起点播放动画。生效范围与角色创建方式绑定。|
-| **[resume](mw.Animation.md#resume)**(): `boolean`  |
+| **[resume](mw.Animation.md#resume)**(): `boolean`   |
 | 恢复播放动画|
-| **[stop](mw.Animation.md#stop)**(): `boolean`  |
+| **[stop](mw.Animation.md#stop)**(): `boolean`   |
 | 停止播放动画|
 
 ## Accessors
@@ -87,11 +93,102 @@
 
 之后会开启开发者上传其制作的动画资源通道，将其上传到MW编辑器后，可以使用自己上传的动画资源。
 
-
 #### Returns
 
 | `string` |  |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### blendInTime <Score text="blendInTime" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **blendInTime**(): `number`
+
+</th>
+<th style="text-align: left">
+
+• `set` **blendInTime**(`time`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画混出时间
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画混出时间
+
+#### Parameters
+
+| `time` | `number` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### blendOutTime <Score text="blendOutTime" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **blendOutTime**(): `number`
+
+</th>
+<th style="text-align: left">
+
+• `set` **blendOutTime**(`time`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画混出时间
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画混出时间
+
+#### Parameters
+
+| `time` | `number` |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -115,12 +212,9 @@ ___
 
 是否播放
 
+在服务端调用不生效。
 
-::: warning Precautions
-
-是否播放，true表示动画对象的正在播放，false表示动画对象未播放。
-
-:::
+true表示动画对象的正在播放，false表示动画对象未播放。
 
 
 #### Returns
@@ -133,7 +227,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_IsPlaying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_IsPlaying"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -212,7 +306,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Length"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -284,8 +378,6 @@ ___
 
 
 获取动画播放循环次数。
-当 loop 设置为 0 时，可无限循环播放。
-设置完成时，调用 Play() 函数即可看到角色播放动画。
 
 
 #### Returns
@@ -300,7 +392,6 @@ ___
 
 设置动画的播放循环次数.
 
-
 #### Parameters
 
 | `loopCount` | `number` |
@@ -313,7 +404,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -383,7 +474,6 @@ ___
 
 动画播放结束时(在动画不被中断且正常播放完成情况下)执行绑定函数。
 
-
 ::: warning Precautions
 
 性能限制，服务器不播放动画，仅客户端触发，请在客户端使用该委托。有几种情况下不会触发该委托 1 调用pause方法 2 调用stop方法 3 该动画正在播放，调用play接口。
@@ -401,7 +491,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_OnFinish"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_OnFinish"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -520,7 +610,6 @@ ___
 
 获取动画的播放速率
 
-
 ::: warning Precautions
 
 设置播放速率(动画切换时有融合时间,动画太短，当speed=1时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
@@ -541,7 +630,6 @@ ___
 
 设置动画的播放速率
 
-
 ::: warning Precautions
 
 设置播放速率(动画切换时有融合时间,动画太短，当speed=1时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
@@ -554,12 +642,14 @@ ___
 | `speed` | `number` |
 | :------ | :------ |
 
+
+
 </td>
 </tr></tbody>
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -609,6 +699,111 @@ export default class Example_Animation_Speed extends Script {
     }
 }
 ```
+___
+
+### startTime <Score text="startTime" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **startTime**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **startTime**(`time`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画开始时间
+
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画的开始点时间
+
+::: warning Precautions
+
+最终生效范围[0,动画长度]
+
+:::
+
+#### Parameters
+
+| `time` | `number` |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Animation_Loop extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 给角色加载一个舞蹈动画
+            let danceAnimation = myCharacter.loadAnimation("14700");
+            // 动画的属性
+            console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
+            danceAnimation.loop = 10;
+            // 2倍播放速度
+            danceAnimation.speed = 2;
+             //从动画一半开始播放
+             danceAnimation.startTime = danceAnimation.length * 0.5
+            // 给【动画完成】委托添加函数，播放一个升级特效
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidSlotType.Root});
+                console.log("动画开始点 = " + danceAnimation.startTime);
+            });
+            // 添加一个按键方法:按下键盘“1”，开始播放
+            InputUtil.onKeyDown(Keys.One, () => {
+                danceAnimation.play();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“2”，暂停播放
+            InputUtil.onKeyDown(Keys.Two, () => {
+                danceAnimation.pause();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“3”，继续播放
+            InputUtil.onKeyDown(Keys.Three, () => {
+                danceAnimation.resume();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
+                danceAnimation.stop();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+        }
+    }
+}
+```
 
 
 ## Methods
@@ -624,7 +819,6 @@ export default class Example_Animation_Speed extends Script {
 | `boolean` | 暂停结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 不会触发onFinish委托。生效范围与角色创建方式绑定。
@@ -632,7 +826,7 @@ export default class Example_Animation_Speed extends Script {
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Pause"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Pause"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -696,9 +890,8 @@ ___
 | `boolean` | 播放结果 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Play"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -762,7 +955,6 @@ ___
 | `boolean` | 继续结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 从当前位置继续动画播放。生效范围与角色创建方式绑定。
@@ -770,7 +962,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Resume"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Resume"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts
@@ -834,7 +1026,6 @@ ___
 | `boolean` | 停止结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 不触发动画结束回调。生效范围与角色创建方式绑定。
@@ -842,7 +1033,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Stop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
 </span>
 
 ```ts

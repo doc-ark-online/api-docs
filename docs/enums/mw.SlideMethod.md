@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / SlideMethod
+[界面](../groups/界面.界面.md) / SlideMethod
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 

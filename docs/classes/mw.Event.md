@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / Event
+[基础类型](../groups/基础类型.基础类型.md) / Event
 
 # Event <Badge type="tip" text="Class" /> <Score text="Event" />
 
@@ -25,22 +25,30 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
+| **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />  |
 | :-----|
 | 服务器监听客户端发来的事件|
-| **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
+| **[addGameEventListener](mw.Event.md#addgameeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): `void` <Badge type="tip" text="server" />  |
+| 注册游戏级的事件|
+| **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)   |
 | 添加本地事件。|
-| **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
+| **[addSceneEventListener](mw.Event.md#addsceneeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): `void` <Badge type="tip" text="server" />  |
+| 注册场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播|
+| **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="client" />  |
 | 客户端监听服务器事件|
-| **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| **[dispatchGameEvent](mw.Event.md#dispatchgameevent)**(`eventName`: `string`, `data`: `string`): `void` <Badge type="tip" text="server" />  |
+| 广播游戏级的事件，在同一个游戏中的不同房间，都可以收到该事件广播|
+| **[dispatchSceneEvent](mw.Event.md#dispatchsceneevent)**(`eventName`: `string`, `data`: `string`): `void` <Badge type="tip" text="server" />  |
+| 广播场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播|
+| **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
 | 服务器发送事件给所有客户端|
-| **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
 | 服务器发送事件给指定客户端|
-| **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)   |
 | 执行已添加的本地事件。|
-| **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />  |
 | 客户端发送事件给服务器|
-| **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void`  |
+| **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void`   |
 | 移除事件监听器|
 
 ## Methods
@@ -53,7 +61,7 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
 
@@ -62,7 +70,6 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 | [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 应该在服务器端的逻辑里面使用
@@ -70,13 +77,13 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在服务端中看到每帧打印ok,代码如下：
 </span>
 
 ```ts
  @Component
- export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
@@ -94,6 +101,21 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 ___
 
+### addGameEventListener <Score text="addGameEventListener" /> 
+
+• `Static` **addGameEventListener**(`eventName`, `callback`): `void` <Badge type="tip" text="server" />
+
+注册游戏级的事件
+
+#### Parameters
+
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
+
+
+___
+
 ### addLocalListener <Score text="addLocalListener" /> 
 
 • `Static` **addLocalListener**(`eventName`, `listener`): [`EventListener`](mw.EventListener.md) 
@@ -102,7 +124,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 |
 
@@ -110,6 +132,20 @@ ___
 
 | [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
 | :------ | :------ |
+
+___
+
+### addSceneEventListener <Score text="addSceneEventListener" /> 
+
+• `Static` **addSceneEventListener**(`eventName`, `callback`): `void` <Badge type="tip" text="server" />
+
+注册场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播
+
+#### Parameters
+
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
 
 ___
@@ -122,7 +158,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
 
@@ -131,7 +167,6 @@ ___
 | [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 应在客户端逻辑里调用
@@ -139,13 +174,13 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在客户端中看到每帧打印ok,代码如下：
 </span>
 
 ```ts
 @Component
- export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -165,6 +200,36 @@ ___
 
 ___
 
+### dispatchGameEvent <Score text="dispatchGameEvent" /> 
+
+• `Static` **dispatchGameEvent**(`eventName`, `data`): `void` <Badge type="tip" text="server" />
+
+广播游戏级的事件，在同一个游戏中的不同房间，都可以收到该事件广播
+
+#### Parameters
+
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `data` `string` | 携带的数据 <br> range: 长度不做限制。 |
+
+
+___
+
+### dispatchSceneEvent <Score text="dispatchSceneEvent" /> 
+
+• `Static` **dispatchSceneEvent**(`eventName`, `data`): `void` <Badge type="tip" text="server" />
+
+广播场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播
+
+#### Parameters
+
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `data` `string` | 携带的数据 <br> range: 长度不做限制。 |
+
+
+___
+
 ### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
 • `Static` **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
@@ -173,7 +238,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 
@@ -182,7 +247,6 @@ ___
 | [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 应在服务器逻辑里调用
@@ -190,13 +254,13 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在客户端中看到每帧打印ok,代码如下：
 </span>
 
 ```ts
 @Component
- export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -226,14 +290,13 @@ ___
 
 | `player` [`Player`](mw.Player.md) | 客户端 |
 | :------ | :------ |
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | `...params` `unknown`[] | 可变长参数 |
 
 #### Returns
 
 | [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -251,7 +314,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，与添加事件名配对。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 事件内容 |
 
@@ -259,7 +322,6 @@ ___
 
 | [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回发送本地事件的结果 |
 | :------ | :------ |
-
 
 ___
 
@@ -271,7 +333,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 
@@ -280,7 +342,6 @@ ___
 | [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 应在客户端逻辑里面调用
@@ -288,13 +349,13 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在服务端中看到每帧打印ok,代码如下：
 </span>
 
 ```ts
  @Component
- export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
@@ -322,5 +383,4 @@ ___
 
 | `event` [`EventListener`](mw.EventListener.md) | 监听器 |
 | :------ | :------ |
-
 

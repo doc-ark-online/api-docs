@@ -1,4 +1,4 @@
-[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsType
+[服务](../groups/服务.服务.md) / AdsType
 
 # AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 

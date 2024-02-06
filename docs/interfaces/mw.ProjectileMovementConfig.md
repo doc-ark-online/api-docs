@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovementConfig
+[玩法](../groups/玩法.玩法.md) / ProjectileMovementConfig
 
 # ProjectileMovementConfig <Badge type="tip" text="Interface" /> <Score text="ProjectileMovementConfig" />
 

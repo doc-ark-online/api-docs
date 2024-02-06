@@ -1,4 +1,4 @@
-[SOUNDS](../groups/SOUNDS.SOUNDS.md) / AttenuationDistanceModel
+[场景](../groups/场景.场景.md) / AttenuationDistanceModel
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 

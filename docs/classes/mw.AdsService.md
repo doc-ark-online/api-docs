@@ -1,4 +1,4 @@
-[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsService
+[服务](../groups/服务.服务.md) / AdsService
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
@@ -13,17 +13,17 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[showTimeout](mw.AdsService.md#showtimeout)**(): `number`  |
+| **[showTimeout](mw.AdsService.md#showtimeout)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置广告超时时间|
+| 获取广告超时时间|
 
 ### Methods <Score text="Methods" /> 
-| **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean`  |
+| **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
 | 广告是否激活,PC上始终返回false|
-| **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void`  |
+| **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 广告是否准备好|
-| **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void`  |
+| **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 
 ## Accessors
@@ -49,7 +49,6 @@
 
 获取广告超时时间
 
-
 #### Returns
 
 | `number` | 广告超时时长，单位为秒 |
@@ -61,7 +60,6 @@
 
 
 设置广告超时时间
-
 
 #### Parameters
 
@@ -92,7 +90,6 @@
 | `boolean` | true:该类型广告已激活，false:该类型广告未激活 |
 | :------ | :------ |
 
-
 ___
 
 ### isReady <Score text="isReady" /> 
@@ -108,7 +105,6 @@ ___
 | `callback` (`isReady`: `boolean`) => `void` |  接收广告事件的回调 |
 
 
-
 ::: warning Precautions
 
 结果不准确，可能在广告准备好的情况返回false
@@ -121,14 +117,13 @@ ___
 
 • `Static` **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
-展示广告
+展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
 
 #### Parameters
 
 | `adsType` [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
 | :------ | :------ |
 | `callback` (`isSuccess`: `boolean`) => `void` |  广告播放结果回调 |
-
 
 
 <span style="font-size: 14px;">
@@ -144,25 +139,25 @@ export default class AdsExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         this.playAd(AdsType.Reward);
     }
 
     //播放广告
-    private async playAd(type: AdsType): Promise<void> {
+    private async playAd(type: AdsType): `Promise`<`void`\> {
         let player = await mw.Player.localPlayer;
         if (!AdsService.isActive(type)) {
-            player.character.displayName = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
+            player.character.name = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
             return;
         }
         AdsService.isReady(type, (isReady) => {
             if (!isReady) {
-                player.character.displayName = type == AdsType.Reward ? "激励广告未准备好" : "插屏广告未准备好";
+                player.character.name = type == AdsType.Reward ? "激励广告未准备好" : "插屏广告未准备好";
                 return;
             }
             AdsService.showAd(type, async (isSuccess) => {
-                if (isSuccess) player.character.displayName = type == AdsType.Reward ? "激励广告播放成功" : "插屏广告播放成功";
+                if (isSuccess) player.character.name = type == AdsType.Reward ? "激励广告播放成功" : "插屏广告播放成功";
                 await TimeUtil.delaySecond(10);
                 type == AdsType.Reward ? this.playAd(AdsType.Interstitial) : this.playAd(AdsType.Reward);
             });

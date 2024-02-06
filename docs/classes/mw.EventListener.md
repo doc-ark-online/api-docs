@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / EventListener
+[基础类型](../groups/基础类型.基础类型.md) / EventListener
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
@@ -12,7 +12,7 @@
 | 用来判断事件是否有效|
 
 ### Methods <Score text="Methods" /> 
-| **[disconnect](mw.EventListener.md#disconnect)**(): `void`  |
+| **[disconnect](mw.EventListener.md#disconnect)**(): `void`   |
 | :-----|
 | 卸载事件|
 
@@ -50,5 +50,4 @@
 • **disconnect**(): `void` 
 
 卸载事件
-
 

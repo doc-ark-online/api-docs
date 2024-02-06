@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HttpRequestType
+[玩法](../groups/玩法.玩法.md) / HttpRequestType
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 

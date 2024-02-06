@@ -1,117 +1,104 @@
-[UI](../groups/UI.UI.md) / Button
+[界面](../groups/界面.界面.md) / Button
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-按钮,无默认text
+按钮
+
+-------------------------
+
+无默认文本
 
 ## Hierarchy
 
-- [`PanelWidget`](mw.PanelWidget.md)
+- [`PanelWidget`](Core.mw.PanelWidget.md)
 
   ↳ **`Button`**
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[clickMethod](mw.Button.md#clickmethod)**(`inClickMethod`: [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md)): `void`  |
+| **[clickMethod](mw.Button.md#clickmethod)**(`inClickMethod`: [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 设置点击模式|
-| **[disableImageColor](mw.Button.md#disableimagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置禁用图片颜色|
-| **[disableImageDrawType](mw.Button.md#disableimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)  |
-| 设置禁用图片绘制类型|
-| **[disableImageGuid](mw.Button.md#disableimageguid)**(): `string`  |
-| 设置不可用图片ID|
-| **[disableImageMargin](mw.Button.md#disableimagemargin)**(): [`Margin`](mw.Margin.md)  |
-| 设置禁用图片边距|
-| **[disableImageSize](mw.Button.md#disableimagesize)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置禁用图片大小|
-| **[focusable](mw.Button.md#focusable)**(): `boolean`  |
-| 设置是否获取输入焦点|
-| **[normalImageColor](mw.Button.md#normalimagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置普通图片颜色|
-| **[normalImageDrawType](mw.Button.md#normalimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)  |
-| 设置普通图片绘制类型|
-| **[normalImageGuid](mw.Button.md#normalimageguid)**(): `string`  |
-| 设置正常图片ID|
-| **[normalImageMargin](mw.Button.md#normalimagemargin)**(): [`Margin`](mw.Margin.md)  |
-| 设置普通图片边距|
-| **[normalImageSize](mw.Button.md#normalimagesize)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置图片大小|
-| **[onClicked](mw.Button.md#onclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[disableImageColor](mw.Button.md#disableimagecolor)**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />  |
+| 获取禁用图片颜色|
+| **[disableImageDrawType](mw.Button.md#disableimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />  |
+| 获取禁用图片绘制类型|
+| **[disableImageGuid](mw.Button.md#disableimageguid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取禁用图片ID|
+| **[disableImageMargin](mw.Button.md#disableimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
+| 获取禁用图片边距|
+| **[disableImageSize](mw.Button.md#disableimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
+| 获取禁用图片大小|
+| **[focusable](mw.Button.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否获取输入焦点|
+| **[normalImageColor](mw.Button.md#normalimagecolor)**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />  |
+| 获取普通图片颜色|
+| **[normalImageDrawType](mw.Button.md#normalimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />  |
+| 获取普通图片绘制类型|
+| **[normalImageGuid](mw.Button.md#normalimageguid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取普通图片ID|
+| **[normalImageMargin](mw.Button.md#normalimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
+| 获取普通图片边距|
+| **[normalImageSize](mw.Button.md#normalimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
+| 获取图片大小|
+| **[onClicked](mw.Button.md#onclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 点击事件|
-| **[onHovered](mw.Button.md#onhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onHovered](mw.Button.md#onhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 悬浮事件|
-| **[onPressed](mw.Button.md#onpressed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onPressed](mw.Button.md#onpressed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 按下事件|
-| **[onReleased](mw.Button.md#onreleased)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onReleased](mw.Button.md#onreleased)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 释放事件|
-| **[onUnhovered](mw.Button.md#onunhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onUnhovered](mw.Button.md#onunhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 未悬浮事件|
-| **[pressedImageColor](mw.Button.md#pressedimagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置按压图片颜色|
-| **[pressedImageDrawType](mw.Button.md#pressedimagedrawtype)**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)  |
-| 设置按压图片绘制类型|
-| **[pressedImageGuid](mw.Button.md#pressedimageguid)**(): `string`  |
-| 设置按下图片ID|
-| **[pressedImageMargin](mw.Button.md#pressedimagemargin)**(): [`Margin`](mw.Margin.md)  |
-| 设置按压图片边距|
-| **[pressedImageSize](mw.Button.md#pressedimagesize)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置按压图片大小|
-| **[pressedMethod](mw.Button.md#pressedmethod)**(`inPressedMethod`: [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md)): `void`  |
+| **[pressedImageColor](mw.Button.md#pressedimagecolor)**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />  |
+| 获取按压图片颜色|
+| **[pressedImageDrawType](mw.Button.md#pressedimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />  |
+| 获取按压图片绘制类型|
+| **[pressedImageGuid](mw.Button.md#pressedimageguid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取按下图片ID|
+| **[pressedImageMargin](mw.Button.md#pressedimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
+| 获取按压图片边距|
+| **[pressedImageSize](mw.Button.md#pressedimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
+| 获取按压图片大小|
+| **[pressedMethod](mw.Button.md#pressedmethod)**(`inPressedMethod`: [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置按压模式|
-| **[touchMethod](mw.Button.md#touchmethod)**(`inTouchMethod`: [`ButtonTouchMethod`](../enums/mw.ButtonTouchMethod.md)): `void`  |
+| **[touchMethod](mw.Button.md#touchmethod)**(`inTouchMethod`: [`ButtonTouchMethod`](../enums/mw.ButtonTouchMethod.md)): `void` <Badge type="tip" text="client" />  |
 | 设置触摸模式|
-| **[transitionEnable](mw.Button.md#transitionenable)**(): `boolean`  |
-| 是否套用不同的按下方案|
+| **[transitionEnable](mw.Button.md#transitionenable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 按钮是否启用过度模式,按下是否有效果|
 
 ### Methods <Score text="Methods" /> 
-| **[isPressed](mw.Button.md#ispressed)**(): `boolean`  |
+| **[addKey](mw.Button.md#addkey)**(`key`: [`Keys`](../enums/mw.Keys.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
+| 同一按键同时只能操控一个UI控件，最新绑定的UI控件会覆盖之前的绑定；脚本中添加的绑定无法覆盖编辑器按键绑定菜单中绑定相同按键的UI控件，但当两个UI控件分别通过代码和菜单绑定到同一按键时，使用代码绑定的优先级更高|
+| **[getKeys](mw.Button.md#getkeys)**(): [`Keys`](../enums/mw.Keys.md)[] <Badge type="tip" text="client" />  |
+| 获取当前UI控件绑定的所有键盘按键，包括编辑器按键绑定菜单和用代码绑定的按键|
+| **[isPressed](mw.Button.md#ispressed)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否按下|
-| **[setButtonDisableByFile](mw.Button.md#setbuttondisablebyfile)**(`absPath`: `string`): `void`  |
+| **[removeKey](mw.Button.md#removekey)**(`key`: [`Keys`](../enums/mw.Keys.md)): `void` <Badge type="tip" text="client" />  |
+| 此操作只会解绑动态绑定的按键无法解除编辑器按键绑定菜单中绑定的按键|
+| **[setButtonDisableByFile](mw.Button.md#setbuttondisablebyfile)**(`absPath`: `string`, `bRefreshCache?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置不可用图片|
-| **[setButtonNormalByFile](mw.Button.md#setbuttonnormalbyfile)**(`absPath`: `string`): `void`  |
+| **[setButtonNormalByFile](mw.Button.md#setbuttonnormalbyfile)**(`absPath`: `string`, `bRefreshCache?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置正常图片|
-| **[setButtonPressedByFile](mw.Button.md#setbuttonpressedbyfile)**(`absPath`: `string`): `void`  |
+| **[setButtonPressedByFile](mw.Button.md#setbuttonpressedbyfile)**(`absPath`: `string`, `bRefreshCache?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置按下图片|
-| **[setDisableImageColorByHex](mw.Button.md#setdisableimagecolorbyhex)**(`inHexString`: `string`): `void`  |
+| **[setDisableImageColorByHex](mw.Button.md#setdisableimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setDisableImageColorDecimal](mw.Button.md#setdisableimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void`  |
-| 设置不可用颜色指定R、G、B、A设置颜色 0 ~255|
-| **[setNormalImageColorByHex](mw.Button.md#setnormalimagecolorbyhex)**(`inHexString`: `string`): `void`  |
-| 设置正常颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setNormalImageColorDecimal](mw.Button.md#setnormalimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void`  |
-| 设置正常颜色 指定R、G、B、A设置颜色 0 ~255|
-| **[setPressedImageColorByHex](mw.Button.md#setpressedimagecolorbyhex)**(`inHexString`: `string`): `void`  |
-| 设置按下颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setPressedImageColorDecimal](mw.Button.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void`  |
-| 设置按下颜色指定R、G、B、A设置颜色 0 ~255|
-| **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md)  |
-| 创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
-
-
-::: details 点击查看继承
-### Methods <Score text="Methods" /> 
-| **[addChild](mw.PanelWidget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void`  |
-| :-----|
-| 添加子节点|
-| **[findChildByPath](mw.PanelWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](mw.Widget.md)  |
-| 通过相对路径查找节点|
-| **[getChildAt](mw.PanelWidget.md#getchildat)**(`index`: `number`): [`Widget`](mw.Widget.md)  |
-| 获取第几位子节点|
-| **[getChildByName](mw.PanelWidget.md#getchildbyname)**<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>(`name`: `string`): `T`: extends [`Widget`](mw.Widget.md)<`T`\>  |
-| 通过名字查找节点|
-| **[getChildrenCount](mw.PanelWidget.md#getchildrencount)**(): `number`  |
-| 获取子节点数量|
-| **[removeAllChildren](mw.PanelWidget.md#removeallchildren)**(): `void`  |
-| 清除所有子节点,会销毁UI无法再使用|
-| **[removeChild](mw.PanelWidget.md#removechild)**(`child`: [`Widget`](mw.Widget.md)): `void`  |
-| 移除节点,会销毁UI无法在使用|
-| **[removeChildAt](mw.PanelWidget.md#removechildat)**(`index`: `number`): `void`  |
-| 移除第几个节点,会销毁UI无法再使用|
-:::
-
+| **[setDisableImageColorDecimal](mw.Button.md#setdisableimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置不可用颜色|
+| **[setNormalImageColorByHex](mw.Button.md#setnormalimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
+| 设置正常颜色指定 Hex 的颜色文本设定颜色 #05050505|
+| **[setNormalImageColorDecimal](mw.Button.md#setnormalimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置正常颜色|
+| **[setPressedImageColorByHex](mw.Button.md#setpressedimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
+| 设置按下颜色指定 Hex 的颜色文本设定颜色 #05050505|
+| **[setPressedImageColorDecimal](mw.Button.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置按下颜色|
+| **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />  |
+| 创建 Button 控件|
 
 ## Accessors
 
@@ -133,7 +120,6 @@ ___
 
 设置点击模式
 
-
 #### Parameters
 
 | `inClickMethod` [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md) | 点击模式选择 |
@@ -153,7 +139,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **disableImageColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **disableImageColor**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -168,10 +154,9 @@ ___
 
 获取禁用图片颜色
 
-
 #### Returns
 
-| [`LinearColor`](mw.LinearColor.md) | 禁用图片颜色，Type.LinearColor类型，数据范围0~1 |
+| `Readonly`<[`LinearColor`](mw.LinearColor.md)\> | 禁用图片颜色，Type.LinearColor类型，数据范围0~1 |
 | :------ | :------ |
 
 
@@ -180,7 +165,6 @@ ___
 
 
 设置禁用图片颜色
-
 
 #### Parameters
 
@@ -201,7 +185,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />
+• `get` **disableImageDrawType**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -216,10 +200,9 @@ ___
 
 获取禁用图片绘制类型
 
-
 #### Returns
 
-| [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) | 禁用图片绘制类型 |
+| `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> | 禁用图片绘制类型 |
 | :------ | :------ |
 
 
@@ -228,7 +211,6 @@ ___
 
 
 设置禁用图片绘制类型
-
 
 #### Parameters
 
@@ -264,7 +246,6 @@ ___
 
 获取禁用图片ID
 
-
 #### Returns
 
 | `string` | 禁用图片ID |
@@ -276,7 +257,6 @@ ___
 
 
 设置不可用图片ID
-
 
 #### Parameters
 
@@ -297,7 +277,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **disableImageMargin**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />
+• `get` **disableImageMargin**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -312,10 +292,9 @@ ___
 
 获取禁用图片边距
 
-
 #### Returns
 
-| [`Margin`](mw.Margin.md) | 禁用图片边距 |
+| `Readonly`<[`Margin`](mw.Margin.md)\> | 禁用图片边距 |
 | :------ | :------ |
 
 
@@ -324,7 +303,6 @@ ___
 
 
 设置禁用图片边距
-
 
 #### Parameters
 
@@ -345,7 +323,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **disableImageSize**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+• `get` **disableImageSize**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -360,10 +338,9 @@ ___
 
 获取禁用图片大小
 
-
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 禁用图片大小 |
+| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 禁用图片大小 |
 | :------ | :------ |
 
 
@@ -372,7 +349,6 @@ ___
 
 
 设置禁用图片大小
-
 
 #### Parameters
 
@@ -408,7 +384,6 @@ ___
 
 获取是否获取输入焦点
 
-
 #### Returns
 
 | `boolean` | 是否获取输入焦点 |
@@ -420,7 +395,6 @@ ___
 
 
 设置是否获取输入焦点
-
 
 #### Parameters
 
@@ -441,7 +415,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **normalImageColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **normalImageColor**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -456,10 +430,9 @@ ___
 
 获取普通图片颜色
 
-
 #### Returns
 
-| [`LinearColor`](mw.LinearColor.md) | 普通图片颜色，Type.LinearColor类型，数据范围0~1 |
+| `Readonly`<[`LinearColor`](mw.LinearColor.md)\> | 普通图片颜色，Type.LinearColor类型，数据范围0~1 |
 | :------ | :------ |
 
 
@@ -468,7 +441,6 @@ ___
 
 
 设置普通图片颜色
-
 
 #### Parameters
 
@@ -489,7 +461,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />
+• `get` **normalImageDrawType**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -504,10 +476,9 @@ ___
 
 获取普通图片绘制类型
 
-
 #### Returns
 
-| [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) | 普通图片绘制类型 |
+| `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> | 普通图片绘制类型 |
 | :------ | :------ |
 
 
@@ -516,7 +487,6 @@ ___
 
 
 设置普通图片绘制类型
-
 
 #### Parameters
 
@@ -552,7 +522,6 @@ ___
 
 获取普通图片ID
 
-
 #### Returns
 
 | `string` | 普通图片ID |
@@ -564,7 +533,6 @@ ___
 
 
 设置正常图片ID
-
 
 #### Parameters
 
@@ -585,7 +553,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **normalImageMargin**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />
+• `get` **normalImageMargin**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -600,10 +568,9 @@ ___
 
 获取普通图片边距
 
-
 #### Returns
 
-| [`Margin`](mw.Margin.md) | 普通图片边距 |
+| `Readonly`<[`Margin`](mw.Margin.md)\> | 普通图片边距 |
 | :------ | :------ |
 
 
@@ -612,7 +579,6 @@ ___
 
 
 设置普通图片边距
-
 
 #### Parameters
 
@@ -633,7 +599,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **normalImageSize**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+• `get` **normalImageSize**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -648,10 +614,9 @@ ___
 
 获取图片大小
 
-
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 普通图片大小 |
+| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 普通图片大小 |
 | :------ | :------ |
 
 
@@ -660,7 +625,6 @@ ___
 
 
 设置图片大小
-
 
 #### Parameters
 
@@ -691,7 +655,6 @@ ___
 
 点击事件
 
-
 #### Returns
 
 | [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回事件的代理 |
@@ -718,7 +681,6 @@ ___
 
 
 悬浮事件
-
 
 #### Returns
 
@@ -747,7 +709,6 @@ ___
 
 按下事件
 
-
 #### Returns
 
 | [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回事件的代理 |
@@ -774,7 +735,6 @@ ___
 
 
 释放事件
-
 
 #### Returns
 
@@ -803,7 +763,6 @@ ___
 
 未悬浮事件
 
-
 #### Returns
 
 | [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回事件的代理 |
@@ -821,7 +780,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **pressedImageColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **pressedImageColor**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -836,10 +795,9 @@ ___
 
 获取按压图片颜色
 
-
 #### Returns
 
-| [`LinearColor`](mw.LinearColor.md) | 按压图片颜色，Type.LinearColor类型，数据范围0~1 |
+| `Readonly`<[`LinearColor`](mw.LinearColor.md)\> | 按压图片颜色，Type.LinearColor类型，数据范围0~1 |
 | :------ | :------ |
 
 
@@ -848,7 +806,6 @@ ___
 
 
 设置按压图片颜色
-
 
 #### Parameters
 
@@ -869,7 +826,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) <Badge type="tip" text="client" />
+• `get` **pressedImageDrawType**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -884,10 +841,9 @@ ___
 
 获取按压图片绘制类型
 
-
 #### Returns
 
-| [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md) | 按压图片绘制类型 |
+| `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> | 按压图片绘制类型 |
 | :------ | :------ |
 
 
@@ -896,7 +852,6 @@ ___
 
 
 设置按压图片绘制类型
-
 
 #### Parameters
 
@@ -932,7 +887,6 @@ ___
 
 获取按下图片ID
 
-
 #### Returns
 
 | `string` | 按下图片ID |
@@ -944,7 +898,6 @@ ___
 
 
 设置按下图片ID
-
 
 #### Parameters
 
@@ -965,7 +918,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **pressedImageMargin**(): [`Margin`](mw.Margin.md) <Badge type="tip" text="client" />
+• `get` **pressedImageMargin**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -980,10 +933,9 @@ ___
 
 获取按压图片边距
 
-
 #### Returns
 
-| [`Margin`](mw.Margin.md) | 按压图片边距 |
+| `Readonly`<[`Margin`](mw.Margin.md)\> | 按压图片边距 |
 | :------ | :------ |
 
 
@@ -992,7 +944,6 @@ ___
 
 
 设置按压图片边距
-
 
 #### Parameters
 
@@ -1013,7 +964,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **pressedImageSize**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+• `get` **pressedImageSize**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -1028,10 +979,9 @@ ___
 
 获取按压图片大小
 
-
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 按压图片大小 |
+| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 按压图片大小 |
 | :------ | :------ |
 
 
@@ -1040,7 +990,6 @@ ___
 
 
 设置按压图片大小
-
 
 #### Parameters
 
@@ -1071,7 +1020,6 @@ ___
 
 设置按压模式
 
-
 #### Parameters
 
 | `inPressedMethod` [`ButtonPressMethod`](../enums/mw.ButtonPressMethod.md) | Press模式选择 |
@@ -1100,7 +1048,6 @@ ___
 
 
 设置触摸模式
-
 
 #### Parameters
 
@@ -1136,7 +1083,6 @@ ___
 
 按钮是否启用过度模式,按下是否有效果
 
-
 #### Returns
 
 | `boolean` | 按钮是否启用过度模式 |
@@ -1148,7 +1094,6 @@ ___
 
 
 是否套用不同的按下方案
-
 
 #### Parameters
 
@@ -1165,6 +1110,33 @@ ___
 
 ___
 
+### addKey <Score text="addKey" /> 
+
+• **addKey**(`key`): `void` <Badge type="tip" text="client" />
+
+同一按键同时只能操控一个UI控件，最新绑定的UI控件会覆盖之前的绑定；脚本中添加的绑定无法覆盖编辑器按键绑定菜单中绑定相同按键的UI控件，但当两个UI控件分别通过代码和菜单绑定到同一按键时，使用代码绑定的优先级更高
+
+#### Parameters
+
+| `key` [`Keys`](../enums/mw.Keys.md) | 按键 |
+| :------ | :------ |
+
+
+___
+
+### getKeys <Score text="getKeys" /> 
+
+• **getKeys**(): [`Keys`](../enums/mw.Keys.md)[] <Badge type="tip" text="client" />
+
+获取当前UI控件绑定的所有键盘按键，包括编辑器按键绑定菜单和用代码绑定的按键
+
+#### Returns
+
+| [`Keys`](../enums/mw.Keys.md)[] | 返回当前控件绑定的按键,可能为空 |
+| :------ | :------ |
+
+___
+
 ### isPressed <Score text="isPressed" /> 
 
 • **isPressed**(): `boolean` <Badge type="tip" text="client" />
@@ -1176,51 +1148,82 @@ ___
 | `boolean` | 返回按钮是否按下 |
 | :------ | :------ |
 
+___
+
+### removeKey <Score text="removeKey" /> 
+
+• **removeKey**(`key`): `void` <Badge type="tip" text="client" />
+
+此操作只会解绑动态绑定的按键无法解除编辑器按键绑定菜单中绑定的按键
+
+#### Parameters
+
+| `key` [`Keys`](../enums/mw.Keys.md) | 按键 |
+| :------ | :------ |
+
 
 ___
 
 ### setButtonDisableByFile <Score text="setButtonDisableByFile" /> 
 
-• **setButtonDisableByFile**(`absPath`): `void` <Badge type="tip" text="client" />
+• **setButtonDisableByFile**(`absPath`, `bRefreshCache?`): `void` <Badge type="tip" text="client" />
 
 设置不可用图片
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` |  图片文件路径 <br> range: 路径长度 |
 | :------ | :------ |
+| `bRefreshCache?` `boolean` | 默认为 true 将重新创建并刷新缓存，为 false 则使用缓存 <br> default: true |
 
 
+::: warning Precautions
+
+建议设置 bRefreshCache=false 以提升性能
+
+:::
 
 ___
 
 ### setButtonNormalByFile <Score text="setButtonNormalByFile" /> 
 
-• **setButtonNormalByFile**(`absPath`): `void` <Badge type="tip" text="client" />
+• **setButtonNormalByFile**(`absPath`, `bRefreshCache?`): `void` <Badge type="tip" text="client" />
 
 设置正常图片
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` |  图片文件路径 range: 路径长度 |
 | :------ | :------ |
+| `bRefreshCache?` `boolean` | 为 true 则重新创建并刷新缓存，为 false 则使用缓存。 <br> default: true |
 
 
+::: warning Precautions
+
+建议设置 bRefreshCache = false 以提升性能
+
+:::
 
 ___
 
 ### setButtonPressedByFile <Score text="setButtonPressedByFile" /> 
 
-• **setButtonPressedByFile**(`absPath`): `void` <Badge type="tip" text="client" />
+• **setButtonPressedByFile**(`absPath`, `bRefreshCache?`): `void` <Badge type="tip" text="client" />
 
 设置按下图片
 
 #### Parameters
 
-| `absPath` `string` | 图片文件路径 |
+| `absPath` `string` | 图片文件路径 range: 路径长度 |
 | :------ | :------ |
+| `bRefreshCache?` `boolean` | 默认为 true 将重新创建并刷新缓存，为 false 则使用缓存 <br> default: true |
 
 
+::: warning Precautions
+
+建议设置 bRefreshCache = false 以提升性能
+
+:::
 
 ___
 
@@ -1232,9 +1235,8 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
-
 
 
 ___
@@ -1243,16 +1245,15 @@ ___
 
 • **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置不可用颜色指定R、G、B、A设置颜色 0 ~255
+设置不可用颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
-
+| `G` `number` | 颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1261,13 +1262,12 @@ ___
 
 • **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置正常颜色指定Hex的颜色文本设定颜色 #05050505
+设置正常颜色指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
-
 
 
 ___
@@ -1276,16 +1276,15 @@ ___
 
 • **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置正常颜色 指定R、G、B、A设置颜色 0 ~255
+设置正常颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
-
+| `G` `number` | 颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1294,13 +1293,12 @@ ___
 
 • **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置按下颜色指定Hex的颜色文本设定颜色 #05050505
+设置按下颜色指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | 颜色字符串 |
+| `inHexString` `string` | 颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
-
 
 
 ___
@@ -1309,16 +1307,15 @@ ___
 
 • **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置按下颜色指定R、G、B、A设置颜色 0 ~255
+设置按下颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G值，数据范围0~255 |
-| `B` `number` | 颜色B值，数据范围0~255 |
-| `A` `number` | 颜色透明度，数据范围0~255 |
-
+| `G` `number` | 颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1327,16 +1324,17 @@ ___
 
 • `Static` **newObject**(`parent?`, `inName?`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />
 
-创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 Button 控件
 
 #### Parameters
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default: null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 
 | [`Button`](mw.Button.md) | 返回创建的对象 |
 | :------ | :------ |
 
+当parent和inName与已有的对象相同时，旧的对象会被销毁

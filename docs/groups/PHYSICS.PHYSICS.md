@@ -5,17 +5,10 @@ PHYSICS
 ## Table of contents
 | Classes |
 | :-----|
-| [Impulse](../classes/mw.Impulse.md) <br> 冲量 |
-| [IntegratedMover](../classes/mw.IntegratedMover.md) <br> 运动器组件 |
-| [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器 |
+| [ForceVolume](../classes/mw.ForceVolume.md) <br> 物理力区域 |
 
 
 | Enums |
 | :-----|
-| [CollisionType](../enums/mw.CollisionType.md) <br> 碰撞类型 |
-| [ImpulseForceType](../enums/mw.ImpulseForceType.md) <br> 冲量力类型 |
-| [ImpulseType](../enums/mw.ImpulseType.md) <br> 冲量的应用方式 |
-| [MotionAxis](../enums/mw.MotionAxis.md) <br> 运动坐标系 |
-| [ObjectTypeQuery](../enums/mw.ObjectTypeQuery.md) <br> 碰撞检测通道 |
-| [TriggerShapeType](../enums/mw.TriggerShapeType.md) <br> 碰撞形状 |
+| [ForceType](../enums/mw.ForceType.md) <br> 力区域的施力类型 |
 

@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / GameObject
+[基类](../groups/基类.基类.md) / GameObject
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
@@ -9,7 +9,7 @@ Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象均继承
 提供复制删除物体，查找获取物体、子物体、脚本等功能。
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下:
+使用示例:创建一个名为"GameObjectExample"的脚本，在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体。代码如下：
 </span>
 
 ```ts
@@ -62,17 +62,23 @@ export default class GameObjectExample extends Script {
 
   ↳↳ [`Sound`](mw.Sound.md)
 
-  ↳↳ [`SwimmingVolume`](mw.SwimmingVolume.md)
+  ↳↳ [`SwimmingVolume`](Core.mw.SwimmingVolume.md)
 
   ↳↳ [`Trigger`](mw.Trigger.md)
 
   ↳↳ [`UIWidget`](mw.UIWidget.md)
+
+  ↳↳ [`WaterVolume`](mw.WaterVolume.md)
 
   ↳↳ [`HotWeapon`](mw.HotWeapon.md)
 
   ↳↳ [`Interactor`](mw.Interactor.md)
 
   ↳↳ [`NavModifierVolume`](mw.NavModifierVolume.md)
+
+  ↳↳ [`RigidConstraint`](mw.RigidConstraint.md)
+
+  ↳↳ [`ForceVolume`](mw.ForceVolume.md)
 
   ↳↳ [`Impulse`](mw.Impulse.md)
 
@@ -89,82 +95,88 @@ export default class GameObjectExample extends Script {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
 | 物体销毁后事件回调|
 
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.GameObject.md#assetid)**(): `string`  |
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
 | 获取当前物体使用资源的GUID|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`  |
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
-| **[isReady](mw.GameObject.md#isready)**(): `boolean`  |
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
-| **[name](mw.GameObject.md#name)**(): `string`  |
-| 设置物体名称|
-| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)  |
+| **[name](mw.GameObject.md#name)**(): `string`   |
+| 返回当前物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
-| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)  |
-| 设置父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string`  |
-| 设置当前物体的标签|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
+| 获取当前父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`   |
+| 获取当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[destroy](mw.GameObject.md#destroy)**(): `void`  |
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 移除脚本|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`  |
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
-| 根据gameObjectId查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 根据 gameObjectId 查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
-| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
-| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 通过 gameObjectId 异步查找 GameObject|
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
-| 通过gameObjectId查找物体|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
+| 异步构造一个物体|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 通过 gameObjectId 查找物体|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
-| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过自定义标签获取物体|
-| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
 | 构造一个物体|
 
 ## Properties
@@ -174,7 +186,6 @@ export default class GameObjectExample extends Script {
 • **onDestroyDelegate**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> 
 
 物体销毁后事件回调
-
 
 ## Accessors
 
@@ -193,7 +204,6 @@ export default class GameObjectExample extends Script {
 
 
 获取当前物体使用资源的GUID
-
 
 #### Returns
 
@@ -222,7 +232,6 @@ ___
 
 获取物体的唯一标识（唯一标识一个对象的字符串）。
 
-
 #### Returns
 
 | `string` |  |
@@ -249,7 +258,6 @@ ___
 
 
 当前物体状态
-
 
 #### Returns
 
@@ -283,7 +291,6 @@ ___
 
 当前物体本地变换
 
-
 #### Returns
 
 | [`Transform`](mw.Transform.md) |  |
@@ -295,7 +302,6 @@ ___
 
 
 当前物体本地变换
-
 
 #### Parameters
 
@@ -329,8 +335,9 @@ ___
 <td style="text-align: left">
 
 
-返回当前物体名称
+**`Editor`**
 
+返回当前物体名称
 
 #### Returns
 
@@ -342,8 +349,9 @@ ___
 <td style="text-align: left">
 
 
-设置物体名称
+**`Editor`**
 
+设置物体名称
 
 #### Parameters
 
@@ -373,7 +381,6 @@ ___
 
 
 获取当前物体同步状态
-
 
 #### Returns
 
@@ -407,7 +414,6 @@ ___
 
 获取当前父物体
 
-
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 父物体 |
@@ -419,7 +425,6 @@ ___
 
 
 设置父物体
-
 
 #### Parameters
 
@@ -455,7 +460,6 @@ ___
 
 获取当前物体的标签
 
-
 #### Returns
 
 | `string` | Tag |
@@ -467,7 +471,6 @@ ___
 
 
 设置当前物体的标签
-
 
 #### Parameters
 
@@ -503,7 +506,6 @@ ___
 
 当前物体世界变换
 
-
 #### Returns
 
 | [`Transform`](mw.Transform.md) |  |
@@ -515,7 +517,6 @@ ___
 
 
 当前物体世界变换
-
 
 #### Parameters
 
@@ -530,6 +531,44 @@ ___
 
 ## Methods
 
+### addComponent <Score text="addComponent" /> 
+
+• **addComponent**<`T`\>(`constructor`, `bInReplicates?`): `T` 
+
+添加一个脚本组件
+
+#### Parameters
+
+| `constructor` (...`args`: `unknown`[]) => `T` |  ScriptComponentClass 添加脚本的类型 <br> default:null |
+| :------ | :------ |
+| `bInReplicates?` `boolean` |  是否开启同步 <br> default: false |
+
+#### Returns
+
+| `T` | T 新添加的脚本组件 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
+
+___
+
+### addScriptToObject <Score text="addScriptToObject" /> 
+
+• **addScriptToObject**(`script`): `void` 
+
+附加脚本
+
+#### Parameters
+
+| `script` [`Script`](mw.Script.md) | 脚本 |
+| :------ | :------ |
+
+
+___
+
 ### asyncReady <Score text="asyncReady" /> 
 
 • **asyncReady**(): `Promise`<[`GameObject`](mw.GameObject.md)\> 
@@ -541,23 +580,37 @@ ___
 | `Promise`<[`GameObject`](mw.GameObject.md)\> | 准备好的对象 |
 | :------ | :------ |
 
-
 ___
 
 ### clone <Score text="clone" /> 
 
 • **clone**(`gameObjectInfo?`): [`GameObject`](mw.GameObject.md) 
 
+**`Editor`**
+
 复制对象
 
 #### Parameters
 
-| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) | 克隆物体的信息 default: 选填 |
+| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) | 克隆物体的信息 <br> default: null |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 克隆的对象 |
+| :------ | :------ |
+
+___
+
+### delScriptFromObject <Score text="delScriptFromObject" /> 
+
+• **delScriptFromObject**(`script`): `void` 
+
+移除脚本
+
+#### Parameters
+
+| `script` [`Script`](mw.Script.md) | 脚本 |
 | :------ | :------ |
 
 
@@ -570,7 +623,6 @@ ___
 删除对象
 
 
-
 ___
 
 ### getBoundingBoxExtent <Score text="getBoundingBoxExtent" /> 
@@ -581,20 +633,19 @@ ___
 
 #### Parameters
 
-| `nonColliding?` `boolean` | 表示要在边界框中包含非碰撞组件 default:false |
+| `nonColliding?` `boolean` | 表示要在边界框中包含非碰撞组件 <br> default:false |
 | :------ | :------ |
-| `includeFromChild?` `boolean` | 如果为 true，则递归子物体 default:false |
-| `outer?` [`Vector`](mw.Vector.md) | 接收转换数据的 Vector 对象 default:null |
+| `includeFromChild?` `boolean` | 如果为 true，则递归子物体 <br> default:false |
+| `outer?` [`Vector`](mw.Vector.md) | 接收转换数据的 Vector 对象 <br> default:null |
 
 #### Returns
 
 | [`Vector`](mw.Vector.md) | mw.Vector |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象,建议传入 outer 来减少 new 对象
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象,建议传入 outer 来减少 new 对象
 
 :::
 
@@ -612,8 +663,7 @@ ___
 | :------ | :------ |
 | `originOuter` [`Vector`](mw.Vector.md) | 传出参数，设置为物体的中心点坐标。 |
 | `boxExtentOuter` [`Vector`](mw.Vector.md) | 传出参数，设置为物体尺寸的一半。 |
-| `includeFromChild?` `boolean` | 是否递归包含子物体 default:undefined |
-
+| `includeFromChild?` `boolean` | 是否递归包含子物体 <br> default:undefined |
 
 
 ___
@@ -622,18 +672,17 @@ ___
 
 • **getChildByGameObjectId**(`gameObjectId`): [`GameObject`](mw.GameObject.md) 
 
-根据gameObjectId查找子物体
+根据 gameObjectId 查找子物体
 
 #### Parameters
 
-| `gameObjectId` `string` | gameObjectId |
+| `gameObjectId` `string` | gameObjectId <br> range: 字符串最大长度根据不同类型的 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 查找的物体 |
 | :------ | :------ |
-
 
 ___
 
@@ -641,18 +690,19 @@ ___
 
 • **getChildByName**(`name`): [`GameObject`](mw.GameObject.md) 
 
+**`Editor`**
+
 根据名称查找子物体
 
 #### Parameters
 
-| `name` `string` | 名称 |
+| `name` `string` | 名称 <br> range: 字符串最大长度根据不同类型的名称 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 查找的物体 |
 | :------ | :------ |
-
 
 ___
 
@@ -664,14 +714,13 @@ ___
 
 #### Parameters
 
-| `path` `string` | 路径 |
+| `path` `string` | 路径 <br> range: 字符串最大长度根据不同路径长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 查找的物体 |
 | :------ | :------ |
-
 
 ___
 
@@ -686,7 +735,6 @@ ___
 | [`GameObject`](mw.GameObject.md)[] | Array`<GameObject>` |
 | :------ | :------ |
 
-
 ___
 
 ### getChildrenBoundingBoxCenter <Score text="getChildrenBoundingBoxCenter" /> 
@@ -697,7 +745,7 @@ ___
 
 #### Parameters
 
-| `outer?` [`Vector`](mw.Vector.md) | 接收转换数据的 Vector 对象 default:null |
+| `outer?` [`Vector`](mw.Vector.md) | 接收转换数据的 Vector 对象 <br> default:null |
 | :------ | :------ |
 
 #### Returns
@@ -705,10 +753,9 @@ ___
 | [`Vector`](mw.Vector.md) | mw.Vector |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象,建议传入 outer 来减少 new 对象
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象,建议传入 outer 来减少 new 对象
 
 :::
 
@@ -722,7 +769,7 @@ ___
 
 #### Parameters
 
-| `name` `string` | 子物体名称 |
+| `name` `string` | 子物体名称 <br> range: 字符串最大长度根据不同类型的名字 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
@@ -730,58 +777,74 @@ ___
 | [`GameObject`](mw.GameObject.md)[] | 符合的子物体数组 |
 | :------ | :------ |
 
-
 ___
 
-### getScript <Score text="getScript" /> 
+### getComponent <Score text="getComponent" /> 
 
-• **getScript**(`id`): [`Script`](mw.Script.md) 
+• **getComponent**<`T`\>(`constructor?`): `T` 
 
-获得当前物体下的指定脚本
+获取指定类型的组件
 
 #### Parameters
 
-| `id` `string` | 脚本唯一标识 |
+| `constructor?` (...`args`: `unknown`[]) => `T` |  脚本类型 <br> default:null |
 | :------ | :------ |
 
 #### Returns
 
-| [`Script`](mw.Script.md) | Script |
+| `T` | 脚本组件 |
 | :------ | :------ |
 
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 ___
 
-### getScriptByName <Score text="getScriptByName" /> 
+### getComponentPropertys <Score text="getComponentPropertys" /> 
 
-• **getScriptByName**(`name`): [`Script`](mw.Script.md) 
+• **getComponentPropertys**<`T`\>(`constructor`): `Map`<`string`, `IPropertyOptions`\> 
 
-获得当前物体下的指定脚本
+获取脚本组件属性
 
 #### Parameters
 
-| `name` `string` | 名字 |
+| `constructor` (...`args`: `unknown`[]) => `T` |  脚本类型 <br> default:null |
 | :------ | :------ |
 
 #### Returns
 
-| [`Script`](mw.Script.md) | Script |
+| `Map`<`string`, `IPropertyOptions`\> | 组件所有属性 Map<key: IPropertyOptions> |
 | :------ | :------ |
 
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 ___
 
-### getScripts <Score text="getScripts" /> 
+### getComponents <Score text="getComponents" /> 
 
-• **getScripts**(): [`Script`](mw.Script.md)[] 
+• **getComponents**<`T`\>(`constructor?`): `T`[] 
 
-获得当前物体下的所有脚本
+获取指定类型的所有组件
+
+#### Parameters
+
+| `constructor?` (...`args`: `unknown`[]) => `T` |  脚本类型 <br> default:null |
+| :------ | :------ |
 
 #### Returns
 
-| [`Script`](mw.Script.md)[] | Array`<Script>` |
+| `T`[] | 脚本组件列表 |
 | :------ | :------ |
 
+#### Type parameters
+
+| `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 ___
 
@@ -796,7 +859,6 @@ ___
 | `boolean` | bool |
 | :------ | :------ |
 
-
 ___
 
 ### setVisibility <Score text="setVisibility" /> 
@@ -809,8 +871,7 @@ ___
 
 | `status` `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
 | :------ | :------ |
-| `propagateToChildren?` `boolean` |  是否设置子物体 default:false |
-
+| `propagateToChildren?` `boolean` |  是否设置子物体 <br> default:false |
 
 
 ___
@@ -819,19 +880,19 @@ ___
 
 • `Static` **asyncFindGameObjectById**(`gameObjectId`): `Promise`<[`GameObject`](mw.GameObject.md)\> 
 
-通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);
+通过 gameObjectId 异步查找 GameObject
 
 #### Parameters
 
-| `gameObjectId` `string` | 物体的gameObjectId |
+| `gameObjectId` `string` | 物体的 gameObjectId <br> range: 字符串最大长度根据不同类型的资源 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | `Promise`<[`GameObject`](mw.GameObject.md)\> | gameObjectId对应的物体 |
 | :------ | :------ |
-` 来设置
 
+默认是10秒，可以通过 ScriptingSettings.setGlobalAsyncOverTime(1000 * 10) 方式来设置。
 
 ___
 
@@ -843,7 +904,7 @@ ___
 
 #### Parameters
 
-| `path` `string` | 物体路径 |
+| `path` `string` | 物体路径 <br> range: 字符串最大长度根据路径 ID 长度决定。不做限制。 |
 | :------ | :------ |
 
 #### Returns
@@ -851,26 +912,26 @@ ___
 | `Promise`<[`GameObject`](mw.GameObject.md)\> | 路径对应的物体 |
 | :------ | :------ |
 
-
 ___
 
 ### asyncSpawn <Score text="asyncSpawn" /> 
 
 • `Static` **asyncSpawn**<`T`\>(`assetId`, `gameObjectInfo?`): `Promise`<`T`\> 
 
-异步构造一个物体，资源不存在会先去下载资源再去创建
+异步构造一个物体
 
 #### Parameters
 
-| `assetId` `string` |  资源id |
+| `assetId` `string` |  资源 id <br> range: 字符串最大长度根据不同类型的资源 ID 长度决定。 |
 | :------ | :------ |
-| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) |  构建物体的信息 default: 选填 |
+| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) |  构建物体的信息 <br> default: 选填 |
 
 #### Returns
 
 | `Promise`<`T`\> | 构造的物体 |
 | :------ | :------ |
 
+资源不存在会先去下载资源再去创建
 
 <span style="font-size: 14px;">
 使用示例:调用方法
@@ -894,18 +955,17 @@ ___
 
 • `Static` **findGameObjectById**(`gameObjectId`): [`GameObject`](mw.GameObject.md) 
 
-通过gameObjectId查找物体
+通过 gameObjectId 查找物体
 
 #### Parameters
 
-| `gameObjectId` `string` | 物体的gameObjectId |
+| `gameObjectId` `string` | 物体的 gameObjectId <br> range: 字符串最大长度根据不同类型的资源 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | gameObjectId对应的物体 |
 | :------ | :------ |
-
 
 ___
 
@@ -917,14 +977,13 @@ ___
 
 #### Parameters
 
-| `name` `string` | 物体名字 |
+| `name` `string` | 物体名字 <br> range: 字符串最大长度根据不同类型的名字 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 返回第一个查找到的对象，如有多个同名对象，随机返回一个 |
 | :------ | :------ |
-
 
 ___
 
@@ -936,14 +995,13 @@ ___
 
 #### Parameters
 
-| `name` `string` | 物体名字 |
+| `name` `string` | 物体名字 <br> range: 字符串最大长度根据不同类型的资源 ID 长度决定。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md)[] | 返回所有查找到的对象 |
 | :------ | :------ |
-
 
 ___
 
@@ -955,14 +1013,13 @@ ___
 
 #### Parameters
 
-| `tag` `string` | 自定义tag |
+| `tag` `string` | 自定义 tag <br> range: 字符串最大长度不超过 200 个字 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md)[] | Array`<GameObject>` |
 | :------ | :------ |
-
 
 ___
 
@@ -974,14 +1031,13 @@ ___
 
 #### Parameters
 
-| `path` `string` | 物体路径 |
+| `path` `string` | 物体路径 <br> range: 字符串最大长度根据路径 ID 长度决定。不做限制。 |
 | :------ | :------ |
 
 #### Returns
 
 | [`GameObject`](mw.GameObject.md) | 返回第一个查找到的对象，如有多个同名对象，返回找到的第一个 |
 | :------ | :------ |
-
 
 ___
 
@@ -993,24 +1049,23 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  资源id |
+| `assetId` `string` |  资源 id <br> range: 根据资源 ID 长度而定 |
 | :------ | :------ |
-| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) |  构建物体的信息 default: 选填 |
+| `gameObjectInfo?` [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md) |  构建物体的信息 <br> default: 选填 <br> range: 字符串最大长度根据不同类型的资源 ID 长度决定。 |
 
 #### Returns
 
 | `T` | 构造的物体 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
-使用示例:调用方法
+使用示例: 调用方式
 </span>
 
 ```ts
 let obj = GameObject.spawn<Model>("197386", {
- replicates: true,
- transform: new Transform()
+   replicates: true,
+   transform: new Transform()
 });
 ```
 

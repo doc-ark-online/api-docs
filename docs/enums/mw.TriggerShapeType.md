@@ -1,4 +1,4 @@
-[PHYSICS](../groups/PHYSICS.PHYSICS.md) / TriggerShapeType
+[玩法](../groups/玩法.玩法.md) / TriggerShapeType
 
 # TriggerShapeType <Badge type="tip" text="Enumeration" /> <Score text="TriggerShapeType" />
 

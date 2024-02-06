@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / MoveFacingDirection
+[角色系统](../groups/角色系统.角色系统.md) / MoveFacingDirection
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 

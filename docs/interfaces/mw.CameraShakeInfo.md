@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraShakeInfo
+[玩法](../groups/玩法.玩法.md) / CameraShakeInfo
 
 # CameraShakeInfo <Badge type="tip" text="Interface" /> <Score text="CameraShakeInfo" />
 

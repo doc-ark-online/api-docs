@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UILayout
+[界面](../groups/界面.界面.md) / UILayout
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 
@@ -14,8 +14,6 @@
 | 是否网格模式|
 | **[childCollation](mw.UILayout.md#childcollation)**: [`UIChildCollation`](mw.UIChildCollation.md)  |
 | 子项布局规则|
-| **[hugContent](mw.UILayout.md#hugcontent)**: [`UIHugContent`](mw.UIHugContent.md)  |
-| 容器布局适应规则|
 | **[layout](mw.UILayout.md#layout)**: [`UILayoutType`](../enums/mw.UILayoutType.md)  |
 | 自动布局规则|
 | **[layoutPacket](mw.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/mw.UILayoutPacket.md)  |
@@ -27,33 +25,29 @@
 
 构造函数，传入每一个值
 
-
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔 range:不做限制 type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
 | `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugContent` [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
+| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) |  自动布局类型 |
 | `InAutoLayout` `boolean` | 是否自动布局 |
 | `InAutoWrap` `boolean` | 是否网格模式 |
 
-• **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
+• **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugType`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
 
 构造函数，传入每一个值
 
-**`Effect`**
-
-
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔 range:不做限制 type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
 | `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugContent` [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
+| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) |  自动布局类型 |
 | `InAutoLayout` `boolean` | 是否自动布局 |
 | `InAutoWrap` `boolean` | 是否网格模式 |
 | `InChildCollation` [`UIChildCollation`](mw.UIChildCollation.md) | 子项排序规则 |
@@ -81,14 +75,6 @@ ___
 • **childCollation**: [`UIChildCollation`](mw.UIChildCollation.md)
 
 子项布局规则
-
-___
-
-### hugContent <Score text="hugContent" /> 
-
-• **hugContent**: [`UIHugContent`](mw.UIHugContent.md)
-
-容器布局适应规则
 
 ___
 

@@ -1,4 +1,4 @@
-[SOCIAL](../groups/SOCIAL.SOCIAL.md) / AccountService
+[服务](../groups/服务.服务.md) / AccountService
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
@@ -7,34 +7,34 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[addFriend](mw.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`, `reason`: `string`): `void`  |
+| **[addFriend](mw.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`, `reason`: `string`): `void`   |
 | :-----|
-| 向233发起addFriend并获得回调|
-| **[applySharedId](mw.AccountService.md#applysharedid)**(`character`: [`Character`](mw.Character.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void`  |
-| 应用分享Id的角色数据|
-| **[checkVIP](mw.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void`  |
-| 发起checkVIP并获得回调，查询玩家的vip信息|
-| **[createSharedId](mw.AccountService.md#createsharedid)**(`character`: [`Character`](mw.Character.md), `callback`: [`StringResponse`](../modules/Core.mw.md#stringresponse)): `void`  |
-| 生成分享Id|
-| **[dataShowToOther](mw.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void`  |
+| 向 233 发起 addFriend 并获得回调|
+| **[applySharedId](mw.AccountService.md#applysharedid)**(`character`: [`Character`](mw.Character.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
+| 应用分享 Id 的角色数据|
+| **[checkVIP](mw.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void`   |
+| 发起 checkVIP 并获得回调，查询玩家的 vip 信息|
+| **[createSharedId](mw.AccountService.md#createsharedid)**(`character`: [`Character`](mw.Character.md), `callback`: [`StringResponse`](../modules/Core.mw.md#stringresponse)): `void` <Badge type="tip" text="client" />  |
+| 生成分享 Id|
+| **[dataShowToOther](mw.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 设置数据是否公开给其他用户|
-| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`): `void`  |
+| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 下载角色形象并应用到当前角色身上|
-| **[fillAvatar](mw.AccountService.md#fillavatar)**(`img`: [`Image`](mw.Image.md)): `void`  |
-| 将头像赋值到Image变量上|
-| **[getNickName](mw.AccountService.md#getnickname)**(): `string`  |
+| **[fillAvatar](mw.AccountService.md#fillavatar)**(`img`: [`Image`](mw.Image.md)): `void` <Badge type="tip" text="client" />  |
+| 将头像赋值到 Image 变量上|
+| **[getNickName](mw.AccountService.md#getnickname)**(): `string` <Badge type="tip" text="client" />  |
 | 获取玩家昵称|
-| **[getUserData](mw.AccountService.md#getuserdata)**(`userId`: `string`, `index`: `number`, `callback`: [`StringResponse`](../modules/Core.mw.md#stringresponse)): `void`  |
+| **[getUserData](mw.AccountService.md#getuserdata)**(`userId`: `string`, `index`: `number`, `callback`: [`StringResponse`](../modules/Core.mw.md#stringresponse)): `void` <Badge type="tip" text="client" />  |
 | 获取用户存储在服务器上的角色形象数据|
-| **[getUserId](mw.AccountService.md#getuserid)**(): `string`  |
-| 获取平台的用户Id,可以用于getUserData接口|
-| **[getUserInfo](mw.AccountService.md#getuserinfo)**(`userId`: `string`, `gameId`: `string`, `callback`: (`nickname`: `string`, `gender`: `number`) => `void`): `void`  |
-| 发起getUserInfo并获得回调，查询玩家的昵称、性别|
-| **[isFriend](mw.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`  |
-| 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
-| **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void`  |
+| **[getUserId](mw.AccountService.md#getuserid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取平台的用户 Id,可以用于 getUserData 接口|
+| **[getUserInfo](mw.AccountService.md#getuserinfo)**(`userId`: `string`, `gameId`: `string`, `callback`: (`nickname`: `string`, `gender`: `number`) => `void`): `void`   |
+| 发起 getUserInfo 并获得回调，查询玩家的昵称、性别|
+| **[isFriend](mw.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`   |
+| 若需要检测玩家是否好友关系，可通过调用 isFriend 接口进行查看|
+| **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 将角色形象数据应用至角色|
-| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`, `openStatus?`: `number`): `void`  |
+| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`, `openStatus?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
 
 ## Methods
@@ -43,20 +43,19 @@
 
 • `Static` **addFriend**(`resp`, `userId`, `reason`): `void` 
 
-向233发起addFriend并获得回调
+向 233 发起 addFriend 并获得回调
 
 #### Parameters
 
-| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) |  233 的回调 |
 | :------ | :------ |
-| `userId` `string` | 要加的玩家UserId |
-| `reason` `string` | 申请理由 |
-
+| `userId` `string` | 要加的玩家 UserId range: 依据 userId 长度而定 |
+| `reason` `string` | 申请理由 range:长度不做限制 |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 :::
 
@@ -66,15 +65,14 @@ ___
 
 • `Static` **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="client" />
 
-应用分享Id的角色数据
+应用分享 Id 的角色数据
 
 #### Parameters
 
 | `character` [`Character`](mw.Character.md) | 分享换装数据的角色 |
 | :------ | :------ |
-| `id` `string` | 分享Id |
-| `callback` [`BoolResponse`](../modules/Core.mw.md#boolresponse) |  回调参数，true:应用成功；false:应用失败 |
-
+| `id` `string` | 分享 Id range: 不做限制，合理即可 |
+| `callback` [`BoolResponse`](../modules/Core.mw.md#boolresponse) |  回调参数，true:应用成功；false: 应用失败 |
 
 
 ___
@@ -83,15 +81,14 @@ ___
 
 • `Static` **checkVIP**(`userId`, `gameId`, `callback`): `void` 
 
-发起checkVIP并获得回调，查询玩家的vip信息
+发起 checkVIP 并获得回调，查询玩家的 vip 信息
 
 #### Parameters
 
-| `userId` `string` | 玩家UserId |
+| `userId` `string` | 玩家 UserId range: 依据 userId 长度而定 |
 | :------ | :------ |
-| `gameId` `string` | GameId |
-| `callback` (`result`: `string`) => `void` | 返回 result，玩家的vip是否正常 |
-
+| `gameId` `string` |  GameId range:字符串长度依据 gameId 长度而定 |
+| `callback` (`result`: `string`) => `void` | 返回 result，玩家的 vip 是否正常 |
 
 
 ___
@@ -100,14 +97,13 @@ ___
 
 • `Static` **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="client" />
 
-生成分享Id
+生成分享 Id
 
 #### Parameters
 
 | `character` [`Character`](mw.Character.md) | 分享换装数据的角色 |
 | :------ | :------ |
-| `callback` [`StringResponse`](../modules/Core.mw.md#stringresponse) |  回调参数，返回生成的Id |
-
+| `callback` [`StringResponse`](../modules/Core.mw.md#stringresponse) |  回调参数，返回生成的 Id |
 
 
 ___
@@ -120,11 +116,10 @@ ___
 
 #### Parameters
 
-| `index` `number` | 资源位(0-5) default:0,主角资源位 |
+| `index` `number` | 资源位 <br> default:0, 主角资源位 <br> range:(0, 5) type:整数 |
 | :------ | :------ |
 | `isOpen` `boolean` | 是否公开 |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:无回调 |
-
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 <br> default:无回调 |
 
 
 ___
@@ -139,9 +134,8 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 要应用换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
-| `index?` `number` | 角色位(0-5) default:0,主角资源位 |
-
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 <br> default:默认没有回调 |
+| `index?` `number` | 角色位 <br> default:0, 主角资源位 <br> range:(0, 5) type:整数 |
 
 
 ___
@@ -150,23 +144,22 @@ ___
 
 • `Static` **fillAvatar**(`img`): `void` <Badge type="tip" text="client" />
 
-将头像赋值到Image变量上
+将头像赋值到 Image 变量上
 
 #### Parameters
 
-| `img` [`Image`](mw.Image.md) | 需要赋值获得头像的Image变量 |
+| `img` [`Image`](mw.Image.md) |  需要赋值获得头像的 Image 变量 |
 | :------ | :------ |
-
 
 
 ::: warning Precautions
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像,PC环境下为白图
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像，PC环境下为白图
 </span>
 
 ```ts
@@ -178,7 +171,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let imgUI = new ImageUI();
         AccountService.fillAvatar(imgUI.image);
     }
@@ -225,10 +218,9 @@ ___
 | `string` | 昵称 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 :::
 
@@ -245,7 +237,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let name = AccountService.getNickName();
         console.log("获取玩家昵称", name);
     }
@@ -263,11 +255,10 @@ ___
 
 #### Parameters
 
-| `userId` `string` | 用户Id |
+| `userId` `string` | 用户 Id range:根据用户 ID 长度而定 |
 | :------ | :------ |
-| `index` `number` | 资源位(0-5) |
-| `callback` [`StringResponse`](../modules/Core.mw.md#stringresponse) | 返回获取的数据string. |
-
+| `index` `number` | 资源位 <br> range: (0, 5) type:浮点数 |
+| `callback` [`StringResponse`](../modules/Core.mw.md#stringresponse) | 返回获取的数据 string |
 
 
 <span style="font-size: 14px;">
@@ -283,7 +274,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldTransform.position = new Vector(0, 0, 200);
@@ -303,13 +294,12 @@ ___
 
 • `Static` **getUserId**(): `string` <Badge type="tip" text="client" />
 
-获取平台的用户Id,可以用于getUserData接口
+获取平台的用户 Id,可以用于 getUserData 接口
 
 #### Returns
 
-| `string` | 用户Id |
+| `string` | 用户 Id |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的UserId
@@ -324,7 +314,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let userId = AccountService.getUserId();
         console.log("获取平台的用户Id", userId);
     }
@@ -337,15 +327,14 @@ ___
 
 • `Static` **getUserInfo**(`userId`, `gameId`, `callback`): `void` 
 
-发起getUserInfo并获得回调，查询玩家的昵称、性别
+发起 getUserInfo 并获得回调，查询玩家的昵称、性别
 
 #### Parameters
 
-| `userId` `string` | 玩家UserId |
+| `userId` `string` | 玩家 UserId range: 依据 userId 长度而定 |
 | :------ | :------ |
-| `gameId` `string` | GameId |
+| `gameId` `string` |  GameId range:字符串长度依据 gameId 长度而定 |
 | `callback` (`nickname`: `string`, `gender`: `number`) => `void` | 返回 nickname(string) 和 gender(number) |
-
 
 
 ___
@@ -354,19 +343,18 @@ ___
 
 • `Static` **isFriend**(`resp`, `userId`): `void` 
 
-若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看
+若需要检测玩家是否好友关系，可通过调用 isFriend 接口进行查看
 
 #### Parameters
 
-| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) |  233 的回调 |
 | :------ | :------ |
-| `userId` `string` | 要确定的玩家UserId |
-
+| `userId` `string` | 要确定的玩家 UserId range: 依据 userId 长度而定 |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 :::
 
@@ -382,9 +370,8 @@ ___
 
 | `character` [`Character`](mw.Character.md) |  用于换装的角色 |
 | :------ | :------ |
-| `dataString` `string` |  返回的数据 |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:无回调 |
-
+| `dataString` `string` |  返回的数据 range:长度不做限制 |
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 <br> default:无回调 |
 
 
 <span style="font-size: 14px;">
@@ -400,7 +387,7 @@ export default class AccountExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldTransform.position = new Vector(0, 0, 200);
@@ -426,8 +413,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 要上传换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
-| `index?` `number` | 角色位(0-5) default:0,主角资源位 |
-| `openStatus?` `number` | 开发状态 default:1,默认是开放状态 |
-
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default: 默认没有回调 |
+| `index?` `number` | 角色位 <br> default: 0，主角资源位 <br> range: (0, 5) type:整数 |
+| `openStatus?` `number` | 开发状态 <br> default: 1,默认是开放状态 range: type:整数 |
 

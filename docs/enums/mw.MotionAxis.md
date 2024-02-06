@@ -1,4 +1,4 @@
-[PHYSICS](../groups/PHYSICS.PHYSICS.md) / MotionAxis
+[玩法](../groups/玩法.玩法.md) / MotionAxis
 
 # MotionAxis <Badge type="tip" text="Enumeration" /> <Score text="MotionAxis" />
 

@@ -7,12 +7,12 @@ Decorator
 ## Table of contents
 
 ### Functions <Score text="Functions" /> 
-| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void`  |
+| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void`   |
 | :-----|
 | 类装饰器-自动执行某个方法|
-| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void`  |
+| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <Badge type="tip" text="server" />  |
 | 方法注解-被注解的net方法不需要回复客户端|
-| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void`  |
+| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void`   |
 | 属性注解-持久化存储属性|
 
 ## Functions
@@ -29,10 +29,9 @@ Decorator
 
 :::
 
-
 #### Parameters
 
-| `fnName` `string` |  要自动执行的方法名 |
+| `fnName` `string` |  要自动执行的方法名 range: 方法名 |
 | :------ | :------ |
 
 #### Returns
@@ -47,7 +46,6 @@ ___
 • **noReply**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <Badge type="tip" text="server" />
 
 方法注解-被注解的net方法不需要回复客户端
-
 
 #### Returns
 
@@ -68,10 +66,9 @@ ___
 
 :::
 
-
 #### Parameters
 
-| `name?` `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
+| `name?` `string` |  持久化后的属性名，不写会用变量名存储 default: undefined range: 不做限制，合理即可 |
 | :------ | :------ |
 
 #### Returns

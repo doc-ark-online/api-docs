@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / Delegate
+[基础类型](../groups/基础类型.基础类型.md) / Delegate
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
@@ -40,7 +40,7 @@ Delegate的实现方案, 其实就是制造了一个对象去链接函数的地�
 
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"DelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 5 。
+使用示例: 创建一个名为"DelExample"的脚本，打开脚本，输入以下代码保存，运行游戏，打印输出 5 。
 </span>
 
 ```ts
@@ -77,14 +77,14 @@ Delegate的实现方案, 其实就是制造了一个对象去链接函数的地�
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[bind](mw.Delegate.md#bind)**(`func`: `T`): `void`  |
+| **[bind](mw.Delegate.md#bind)**(`func`: `T`): `void`   |
 | :-----|
 | 绑定事件|
-| **[execute](mw.Delegate.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\>  |
+| **[execute](mw.Delegate.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\>   |
 | 执行绑定事件|
-| **[isBound](mw.Delegate.md#isbound)**(): `boolean`  |
+| **[isBound](mw.Delegate.md#isbound)**(): `boolean`   |
 | 是否绑定事件|
-| **[unbind](mw.Delegate.md#unbind)**(): `void`  |
+| **[unbind](mw.Delegate.md#unbind)**(): `void`   |
 | 解绑事件|
 
 #### Type parameters
@@ -110,7 +110,6 @@ Delegate的实现方案, 其实就是制造了一个对象去链接函数的地�
 
 DelegateInterface.bind
 
-
 ___
 
 ### execute <Score text="execute" /> 
@@ -129,7 +128,6 @@ ___
 | `ReturnType`<`T`\> | DelegateInterface.execute |
 | :------ | :------ |
 
-
 ___
 
 ### isBound <Score text="isBound" /> 
@@ -143,7 +141,6 @@ ___
 | `boolean` | DelegateInterface.isBound |
 | :------ | :------ |
 
-
 ___
 
 ### unbind <Score text="unbind" /> 
@@ -156,4 +153,3 @@ ___
 #### Implementation of
 
 DelegateInterface.unbind
-

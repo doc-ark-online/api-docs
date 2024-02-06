@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / MovementMode
+[角色系统](../groups/角色系统.角色系统.md) / MovementMode
 
 # MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 

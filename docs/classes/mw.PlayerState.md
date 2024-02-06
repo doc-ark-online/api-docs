@@ -1,4 +1,4 @@
-[mw](../modules/Core.mw.md) / PlayerState
+[角色系统](../groups/角色系统.角色系统.md) / PlayerState
 
 # PlayerState <Badge type="tip" text="Class" /> <Score text="PlayerState" />
 
@@ -8,15 +8,15 @@ PlayerState基类
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
 </span>
 
-``` typescript
+```ts
   // 服务端每个玩家进入游戏时会自动创建一个实例
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
+      @Property({replicated: true, onChanged: "onRepTest"})
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
-          console.log(`onRepTest path: $`{path}` value: $`{value}` oldVal: $`{oldVal}``);
+          console.log(`onRepTest path: ${path} value: ${value} oldVal: ${oldVal}`);
       }
   }
 
@@ -30,20 +30,20 @@ PlayerState基类
 
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
-              const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
-              console.log(`test: $`{playerState.test}``);
+              const playerState = Player.localPlayer.getPlayerState(GamePlayerState);
+              console.log(`test: ${playerState.test}`);
           });
 
       }
 
-      @Core.Function(Core.Server)
+      @RemoteFunction(Server)
       random() {
-          const players = mw.getAllPlayers();
+          const players = Player.getAllPlayers();
           // 随机一个玩家
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
           const playerState = luckPlayer.getPlayerState(GamePlayerState);
-          playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
+          playerState.test = `random: ${ Math.floor(Math.random() * 100)}`;
       }
   }
 ```
@@ -59,34 +59,34 @@ PlayerState基类
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
 | :-----|
-| 脚本对应的GameObject|
-| **[name](mw.Script.md#name)**(): `string` |
+| 获取脚本挂载的 gameobject|
+| **[useUpdate](mw.Script.md#useupdate)**(): `boolean`   |
+| 获取脚本是否启用 onUpdate 生命周期函数|
 :::
 
 
 ### Methods <Score text="Methods" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.Script.md#destroy)**(): `void`  |
-| :----- |
-| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
+| **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="server" />  |
+| :-----|
+| 销毁组件对象|
+| **[onDestroy](mw.Script.md#ondestroy)**(): `void`   |
+| 生命周期函数 - 被销毁时调用|
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`   |
+| 属性被同步事件 ClientOnly|
+| **[onStart](mw.Script.md#onstart)**(): `void`   |
+| 生命周期函数 - 脚本开始执行时调用|
+| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
+| 生命周期函数 - 每帧执行函数|
 :::
 
-
-#### Parameters
-
-| `info` | `ActorInfo` |
-| :------ | :------ |
-
-#### Overrides
-
-[Script](mw.Script.md).[constructor](mw.Script.md#constructor)
 
 ## Accessors
 

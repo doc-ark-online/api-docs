@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIChildCollation
+[界面](../groups/界面.界面.md) / UIChildCollation
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
@@ -14,7 +14,6 @@
 | 垂直适应规则|
 
 构造具体规则方法
-
 
 #### Parameters
 

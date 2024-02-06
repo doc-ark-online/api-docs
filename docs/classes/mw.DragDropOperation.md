@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / DragDropOperation
+[界面](../groups/界面.界面.md) / DragDropOperation
 
 # DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 
@@ -7,20 +7,20 @@ UI 拖拽事件
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[equal](mw.DragDropOperation.md#equal)**(`other`: [`DragDropOperation`](mw.DragDropOperation.md)): `boolean`  |
+| **[equal](mw.DragDropOperation.md#equal)**(`other`: [`DragDropOperation`](mw.DragDropOperation.md)): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
 | 判断是否相同|
-| **[getDragPivot](mw.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/mw.DragPivot.md)  |
+| **[getDragPivot](mw.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/mw.DragPivot.md) <Badge type="tip" text="client" />  |
 | 获取拖拽锚点|
-| **[getDragVisualWidget](mw.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](mw.Widget.md)  |
+| **[getDragVisualWidget](mw.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取拖拽显示的UI|
-| **[getOffset](mw.DragDropOperation.md#getoffset)**(): [`Vector2`](mw.Vector2.md)  |
+| **[getOffset](mw.DragDropOperation.md#getoffset)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取拖拽UI的百分比偏移|
-| **[getTag](mw.DragDropOperation.md#gettag)**(): `string`  |
+| **[getTag](mw.DragDropOperation.md#gettag)**(): `string` <Badge type="tip" text="client" />  |
 | 获取Tag 标签|
-| **[tryGetDragDropPayLoad](mw.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](mw.DragDropPayLoad.md)  |
+| **[tryGetDragDropPayLoad](mw.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](mw.DragDropPayLoad.md) <Badge type="tip" text="client" />  |
 | 获取传递的数据信息|
-| **[tryGetDragDropPayLoadAs](mw.DragDropOperation.md#trygetdragdroppayloadas)**<`T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>\>(): `T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>  |
+| **[tryGetDragDropPayLoadAs](mw.DragDropOperation.md#trygetdragdroppayloadas)**<`T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>\>(): `T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\> <Badge type="tip" text="client" />  |
 | 获取传递的数据信息|
 
 • `Private` **new DragDropOperation**()
@@ -43,7 +43,6 @@ UI 拖拽事件
 | `boolean` | boolean |
 | :------ | :------ |
 
-
 ___
 
 ### getDragPivot <Score text="getDragPivot" /> 
@@ -56,7 +55,6 @@ ___
 
 | [`DragPivot`](../enums/mw.DragPivot.md) | 拖拽锚点 |
 | :------ | :------ |
-
 
 ___
 
@@ -71,7 +69,6 @@ ___
 | [`Widget`](mw.Widget.md) | 拖拽显示的UI |
 | :------ | :------ |
 
-
 ___
 
 ### getOffset <Score text="getOffset" /> 
@@ -84,7 +81,6 @@ ___
 
 | [`Vector2`](mw.Vector2.md) | 百分比偏移 |
 | :------ | :------ |
-
 
 ___
 
@@ -99,7 +95,6 @@ ___
 | `string` | 返回tag |
 | :------ | :------ |
 
-
 ___
 
 ### tryGetDragDropPayLoad <Score text="tryGetDragDropPayLoad" /> 
@@ -113,7 +108,6 @@ ___
 | [`DragDropPayLoad`](mw.DragDropPayLoad.md) | 数据信息 |
 | :------ | :------ |
 
-
 ___
 
 ### tryGetDragDropPayLoadAs <Score text="tryGetDragDropPayLoadAs" /> 
@@ -126,7 +120,6 @@ ___
 
 | `T` | 数据信息 |
 | :------ | :------ |
-
 
 #### Type parameters
 

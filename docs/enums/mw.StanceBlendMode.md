@@ -1,15 +1,8 @@
-[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / StanceBlendMode
+[动画](../groups/动画.动画.md) / StanceBlendMode
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 
 姿态混合模式
-
-<span style="font-size: 14px;">
-使用示例:
-</span>
-
-```ts
-```
 
 ## Table of contents
 

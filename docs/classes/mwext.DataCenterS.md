@@ -1,8 +1,8 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / DataCenterS
+[基类](../groups/Extension.基类.md) / DataCenterS
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
-服务端数据中心，管理所有玩家的数据
+服务端数据中心，管理所有玩家的数据。
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键）
@@ -67,12 +67,12 @@ class PlayerModuleData extends Subdata {
 | 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 ### Methods <Score text="Methods" /> 
-| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  [`Player`](mw.Player.md), `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
+| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  [`Player`](mw.Player.md), `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <Badge type="tip" text="server" />  |
 | :-----|
 | 获取玩家的子数据|
-| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[]  |
+| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[] <Badge type="tip" text="server" />  |
 | 获取在线且数据就绪的所有玩家ID|
-| **[setDataSource](mwext.DataCenterS.md#setdatasource)**(`gameId`: `string`): `void`  |
+| **[setDataSource](mwext.DataCenterS.md#setdatasource)**(`gameId`: `string`): `void` <Badge type="tip" text="server" />  |
 | 设置数据来源|
 
 ## Properties
@@ -109,7 +109,6 @@ ___
 
 | `T` | 数据对象 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
@@ -156,7 +155,6 @@ ___
 
 | `number`[] | 玩家id数组 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
@@ -207,7 +205,6 @@ ___
 
 #### Parameters
 
-| `gameId` `string` |  数据源的gameId，需要在开发者后台进行授权 |
+| `gameId` `string` |  数据源的gameId，需要在开发者后台进行授权 range:字符串长度依据 gameId 长度而定 |
 | :------ | :------ |
-
 

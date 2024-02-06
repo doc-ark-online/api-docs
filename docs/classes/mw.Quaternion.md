@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / Quaternion
+[基础类型](../groups/基础类型.基础类型.md) / Quaternion
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 
@@ -43,88 +43,88 @@
 | 获取一个单位四元数|
 
 ### Methods <Score text="Methods" /> 
-| **[clone](mw.Quaternion.md#clone)**(): [`Quaternion`](mw.Quaternion.md)  |
+| **[clone](mw.Quaternion.md#clone)**(): [`Quaternion`](mw.Quaternion.md)   |
 | :-----|
 | 克隆当前四元数。|
-| **[equals](mw.Quaternion.md#equals)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `epsilon?`: `number`): `boolean`  |
+| **[equals](mw.Quaternion.md#equals)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `epsilon?`: `number`): `boolean`   |
 | 排除浮点数误差的四元数近似等价判断|
-| **[fromRotation](mw.Quaternion.md#fromrotation)**(`v`: [`Rotation`](mw.Rotation.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromRotation](mw.Quaternion.md#fromrotation)**(`v`: [`Rotation`](mw.Rotation.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 读取旋转角数据创建或者写入一个四元数|
-| **[getAxisX](mw.Quaternion.md#getaxisx)**(`outer?`): [`Vector`](mw.Vector.md)  |
+| **[getAxisX](mw.Quaternion.md#getaxisx)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 返回定义此四元数的坐标系 X 轴向量|
-| **[getAxisY](mw.Quaternion.md#getaxisy)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getAxisY](mw.Quaternion.md#getaxisy)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 返回定义此四元数的坐标系 Y 轴向量|
-| **[getAxisZ](mw.Quaternion.md#getaxisz)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getAxisZ](mw.Quaternion.md#getaxisz)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 返回定义此四元数的坐标系 Z 轴向量|
-| **[getEuler](mw.Quaternion.md#geteuler)**(`outerZ?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
-| 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX|
-| **[getEulerAngles](mw.Quaternion.md#geteulerangles)**(): [`Vector`](mw.Vector.md)  |
+| **[getEuler](mw.Quaternion.md#geteuler)**(`outerZ?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| 根据四元数计算欧拉角|
+| **[getEulerAngles](mw.Quaternion.md#geteulerangles)**(): [`Vector`](mw.Vector.md)   |
 | 返回当前四元数转化的欧拉角（x-y-z）。|
-| **[normalize](mw.Quaternion.md#normalize)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[normalize](mw.Quaternion.md#normalize)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 归一化四元数|
-| [set](mw.Quaternion.md#set)  |
-| :----- |
-| **[setEulerAngles](mw.Quaternion.md#seteulerangles)**(`euler`: [`Vector`](mw.Vector.md)): `void`  |
+| **[set](mw.Quaternion.md#set)**(`other`): [`Quaternion`](mw.Quaternion.md)   |
+| 设置当前四元数使其与指定四元数相等。|
+| **[setEulerAngles](mw.Quaternion.md#seteulerangles)**(`euler`: [`Vector`](mw.Vector.md)): `void`   |
 | 设置欧拉角|
-| **[strictEquals](mw.Quaternion.md#strictequals)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `boolean`  |
+| **[strictEquals](mw.Quaternion.md#strictequals)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `boolean`   |
 | 四元数等价判断|
-| **[toRotation](mw.Quaternion.md#torotation)**(): [`Rotation`](mw.Rotation.md)  |
+| **[toRotation](mw.Quaternion.md#torotation)**(): [`Rotation`](mw.Rotation.md)   |
 | 获取一个当前四元数的旋转数据|
-| **[toString](mw.Quaternion.md#tostring)**(): `string`  |
+| **[toString](mw.Quaternion.md#tostring)**(): `string`   |
 | 输出为字符串|
-| **[calculateW](mw.Quaternion.md#calculatew)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[calculateW](mw.Quaternion.md#calculatew)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据 xyz 分量计算 w 分量，默认已归一化|
-| **[conjugate](mw.Quaternion.md#conjugate)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[conjugate](mw.Quaternion.md#conjugate)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 求共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[dot](mw.Quaternion.md#dot)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `number`  |
+| **[dot](mw.Quaternion.md#dot)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `number`   |
 | 四元数点积（数量积）|
-| **[equals](mw.Quaternion.md#equals-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `epsilon?`: `number`): `boolean`  |
+| **[equals](mw.Quaternion.md#equals-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `epsilon?`: `number`): `boolean`   |
 | 排除浮点数误差的四元数近似等价判断|
-| **[fromAngleZ](mw.Quaternion.md#fromanglez)**(`z`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromAngleZ](mw.Quaternion.md#fromanglez)**(`z`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据 2D 角度（0, 0, z）计算四元数|
-| **[fromAxes](mw.Quaternion.md#fromaxes)**(`xAxis`: [`Vector`](mw.Vector.md), `yAxis`: [`Vector`](mw.Vector.md), `zAxis`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromAxes](mw.Quaternion.md#fromaxes)**(`xAxis`: [`Vector`](mw.Vector.md), `yAxis`: [`Vector`](mw.Vector.md), `zAxis`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直|
-| **[fromAxisAngle](mw.Quaternion.md#fromaxisangle)**(`axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromAxisAngle](mw.Quaternion.md#fromaxisangle)**(`axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据旋转轴和旋转弧度计算四元数|
-| **[fromMatrix3x3](mw.Quaternion.md#frommatrix3x3)**(`m`: [`Matrix3x3`](mw.Matrix3x3.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromMatrix3x3](mw.Quaternion.md#frommatrix3x3)**(`m`: [`Matrix3x3`](mw.Matrix3x3.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息|
-| **[fromRotation](mw.Quaternion.md#fromrotation-1)**(`v`: [`Rotation`](mw.Rotation.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromRotation](mw.Quaternion.md#fromrotation-1)**(`v`: [`Rotation`](mw.Rotation.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 读取旋转角数据创建或者写入一个四元数|
-| **[fromViewUp](mw.Quaternion.md#fromviewup)**(`view`: [`Vector`](mw.Vector.md), `up?`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[fromViewUp](mw.Quaternion.md#fromviewup)**(`view`: [`Vector`](mw.Vector.md), `up?`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 根据视口的前方向和上方向计算四元数|
-| **[getAxis](mw.Quaternion.md#getaxis)**(`q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getAxis](mw.Quaternion.md#getaxis)**(`q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取四元数的旋转轴|
-| **[getAxisAngle](mw.Quaternion.md#getaxisangle)**(`q`: [`Quaternion`](mw.Quaternion.md)): `number`  |
+| **[getAxisAngle](mw.Quaternion.md#getaxisangle)**(`q`: [`Quaternion`](mw.Quaternion.md)): `number`   |
 | 获取四元数的旋转弧度|
-| **[invert](mw.Quaternion.md#invert)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[invert](mw.Quaternion.md#invert)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 四元数求逆|
-| **[lerp](mw.Quaternion.md#lerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[lerp](mw.Quaternion.md#lerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 逐元素线性插值： A + t * (B - A)|
-| **[multiply](mw.Quaternion.md#multiply)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[multiply](mw.Quaternion.md#multiply)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 四元数乘法|
-| **[multiplyVector](mw.Quaternion.md#multiplyvector)**(`a`: [`Vector`](mw.Vector.md), `q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[multiplyVector](mw.Quaternion.md#multiplyvector)**(`a`: [`Vector`](mw.Vector.md), `q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 四元数乘以一个三维向量(通常用于向量通过四元数旋转)|
-| **[normalize](mw.Quaternion.md#normalize-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[normalize](mw.Quaternion.md#normalize-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 归一化四元数|
-| **[rotateAround](mw.Quaternion.md#rotatearound)**(`rot`: [`Quaternion`](mw.Quaternion.md), `axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotateAround](mw.Quaternion.md#rotatearound)**(`rot`: [`Quaternion`](mw.Quaternion.md), `axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 绕世界空间下指定轴旋转四元数|
-| **[rotateAroundLocal](mw.Quaternion.md#rotatearoundlocal)**(`rot`: [`Quaternion`](mw.Quaternion.md), `axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotateAroundLocal](mw.Quaternion.md#rotatearoundlocal)**(`rot`: [`Quaternion`](mw.Quaternion.md), `axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 绕本地空间下指定轴旋转四元数|
-| **[rotateX](mw.Quaternion.md#rotatex)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotateX](mw.Quaternion.md#rotatex)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 绕 X 轴旋转指定四元数|
-| **[rotateY](mw.Quaternion.md#rotatey)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotateY](mw.Quaternion.md#rotatey)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 绕 Y 轴旋转指定四元数|
-| **[rotateZ](mw.Quaternion.md#rotatez)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotateZ](mw.Quaternion.md#rotatez)**(`a`: [`Quaternion`](mw.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 绕 Z 轴旋转指定四元数|
-| **[rotationTo](mw.Quaternion.md#rotationto)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[rotationTo](mw.Quaternion.md#rotationto)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 设置四元数为两向量a和b间的最短路径旋转，默认两向量都已归一化|
-| **[slerp](mw.Quaternion.md#slerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[slerp](mw.Quaternion.md#slerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 四元数球面插值|
-| **[sqlerp](mw.Quaternion.md#sqlerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `c`: [`Quaternion`](mw.Quaternion.md), `d`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
+| **[sqlerp](mw.Quaternion.md#sqlerp)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md), `c`: [`Quaternion`](mw.Quaternion.md), `d`: [`Quaternion`](mw.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)   |
 | 带两个控制点的四元数球面插值|
-| **[strictEquals](mw.Quaternion.md#strictequals-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `boolean`  |
+| **[strictEquals](mw.Quaternion.md#strictequals-1)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `boolean`   |
 | 四元数等价判断|
-| **[toMatrix3x3](mw.Quaternion.md#tomatrix3x3)**(`q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)  |
+| **[toMatrix3x3](mw.Quaternion.md#tomatrix3x3)**(`q`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 根据四元数旋转信息计算矩阵|
 
 • **new Quaternion**(`v`)
@@ -138,11 +138,11 @@
 
 #### Parameters
 
-| `x` `number` | x分量 default:0 |
+| `x` `number` | x 分量 default:0 range: [-1, 1] type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | y分量 default:0 |
-| `z` `number` | z分量 default:0 |
-| `w` `number` | w分量 default:1 |
+| `y` `number` | y 分量 default:0 range: [-1, 1] type: 浮点数 |
+| `z` `number` | z 分量 default:0 range: [-1, 1] type: 浮点数 |
+| `w` `number` | w 分量 default:1 range: [-1, 1] type: 浮点数 |
 
 ## Properties
 
@@ -339,7 +339,7 @@ ___
 
 ::: warning Precautions
 
-Quaternion(0,0,0,1)
+Quaternion(0,0,0,1)。
 
 :::
 
@@ -365,12 +365,11 @@ Quaternion(0,0,0,1)
 | [`Quaternion`](mw.Quaternion.md) | 四元数 |
 | :------ | :------ |
 
-
 ___
 
 ### equals <Score text="equals" /> 
 
-• **equals**(`other`, `epsilon?`): `boolean`
+• **equals**(`other`, `epsilon?`): `boolean` 
 
 判断当前四元数是否在误差范围内与指定向量相等。
 
@@ -379,7 +378,7 @@ ___
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数a |
 | :------ | :------ |
 | `b` [`Quaternion`](mw.Quaternion.md) | 四元数b |
-| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
+| `epsilon?` `number` | 最小误差数 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -389,12 +388,11 @@ ___
 
 
 
-
 ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-• **fromRotation**(`v`): `void` <Badge type="tip" text="other" /> 
+• **fromRotation**(`v`): `void` 
 
 当前四元数读取一个旋转数据
 
@@ -410,10 +408,9 @@ ___
 | :------ | :------ |
 
 
-#### Parameters
 
-| `v` [`Rotation`](mw.Rotation.md) | 读取的旋转数据 |
-| :------ | :------ |
+
+___
 
 ### getAxisX <Score text="getAxisX" /> 
 
@@ -430,13 +427,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 此四元数的坐标系 X 轴向量 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -456,13 +446,6 @@ ___
 | [`Vector`](mw.Vector.md) | 此四元数的坐标系 Y 轴向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### getAxisZ <Score text="getAxisZ" /> 
@@ -481,20 +464,13 @@ ___
 | [`Vector`](mw.Vector.md) | 此四元数的坐标系 Z 轴向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### getEuler <Score text="getEuler" /> 
 
 • **getEuler**(`outerZ?`, `outer?`): [`Vector`](mw.Vector.md) 
 
-根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX
+根据四元数计算欧拉角
 
 #### Parameters
 
@@ -504,15 +480,8 @@ ___
 
 #### Returns
 
-| [`Vector`](mw.Vector.md) | 欧拉角 |
+| [`Vector`](mw.Vector.md) | 欧拉角。返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -526,7 +495,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 欧拉角 |
 | :------ | :------ |
-
 
 ___
 
@@ -547,12 +515,11 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
+### set <Score text="set" /> 
 
+• **set**(`other`): [`Quaternion`](mw.Quaternion.md) 
 
 设置当前四元数使其与指定四元数相等。
-
-**`Effect`**
-
 
 #### Parameters
 
@@ -564,24 +531,21 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | `this` |
 | :------ | :------ |
 
-• **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](mw.Quaternion.md)
+• **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](mw.Quaternion.md) 
 
 设置当前四元数指定元素值。
 
-**`Effect`**
-
-
 #### Parameters
 
-| `x?` `number` | 四元数的x分量 default:0 |
+| `x?` `number` | 四元数的 x 分量 default:0 range: [-1, 1] type: 浮点数 |
 | :------ | :------ |
-| `y?` `number` | 四元数的y分量 default:0 |
-| `z?` `number` | 四元数的z分量 default:0 |
-| `w?` `number` | 四元数的w分量 default:0 |
+| `y?` `number` | 四元数的 y 分量 default:0 range: [-1, 1] type: 浮点数 |
+| `z?` `number` | 四元数的 z 分量 default:0 range: [-1, 1] type: 浮点数 |
+| `w?` `number` | 四元数的 w 分量 default:0 range: [-1, 1] type: 浮点数 |
 
 #### Returns
 
-| [`Quaternion`](mw.Quaternion.md) | `this` |
+| [`Quaternion`](mw.Quaternion.md) | 当前四元数 |
 | :------ | :------ |
 
 ___
@@ -598,12 +562,11 @@ ___
 | :------ | :------ |
 
 
-
 ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• **strictEquals**(`other`): `boolean`
+• **strictEquals**(`other`): `boolean` 
 
 判断当前四元数是否与指定四元数相等。
 
@@ -621,12 +584,11 @@ ___
 
 
 
-
 ___
 
 ### toRotation <Score text="toRotation" /> 
 
-• **toRotation**(): [`Rotation`](mw.Rotation.md) <Badge type="tip" text="other" /> 
+• **toRotation**(): [`Rotation`](mw.Rotation.md) 
 
 获取一个当前四元数的旋转数据
 
@@ -634,7 +596,6 @@ ___
 
 | [`Rotation`](mw.Rotation.md) | 旋转数据 |
 | :------ | :------ |
-
 
 ___
 
@@ -648,7 +609,6 @@ ___
 
 | `string` | 四元数值字符串 |
 | :------ | :------ |
-
 
 ___
 
@@ -669,13 +629,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### conjugate <Score text="conjugate" /> 
@@ -694,13 +647,6 @@ ___
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -721,7 +667,6 @@ ___
 | `number` | 返回一个结果数 |
 | :------ | :------ |
 
-
 ___
 
 ### equals <Score text="equals" /> 
@@ -730,13 +675,12 @@ ___
 
 排除浮点数误差的四元数近似等价判断
 
-
 #### Parameters
 
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数a |
 | :------ | :------ |
 | `b` [`Quaternion`](mw.Quaternion.md) | 四元数b |
-| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
+| `epsilon?` `number` | 最小误差数 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -753,7 +697,7 @@ ___
 
 #### Parameters
 
-| `z` `number` | 绕z旋转的角度值 |
+| `z` `number` | 绕 z 旋转的角度值。 <br> range: 不限制 type:浮点数 |
 | :------ | :------ |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
@@ -761,13 +705,6 @@ ___
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -790,13 +727,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### fromAxisAngle <Score text="fromAxisAngle" /> 
@@ -809,20 +739,13 @@ ___
 
 | `axis` [`Vector`](mw.Vector.md) | 旋转轴 |
 | :------ | :------ |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br>range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -843,13 +766,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### fromRotation <Score text="fromRotation" /> 
@@ -857,13 +773,6 @@ ___
 • `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](mw.Quaternion.md) 
 
 读取旋转角数据创建或者写入一个四元数
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 
@@ -896,13 +805,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### getAxis <Score text="getAxis" /> 
@@ -922,13 +824,6 @@ ___
 | [`Vector`](mw.Vector.md) | 返回一个三维向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### getAxisAngle <Score text="getAxisAngle" /> 
@@ -946,7 +841,6 @@ ___
 
 | `number` | 返回一个弧度值 |
 | :------ | :------ |
-
 
 ___
 
@@ -967,13 +861,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### lerp <Score text="lerp" /> 
@@ -984,23 +871,16 @@ ___
 
 #### Parameters
 
-| `a` [`Quaternion`](mw.Quaternion.md) | 四元数a |
+| `a` [`Quaternion`](mw.Quaternion.md) | 四元数 a |
 | :------ | :------ |
-| `b` [`Quaternion`](mw.Quaternion.md) | 四元数b |
-| `t` `number` | 插值（通常为0-1之间) |
+| `b` [`Quaternion`](mw.Quaternion.md) | 四元数 b |
+| `t` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1022,13 +902,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### multiplyVector <Score text="multiplyVector" /> 
@@ -1049,13 +922,6 @@ ___
 | [`Vector`](mw.Vector.md) | 返回一个旋转后的三维向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### normalize <Score text="normalize" /> 
@@ -1063,13 +929,6 @@ ___
 • `Static` **normalize**(`a`, `outer?`): [`Quaternion`](mw.Quaternion.md) 
 
 归一化四元数
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 
@@ -1095,20 +954,13 @@ ___
 | `rot` [`Quaternion`](mw.Quaternion.md) | 被旋转的四元数 |
 | :------ | :------ |
 | `axis` [`Vector`](mw.Vector.md) | 代表旋转轴的三维向量 |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br>range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1123,20 +975,13 @@ ___
 | `rot` [`Quaternion`](mw.Quaternion.md) | 需要变换的四元数 |
 | :------ | :------ |
 | `axis` [`Vector`](mw.Vector.md) | 代表旋转轴的三维向量 |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br> range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1150,20 +995,13 @@ ___
 
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数 |
 | :------ | :------ |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br> range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1177,20 +1015,13 @@ ___
 
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数 |
 | :------ | :------ |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br> range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1204,20 +1035,13 @@ ___
 
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数 |
 | :------ | :------ |
-| `rad` `number` | 弧度值 |
+| `rad` `number` | 弧度值 <br> range: 不限制 type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1229,22 +1053,15 @@ ___
 
 #### Parameters
 
-| `a` [`Vector`](mw.Vector.md) | 向量a |
+| `a` [`Vector`](mw.Vector.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `b` [`Vector`](mw.Vector.md) | 向量 b |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1259,20 +1076,13 @@ ___
 | `a` [`Quaternion`](mw.Quaternion.md) | 四元数a |
 | :------ | :------ |
 | `b` [`Quaternion`](mw.Quaternion.md) | 四元数b |
-| `t` `number` | 插值（通常为0-1之间) |
+| `t` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1289,20 +1099,13 @@ ___
 | `b` [`Quaternion`](mw.Quaternion.md) | 四元数b |
 | `c` [`Quaternion`](mw.Quaternion.md) | 四元数c |
 | `d` [`Quaternion`](mw.Quaternion.md) | 四元数d |
-| `t` `number` | 插值（通常为0-1之间) |
+| `t` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 | `outer?` [`Quaternion`](mw.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 | [`Quaternion`](mw.Quaternion.md) | 返回一个四元数 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Quaternion 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -1311,7 +1114,6 @@ ___
 • `Static` **strictEquals**(`a`, `b`): `boolean` 
 
 四元数等价判断
-
 
 #### Parameters
 
@@ -1342,8 +1144,3 @@ ___
 
 | [`Matrix3x3`](mw.Matrix3x3.md) | 返回一个三维矩阵 |
 | :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined

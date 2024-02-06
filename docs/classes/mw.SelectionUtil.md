@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / SelectionUtil
+[工具](../groups/工具.工具.md) / SelectionUtil
 
 # SelectionUtil <Badge type="tip" text="Class" /> <Score text="SelectionUtil" />
 
@@ -7,12 +7,12 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[drawGameObjectSelectionBox](mw.SelectionUtil.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `Color`: [`LinearColor`](mw.LinearColor.md), `DurationTime?`: `number`): `void`  |
+| **[drawGameObjectSelectionBox](mw.SelectionUtil.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `Color`: [`LinearColor`](mw.LinearColor.md), `DurationTime?`: `number`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 绘制物体选择框|
-| **[getGameObjectBySelectionBox](mw.SelectionUtil.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](mw.HitResult.md)[]  |
+| **[getGameObjectBySelectionBox](mw.SelectionUtil.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <Badge type="tip" text="client" />  |
 | 获取框选屏幕位置的物体|
-| **[setGlobalOutlineParams](mw.SelectionUtil.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void`  |
+| **[setGlobalOutlineParams](mw.SelectionUtil.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置全局描边参数|
 
 ## Methods
@@ -29,12 +29,11 @@
 | :------ | :------ |
 | `EndPoint` [`Vector2`](mw.Vector2.md) | 鼠标结束位置 |
 | `Color` [`LinearColor`](mw.LinearColor.md) | 选择框颜色 |
-| `DurationTime?` `number` | 显示时间 default:0.1 |
-
+| `DurationTime?` `number` | 显示时间 default:0.1 range:不做限制 type:浮点数 |
 
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
+使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框。（注意，进入游戏框选可能会受到 UI 影响不好框选，请打开 DefaultUI ，选中 TouchPadDesigner 对象属性中是否被鼠标控制选中false）
 </span>
 
 ```ts
@@ -95,9 +94,8 @@ ___
 | [`HitResult`](mw.HitResult.md)[] | 框选的物体 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
+使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边（注意，进入游戏框选可能会受到 UI 影响不好框选，请打开 DefaultUI ，选中 TouchPadDesigner 对象属性中是否被鼠标控制选中false）
 </span>
 
 ```ts
@@ -127,9 +125,11 @@ export default class SelectionExample extends Script {
     //在场景中随机生成一些物体，用于框选
     private creatObjs() {
         const cubeAssetId = "197386";
-        for (let i = 0; i < 50; i++) {
-            GameObject.asyncSpawn({ guid: cubeAssetId }).then(obj => {
-                obj.worldLocation = new Vector(MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500));
+        for (let i = 0;
+i < 50;
+i++) {
+            GameObject.asyncSpawn<Model>(cubeAssetId).then(obj => {
+                obj.worldTransform.position = new Vector(MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500));
             })
         }
     }
@@ -154,16 +154,15 @@ export default class SelectionExample extends Script {
 }
         // 取消上一次框选对象的描边
         this.selectedGoes.forEach(result => {
-            let mesh = result.gameObject as Mesh;
-            mesh.setOutlineAndColor(false, 1);
+            let mesh = result.gameObject as Model;
+            mesh.setPostProcessOutline(false,LinearColor.green, 1);
         })
         // 框选对象
         this.selectedGoes = SelectionUtil.getGameObjectBySelectionBox(start, location, false, false).filter(result => (result.gameObject instanceof StaticMesh));
         // 未框选对象添加描边
         this.selectedGoes.forEach(result => {
-            let mesh = result.gameObject as Mesh;
-            mesh.setOutlineAndColor(true, 1);
-            //addOutlineEffect(result.gameObject, mw.LinearColor.red, 1, 0, 1, false, false);
+            let mesh = result.gameObject as Model;
+            mesh.setPostProcessOutline(true,LinearColor.red, 1);
         })
         SelectionUtil.setGlobalOutlineParams(4, 0, 0, 0, 1);
     }
@@ -181,11 +180,10 @@ ___
 
 #### Parameters
 
-| `Width?` `number` | 描边宽度（0 ~ 4） default:2 |
+| `Width?` `number` | 描边宽度 default:2 range:[0, 4] 数值越大，描边宽度越大 type:浮点数 |
 | :------ | :------ |
-| `CoveredAlpha?` `number` | 被遮挡部分高亮透明度（0 ~ 1） default:0 |
-| `CoveredEdgeAlpha?` `number` | 被遮挡部分描边透明度（0 ~ 1） default:1 |
-| `NotCoveredAlpha?` `number` | 未被遮挡部分高亮透明度（0 ~ 1） default:0 |
-| `NotCoveredEdgeAlpha?` `number` | 未被遮挡部分描边透明度（0 ~ 1） default:1 |
-
+| `CoveredAlpha?` `number` | 被遮挡部分高亮透明度 default:0 range:[0, 1] 数值越大，越不透明 type:浮点数 |
+| `CoveredEdgeAlpha?` `number` | 被遮挡部分描边透明度 default:1 range:[0, 1] 数值越大，越不透明 type:浮点数 |
+| `NotCoveredAlpha?` `number` | 未被遮挡部分高亮透明度 default:0 range:[0, 1] 数值越大，越不透明 type:浮点数 |
+| `NotCoveredEdgeAlpha?` `number` | 未被遮挡部分描边透明度 default:1 range:[0, 1] 数值越大，越不透明 type:浮点数 |
 

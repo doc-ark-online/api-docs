@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / MessageChannelReceiver
+[基础类型](../groups/基础类型.基础类型.md) / MessageChannelReceiver
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 

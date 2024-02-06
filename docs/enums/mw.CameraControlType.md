@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / CameraControlType
+[界面](../groups/界面.界面.md) / CameraControlType
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 

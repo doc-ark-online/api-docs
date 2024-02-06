@@ -1,4 +1,4 @@
-[INPUT](../groups/INPUT.INPUT.md) / TouchInputType
+[输入](../groups/输入.输入.md) / TouchInputType
 
 # TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
 

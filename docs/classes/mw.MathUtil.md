@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / MathUtil
+[工具](../groups/工具.工具.md) / MathUtil
 
 # MathUtil <Badge type="tip" text="Class" /> <Score text="MathUtil" />
 
@@ -80,29 +80,29 @@
 | 字节偏移|
 
 ### Methods <Score text="Methods" /> 
-| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean`  |
+| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean`   |
 | :-----|
 | 判断终点位置是否处于起点位置在某一方向的一定角度内|
-| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number`  |
-| 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
-| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number`  |
-| 计算cos值|
-| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number`  |
+| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number`   |
+| 将传入的数值 a 限制在 min 与 max 范围内，超出部分自动舍弃|
+| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number`   |
+| 计算 cos 值|
+| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number`   |
 | 根据输入的度数返回弧度值|
-| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number`  |
-| 返回 数值x 除以 数值y 的余数|
-| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number`  |
+| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number`   |
+| 数值 x 除以数值 y 的余数|
+| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number`   |
 | 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number`  |
+| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number`   |
 | 根据输入的弧度值返回度数|
-| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number`  |
+| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number`   |
 | 获取随机范围内浮点数[包含min, 不包含max)|
-| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number`  |
+| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number`   |
 | 获取随机范围内整数[包含min, 不包含max)|
-| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number`  |
-| 计算sin值|
-| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number`  |
-| 计算tan值|
+| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number`   |
+| 计算 sin 值|
+| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number`   |
+| 计算 tan 值|
 
 ## Properties
 
@@ -398,13 +398,12 @@ ___
 | :------ | :------ |
 | `StartDirection` [`Vector`](mw.Vector.md) | 起始方向 |
 | `TargetLocation` [`Vector`](mw.Vector.md) | 目标位置 |
-| `Angle` `number` | 检测角度 |
+| `Angle` `number` | 检测角度 range:[-360,360] type: 浮点数 |
 
 #### Returns
 
 | `boolean` | true，在角度范围内 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20）
@@ -425,20 +424,19 @@ ___
 
 • `Static` **clamp**(`a`, `min`, `max`): `number` 
 
-将传入的数值a限制在min与max范围内，超出部分自动舍弃
+将传入的数值 a 限制在 min 与 max 范围内，超出部分自动舍弃
 
 #### Parameters
 
-| `a` `number` | 数值a |
+| `a` `number` | 数值 a range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
-| `min` `number` | 最小值 |
-| `max` `number` | 最大值 |
+| `min` `number` | 最小值 range: 数据大小不做限制 min < max type: 浮点数 |
+| `max` `number` | 最大值 range: 数据大小不做限制 min < max type: 浮点数 |
 
 #### Returns
 
 | `number` | 计算结果 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
@@ -453,7 +451,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let clamp = MathUtil.clamp(20, 0, 10);
         console.log(`clamp: ${clamp}`);
     }
@@ -467,18 +465,17 @@ ___
 
 • `Static` **cos**(`a`): `number` 
 
-计算cos值
+计算 cos 值
 
 #### Parameters
 
-| `a` `number` | 待计算的数值a |
+| `a` `number` | 待计算的数值 a range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | cos值 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
@@ -494,7 +491,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的cos值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let cos = MathUtil.cos(Math.PI);
         console.log(`cos: ${cos}`);
     }
@@ -511,14 +508,13 @@ ___
 
 #### Parameters
 
-| `a` `number` | 度数 |
+| `a` `number` | 度数 range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | 弧度值 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
@@ -533,7 +529,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let degree = 180;
         let radians = MathUtil.degreesToRadians(degree);
         console.log(`degreesToRadians: ${radians}`);
@@ -548,19 +544,18 @@ ___
 
 • `Static` **fmod**(`x`, `y`): `number` 
 
-返回 数值x 除以 数值y 的余数
+数值 x 除以数值 y 的余数
 
 #### Parameters
 
-| `x` `number` | 数值x |
+| `x` `number` | 数值 x range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 数值y |
+| `y` `number` | 数值 y range: 数据大小不做限制 type: 浮点数 |
 
 #### Returns
 
 | `number` | 数值x 除以 数值y 的余数 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
@@ -575,7 +570,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let fmod = MathUtil.fmod(20, 3);
         console.log(`fmod: ${fmod}`);
     }
@@ -593,20 +588,19 @@ ___
 
 #### Parameters
 
-| `a` `number` | 数值a |
+| `a` `number` | 数值 a range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
-| `b` `number` | 数值b |
-| `alpha` `number` | 插值 |
+| `b` `number` | 数值 b range: 数据大小不做限制 type: 浮点数 |
+| `alpha` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 
 #### Returns
 
 | `number` | 计算结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
+alpha=0 时 数值 a 的 100% 和 alpha = 1 时 数值 b 的 100%
 
 :::
 
@@ -623,7 +617,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let lerp = MathUtil.lerp(1, 10, 0.5);
         console.log(`lerp: ${lerp}`);
     }
@@ -641,14 +635,13 @@ ___
 
 #### Parameters
 
-| `a` `number` | 弧度值 |
+| `a` `number` | 弧度值 <br> range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | 度数 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
@@ -663,7 +656,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let radian = Math.PI;
         let degrees = MathUtil.radiansToDegrees(radian);
         console.log(`radiansToDegrees: ${degrees}`);
@@ -682,15 +675,14 @@ ___
 
 #### Parameters
 
-| `min` `number` | 最小值 |
+| `min` `number` | 最小值 range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
-| `max` `number` | 最大值 |
+| `max` `number` | 最大值 range: 数据大小不做限制 type: 浮点数 |
 
 #### Returns
 
 | `number` | 随机范围内的浮点数 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
@@ -705,7 +697,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let randomFloat = MathUtil.randomFloat(1, 10);
         console.log(`randomFloat: ${randomFloat}`);
     }
@@ -723,15 +715,14 @@ ___
 
 #### Parameters
 
-| `min` `number` | 最小值 |
+| `min` `number` | 最小值 range: 数据大小不做限制 type: 整数 |
 | :------ | :------ |
-| `max` `number` | 最大值 |
+| `max` `number` | 最大值 range: 数据大小不做限制 type: 整数 |
 
 #### Returns
 
 | `number` | 随机范围内的整数 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
@@ -746,7 +737,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let randomInt = MathUtil.randomInt(1, 10);
         console.log(`randomInt: ${randomInt}`);
     }
@@ -760,18 +751,17 @@ ___
 
 • `Static` **sin**(`a`): `number` 
 
-计算sin值
+计算 sin 值
 
 #### Parameters
 
-| `a` `number` | 待计算的数值a |
+| `a` `number` | 待计算的数值 a range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | sin值 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
@@ -787,7 +777,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的sin值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let sin = MathUtil.sin(Math.PI / 2);
         console.log(`sin: ${sin}`);
     }
@@ -800,18 +790,17 @@ ___
 
 • `Static` **tan**(`a`): `number` 
 
-计算tan值
+计算 tan 值
 
 #### Parameters
 
-| `a` `number` | 待计算的数值a |
+| `a` `number` | 待计算的数值 a range: 数据大小不做限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | tan值 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
@@ -827,7 +816,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的tan值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let tan = MathUtil.tan(Math.PI / 4);
         console.log(`tan: ${tan}`);
     }

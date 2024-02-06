@@ -1,4 +1,4 @@
-[DATA](../groups/DATA.DATA.md) / DataStorageResult
+[数据处理](../groups/数据处理.数据处理.md) / DataStorageResult
 
 # DataStorageResult <Badge type="tip" text="Interface" /> <Score text="DataStorageResult" />
 

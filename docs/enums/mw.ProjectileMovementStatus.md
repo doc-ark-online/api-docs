@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovementStatus
+[玩法](../groups/玩法.玩法.md) / ProjectileMovementStatus
 
 # ProjectileMovementStatus <Badge type="tip" text="Enumeration" /> <Score text="ProjectileMovementStatus" />
 

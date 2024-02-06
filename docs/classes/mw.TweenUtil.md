@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / TweenUtil
+[工具](../groups/工具.工具.md) / TweenUtil
 
 # TweenUtil <Badge type="tip" text="Class" /> <Score text="TweenUtil" />
 
@@ -14,7 +14,7 @@
 @Component
 export default class TweenExample extends Script {
 
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         this.useUpdate = true;
         if (SystemUtil.isClient()) {
             let char = (await Player.asyncGetLocalPlayer()).character;
@@ -164,8 +164,6 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
 | **[TWEEN](mw.TweenUtil.md#tween)**: [`TweenGroup`](mw.TweenGroup.md)  |
 | :-----|
 | 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
-| **[nextId](mw.TweenUtil.md#nextid)**: () => `number`  |
-| 获取下一个ID的全局方法|
 
 ## Properties
 
@@ -174,22 +172,3 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
 ▪ `Static` **TWEEN**: [`TweenGroup`](mw.TweenGroup.md)
 
 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
-
-___
-
-### nextId <Score text="nextId" /> 
-
-▪ `Static` **nextId**: () => `number` <Badge type="tip" text="other" />
-
-#### Type declaration
-
-• (): `number`
-
-获取下一个ID的全局方法
-
-
-##### Returns
-
-`number`
-
-下一个ID

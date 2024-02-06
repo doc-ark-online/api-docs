@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / SkyPreset
+[场景](../groups/场景.场景.md) / SkyPreset
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 

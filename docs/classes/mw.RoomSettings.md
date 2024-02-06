@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / RoomSettings
+[设置](../groups/设置.设置.md) / RoomSettings
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
@@ -39,16 +39,16 @@ export default class ClassExample extends Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[enableJoiningMidgame](mw.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void`  |
+| **[enableJoiningMidgame](mw.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void` <Badge type="tip" text="server" />  |
 | :-----|
 | 设置中途加入开关|
-| **[getMaxPlayers](mw.RoomSettings.md#getmaxplayers)**(): `number`  |
+| **[getMaxPlayers](mw.RoomSettings.md#getmaxplayers)**(): `number` <Badge type="tip" text="server" />  |
 | 获取玩家数量上限|
-| **[getReservedPlayers](mw.RoomSettings.md#getreservedplayers)**(): `number`  |
+| **[getReservedPlayers](mw.RoomSettings.md#getreservedplayers)**(): `number` <Badge type="tip" text="server" />  |
 | 获取服务器预留玩家数量|
-| **[isJoiningMidgameEnabled](mw.RoomSettings.md#isjoiningmidgameenabled)**(): `boolean`  |
+| **[isJoiningMidgameEnabled](mw.RoomSettings.md#isjoiningmidgameenabled)**(): `boolean` <Badge type="tip" text="server" />  |
 | 获取是否开启中途加入|
-| **[isPlayerReserveEnabled](mw.RoomSettings.md#isplayerreserveenabled)**(): `boolean`  |
+| **[isPlayerReserveEnabled](mw.RoomSettings.md#isplayerreserveenabled)**(): `boolean` <Badge type="tip" text="server" />  |
 | 获取服务器预留玩家是否开启|
 
 ## Methods
@@ -65,7 +65,6 @@ export default class ClassExample extends Script {
 | :------ | :------ |
 
 
-
 ___
 
 ### getMaxPlayers <Score text="getMaxPlayers" /> 
@@ -78,7 +77,6 @@ ___
 
 | `number` | DS房间玩家数量上限。如果返回值为undefined，请检查是否在服务端调用或者玩家数量上限是否为空 |
 | :------ | :------ |
-
 
 ___
 
@@ -93,7 +91,6 @@ ___
 | `number` | 服务器预留玩家数量。如果返回值为undefined，请检查是否在服务端调用或者预留玩家数量是否为空 |
 | :------ | :------ |
 
-
 ___
 
 ### isJoiningMidgameEnabled <Score text="isJoiningMidgameEnabled" /> 
@@ -107,7 +104,6 @@ ___
 | `boolean` | true:开启中途加入 false:关闭中途加入。如果返回值为undefined，请检查是否在服务端调用 |
 | :------ | :------ |
 
-
 ___
 
 ### isPlayerReserveEnabled <Score text="isPlayerReserveEnabled" /> 
@@ -120,4 +116,3 @@ ___
 
 | `boolean` | 预留玩家功能是否开启。如果返回值为undefined，请检查是否在服务端调用或者预留玩家是否为空 |
 | :------ | :------ |
-

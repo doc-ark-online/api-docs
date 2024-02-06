@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UILayoutType
+[界面](../groups/界面.界面.md) / UILayoutType
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 

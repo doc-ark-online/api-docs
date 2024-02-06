@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / SomatotypeV1
+[角色系统](../groups/角色系统.角色系统.md) / SomatotypeV1
 
 # SomatotypeV1 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV1" />
 

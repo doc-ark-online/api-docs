@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardModuleBaseC
+[界面](../groups/Extension.界面.md) / LeaderboardModuleBaseC
 
 # LeaderboardModuleBaseC<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardModuleBaseC<T\>" />
 
@@ -18,49 +18,49 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[panel](mwext.LeaderboardModuleBaseC.md#panel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\>  |
+| **[panel](mwext.LeaderboardModuleBaseC.md#panel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> <Badge type="tip" text="client" />  |
 | :-----|
 | 排行榜的UI面板|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
 | 本地玩家的模块数据|
-| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md)  |
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />  |
 | 获取当前玩家|
-| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number`  |
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前玩家ID|
-| **[server](mwext.ModuleC.md#server)**(): `T`  |
+| **[server](mwext.ModuleC.md#server)**(): `T` <Badge type="tip" text="client" />  |
 | 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
 :::
 
 
 ### Methods <Score text="Methods" /> 
-| **[creatPanel](mwext.LeaderboardModuleBaseC.md#creatpanel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\>  |
+| **[creatPanel](mwext.LeaderboardModuleBaseC.md#creatpanel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> <Badge type="tip" text="client" />  |
 | :-----|
 | 创建排行榜UI面板|
-| **[hidePanel](mwext.LeaderboardModuleBaseC.md#hidepanel)**(): `void`  |
+| **[hidePanel](mwext.LeaderboardModuleBaseC.md#hidepanel)**(): `void` <Badge type="tip" text="client" />  |
 | 隐藏UI面板|
-| **[showPanel](mwext.LeaderboardModuleBaseC.md#showpanel)**(): `void`  |
+| **[showPanel](mwext.LeaderboardModuleBaseC.md#showpanel)**(): `void` <Badge type="tip" text="client" />  |
 | 显示UI面板|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[onAwake](mwext.ModuleC.md#onawake)**(): `void`  |
+| **[onAwake](mwext.ModuleC.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 生命周期方法-创建模块时调用|
-| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void`  |
+| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-销毁模块调用|
-| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void`  |
+| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-进入场景调用|
-| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void`  |
+| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
 | 外部调用本模块的某个操作|
-| **[onStart](mwext.ModuleC.md#onstart)**(): `void`  |
+| **[onStart](mwext.ModuleC.md#onstart)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-启动模块时调用|
-| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void`  |
+| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-刷新模块调用|
 :::
 
@@ -85,7 +85,6 @@ ___
 
 排行榜的UI面板
 
-
 #### Returns
 
 </td>
@@ -108,7 +107,6 @@ ___
 | [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> | 排行榜UI面板 |
 | :------ | :------ |
 
-
 ___
 
 ### hidePanel <Score text="hidePanel" /> 
@@ -118,7 +116,6 @@ ___
 隐藏UI面板
 
 
-
 ___
 
 ### showPanel <Score text="showPanel" /> 
@@ -126,5 +123,4 @@ ___
 • **showPanel**(): `void` <Badge type="tip" text="client" />
 
 显示UI面板
-
 

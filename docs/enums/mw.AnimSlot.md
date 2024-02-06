@@ -1,15 +1,8 @@
-[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / AnimSlot
+[动画](../groups/动画.动画.md) / AnimSlot
 
 # AnimSlot <Badge type="tip" text="Enumeration" /> <Score text="AnimSlot" />
 
 动画插槽
-
-<span style="font-size: 14px;">
-使用示例:
-</span>
-
-```ts
-```
 
 ## Table of contents
 

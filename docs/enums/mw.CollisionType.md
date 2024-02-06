@@ -1,4 +1,4 @@
-[PHYSICS](../groups/PHYSICS.PHYSICS.md) / CollisionType
+[玩法](../groups/玩法.玩法.md) / CollisionType
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 

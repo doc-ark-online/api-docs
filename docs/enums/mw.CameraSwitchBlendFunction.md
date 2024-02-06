@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraSwitchBlendFunction
+[玩法](../groups/玩法.玩法.md) / CameraSwitchBlendFunction
 
 # CameraSwitchBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="CameraSwitchBlendFunction" />
 

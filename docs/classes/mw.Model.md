@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Model
+[玩法](../groups/玩法.玩法.md) / Model
 
 # Model <Badge type="tip" text="Class" /> <Score text="Model" />
 
@@ -37,14 +37,14 @@ Model的属性定义了静态模型具有物理特性，其中较为重要的是
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"ModelExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以通过F1键，在场景中动态生成模型并模拟物理.代码如下:
+使用示例:创建一个名为"ModelExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你可以通过F1键，在场景中动态生成模型并模拟物理。代码如下：
 </span>
 
 ```ts
 @Component
 export default class ModelExample extends Script {
     //当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if(SystemUtil.isClient())
             {
                 InputUtil.onKeyDown(Keys.F1,()=>{
@@ -70,6 +70,8 @@ export default class ModelExample extends Script {
                 box.restitution = 1;
                 // 开启物理模拟
                 box.physicsEnabled = true;
+                // 开关闭阴影投射
+                box.castShadow = false;
             });
         }
     }
@@ -92,142 +94,164 @@ export default class ModelExample extends Script {
 | 离开Model事件|
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
 | 物体销毁后事件回调|
 :::
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[angularDamping](mw.Model.md#angulardamping)**(): `number`  |
+| **[angularDamping](mw.Model.md#angulardamping)**(): `number`   |
 | :-----|
-| 设置角阻尼|
-| **[friction](mw.Model.md#friction)**(): `number`  |
-| 设置摩擦力大小|
-| **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean`  |
-| 设置是否启用重力|
-| **[linerDamping](mw.Model.md#linerdamping)**(): `number`  |
-| 设置线性阻尼|
-| **[lockPositionX](mw.Model.md#lockpositionx)**(): `boolean`  |
-| 设置是否约束位置X|
-| **[lockPositionY](mw.Model.md#lockpositiony)**(): `boolean`  |
-| 设置是否约束位置Y|
-| **[lockPositionZ](mw.Model.md#lockpositionz)**(): `boolean`  |
-| 设置是否约束位置Z|
-| **[lockRotationX](mw.Model.md#lockrotationx)**(): `boolean`  |
-| 设置是否约束旋转X|
-| **[lockRotationY](mw.Model.md#lockrotationy)**(): `boolean`  |
-| 设置是否约束旋转Y|
-| **[lockRotationZ](mw.Model.md#lockrotationz)**(): `boolean`  |
-| 设置是否约束旋转Z|
-| **[mass](mw.Model.md#mass)**(): `number`  |
-| 设置质量大小|
-| **[massEnabled](mw.Model.md#massenabled)**(): `boolean`  |
-| 设置是否启用质量|
-| **[physicsEnabled](mw.Model.md#physicsenabled)**(): `boolean`  |
-| 设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用|
-| **[restitution](mw.Model.md#restitution)**(): `number`  |
-| 设置弹力大小|
+| 角阻尼|
+| **[castShadow](mw.Model.md#castshadow)**(): `boolean`   |
+| 获取是否开启阴影|
+| **[collisionGroup](mw.Model.md#collisiongroup)**(): `string`   |
+| 获取对应的碰撞组|
+| **[friction](mw.Model.md#friction)**(): `number`   |
+| 获取摩擦力大小|
+| **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean`   |
+| 获取是否启用重力|
+| **[linerDamping](mw.Model.md#linerdamping)**(): `number`   |
+| 获取线性阻尼|
+| **[lockPositionX](mw.Model.md#lockpositionx)**(): `boolean`   |
+| 获取是否约束位置X|
+| **[lockPositionY](mw.Model.md#lockpositiony)**(): `boolean`   |
+| 获取是否约束位置Y|
+| **[lockPositionZ](mw.Model.md#lockpositionz)**(): `boolean`   |
+| 获取是否约束位置Z|
+| **[lockRotationX](mw.Model.md#lockrotationx)**(): `boolean`   |
+| 获取是否约束旋转X|
+| **[lockRotationY](mw.Model.md#lockrotationy)**(): `boolean`   |
+| 获取是否约束旋转Y|
+| **[lockRotationZ](mw.Model.md#lockrotationz)**(): `boolean`   |
+| 获取是否约束旋转Z|
+| **[mass](mw.Model.md#mass)**(): `number`   |
+| 获取质量大小|
+| **[massEnabled](mw.Model.md#massenabled)**(): `boolean`   |
+| 获取是否使用质量|
+| **[physicsAngularVelocity](mw.Model.md#physicsangularvelocity)**(): [`Vector`](mw.Vector.md)   |
+| 获取角速度(仅开启模拟时生效)|
+| **[physicsEnabled](mw.Model.md#physicsenabled)**(): `boolean`   |
+| 获取是否模拟物理|
+| **[physicsLinearVelocity](mw.Model.md#physicslinearvelocity)**(): [`Vector`](mw.Vector.md)   |
+| 获取线性速度(仅开启模拟时生效)|
+| **[restitution](mw.Model.md#restitution)**(): `number`   |
+| 获取弹力大小|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.GameObject.md#assetid)**(): `string`  |
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
 | 获取当前物体使用资源的GUID|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`  |
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
-| **[isReady](mw.GameObject.md#isready)**(): `boolean`  |
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
-| **[name](mw.GameObject.md#name)**(): `string`  |
-| 设置物体名称|
-| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)  |
+| **[name](mw.GameObject.md#name)**(): `string`   |
+| 返回当前物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
-| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)  |
-| 设置父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string`  |
-| 设置当前物体的标签|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
+| 获取当前父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`   |
+| 获取当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
 
 
 ### Methods <Score text="Methods" /> 
-| **[createMaterialInstance](mw.Model.md#creatematerialinstance)**(`Index`: `number`): `void`  |
+| **[addAngularImpulse](mw.Model.md#addangularimpulse)**(`impulse`: [`Vector`](mw.Vector.md), `velChange?`: `boolean`): `void`   |
 | :-----|
+| 给开启物理模拟的模型添加一个角冲量|
+| **[addForce](mw.Model.md#addforce)**(`force`: [`Vector`](mw.Vector.md), `velChange?`: `boolean`): `void`   |
+| 给开启物理模拟的模型添加一个力|
+| **[addImpulse](mw.Model.md#addimpulse)**(`impulse`: [`Vector`](mw.Vector.md), `velChange?`: `boolean`): `void`   |
+| 给开启物理模拟的模型添加一个冲量力|
+| **[addTorque](mw.Model.md#addtorque)**(`torque`: [`Vector`](mw.Vector.md), `velChange?`: `boolean`): `void`   |
+| 给开启物理模拟的模型添加一个扭力|
+| **[createMaterialInstance](mw.Model.md#creatematerialinstance)**(`Index`: `number`): `void`   |
 | 创建材质实例|
-| **[getMaterialInstance](mw.Model.md#getmaterialinstance)**(): [`MaterialInstance`](mw.MaterialInstance.md)[]  |
+| **[getMaterialInstance](mw.Model.md#getmaterialinstance)**(): [`MaterialInstance`](mw.MaterialInstance.md)[]   |
 | 返回当前拥有的材质实例|
-| **[resetMaterial](mw.Model.md#resetmaterial)**(): `void`  |
+| **[resetMaterial](mw.Model.md#resetmaterial)**(): `void`   |
 | 还原物体材质|
-| **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void`  |
-| 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
-| **[setMaterial](mw.Model.md#setmaterial)**(`MaterialGUID`: `string`): `void`  |
+| **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
+| 与玩家之间超出此距离的对象将被剪裁|
+| **[setMaterial](mw.Model.md#setmaterial)**(`MaterialGUID`: `string`): `void`   |
 | 设置物体材质|
-| **[setOutline](mw.Model.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`  |
-| 设置对象描边及描边颜色，需要场景中存在后处理对象。|
-| **[setPostProcessOutline](mw.Model.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`  |
+| **[setOutline](mw.Model.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`   |
+| 设置对象描边及描边颜色|
+| **[setPostProcessOutline](mw.Model.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`   |
 | 设置对象描边及描边颜色。|
-| **[setStaticMeshAsset](mw.Model.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void`  |
+| **[setStaticMeshAsset](mw.Model.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void`   |
 | 设置静态网格资源|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[destroy](mw.GameObject.md#destroy)**(): `void`  |
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 移除脚本|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`  |
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
-| 根据gameObjectId查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 根据 gameObjectId 查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
-| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
-| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 通过 gameObjectId 异步查找 GameObject|
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
-| 通过gameObjectId查找物体|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
+| 异步构造一个物体|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 通过 gameObjectId 查找物体|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
-| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过自定义标签获取物体|
-| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
 | 构造一个物体|
 :::
 
@@ -258,12 +282,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **angularDamping**(): `number`
+• `get` **angularDamping**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **angularDamping**(`value`): `void`
+• `set` **angularDamping**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -275,7 +299,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 角阻尼大小 |
 | :------ | :------ |
 
 
@@ -287,7 +311,99 @@ ___
 
 #### Parameters
 
-| `value` | `number` |
+| `value` `number` | 角阻尼大小 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### castShadow <Score text="castShadow" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **castShadow**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **castShadow**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否开启阴影
+
+#### Returns
+
+| `boolean` | 阴影开启状态 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置阴影开启状态
+
+#### Parameters
+
+| `value` `boolean` | 阴影开启状态 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### collisionGroup <Score text="collisionGroup" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **collisionGroup**(): `string` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **collisionGroup**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取对应的碰撞组
+
+#### Returns
+
+| `string` | 对应碰撞组 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置碰撞组
+
+#### Parameters
+
+| `value` `string` | 碰撞组 |
 | :------ | :------ |
 
 
@@ -304,12 +420,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **friction**(): `number`
+• `get` **friction**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **friction**(`value`): `void`
+• `set` **friction**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -321,7 +437,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 摩擦力大小 |
 | :------ | :------ |
 
 
@@ -333,7 +449,7 @@ ___
 
 #### Parameters
 
-| `value` | `number` |
+| `value` `number` | 摩擦力大小 |
 | :------ | :------ |
 
 
@@ -350,12 +466,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **gravityEnabled**(): `boolean`
+• `get` **gravityEnabled**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **gravityEnabled**(`value`): `void`
+• `set` **gravityEnabled**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -367,7 +483,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 重力是否启用 |
 | :------ | :------ |
 
 
@@ -379,7 +495,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 重力是否启用 |
 | :------ | :------ |
 
 
@@ -396,12 +512,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **linerDamping**(): `number`
+• `get` **linerDamping**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **linerDamping**(`value`): `void`
+• `set` **linerDamping**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -413,7 +529,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 线性阻尼大小 |
 | :------ | :------ |
 
 
@@ -425,7 +541,7 @@ ___
 
 #### Parameters
 
-| `value` | `number` |
+| `value` `number` | 线性阻尼大小 |
 | :------ | :------ |
 
 
@@ -442,12 +558,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockPositionX**(): `boolean`
+• `get` **lockPositionX**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockPositionX**(`value`): `void`
+• `set` **lockPositionX**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -459,7 +575,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束位置X |
 | :------ | :------ |
 
 
@@ -471,7 +587,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束位置X |
 | :------ | :------ |
 
 
@@ -488,12 +604,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockPositionY**(): `boolean`
+• `get` **lockPositionY**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockPositionY**(`value`): `void`
+• `set` **lockPositionY**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -505,7 +621,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束位置Y |
 | :------ | :------ |
 
 
@@ -517,7 +633,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束位置Y |
 | :------ | :------ |
 
 
@@ -534,12 +650,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockPositionZ**(): `boolean`
+• `get` **lockPositionZ**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockPositionZ**(`value`): `void`
+• `set` **lockPositionZ**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -551,7 +667,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束位置Z |
 | :------ | :------ |
 
 
@@ -563,7 +679,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束位置Z |
 | :------ | :------ |
 
 
@@ -580,12 +696,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockRotationX**(): `boolean`
+• `get` **lockRotationX**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockRotationX**(`value`): `void`
+• `set` **lockRotationX**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -597,7 +713,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束旋转X |
 | :------ | :------ |
 
 
@@ -609,7 +725,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束旋转X |
 | :------ | :------ |
 
 
@@ -626,12 +742,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockRotationY**(): `boolean`
+• `get` **lockRotationY**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockRotationY**(`value`): `void`
+• `set` **lockRotationY**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -643,7 +759,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束旋转Y |
 | :------ | :------ |
 
 
@@ -655,7 +771,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束旋转Y |
 | :------ | :------ |
 
 
@@ -672,12 +788,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **lockRotationZ**(): `boolean`
+• `get` **lockRotationZ**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **lockRotationZ**(`value`): `void`
+• `set` **lockRotationZ**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -689,7 +805,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否约束旋转Z |
 | :------ | :------ |
 
 
@@ -701,7 +817,7 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否约束旋转Z |
 | :------ | :------ |
 
 
@@ -718,12 +834,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **mass**(): `number`
+• `get` **mass**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **mass**(`value`): `void`
+• `set` **mass**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -735,7 +851,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 质量大小 |
 | :------ | :------ |
 
 
@@ -747,7 +863,7 @@ ___
 
 #### Parameters
 
-| `value` | `number` |
+| `value` `number` | 质量大小 |
 | :------ | :------ |
 
 
@@ -764,12 +880,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **massEnabled**(): `boolean`
+• `get` **massEnabled**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **massEnabled**(`value`): `void`
+• `set` **massEnabled**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -781,7 +897,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 是否使用质量 |
 | :------ | :------ |
 
 
@@ -793,7 +909,53 @@ ___
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 是否启用质量 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### physicsAngularVelocity <Score text="physicsAngularVelocity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **physicsAngularVelocity**(): [`Vector`](mw.Vector.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **physicsAngularVelocity**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取角速度(仅开启模拟时生效)
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 物理角速度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置需要叠加的角速度(仅开启模拟时生效)
+
+#### Parameters
+
+| `value` [`Vector`](mw.Vector.md) | 物理角速度大小 |
 | :------ | :------ |
 
 
@@ -810,12 +972,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **physicsEnabled**(): `boolean`
+• `get` **physicsEnabled**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **physicsEnabled**(`value`): `void`
+• `set` **physicsEnabled**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -827,7 +989,7 @@ ___
 
 #### Returns
 
-| `boolean` |  |
+| `boolean` | 物理模拟启用状态 |
 | :------ | :------ |
 
 
@@ -835,11 +997,57 @@ ___
 <td style="text-align: left">
 
 
-设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用
+设置模拟物理状态
 
 #### Parameters
 
-| `value` | `boolean` |
+| `value` `boolean` | 物理模拟状态 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### physicsLinearVelocity <Score text="physicsLinearVelocity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **physicsLinearVelocity**(): [`Vector`](mw.Vector.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **physicsLinearVelocity**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取线性速度(仅开启模拟时生效)
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 物理线速度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置需要叠加的线性速度(仅开启模拟时生效)
+
+#### Parameters
+
+| `value` [`Vector`](mw.Vector.md) | 物理线速度大小 |
 | :------ | :------ |
 
 
@@ -856,12 +1064,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **restitution**(): `number`
+• `get` **restitution**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **restitution**(`value`): `void`
+• `set` **restitution**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -873,7 +1081,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 弹力大小 |
 | :------ | :------ |
 
 
@@ -885,7 +1093,7 @@ ___
 
 #### Parameters
 
-| `value` | `number` |
+| `value` `number` | 弹力大小 |
 | :------ | :------ |
 
 </td>
@@ -895,6 +1103,75 @@ ___
 
 
 ## Methods
+
+### addAngularImpulse <Score text="addAngularImpulse" /> 
+
+• **addAngularImpulse**(`impulse`, `velChange?`): `void` 
+
+给开启物理模拟的模型添加一个角冲量
+
+#### Parameters
+
+| `impulse` [`Vector`](mw.Vector.md) | 设置角冲量大小和方向 |
+| :------ | :------ |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 default:false 使用示例: 如下示例展示添加角冲量方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addAngularImpulse(new Vector(200,0,0), true); }` ``` |
+
+
+___
+
+### addForce <Score text="addForce" /> 
+
+• **addForce**(`force`, `velChange?`): `void` 
+
+给开启物理模拟的模型添加一个力
+
+#### Parameters
+
+| `force` [`Vector`](mw.Vector.md) | 设置力大小和方向 <br> default: null |
+| :------ | :------ |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 <br> default:false 使用示例: 如下示例展示添加力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addForce(new Vector(200,0,0), true); }` ``` |
+
+
+___
+
+### addImpulse <Score text="addImpulse" /> 
+
+• **addImpulse**(`impulse`, `velChange?`): `void` 
+
+给开启物理模拟的模型添加一个冲量力
+
+#### Parameters
+
+| `impulse` [`Vector`](mw.Vector.md) | 设置冲量力大小和方向 |
+| :------ | :------ |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 default:false |
+
+
+<span style="font-size: 14px;">
+使用示例: 如下示例展示添加冲量力方法
+</span>
+
+```ts
+if (model.physicsEnabled) {
+     // 确保开启物理模拟
+     model.addImpulse(new Vector(200,0,0), true);
+}
+```
+
+___
+
+### addTorque <Score text="addTorque" /> 
+
+• **addTorque**(`torque`, `velChange?`): `void` 
+
+给开启物理模拟的模型添加一个扭力
+
+#### Parameters
+
+| `torque` [`Vector`](mw.Vector.md) | 设置扭力大小和方向 <br> default: null |
+| :------ | :------ |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 <br> default:false 使用示例: 如下示例展示添加扭力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addTorque(new Vector(200,0,0), true); }` ``` |
+
 
 ___
 
@@ -906,9 +1183,8 @@ ___
 
 #### Parameters
 
-| `Index` `number` | 第几个材质 |
+| `Index` `number` | 第几个材质 <br> range: 不超过材质数 type: 整数 |
 | :------ | :------ |
-
 
 
 ___
@@ -924,7 +1200,6 @@ ___
 | [`MaterialInstance`](mw.MaterialInstance.md)[] | 材质实例数组 |
 | :------ | :------ |
 
-
 ___
 
 ### resetMaterial <Score text="resetMaterial" /> 
@@ -934,21 +1209,21 @@ ___
 还原物体材质
 
 
-
 ___
 
 ### setCullDistance <Score text="setCullDistance" /> 
 
 • **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
 
-与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
+与玩家之间超出此距离的对象将被剪裁
 
 #### Parameters
 
-| `inCullDistance` `number` | 裁剪距离 |
+| `inCullDistance` `number` | 裁剪距离 range: 建议 (2000, 4000) type: 浮点数 |
 | :------ | :------ |
 
 
+最终的裁剪距离会和画质等级有关；修改此属性 ≤0 时，裁剪距离会根据对象尺寸自动调整 (自动启用 CullDistanceVolume 功能)
 
 ::: warning Precautions
 
@@ -960,13 +1235,13 @@ ___
 
 ### setMaterial <Score text="setMaterial" /> 
 
-• **setMaterial**(`MaterialGUID`): `void`
+• **setMaterial**(`MaterialGUID`): `void` 
 
 设置物体材质
 
 #### Parameters
 
-| `MaterialGUID` `string` |  材质ID default: |
+| `MaterialGUID` `string` |  材质 ID default: null range: 字符串长度依据材质资源 ID 长度而定 |
 | :------ | :------ |
 
 
@@ -974,15 +1249,11 @@ ___
 
 设置物体材质
 
-
 #### Parameters
 
-| `MaterialGUID` `string` |  材质ID |
+| `MaterialGUID` `string` |  材质 ID range: 字符串长度依据材质资源 ID 长度而定 |
 | :------ | :------ |
-| `index` `number` |  材质下标 |
-
-
-**`Effect`**
+| `index` `number` |  材质下标 range: 依据材质 ID 长度而定 type:整数 |
 
 
 ___
@@ -991,16 +1262,17 @@ ___
 
 • **setOutline**(`enabled`, `color?`, `width?`): `void` 
 
-设置对象描边及描边颜色，需要场景中存在后处理对象。
+设置对象描边及描边颜色
 
 #### Parameters
 
-| `enabled` `boolean` |  是否开启描边 default: |
+| `enabled` `boolean` |  是否开启描边 |
 | :------ | :------ |
-| `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
-| `width?` `number` |  设置描边宽度 default:2 |
+| `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色 Index 对应，-1为无颜色。 default: mw.LinearColor.black |
+| `width?` `number` |  设置描边宽度 default:2 range:[0, 100] type: 浮点数 |
 
 
+需要场景中存在后处理对象。
 
 ___
 
@@ -1012,11 +1284,10 @@ ___
 
 #### Parameters
 
-| `enabled` `boolean` |  是否开启描边 default: |
+| `enabled` `boolean` |  是否开启描边 |
 | :------ | :------ |
 | `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
-| `width?` `number` |  设置描边宽度 default:2 |
-
+| `width?` `number` |  设置描边宽度 default:2 range: [0, 4] type: 浮点数 |
 
 
 ___
@@ -1029,7 +1300,6 @@ ___
 
 #### Parameters
 
-| `InAssetGuid` `string` |  资源GUID default: |
+| `InAssetGuid` `string` |  资源GUID range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
-
 

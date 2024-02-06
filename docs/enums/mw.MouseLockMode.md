@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / MouseLockMode
+[界面](../groups/界面.界面.md) / MouseLockMode
 
 # MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
 

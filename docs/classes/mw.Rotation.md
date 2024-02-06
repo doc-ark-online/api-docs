@@ -1,8 +1,13 @@
-[TYPE](../groups/TYPE.TYPE.md) / Rotation
+[基础类型](../groups/基础类型.基础类型.md) / Rotation
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
+欧拉角
+
+------------------
+
 由分量 (x,y,z) 组成的三维空间中的旋转量。
+
 Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 ::: warning Precautions
@@ -28,52 +33,52 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 | 获取一个空旋转的角度 (0, 0, 0)|
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.Rotation.md#add)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[add](mw.Rotation.md#add)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | :-----|
 | 旋转量a加上旋转量b|
-| **[clone](mw.Rotation.md#clone)**(): [`Rotation`](mw.Rotation.md)  |
+| **[clone](mw.Rotation.md#clone)**(): [`Rotation`](mw.Rotation.md)   |
 | 克隆当前旋转量|
-| **[equals](mw.Rotation.md#equals)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean`  |
+| **[equals](mw.Rotation.md#equals)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean`   |
 | 判断当前角度是否在误差范围内与指定向量相等。|
-| **[fromQuaternion](mw.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromQuaternion](mw.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换Quaternion为Rotation|
-| **[fromString](mw.Rotation.md#fromstring)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromString](mw.Rotation.md#fromstring)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换字符串数据为Rotation|
-| **[fromVector](mw.Rotation.md#fromvector)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromVector](mw.Rotation.md#fromvector)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换Vector为Rotation|
-| **[getForce](mw.Rotation.md#getforce)**(`outer?`): [`Vector`](mw.Vector.md)  |
+| **[getForce](mw.Rotation.md#getforce)**(`outer?`): [`Vector`](mw.Vector.md)   |
 | 获取此旋转后的方向向量|
-| **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 返回一个新的反向旋转。|
-| **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
-| **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)  |
+| **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)   |
 | 当前角度旋转一个向量|
-| **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
-| 为当前旋转量设置每个分量|
-| **[strictEquals](mw.Rotation.md#strictequals)**(`other`: [`Rotation`](mw.Rotation.md)): `boolean`  |
+| **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
+| 当前旋转量设置为新的旋转量|
+| **[strictEquals](mw.Rotation.md#strictequals)**(`other`: [`Rotation`](mw.Rotation.md)): `boolean`   |
 | 判断当前角度是否与指定向量相等。|
-| **[subtract](mw.Rotation.md#subtract)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[subtract](mw.Rotation.md#subtract)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
-| **[toQuaternion](mw.Rotation.md#toquaternion)**(): [`Quaternion`](mw.Quaternion.md)  |
+| **[toQuaternion](mw.Rotation.md#toquaternion)**(): [`Quaternion`](mw.Quaternion.md)   |
 | 当前Rotation输出为四元数|
-| **[toString](mw.Rotation.md#tostring)**(): `string`  |
+| **[toString](mw.Rotation.md#tostring)**(): `string`   |
 | 当前Rotation输出为字符串|
-| **[add](mw.Rotation.md#add-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[add](mw.Rotation.md#add-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 旋转量a加上旋转量b|
-| **[copy](mw.Rotation.md#copy)**(`a`: [`Rotation`](mw.Rotation.md), `outer`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[copy](mw.Rotation.md#copy)**(`a`: [`Rotation`](mw.Rotation.md), `outer`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 复制目标旋转|
-| **[fromQuaternion](mw.Rotation.md#fromquaternion-1)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromQuaternion](mw.Rotation.md#fromquaternion-1)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换Quaternion为Rotation|
-| **[fromString](mw.Rotation.md#fromstring-1)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromString](mw.Rotation.md#fromstring-1)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换字符串数据为Rotation|
-| **[fromVector](mw.Rotation.md#fromvector-1)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[fromVector](mw.Rotation.md#fromvector-1)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换Vector为Rotation|
-| **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md)  |
+| **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md)   |
 | 对两个旋转量进行插值|
-| **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
-| **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
 
 构建一个新的 Rotation。值为(0, 0, 0)
@@ -127,10 +132,10 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range: 不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range: 不做限制 type: 浮点数 |
 
 ## Properties
 
@@ -203,7 +208,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | 相加的结果 |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `a` [`Rotation`](mw.Rotation.md) | 旋转量 |
@@ -219,7 +223,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | 返回一个新的旋转量 |
 | :------ | :------ |
 
-
 ___
 
 ### equals <Score text="equals" /> 
@@ -232,13 +235,12 @@ ___
 
 | `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
 | :------ | :------ |
-| `epsilon?` `number` | 误差值 default:1.e-7 |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
 | `boolean` | 比对的结果 |
 | :------ | :------ |
-
 
 ___
 
@@ -259,7 +261,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | Rotation |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `v` [`Quaternion`](mw.Quaternion.md) | 读取的四元数数据 |
@@ -273,7 +274,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -282,10 +283,9 @@ ___
 | [`Rotation`](mw.Rotation.md) | Rotation |
 | :------ | :------ |
 
-
 #### Parameters
 
-| `str` `string` | 字符串数据 |
+| `str` `string` | 字符串数据 range:"P=-431602080.000000 Y=-431602080.000000 R=-431602080.000000" |
 | :------ | :------ |
 
 ### fromVector <Score text="fromVector" /> 
@@ -304,7 +304,6 @@ ___
 
 | [`Rotation`](mw.Rotation.md) | Rotation |
 | :------ | :------ |
-
 
 #### Parameters
 
@@ -326,7 +325,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 旋转的方向向量 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -351,7 +349,6 @@ ___
 
 | [`Rotation`](mw.Rotation.md) | 反方向的旋转 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -379,7 +376,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | 相乘的结果 |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `v` [`Rotation`](mw.Rotation.md) | 旋转量 |
@@ -400,12 +396,11 @@ ___
 | [`Vector`](mw.Vector.md) | 旋转后的向量 |
 | :------ | :------ |
 
-
 ___
 
 ### set <Score text="set" /> 
 
-• **set**(`v`): [`Rotation`](mw.Rotation.md)
+• **set**(`v`): [`Rotation`](mw.Rotation.md) 
 
 当前旋转量设置为新的旋转量
 
@@ -423,21 +418,17 @@ ___
 
 为当前旋转量设置每个分量
 
-
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range:不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range:不做限制 type: 浮点数 |
 
 #### Returns
 
 | [`Rotation`](mw.Rotation.md) | 旋转量 |
 | :------ | :------ |
-
-**`Effect`**
-
 
 ___
 
@@ -456,7 +447,6 @@ ___
 
 | `boolean` | 比对的结果 |
 | :------ | :------ |
-
 
 ___
 
@@ -478,7 +468,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | 相减的结果 |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `a` [`Rotation`](mw.Rotation.md) | 旋转量 |
@@ -494,7 +483,6 @@ ___
 | [`Quaternion`](mw.Quaternion.md) | 输出的四元数 |
 | :------ | :------ |
 
-
 ___
 
 ### toString <Score text="toString" /> 
@@ -508,7 +496,6 @@ ___
 | `string` | 输出的字符串数据 |
 | :------ | :------ |
 
-
 ___
 
 ### add <Score text="add" /> 
@@ -516,7 +503,6 @@ ___
 • `Static` **add**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
 旋转量a加上旋转量b
-
 
 ::: warning Precautions
 
@@ -555,7 +541,6 @@ ___
 | [`Rotation`](mw.Rotation.md) | 拷贝得到的新旋转对象 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 outer 不能为 null/undefined
@@ -569,7 +554,6 @@ ___
 • `Static` **fromQuaternion**(`v`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
 转换Quaternion为Rotation
-
 
 ::: warning Precautions
 
@@ -596,7 +580,6 @@ ___
 
 转换字符串数据为Rotation
 
-
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
@@ -605,7 +588,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -621,7 +604,6 @@ ___
 • `Static` **fromVector**(`v`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
 转换Vector为Rotation
-
 
 ::: warning Precautions
 
@@ -650,16 +632,15 @@ ___
 
 #### Parameters
 
-| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量 a |
 | :------ | :------ |
-| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `alpha` `number` | 插值 |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量 b |
+| `alpha` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 
 #### Returns
 
 | [`Rotation`](mw.Rotation.md) | Rotation |
 | :------ | :------ |
-
 
 ___
 
@@ -667,8 +648,7 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
-当前旋转量乘以一个旋转量
-
+当前旋转量减去一个旋转量
 
 ::: warning Precautions
 
@@ -695,7 +675,6 @@ ___
 • `Static` **subtract**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
 当前旋转量减去一个旋转量
-
 
 ::: warning Precautions
 

@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / Skybox
+[场景](../groups/场景.场景.md) / Skybox
 
 # Skybox <Badge type="tip" text="Class" /> <Score text="Skybox" />
 
@@ -10,12 +10,12 @@
 使用示例: 可按如下操作控制编辑器天空盒实时效果
 </span>
 
-创建一个名为"SkyboxExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制天空盒的亮度 *键切换预设
+创建一个名为"SkyboxExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过 "+" 和 "-" 键控制天空盒的亮度， "*" 键切换预设。
 ```ts
-@Core.Class
+@Component
 export default class SkyboxExample extends mw.Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if(Util.SystemUtil.isClient())
         {
             mw.InputUtil.onKeyDown(Type.Keys.Add,()=>{
@@ -40,73 +40,73 @@ export default class SkyboxExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
+| **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 设置云颜色|
-| **[cloudDensity](mw.Skybox.md#clouddensity)**(): `number`  |
-| 设置云密度|
-| **[cloudOpacity](mw.Skybox.md#cloudopacity)**(): `number`  |
-| 设置云的透明度|
-| **[cloudSpeed](mw.Skybox.md#cloudspeed)**(): `number`  |
-| 设置云速度|
-| **[cloudTextureID](mw.Skybox.md#cloudtextureid)**(`value`: `string`): `void`  |
+| 获取云颜色|
+| **[cloudDensity](mw.Skybox.md#clouddensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取云密度|
+| **[cloudOpacity](mw.Skybox.md#cloudopacity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取云的透明度|
+| **[cloudSpeed](mw.Skybox.md#cloudspeed)**(): `number` <Badge type="tip" text="client" />  |
+| 获取云速度|
+| **[cloudTextureID](mw.Skybox.md#cloudtextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置云贴图资源ID|
-| **[cloudVisible](mw.Skybox.md#cloudvisible)**(): `boolean`  |
-| 设置是否开启云|
-| **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置月亮颜色|
-| **[moonIntensity](mw.Skybox.md#moonintensity)**(): `number`  |
-| 设置月亮亮度|
-| **[moonSize](mw.Skybox.md#moonsize)**(): `number`  |
-| 设置月亮大小|
-| **[moonTextureID](mw.Skybox.md#moontextureid)**(`value`: `string`): `void`  |
+| **[cloudVisible](mw.Skybox.md#cloudvisible)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否开启云|
+| **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取月亮颜色|
+| **[moonIntensity](mw.Skybox.md#moonintensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取月亮亮度|
+| **[moonSize](mw.Skybox.md#moonsize)**(): `number` <Badge type="tip" text="client" />  |
+| 获取月亮大小|
+| **[moonTextureID](mw.Skybox.md#moontextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置月亮贴图资源ID|
-| **[moonVisible](mw.Skybox.md#moonvisible)**(): `boolean`  |
-| 设置是否开启月亮|
-| **[preset](mw.Skybox.md#preset)**(): [`SkyPreset`](../enums/mw.SkyPreset.md)  |
-| 设置预设|
-| **[skyDomeBaseColor](mw.Skybox.md#skydomebasecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置天空盒颜色|
-| **[skyDomeBottomColor](mw.Skybox.md#skydomebottomcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置天空下层颜色|
-| **[skyDomeGradientEnabled](mw.Skybox.md#skydomegradientenabled)**(): `boolean`  |
-| 设置是否开启渐变效果|
-| **[skyDomeHorizontalFallOff](mw.Skybox.md#skydomehorizontalfalloff)**(): `number`  |
-| 设置地平线渐出值|
-| **[skyDomeIntensity](mw.Skybox.md#skydomeintensity)**(): `number`  |
-| 设置天空盒亮度3|
-| **[skyDomeMiddleColor](mw.Skybox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置天空中层颜色|
-| **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(`value`: `string`): `void`  |
+| **[moonVisible](mw.Skybox.md#moonvisible)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否开启月亮|
+| **[preset](mw.Skybox.md#preset)**(): [`SkyPreset`](../enums/mw.SkyPreset.md) <Badge type="tip" text="client" />  |
+| 获取预设|
+| **[skyDomeBaseColor](mw.Skybox.md#skydomebasecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取天空盒颜色|
+| **[skyDomeBottomColor](mw.Skybox.md#skydomebottomcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 天空下层颜色|
+| **[skyDomeGradientEnabled](mw.Skybox.md#skydomegradientenabled)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否开启渐变效果|
+| **[skyDomeHorizontalFallOff](mw.Skybox.md#skydomehorizontalfalloff)**(): `number` <Badge type="tip" text="client" />  |
+| 获取地平线渐出值|
+| **[skyDomeIntensity](mw.Skybox.md#skydomeintensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取天空盒亮度|
+| **[skyDomeMiddleColor](mw.Skybox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 天空中层颜色|
+| **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置天空盒贴图|
-| **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置天空顶层颜色|
-| **[starDensity](mw.Skybox.md#stardensity)**(): `number`  |
-| 设置星星密度|
-| **[starIntensity](mw.Skybox.md#starintensity)**(): `number`  |
-| 设置星星亮度|
-| **[starTextureID](mw.Skybox.md#startextureid)**(`value`: `string`): `void`  |
+| **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取天空顶层颜色|
+| **[starDensity](mw.Skybox.md#stardensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取星星密度|
+| **[starIntensity](mw.Skybox.md#starintensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取星星亮度|
+| **[starTextureID](mw.Skybox.md#startextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置星星贴图资源ID|
-| **[starVisible](mw.Skybox.md#starvisible)**(): `boolean`  |
-| 设置是否开启星星|
-| **[sunColor](mw.Skybox.md#suncolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置太阳颜色|
-| **[sunIntensity](mw.Skybox.md#sunintensity)**(): `number`  |
-| 设置太阳光亮度|
-| **[sunSize](mw.Skybox.md#sunsize)**(): `number`  |
-| 设置太阳大小|
-| **[sunTextureID](mw.Skybox.md#suntextureid)**(`value`: `string`): `void`  |
+| **[starVisible](mw.Skybox.md#starvisible)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否开启星星|
+| **[sunColor](mw.Skybox.md#suncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取太阳颜色|
+| **[sunIntensity](mw.Skybox.md#sunintensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取太阳光亮度|
+| **[sunSize](mw.Skybox.md#sunsize)**(): `number` <Badge type="tip" text="client" />  |
+| 获取太阳大小|
+| **[sunTextureID](mw.Skybox.md#suntextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置太阳贴图资源ID|
-| **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean`  |
-| 设置是否开启太阳|
-| **[yawAngle](mw.Skybox.md#yawangle)**(): `number`  |
-| 设置天空盒贴图旋转（度）|
+| **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否开启太阳|
+| **[yawAngle](mw.Skybox.md#yawangle)**(): `number` <Badge type="tip" text="client" />  |
+| 获取天空盒贴图旋转（度）|
 
 ### Methods <Score text="Methods" /> 
-| **[refresh](mw.Skybox.md#refresh)**(): `void`  |
+| **[refresh](mw.Skybox.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 天空盒刷新|
-| **[reset](mw.Skybox.md#reset)**(): `void`  |
+| **[reset](mw.Skybox.md#reset)**(): `void` <Badge type="tip" text="client" />  |
 | 重置为默认参数|
 
 ## Accessors
@@ -132,7 +132,6 @@ export default class SkyboxExample extends mw.Script {
 
 获取云颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 云颜色 |
@@ -144,7 +143,6 @@ export default class SkyboxExample extends mw.Script {
 
 
 设置云颜色
-
 
 #### Parameters
 
@@ -180,7 +178,6 @@ ___
 
 获取云密度
 
-
 #### Returns
 
 | `number` | 云密度 |
@@ -192,7 +189,6 @@ ___
 
 
 设置云密度
-
 
 #### Parameters
 
@@ -228,7 +224,6 @@ ___
 
 获取云的透明度
 
-
 #### Returns
 
 | `number` | 云的透明度 |
@@ -240,7 +235,6 @@ ___
 
 
 设置云的透明度
-
 
 #### Parameters
 
@@ -276,7 +270,6 @@ ___
 
 获取云速度
 
-
 #### Returns
 
 | `number` | 云速度 |
@@ -288,7 +281,6 @@ ___
 
 
 设置云速度
-
 
 #### Parameters
 
@@ -318,7 +310,6 @@ ___
 
 
 设置云贴图资源ID
-
 
 #### Parameters
 
@@ -354,7 +345,6 @@ ___
 
 获取是否开启云
 
-
 #### Returns
 
 | `boolean` | 是否开启云 |
@@ -366,7 +356,6 @@ ___
 
 
 设置是否开启云
-
 
 #### Parameters
 
@@ -402,7 +391,6 @@ ___
 
 获取月亮颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 月亮颜色 |
@@ -414,7 +402,6 @@ ___
 
 
 设置月亮颜色
-
 
 #### Parameters
 
@@ -450,7 +437,6 @@ ___
 
 获取月亮亮度
 
-
 #### Returns
 
 | `number` | 月亮亮度 |
@@ -462,7 +448,6 @@ ___
 
 
 设置月亮亮度
-
 
 #### Parameters
 
@@ -498,7 +483,6 @@ ___
 
 获取月亮大小
 
-
 #### Returns
 
 | `number` | 月亮大小 |
@@ -510,7 +494,6 @@ ___
 
 
 设置月亮大小
-
 
 #### Parameters
 
@@ -540,7 +523,6 @@ ___
 
 
 设置月亮贴图资源ID
-
 
 #### Parameters
 
@@ -576,7 +558,6 @@ ___
 
 获取是否开启月亮
 
-
 #### Returns
 
 | `boolean` | 是否开启月亮 |
@@ -588,7 +569,6 @@ ___
 
 
 设置是否开启月亮
-
 
 #### Parameters
 
@@ -624,7 +604,6 @@ ___
 
 获取预设
 
-
 #### Returns
 
 | [`SkyPreset`](../enums/mw.SkyPreset.md) | 返回预设 |
@@ -636,7 +615,6 @@ ___
 
 
 设置预设
-
 
 #### Parameters
 
@@ -672,7 +650,6 @@ ___
 
 获取天空盒颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 天空盒颜色 |
@@ -684,7 +661,6 @@ ___
 
 
 设置天空盒颜色
-
 
 #### Parameters
 
@@ -720,7 +696,6 @@ ___
 
 天空下层颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 天空下层颜色 |
@@ -732,7 +707,6 @@ ___
 
 
 设置天空下层颜色
-
 
 #### Parameters
 
@@ -768,7 +742,6 @@ ___
 
 获取是否开启渐变效果
 
-
 #### Returns
 
 | `boolean` | 是否开启渐变效果 |
@@ -780,7 +753,6 @@ ___
 
 
 设置是否开启渐变效果
-
 
 #### Parameters
 
@@ -816,7 +788,6 @@ ___
 
 获取地平线渐出值
 
-
 #### Returns
 
 | `number` | 地平线渐出值 |
@@ -828,7 +799,6 @@ ___
 
 
 设置地平线渐出值
-
 
 #### Parameters
 
@@ -864,7 +834,6 @@ ___
 
 获取天空盒亮度
 
-
 #### Returns
 
 | `number` | 天空盒亮度 |
@@ -876,7 +845,6 @@ ___
 
 
 设置天空盒亮度3
-
 
 #### Parameters
 
@@ -912,7 +880,6 @@ ___
 
 天空中层颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 天空中层颜色 |
@@ -924,7 +891,6 @@ ___
 
 
 设置天空中层颜色
-
 
 #### Parameters
 
@@ -954,7 +920,6 @@ ___
 
 
 设置天空盒贴图
-
 
 #### Parameters
 
@@ -990,7 +955,6 @@ ___
 
 获取天空顶层颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 天空顶层颜色 |
@@ -1002,7 +966,6 @@ ___
 
 
 设置天空顶层颜色
-
 
 #### Parameters
 
@@ -1038,7 +1001,6 @@ ___
 
 获取星星密度
 
-
 #### Returns
 
 | `number` | 星星密度 |
@@ -1050,7 +1012,6 @@ ___
 
 
 设置星星密度
-
 
 #### Parameters
 
@@ -1086,7 +1047,6 @@ ___
 
 获取星星亮度
 
-
 #### Returns
 
 | `number` | 星星亮度 |
@@ -1098,7 +1058,6 @@ ___
 
 
 设置星星亮度
-
 
 #### Parameters
 
@@ -1128,7 +1087,6 @@ ___
 
 
 设置星星贴图资源ID
-
 
 #### Parameters
 
@@ -1164,7 +1122,6 @@ ___
 
 获取是否开启星星
 
-
 #### Returns
 
 | `boolean` | 是否开启星星 |
@@ -1176,7 +1133,6 @@ ___
 
 
 设置是否开启星星
-
 
 #### Parameters
 
@@ -1212,7 +1168,6 @@ ___
 
 获取太阳颜色
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 太阳颜色 |
@@ -1224,7 +1179,6 @@ ___
 
 
 设置太阳颜色
-
 
 #### Parameters
 
@@ -1260,7 +1214,6 @@ ___
 
 获取太阳光亮度
 
-
 #### Returns
 
 | `number` | 太阳光亮度 |
@@ -1272,7 +1225,6 @@ ___
 
 
 设置太阳光亮度
-
 
 #### Parameters
 
@@ -1308,7 +1260,6 @@ ___
 
 获取太阳大小
 
-
 #### Returns
 
 | `number` | 太阳大小 |
@@ -1320,7 +1271,6 @@ ___
 
 
 设置太阳大小
-
 
 #### Parameters
 
@@ -1350,7 +1300,6 @@ ___
 
 
 设置太阳贴图资源ID
-
 
 #### Parameters
 
@@ -1386,7 +1335,6 @@ ___
 
 获取是否开启太阳
 
-
 #### Returns
 
 | `boolean` | 是否开启太阳 |
@@ -1398,7 +1346,6 @@ ___
 
 
 设置是否开启太阳
-
 
 #### Parameters
 
@@ -1434,7 +1381,6 @@ ___
 
 获取天空盒贴图旋转（度）
 
-
 #### Returns
 
 | `number` | 天空盒贴图旋转 |
@@ -1446,7 +1392,6 @@ ___
 
 
 设置天空盒贴图旋转（度）
-
 
 #### Parameters
 
@@ -1468,7 +1413,6 @@ ___
 天空盒刷新
 
 
-
 ___
 
 ### reset <Score text="reset" /> 
@@ -1476,5 +1420,4 @@ ___
 • `Static` **reset**(): `void` <Badge type="tip" text="client" />
 
 重置为默认参数
-
 

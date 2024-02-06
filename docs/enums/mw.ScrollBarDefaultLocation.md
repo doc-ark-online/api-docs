@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / ScrollBarDefaultLocation
+[界面](../groups/界面.界面.md) / ScrollBarDefaultLocation
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 

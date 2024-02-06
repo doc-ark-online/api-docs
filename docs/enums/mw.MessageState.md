@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / MessageState
+[基础类型](../groups/基础类型.基础类型.md) / MessageState
 
 # MessageState <Badge type="tip" text="Enumeration" /> <Score text="MessageState" />
 

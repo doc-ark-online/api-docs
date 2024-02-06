@@ -1,8 +1,14 @@
-[UI](../groups/UI.UI.md) / Widget
+[界面](../groups/界面.界面.md) / Widget
 
 # Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 
-可挂载叶子节点的根节点，以及提供各种自动布局功能
+控件的基类
+
+---------------
+
+可挂载叶子节点的根节点，以及提供各种自动布局功能。
+
+放置控件需要的通用属性与方法。
 
 ## Hierarchy
 
@@ -16,7 +22,7 @@
 
   ↳ [`MaskButton`](mw.MaskButton.md)
 
-  ↳ [`PanelWidget`](mw.PanelWidget.md)
+  ↳ [`PanelWidget`](Core.mw.PanelWidget.md)
 
   ↳ [`ProgressBar`](mw.ProgressBar.md)
 
@@ -33,77 +39,97 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean`  |
+| **[autoSizeHorizontalEnable](mw.Widget.md#autosizehorizontalenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否自动设置大小|
-| **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md)  |
+| 获取是否自动水平设置大小|
+| **[autoSizeVerticalEnable](mw.Widget.md#autosizeverticalenable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否自动垂直设置大小|
+| **[cachedGeometry](mw.Widget.md#cachedgeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取上一次的GetTickSpaceGeometry|
-| **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\>  |
-| 设置控件的布局|
-| **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md)  |
+| **[constraints](mw.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />  |
+| 获取控件的布局|
+| **[desiredSize](mw.Widget.md#desiredsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取期望大小|
-| **[enable](mw.Widget.md#enable)**(): `boolean`  |
-| 设置可用性|
-| **[guid](mw.Widget.md#guid)**(): `string`  |
+| **[enable](mw.Widget.md#enable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 是否可用|
+| **[guid](mw.Widget.md#guid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取控件GUID|
-| **[isHovered](mw.Widget.md#ishovered)**(): `boolean`  |
+| **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
-| **[name](mw.Widget.md#name)**(): `string`  |
-| 设定名字|
-| **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md)  |
+| **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
+| 获取名字|
+| **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
-| **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md)  |
+| **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
-| **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\>  |
-| 设置控件的位置|
-| **[renderOpacity](mw.Widget.md#renderopacity)**(): `number`  |
-| 设置渲染透明度 0 ~ 1|
-| **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置渲染缩放|
-| **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置渲染错切形变|
-| **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number`  |
-| 设置渲染的角度|
-| **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置渲染锚点|
-| **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md)  |
-| 设置控件的大小|
-| **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md)  |
+| **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
+| 获取控件的位置|
+| **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取渲染透明度|
+| **[renderScale](mw.Widget.md#renderscale)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取渲染缩放|
+| **[renderShear](mw.Widget.md#rendershear)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取渲染错切形变|
+| **[renderTransformAngle](mw.Widget.md#rendertransformangle)**(): `number` <Badge type="tip" text="client" />  |
+| 获取渲染的角度|
+| **[renderTransformPivot](mw.Widget.md#rendertransformpivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取渲染锚点|
+| **[size](mw.Widget.md#size)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取大小|
+| **[tickSpaceGeometry](mw.Widget.md#tickspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于驱动Widget Tick的几何信息|
-| **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\>  |
-| 设置控件的大小和位置|
-| **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md)  |
-| 设置可见性|
-| **[visible](mw.Widget.md#visible)**(): `boolean`  |
+| **[transform](mw.Widget.md#transform)**(): `Readonly`<[`UITransform`](mw.UITransform.md)\> <Badge type="tip" text="client" />  |
+| 得到控件的大小和位置|
+| **[visibility](mw.Widget.md#visibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md) <Badge type="tip" text="client" />  |
+| 获取可见性|
+| **[visible](mw.Widget.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否可见|
-| **[zOrder](mw.Widget.md#zorder)**(): `number`  |
-| 设置zoder|
+| **[zOrder](mw.Widget.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
+| 获取zorder|
 
 ### Methods <Score text="Methods" /> 
-| **[destroyObject](mw.Widget.md#destroyobject)**(): `void`  |
+| **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
+| 添加子节点|
+| **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
-| **[equal](mw.Widget.md#equal)**(`that`: [`Widget`](mw.Widget.md)): `boolean`  |
+| **[equal](mw.Widget.md#equal)**(`that`: [`Widget`](mw.Widget.md)): `boolean` <Badge type="tip" text="client" />  |
 | 判断是不是同一个对象|
-| **[invalidateLayoutAndVolatility](mw.Widget.md#invalidatelayoutandvolatility)**(): `void`  |
+| **[findChildByPath](mw.Widget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 通过相对路径查找节点|
+| **[getChildAt](mw.Widget.md#getchildat)**(`index`: `number`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 获取第几位子节点|
+| **[getChildByName](mw.Widget.md#getchildbyname)**<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>(`name`: `string`): `T`: extends [`Widget`](mw.Widget.md)<`T`\> <Badge type="tip" text="client" />  |
+| 通过名字查找节点|
+| **[getChildrenCount](mw.Widget.md#getchildrencount)**(): `number` <Badge type="tip" text="client" />  |
+| 获取子节点数量|
+| **[invalidateLayoutAndVolatility](mw.Widget.md#invalidatelayoutandvolatility)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻触发重新渲染的和排布计算|
-| **[removeObject](mw.Widget.md#removeobject)**(): `void`  |
+| **[removeAllChildren](mw.Widget.md#removeallchildren)**(): `void` <Badge type="tip" text="client" />  |
+| 清除所有子节点,会销毁UI无法再使用|
+| **[removeChild](mw.Widget.md#removechild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
+| 移除节点,会销毁UI无法在使用|
+| **[removeChildAt](mw.Widget.md#removechildat)**(`index`: `number`): `void` <Badge type="tip" text="client" />  |
+| 移除第几个节点,会销毁UI无法再使用|
+| **[removeObject](mw.Widget.md#removeobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并添加到根节点 可以再使用|
 
 ## Accessors
 
-### autoSizeEnable <Score text="autoSizeEnable" /> 
+___
+
+### autoSizeHorizontalEnable <Score text="autoSizeHorizontalEnable" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="client" />
+• `get` **autoSizeHorizontalEnable**(): `boolean` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **autoSizeEnable**(`autoSize`): `void` <Badge type="tip" text="client" />
+• `set` **autoSizeHorizontalEnable**(`bEnabled`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -111,12 +137,11 @@
 <td style="text-align: left">
 
 
-获取是否自动设置大小
-
+获取是否自动水平设置大小
 
 #### Returns
 
-| `boolean` | 是否自动设置大小 |
+| `boolean` | 是否自动水平设置大小 |
 | :------ | :------ |
 
 
@@ -124,14 +149,63 @@
 <td style="text-align: left">
 
 
-设置是否自动设置大小
-
+获取是否自动水平设置大小
 
 #### Parameters
 
-| `autoSize` `boolean` | 是否自动设置大小 |
+| `bEnabled` | `boolean` |
 | :------ | :------ |
 
+
+是否自动水平设置大小
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### autoSizeVerticalEnable <Score text="autoSizeVerticalEnable" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **autoSizeVerticalEnable**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **autoSizeVerticalEnable**(`bEnabled`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否自动垂直设置大小
+
+#### Returns
+
+| `boolean` | 是否自动垂直设置大小 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+获取是否自动垂直设置大小
+
+#### Parameters
+
+| `bEnabled` | `boolean` |
+| :------ | :------ |
+
+
+是否自动垂直设置大小
 
 
 </td>
@@ -155,7 +229,6 @@ ___
 
 
 获取上一次的GetTickSpaceGeometry
-
 
 #### Returns
 
@@ -189,7 +262,6 @@ ___
 
 获取控件的布局
 
-
 #### Returns
 
 | `Readonly`<[`UIConstraintAnchors`](mw.UIConstraintAnchors.md)\> | 控件的布局 |
@@ -201,7 +273,6 @@ ___
 
 
 设置控件的布局
-
 
 #### Parameters
 
@@ -231,7 +302,6 @@ ___
 
 
 获取期望大小
-
 
 #### Returns
 
@@ -265,7 +335,6 @@ ___
 
 是否可用
 
-
 #### Returns
 
 | `boolean` | boolean |
@@ -277,7 +346,6 @@ ___
 
 
 设置可用性
-
 
 #### Parameters
 
@@ -310,7 +378,6 @@ ___
 
 获取控件GUID
 
-
 #### Returns
 
 | `string` | 控件GUID |
@@ -337,7 +404,6 @@ ___
 
 
 是否是hovered
-
 
 #### Returns
 
@@ -371,7 +437,6 @@ ___
 
 获取名字
 
-
 #### Returns
 
 | `string` | 返回名字 |
@@ -383,7 +448,6 @@ ___
 
 
 设定名字
-
 
 #### Parameters
 
@@ -414,7 +478,6 @@ ___
 
 获取最后一次用于渲染Widget的几何信息
 
-
 #### Returns
 
 | [`Geometry`](mw.Geometry.md) | 返回最后一次用于渲染Widget的几何信息 |
@@ -441,7 +504,6 @@ ___
 
 
 获取父节点
-
 
 #### Returns
 
@@ -475,7 +537,6 @@ ___
 
 获取控件的位置
 
-
 #### Returns
 
 | `Readonly`<[`Vector2`](mw.Vector2.md)\> | 控件的位置 |
@@ -487,7 +548,6 @@ ___
 
 
 设置控件的位置
-
 
 #### Parameters
 
@@ -523,7 +583,6 @@ ___
 
 获取渲染透明度
 
-
 #### Returns
 
 | `number` | 返回渲染透明度 |
@@ -535,7 +594,6 @@ ___
 
 
 设置渲染透明度 0 ~ 1
-
 
 #### Parameters
 
@@ -571,7 +629,6 @@ ___
 
 获取渲染缩放
 
-
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 返回渲染缩放 |
@@ -583,7 +640,6 @@ ___
 
 
 设置渲染缩放
-
 
 #### Parameters
 
@@ -619,7 +675,6 @@ ___
 
 获取渲染错切形变
 
-
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 返回渲染错切形变 |
@@ -631,7 +686,6 @@ ___
 
 
 设置渲染错切形变
-
 
 #### Parameters
 
@@ -667,7 +721,6 @@ ___
 
 获取渲染的角度
 
-
 #### Returns
 
 | `number` | 返回渲染角度 |
@@ -679,7 +732,6 @@ ___
 
 
 设置渲染的角度
-
 
 #### Parameters
 
@@ -715,7 +767,6 @@ ___
 
 获取渲染锚点
 
-
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 返回渲染锚点 |
@@ -727,7 +778,6 @@ ___
 
 
 设置渲染锚点
-
 
 #### Parameters
 
@@ -763,7 +813,6 @@ ___
 
 获取大小
 
-
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | FVector2D |
@@ -775,7 +824,6 @@ ___
 
 
 设置控件的大小
-
 
 #### Parameters
 
@@ -805,7 +853,6 @@ ___
 
 
 获取最后一次用于驱动Widget Tick的几何信息
-
 
 #### Returns
 
@@ -839,7 +886,6 @@ ___
 
 得到控件的大小和位置
 
-
 #### Returns
 
 | `Readonly`<[`UITransform`](mw.UITransform.md)\> | 控件的大小和位置 |
@@ -851,7 +897,6 @@ ___
 
 
 设置控件的大小和位置
-
 
 #### Parameters
 
@@ -887,7 +932,6 @@ ___
 
 获取可见性
 
-
 #### Returns
 
 | [`SlateVisibility`](../enums/mw.SlateVisibility.md) | 返回可见性 |
@@ -899,7 +943,6 @@ ___
 
 
 设置可见性
-
 
 #### Parameters
 
@@ -929,7 +972,6 @@ ___
 
 
 是否可见
-
 
 #### Returns
 
@@ -963,7 +1005,6 @@ ___
 
 获取zorder
 
-
 #### Returns
 
 | `number` | zorder |
@@ -975,7 +1016,6 @@ ___
 
 
 设置zoder
-
 
 #### Parameters
 
@@ -990,12 +1030,25 @@ ___
 
 ## Methods
 
+### addChild <Score text="addChild" /> 
+
+• **addChild**(`child`): `void` <Badge type="tip" text="client" />
+
+添加子节点
+
+#### Parameters
+
+| `child` [`Widget`](mw.Widget.md) | 子控件 |
+| :------ | :------ |
+
+
+___
+
 ### destroyObject <Score text="destroyObject" /> 
 
 • **destroyObject**(): `void` <Badge type="tip" text="client" />
 
 立刻移除并销毁 不可以在使用
-
 
 
 ___
@@ -1016,6 +1069,77 @@ ___
 | `boolean` | boolean |
 | :------ | :------ |
 
+___
+
+### findChildByPath <Score text="findChildByPath" /> 
+
+• **findChildByPath**(`inPath`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />
+
+通过相对路径查找节点
+
+#### Parameters
+
+| `inPath` `string` | 路径 range: 不限制 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Widget`](mw.Widget.md) | 返回查找节点结果 |
+| :------ | :------ |
+
+___
+
+### getChildAt <Score text="getChildAt" /> 
+
+• **getChildAt**(`index`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />
+
+获取第几位子节点
+
+#### Parameters
+
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Widget`](mw.Widget.md) | 找到的控件 |
+| :------ | :------ |
+
+___
+
+### getChildByName <Score text="getChildByName" /> 
+
+• **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="client" />
+
+通过名字查找节点
+
+#### Parameters
+
+| `name` `string` | 名字 <br> range: 不限制 |
+| :------ | :------ |
+
+#### Returns
+
+| `T` | 找到的控件 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`Widget`](mw.Widget.md)<`T`\> |
+| :------ | :------ |
+
+___
+
+### getChildrenCount <Score text="getChildrenCount" /> 
+
+• **getChildrenCount**(): `number` <Badge type="tip" text="client" />
+
+获取子节点数量
+
+#### Returns
+
+| `number` | 子节点数量 |
+| :------ | :------ |
 
 ___
 
@@ -1026,6 +1150,42 @@ ___
 立刻触发重新渲染的和排布计算
 
 
+___
+
+### removeAllChildren <Score text="removeAllChildren" /> 
+
+• **removeAllChildren**(): `void` <Badge type="tip" text="client" />
+
+清除所有子节点,会销毁UI无法再使用
+
+
+___
+
+### removeChild <Score text="removeChild" /> 
+
+• **removeChild**(`child`): `void` <Badge type="tip" text="client" />
+
+移除节点,会销毁UI无法在使用
+
+#### Parameters
+
+| `child` [`Widget`](mw.Widget.md) | 需要移除的子控件 |
+| :------ | :------ |
+
+
+___
+
+### removeChildAt <Score text="removeChildAt" /> 
+
+• **removeChildAt**(`index`): `void` <Badge type="tip" text="client" />
+
+移除第几个节点,会销毁UI无法再使用
+
+#### Parameters
+
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
+| :------ | :------ |
+
 
 ___
 
@@ -1034,5 +1194,4 @@ ___
 • **removeObject**(): `void` <Badge type="tip" text="client" />
 
 立刻移除并添加到根节点 可以再使用
-
 

@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / Orientation
+[界面](../groups/界面.界面.md) / Orientation
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 

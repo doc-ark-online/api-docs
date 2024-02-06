@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraProjectionMode
+[玩法](../groups/玩法.玩法.md) / CameraProjectionMode
 
 # CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
 

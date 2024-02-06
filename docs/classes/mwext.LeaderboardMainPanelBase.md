@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardMainPanelBase
+[界面](../groups/Extension.界面.md) / LeaderboardMainPanelBase
 
 # LeaderboardMainPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPanelBase<T\>" />
 
@@ -25,7 +25,7 @@
 ### Accessors <Score text="Accessors" /> 
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
@@ -36,33 +36,33 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />  |
 | :-----|
 | 添加一个字段|
-| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\>  |
+| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <Badge type="tip" text="client" />  |
 | 创建用于显示一条排行信息的item子UI|
-| **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void`  |
+| **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void` <Badge type="tip" text="client" />  |
 | 当UI隐藏调用|
-| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <Badge type="tip" text="client" />  |
 | 设置自己(界面最下面那一行)的字段内容后调用，需要请复写|
-| **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void`  |
+| **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <Badge type="tip" text="client" />  |
 | 当UI显示调用|
-| **[onSort](mwext.LeaderboardMainPanelBase.md#onsort)**(`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]  |
+| **[onSort](mwext.LeaderboardMainPanelBase.md#onsort)**(`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] <Badge type="tip" text="client" />  |
 | 排序的时候调用，需要请重写|
-| **[setSortFields](mwext.LeaderboardMainPanelBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| **[setSortFields](mwext.LeaderboardMainPanelBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />  |
 | 设置排序字段ID，可以设置多字段排序，只支持从大到小排序|
-| **[setStyle](mwext.LeaderboardMainPanelBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| **[setStyle](mwext.LeaderboardMainPanelBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />  |
 | 设置排行榜样式|
-| **[showRankField](mwext.LeaderboardMainPanelBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| **[showRankField](mwext.LeaderboardMainPanelBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />  |
 | 显示"名次"字段，并进行设置，默认不显示|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[onAdded](mwext.BasePanel.md#onadded)**(): `void`  |
+| **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 生命周期-被添加到父节点时候触发，可能会多次调用|
-| **[onAwake](mwext.BasePanel.md#onawake)**(): `void`  |
+| **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-构建面板自动触发，只会调用一次|
 :::
 
@@ -87,16 +87,15 @@
 
 #### Parameters
 
-| `fieldId` `number` |  字段ID |
+| `fieldId` `number` |  字段 ID range: 依据 ID 长度而定 type: |
 | :------ | :------ |
-| `fieldName` `string` |  字段的标题 |
-| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null |
+| `fieldName` `string` |  字段的标题 range: |
+| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null range:不做限制 |
 
 #### Returns
 
 | [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
 | :------ | :------ |
-
 
 ___
 
@@ -110,7 +109,6 @@ ___
 
 | [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> | 一条排行信息的item子UI |
 | :------ | :------ |
-
 
 ___
 
@@ -127,7 +125,6 @@ ___
 
 :::
 
-
 ___
 
 ### onSelfFieldSet <Score text="onSelfFieldSet" /> 
@@ -138,13 +135,12 @@ ___
 
 #### Parameters
 
-| `rankIndex` `number` |  名次索引(0开始) |
+| `rankIndex` `number` |  名次索引(0开始) range: 合理即可，不做限制 type: 整数 |
 | :------ | :------ |
-| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string`  `number` |  字段显示内容 |
-| `textBlockIndex` `number` |  文本控件索引 |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) range: 合理即可，不做限制 type: 整数 |
+| `fieldValue` `string`  `number` |  字段显示内容 range: 合理即可，不做限制 type: 整数 |
+| `textBlockIndex` `number` |  文本控件索引 range: 合理即可，不做限制 type: 整数 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
-
 
 
 ___
@@ -167,7 +163,6 @@ ___
 
 :::
 
-
 ___
 
 ### onSort <Score text="onSort" /> 
@@ -185,7 +180,6 @@ ___
 
 | [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] | 排序后的数据队列 |
 | :------ | :------ |
-
 
 ___
 
@@ -205,7 +199,6 @@ ___
 | [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
 | :------ | :------ |
 
-
 ___
 
 ### setStyle <Score text="setStyle" /> 
@@ -216,17 +209,16 @@ ___
 
 #### Parameters
 
-| `title` `string` |  UI标题 |
+| `title` `string` |  UI 标题 range: UI 标题信息 |
 | :------ | :------ |
 | `fieldsAutoLayout` `boolean` |  字段是否自动布局(true-均匀分布, false-所摆即所得） |
-| `showPlayerNum` `number` |  最多显示的玩家数量 |
-| `itemSpacing` `number` |  每条数据的间距 |
+| `showPlayerNum` `number` |  最多显示的玩家数量 range:合理即可 type: 整数 |
+| `itemSpacing` `number` |  每条数据的间距 range:合理即可 type: 整数 |
 
 #### Returns
 
 | [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
 | :------ | :------ |
-
 
 ___
 
@@ -238,13 +230,12 @@ ___
 
 #### Parameters
 
-| `fieldName` `string` |  字段标题 |
+| `fieldName` `string` |  字段标题 range: 依据 ID 长度而定 type: |
 | :------ | :------ |
-| `valueStyle?` `string` |  字段值样式 default: null |
-| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null |
+| `valueStyle?` `string` |  字段值样式 default: null range:不做限制 |
+| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null range:不做限制 |
 
 #### Returns
 
 | [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
 | :------ | :------ |
-

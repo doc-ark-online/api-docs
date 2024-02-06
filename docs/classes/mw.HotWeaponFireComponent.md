@@ -1,11 +1,11 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponFireComponent
+[玩法](../groups/玩法.玩法.md) / HotWeaponFireComponent
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下:
+使用示例: 创建一个名为"HotWeaponFireSample1"的脚本，放置在对象管理器热武器的子节点中，打开脚本，输入以下代码保存，运行游戏，代码如下：
 </span>
 
 ```ts
@@ -44,26 +44,26 @@
 | 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 
 ### Accessors <Score text="Accessors" /> 
-| **[animationAssetId](mw.HotWeaponFireComponent.md#animationassetid)**(): `string`  |
+| **[animationAssetId](mw.HotWeaponFireComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[clipSize](mw.HotWeaponFireComponent.md#clipsize)**(): `number`  |
-| 设置当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[currentBullet](mw.HotWeaponFireComponent.md#currentbullet)**(): `number`  |
-| 设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[fireInterval](mw.HotWeaponFireComponent.md#fireinterval)**(): `number`  |
-| 设置开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[fireMode](mw.HotWeaponFireComponent.md#firemode)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)  |
-| 切换设置当前开火模式|
-| **[isFireOnScreenCenter](mw.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean`  |
-| 设置是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[multipleShot](mw.HotWeaponFireComponent.md#multipleshot)**(): `number`  |
-| 设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[offsetOfFireOnScreenCenter](mw.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](mw.Vector.md)  |
-| 设置屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
+| 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[clipSize](mw.HotWeaponFireComponent.md#clipsize)**(): `number`   |
+| 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[currentBullet](mw.HotWeaponFireComponent.md#currentbullet)**(): `number`   |
+| 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[fireInterval](mw.HotWeaponFireComponent.md#fireinterval)**(): `number`   |
+| 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[fireMode](mw.HotWeaponFireComponent.md#firemode)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)   |
+| 获取当前的开火模式|
+| **[isFireOnScreenCenter](mw.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean`   |
+| 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[multipleShot](mw.HotWeaponFireComponent.md#multipleshot)**(): `number`   |
+| 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[offsetOfFireOnScreenCenter](mw.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](mw.Vector.md)   |
+| 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
 
 ### Methods <Score text="Methods" /> 
-| **[isFiring](mw.HotWeaponFireComponent.md#isfiring)**(): `boolean`  |
+| **[isFiring](mw.HotWeaponFireComponent.md#isfiring)**(): `boolean`   |
 | :-----|
 | 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹|
 
@@ -114,7 +114,6 @@ ___
 
 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `string` | 绑定的动画 GUID |
@@ -127,11 +126,9 @@ ___
 
 设置动画 GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
-调用端自动广播
-
 #### Parameters
 
-| `GUID` `string` |  需要设置的蒙太奇动画 GUID |
+| `GUID` `string` |  需要设置的蒙太奇动画 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 
 
@@ -163,7 +160,6 @@ ___
 
 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `number` | 当前弹夹容量 |
@@ -176,8 +172,6 @@ ___
 
 设置当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
-调用端自动广播
-
 ::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
@@ -186,7 +180,7 @@ ___
 
 #### Parameters
 
-| `value` `number` |  当前弹夹容量 |
+| `value` `number` |  当前弹夹容量 <br> default: 30 <br> range: [1, 1000] type:整数 |
 | :------ | :------ |
 
 
@@ -218,7 +212,6 @@ ___
 
 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `number` | 当前弹夹中子弹数量 |
@@ -231,11 +224,9 @@ ___
 
 设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
-调用端自动广播
-
 #### Parameters
 
-| `value` `number` |  新弹夹中子弹数量 |
+| `value` `number` |  新弹夹中子弹数量 <br> default: 0 <br> range: [0, clipSize] type:整数 |
 | :------ | :------ |
 
 
@@ -267,7 +258,6 @@ ___
 
 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `number` | 开火间隙 |
@@ -280,8 +270,6 @@ ___
 
 设置开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
-调用端自动广播
-
 ::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
@@ -290,7 +278,7 @@ ___
 
 #### Parameters
 
-| `interval` `number` |  开火间隙 |
+| `interval` `number` |  开火间隙 <br> default: 0.1 <br> range: [0.01, 10] type:浮点数 |
 | :------ | :------ |
 
 
@@ -322,7 +310,6 @@ ___
 
 获取当前的开火模式
 
-
 #### Returns
 
 | [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) | 当前的开火模式 |
@@ -335,7 +322,6 @@ ___
 
 切换设置当前开火模式
 
-
 ::: warning Precautions
 
 装备前只能在服务器调用，装备后可在客户端调用
@@ -344,7 +330,7 @@ ___
 
 #### Parameters
 
-| `newFireMode` [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) |  新的热武器开火模式 |
+| `newFireMode` [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) |  新的热武器开火模式 <br> default: 默认为单发 HotWeaponFireMode.SingleFire |
 | :------ | :------ |
 
 
@@ -376,7 +362,6 @@ ___
 
 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `boolean` | 是否在屏幕中心开火 |
@@ -388,8 +373,6 @@ ___
 
 
 设置是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -431,7 +414,6 @@ ___
 
 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | `number` | 一次开火发射的子弹数量 |
@@ -444,8 +426,6 @@ ___
 
 设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
-调用端自动广播
-
 ::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
@@ -454,7 +434,7 @@ ___
 
 #### Parameters
 
-| `count` `number` |  一次开火发射的子弹数量 |
+| `count` `number` |  一次开火发射的子弹数量 <br> default: 1 <br> range: [1, 100] type:整数 |
 | :------ | :------ |
 
 
@@ -486,7 +466,6 @@ ___
 
 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例
 
-
 #### Returns
 
 | [`Vector`](mw.Vector.md) | 屏幕中心开火时的偏移 |
@@ -498,8 +477,6 @@ ___
 
 
 设置屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -530,4 +507,3 @@ ___
 
 | `boolean` | 当前弹夹中子弹数量 |
 | :------ | :------ |
-

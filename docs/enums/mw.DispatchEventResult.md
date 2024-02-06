@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / DispatchEventResult
+[基础类型](../groups/基础类型.基础类型.md) / DispatchEventResult
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 

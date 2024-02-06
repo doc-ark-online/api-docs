@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / SystemUtil
+[工具](../groups/工具.工具.md) / SystemUtil
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 
@@ -9,38 +9,38 @@
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md)  |
+| **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md)   |
 | :-----|
 | 判定当前程序的运行平台,返回值参考Type.RuntimePlatform|
-| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean`  |
+| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean`   |
 | 判断当前是否是编辑器运行模式|
 
 ### Accessors <Score text="Accessors" /> 
-| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | :-----|
 | 添加退出游戏时执行的回调函数|
-| **[onPause](mw.SystemUtil.md#onpause)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onPause](mw.SystemUtil.md#onpause)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 添加OnPause开始时执行的回调函数|
-| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\>  |
+| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <Badge type="tip" text="client" />  |
 | 添加OnPause结束时执行的回调函数|
 
 ### Methods <Score text="Methods" /> 
-| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string`  |
+| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string`   |
 | :-----|
 | 获取当前环境|
-| **[getEditorVersion](mw.SystemUtil.md#geteditorversion)**(): `string`  |
+| **[getEditorVersion](mw.SystemUtil.md#geteditorversion)**(): `string`   |
 | 获取编辑器版本号|
-| **[getFullEditorVersion](mw.SystemUtil.md#getfulleditorversion)**(): `string`  |
+| **[getFullEditorVersion](mw.SystemUtil.md#getfulleditorversion)**(): `string`   |
 | 获取完整编辑器版本号|
-| **[getGameId](mw.SystemUtil.md#getgameid)**(): `string`  |
+| **[getGameId](mw.SystemUtil.md#getgameid)**(): `string`   |
 | 获取当前游戏GameId|
-| **[getVersion](mw.SystemUtil.md#getversion)**(): `string`  |
+| **[getVersion](mw.SystemUtil.md#getversion)**(): `string`   |
 | 获取当前游戏版本|
-| **[isClient](mw.SystemUtil.md#isclient)**(): `boolean`  |
+| **[isClient](mw.SystemUtil.md#isclient)**(): `boolean`   |
 | 是否客户端运行|
-| **[isMobile](mw.SystemUtil.md#ismobile)**(): `boolean`  |
+| **[isMobile](mw.SystemUtil.md#ismobile)**(): `boolean`   |
 | 判断当前是否是移动端|
-| **[isServer](mw.SystemUtil.md#isserver)**(): `boolean`  |
+| **[isServer](mw.SystemUtil.md#isserver)**(): `boolean`   |
 | 是否服务器运行|
 
 ## Properties
@@ -50,7 +50,6 @@
 ▪ `Static` **currentPlatform**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md) 
 
 判定当前程序的运行平台,返回值参考Type.RuntimePlatform
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
@@ -64,7 +63,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         console.log("当前程序的运行平台", SystemUtil.currentPlatform)
     }
 
@@ -78,7 +77,6 @@ ___
 ▪ `Static` **isPIE**: `boolean` 
 
 判断当前是否是编辑器运行模式
-
 
 ## Accessors
 
@@ -97,7 +95,6 @@ ___
 
 
 添加退出游戏时执行的回调函数
-
 
 ::: warning Precautions
 
@@ -131,7 +128,6 @@ ___
 
 
 添加OnPause开始时执行的回调函数
-
 
 ::: warning Precautions
 
@@ -167,7 +163,6 @@ ___
 
 添加OnPause结束时执行的回调函数
 
-
 ::: warning Precautions
 
 只在Android和IOS生效。触发时机有切入后台、息屏和播广告后回到游戏。
@@ -197,7 +192,6 @@ ___
 | `string` | 当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza) |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台
 </span>
@@ -210,7 +204,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         console.log("当前环境", SystemUtil.getCurrentEnv())
     }
 
@@ -230,7 +224,6 @@ ___
 | `string` | 当前编辑器版本号 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台
 </span>
@@ -243,7 +236,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         console.log("当前编辑器版本号", SystemUtil.getEditorVersion())
     }
 
@@ -263,7 +256,6 @@ ___
 | `string` | 当前完整编辑器版本号 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台
 </span>
@@ -276,7 +268,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         console.log("当前完整编辑器版本号", SystemUtil.getFullEditorVersion())
     }
 
@@ -296,7 +288,6 @@ ___
 | `string` | 当前游戏GameId |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId
 </span>
@@ -309,7 +300,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         const gameId = SystemUtil.getGameId();
         console.log(`gameId: ${gameId}`);
@@ -331,7 +322,6 @@ ___
 | `string` | 当前游戏版本 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本
 </span>
@@ -344,7 +334,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         const version = SystemUtil.getVersion();
         console.log(`version: ${version}`);
@@ -366,7 +356,6 @@ ___
 | `boolean` | 是否客户端运行 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 </span>
@@ -379,7 +368,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             console.log("当前是客户端");
         } else if (SystemUtil.isServer()) {
@@ -403,7 +392,6 @@ ___
 | `boolean` | 是否是移动端 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台
 </span>
@@ -416,7 +404,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         console.log("当前是否是移动端", SystemUtil.isMobile())
     }
 
@@ -436,7 +424,6 @@ ___
 | `boolean` | 是否服务器运行 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 </span>
@@ -449,7 +436,7 @@ export default class SystemExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             console.log("当前是客户端");
         } else if (SystemUtil.isServer()) {

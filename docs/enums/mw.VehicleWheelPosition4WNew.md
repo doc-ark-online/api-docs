@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / VehicleWheelPosition4WNew
+[玩法](../groups/玩法.玩法.md) / VehicleWheelPosition4WNew
 
 # VehicleWheelPosition4WNew <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4WNew" />
 

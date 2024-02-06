@@ -1,4 +1,4 @@
-[DATA](../groups/DATA.DATA.md) / DataStorageResultCode
+[数据处理](../groups/数据处理.数据处理.md) / DataStorageResultCode
 
 # DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
 

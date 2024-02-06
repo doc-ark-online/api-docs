@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponAccuracyOfFireComponent
+[玩法](../groups/玩法.玩法.md) / HotWeaponAccuracyOfFireComponent
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
@@ -11,7 +11,7 @@
 当你投篮时，你希望篮球准确地进入篮筐，而不是偏离目标。这就是投篮的精度。在武器射击中，精度指的是武器发射的子弹能够准确地命中目标，而不是随意地朝着其他方向飞行。
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
+使用示例: 创建一个名为"HotWeaponAofSample1"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，代码如下：
 </span>
 
 ```ts
@@ -50,27 +50,27 @@ export default class HotWeaponAofSample1 extends Script {
 | 客户端实际射击精度值发生变化时执行绑定函数。|
 
 ### Accessors <Score text="Accessors" /> 
-| **[defaultDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#defaultdispersionhalfangle)**(): `number`  |
+| **[defaultDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#defaultdispersionhalfangle)**(): `number`   |
 | :-----|
-| 设置子弹随机发散范围的默认半径。|
-| **[dispersionHalfAngleDecreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangledecreasespeed)**(): `number`  |
-| 设置子弹随机发散范围半径的收缩速度。|
-| **[dispersionHalfAngleIncreasePerShot](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasepershot)**(): `number`  |
-| 设置子弹随机发散范围半径在每次射击后的扩张值。|
-| **[dispersionHalfAngleIncreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasespeed)**(): `number`  |
-| 设置子弹随机发散范围半径的扩张速度。|
-| **[maxDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#maxdispersionhalfangle)**(): `number`  |
-| 设置子弹随机发散范围的最大半径。|
-| **[minDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#mindispersionhalfangle)**(): `number`  |
-| 设置子弹随机发散范围的最小半径。|
+| 获取子弹随机发散范围的默认半径。|
+| **[dispersionHalfAngleDecreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangledecreasespeed)**(): `number`   |
+| 获取子弹随机发散范围半径的收缩速度。|
+| **[dispersionHalfAngleIncreasePerShot](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasepershot)**(): `number`   |
+| 获取子弹随机发散范围半径在每次射击后的扩张值。|
+| **[dispersionHalfAngleIncreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasespeed)**(): `number`   |
+| 获取子弹随机发散范围半径的扩张速度。|
+| **[maxDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#maxdispersionhalfangle)**(): `number`   |
+| 获取子弹随机发散范围的最大半径。|
+| **[minDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#mindispersionhalfangle)**(): `number`   |
+| 获取子弹随机发散范围的最小半径。|
 
 ### Methods <Score text="Methods" /> 
-| **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number`  |
+| **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number`   |
 | :-----|
 | 获取当前子弹随机发散范围半径实际值|
-| **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
-| 以预设位置处生成子弹，需要以 预设位置 + 该矢量 + 最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向|
-| **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number`  |
+| **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
+| **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number`   |
 | 设置目标子弹随机发散范围半径实际值|
 
 ## Properties
@@ -104,7 +104,6 @@ export default class HotWeaponAofSample1 extends Script {
 
 获取子弹随机发散范围的默认半径。
 
-
 #### Returns
 
 | `number` | 圆型范围半径值 |
@@ -117,7 +116,6 @@ export default class HotWeaponAofSample1 extends Script {
 
 设置子弹随机发散范围的默认半径。
 
-
 ::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
@@ -126,7 +124,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径值 default: |
+| `NewValue` `number` |  新设置的圆型范围半径值 <br> default: <br> range: type:浮点数 |
 | :------ | :------ |
 
 
@@ -158,7 +156,6 @@ ___
 
 获取子弹随机发散范围半径的收缩速度。
 
-
 #### Returns
 
 | `number` | 圆型范围半径每秒变化量 |
@@ -170,8 +167,6 @@ ___
 
 
 设置子弹随机发散范围半径的收缩速度。
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -213,7 +208,6 @@ ___
 
 获取子弹随机发散范围半径在每次射击后的扩张值。
 
-
 #### Returns
 
 | `number` | 圆型范围半径增量 |
@@ -225,8 +219,6 @@ ___
 
 
 设置子弹随机发散范围半径在每次射击后的扩张值。
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -268,7 +260,6 @@ ___
 
 获取子弹随机发散范围半径的扩张速度。
 
-
 #### Returns
 
 | `number` | 圆型范围半径每秒变化量 |
@@ -280,8 +271,6 @@ ___
 
 
 设置子弹随机发散范围半径的扩张速度。
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -323,7 +312,6 @@ ___
 
 获取子弹随机发散范围的最大半径。
 
-
 #### Returns
 
 | `number` | 圆型范围半径值 |
@@ -335,7 +323,6 @@ ___
 
 
 设置子弹随机发散范围的最大半径。
-
 
 ::: warning Precautions
 
@@ -377,7 +364,6 @@ ___
 
 获取子弹随机发散范围的最小半径。
 
-
 #### Returns
 
 | `number` | 圆型范围半径值 |
@@ -389,8 +375,6 @@ ___
 
 
 设置子弹随机发散范围的最小半径。
-
-调用端自动广播
 
 ::: warning Precautions
 
@@ -422,7 +406,6 @@ ___
 | `number` | 当前子弹发散范围半径 |
 | :------ | :------ |
 
-
 ___
 
 ### getRandomShootDir <Score text="getRandomShootDir" /> 
@@ -445,7 +428,6 @@ ___
 
 以预设位置处生成子弹，需要以 预设位置 + 该矢量 + 最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向
 
-
 ___
 
 ### getTargetDispersionHalfAngle <Score text="getTargetDispersionHalfAngle" /> 
@@ -458,4 +440,3 @@ ___
 
 | `number` | 目标子弹发散范围半径 |
 | :------ | :------ |
-

@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / InitialOscillatorOffset
+[玩法](../groups/玩法.玩法.md) / InitialOscillatorOffset
 
 # InitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="InitialOscillatorOffset" />
 

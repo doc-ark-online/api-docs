@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / PointerEvent
+[界面](../groups/界面.界面.md) / PointerEvent
 
 # PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 
@@ -7,29 +7,29 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[effectingButton](mw.PointerEvent.md#effectingbutton)**(): [`KeyEvent`](mw.KeyEvent.md)  |
+| **[effectingButton](mw.PointerEvent.md#effectingbutton)**(): [`KeyEvent`](mw.KeyEvent.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 获取响应的事件key|
-| **[isTouchEvent](mw.PointerEvent.md#istouchevent)**(): `boolean`  |
+| **[isTouchEvent](mw.PointerEvent.md#istouchevent)**(): `boolean` <Badge type="tip" text="client" />  |
 | 判断是不是触摸事件|
-| **[lastScreenSpacePosition](mw.PointerEvent.md#lastscreenspaceposition)**(): [`Vector2`](mw.Vector2.md)  |
+| **[lastScreenSpacePosition](mw.PointerEvent.md#lastscreenspaceposition)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取该事件上一次的屏幕位置|
-| **[mouseWheelDelta](mw.PointerEvent.md#mousewheeldelta)**(): `number`  |
+| **[mouseWheelDelta](mw.PointerEvent.md#mousewheeldelta)**(): `number` <Badge type="tip" text="client" />  |
 | 获取鼠标滚轮滑动的距离|
-| **[pointerIndex](mw.PointerEvent.md#pointerindex)**(): `number`  |
+| **[pointerIndex](mw.PointerEvent.md#pointerindex)**(): `number` <Badge type="tip" text="client" />  |
 | 返回该事件的唯一标识index|
-| **[screenSpacePosition](mw.PointerEvent.md#screenspaceposition)**(): [`Vector2`](mw.Vector2.md)  |
+| **[screenSpacePosition](mw.PointerEvent.md#screenspaceposition)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取触发的屏幕位置|
-| **[touchPadIndex](mw.PointerEvent.md#touchpadindex)**(): `number`  |
+| **[touchPadIndex](mw.PointerEvent.md#touchpadindex)**(): `number` <Badge type="tip" text="client" />  |
 | 获取触摸事件index|
-| **[userIndex](mw.PointerEvent.md#userindex)**(): `number`  |
+| **[userIndex](mw.PointerEvent.md#userindex)**(): `number` <Badge type="tip" text="client" />  |
 | 获取事件触发玩家的index|
 
 ### Methods <Score text="Methods" /> 
-| **[isMouseButtonDown](mw.PointerEvent.md#ismousebuttondown)**(`MouseButton`: [`Keys`](../enums/mw.Keys.md)): `boolean`  |
+| **[isMouseButtonDown](mw.PointerEvent.md#ismousebuttondown)**(`MouseButton`: [`Keys`](../enums/mw.Keys.md)): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
 | 判断是不是鼠标按键事件|
-| **[toInputEvent](mw.PointerEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
+| **[toInputEvent](mw.PointerEvent.md#toinputevent)**(): `InputEvent` <Badge type="tip" text="client" />  |
 | 转化为 InputEvent|
 
 默认构造
@@ -51,7 +51,6 @@
 
 
 获取响应的事件key
-
 
 #### Returns
 
@@ -80,7 +79,6 @@ ___
 
 判断是不是触摸事件
 
-
 #### Returns
 
 | `boolean` | 返回是否是触摸事件 |
@@ -107,7 +105,6 @@ ___
 
 
 获取该事件上一次的屏幕位置
-
 
 #### Returns
 
@@ -136,7 +133,6 @@ ___
 
 获取鼠标滚轮滑动的距离
 
-
 #### Returns
 
 | `number` | 返回鼠标滚轮滑动距离 |
@@ -163,7 +159,6 @@ ___
 
 
 返回该事件的唯一标识index
-
 
 #### Returns
 
@@ -192,7 +187,6 @@ ___
 
 获取触发的屏幕位置
 
-
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 返回触发的屏幕位置 |
@@ -219,7 +213,6 @@ ___
 
 
 获取触摸事件index
-
 
 #### Returns
 
@@ -248,7 +241,6 @@ ___
 
 获取事件触发玩家的index
 
-
 #### Returns
 
 </td>
@@ -276,17 +268,15 @@ ___
 | `boolean` | 返回是不是鼠标按键事件 |
 | :------ | :------ |
 
-
 ___
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-• **toInputEvent**(): [`InputEvent`](mw.InputEvent.md) <Badge type="tip" text="client" />
+• **toInputEvent**(): `InputEvent` <Badge type="tip" text="client" />
 
 转化为 InputEvent
 
 #### Returns
 
-| [`InputEvent`](mw.InputEvent.md) | 返回转化后 InputEvent |
+| `InputEvent` | 返回转化后 InputEvent |
 | :------ | :------ |
-

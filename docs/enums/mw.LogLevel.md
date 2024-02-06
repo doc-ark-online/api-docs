@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / LogLevel
+[基础类型](../groups/基础类型.基础类型.md) / LogLevel
 
 # LogLevel <Badge type="tip" text="Enumeration" /> <Score text="LogLevel" />
 

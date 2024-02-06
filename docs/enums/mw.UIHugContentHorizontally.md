@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIHugContentHorizontally
+[界面](../groups/界面.界面.md) / UIHugContentHorizontally
 
 # UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentHorizontally" />
 
