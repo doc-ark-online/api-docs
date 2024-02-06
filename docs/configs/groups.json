@@ -746,6 +746,15 @@
             },
             "no_children_files": null,
             "children": null
+          },
+          "SwimmingVolume": {
+            "file": {
+              "file_name": "mw.SwimmingVolume.md",
+              "file_path": "classes/mw.SwimmingVolume.md",
+              "name": "SwimmingVolume"
+            },
+            "no_children_files": null,
+            "children": null
           }
         }
       },

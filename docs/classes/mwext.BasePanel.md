@@ -12,7 +12,7 @@
 
 ## Type parameters
 
-| `T` | extends `mw.UIScript` |
+| `T` | extends [`UIScript`](mw.UIScript.md) |
 | :------ | :------ |
 
 ## Hierarchy
@@ -28,7 +28,7 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.BasePanel.md#size)**(): `Vector2`  |
+| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
 | 面板尺寸|
 | **[view](mwext.BasePanel.md#view)**(): `T`  |
@@ -55,14 +55,14 @@
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[getCanvasChildren](mwext.BaseView.md#getcanvaschildren)**<`T`: extends `Widget`<`T`\>\>(`canvas`: `Canvas`, `getType`: `TypeName`<`T`: extends `Widget`<`T`\>\>): `T`: extends `Widget`<`T`\>[] <Badge type="tip" text="client" />  |
+| **[getCanvasChildren](mwext.BaseView.md#getcanvaschildren)**<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>(`canvas`: [`Canvas`](mw.Canvas.md), `getType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>): `T`: extends [`Widget`](mw.Widget.md)<`T`\>[] <Badge type="tip" text="client" />  |
 | :-----|
 | 根据类型获取画布下子对象序列|
 | **[hide](mwext.BaseView.md#hide)**(): `void` <Badge type="tip" text="client" />  |
 | 关闭全局唯一界面|
 | **[show](mwext.BaseView.md#show)**(`...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
 | 显示全局唯一界面|
-| **[create](mwext.BaseView.md#create)**<`T`: extends `UIScript`<`T`\>\>(): `T`: extends `UIScript`<`T`\> <Badge type="tip" text="client" />  |
+| **[create](mwext.BaseView.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建界面|
 | **[hide](mwext.BaseView.md#hide-1)**(): `void` <Badge type="tip" text="client" />  |
 | 关闭全局唯一界面|
@@ -75,12 +75,12 @@
 
 #### Type parameters
 
-| `T` | extends `UIScript`<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 | :------ | :------ |
 
 #### Parameters
 
-| `viewClass` `TypeName`<`T`\> |  界面类 |
+| `viewClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
 | :------ | :------ |
 
 #### Overrides
@@ -97,7 +97,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **size**(): `Vector2`
+• `get` **size**(): [`Vector2`](mw.Vector2.md)
 
 </th>
 <th style="text-align: left">
@@ -114,7 +114,7 @@ ___
 
 #### Returns
 
-| `Vector2` |  |
+| [`Vector2`](mw.Vector2.md) |  |
 | :------ | :------ |
 
 
@@ -126,7 +126,7 @@ ___
 
 #### Parameters
 
-| `value` | `Vector2` |
+| `value` | [`Vector2`](mw.Vector2.md) |
 | :------ | :------ |
 
 

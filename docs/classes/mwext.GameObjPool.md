@@ -36,15 +36,15 @@ export default class GameObjPoolExample extends mw.Script {
 | **[destroy](mwext.GameObjPool.md#destroy)**(): `void`   |
 | :-----|
 | 销毁对象池全局实例|
-| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends `GameObject`<`T`\>\>   |
+| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
 | 异步生成一个对象|
 | **[clear](mwext.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `void`   |
 | 清除对象池中该GUID对应的所有对象|
 | **[clearAll](mwext.GameObjPool.md#clearall)**(): `void`   |
 | 清除对象池里的所有对象|
-| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: `GameObject`): `void`   |
+| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 归还一个对象|
-| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends `GameObject`<`T`\>   |
+| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
 | 生成一个对象|
 
 ## Methods
@@ -109,7 +109,7 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| `T` | extends `GameObject`<`T`\> |
+| `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
 | :------ | :------ |
 
 ___
@@ -237,7 +237,7 @@ ___
 
 #### Parameters
 
-| `obj` `GameObject` |  要归还的对象 |
+| `obj` [`GameObject`](mw.GameObject.md) |  要归还的对象 |
 | :------ | :------ |
 
 
@@ -311,5 +311,5 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| `T` | extends `GameObject`<`T`\> |
+| `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
 | :------ | :------ |

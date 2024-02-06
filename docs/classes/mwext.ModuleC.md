@@ -111,7 +111,7 @@ class PlayerModuleData extends Subdata {
 | **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
 | 本地玩家的模块数据|
-| **[localPlayer](mwext.ModuleC.md#localplayer)**(): `Player` <Badge type="tip" text="client" />  |
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />  |
 | 获取当前玩家|
 | **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前玩家ID|
@@ -174,7 +174,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Protected` `get` **localPlayer**(): `Player` <Badge type="tip" text="client" />
+• `Protected` `get` **localPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -186,7 +186,7 @@ ___
 
 #### Returns
 
-| `Player` |  |
+| [`Player`](mw.Player.md) |  |
 | :------ | :------ |
 
 </td>

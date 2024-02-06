@@ -18,7 +18,7 @@
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: `Action`  |
+| **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md)  |
 | :-----|
 | 当关闭的时候调用的事件|
 
@@ -27,7 +27,7 @@
 
 ::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.BasePanel.md#size)**(): `Vector2`  |
+| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
 | 面板尺寸|
 | **[view](mwext.BasePanel.md#view)**(): `T`  |
@@ -39,11 +39,11 @@
 | **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />  |
 | :-----|
 | 添加一个字段|
-| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: `Canvas`  }` & `UIScript`\> <Badge type="tip" text="client" />  |
+| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <Badge type="tip" text="client" />  |
 | 创建用于显示一条排行信息的item子UI|
 | **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void` <Badge type="tip" text="client" />  |
 | 当UI隐藏调用|
-| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: `TextBlock`): `void` <Badge type="tip" text="client" />  |
+| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <Badge type="tip" text="client" />  |
 | 设置自己(界面最下面那一行)的字段内容后调用，需要请复写|
 | **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <Badge type="tip" text="client" />  |
 | 当UI显示调用|
@@ -71,7 +71,7 @@
 
 ### onClose <Score text="onClose" /> 
 
-• `Readonly` **onClose**: `Action`
+• `Readonly` **onClose**: [`Action`](mw.Action.md)
 
 当关闭的时候调用的事件
 
@@ -101,13 +101,13 @@ ___
 
 ### creatItem <Score text="creatItem" /> 
 
-• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: `Canvas`  }` & `UIScript`\> <Badge type="tip" text="client" />
+• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <Badge type="tip" text="client" />
 
 创建用于显示一条排行信息的item子UI
 
 #### Returns
 
-| [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: `Canvas`  }` & `UIScript`\> | 一条排行信息的item子UI |
+| [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> | 一条排行信息的item子UI |
 | :------ | :------ |
 
 ___
@@ -140,7 +140,7 @@ ___
 | `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
 | `fieldValue` `string`  `number` |  字段显示内容 |
 | `textBlockIndex` `number` |  文本控件索引 |
-| `textBlock` `TextBlock` |  文本控件 |
+| `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 
 
 ___

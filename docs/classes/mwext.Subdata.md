@@ -96,7 +96,7 @@ class AppleModC extends ModuleC<AppleModS, AppleData> {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onDataChange](mwext.Subdata.md#ondatachange)**: `Action`  |
+| **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md)  |
 | :-----|
 | 数据变化的委托|
 
@@ -124,7 +124,7 @@ class AppleModC extends ModuleC<AppleModS, AppleData> {
 
 ### onDataChange <Score text="onDataChange" /> 
 
-• `Readonly` **onDataChange**: `Action`
+• `Readonly` **onDataChange**: [`Action`](mw.Action.md)
 
 数据变化的委托
 
