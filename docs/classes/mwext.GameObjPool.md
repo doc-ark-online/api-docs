@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / GameObjPool
+[基类](../groups/Extension.基类.md) / GameObjPool
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
@@ -33,18 +33,18 @@ export default class GameObjPoolExample extends mw.Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mwext.GameObjPool.md#destroy)**(): `void`  |
+| **[destroy](mwext.GameObjPool.md#destroy)**(): `void`   |
 | :-----|
 | 销毁对象池全局实例|
-| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
+| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends `GameObject`<`T`\>\>   |
 | 异步生成一个对象|
-| **[clear](mwext.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `void`  |
+| **[clear](mwext.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `void`   |
 | 清除对象池中该GUID对应的所有对象|
-| **[clearAll](mwext.GameObjPool.md#clearall)**(): `void`  |
+| **[clearAll](mwext.GameObjPool.md#clearall)**(): `void`   |
 | 清除对象池里的所有对象|
-| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: [`GameObject`](mw.GameObject.md)): `void`  |
+| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: `GameObject`): `void`   |
 | 归还一个对象|
-| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends `GameObject`<`T`\>   |
 | 生成一个对象|
 
 ## Methods
@@ -54,7 +54,6 @@ export default class GameObjPoolExample extends mw.Script {
 • **destroy**(): `void` 
 
 销毁对象池全局实例
-
 
 
 ___
@@ -81,7 +80,6 @@ ___
 注意需要把原始资源预加载
 
 :::
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
@@ -111,7 +109,7 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
+| `T` | extends `GameObject`<`T`\> |
 | :------ | :------ |
 
 ___
@@ -127,7 +125,6 @@ ___
 | `guid` `string` |  资源GUID |
 | :------ | :------ |
 | `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
-
 
 
 <span style="font-size: 14px;">
@@ -148,7 +145,9 @@ export default class GameObjPoolExample extends Script {
     public createCube(): void {
         const cubeAssetId = "197386";
         //创建10个方块 且位置不重叠
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0;
+i < 10;
+i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //回收该对象但不隐藏
@@ -174,7 +173,6 @@ ___
 清除对象池里的所有对象
 
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁
 </span>
@@ -194,7 +192,9 @@ export default class GameObjPoolExample extends Script {
         const cubeAssetId = "197386";
         const cubeAssetId2 = "7675";
         //创建10个方块 且位置不重叠
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0;
+i < 10;
+i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //只回收前5个方块
@@ -206,7 +206,9 @@ export default class GameObjPoolExample extends Script {
             });
         }
         //创建10个球体 且位置不重叠
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0;
+i < 10;
+i++) {
             GameObjPool.asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 300, 0);
                 //只回收前5个球体
@@ -235,9 +237,8 @@ ___
 
 #### Parameters
 
-| `obj` [`GameObject`](mw.GameObject.md) |  要归还的对象 |
+| `obj` `GameObject` |  要归还的对象 |
 | :------ | :------ |
-
 
 
 <span style="font-size: 14px;">
@@ -285,7 +286,6 @@ ___
 | `T` | 生成的对象 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块
 </span>
@@ -311,5 +311,5 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
+| `T` | extends `GameObject`<`T`\> |
 | :------ | :------ |

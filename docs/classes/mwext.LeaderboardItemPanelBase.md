@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardItemPanelBase
+[界面](../groups/Extension.界面.md) / LeaderboardItemPanelBase
 
 # LeaderboardItemPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardItemPanelBase<T\>" />
 
@@ -18,14 +18,14 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number`  |
+| **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
 | 当前显示对象的playerId|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
+| **[size](mwext.BasePanel.md#size)**(): `Vector2`  |
 | :-----|
 | 面板尺寸|
 | **[view](mwext.BasePanel.md#view)**(): `T`  |
@@ -34,19 +34,19 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void`  |
+| **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 显示在画布上调用，需要请复写|
-| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: `TextBlock`): `void` <Badge type="tip" text="client" />  |
 | 设置字段内容后调用，需要请复写|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[onAdded](mwext.BasePanel.md#onadded)**(): `void`  |
+| **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 生命周期-被添加到父节点时候触发，可能会多次调用|
-| **[onAwake](mwext.BasePanel.md#onawake)**(): `void`  |
+| **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-构建面板自动触发，只会调用一次|
 :::
 
@@ -60,7 +60,7 @@
 
 #### Parameters
 
-| `viewClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
+| `viewClass` `TypeName`<`T`\> |  界面类 |
 | :------ | :------ |
 
 #### Overrides
@@ -86,7 +86,6 @@ ___
 
 
 当前显示对象的playerId
-
 
 #### Returns
 
@@ -114,7 +113,6 @@ ___
 | `rankIndex` `number` |  排名(0开始) |
 
 
-
 ___
 
 ### onFieldSet <Score text="onFieldSet" /> 
@@ -131,6 +129,5 @@ ___
 | `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
 | `fieldValue` `string`  `number` |  字段显示内容 |
 | `textBlockIndex` `number` |  文本控件索引 |
-| `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
-
+| `textBlock` `TextBlock` |  文本控件 |
 

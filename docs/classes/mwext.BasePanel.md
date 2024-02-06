@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / BasePanel
+[界面](../groups/Extension.界面.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
@@ -12,7 +12,7 @@
 
 ## Type parameters
 
-| `T` | extends [`UIScript`](mw.UIScript.md) |
+| `T` | extends `mw.UIScript` |
 | :------ | :------ |
 
 ## Hierarchy
@@ -28,14 +28,14 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
+| **[size](mwext.BasePanel.md#size)**(): `Vector2`  |
 | :-----|
 | 面板尺寸|
 | **[view](mwext.BasePanel.md#view)**(): `T`  |
 | 面板所控制的界面|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
 | **[holdBackTouch](mwext.BaseView.md#holdbacktouch)**(`value`: `boolean`): `void`  |
 | :-----|
@@ -46,27 +46,27 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[onAdded](mwext.BasePanel.md#onadded)**(): `void`  |
+| **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 生命周期-被添加到父节点时候触发，可能会多次调用|
-| **[onAwake](mwext.BasePanel.md#onawake)**(): `void`  |
+| **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <Badge type="tip" text="client" />  |
 | 生命周期方法-构建面板自动触发，只会调用一次|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[getCanvasChildren](mwext.BaseView.md#getcanvaschildren)**<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>(`canvas`: [`Canvas`](mw.Canvas.md), `getType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Widget`](mw.Widget.md)<`T`\>\>): `T`: extends [`Widget`](mw.Widget.md)<`T`\>[]  |
+| **[getCanvasChildren](mwext.BaseView.md#getcanvaschildren)**<`T`: extends `Widget`<`T`\>\>(`canvas`: `Canvas`, `getType`: `TypeName`<`T`: extends `Widget`<`T`\>\>): `T`: extends `Widget`<`T`\>[] <Badge type="tip" text="client" />  |
 | :-----|
 | 根据类型获取画布下子对象序列|
-| **[hide](mwext.BaseView.md#hide)**(): `void`  |
+| **[hide](mwext.BaseView.md#hide)**(): `void` <Badge type="tip" text="client" />  |
 | 关闭全局唯一界面|
-| **[show](mwext.BaseView.md#show)**(`...params`: `any`[]): `void`  |
+| **[show](mwext.BaseView.md#show)**(`...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
 | 显示全局唯一界面|
-| **[create](mwext.BaseView.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>  |
+| **[create](mwext.BaseView.md#create)**<`T`: extends `UIScript`<`T`\>\>(): `T`: extends `UIScript`<`T`\> <Badge type="tip" text="client" />  |
 | 创建界面|
-| **[hide](mwext.BaseView.md#hide-1)**(): `void`  |
+| **[hide](mwext.BaseView.md#hide-1)**(): `void` <Badge type="tip" text="client" />  |
 | 关闭全局唯一界面|
-| **[show](mwext.BaseView.md#show-1)**(`...params`: `any`[]): `void`  |
+| **[show](mwext.BaseView.md#show-1)**(`...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
 | 显示全局唯一界面|
 :::
 
@@ -75,12 +75,12 @@
 
 #### Type parameters
 
-| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
+| `T` | extends `UIScript`<`T`\> |
 | :------ | :------ |
 
 #### Parameters
 
-| `viewClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
+| `viewClass` `TypeName`<`T`\> |  界面类 |
 | :------ | :------ |
 
 #### Overrides
@@ -97,7 +97,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **size**(): [`Vector2`](mw.Vector2.md)
+• `get` **size**(): `Vector2`
 
 </th>
 <th style="text-align: left">
@@ -114,7 +114,7 @@ ___
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) |  |
+| `Vector2` |  |
 | :------ | :------ |
 
 
@@ -126,7 +126,7 @@ ___
 
 #### Parameters
 
-| `value` | [`Vector2`](mw.Vector2.md) |
+| `value` | `Vector2` |
 | :------ | :------ |
 
 
@@ -173,7 +173,6 @@ ___
 生命周期-被添加到父节点时候触发，可能会多次调用
 
 
-
 ___
 
 ### onAwake <Score text="onAwake" /> 
@@ -181,5 +180,4 @@ ___
 • `Protected` **onAwake**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-构建面板自动触发，只会调用一次
-
 
