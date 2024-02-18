@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'doc-theme-323'
 import { defineConfigWithTheme } from 'vitepress'
-import { dealConfigSidebar } from '../../utils'
+import { dealConfigSidebarV2 } from '../../utils'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
   // {
@@ -23,7 +23,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     ]
   },
 
-  ...dealConfigSidebar()
+  ...dealConfigSidebarV2()
 ]
 
 export default defineConfigWithTheme<DefaultTheme.Config>({
