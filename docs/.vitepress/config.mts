@@ -1,5 +1,6 @@
 import type { DefaultTheme } from 'doc-theme-323'
 import { defineConfigWithTheme } from 'vitepress'
+import { dealConfigSidebar } from '../../utils'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
   // {
