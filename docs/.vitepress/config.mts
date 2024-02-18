@@ -22,7 +22,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     ]
   },
 
-  // ...dealConfigSidebar()
+  ...dealConfigSidebar()
 ]
 
 export default defineConfigWithTheme<DefaultTheme.Config>({
