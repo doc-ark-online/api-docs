@@ -38,7 +38,7 @@ Classes
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [界面](groups/界面.界面.md) |
-| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
+| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [服务](groups/服务.服务.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [服务](groups/服务.服务.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 调色板 | [界面](groups/界面.界面.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [输入](groups/输入.输入.md) |
@@ -51,7 +51,7 @@ Classes
 | [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据。 | [基类](groups/基类.基类.md) |
 | [DataStorage](classes/mw.DataStorage.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [DebugService](classes/mw.DebugService.md) | debug调试服务 | [服务](groups/服务.服务.md) |
-| [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [工具](groups/工具.工具.md) |
 | [Delegate](classes/mw.Delegate.md) | 委托 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [界面](groups/界面.界面.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [界面](groups/界面.界面.md) |
@@ -111,7 +111,7 @@ Classes
 ## J
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [JoystickBindKeyType](classes/mw.JoystickBindKeyType.md) | 摇杆按键绑定 | [UI](groups/UI.UI.md) |
+| [JoystickBindKeyType](classes/mw.JoystickBindKeyType.md) | 摇杆按键绑定 | [界面](groups/界面.界面.md) |
 | [JoystickStyleDesigner](classes/mw.JoystickStyleDesigner.md) | 摇杆信息 | [界面](groups/界面.界面.md) |
 
 
@@ -170,7 +170,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
-| [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [玩法](groups/玩法.玩法.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [界面](groups/界面.界面.md) |
