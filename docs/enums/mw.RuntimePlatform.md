@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / RuntimePlatform
+[基础类型](../groups/基础类型.基础类型.md) / RuntimePlatform
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 

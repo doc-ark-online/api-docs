@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Navigation
+[玩法](../groups/玩法.玩法.md) / Navigation
 
 # Navigation <Badge type="tip" text="Class" /> <Score text="Navigation" />
 
@@ -25,16 +25,16 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[findPath](mw.Navigation.md#findpath)**(`startPos`: [`Vector`](mw.Vector.md), `endPos`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)[]  |
+| **[findPath](mw.Navigation.md#findpath)**(`startPos`: [`Vector`](mw.Vector.md), `endPos`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)[]   |
 | :-----|
 | 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
-| **[follow](mw.Navigation.md#follow)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `target`: [`GameObject`](mw.GameObject.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void`  |
+| **[follow](mw.Navigation.md#follow)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `target`: [`GameObject`](mw.GameObject.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `boolean`   |
 | 跟随目标|
-| **[navigateTo](mw.Navigation.md#navigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `position`: [`Vector`](mw.Vector.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void`  |
+| **[navigateTo](mw.Navigation.md#navigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `position`: [`Vector`](mw.Vector.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void`   |
 | 寻路移动|
-| **[stopFollow](mw.Navigation.md#stopfollow)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`  |
+| **[stopFollow](mw.Navigation.md#stopfollow)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 停止跟随|
-| **[stopNavigateTo](mw.Navigation.md#stopnavigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`  |
+| **[stopNavigateTo](mw.Navigation.md#stopnavigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 导航停止|
 
 ## Methods
@@ -56,17 +56,13 @@
 | [`Vector`](mw.Vector.md)[] | 主要路径点 |
 | :------ | :------ |
 
-
-
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_FindPath"的代码保存,运行游戏,按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下:
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）。创建一个脚本挂载在目标对象下方。在脚本中复制下列"Example_Navigation_FindPath"的代码保存，运行游戏，按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下：
 </span>
 
 ```ts
-
-**`Component`**
-
-export default class Example_Navigation_FindPath extends Script {
+ @Component
+ export default class Example_Navigation_FindPath extends Script {
 
      protected onStart(): void {
          // 下列逻辑仅在客户端执行
@@ -97,7 +93,7 @@ ___
 
 ### follow <Score text="follow" /> 
 
-• `Static` **follow**(`relatedObject`, `target`, `radius?`, `OnSuccess?`, `OnFail?`): `void` 
+• `Static` **follow**(`relatedObject`, `target`, `radius?`, `OnSuccess?`, `OnFail?`): `boolean` 
 
 跟随目标
 
@@ -107,20 +103,23 @@ ___
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) | 被跟随目标 |
 | `radius?` `number` | 距目标半径 default:0 |
-| `OnSuccess?` () => `void` | 成功回调 default:null |
-| `OnFail?` () => `void` | 失败回调 default:null |
+| `OnSuccess?` () => `void` | 成功回调（当跟随到设定的目标范围内时触发——可多次） default:null |
+| `OnFail?` () => `void` | 失败回调（当跟随的目标消失或离开寻路区域范围触发——可多次） default:null |
 
+#### Returns
 
+| `boolean` | 跟随请求是否成功 |
+| :------ | :------ |
 
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存,运行游戏,按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下:
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：
 </span>
 
 ```ts
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -132,7 +131,7 @@ ___
 
              // 添加一个客户端事件”FOLLOW“的监听器，让npc寻路跟随客户端玩家角色（NPC寻路需要在服务器调用，玩家角色无法使用Follow）
              Event.addClientListener("FOLLOW", (player) => {
-                 Navigation.follow(npc, player.character, 50, () => `{ EffectService.playOnGameObject("151570", npc, {slotType: HumanoidSlotType.Rings}`)});
+                 Navigation.follow(npc, player.character, 50, () => { EffectService.playOnGameObject("151570", npc, {slotType: HumanoidSlotType.Rings})});
              });
 
              // 添加一个客户端事件”STOPFOLLOW“的监听器，让npc停止跟随
@@ -176,16 +175,15 @@ ___
 | `OnFail?` () => `void` | 失败回调 default:null |
 
 
-
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存,运行游戏,按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下:
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存，运行游戏，按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下：
 </span>
 
 ```ts
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): Promise<void> {
+      protected async onStart(): `Promise`<`void`\> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {
@@ -196,7 +194,7 @@ ___
 
               //添加一个按键方法：按下按键“1”，角色寻路至目标位置,并播放一个特效
               InputUtil.onKeyDown(Keys.One, () => {
-                  Navigation.navigateTo(myChara, signs.worldTransform.position, 50, () => `{ EffectService.playOnGameObject("151570", myChara, {slotType: HumanoidSlotType.Rings}`)});
+                  Navigation.navigateTo(myChara, signs.worldTransform.position, 50, () => { EffectService.playOnGameObject("151570", myChara, {slotType: HumanoidSlotType.Rings})});
               });
 
               //添加一个按键方法：按下按键“2”，角色停止寻路
@@ -222,16 +220,15 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存,运行游戏,按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下:
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：
 </span>
 
 ```ts
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -243,7 +240,7 @@ ___
 
              // 添加一个客户端事件”FOLLOW“的监听器，让npc寻路跟随客户端玩家角色（NPC寻路需要在服务器调用，玩家角色无法使用Follow）
              Event.addClientListener("FOLLOW", (player) => {
-                 Navigation.follow(npc, player.character, 50, () => `{ EffectService.playOnGameObject("151570", npc, {slotType: HumanoidSlotType.Rings}`)});
+                 Navigation.follow(npc, player.character, 50, () => { EffectService.playOnGameObject("151570", npc, {slotType: HumanoidSlotType.Rings})});
              });
 
              // 添加一个客户端事件”STOPFOLLOW“的监听器，让npc停止跟随
@@ -283,16 +280,15 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存,运行游戏,按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下:
+使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存，运行游戏，按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下：
 </span>
 
 ```ts
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): Promise<void> {
+      protected async onStart(): `Promise`<`void`\> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {
@@ -303,7 +299,7 @@ ___
 
               //添加一个按键方法：按下按键“1”，角色寻路至目标位置,并播放一个特效
               InputUtil.onKeyDown(Keys.One, () => {
-                  Navigation.navigateTo(myChara, signs.worldTransform.position, 50, () => `{ EffectService.playOnGameObject("151570", myChara, {slotType: HumanoidSlotType.Rings}`)});
+                  Navigation.navigateTo(myChara, signs.worldTransform.position, 50, () => { EffectService.playOnGameObject("151570", myChara, {slotType: HumanoidSlotType.Rings})});
               });
 
               //添加一个按键方法：按下按键“2”，角色停止寻路

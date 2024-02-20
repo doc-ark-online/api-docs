@@ -1,11 +1,11 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponLoadComponent
+[玩法](../groups/玩法.玩法.md) / HotWeaponLoadComponent
 
 # HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"HotWeaponLoadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启上膛组件并设置参数，添加委托的效果,代码如下:
+使用示例: 创建一个名为"HotWeaponLoadSample1"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，代码如下：
 </span>
 
 ```ts
@@ -20,6 +20,7 @@ export default class HotWeaponLoadSample1 extends Script {
             hotWeapon.loadComponent.loadDuration = 1
             hotWeapon.loadComponent.loadAfterFireEnabled = true;
             hotWeapon.loadComponent.animationAssetId = "4172";
+
             hotWeapon.loadComponent.onStartLoad.add(() => { console.log("loadComponent.onStartLoad Server") });
             hotWeapon.loadComponent.onEndLoad.add(() => { console.log("loadComponent.onEndLoad Server") });
         } else if (SystemUtil.isClient()) {
@@ -35,18 +36,18 @@ export default class HotWeaponLoadSample1 extends Script {
 ### Properties <Score text="Properties" /> 
 | **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|
-| 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| 服务器上膛结束时执行绑定函数。|
 | **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: `MulticastDelegateInterface`<() => `void`\>  |
-| 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| 服务器开始上膛时执行绑定函数。|
 
 ### Accessors <Score text="Accessors" /> 
-| **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string`  |
+| **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean`  |
-| 设置是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number`  |
-| 设置上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例|
+| 获取绑定的动画GUID。|
+| **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean`   |
+| 获取是否开启开火后自动上膛的功能。|
+| **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number`   |
+| 获取上膛时间。|
 
 ## Properties
 
@@ -54,7 +55,7 @@ export default class HotWeaponLoadSample1 extends Script {
 
 • **onEndLoad**: `MulticastDelegateInterface`<() => `void`\>
 
-服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
+服务器上膛结束时执行绑定函数。
 
 ___
 
@@ -62,7 +63,7 @@ ___
 
 • **onStartLoad**: `MulticastDelegateInterface`<() => `void`\>
 
-服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
+服务器开始上膛时执行绑定函数。
 
 ## Accessors
 
@@ -85,8 +86,7 @@ ___
 <td style="text-align: left">
 
 
-获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例
-
+获取绑定的动画GUID。
 
 #### Returns
 
@@ -98,9 +98,7 @@ ___
 <td style="text-align: left">
 
 
-设置动画 GUID。使用示例见类 HotWeaponLoadComponent 使用示例
-
-调用端自动广播
+设置动画 GUID。
 
 #### Parameters
 
@@ -134,8 +132,7 @@ ___
 <td style="text-align: left">
 
 
-获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
-
+获取是否开启开火后自动上膛的功能。
 
 #### Returns
 
@@ -147,9 +144,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
-
-调用端自动广播
+设置是否开启开火后自动上膛的功能。
 
 ::: warning Precautions
 
@@ -189,8 +184,7 @@ ___
 <td style="text-align: left">
 
 
-获取上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例
-
+获取上膛时间。
 
 #### Returns
 
@@ -202,8 +196,7 @@ ___
 <td style="text-align: left">
 
 
-设置上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例
-
+设置上膛时间。
 
 ::: warning Precautions
 
@@ -213,7 +206,7 @@ ___
 
 #### Parameters
 
-| `time` `number` |  上膛时间 |
+| `time` `number` |  上膛时间 <br> default: 0.1 <br> range: [0.01, 10] |
 | :------ | :------ |
 
 

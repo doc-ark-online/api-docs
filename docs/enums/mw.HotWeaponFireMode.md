@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponFireMode
+[玩法](../groups/玩法.玩法.md) / HotWeaponFireMode
 
 # HotWeaponFireMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponFireMode" />
 

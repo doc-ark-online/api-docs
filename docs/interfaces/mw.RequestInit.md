@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / RequestInit
+[玩法](../groups/玩法.玩法.md) / RequestInit
 
 # RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
 

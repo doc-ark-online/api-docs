@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / AssetType
+[基础类型](../groups/基础类型.基础类型.md) / AssetType
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 
@@ -11,6 +11,7 @@
 | :----- |
 | **[Character](mw.AssetType.md#character)** = ``7`` |
 | **[Cloth](mw.AssetType.md#cloth)** = ``3`` |
+| **[DynamicAttachment](mw.AssetType.md#dynamicattachment)** = ``9`` |
 | **[ParticleSystem](mw.AssetType.md#particlesystem)** = ``8`` |
 | **[Prefab](mw.AssetType.md#prefab)** = ``6`` |
 | **[SkeletalMesh](mw.AssetType.md#skeletalmesh)** = ``2`` |
@@ -41,6 +42,14 @@ ___
 • **Cloth** = ``3``
 
 Cloth
+
+___
+
+### DynamicAttachment <Score text="DynamicAttachment" /> 
+
+• **DynamicAttachment** = ``9``
+
+DynamicAttachment
 
 ___
 

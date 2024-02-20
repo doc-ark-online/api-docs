@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / BodyPartTypeV1
+[角色系统](../groups/角色系统.角色系统.md) / BodyPartTypeV1
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 

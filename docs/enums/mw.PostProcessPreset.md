@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcessPreset
+[场景](../groups/场景.场景.md) / PostProcessPreset
 
 # PostProcessPreset <Badge type="tip" text="Enumeration" /> <Score text="PostProcessPreset" />
 

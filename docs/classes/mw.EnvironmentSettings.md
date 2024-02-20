@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / EnvironmentSettings
+[设置](../groups/设置.设置.md) / EnvironmentSettings
 
 # EnvironmentSettings <Badge type="tip" text="Class" /> <Score text="EnvironmentSettings" />
 
@@ -32,12 +32,12 @@ export default class ClassExample extends Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number`  |
+| **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
 | 获取当前重力大小|
-| **[getGravityMode](mw.EnvironmentSettings.md#getgravitymode)**(): [`GravityMode`](../enums/mw.GravityMode.md)  |
+| **[getGravityMode](mw.EnvironmentSettings.md#getgravitymode)**(): [`GravityMode`](../enums/mw.GravityMode.md) <Badge type="tip" text="client" />  |
 | 获取当前重力模式|
-| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void`  |
+| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void` <Badge type="tip" text="other" />  |
 | 设置世界整体膨胀时间速度|
 
 ## Methods
@@ -53,7 +53,6 @@ export default class ClassExample extends Script {
 | `number` | 重力大小。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力大小 |
 | :------ | :------ |
 
-
 ___
 
 ### getGravityMode <Score text="getGravityMode" /> 
@@ -66,7 +65,6 @@ ___
 
 | [`GravityMode`](../enums/mw.GravityMode.md) | 重力模式。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力模式 |
 | :------ | :------ |
-
 
 ___
 
@@ -82,8 +80,7 @@ ___
 | :------ | :------ |
 
 
-调用端自动广播
-
 ::: warning Precautions
 
 世界整体膨胀时间速度默认为1，当膨胀时间速度设置小于1时，世界中所有对象的整体运行时间会开始变慢。膨胀时间速度最小值为0.2。
+             单机模式可以将膨胀设置为0达到时间暂停的效果

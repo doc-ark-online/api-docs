@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / ScreenUtil
+[工具](../groups/工具.工具.md) / ScreenUtil
 
 # ScreenUtil <Badge type="tip" text="Class" /> <Score text="ScreenUtil" />
 
@@ -7,12 +7,12 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[]  |
+| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <Badge type="tip" text="client" />  |
 | :-----|
 | 获取视口相应位置的物体|
-| **[getSightBeadPosition](mw.ScreenUtil.md#getsightbeadposition)**(): [`Vector`](mw.Vector.md)  |
+| **[getSightBeadPosition](mw.ScreenUtil.md#getsightbeadposition)**(): [`Vector`](mw.Vector.md) <Badge type="tip" text="client" />  |
 | 获取相机中心点所瞄准的世界位置|
-| **[projectWorldPositionToWidgetPosition](mw.ScreenUtil.md#projectworldpositiontowidgetposition)**(`player`: [`Player`](mw.Player.md), `worldLocation`: [`Vector`](mw.Vector.md), `outScreenPosition`: [`Vector2`](mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean`  |
+| **[projectWorldPositionToWidgetPosition](mw.ScreenUtil.md#projectworldpositiontowidgetposition)**(`player`: [`Player`](mw.Player.md), `worldLocation`: [`Vector`](mw.Vector.md), `outScreenPosition`: [`Vector2`](mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <Badge type="tip" text="client" />  |
 | 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
 
 ## Methods
@@ -37,7 +37,6 @@
 | [`HitResult`](mw.HitResult.md)[] | 点击位置的物体 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，获取触摸位置所对应的世界Object
 </span>
@@ -60,7 +59,9 @@ export default class ScreenExample extends Script {
     private onTouchBegin(index: number, location: Vector2): mw.GameObject{
        return ScreenUtil.getGameObjectByScreenPosition(location.x, location.y)[0].gameObject;
     }
+}
 ```
+
 ___
 
 ### getSightBeadPosition <Score text="getSightBeadPosition" /> 
@@ -73,7 +74,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 目标点世界位置 |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置
@@ -92,7 +92,7 @@ export default class ScreenExample extends Script {
             }
         })
     }
-```
+
 ___
 
 ### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 
@@ -113,4 +113,3 @@ ___
 
 | `boolean` | boolean |
 | :------ | :------ |
-

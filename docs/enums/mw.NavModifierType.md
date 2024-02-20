@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / NavModifierType
+[玩法](../groups/玩法.玩法.md) / NavModifierType
 
 # NavModifierType <Badge type="tip" text="Enumeration" /> <Score text="NavModifierType" />
 

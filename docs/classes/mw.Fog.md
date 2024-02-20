@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / Fog
+[场景](../groups/场景.场景.md) / Fog
 
 # Fog <Badge type="tip" text="Class" /> <Score text="Fog" />
 
@@ -21,30 +21,30 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[density](mw.Fog.md#density)**(): `number`  |
+| **[density](mw.Fog.md#density)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置雾密度|
-| **[directionalInscatteringColor](mw.Fog.md#directionalinscatteringcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.|
-| **[directionalInscatteringExponent](mw.Fog.md#directionalinscatteringexponent)**(): `number`  |
-| 设置太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.|
-| **[directionalInscatteringStartDistance](mw.Fog.md#directionalinscatteringstartdistance)**(): `number`  |
-| 设置太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.|
-| **[enabled](mw.Fog.md#enabled)**(): `boolean`  |
-| 设置是否启用环境雾|
-| **[height](mw.Fog.md#height)**(): `number`  |
-| 设置雾高度|
-| **[heightFalloff](mw.Fog.md#heightfalloff)**(): `number`  |
-| 设置雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)|
-| **[inscatteringColor](mw.Fog.md#inscatteringcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
-| 设置雾散射颜色|
-| **[maxOpacity](mw.Fog.md#maxopacity)**(): `number`  |
-| 设置雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)|
-| **[startDistance](mw.Fog.md#startdistance)**(): `number`  |
-| 设置雾起始距离(到摄像机的距离)|
+| 获取雾密度|
+| **[directionalInscatteringColor](mw.Fog.md#directionalinscatteringcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.|
+| **[directionalInscatteringExponent](mw.Fog.md#directionalinscatteringexponent)**(): `number` <Badge type="tip" text="client" />  |
+| 获取太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.|
+| **[directionalInscatteringStartDistance](mw.Fog.md#directionalinscatteringstartdistance)**(): `number` <Badge type="tip" text="client" />  |
+| 获取太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.|
+| **[enabled](mw.Fog.md#enabled)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否启用环境雾|
+| **[height](mw.Fog.md#height)**(): `number` <Badge type="tip" text="client" />  |
+| 获取雾高度|
+| **[heightFalloff](mw.Fog.md#heightfalloff)**(): `number` <Badge type="tip" text="client" />  |
+| 获取雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)|
+| **[inscatteringColor](mw.Fog.md#inscatteringcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| 获取雾散射颜色|
+| **[maxOpacity](mw.Fog.md#maxopacity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)|
+| **[startDistance](mw.Fog.md#startdistance)**(): `number` <Badge type="tip" text="client" />  |
+| 获取雾起始距离(到摄像机的距离)|
 
 ### Methods <Score text="Methods" /> 
-| **[setPreset](mw.Fog.md#setpreset)**(`presetIndex`: [`FogPreset`](../enums/mw.FogPreset.md)): `void`  |
+| **[setPreset](mw.Fog.md#setpreset)**(`presetIndex`: [`FogPreset`](../enums/mw.FogPreset.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 设置雾预设|
 
@@ -72,7 +72,6 @@
 获取雾密度
 
 
-
 #### Returns
 
 | `number` | 雾密度 |
@@ -84,7 +83,6 @@
 
 
 设置雾密度
-
 
 
 #### Parameters
@@ -102,12 +100,12 @@
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾密度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾密度
@@ -125,12 +123,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾密度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾密度
@@ -168,7 +166,6 @@ ___
 获取太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.
 
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 太阳光散射颜色 |
@@ -180,7 +177,6 @@ ___
 
 
 设置太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.
-
 
 
 #### Parameters
@@ -198,12 +194,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制太阳光散射颜色
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 太阳光散射颜色
@@ -217,12 +213,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制太阳光散射颜色
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 太阳光散射颜色
@@ -256,7 +252,6 @@ ___
 获取太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.
 
 
-
 #### Returns
 
 | `number` | 太阳光散射指数 |
@@ -268,7 +263,6 @@ ___
 
 
 设置太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.
-
 
 
 #### Parameters
@@ -286,12 +280,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制太阳光散射指数
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加太阳光散射指数
@@ -309,12 +303,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制太阳光散射指数
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加太阳光散射指数
@@ -352,7 +346,6 @@ ___
 获取太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.
 
 
-
 #### Returns
 
 | `number` | 太阳光散射初始距离 |
@@ -364,7 +357,6 @@ ___
 
 
 设置太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.
-
 
 
 #### Parameters
@@ -382,12 +374,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制太阳光散射初始距离
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加太阳光散射初始距离
@@ -405,12 +397,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制太阳光散射初始距离
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加太阳光散射初始距离
@@ -448,7 +440,6 @@ ___
 获取是否启用环境雾
 
 
-
 #### Returns
 
 | `boolean` | 是否启用 |
@@ -460,7 +451,6 @@ ___
 
 
 设置是否启用环境雾
-
 
 
 #### Parameters
@@ -475,15 +465,14 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例: 可按如下操作控制编辑器后处理实时效果
+使用示例: 可按如下操作控制编辑器后处理实时效果。创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾开启关闭
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 开启雾效
@@ -501,12 +490,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾开启关闭
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 开启雾效
@@ -544,7 +533,6 @@ ___
 获取雾高度
 
 
-
 #### Returns
 
 | `number` | 雾高度 |
@@ -556,7 +544,6 @@ ___
 
 
 设置雾高度
-
 
 
 #### Parameters
@@ -574,12 +561,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾高度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾高度
@@ -597,12 +584,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾高度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾高度
@@ -640,7 +627,6 @@ ___
 获取雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)
 
 
-
 #### Returns
 
 | `number` | 雾衰弱高度 |
@@ -652,7 +638,6 @@ ___
 
 
 设置雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)
-
 
 
 #### Parameters
@@ -670,12 +655,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾衰弱高度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾衰弱高度
@@ -693,12 +678,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾衰弱高度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾衰弱高度
@@ -736,7 +721,6 @@ ___
 获取雾散射颜色
 
 
-
 #### Returns
 
 | [`LinearColor`](mw.LinearColor.md) | 雾散射颜色 |
@@ -748,7 +732,6 @@ ___
 
 
 设置雾散射颜色
-
 
 
 #### Parameters
@@ -766,12 +749,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制雾散射颜色
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 设置雾散射颜色
@@ -785,12 +768,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制雾散射颜色
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 设置雾散射颜色
@@ -824,7 +807,6 @@ ___
 获取雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)
 
 
-
 #### Returns
 
 | `number` | 雾最大透明度 |
@@ -836,7 +818,6 @@ ___
 
 
 设置雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)
-
 
 
 #### Parameters
@@ -854,12 +835,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾最大透明度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾最大透明度
@@ -877,12 +858,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾最大透明度
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾最大透明度
@@ -920,7 +901,6 @@ ___
 获取雾起始距离(到摄像机的距离)
 
 
-
 #### Returns
 
 | `number` | 雾起始距离 |
@@ -932,7 +912,6 @@ ___
 
 
 设置雾起始距离(到摄像机的距离)
-
 
 
 #### Parameters
@@ -948,12 +927,12 @@ ___
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾起始距离
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾起始距离
@@ -971,12 +950,12 @@ export default class FogExample extends Script {
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1和2键控制雾起始距离
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 增加雾起始距离
@@ -1006,17 +985,16 @@ export default class FogExample extends Script {
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾预设
+创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制雾预设
 ```ts
 @Component
 export default class FogExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if (SystemUtil.isClient()) {
             InputUtil.onKeyDown(Keys.One, () => {
                 // 雾预设

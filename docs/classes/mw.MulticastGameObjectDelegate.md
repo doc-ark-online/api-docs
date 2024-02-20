@@ -1,11 +1,11 @@
-[TYPE](../groups/TYPE.TYPE.md) / MulticastGameObjectDelegate
+[基础类型](../groups/基础类型.基础类型.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
 广播代理
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"MultidelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 5 。
+使用示例: 创建一个名为"MultidelExample"的脚本，打开脚本，输入以下代码保存，运行游戏，打印输出 5 。
 </span>
 
 ```ts
@@ -13,10 +13,10 @@
  export default class ActionExample extends Script {
 
      // 示例函数，满足 GameObjectDelegateFuncType 约束
-     public async addNumbers(object: GameObject): Promise<void> {
+     public async addNumbers(object: GameObject): `Promise`<`void`\> {
          console.log(object.gameObjectId);
      }
-     protected async onStart(): Promise<void> {
+     protected async onStart(): `Promise`<`void`\> {
 
          // 实例化 MulticastGameObjectDelegate 类
          const delegateInstance = new MulticastGameObjectDelegate();
@@ -32,14 +32,14 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.MulticastGameObjectDelegate.md#add)**(`func`: `GameObjectDelegateFuncType`): `void`  |
+| **[add](mw.MulticastGameObjectDelegate.md#add)**(`func`: `GameObjectDelegateFuncType`): `void`   |
 | :-----|
 | 添加代理事件|
-| **[broadcast](mw.MulticastGameObjectDelegate.md#broadcast)**(`obj`: [`GameObject`](mw.GameObject.md)): `void`  |
+| **[broadcast](mw.MulticastGameObjectDelegate.md#broadcast)**(`obj`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 触发代理事件|
-| **[clear](mw.MulticastGameObjectDelegate.md#clear)**(): `void`  |
+| **[clear](mw.MulticastGameObjectDelegate.md#clear)**(): `void`   |
 | 清空代理事件（危险操作，请注意您所清空的是哪些代理事件）|
-| **[remove](mw.MulticastGameObjectDelegate.md#remove)**(`func`: `GameObjectDelegateFuncType`): `void`  |
+| **[remove](mw.MulticastGameObjectDelegate.md#remove)**(`func`: `GameObjectDelegateFuncType`): `void`   |
 | 删除代理事件|
 
 ## Methods
@@ -56,7 +56,6 @@
 | :------ | :------ |
 
 
-
 ___
 
 ### broadcast <Score text="broadcast" /> 
@@ -71,7 +70,6 @@ ___
 | :------ | :------ |
 
 
-
 ___
 
 ### clear <Score text="clear" /> 
@@ -79,7 +77,6 @@ ___
 • **clear**(): `void` 
 
 清空代理事件（危险操作，请注意您所清空的是哪些代理事件）
-
 
 
 ___
@@ -94,5 +91,4 @@ ___
 
 | `func` `GameObjectDelegateFuncType` |  事件回调函数 |
 | :------ | :------ |
-
 

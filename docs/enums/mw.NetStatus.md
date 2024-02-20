@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / NetStatus
+[基础类型](../groups/基础类型.基础类型.md) / NetStatus
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 

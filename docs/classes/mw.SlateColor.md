@@ -1,8 +1,8 @@
-[UI](../groups/UI.UI.md) / SlateColor
+[界面](../groups/界面.界面.md) / SlateColor
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 
-UI颜色管理
+颜色管理
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ UI颜色管理
 | 颜色|
 
 指定颜色进行构造
-
 
 #### Parameters
 

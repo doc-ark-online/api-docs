@@ -1,4 +1,4 @@
-[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / PurchaseService
+[服务](../groups/服务.服务.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
@@ -7,34 +7,36 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\>  |
+| **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> <Badge type="tip" text="client" />  |
 | :-----|
 | 获取Ark币余额更新的委托|
-| **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\>  |
+| **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> <Badge type="tip" text="server" />  |
 | 获取订单发货的委托|
-| **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\>  |
+| **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> <Badge type="tip" text="server" />  |
 | 获取订单发货的委托|
-| **[onPremiumMemberStatusUpdate](mw.PurchaseService.md#onpremiummemberstatusupdate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\>  |
+| **[onPremiumMemberStatusUpdate](mw.PurchaseService.md#onpremiummemberstatusupdate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | 获取大会员状态更新时触发的委托|
 
 ### Methods <Score text="Methods" /> 
-| **[consumeKey](mw.PurchaseService.md#consumekey)**(`boxId`: `string`, `number`: `number`, `keyType`: `number`, `placeOrderResult`: (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void`): `void`  |
+| **[consumeKey](mw.PurchaseService.md#consumekey)**(`boxId`: `string`, `number`: `number`, `keyType`: `number`, `placeOrderResult`: (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 大会员开宝箱消耗金钥匙|
-| **[findKeyUsageHistory](mw.PurchaseService.md#findkeyusagehistory)**(`currentPage`: `number`, `pageSize`: `number`, `historyResult`: (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void`): `void`  |
+| **[findKeyUsageHistory](mw.PurchaseService.md#findkeyusagehistory)**(`currentPage`: `number`, `pageSize`: `number`, `historyResult`: (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void`): `void`   |
 | 分页查询大会员使用钥匙的历史记录|
-| **[getArkBalance](mw.PurchaseService.md#getarkbalance)**(): `void`  |
+| **[getArkBalance](mw.PurchaseService.md#getarkbalance)**(): `void` <Badge type="tip" text="client" />  |
 | 获取Ark币余额|
-| **[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)**(`[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)Result`, `keyType?`: `number`): `void`  |
+| **[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)**(`[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)Result`, `keyType?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 获取用户剩余钥匙数量|
-| **[isPremiumMember](mw.PurchaseService.md#ispremiummember)**(`[isPremiumMember](mw.PurchaseService.md#ispremiummember)Result`): `void`  |
+| **[isPremiumMember](mw.PurchaseService.md#ispremiummember)**(`[isPremiumMember](mw.PurchaseService.md#ispremiummember)Result`): `void` <Badge type="tip" text="client" />  |
 | 获取用户是否是大会员|
-| **[isPremiumMemberSupported](mw.PurchaseService.md#ispremiummembersupported)**(`isSupportedResult`: (`result`: `boolean`) => `void`): `void`  |
+| **[isPremiumMemberSupported](mw.PurchaseService.md#ispremiummembersupported)**(`isSupportedResult`: (`result`: `boolean`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 获取用户使用软件版本是否有大会员功能|
-| **[openPremiumMemberPurchasePage](mw.PurchaseService.md#openpremiummemberpurchasepage)**(): `void`  |
+| **[openPremiumMemberPurchasePage](mw.PurchaseService.md#openpremiummemberpurchasepage)**(): `void` <Badge type="tip" text="client" />  |
 | 跳转会员充值页面|
-| **[placeOrder](mw.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](mw.PurchaseService.md#placeorder)Result`): `void`  |
+| **[placeOrder](mw.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](mw.PurchaseService.md#placeorder)Result`): `void` <Badge type="tip" text="client" />  |
 | 下单指定数量的指定商品|
+| **[redeemGiftCode](mw.PurchaseService.md#redeemgiftcode)**(`player`: [`Player`](mw.Player.md), `GiftCode`: `string`, `redeemCallback`: (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void`): `void` <Badge type="tip" text="server" />  |
+| 礼包码兑换|
 
 ## Accessors
 
@@ -53,7 +55,6 @@
 
 
 获取Ark币余额更新的委托
-
 
 ::: warning Precautions
 
@@ -87,7 +88,6 @@ ___
 
 
 获取订单发货的委托
-
 
 ::: warning Precautions
 
@@ -123,7 +123,6 @@ ___
 
 获取订单发货的委托
 
-
 ::: warning Precautions
 
 1. 只在支持大会员的233/Playza/口袋方舟内使用时生效
@@ -158,7 +157,6 @@ ___
 
 获取大会员状态更新时触发的委托
 
-
 ::: warning Precautions
 
 暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
@@ -189,7 +187,6 @@ ___
 | `number` `number` | 领取的宝箱数量 default: 1 |
 | `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
 | `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
-
 
 
 ::: warning Precautions
@@ -252,7 +249,6 @@ ___
 | `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数，total总页数为-1时表示查找失败，currentPage查找第几页，bill查询结果 |
 
 
-
 <span style="font-size: 14px;">
 使用示例:将代码片段放入脚本中即可
 </span>
@@ -279,7 +275,6 @@ ___
 获取Ark币余额
 
 
-
 ::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
@@ -299,7 +294,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let player = await  mw.Player.localPlayer;
         await TimeUtil.delaySecond(5);
         let arkCount = PurchaseService.getArkBalance();
@@ -323,7 +318,6 @@ ___
 | `keyType?` `number` | 搜索的钥匙类型，暂时只有类型1 default: 1 |
 
 
-
 ::: warning Precautions
 
 暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
@@ -343,10 +337,10 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
+    private async test(): `Promise`<`void`\> {
+        let player = Player.localPlayer;
         PurchaseService.getUserKeyNumber(keyNumber => {
-            player.character.characterName = "当前用户剩余钥匙数量：", keyNumber.toString();
+            player.character.displayName = "当前用户剩余钥匙数量：", keyNumber.toString();
         })
     }
 }
@@ -364,7 +358,6 @@ ___
 
 | `isPremiumMemberResult` (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:是大会员，false:不是大会员 |
 | :------ | :------ |
-
 
 
 ::: warning Precautions
@@ -387,10 +380,10 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
+    private async test(): `Promise`<`void`\> {
+        let player = Player.localPlayer;
         PurchaseService.isPremiumMember(isSupport => {
-            player.character.characterName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
+            player.character.displayName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
         })
     }
 }
@@ -408,7 +401,6 @@ ___
 
 | `isSupportedResult` (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:支持大会员功能，false:不支持大会员功能 |
 | :------ | :------ |
-
 
 
 ::: warning Precautions
@@ -430,10 +422,10 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
+    private async test(): `Promise`<`void`\> {
+        let player = Player.localPlayer;
         PurchaseService.isPremiumMemberSupported(isSupport => {
-            player.character.characterName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
+            player.character.displayName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
         })
     }
 }
@@ -446,7 +438,6 @@ ___
 • `Static` **openPremiumMemberPurchasePage**(): `void` <Badge type="tip" text="client" />
 
 跳转会员充值页面
-
 
 
 <span style="font-size: 14px;">
@@ -462,7 +453,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         await TimeUtil.delaySecond(10);
         PurchaseService.openPremiumMemberPurchasePage();
     }
@@ -485,7 +476,83 @@ ___
 | `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
 
 
-
 ::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
+
+:::
+
+___
+
+### redeemGiftCode <Score text="redeemGiftCode" /> 
+
+• `Static` **redeemGiftCode**(`player`, `GiftCode`, `redeemCallback`): `void` <Badge type="tip" text="server" />
+
+礼包码兑换
+
+#### Parameters
+
+| `player` [`Player`](mw.Player.md) | 需要兑换的玩家对象 |
+| :------ | :------ |
+| `GiftCode` `string` | 礼包码 |
+| `redeemCallback` (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void` | 兑换结果的回调函数 |
+
+
+RedeemResponse中status : 兑换状态。
+
+01 ： 兑换成功
+
+02 ： 兑换失败（兑换码不存在）
+
+03 ： 兑换失败（兑换码不在使用期限内）
+
+04 ： 兑换失败（兑换码已使用）
+
+05 ： 兑换失败（兑换超时）
+
+06 ： 兑换失败（礼包库存不足）
+
+07 ： 兑换失败（超出兑换次数）
+
+RedeemResponse中message : 兑换信息
+
+当兑换状态为成功时：兑换信息为礼包内容道具详情。
+
+当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    @Property({replicated:true,multicast:true})
+    public player:Player;
+    @Property({replicated:true,multicast:true})
+    public playerid:string
+
+    protected onStart(): void {
+        if(SystemUtil.isClient()) {
+            this.playerid = Player.localPlayer.userId;
+            console.log(this.playerid);
+        }
+        if(SystemUtil.isServer()){
+            this.textFunc();
+        }
+    }
+
+    @RemoteFunction(Server)
+    public textFunc(){
+        Player.getAllPlayers().forEach(element => {
+            this.player = element;
+        });
+        // ""中填写兑换码
+        PurchaseService.redeemGiftCode(this.player, "" ,(result:RedeemResponse)=>{
+            console.log("result.message------------" + result.message);
+            console.log("result.message------------" + result.status);
+        });
+        console.log("--------over----------")
+    }
+}
+```

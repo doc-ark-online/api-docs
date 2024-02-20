@@ -1,8 +1,32 @@
-[UI](../groups/UI.UI.md) / UIScript
+[界面](../groups/界面.界面.md) / UIScript
 
 # UIScript <Badge type="tip" text="Class" /> <Score text="UIScript" />
 
-UI的驱动脚本基类
+UI 的驱动脚本基类
+
+-----------------------
+
+1. UIScript 是如何工作的？
+
+当你想要使用编辑器的 UI 功能时，便很大几率要接触 UIScript，除非使用 UserWidget 自定义创建界面。
+
+继承自 UIScript 与继承自 Script 的脚本有所不同，继承自 Script 的脚本挂载在对象管理器中，编辑器会自动帮你调用生命周期函数。但是继承自 UIScript 的脚本放置在对象管理器中，编辑器是不会自动帮你调用生命周期函数的。
+
+他需要依赖 UIService 或 UIPrefab。
+
+2. 继承自 UIScript 脚本享受的生命周期有哪些？
+
+:cactus: 这里有详细的描述
+
+https://docs-028.ark.online/UI/LifeCycleandEventDescriptionofUIScripts.html
+
+3. 什么时候编辑器会帮你调用 UI 的生命周期呢？
+
+有两种方式：
+
+- 使用 UIService 帮你管理此脚本，当 UIService.create 并 show 时，会启动脚本的生命周期。
+
+- 使用 UIPrefab 。脚本挂载在 UIPrefab 上，并把 UIPrefab 放在对象管理器中。
 
 ## Hierarchy
 
@@ -17,44 +41,44 @@ UI的驱动脚本基类
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean`  |
+| **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置是否能触发onUpdate函数|
-| **[fullScreen](mw.UIScript.md#fullscreen)**(`inFull`: `boolean`): `void`  |
+| 获取是否能触发 UI 中 onUpdate 生命周期函数|
+| **[fullScreen](mw.UIScript.md#fullscreen)**(`inFull`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
-| **[layer](mw.UIScript.md#layer)**(): `number`  |
-| 设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，|
-| **[rootCanvas](mw.UIScript.md#rootcanvas)**(): [`Canvas`](mw.Canvas.md)  |
-| 获取UI的根Canvas节点|
+| **[layer](mw.UIScript.md#layer)**(): `number` <Badge type="tip" text="client" />  |
+| 获取 UI 的 Layer 层级|
+| **[rootCanvas](mw.UIScript.md#rootcanvas)**(): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
+| 获取 UI 的根 Canvas 节点|
 | **[uiObject](mw.UIScript.md#uiobject)**(): [`Widget`](mw.Widget.md)  |
-| 获取脚本挂载的UI对象|
-| **[uiWidgetBase](mw.UIScript.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md)  |
-| 转化UIObject 为指定UserWidget对象|
-| **[visible](mw.UIScript.md#visible)**(): `boolean`  |
-| 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，需要传递参数的可以使用setVisible方法|
+| 获取 UI 顶层控件对象|
+| **[uiWidgetBase](mw.UIScript.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
+| 获取 UI 顶层控件对象|
+| **[visible](mw.UIScript.md#visible)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取 UI 是否显示|
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.UIScript.md#destroy)**(): `void`  |
+| **[destroy](mw.UIScript.md#destroy)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 销毁UI对象|
-| **[detectDrag](mw.UIScript.md#detectdrag)**(`dragKey`: [`Keys`](../enums/mw.Keys.md)): [`EventReply`](mw.EventReply.md)  |
-| 触发DragDrop事件的检测|
-| **[detectDragIfPressed](mw.UIScript.md#detectdragifpressed)**(`inPointEvent`: [`PointerEvent`](mw.PointerEvent.md), `dragKey`: [`Keys`](../enums/mw.Keys.md)): [`EventReply`](mw.EventReply.md)  |
-| 如果事件检测通过就触发DragDrop事件的回复|
-| **[newDragDrop](mw.UIScript.md#newdragdrop)**(`inVisualWidget`: [`Widget`](mw.Widget.md), `inTag?`: `string`, `inPayLoad?`: `any`, `inPivot?`: [`DragPivot`](../enums/mw.DragPivot.md), `inOffset?`: [`Vector2`](mw.Vector2.md)): [`DragDropOperation`](mw.DragDropOperation.md)  |
-| 创建DragDrop事件|
-| **[remove](mw.UIScript.md#remove)**(): `void`  |
-| 移除UI对象|
-| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void`  |
-| 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
-| **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void`  |
-| 添加一个全局的行为记录|
-| **[clearBehavior](mw.UIScript.md#clearbehavior)**(): `void`  |
-| 清空全局的行为记录|
-| **[getBehavior](mw.UIScript.md#getbehavior)**(`key`: `string`): `any`  |
-| 获取一个全局的行为记录|
-| **[removeBehavior](mw.UIScript.md#removebehavior)**(`key`: `string`): `void`  |
-| 移除一个全局的行为记录|
+| 销毁 UI 对象|
+| **[detectDrag](mw.UIScript.md#detectdrag)**(`dragKey`: [`Keys`](../enums/mw.Keys.md)): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
+| 触发 DragDrop 事件的检测|
+| **[detectDragIfPressed](mw.UIScript.md#detectdragifpressed)**(`inPointEvent`: [`PointerEvent`](mw.PointerEvent.md), `dragKey`: [`Keys`](../enums/mw.Keys.md)): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
+| 事件检测通过，触发 DragDrop 事件的回复。|
+| **[newDragDrop](mw.UIScript.md#newdragdrop)**(`inVisualWidget`: [`Widget`](mw.Widget.md), `inTag?`: `string`, `inPayLoad?`: `any`, `inPivot?`: [`DragPivot`](../enums/mw.DragPivot.md), `inOffset?`: [`Vector2`](mw.Vector2.md)): [`DragDropOperation`](mw.DragDropOperation.md) <Badge type="tip" text="client" />  |
+| 创建 DragDrop 事件|
+| **[remove](mw.UIScript.md#remove)**(): `void` <Badge type="tip" text="client" />  |
+| 移除 UI 对象|
+| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
+| 设置 UI 是否显示|
+| **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void` <Badge type="tip" text="client" />  |
+| 添加一个全局行为|
+| **[clearBehavior](mw.UIScript.md#clearbehavior)**(): `void` <Badge type="tip" text="client" />  |
+| 清空全局一个行为|
+| **[getBehavior](mw.UIScript.md#getbehavior)**(`key`: `string`): `any` <Badge type="tip" text="client" />  |
+| 执行一个全局的行为|
+| **[removeBehavior](mw.UIScript.md#removebehavior)**(`key`: `string`): `void` <Badge type="tip" text="client" />  |
+| 移除全局一个行为|
 
 ## Accessors
 
@@ -77,12 +101,13 @@ UI的驱动脚本基类
 <td style="text-align: left">
 
 
-是否能触发onUpdate函数
+获取是否能触发 UI 中 onUpdate 生命周期函数
 
+默认是 false
 
 #### Returns
 
-| `boolean` | 返回能否触发的标志 |
+| `boolean` | 返回能否触发 |
 | :------ | :------ |
 
 
@@ -90,12 +115,11 @@ UI的驱动脚本基类
 <td style="text-align: left">
 
 
-设置是否能触发onUpdate函数
-
+设置是否能触发 UI 中 onUpdate 生命周期函数
 
 #### Parameters
 
-| `bCanUpdate` `boolean` | 能否触发的标志 |
+| `bCanUpdate` `boolean` |  能否触发 |
 | :------ | :------ |
 
 
@@ -121,7 +145,6 @@ ___
 
 
 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小
-
 
 #### Parameters
 
@@ -155,9 +178,7 @@ ___
 <td style="text-align: left">
 
 
-获取UI的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，
-会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
-
+获取 UI 的 Layer 层级
 
 
 #### Returns
@@ -170,10 +191,9 @@ ___
 <td style="text-align: left">
 
 
-设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，
-会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
+设置 UI 的所在的 Layer 层级
 
-
+显示可能会影响到 zOrder，使用 UIService 显示 UI 时，会根据 Layer 层级动态设置 zOrder，每一次调用都会重新计算当前 layer 的新 zOrder，确保 UI 位于当前层级的顶端。
 
 #### Parameters
 
@@ -191,36 +211,22 @@ ___
 </span>
 
 ```ts
-UIService.show(UIScript,UIScript.layer)
-// 内置定义好的层级
-[
-mw.UILayerScene,  //场景层 zOrder开始于0
-mw.UILayerBottom, //底层 zOrder开始于100000
-mw.UILayerMiddle, //中层 zOrder开始于200000
-mw.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
-mw.UILayerTop     //顶层 zOrder开始于400000
-mw.UILayerDialog  //对话层 zOrder开始于500000
-mw.UILayerSystem  //系统层 zOrder开始于600000
-mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UIService.addUILayerMap zOrder开始于700000
-]
-```
-<span style="font-size: 14px;">
-使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
-</span>
-
-```ts
-this.layer = mw.UILayerScene;
-// 内置定义好的层级
-[
-mw.UILayerScene,  //场景层 zOrder开始于0
-mw.UILayerBottom, //底层 zOrder开始于100000
-mw.UILayerMiddle, //中层 zOrder开始于200000
-mw.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
-mw.UILayerTop     //顶层 zOrder开始于400000
-mw.UILayerDialog  //对话层 zOrder开始于500000
-mw.UILayerSystem  //系统层 zOrder开始于600000
-mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UIService.addUILayerMap zOrder开始于700000
-]
+// @description 场景 zOrder开始于0
+const UILayerScene: typeof mw.UILayerScene;
+// @description 底层 zOrder开始于100000
+const UILayerBottom: typeof mw.UILayerBottom;
+// @description 中层 zOrder开始于200000
+const UILayerMiddle: typeof mw.UILayerMiddle;
+// @description 独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
+const UILayerOwn: typeof mw.UILayerOwn;
+// @description 顶层 zOrder开始于400000
+const UILayerTop: typeof mw.UILayerTop;
+// @description 对话 zOrder开始于500000
+const UILayerDialog: typeof mw.UILayerDialog;
+// @description 系统 zOrder开始于600000
+const UILayerSystem: typeof mw.UILayerSystem;
+// @description 错误 这个层级不可以使用，需要增加层级可以使用addUILayerMap zOrder开始于700000
+const UILayerError: typeof mw.UILayerError;
 ```
 ___
 
@@ -238,7 +244,7 @@ ___
 <td style="text-align: left">
 
 
-获取UI的根Canvas节点
+获取 UI 的根 Canvas 节点
 
 
 #### Returns
@@ -250,6 +256,37 @@ ___
 </tr></tbody>
 </table>
 
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，此示例中 this.rootCanvas.name 为空，因为没有给这个界面添加 Canvas。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            UIService.show(newUI);
+        }
+    }
+}
+
+class newUI extends UIScript{
+    button:StaleButton;
+    protected onStart() {
+
+        this.canUpdate = false;
+        this.layer = UILayerScene;
+
+        console.log(this.uiObject.name);
+        console.log(this.uiWidgetBase.name);
+        console.log(this.rootCanvas.name);
+
+        this.button = StaleButton.newObject(this.rootCanvas);
+        this.button.text = "button";
+        this.button.visibility = SlateVisibility.Visible;
+    }
+}
+```
 ___
 
 ### uiObject <Score text="uiObject" /> 
@@ -266,7 +303,8 @@ ___
 <td style="text-align: left">
 
 
-获取脚本挂载的UI对象
+获取 UI 顶层控件对象
+
 
 #### Returns
 
@@ -277,6 +315,37 @@ ___
 </tr></tbody>
 </table>
 
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，编辑器会动态生成一个 UserWidget，可以看到 UserWidget 控件的名字。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            UIService.show(newUI);
+        }
+    }
+}
+
+class newUI extends UIScript{
+    button:StaleButton;
+    protected onStart() {
+
+        this.canUpdate = false;
+        this.layer = UILayerScene;
+
+        console.log(this.uiObject.name);
+        console.log(this.uiWidgetBase.name);
+        console.log(this.rootCanvas.name);
+
+        this.button = StaleButton.newObject(this.rootCanvas);
+        this.button.text = "button";
+        this.button.visibility = SlateVisibility.Visible;
+    }
+}
+```
 ___
 
 ### uiWidgetBase <Score text="uiWidgetBase" /> 
@@ -293,7 +362,7 @@ ___
 <td style="text-align: left">
 
 
-转化UIObject 为指定UserWidget对象
+获取 UI 顶层控件对象
 
 
 #### Returns
@@ -305,6 +374,37 @@ ___
 </tr></tbody>
 </table>
 
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，编辑器会动态生成一个 UserWidget，可以看到 UserWidget 控件的名字。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            UIService.show(newUI);
+        }
+    }
+}
+
+class newUI extends UIScript{
+    button:StaleButton;
+    protected onStart() {
+
+        this.canUpdate = false;
+        this.layer = UILayerScene;
+
+        console.log(this.uiObject.name);
+        console.log(this.uiWidgetBase.name);
+        console.log(this.rootCanvas.name);
+
+        this.button = StaleButton.newObject(this.rootCanvas);
+        this.button.text = "button";
+        this.button.visibility = SlateVisibility.Visible;
+    }
+}
+```
 ___
 
 ### visible <Score text="visible" /> 
@@ -326,8 +426,7 @@ ___
 <td style="text-align: left">
 
 
-获取UI是否显示
-
+获取 UI 是否显示
 
 #### Returns
 
@@ -339,8 +438,9 @@ ___
 <td style="text-align: left">
 
 
-设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，需要传递参数的可以使用setVisible方法
+设置 UI 是否显示
 
+会触发绑定的脚本生命周期中 OnShow/OnHide 事件，需要传递参数的可以使用 setVisible 方法。
 
 #### Parameters
 
@@ -359,8 +459,7 @@ ___
 
 • **destroy**(): `void` <Badge type="tip" text="client" />
 
-销毁UI对象
-
+销毁 UI 对象
 
 
 ___
@@ -369,7 +468,7 @@ ___
 
 • **detectDrag**(`dragKey`): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />
 
-触发DragDrop事件的检测
+触发 DragDrop 事件的检测
 
 #### Parameters
 
@@ -381,14 +480,13 @@ ___
 | [`EventReply`](mw.EventReply.md) | 返回触发的事件回复 |
 | :------ | :------ |
 
-
 ___
 
 ### detectDragIfPressed <Score text="detectDragIfPressed" /> 
 
 • **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />
 
-如果事件检测通过就触发DragDrop事件的回复
+事件检测通过，触发 DragDrop 事件的回复。
 
 #### Parameters
 
@@ -401,14 +499,13 @@ ___
 | [`EventReply`](mw.EventReply.md) | 返回触发的事件回复 |
 | :------ | :------ |
 
-
 ___
 
 ### newDragDrop <Score text="newDragDrop" /> 
 
 • **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](mw.DragDropOperation.md) <Badge type="tip" text="client" />
 
-创建DragDrop事件
+创建 DragDrop 事件
 
 #### Parameters
 
@@ -424,15 +521,13 @@ ___
 | [`DragDropOperation`](mw.DragDropOperation.md) | 返回触发的事件回复 |
 | :------ | :------ |
 
-
 ___
 
 ### remove <Score text="remove" /> 
 
 • **remove**(): `void` <Badge type="tip" text="client" />
 
-移除UI对象
-
+移除 UI 对象
 
 
 ___
@@ -441,15 +536,16 @@ ___
 
 • **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="client" />
 
-设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数
+设置 UI 是否显示
 
 #### Parameters
 
-| `inVisible` `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
+| `inVisible` `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见，如果是 boolean 类型设置为 SelfHitTestInvisible ，不可见设置为 Collapsed， 否则为按照枚举拉设置具体的显示类型。 |
 | :------ | :------ |
 | `...params` `any`[] |  传递给onShow的参数 |
 
 
+会触发绑定的脚本的 OnShow/OnHide 事件，可以传递参数。
 
 ___
 
@@ -457,7 +553,7 @@ ___
 
 • `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="client" />
 
-添加一个全局的行为记录
+添加一个全局行为
 
 #### Parameters
 
@@ -466,6 +562,49 @@ ___
 | `value` `any` |  行为值 |
 
 
+UI 事件通信的一种更加简便的方式。
+
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个屏幕 UI - 按钮，按下P键，按钮文字发生改变。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            //UIService.create(newUI);
+            UIService.show(newUI);
+            UIScript.addBehavior("UI",(ui:StaleButton)=>{
+                ui.text = "change";
+            });
+        }
+    }
+}
+
+class newUI extends UIScript{
+    button:StaleButton;
+    protected onStart() {
+        //设置能否每帧触发onUpdate
+        this.canUpdate = false;
+        this.layer = UILayerMiddle;
+
+        this.button = StaleButton.newObject(this.rootCanvas);
+
+        this.button.text = "Press to turn red";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
+        this.button.onClicked.add(() => {
+            console.log("click");
+        })
+        InputUtil.onKeyDown(Keys.P,()=>{
+            let ui = UIScript.getBehavior("UI");
+            ui(this.button);
+        });
+    }
+}
+```
 
 ___
 
@@ -473,8 +612,7 @@ ___
 
 • `Static` **clearBehavior**(): `void` <Badge type="tip" text="client" />
 
-清空全局的行为记录
-
+清空全局一个行为
 
 
 ___
@@ -483,7 +621,7 @@ ___
 
 • `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="client" />
 
-获取一个全局的行为记录
+执行一个全局的行为
 
 #### Parameters
 
@@ -495,6 +633,47 @@ ___
 | `any` | 返回一个行为 |
 | :------ | :------ |
 
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个屏幕 UI - 按钮，按下P键，按钮文字发生改变。
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()){
+            //UIService.create(newUI);
+            UIService.show(newUI);
+            UIScript.addBehavior("UI",(ui:StaleButton)=>{
+                ui.text = "change";
+            });
+        }
+    }
+}
+
+class newUI extends UIScript{
+    button:StaleButton;
+    protected onStart() {
+        //设置能否每帧触发onUpdate
+        this.canUpdate = false;
+        this.layer = UILayerMiddle;
+
+        this.button = StaleButton.newObject(this.rootCanvas);
+
+        this.button.text = "Press to turn red";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
+        this.button.onClicked.add(() => {
+            console.log("click");
+        })
+        InputUtil.onKeyDown(Keys.P,()=>{
+            let ui = UIScript.getBehavior("UI");
+            ui(this.button);
+        });
+    }
+}
+```
 
 ___
 
@@ -502,11 +681,10 @@ ___
 
 • `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="client" />
 
-移除一个全局的行为记录
+移除全局一个行为
 
 #### Parameters
 
 | `key` `string` |  行为标记 |
 | :------ | :------ |
-
 

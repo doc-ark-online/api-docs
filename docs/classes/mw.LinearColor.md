@@ -1,21 +1,21 @@
-[TYPE](../groups/TYPE.TYPE.md) / LinearColor
+[基础类型](../groups/基础类型.基础类型.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
-线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0
+线性RGBA颜色，r, g, b颜色值的有效范围是float的精度
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
 | **[a](mw.LinearColor.md#a)**(): `number`  |
 | :-----|
-| 设置当前 LinearColor 的 a 值|
+| 获取当前 LinearColor 的 a 值|
 | **[b](mw.LinearColor.md#b)**(): `num[b](mw.LinearColor.md#b)er`  |
-| 设置当前 LinearColor 的 b 值|
+| 获取当前 LinearColor 的 b 值|
 | **[g](mw.LinearColor.md#g)**(): `number`  |
-| 设置当前 LinearColor 的 g 值 颜色值的有效范围是|
+| 获取当前 LinearColor 的 g 值|
 | **[r](mw.LinearColor.md#r)**(): `numbe[r](mw.LinearColor.md#r)`  |
-| 设置当前 LinearColor 的 r 值|
+| 获取当前 LinearColor 的 r 值|
 | **[black](mw.LinearColor.md#black)**(): [`LinearColor`](mw.LinearColor.md)  |
 | 黑色 (0, 0, 0, 1)|
 | **[blue](mw.LinearColor.md#blue)**(): [`LinearColor`](mw.LinearColor.md)  |
@@ -32,46 +32,46 @@
 | 黄色 (1, 1, 0, 1)|
 
 ### Methods <Score text="Methods" /> 
-| **[addition](mw.LinearColor.md#addition)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[addition](mw.LinearColor.md#addition)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | :-----|
 | 颜色值相加|
-| **[clone](mw.LinearColor.md#clone)**(): [`LinearColor`](mw.LinearColor.md)  |
+| **[clone](mw.LinearColor.md#clone)**(): [`LinearColor`](mw.LinearColor.md)   |
 | 克隆当前线性颜色|
-| **[division](mw.LinearColor.md#division)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[division](mw.LinearColor.md#division)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 颜色值相除|
-| **[equality](mw.LinearColor.md#equality)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `epsilon?`: `number`): `boolean`  |
+| **[equality](mw.LinearColor.md#equality)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `epsilon?`: `number`): `boolean`   |
 | 判断两个颜色值是否相等|
-| **[fromString](mw.LinearColor.md#fromstring)**(`jsonStr`: `string`): [`LinearColor`](mw.LinearColor.md)  |
+| **[fromString](mw.LinearColor.md#fromstring)**(`jsonStr`: `string`): [`LinearColor`](mw.LinearColor.md)   |
 | 用数据生成一个新的对象|
-| **[inequality](mw.LinearColor.md#inequality)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `epsilon?`: `number`): `boolean`  |
+| **[inequality](mw.LinearColor.md#inequality)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `epsilon?`: `number`): `boolean`   |
 | 判断两个颜色值是否不相等|
-| **[multiply](mw.LinearColor.md#multiply)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[multiply](mw.LinearColor.md#multiply)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 颜色值相乘|
-| **[subtraction](mw.LinearColor.md#subtraction)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[subtraction](mw.LinearColor.md#subtraction)**(`linearColorB`: [`LinearColor`](mw.LinearColor.md), `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 颜色值相减|
-| **[toString](mw.LinearColor.md#tostring)**(): `string`  |
+| **[toString](mw.LinearColor.md#tostring)**(): `string`   |
 | 以字符串的形式输出对象属性|
-| **[colorHexToLinearColor](mw.LinearColor.md#colorhextolinearcolor)**(`inColorHex`: `string`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[colorHexToLinearColor](mw.LinearColor.md#colorhextolinearcolor)**(`inColorHex`: `string`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 将 HexColor 转化为 LinearColor|
-| **[colorHsvToLinearColor](mw.LinearColor.md#colorhsvtolinearcolor)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[colorHsvToLinearColor](mw.LinearColor.md#colorhsvtolinearcolor)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 将 HsvColor 转化为 LinearColor|
-| **[colorToLinearColor](mw.LinearColor.md#colortolinearcolor)**(`r`: `number`, `g`: `number`, `b`: `number`, `a?`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[colorToLinearColor](mw.LinearColor.md#colortolinearcolor)**(`r`: `number`, `g`: `number`, `b`: `number`, `a?`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 转换 Color|
-| **[fromString](mw.LinearColor.md#fromstring-1)**(`jsonStr`: `string`): [`LinearColor`](mw.LinearColor.md)  |
+| **[fromString](mw.LinearColor.md#fromstring-1)**(`jsonStr`: `string`): [`LinearColor`](mw.LinearColor.md)   |
 | 用数据生成一个新的对象|
-| **[makeFromHSV](mw.LinearColor.md#makefromhsv)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[makeFromHSV](mw.LinearColor.md#makefromhsv)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 将字节色调饱和度亮度转换为 LinearColor|
-| **[random](mw.LinearColor.md#random)**(`outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)  |
+| **[random](mw.LinearColor.md#random)**(`outer?`: [`LinearColor`](mw.LinearColor.md)): [`LinearColor`](mw.LinearColor.md)   |
 | 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色|
 
 用给定的 r, g, b 值构建一个新的 Color
 
 #### Parameters
 
-| `r` `number` | r 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `r` `number` | r |
 | :------ | :------ |
-| `g` `number` | g 颜色值的有效范围是 0.0 <= value <= 1.0 |
-| `b` `number` | b 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `g` `number` | g |
+| `b` `number` | b |
 
 • **new LinearColor**(`r`, `g`, `b`, `a`)
 
@@ -79,11 +79,11 @@
 
 #### Parameters
 
-| `r` `number` | r 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `r` `number` | r |
 | :------ | :------ |
-| `g` `number` | g 颜色值的有效范围是 0.0 <= value <= 1.0 |
-| `b` `number` | b 颜色值的有效范围是 0.0 <= value <= 1.0 |
-| `a` `number` | a 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `g` `number` | g |
+| `b` `number` | b |
+| `a` `number` | a |
 
 • **new LinearColor**(`v`)
 
@@ -140,7 +140,7 @@
 
 ::: warning Precautions
 
-颜色值的有效范围是 0.0 <= value <= 1.0
+颜色值的有效范围是float的精度
 
 :::
 
@@ -192,7 +192,7 @@ ___
 
 ::: warning Precautions
 
-颜色值的有效范围是 0.0 <= value <= 1.0
+颜色值的有效范围是float的精度
 
 :::
 
@@ -240,11 +240,11 @@ ___
 <td style="text-align: left">
 
 
-设置当前 LinearColor 的 g 值 颜色值的有效范围是
+设置当前 LinearColor 的 g 值
 
 ::: warning Precautions
 
-0.0 <= value <= 1.0
+颜色值的有效范围是float的精度
 
 :::
 
@@ -296,7 +296,7 @@ ___
 
 ::: warning Precautions
 
-颜色值的有效范围是 0.0 <= value <= 1.0
+颜色值的有效范围是float的精度
 
 :::
 
@@ -519,7 +519,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 建议传入 outer 来减少 new 对象
@@ -539,7 +538,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 返回一个新的线性颜色 |
 | :------ | :------ |
 
-
 ___
 
 ### division <Score text="division" /> 
@@ -558,7 +556,6 @@ ___
 
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -585,7 +582,6 @@ ___
 | `boolean` | 是否相等 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 相等返回true，不相等返回false
@@ -610,7 +606,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 新的 LinearColor 类型对象 |
 | :------ | :------ |
 
-
 ___
 
 ### inequality <Score text="inequality" /> 
@@ -629,7 +624,6 @@ ___
 
 | `boolean` | 是否相等 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -656,7 +650,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 建议传入 outer 来减少 new 对象
@@ -682,7 +675,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 建议传入 outer 来减少 new 对象
@@ -702,7 +694,6 @@ ___
 | `string` | 对象属性字符串 |
 | :------ | :------ |
 
-
 ___
 
 ### colorHexToLinearColor <Score text="colorHexToLinearColor" /> 
@@ -721,7 +712,6 @@ ___
 
 | [`LinearColor`](mw.LinearColor.md) | LinerColor 对象 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -749,7 +739,6 @@ ___
 
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -779,7 +768,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
 
-
 ___
 
 ### fromString <Score text="fromString" /> 
@@ -787,7 +775,6 @@ ___
 • `Static` **fromString**(`jsonStr`): [`LinearColor`](mw.LinearColor.md) 
 
 用数据生成一个新的对象
-
 
 #### Parameters
 
@@ -820,7 +807,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 建议传入 outer 来减少 new 对象
@@ -844,7 +830,6 @@ ___
 
 | [`LinearColor`](mw.LinearColor.md) | 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 

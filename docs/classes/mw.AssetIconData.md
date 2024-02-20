@@ -1,18 +1,17 @@
-[UI](../groups/UI.UI.md) / AssetIconData
+[界面](../groups/界面.界面.md) / AssetIconData
 
 # AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 
-资源ICON信息
+资源 icon 信息
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[assetID](mw.AssetIconData.md#assetid)**(): `string`  |
+| **[assetID](mw.AssetIconData.md#assetid)**(): `string` <Badge type="tip" text="client" />  |
 | :-----|
-| 设置资源ID|
+| 获取资源ID|
 
 默认构造
-
 
 ## Accessors
 
@@ -37,7 +36,6 @@
 
 获取资源ID
 
-
 #### Returns
 
 | `string` | 资源ID信息 |
@@ -49,7 +47,6 @@
 
 
 设置资源ID
-
 
 #### Parameters
 

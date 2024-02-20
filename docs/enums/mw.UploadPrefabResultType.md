@@ -1,4 +1,4 @@
-[DATATYPE](../groups/DATATYPE.DATATYPE.md) / UploadPrefabResultType
+[数据处理](../groups/数据处理.数据处理.md) / UploadPrefabResultType
 
 # UploadPrefabResultType <Badge type="tip" text="Enumeration" /> <Score text="UploadPrefabResultType" />
 

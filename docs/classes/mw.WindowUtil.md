@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / WindowUtil
+[工具](../groups/工具.工具.md) / WindowUtil
 
 # WindowUtil <Badge type="tip" text="Class" /> <Score text="WindowUtil" />
 
@@ -18,7 +18,7 @@ export default class WindowExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let viewportSize = WindowUtil.getViewportSize();
         // X=1920 Y=1080
@@ -37,7 +37,7 @@ export default class WindowExample extends Script {
 | 用户游戏窗口聚焦，显示器显示当前游戏窗口。调用onFocused，返回一个多播委托类型。可使用多播委托中的Add、remove、clear、broadcast等函数，当出现窗口聚焦时编写你想要的逻辑。|
 
 ### Methods <Score text="Methods" /> 
-| **[getViewportSize](mw.WindowUtil.md#getviewportsize)**(): [`Vector2`](mw.Vector2.md)  |
+| **[getViewportSize](mw.WindowUtil.md#getviewportsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
 
@@ -94,7 +94,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"NewScript"的脚本,放置在对象管理器对象子级中,打开脚本,输入以下代码保存,运行游戏,将屏幕切出会显示"游戏窗口失焦，屏幕切出"的log,将屏幕切回，将显示"游戏窗口聚焦，屏幕显现"的log。
+使用示例:创建一个名为"NewScript"的脚本，放置在对象管理器对象子级中，打开脚本，输入以下代码保存，运行游戏，将屏幕切出会显示"游戏窗口失焦，屏幕切出"的log,将屏幕切回，将显示"游戏窗口聚焦，屏幕显现"的log。
 </span>
 
 ```ts
@@ -123,6 +123,7 @@ export default class NewScript extends Script {
 | [`Vector2`](mw.Vector2.md) | 返回屏幕的分辨率大小。 |
 | :------ | :------ |
 
+此方法仅在客户端调用生效。
 
 <span style="font-size: 14px;">
 使用示例:调用方法
@@ -131,5 +132,6 @@ export default class NewScript extends Script {
 ```ts
 let viewportSize = WindowUtil.getViewportSize();
 console.log(`viewportSize ${viewportSize}`);
-// X=1920 Y=1080
+
+// 打印输出为：X=1920 Y=1080
 ```

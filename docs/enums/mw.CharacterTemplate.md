@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterTemplate
+[角色系统](../groups/角色系统.角色系统.md) / CharacterTemplate
 
 # CharacterTemplate <Badge type="tip" text="Enumeration" /> <Score text="CharacterTemplate" />
 

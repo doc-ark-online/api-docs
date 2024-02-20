@@ -1,9 +1,8 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidSlotType
+[角色系统](../groups/角色系统.角色系统.md) / HumanoidSlotType
 
 # HumanoidSlotType <Badge type="tip" text="Enumeration" /> <Score text="HumanoidSlotType" />
 
 人形角色插槽类型
-内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
 
 ## Table of contents
 

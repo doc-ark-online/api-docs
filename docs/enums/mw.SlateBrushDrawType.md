@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / SlateBrushDrawType
+[界面](../groups/界面.界面.md) / SlateBrushDrawType
 
 # SlateBrushDrawType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushDrawType" />
 

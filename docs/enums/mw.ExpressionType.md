@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / ExpressionType
+[角色系统](../groups/角色系统.角色系统.md) / ExpressionType
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 

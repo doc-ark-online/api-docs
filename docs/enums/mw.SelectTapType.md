@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / SelectTapType
+[基础类型](../groups/基础类型.基础类型.md) / SelectTapType
 
 # SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
 

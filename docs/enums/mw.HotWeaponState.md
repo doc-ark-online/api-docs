@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponState
+[玩法](../groups/玩法.玩法.md) / HotWeaponState
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 

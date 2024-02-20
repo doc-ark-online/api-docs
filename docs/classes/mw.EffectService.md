@@ -1,4 +1,4 @@
-[EFFECTS](../groups/EFFECTS.EFFECTS.md) / EffectService
+[场景](../groups/场景.场景.md) / EffectService
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
@@ -14,20 +14,30 @@ EffectService 中很多静态方法可直接调用，其中：
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+| **[checkPlayParams](mw.EffectService.md#checkplayparams)**: `any`  |
+| :----- |
+
 ### Methods <Score text="Methods" /> 
-| **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\>  |
+| **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\> <Badge type="tip" text="client" />  |
 | :-----|
 | 根据播放id获取一个特效对象|
-| **[playAtPosition](mw.EffectService.md#playatposition)**(`assetId`: `string`, `position`: [`Vector`](mw.Vector.md), `params?`: `Object`): `number`  |
+| **[playAtPosition](mw.EffectService.md#playatposition)**(`assetId`: `string`, `position`: [`Vector`](mw.Vector.md), `params?`: `Object`): `number` <Badge type="tip" text="other" />  |
 | 在一个位置播放特效|
-| **[playOnGameObject](mw.EffectService.md#playongameobject)**(`assetId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `params?`: `Object`): `number`  |
+| **[playOnGameObject](mw.EffectService.md#playongameobject)**(`assetId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `params?`: `Object`): `number` <Badge type="tip" text="other" />  |
 | 在一个GameObject上播放特效|
-| **[stop](mw.EffectService.md#stop)**(`playId`: `number`): `void`  |
+| **[stop](mw.EffectService.md#stop)**(`playId`: `number`): `void` <Badge type="tip" text="other" />  |
 | 停止一个正在播放的特效|
-| **[stopAll](mw.EffectService.md#stopall)**(): `void`  |
+| **[stopAll](mw.EffectService.md#stopall)**(): `void` <Badge type="tip" text="other" />  |
 | 停止所有特效|
-| **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md)): `void`  |
+| **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md)): `void` <Badge type="tip" text="other" />  |
 | 停止目标对象上所有资源Id的特效|
+
+## Properties
+
+### checkPlayParams <Score text="checkPlayParams" /> 
+
+▪ `Static` `Private` **checkPlayParams**: `any`
 
 ## Methods
 
@@ -46,7 +56,6 @@ EffectService 中很多静态方法可直接调用，其中：
 
 | `Promise`<[`Effect`](mw.Effect.md)\> | Particle对象的gameObject |
 | :------ | :------ |
-
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后获取该特效对象并移动到(200, 0, 200)位置
@@ -83,7 +92,7 @@ ___
 | `assetId` `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | :------ | :------ |
 | `position` [`Vector`](mw.Vector.md) |  世界坐标 |
-| `params?` `Object` |  播放参数，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，默认0，设置此字段将忽略loopCount），rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
+| `params?` `Object` |  播放参数 |
 | `params.duration?` `number` | - |
 | `params.loopCount?` `number` | - |
 | `params.rotation?` [`Rotation`](mw.Rotation.md) | - |
@@ -91,10 +100,8 @@ ___
 
 #### Returns
 
-| `number` | 本次播放的唯一标识，可用于停止播放 |
+| `number` | 本次播放的唯一标识，可用于停止播放，如果返回0，说明参数错误，播放失败 |
 | :------ | :------ |
-
-调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在坐标(0, 0, 200)处播放一个火焰特效
@@ -135,10 +142,8 @@ ___
 
 #### Returns
 
-| `number` | 本次播放的唯一标识，可用于停止播放 |
+| `number` | 本次播放的唯一标识，可用于停止播放，如果返回0，说明参数错误，播放失败 |
 | :------ | :------ |
-
-调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在所有玩家的身上播放一个火焰特效
@@ -172,8 +177,6 @@ ___
 | :------ | :------ |
 
 
-调用端生效|服务端调用自动广播
-
 <span style="font-size: 14px;">
 使用示例: 创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后停止特效
 </span>
@@ -202,8 +205,6 @@ ___
 
 停止所有特效
 
-
-调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放三个火焰特效，5秒后停止所有特效
@@ -241,5 +242,3 @@ ___
 | :------ | :------ |
 | `target` [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md) |  目标对象(Player或NPC或GameObject) |
 
-
-调用端生效|服务端调用自动广播

@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / ReleaseStatus
+[基础类型](../groups/基础类型.基础类型.md) / ReleaseStatus
 
 # ReleaseStatus <Badge type="tip" text="Enumeration" /> <Score text="ReleaseStatus" />
 

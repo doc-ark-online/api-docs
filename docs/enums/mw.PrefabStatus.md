@@ -1,4 +1,4 @@
-[DATATYPE](../groups/DATATYPE.DATATYPE.md) / PrefabStatus
+[数据处理](../groups/数据处理.数据处理.md) / PrefabStatus
 
 # PrefabStatus <Badge type="tip" text="Enumeration" /> <Score text="PrefabStatus" />
 

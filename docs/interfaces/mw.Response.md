@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Response
+[玩法](../groups/玩法.玩法.md) / Response
 
 # Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 
@@ -20,10 +20,10 @@ HTTP响应信息的对象
 | 响应URL|
 
 ### Methods <Score text="Methods" /> 
-| **[json](mw.Response.md#json)**<`T`: \>(): `Promise`<`T`: \>  |
+| **[json](mw.Response.md#json)**<`T`: \>(): `Promise`<`T`: \>   |
 | :-----|
 | 数据返回json|
-| **[text](mw.Response.md#text)**(): `Promise`<`string`\>  |
+| **[text](mw.Response.md#text)**(): `Promise`<`string`\>   |
 | 数据返回文本|
 
 ## Properties
@@ -79,7 +79,6 @@ ___
 | `Promise`<`T`\> | 数据返回json |
 | :------ | :------ |
 
-
 #### Type parameters
 
 | Name |
@@ -98,4 +97,3 @@ ___
 
 | `Promise`<`string`\> | 数据返回文本 |
 | :------ | :------ |
-

@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovement
+[玩法](../groups/玩法.玩法.md) / ProjectileMovement
 
 # ProjectileMovement <Badge type="tip" text="Class" /> <Score text="ProjectileMovement" />
 
@@ -55,28 +55,27 @@ ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体�
 | 投掷物当前状态|
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.ProjectileMovement.md#destroy)**(`[destroy](mw.ProjectileMovement.md#destroy)WithObject?`): `void`  |
+| **[destroy](mw.ProjectileMovement.md#destroy)**(`[destroy](mw.ProjectileMovement.md#destroy)WithObject?`): `void`   |
 | :-----|
 | 销毁投掷物，即销毁对象下的移动组件和碰撞组件。可以选择是否和关联的对象一起销毁。|
-| **[getRelatedGameObject](mw.ProjectileMovement.md#getrelatedgameobject)**(): [`GameObject`](mw.GameObject.md)  |
+| **[getRelatedGameObject](mw.ProjectileMovement.md#getrelatedgameobject)**(): [`GameObject`](mw.GameObject.md)   |
 | 获取关联的逻辑对象|
-| **[getTrajectory](mw.ProjectileMovement.md#gettrajectory)**(`startDirection`: [`Vector`](mw.Vector.md), `density`: `number`, `duration`: `number`): [`Vector`](mw.Vector.md)[]  |
+| **[getTrajectory](mw.ProjectileMovement.md#gettrajectory)**(`startDirection`: [`Vector`](mw.Vector.md), `density`: `number`, `duration`: `number`): [`Vector`](mw.Vector.md)[]   |
 | 获取预测出的运动轨迹|
-| **[getVelocity](mw.ProjectileMovement.md#getvelocity)**(): [`Vector`](mw.Vector.md)  |
+| **[getVelocity](mw.ProjectileMovement.md#getvelocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取当前速度|
-| **[launch](mw.ProjectileMovement.md#launch)**(`direction`: [`Vector`](mw.Vector.md)): `void`  |
+| **[launch](mw.ProjectileMovement.md#launch)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
 | 发射|
-| **[pause](mw.ProjectileMovement.md#pause)**(): `void`  |
+| **[pause](mw.ProjectileMovement.md#pause)**(): `void`   |
 | 暂停运动，将由 Launched 状态切换到 Ready 状态|
-| **[resume](mw.ProjectileMovement.md#resume)**(): `void`  |
+| **[resume](mw.ProjectileMovement.md#resume)**(): `void`   |
 | 继续运动，将由 Ready 状态切换到 Launched 状态|
-| **[setRelatedGameObject](mw.ProjectileMovement.md#setrelatedgameobject)**(`value`: [`GameObject`](mw.GameObject.md)): `void`  |
+| **[setRelatedGameObject](mw.ProjectileMovement.md#setrelatedgameobject)**(`value`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 设置新的关联的逻辑对象|
-| **[setVelocity](mw.ProjectileMovement.md#setvelocity)**(`v`: [`Vector`](mw.Vector.md)): `void`  |
+| **[setVelocity](mw.ProjectileMovement.md#setvelocity)**(`v`: [`Vector`](mw.Vector.md)): `void`   |
 | 设置当前速度|
 
 通过配置对象构造功能类
-
 
 #### Parameters
 
@@ -607,16 +606,15 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Destroy"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement_Destroy"的代码保存，运行游戏，场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement_Destroy extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -626,7 +624,9 @@ export default class Example_ProjectileMovement_Destroy extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0; i < 5; i++) {
+           for (let i = 0;
+i < 5;
+i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;
@@ -695,16 +695,15 @@ ___
 | [`GameObject`](mw.GameObject.md) | 关联的逻辑对象 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement"的代码保存，运行游戏，场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -714,7 +713,9 @@ export default class Example_ProjectileMovement extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0; i < 5; i++) {
+           for (let i = 0;
+i < 5;
+i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;
@@ -796,7 +797,6 @@ Launched 状态调用时不生效
 
 :::
 
-
 ___
 
 ### getVelocity <Score text="getVelocity" /> 
@@ -810,16 +810,15 @@ ___
 | [`Vector`](mw.Vector.md) | 当前速度 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement"的代码保存，运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -916,16 +915,15 @@ ___
 
 :::
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存，运行游戏，场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1021,16 +1019,15 @@ ___
 
 :::
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存，运行游戏，场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1126,16 +1123,15 @@ ___
 
 :::
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存，运行游戏，场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1230,16 +1226,15 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement"的代码保存，运行游戏，场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1249,7 +1244,9 @@ export default class Example_ProjectileMovement extends Script {
            let curBall = 0;
 
            // 在前方异步生成5个球，放入数组balls中。
-           for (let i = 0; i < 5; i++) {
+           for (let i = 0;
+i < 5;
+i++) {
                let ball = await GameObject.asyncSpawn("84121") as Model;
                ball.worldTransform.position = new Vector(200, i * 100, 25);
                ball.name = "ball" + i;
@@ -1325,16 +1322,15 @@ ___
 
 :::
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下:
+使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ProjectileMovement"的代码保存，运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下：
 </span>
 
 ```ts
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): Promise<void> {
+   protected async onStart(): `Promise`<`void`\> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {

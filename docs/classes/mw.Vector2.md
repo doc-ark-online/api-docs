@@ -1,8 +1,279 @@
-[TYPE](../groups/TYPE.TYPE.md) / Vector2
+[基础类型](../groups/基础类型.基础类型.md) / Vector2
 
 # Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
-由分量 (x,y) 组成的二维空间中的向量
+二维向量
+
+------------------
+
+线性代数非常适用于游戏开发，这里会有一些简短而实用的介绍。如果已经很熟悉可以直接跳过。
+
+这不是一个关于线性代数的正式教科书。我们会只看它如何应用于游戏开发。如果想更广泛地了解数学，请参阅 https://www.khanacademy.org/math/linear-algebra
+
+:cactus: 坐标系 （2D）
+
+在二维空间中，坐标是使用水平轴（x） 和 垂直轴（y）。2D 空间中的特定位置被写成一对值，例如 (9, 5)
+
+![向量](https://cdn.233xyx.com/online/2M66j1byeXgB1702205275997.png)
+
+注意：如果您不熟悉计算机图形学，那么 y正轴指向下方而不是上方。因为您可能是在数学课上学到的是指向上方。然而，这在大多数计算机图形学应用时 y 正轴指向下方。
+
+这样，二维平面上的任意位置都可以用一对数字来标识。 然而，我们也可以将位置 (9, 5) 视为距 (0, 0) 点或原点的偏移量。 绘制一个从原点指向该点的箭头：
+
+![向量](https://cdn.233xyx.com/online/4GeEUZRD9Pqn1702205289749.png)
+
+这是一个向量。 向量代表了很多有用的信息。 除了告诉我们该点位于 (9, 5) 之外，我们还可以将其视为角度 θ (theta) 和长度（或大小）m。 在这种情况下，箭头是一个位置向量 - 它表示空间中相对于原点的位置。
+
+关于向量需要考虑的一个非常重要的一点是它们仅表示相对方向和大小。没有向量位置的概念。以下两个向量是相同的：
+
+![向量](https://cdn.233xyx.com/online/sFlOQ30Ssysd1702205305115.png)
+
+两个向量都表示某个起点右侧 9 个单位和下方 5 个单位的点。 无论您在平面上的哪个位置绘制矢量，它始终表示相对方向和大小。
+
+:cactus: 向量运算
+
+您可以使用任一方法（x 和 y 坐标或角度和大小）来引用向量，但为了方便起见，程序员通常使用坐标表示法。 例如，
+
+<span style="font-size: 14px;">
+使用示例: 创建一个名为 NewExample 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，按键“F”，按钮会移动到（900,500）的位置。
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+         if (!SystemUtil.isClient()) return;
+         this.test();
+     }
+
+     private async test(): `Promise`<`void`\> {
+         let btn = new ButtonUI();
+
+         InputUtil.onKeyDown(Keys.F, async () => {
+             let result = new Vector2(900,500)
+             if (result) {
+                 btn.button.position = result;
+             }
+         })
+     }
+
+ }
+
+ class ButtonUI {
+     public button: StaleButton;
+
+     constructor(fun: Function = null) {
+         this.creatUI(fun);
+     }
+
+     private creatUI(fun: Function = null) {
+         // 创建一个UI对象
+         let ui = UserWidget.newObject();
+         // 将UI添加到屏幕上
+         ui.addToViewport(1);
+         // 创建一个画布组件
+         let rootCanvas = Canvas.newObject();
+         rootCanvas.size = new Vector2(1920, 1080);
+         rootCanvas.position = Vector2.zero;
+         // 将Ui的根画布设置为rootCanvas
+         ui.rootContent = rootCanvas;
+         // 在（0,0）点创建一个按钮
+         this.button = StaleButton.newObject(rootCanvas);
+         this.button.position = new Vector2(0, 0);
+         this.button.size = new Vector2(100, 100);
+         this.button.setNormalImageColorDecimal(0,255,0,255)
+         this.button.text = "btn";
+         this.button.transitionEnable = true;
+         this.button.pressedImagColor = LinearColor.red;
+         this.button.visibility = SlateVisibility.Visible;
+
+         this.button.onClicked.add(() => {
+             if (fun) {
+                 fun();
+             }
+         })
+     }
+ }
+```
+
+1. 向量成员
+
+向量的各个组成部分可以通过名称直接访问。
+
+<span style="font-size: 14px;">
+使用示例: 访问向量
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(9, 5);
+        console.log("x:" +a.x+ "  y:"+a.y);
+     }
+}
+```
+
+2. 添加向量
+
+当两个向量相加或相减时，相应的分量相加或相减：
+
+<span style="font-size: 14px;">
+使用示例: 两向量相加
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,3);
+        let result = Vector2.add(a,b);
+        console.log(result);
+     }
+}
+```
+
+注意，添加 a + b 会得到与 b + a 相同的结果。
+
+3. 标量乘法
+
+向量表示方向和大小。 仅代表大小的值称为标量。 标量在编辑器中使用 float 类型。
+
+向量可以乘以标量：
+
+<span style="font-size: 14px;">
+使用示例: a * b
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let result = Vector2.multiply(a,3);
+        // X=24, Y=6
+        console.log(result);
+     }
+}
+```
+
+将向量乘以正标量不会改变其方向，只会改变其大小。 与负标量相乘会产生相反方向的向量。 这就是缩放向量的方法。
+
+4. 单位向量
+
+大小为 1 的向量称为单位向量。 它们有时也称为方向向量或法线。 当您需要跟踪方向时，单位向量很有用。
+
+5. 归一化
+
+向量归一化意味着将其长度减小到 1，同时保留其方向。 这是通过将其每个分量除以其大小来完成的。 这是一个常见的操作，为此提供了一个专用的 normalized() 方法：
+
+<span style="font-size: 14px;">
+使用示例: 对 a 向量实现归一化。
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let result = Vector2.normalize(a);
+        console.log(result);
+     }
+}
+```
+
+由于归一化涉及除以向量的长度，因此无法对长度为 0 的向量进行归一化。尝试这样做通常会导致错误。
+
+6. 反射
+
+单位向量的常见用途是表示法线。 法向量是垂直于表面排列的单位向量，定义其方向。 它们通常用于照明、碰撞和其他涉及表面的操作。
+
+<span style="font-size: 14px;">
+使用示例: 求反射向量。
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(1,0);
+        let result = Vector2.reflect(a,b);
+        console.log(result);
+     }
+}
+```
+
+7. 点积
+
+点积是向量数学中最重要的概念之一，但经常被误解。 点积是对两个向量进行的运算，返回一个标量。 与同时包含大小和方向的矢量不同，标量值仅具有大小。
+
+点积的公式有两种常见形式：
+
+![向量](https://cdn.233xyx.com/online/AYfSoe4KVjln1702282916803.png)
+
+数学符号 ||A|| 表示向量A的大小，Ax表示向量A的x分量。
+
+在大多数情况下，使用内置的 dot 方法是最简单的。 请注意，两个向量的顺序并不重要：
+
+<span style="font-size: 14px;">
+使用示例: 求点积。
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(1,0);
+        let result = Vector2.dot(a,b);
+        console.log(result);
+     }
+}
+```
+
+点积在与单位向量一起使用时最有用，使第一个公式简化为 cos(θ)。 这意味着我们可以使用点积来告诉我们有关两个向量之间的角度的信息：
+
+![向量](https://cdn.233xyx.com/online/C6pivp2QKPEY1702282932425.png)
+
+使用单位向量时，结果将始终介于 -1 (180°) 和 1 (0°) 之间。
+
+8. 叉积
+
+与点积一样，叉积是对两个向量的运算。 然而，叉积的结果是一个方向垂直于两者的向量。 其大小取决于它们的相对角度。 如果两个向量平行，则它们的叉积的结果将是零向量。
+
+![向量](https://cdn.233xyx.com/online/REfjRp03JU4A1702282944437.png)
+
+叉积计算如下：
+
+<span style="font-size: 14px;">
+使用示例: 求叉积。
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(1,0);
+        let result1 = Vector2.cross(a,b);
+        let result2 = Vector2.cross(b,a);
+        console.log(result1);
+        console.log(result2);
+     }
+}
+```
+
+顺序很重要。 cross(a,b) 不会给出与 cross(b,a) 相同的结果。 所得向量指向相反的方向。
 
 ## Table of contents
 
@@ -17,17 +288,18 @@
 | **[length](mw.Vector2.md#length)**(): `number`  |
 | :-----|
 | 计算向量的长度|
-| **[magnitude](mw.Vector2.md#magnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求向量长度|
-| [negative](mw.Vector2.md#negative)  |
-| :----- |
+| **[magnitude](mw.Vector2.md#magnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 向量长度|
+| **[negative](mw.Vector2.md#negative)**(): [`Vector2`](mw.Vector2.md)  |
+| 返回各个分量取反的新 Vector2 对象|
 | **[normalized](mw.Vector2.md#normalized)**(): [`Vector2`](mw.Vector2.md)  |
-| 其大小为1, 但仍指向相同的方向 如果向量太小而无法归一化, 则返回 (0, 0)|
+| 返回一个新的 Vector2 对象|
 | **[sqrLength](mw.Vector2.md#sqrlength)**(): `number`  |
 | 向量长度的平方|
-| **[sqrMagnitude](mw.Vector2.md#sqrmagnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求向量长度平方|
-| [negOne](mw.Vector2.md#negone) |
+| **[sqrMagnitude](mw.Vector2.md#sqrmagnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 向量长度平方|
+| **[negOne](mw.Vector2.md#negone)**(): [`Vector2`](mw.Vector2.md)  |
+| (-1, -1)|
 | **[one](mw.Vector2.md#one)**(): [`Vector2`](mw.Vector2.md)  |
 | (1, 1)|
 | **[unitX](mw.Vector2.md#unitx)**(): [`Vector2`](mw.Vector2.md)  |
@@ -38,99 +310,96 @@
 | (0, 0)|
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.Vector2.md#add)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| 向量相加  |
 | :-----|
-| 计算ab两个向量相加|
-| **[clone](mw.Vector2.md#clone)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 克隆向量a得到的新 Vector2 向量|
-| **[divide](mw.Vector2.md#divide)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a除以向量b|
-| **[equals](mw.Vector2.md#equals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`  |
-| 排除浮点数误差的向量近似等价判断|
-| **[fromString](mw.Vector2.md#fromstring)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| **[clone](mw.Vector2.md#clone)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 克隆向量 a 得到新的 Vector2 向量|
+| **[divide](mw.Vector2.md#divide)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 的每个分量除以标量 b|
+| **[equals](mw.Vector2.md#equals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`   |
+| 判断两向量排除浮点数误差是否近似等价|
+| **[fromString](mw.Vector2.md#fromstring)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 通过一个字符串创建 Vector2 对象|
-| **[multiply](mw.Vector2.md#multiply)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a乘以向量b|
-| **[normalize](mw.Vector2.md#normalize)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 归一化向量|
-| **[set](mw.Vector2.md#set)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)  |
-| 设置向量a的值|
-| **[strictEquals](mw.Vector2.md#strictequals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`  |
-| 向量等价判断|
-| **[subtract](mw.Vector2.md#subtract)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a减去向量b|
+| **[multiply](mw.Vector2.md#multiply)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 的每个分量乘以标量 b|
+| **[normalize](mw.Vector2.md#normalize)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量归一化|
+| **[set](mw.Vector2.md#set)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)   |
+| 设置向量 a 的值|
+| **[strictEquals](mw.Vector2.md#strictequals)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`   |
+| 判断两向量是否相等|
+| **[subtract](mw.Vector2.md#subtract)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 减去向量 b|
 | **[toString](mw.Vector2.md#tostring)**(): `string`  |
-| 输出为字符串|
-| **[add](mw.Vector2.md#add-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算ab两个向量相加|
-| **[angle](mw.Vector2.md#angle)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求两向量夹角角度|
-| **[ceil](mw.Vector2.md#ceil)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量向上取整|
-| **[clamp](mw.Vector2.md#clamp)**(`v`: [`Vector2`](mw.Vector2.md), `min`: [`Vector2`](mw.Vector2.md), `max`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| 向量相加  |
+| outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）|
+| **[angle](mw.Vector2.md#angle)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 两向量夹角角度|
+| **[ceil](mw.Vector2.md#ceil)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 每个元素向上取整|
+| **[clamp](mw.Vector2.md#clamp)**(`v`: [`Vector2`](mw.Vector2.md), `min`: [`Vector2`](mw.Vector2.md), `max`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 设置当前向量的值, 使其各个分量都处于指定的范围内|
-| **[clone](mw.Vector2.md#clone-1)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 克隆向量a得到的新 Vector2 向量|
-| **[copy](mw.Vector2.md#copy)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| **[clone](mw.Vector2.md#clone-1)**(`a`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 克隆向量 a 得到新的 Vector2 向量|
+| **[copy](mw.Vector2.md#copy)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 获得指定向量的拷贝|
-| **[cross](mw.Vector2.md#cross)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 向量叉积 (向量积)|
-| **[distance](mw.Vector2.md#distance)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求两向量的欧氏距离|
-| **[divide](mw.Vector2.md#divide-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a除以向量b|
-| **[dot](mw.Vector2.md#dot)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 向量点积 (数量积)|
-| **[equals](mw.Vector2.md#equals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`  |
-| 排除浮点数误差的向量近似等价判断|
-| **[floor](mw.Vector2.md#floor)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量向下取整|
-| **[fromString](mw.Vector2.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| **[cross](mw.Vector2.md#cross)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 叉积|
+| **[distance](mw.Vector2.md#distance)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 两向量的欧氏距离|
+| **[divide](mw.Vector2.md#divide-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 的每个分量除以标量 b|
+| **[dot](mw.Vector2.md#dot)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 点积|
+| **[equals](mw.Vector2.md#equals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): `boolean`   |
+| 判断两向量排除浮点数误差是否近似等价|
+| **[floor](mw.Vector2.md#floor)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 每个元素向下取整|
+| **[fromString](mw.Vector2.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 通过一个字符串创建 Vector2 对象|
-| **[fromUEVector2D](mw.Vector2.md#fromuevector2d)**(`v`: `Vector2D`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 通过一个UE向量创建 Vector2 对象|
-| **[invert](mw.Vector2.md#invert)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量取倒数, 接近 0 时返回 Infinity|
-| **[invertSafe](mw.Vector2.md#invertsafe)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量取倒数, 接近 0 时返回 0|
-| **[lerp](mw.Vector2.md#lerp)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `t`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量线性插值： A + t  * (B - A)|
-| **[magnitude](mw.Vector2.md#magnitude-1)**(`a`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求向量长度|
-| **[max](mw.Vector2.md#max)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量最大值|
-| **[min](mw.Vector2.md#min)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量最小值|
-| **[moveTowards](mw.Vector2.md#movetowards)**(`current`: [`Vector2`](mw.Vector2.md), `target`: [`Vector2`](mw.Vector2.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| **[invert](mw.Vector2.md#invert)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 每个元素向量取倒数|
+| **[invertSafe](mw.Vector2.md#invertsafe)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md), `epsilon?`: `number`): [`Vector2`](mw.Vector2.md)   |
+| 每个元素向量取倒数|
+| **[lerp](mw.Vector2.md#lerp)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `t`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 每个元素线性插值： a + t  * (b - a)|
+| **[magnitude](mw.Vector2.md#magnitude-1)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 向量长度|
+| **[max](mw.Vector2.md#max)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 取两个向量对应x、y元素最小值最大值|
+| **[min](mw.Vector2.md#min)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 取两个向量对应x、y元素最小值|
+| **[moveTowards](mw.Vector2.md#movetowards)**(`current`: [`Vector2`](mw.Vector2.md), `target`: [`Vector2`](mw.Vector2.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
 | 向目标移动|
-| **[multiply](mw.Vector2.md#multiply-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a乘以向量b|
-| **[negate](mw.Vector2.md#negate)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量取负|
-| **[normalize](mw.Vector2.md#normalize-1)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 归一化向量|
-| **[project](mw.Vector2.md#project)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a在向量b上的投影向量|
-| **[random](mw.Vector2.md#random)**(`range?`: `number`): [`Vector2`](mw.Vector2.md)  |
+| **[multiply](mw.Vector2.md#multiply-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 的每个分量乘以标量 b|
+| **[negate](mw.Vector2.md#negate)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 每个元素向量取负|
+| **[normalize](mw.Vector2.md#normalize-1)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量归一化|
+| **[project](mw.Vector2.md#project)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 在向量 b 上的投影|
+| **[random](mw.Vector2.md#random)**(`range?`: `number`): [`Vector2`](mw.Vector2.md)   |
 | 生成一个在单位圆上均匀分布的随机 Vector2 对象|
-| **[reflect](mw.Vector2.md#reflect)**(`inDirection`: [`Vector2`](mw.Vector2.md), `inNormal`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 求反射角|
-| **[rotate](mw.Vector2.md#rotate)**(`v`: [`Vector2`](mw.Vector2.md), `radians`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a旋转radians度后的向量|
-| **[round](mw.Vector2.md#round)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 逐元素向量四舍五入取整|
-| **[set](mw.Vector2.md#set-1)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)  |
-| 设置向量a的值|
-| **[signAngle](mw.Vector2.md#signangle)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 获取向量a和向量b之间的有符号角度|
-| **[sqrMagnitude](mw.Vector2.md#sqrmagnitude-1)**(`a`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求向量长度平方|
-| **[squaredDistance](mw.Vector2.md#squareddistance)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`  |
-| 求两向量的欧氏距离平方|
-| **[strictEquals](mw.Vector2.md#strictequals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`  |
-| 向量等价判断|
-| **[subtract](mw.Vector2.md#subtract-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
-| 计算向量a减去向量b|
+| **[reflect](mw.Vector2.md#reflect)**(`inDirection`: [`Vector2`](mw.Vector2.md), `inNormal`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 反射|
+| **[rotate](mw.Vector2.md#rotate)**(`v`: [`Vector2`](mw.Vector2.md), `radians`: `number`, `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 旋转某度后的向量|
+| **[round](mw.Vector2.md#round)**(`a`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 每个元素四舍五入取整|
+| **[set](mw.Vector2.md#set-1)**(`a`: [`Vector2`](mw.Vector2.md), `x`: `number`, `y`: `number`): [`Vector2`](mw.Vector2.md)   |
+| 设置向量 a 的值|
+| **[signAngle](mw.Vector2.md#signangle)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 向量 a 和向量 b 之间的有符号角度|
+| **[sqrMagnitude](mw.Vector2.md#sqrmagnitude-1)**(`a`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 向量长度平方|
+| **[squaredDistance](mw.Vector2.md#squareddistance)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `number`   |
+| 两向量的欧氏距离平方|
+| **[strictEquals](mw.Vector2.md#strictequals-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md)): `boolean`   |
+| 判断两向量是否相等|
+| **[subtract](mw.Vector2.md#subtract-1)**(`a`: [`Vector2`](mw.Vector2.md), `b`: [`Vector2`](mw.Vector2.md), `outer?`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)   |
+| 向量 a 减去向量 b|
 
 用给定的 x, y 分量构建一个新的 Vector2
 
@@ -202,7 +471,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -210,10 +479,19 @@ ___
 | `number` | 向量长度 |
 | :------ | :------ |
 
-#### Returns
 
-| `number` | 向量的长度 |
-| :------ | :------ |
+### negative <Score text="negative" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **negative**(): [`Vector2`](mw.Vector2.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
 
 
 返回各个分量取反的新 Vector2 对象
@@ -222,6 +500,10 @@ ___
 
 | [`Vector2`](mw.Vector2.md) | 各个分量取反的新 Vector2 对象 |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -289,7 +571,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -297,10 +579,19 @@ ___
 | `number` | 向量长度平方 |
 | :------ | :------ |
 
-#### Returns
 
-| `number` | 向量的长度平方 |
-| :------ | :------ |
+### negOne <Score text="negOne" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **negOne**(): [`Vector2`](mw.Vector2.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
 
 
 (-1, -1)
@@ -309,6 +600,10 @@ ___
 
 | [`Vector2`](mw.Vector2.md) |  |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -428,9 +723,9 @@ ___
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -438,40 +733,51 @@ ___
 | [`Vector2`](mw.Vector2.md) | 相加的结果 Vector2 对象 |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `v` [`Vector2`](mw.Vector2.md) | 相加的向量对象 |
 | :------ | :------ |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+___
+
 ### clone <Score text="clone" /> 
 
-• **clone**(): [`Vector2`](mw.Vector2.md)
+• **clone**(): [`Vector2`](mw.Vector2.md) 
 
-克隆当前向量
+
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 克隆得到的新 Vector2 向量 |
 | :------ | :------ |
-
-
-
 ### divide <Score text="divide" /> 
+| `v` `number` | 相除的向量对象 |
+| :------ | :------ |
 
-• **divide**(`v`): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="other" />
+#### Returns
 
-每个分量除以参数
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+• **divide**(`v`): [`Vector2`](mw.Vector2.md) 
+
+除以一个向量
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量b |
+| `b` `number` | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -481,20 +787,33 @@ ___
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a除以向量b
+向量 a 除以向量 b
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: a / b
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,4);
+        let result = Vector2.multiply(a,4);
+        // X=4, Y=0.5
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -502,141 +821,81 @@ ___
 | [`Vector2`](mw.Vector2.md) | 相除的结果 Vector2 对象 |
 | :------ | :------ |
 
-**`Effect`**
-
-
 #### Parameters
 
-| `v` `number` | 相除的向量对象 |
+| `v` [`Vector2`](mw.Vector2.md) | 每个分量除以的参数 |
 | :------ | :------ |
-判断当前向量是否在误差范围内与指定向量相等
-
-**`Effect`**
-
-
-#### Parameters
-
-| `other` [`Vector2`](mw.Vector2.md) | 指定向量 |
-| :------ | :------ |
-| `epsilon?` `number` | 最小误差数 default:1.e-8 |
 
 #### Returns
 
-| `boolean` | 两向量是否相等 |
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
 | :------ | :------ |
-
-___
-
-### fromString <Score text="fromString" /> 
-
-• **fromString**(`str`): `void` 
-
-读取字符串数据
-
-#### Parameters
-
-| `str` `string` | 传入的字符串 |
-| :------ | :------ |
-| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
-
-#### Returns
-
-| [`Vector2`](mw.Vector2.md) | 创建的 Vector2 对象 |
-| :------ | :------ |
-
-
-#### Parameters
-
-| `str` `string` | 读取的字符 |
-| :------ | :------ |
-
-### multiply <Score text="multiply" /> 
-
-• **multiply**(`v`): [`Vector2`](mw.Vector2.md)
 
 乘以一个向量
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
-| :------ | :------ |
-| `b` `number` | 向量b |
-| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
-
-#### Returns
-
-| [`Vector2`](mw.Vector2.md) | 相乘的结果 Vector2 对象 |
-| :------ | :------ |
-
-• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
-
-计算向量a乘以向量b
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
-#### Parameters
-
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
-| :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
-| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
-
-#### Returns
-
-| [`Vector2`](mw.Vector2.md) | 相乘的结果 Vector2 对象 |
-| :------ | :------ |
-
-**`Effect`**
-
-
-#### Parameters
-
 | `v` [`Vector2`](mw.Vector2.md) | 相乘的向量对象 |
 | :------ | :------ |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+• **multiply**(`v`): [`Vector2`](mw.Vector2.md) 
+
+乘以一个标量
+
+#### Parameters
+
+| `v` `number` | 每个分量乘以的参数 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+___
+
+### normalize <Score text="normalize" /> 
+
+• **normalize**(): [`Vector2`](mw.Vector2.md) 
+
 将当前向量归一化
 
-**`Effect`**
+#### Parameters
 
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
+| :------ | :------ |
+| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | 归一化后得到的 Vector2 对象 |
+| :------ | :------ |
 
 #### Returns
 
 | [`Vector2`](mw.Vector2.md) | 归一化后的自身对象 |
 | :------ | :------ |
 
-___
-
-### set <Score text="set" /> 
-
-• **set**(`other`): [`Vector2`](mw.Vector2.md) 
-
-设置当前向量使其与指定向量相等
-
-#### Parameters
-
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
-| :------ | :------ |
-| `x` `number` | 修改的 x 值 |
-| `y` `number` | 修改的 y 值 |
-
-#### Returns
-
-| [`Vector2`](mw.Vector2.md) | 修改后的 Vector2 对象 |
-| :------ | :------ |
-
+设置当前向量，使其与指定向量相等
 
 #### Parameters
 
 | `other` [`Vector2`](mw.Vector2.md) | 指定的向量 |
 | :------ | :------ |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | `this` |
+| :------ | :------ |
+
+• **set**(`x?`, `y?`): [`Vector2`](mw.Vector2.md) 
+
 设置当前向量的具体分量值
-
-**`Effect`**
-
 
 #### Parameters
 
@@ -653,15 +912,15 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• **strictEquals**(`other`): `boolean`
+• **strictEquals**(`other`): `boolean` 
 
 判断当前向量是否与指定向量相等
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
@@ -671,20 +930,19 @@ ___
 
 
 
-
 ___
 
 ### subtract <Score text="subtract" /> 
 
-• **subtract**(`v`): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="other" /> 
+• **subtract**(`v`): [`Vector2`](mw.Vector2.md) 
 
 减去一个向量
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -692,43 +950,57 @@ ___
 | [`Vector2`](mw.Vector2.md) | 相减的结果 Vector2 对象 |
 | :------ | :------ |
 
-
 #### Parameters
 
 | `v` [`Vector2`](mw.Vector2.md) | 相减的向量对象 |
 | :------ | :------ |
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+___
+
 ### toString <Score text="toString" /> 
 
 • **toString**(): `string` 
 
-输出为字符串
+
 
 #### Returns
 
 | `string` | 向量值字符串 |
 | :------ | :------ |
-
-
-___
-
 ### add <Score text="add" /> 
 
-• `Static` **add**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
+两个向量相加
 
-计算ab两个向量相加
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
+<span style="font-size: 14px;">
+使用示例: a + b
+</span>
 
-::: warning Precautions
+```ts
+@Component
+ export default class NewExample extends Script {
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,3);
+        let result = Vector2.add(a,b);
+        // X=11, Y=5
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -742,19 +1014,18 @@ ___
 
 • `Static` **angle**(`a`, `b`): `number` 
 
-求两向量夹角角度
+两向量夹角角度
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
 | `number` | 向量a与向量b的夹角角度 |
 | :------ | :------ |
-
 
 ___
 
@@ -762,11 +1033,11 @@ ___
 
 • `Static` **ceil**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量向上取整
+向量 a 每个元素向上取整
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -775,12 +1046,24 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素向上取整后的 Vector2 对象 |
 | :------ | :------ |
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: 向上取整示例
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8.22, 2.69);
+        let result = Vector2.ceil(a);
+        // X=9, Y=3
+        console.log(result);
+     }
+}
+```
 
 ___
 
@@ -792,7 +1075,7 @@ ___
 
 #### Parameters
 
-| `v` [`Vector2`](mw.Vector2.md) | 向量v |
+| `v` [`Vector2`](mw.Vector2.md) | 向量 v |
 | :------ | :------ |
 | `min` [`Vector2`](mw.Vector2.md) | 最小值 |
 | `max` [`Vector2`](mw.Vector2.md) | 最大值 |
@@ -802,19 +1085,17 @@ ___
 | [`Vector2`](mw.Vector2.md) | 修改后的向量v |
 | :------ | :------ |
 
-
 ___
 
 ### clone <Score text="clone" /> 
 
 • `Static` **clone**(`a`): [`Vector2`](mw.Vector2.md) 
 
-克隆向量a得到的新 Vector2 向量
-
+克隆向量 a 得到新的 Vector2 向量
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -832,7 +1113,7 @@ ___
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -841,12 +1122,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 拷贝得到的 Vector2 向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -854,19 +1130,18 @@ ___
 
 • `Static` **cross**(`a`, `b`): `number` 
 
-向量叉积 (向量积)
+叉积
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
 | `number` | 叉积 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -880,19 +1155,20 @@ ___
 
 • `Static` **distance**(`a`, `b`): `number` 
 
-求两向量的欧氏距离
+两向量的欧氏距离
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
 | `number` | 两向量的欧氏距离 |
 | :------ | :------ |
 
+![向量](https://cdn.233xyx.com/online/4oQ9HXb788xI1702205317274.png)
 
 ___
 
@@ -900,20 +1176,32 @@ ___
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-遍历向量a的每个分量除以b
+向量 a 的每个分量除以标量 b
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: a / b
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let result = Vector2.multiply(a,4);
+        // X=2, Y=0.5
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量b |
+| `b` `number` | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -923,20 +1211,33 @@ ___
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a除以向量b
+向量 a 除以向量 b
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: a / b
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,4);
+        let result = Vector2.multiply(a,4);
+        // X=4, Y=0.5
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -950,19 +1251,18 @@ ___
 
 • `Static` **dot**(`a`, `b`): `number` 
 
-向量点积 (数量积)
+点积
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
 | `number` | 点积 |
 | :------ | :------ |
-
 
 ___
 
@@ -970,13 +1270,13 @@ ___
 
 • `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` 
 
-排除浮点数误差的向量近似等价判断
+判断两向量排除浮点数误差是否近似等价
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
@@ -984,18 +1284,17 @@ ___
 | `boolean` | 是否相等 |
 | :------ | :------ |
 
-
 ___
 
 ### floor <Score text="floor" /> 
 
 • `Static` **floor**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量向下取整
+向量 a 每个元素向下取整
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1004,12 +1303,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素向下取整后的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1018,13 +1312,6 @@ ___
 • `Static` **fromString**(`str`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
 通过一个字符串创建 Vector2 对象
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 
@@ -1037,31 +1324,25 @@ ___
 | [`Vector2`](mw.Vector2.md) | 创建的 Vector2 对象 |
 | :------ | :------ |
 
-___
+字符串格式举例："X=2,Y=3"
 
-### fromUEVector2D <Score text="fromUEVector" /> 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-• `Static` **fromUEVector2D**(`v`, `outer?`): [`Vector2`](mw.Vector2.md) 
+<span style="font-size: 14px;">
+使用示例: 使用字符串创建一个向量
+</span>
 
-通过一个UE向量创建 Vector2 对象
+```ts
+@Component
+ export default class NewExample extends Script {
 
-#### Parameters
-
-| `v` `Vector2D` | UE.Vector |
-| :------ | :------ |
-| `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
-
-#### Returns
-
-| [`Vector2`](mw.Vector2.md) | 创建的 Vector2 对象 |
-| :------ | :------ |
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+     protected onStart(): void {
+        let result = Vector2.fromString("X=2,Y=3");
+        // X=2, Y=3
+        console.log(result);
+     }
+}
+```
 
 ___
 
@@ -1069,11 +1350,11 @@ ___
 
 • `Static` **invert**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量取倒数, 接近 0 时返回 Infinity
+每个元素向量取倒数
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1082,12 +1363,9 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素取倒数得到的 Vector2 对象 |
 | :------ | :------ |
 
+接近 0 时返回 Infinity。
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1095,11 +1373,11 @@ ___
 
 • `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量取倒数, 接近 0 时返回 0
+每个元素向量取倒数
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 | `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
@@ -1109,12 +1387,9 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素取倒数得到的 Vector2 对象 |
 | :------ | :------ |
 
+接近 0 时返回 0
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1122,13 +1397,13 @@ ___
 
 • `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量线性插值： A + t  * (B - A)
+向量 a 每个元素线性插值： a + t  * (b - a)
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `t` `number` | 插值 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1137,12 +1412,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 线性插值得到的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1150,12 +1420,11 @@ ___
 
 • `Static` **magnitude**(`a`): `number` 
 
-求向量长度
-
+向量长度
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -1169,13 +1438,13 @@ ___
 
 • `Static` **max**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量最大值
+取两个向量对应x、y元素最小值最大值
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1183,20 +1452,19 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素取最大值后的 Vector2 对象 |
 | :------ | :------ |
 
-
 ___
 
 ### min <Score text="min" /> 
 
 • `Static` **min**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量最小值
+取两个向量对应x、y元素最小值
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1204,12 +1472,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素取最小值后的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1232,12 +1495,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 移动后的得到的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1245,20 +1503,13 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-遍历向量a的每个分量乘以b
-
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+向量 a 的每个分量乘以标量 b
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量b |
+| `b` `number` | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1268,20 +1519,33 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a乘以向量b
+向量 a 乘以向量 b
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: a * b
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,4);
+        let result = Vector2.multiply(a,b);
+        // X=24, Y=8
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1289,17 +1553,36 @@ ___
 | [`Vector2`](mw.Vector2.md) | 相乘的结果 Vector2 对象 |
 | :------ | :------ |
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
+
+<span style="font-size: 14px;">
+使用示例: a * b
+</span>
+
+```ts
+@Component
+ export default class NewExample extends Script {
+
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let result = Vector2.multiply(a,3);
+        // X=24, Y=6
+        console.log(result);
+     }
+}
+```
+
 ___
 
 ### negate <Score text="negate" /> 
 
 • `Static` **negate**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量取负
+每个元素向量取负
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1308,12 +1591,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐元素向量取负得到的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1321,11 +1599,13 @@ ___
 
 • `Static` **normalize**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-归一化向量
+向量归一化
+
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1334,26 +1614,19 @@ ___
 | [`Vector2`](mw.Vector2.md) | 归一化后得到的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### project <Score text="project" /> 
 
 • `Static` **project**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a在向量b上的投影向量
+向量 a 在向量 b 上的投影
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1361,12 +1634,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 投影向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1386,14 +1654,13 @@ ___
 | [`Vector2`](mw.Vector2.md) | 得到的随机 Vector2 对象 |
 | :------ | :------ |
 
-
 ___
 
 ### reflect <Score text="reflect" /> 
 
 • `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-求反射角
+反射
 
 #### Parameters
 
@@ -1404,15 +1671,10 @@ ___
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 反射角 |
+| [`Vector2`](mw.Vector2.md) | 反射向量 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1420,7 +1682,7 @@ ___
 
 • `Static` **rotate**(`v`, `radians`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a旋转radians度后的向量
+向量 a 旋转某度后的向量
 
 #### Parameters
 
@@ -1434,12 +1696,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 旋转后的 Vector2 对象 |
 | :------ | :------ |
 
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
 ___
 
@@ -1447,11 +1704,11 @@ ___
 
 • `Static` **round**(`a`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-逐元素向量四舍五入取整
+每个元素四舍五入取整
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1460,25 +1717,17 @@ ___
 | [`Vector2`](mw.Vector2.md) | 逐逐元素向量四舍五入取整后的 Vector2 对象 |
 | :------ | :------ |
 
-
 ___
 
 ### set <Score text="set" /> 
 
 • `Static` **set**(`a`, `x`, `y`): [`Vector2`](mw.Vector2.md) 
 
-设置向量a的值
-
-
-::: warning Precautions
-
-向量a不能为空对象
-
-:::
+设置向量 a 的值
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `x` `number` | 修改的 x 值 |
 | `y` `number` | 修改的 y 值 |
@@ -1488,25 +1737,30 @@ ___
 | [`Vector2`](mw.Vector2.md) | 修改后的 Vector2 对象 |
 | :------ | :------ |
 
+::: warning Precautions
+
+向量a不能为空对象
+
+:::
+
 ___
 
 ### signAngle <Score text="signAngle" /> 
 
 • `Static` **signAngle**(`a`, `b`): `number` 
 
-获取向量a和向量b之间的有符号角度
+向量 a 和向量 b 之间的有符号角度
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
-| `number` | 向量a和向量b之间的有符号角度 |
+| `number` | 向量 a 和向量 b 之间的有符号角度 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -1520,12 +1774,11 @@ ___
 
 • `Static` **sqrMagnitude**(`a`): `number` 
 
-求向量长度平方
-
+向量长度平方
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 
 #### Returns
@@ -1539,19 +1792,18 @@ ___
 
 • `Static` **squaredDistance**(`a`, `b`): `number` 
 
-求两向量的欧氏距离平方
+两向量的欧氏距离平方
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
 | `number` | 两向量的欧氏距离平方 |
 | :------ | :------ |
-
 
 ___
 
@@ -1559,14 +1811,13 @@ ___
 
 • `Static` **strictEquals**(`a`, `b`): `boolean` 
 
-向量等价判断
-
+判断两向量是否相等
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 
 #### Returns
 
@@ -1579,20 +1830,33 @@ ___
 
 • `Static` **subtract**(`a`, `b`, `outer?`): [`Vector2`](mw.Vector2.md) 
 
-计算向量a减去向量b
+向量 a 减去向量 b
 
+outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 outer。（传入的 outer 向量不能为 null/undefined）
 
-::: warning Precautions
+<span style="font-size: 14px;">
+使用示例: a - b
+</span>
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+```ts
+@Component
+ export default class NewExample extends Script {
 
-:::
+     protected onStart(): void {
+        let a = new Vector2(8,2);
+        let b = new Vector2(3,3);
+        let result = Vector2.subtract(a,b);
+        // X=5, Y=-1
+        console.log(result);
+     }
+}
+```
 
 #### Parameters
 
-| `a` [`Vector2`](mw.Vector2.md) | 向量a |
+| `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns

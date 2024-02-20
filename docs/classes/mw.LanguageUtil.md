@@ -1,4 +1,4 @@
-[LOCALIZATION](../groups/LOCALIZATION.LOCALIZATION.md) / LanguageUtil
+[工具](../groups/工具.工具.md) / LanguageUtil
 
 # LanguageUtil <Badge type="tip" text="Class" /> <Score text="LanguageUtil" />
 
@@ -7,12 +7,12 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string`  |
+| **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string`   |
 | :-----|
 | 根据key获取翻译内容|
-| **[locText](mw.LanguageUtil.md#loctext)**(`textkey`: `string`): `string`  |
+| **[locText](mw.LanguageUtil.md#loctext)**(`textkey`: `string`): `string`   |
 | 多语言标记|
-| **[useLocalizedLanguage](mw.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean`  |
+| **[useLocalizedLanguage](mw.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean`   |
 | 游戏语言设置|
 
 ## Methods
@@ -33,7 +33,6 @@
 | `string` | 返回Key对应的当前语言环境的翻译内容 |
 | :------ | :------ |
 
-
 ___
 
 ### locText <Score text="locText" /> 
@@ -52,7 +51,6 @@ ___
 | `string` | 返回Key，此函数只用于做翻译文本收集标识。 |
 | :------ | :------ |
 
-
 ___
 
 ### useLocalizedLanguage <Score text="useLocalizedLanguage" /> 
@@ -70,4 +68,3 @@ ___
 
 | `boolean` | true修改成功 false修改失败 |
 | :------ | :------ |
-

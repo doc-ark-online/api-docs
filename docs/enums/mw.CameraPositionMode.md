@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraPositionMode
+[玩法](../groups/玩法.玩法.md) / CameraPositionMode
 
 # CameraPositionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraPositionMode" />
 

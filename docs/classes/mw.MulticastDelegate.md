@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / MulticastDelegate
+[基础类型](../groups/基础类型.基础类型.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
@@ -8,7 +8,7 @@
 
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"MultidelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 a+b:5 。
+使用示例: 创建一个名为"MultidelExample"的脚本，打开脚本，输入以下代码保存，运行游戏，打印输出 a+b:5 。
 </span>
 
 ```ts
@@ -45,14 +45,14 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.MulticastDelegate.md#add)**(`func`: `T`): `void`  |
+| **[add](mw.MulticastDelegate.md#add)**(`func`: `T`): `void`   |
 | :-----|
 | 添加代理事件|
-| **[broadcast](mw.MulticastDelegate.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void`  |
+| **[broadcast](mw.MulticastDelegate.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void`   |
 | 触发代理事件|
-| **[clear](mw.MulticastDelegate.md#clear)**(): `void`  |
+| **[clear](mw.MulticastDelegate.md#clear)**(): `void`   |
 | 清空代理事件（危险操作，请注意您所清空的是哪些代理事件）|
-| **[remove](mw.MulticastDelegate.md#remove)**(`func`: `T`): `void`  |
+| **[remove](mw.MulticastDelegate.md#remove)**(`func`: `T`): `void`   |
 | 删除代理事件|
 
 #### Type parameters
@@ -78,7 +78,6 @@
 
 MulticastDelegateInterface.add
 
-
 ___
 
 ### broadcast <Score text="broadcast" /> 
@@ -97,7 +96,6 @@ ___
 
 MulticastDelegateInterface.broadcast
 
-
 ___
 
 ### clear <Score text="clear" /> 
@@ -110,7 +108,6 @@ ___
 #### Implementation of
 
 MulticastDelegateInterface.clear
-
 
 ___
 
@@ -129,4 +126,3 @@ ___
 #### Implementation of
 
 MulticastDelegateInterface.remove
-

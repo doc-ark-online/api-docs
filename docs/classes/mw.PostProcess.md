@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcess
+[场景](../groups/场景.场景.md) / PostProcess
 
 # PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 
@@ -12,12 +12,12 @@
 使用示例: 可按如下操作控制编辑器后处理实时效果
 </span>
 
-创建一个名为"PostProcessExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制后处理的伽马值
+创建一个名为"PostProcessExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过+和-键控制后处理的伽马值
 ```ts
 @Component
 export default class PostProcessExample extends mw.Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
+    protected async onStart(): `Promise`<`void`\> {
         if(SystemUtil.isClient())
         {
             mw.InputUtil.onKeyDown(Keys.Add,()=>{
@@ -38,17 +38,17 @@ export default class PostProcessExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[bloom](mw.PostProcess.md#bloom)**(): `number`  |
+| **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
 | :-----|
-| 设置泛光（0 ~ 8）|
-| **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md)  |
-| 设置后处理属性配置|
-| **[contrast](mw.PostProcess.md#contrast)**(): `number`  |
-| 设置全局对比度 （0.2 ~ 5.0）|
-| **[preset](mw.PostProcess.md#preset)**(`newPreset`: [`PostProcessPreset`](../enums/mw.PostProcessPreset.md)): `void`  |
+| 获取泛光|
+| **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md)   |
+| 获取后处理属性配置|
+| **[contrast](mw.PostProcess.md#contrast)**(): `number`   |
+| 获取全局对比度|
+| **[preset](mw.PostProcess.md#preset)**(`newPreset`: [`PostProcessPreset`](../enums/mw.PostProcessPreset.md)): `void` <Badge type="tip" text="client" />  |
 | 设置预设|
-| **[saturation](mw.PostProcess.md#saturation)**(): `number`  |
-| 设置全局饱和度 （0 ~ 2）|
+| **[saturation](mw.PostProcess.md#saturation)**(): `number`   |
+| 获取全局饱和度|
 
 ## Accessors
 
@@ -73,7 +73,6 @@ export default class PostProcessExample extends mw.Script {
 
 获取泛光
 
-
 #### Returns
 
 | `number` | 获取值 |
@@ -85,7 +84,6 @@ export default class PostProcessExample extends mw.Script {
 
 
 设置泛光（0 ~ 8）
-
 
 #### Parameters
 
@@ -121,7 +119,6 @@ ___
 
 获取后处理属性配置
 
-
 #### Returns
 
 | [`PostProcessConfig`](mw.PostProcessConfig.md) | 获取值 |
@@ -133,7 +130,6 @@ ___
 
 
 设置后处理属性配置
-
 
 #### Parameters
 
@@ -169,7 +165,6 @@ ___
 
 获取全局对比度
 
-
 #### Returns
 
 | `number` | 获取值 |
@@ -181,7 +176,6 @@ ___
 
 
 设置全局对比度 （0.2 ~ 5.0）
-
 
 #### Parameters
 
@@ -211,7 +205,6 @@ ___
 
 
 设置预设
-
 
 #### Parameters
 
@@ -247,7 +240,6 @@ ___
 
 获取全局饱和度
 
-
 #### Returns
 
 | `number` | 获取值 |
@@ -259,7 +251,6 @@ ___
 
 
 设置全局饱和度 （0 ~ 2）
-
 
 #### Parameters
 

@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / GraphicsSettings
+[设置](../groups/设置.设置.md) / GraphicsSettings
 
 # GraphicsSettings <Badge type="tip" text="Class" /> <Score text="GraphicsSettings" />
 
@@ -38,20 +38,20 @@ export default class ClassExample extends Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 获取当前CPU画质等级|
-| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
 | 获取默认CPU画质等级|
-| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
 | 获取默认GPU画质等级|
-| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
 | 获取当前GPU画质等级|
-| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
 | 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
 | 设置当前GPU画质等级|
-| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
 | 设置CPU和GPU的画质等级|
 
 ## Methods
@@ -67,7 +67,6 @@ export default class ClassExample extends Script {
 | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
-
 ___
 
 ### getDefaultCPULevel <Score text="getDefaultCPULevel" /> 
@@ -80,7 +79,6 @@ ___
 
 | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
-
 
 ___
 
@@ -95,7 +93,6 @@ ___
 | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
-
 ___
 
 ### getGPULevel <Score text="getGPULevel" /> 
@@ -109,7 +106,6 @@ ___
 | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
-
 ___
 
 ### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
@@ -122,7 +118,6 @@ ___
 
 | `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
 | :------ | :------ |
-
 
 
 ___
@@ -139,7 +134,6 @@ ___
 | :------ | :------ |
 
 
-
 ___
 
 ### setGraphicsLevel <Score text="setGraphicsLevel" /> 
@@ -153,7 +147,6 @@ ___
 | `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
 | :------ | :------ |
 | `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
-
 
 
 ::: warning Precautions

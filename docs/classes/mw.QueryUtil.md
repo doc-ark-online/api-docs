@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / QueryUtil
+[工具](../groups/工具.工具.md) / QueryUtil
 
 # QueryUtil <Badge type="tip" text="Class" /> <Score text="QueryUtil" />
 
@@ -7,20 +7,20 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[boxOverlap](mw.QueryUtil.md#boxoverlap)**(`boxCenter`: [`Vector`](mw.Vector.md), `boxExtent`: [`Vector`](mw.Vector.md), `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]  |
+| **[boxOverlap](mw.QueryUtil.md#boxoverlap)**(`boxCenter`: [`Vector`](mw.Vector.md), `boxExtent`: [`Vector`](mw.Vector.md), `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]   |
 | :-----|
 | 矩形范围检测|
-| **[boxTrace](mw.QueryUtil.md#boxtrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `halfSize`: [`Vector`](mw.Vector.md), `orientation`: [`Rotation`](mw.Rotation.md), `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]  |
+| **[boxTrace](mw.QueryUtil.md#boxtrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `halfSize`: [`Vector`](mw.Vector.md), `orientation`: [`Rotation`](mw.Rotation.md), `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]   |
 | 盒体射线检测|
-| **[capsuleOverlap](mw.QueryUtil.md#capsuleoverlap)**(`capsuleCenter`: [`Vector`](mw.Vector.md), `radius`: `number`, `halfHeight`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]  |
+| **[capsuleOverlap](mw.QueryUtil.md#capsuleoverlap)**(`capsuleCenter`: [`Vector`](mw.Vector.md), `radius`: `number`, `halfHeight`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]   |
 | 胶囊体范围检测|
-| **[capsuleTrace](mw.QueryUtil.md#capsuletrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `radius`: `number`, `halfHeight`: `number`, `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]  |
+| **[capsuleTrace](mw.QueryUtil.md#capsuletrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `radius`: `number`, `halfHeight`: `number`, `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]   |
 | 胶囊体射线检测|
-| **[lineTrace](mw.QueryUtil.md#linetrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `traceSkeletonOnly?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]  |
+| **[lineTrace](mw.QueryUtil.md#linetrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `traceSkeletonOnly?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]   |
 | 射线检测|
-| **[sphereOverlap](mw.QueryUtil.md#sphereoverlap)**(`sphereCenter`: [`Vector`](mw.Vector.md), `sphereRadius`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]  |
+| **[sphereOverlap](mw.QueryUtil.md#sphereoverlap)**(`sphereCenter`: [`Vector`](mw.Vector.md), `sphereRadius`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]   |
 | 球形范围检测|
-| **[sphereTrace](mw.QueryUtil.md#spheretrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `radius`: `number`, `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]  |
+| **[sphereTrace](mw.QueryUtil.md#spheretrace)**(`start`: [`Vector`](mw.Vector.md), `end`: [`Vector`](mw.Vector.md), `radius`: `number`, `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`HitResult`](mw.HitResult.md)[]   |
 | 球体射线检测|
 
 ## Methods
@@ -46,13 +46,12 @@
 | [`GameObject`](mw.GameObject.md)[] | GameObject数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用矩形范围检测的基本流程
 </span>
 
 ```ts
-const goList = boxOverlap(new mw.Vector(0,0,0), new mw.Vector(1000,0,0), 10, 10, true);
+const goList = QueryUtil.boxOverlap(new mw.Vector(0,0,0), new mw.Vector(1000,0,0), true);
 for (const item of goList) {
     // item: 检测到的对象
 }
@@ -84,13 +83,12 @@ ___
 | [`HitResult`](mw.HitResult.md)[] | HitResult数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用盒体射线检测的基本流程
 </span>
 
 ```ts
-const ResultList = boxTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), new mw.Vector(10,10,10), new mw.Rotation(0,0,0), true, false, [], false, gameObject);
+const ResultList = QueryUtil.boxTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), new mw.Vector(10,10,10), new mw.Rotation(0,0,0), true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -120,13 +118,12 @@ ___
 | [`GameObject`](mw.GameObject.md)[] | GameObject数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用圆柱范围检测的基本流程
 </span>
 
 ```ts
-const ResultList = capsuleOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
+const ResultList = QueryUtil.capsuleOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -158,13 +155,12 @@ ___
 | [`HitResult`](mw.HitResult.md)[] | HitResult数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用胶囊体射线检测的基本流程
 </span>
 
 ```ts
-const ResultList = capsuleTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, 10, true, false, [], false, gameObject);
+const ResultList = QueryUtil.capsuleTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, 10, true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -195,13 +191,12 @@ ___
 | [`HitResult`](mw.HitResult.md)[] | HitResult数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用射线检测的基本流程
 </span>
 
 ```ts
-const ResultList = lineTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), true, false, [], false, gameObject, false);
+const ResultList = QueryUtil.lineTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), true, false, [], false, gameObject, false);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -230,13 +225,12 @@ ___
 | [`GameObject`](mw.GameObject.md)[] | GameObject数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用球形范围检测的基本流程
 </span>
 
 ```ts
-const ResultList = sphereOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
+const ResultList = QueryUtil.sphereOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }
@@ -267,13 +261,12 @@ ___
 | [`HitResult`](mw.HitResult.md)[] | HitResult数组 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例展示使用球体射线检测的基本流程
 </span>
 
 ```ts
-const ResultList = sphereTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, true, false, [], false, gameObject);
+const ResultList = QueryUtil.sphereTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, true, false, [], false, gameObject);
 for (const item of ResultList) {
     // item: 检测到的对象
 }

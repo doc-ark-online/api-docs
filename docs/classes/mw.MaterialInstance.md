@@ -1,11 +1,11 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / MaterialInstance
+[玩法](../groups/玩法.玩法.md) / MaterialInstance
 
 # MaterialInstance <Badge type="tip" text="Class" /> <Score text="MaterialInstance" />
 
 材质实例类
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"MaterialExample"的脚本,把脚本挂载到一个模型对象下,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到动态设置材质的效果.代码如下:
+使用示例:创建一个名为"MaterialExample"的脚本，把脚本挂载到一个模型对象下，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到动态设置材质的效果。代码如下：
 </span>
 
 ```ts
@@ -43,24 +43,24 @@ export default class MaterialExample extends Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getAllScalarParameterName](mw.MaterialInstance.md#getallscalarparametername)**(): `string`[]  |
+| **[getAllScalarParameterName](mw.MaterialInstance.md#getallscalarparametername)**(): `string`[]   |
 | :-----|
 | 返回所有的浮点材质参数|
-| **[getAllTextureParameterName](mw.MaterialInstance.md#getalltextureparametername)**(): `string`[]  |
+| **[getAllTextureParameterName](mw.MaterialInstance.md#getalltextureparametername)**(): `string`[]   |
 | 返回所有的贴图材质参数|
-| **[getAllVectorParameterName](mw.MaterialInstance.md#getallvectorparametername)**(): `string`[]  |
+| **[getAllVectorParameterName](mw.MaterialInstance.md#getallvectorparametername)**(): `string`[]   |
 | 返回所有的颜色材质参数|
-| **[getScalarParameterValue](mw.MaterialInstance.md#getscalarparametervalue)**(`parameterName`: `string`): `number`  |
+| **[getScalarParameterValue](mw.MaterialInstance.md#getscalarparametervalue)**(`parameterName`: `string`): `number`   |
 | 获取浮点参数值|
-| **[getTextureParameterValue](mw.MaterialInstance.md#gettextureparametervalue)**(`parameterName`: `string`): `string`  |
+| **[getTextureParameterValue](mw.MaterialInstance.md#gettextureparametervalue)**(`parameterName`: `string`): `string`   |
 | 获取贴图参数值|
-| **[getVectorParameterValue](mw.MaterialInstance.md#getvectorparametervalue)**(`parameterName`: `string`): [`LinearColor`](mw.LinearColor.md)  |
+| **[getVectorParameterValue](mw.MaterialInstance.md#getvectorparametervalue)**(`parameterName`: `string`): [`LinearColor`](mw.LinearColor.md)   |
 | 获取颜色参数值|
-| **[setScalarParameterValue](mw.MaterialInstance.md#setscalarparametervalue)**(`parameterName`: `string`, `value`: `number`): `void`  |
+| **[setScalarParameterValue](mw.MaterialInstance.md#setscalarparametervalue)**(`parameterName`: `string`, `value`: `number`): `void`   |
 | 设置浮点参数值|
-| **[setTextureParameterValue](mw.MaterialInstance.md#settextureparametervalue)**(`parameterName`: `string`, `value`: `string`): `void`  |
+| **[setTextureParameterValue](mw.MaterialInstance.md#settextureparametervalue)**(`parameterName`: `string`, `value`: `string`): `void`   |
 | 设置贴图参数值|
-| **[setVectorParameterValue](mw.MaterialInstance.md#setvectorparametervalue)**(`parameterName`: `string`, `value`: [`LinearColor`](mw.LinearColor.md)): `void`  |
+| **[setVectorParameterValue](mw.MaterialInstance.md#setvectorparametervalue)**(`parameterName`: `string`, `value`: [`LinearColor`](mw.LinearColor.md)): `void`   |
 | 设置颜色参数值|
 
 ## Methods
@@ -76,7 +76,6 @@ export default class MaterialExample extends Script {
 | `string`[] | 材质参数数组 |
 | :------ | :------ |
 
-
 ___
 
 ### getAllTextureParameterName <Score text="getAllTextureParameterName" /> 
@@ -90,7 +89,6 @@ ___
 | `string`[] | 材质参数数组 |
 | :------ | :------ |
 
-
 ___
 
 ### getAllVectorParameterName <Score text="getAllVectorParameterName" /> 
@@ -103,7 +101,6 @@ ___
 
 | `string`[] | 材质参数数组 |
 | :------ | :------ |
-
 
 ___
 
@@ -123,7 +120,6 @@ ___
 | `number` | 参数值 |
 | :------ | :------ |
 
-
 ___
 
 ### getTextureParameterValue <Score text="getTextureParameterValue" /> 
@@ -141,7 +137,6 @@ ___
 
 | `string` | 参数值 |
 | :------ | :------ |
-
 
 ___
 
@@ -161,7 +156,6 @@ ___
 | [`LinearColor`](mw.LinearColor.md) | 参数值 |
 | :------ | :------ |
 
-
 ___
 
 ### setScalarParameterValue <Score text="setScalarParameterValue" /> 
@@ -175,7 +169,6 @@ ___
 | `parameterName` `string` |  参数名称 |
 | :------ | :------ |
 | `value` `number` |  参数值 |
-
 
 
 ___
@@ -193,7 +186,6 @@ ___
 | `value` `string` |  参数值 |
 
 
-
 ___
 
 ### setVectorParameterValue <Score text="setVectorParameterValue" /> 
@@ -207,5 +199,4 @@ ___
 | `parameterName` `string` |  参数名称 |
 | :------ | :------ |
 | `value` [`LinearColor`](mw.LinearColor.md) |  参数值 |
-
 

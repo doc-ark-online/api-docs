@@ -1,15 +1,8 @@
-[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / AnimationMode
+[动画](../groups/动画.动画.md) / AnimationMode
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
 动画模式
-
-<span style="font-size: 14px;">
-使用示例:
-</span>
-
-```ts
-```
 
 ## Table of contents
 
@@ -32,4 +25,4 @@ ___
 
 • **Custom** = ``1``
 
-自定义模式，不提供姿态,自己控制动画切换
+自定义模式，不提供姿态，自己控制动画切换

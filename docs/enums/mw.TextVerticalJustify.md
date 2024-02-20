@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / TextVerticalJustify
+[界面](../groups/界面.界面.md) / TextVerticalJustify
 
 # TextVerticalJustify <Badge type="tip" text="Enumeration" /> <Score text="TextVerticalJustify" />
 

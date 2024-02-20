@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / ButtonTouchMethod
+[界面](../groups/界面.界面.md) / ButtonTouchMethod
 
 # ButtonTouchMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonTouchMethod" />
 

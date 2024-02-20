@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / CollisionStatus
+[基础类型](../groups/基础类型.基础类型.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 

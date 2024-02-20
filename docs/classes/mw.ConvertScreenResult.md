@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / ConvertScreenResult
+[输入](../groups/输入.输入.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 

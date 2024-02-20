@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / TabGroup
+[界面](../groups/界面.界面.md) / TabGroup
 
 # TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
@@ -12,17 +12,17 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[currentIndex](mw.TabGroup.md#currentindex)**(): `number`  |
+| **[currentIndex](mw.TabGroup.md#currentindex)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
 | 当前选择的标签索引|
 
 ### Methods <Score text="Methods" /> 
-| **[init](mw.TabGroup.md#init)**(`tabStyleHandle`: (`btn`: `T`, `isSelect`: `boolean`) => `void`, `selectCallBack`: (`index`: `number`) => `void`, `thisArg`: `any`, `defaultIndex?`: `number`): `void`  |
+| **[init](mw.TabGroup.md#init)**(`tabStyleHandle`: (`btn`: `T`, `isSelect`: `boolean`) => `void`, `selectCallBack`: (`index`: `number`) => `void`, `thisArg`: `any`, `defaultIndex?`: `number`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 初始化|
-| **[select](mw.TabGroup.md#select)**(`index`: `number`, `ignoreSame?`: `boolean`): `boolean`  |
+| **[select](mw.TabGroup.md#select)**(`index`: `number`, `ignoreSame?`: `boolean`): `boolean` <Badge type="tip" text="client" />  |
 | 设置当前的标签|
-| **[setSelectableChecker](mw.TabGroup.md#setselectablechecker)**(`selectChecker`: (`index`: `number`) => `boolean`, `thisArg`: `any`): `void`  |
+| **[setSelectableChecker](mw.TabGroup.md#setselectablechecker)**(`selectChecker`: (`index`: `number`) => `boolean`, `thisArg`: `any`): `void` <Badge type="tip" text="client" />  |
 | 设置该标签是否可以切换的检测方法|
 
 构造
@@ -55,7 +55,6 @@
 
 当前选择的标签索引
 
-
 #### Returns
 
 </td>
@@ -82,7 +81,6 @@
 | `defaultIndex?` `number` | 默认选择的标签索引 default:0 |
 
 
-
 ___
 
 ### select <Score text="select" /> 
@@ -102,7 +100,6 @@ ___
 | `boolean` | 是否成功 |
 | :------ | :------ |
 
-
 ___
 
 ### setSelectableChecker <Score text="setSelectableChecker" /> 
@@ -116,5 +113,4 @@ ___
 | `selectChecker` (`index`: `number`) => `boolean` | 判断方法 |
 | :------ | :------ |
 | `thisArg` `any` | 域 |
-
 

@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / ScriptingSettings
+[设置](../groups/设置.设置.md) / ScriptingSettings
 
 # ScriptingSettings <Badge type="tip" text="Class" /> <Score text="ScriptingSettings" />
 
@@ -26,7 +26,7 @@ export default class ClassExample extends Script {
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void`  |
+| **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void`   |
 | :-----|
 | 设置异步回调超时时间，单位毫秒，默认10000|
 
@@ -44,12 +44,11 @@ export default class ClassExample extends Script {
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
 使用示例:调用方法
 </span>
 
 ```ts
 ScriptingSettings.setGlobalAsyncTimeout(1000 * 10);
-const obj = await GameObject.asyncFind("场景中的物体Guid");
+const obj = await GameObject.asyncFindGameObjectById("场景中的物体Guid");
 ```

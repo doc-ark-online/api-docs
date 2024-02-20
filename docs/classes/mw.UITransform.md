@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UITransform
+[界面](../groups/界面.界面.md) / UITransform
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
@@ -15,7 +15,6 @@
 
 构造每一个值
 
-
 #### Parameters
 
 | `x` `number` | 位置 Position.X |
@@ -27,9 +26,6 @@
 • **new UITransform**(`xy`, `wh`)
 
 通过点构造
-
-**`Effect`**
-
 
 #### Parameters
 

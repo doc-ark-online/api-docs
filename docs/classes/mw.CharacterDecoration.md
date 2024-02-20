@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterDecoration
+[角色系统](../groups/角色系统.角色系统.md) / CharacterDecoration
 
 # CharacterDecoration <Badge type="tip" text="Class" /> <Score text="CharacterDecoration" />
 
@@ -8,13 +8,15 @@
 
 CharacterDecoration 如何使用呢？
 
-CharacterDescription 在 slotAndDecoration 中定义了一个名为 slot 的只读属性，其类型为 ArrayLike，表示一个类数组对象。数组的每个元素是一个对象类型，该对象具有以下属性：
+CharacterDescription 在 CharacterDescription 高级人形配置有留有 slotAndDecoration 参数：
 
 - slotOffset：一个可选的只读属性，表示插槽位置和方向的信息。
 
 - decoration：一个可选的只读属性，表示物品的信息。是一个 CharacterDecoration 自定义类型，包含有关物品的附加装饰信息。
 
-可以通过索引访问，添加左侧栏中已有资源的装饰物，如武器戒指光环等。如何使用详情请看下方接口及示例代码。
+可通过索引访问，添加左侧栏中已有资源的装饰物，如武器戒指光环等。使用详情请看下方接口及示例代码。
+
+仅客户端存在。
 
 ## Hierarchy
 
@@ -27,12 +29,12 @@ CharacterDescription 在 slotAndDecoration 中定义了一个名为 slot 的只�
 ### Properties <Score text="Properties" /> 
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string`  [`GameObject`](mw.GameObject.md), `attachmentOffset?`: [`Transform`](mw.Transform.md)): `void`  |
+| **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string`  [`GameObject`](mw.GameObject.md), `attachmentOffset?`: [`Transform`](mw.Transform.md)): `number`   |
 | :-----|
 | 向当前外观插槽中添加一个挂件|
-| **[clear](mw.CharacterDecoration.md#clear)**(`isDestroy?`: `boolean`): `void`  |
+| **[clear](mw.CharacterDecoration.md#clear)**(`isDestroy?`: `boolean`): `void`   |
 | 清空当前外观插槽的所有挂件|
-| **[delete](mw.CharacterDecoration.md#delete)**(`attachmentGameObject`: [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void`  |
+| **[delete](mw.CharacterDecoration.md#delete)**(`attachmentElement`: `number`  [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void`   |
 | 从当前插槽中删除一个挂件|
 
 ## Properties
@@ -43,7 +45,7 @@ ___
 
 ### add <Score text="add" /> 
 
-• **add**(`decoration`, `attachmentOffset?`): `void` 
+• **add**(`decoration`, `attachmentOffset?`): `number` 
 
 向当前外观插槽中添加一个挂件
 
@@ -53,7 +55,10 @@ ___
 | :------ | :------ |
 | `attachmentOffset?` [`Transform`](mw.Transform.md) | 挂件transform信息 default:null |
 
+#### Returns
 
+| `number` |  |
+| :------ | :------ |
 
 ::: warning Precautions
 
@@ -62,7 +67,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Add"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Add"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下：
 </span>
 
 ```ts
@@ -116,9 +121,8 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Clear"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Clear"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下：
 </span>
 
 ```ts
@@ -162,20 +166,19 @@ ___
 
 ### delete <Score text="delete" /> 
 
-• **delete**(`attachmentGameObject`, `isDestroy?`): `void` 
+• **delete**(`attachmentElement`, `isDestroy?`): `void` 
 
 从当前插槽中删除一个挂件
 
 #### Parameters
 
-| `attachmentGameObject` [`GameObject`](mw.GameObject.md) | 挂件 |
+| `attachmentElement` `number`  [`GameObject`](mw.GameObject.md) | 挂件 |
 | :------ | :------ |
 | `isDestroy?` `boolean` | 是否销毁 default:false |
 
 
-
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Delete"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Delete"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下：
 </span>
 
 ```ts

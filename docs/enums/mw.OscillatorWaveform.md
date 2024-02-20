@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / OscillatorWaveform
+[玩法](../groups/玩法.玩法.md) / OscillatorWaveform
 
 # OscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="OscillatorWaveform" />
 

@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / MathUtil
+[工具](../groups/工具.工具.md) / MathUtil
 
 # MathUtil <Badge type="tip" text="Class" /> <Score text="MathUtil" />
 
@@ -80,28 +80,28 @@
 | 字节偏移|
 
 ### Methods <Score text="Methods" /> 
-| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean`  |
+| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean`   |
 | :-----|
 | 判断终点位置是否处于起点位置在某一方向的一定角度内|
-| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number`  |
+| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number`   |
 | 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
-| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number`  |
+| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number`   |
 | 计算cos值|
-| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number`  |
+| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number`   |
 | 根据输入的度数返回弧度值|
-| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number`  |
+| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number`   |
 | 返回 数值x 除以 数值y 的余数|
-| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number`  |
+| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number`   |
 | 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number`  |
+| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number`   |
 | 根据输入的弧度值返回度数|
-| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number`  |
+| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number`   |
 | 获取随机范围内浮点数[包含min, 不包含max)|
-| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number`  |
+| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number`   |
 | 获取随机范围内整数[包含min, 不包含max)|
-| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number`  |
+| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number`   |
 | 计算sin值|
-| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number`  |
+| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number`   |
 | 计算tan值|
 
 ## Properties
@@ -405,7 +405,6 @@ ___
 | `boolean` | true，在角度范围内 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20）
 </span>
@@ -439,7 +438,6 @@ ___
 | `number` | 计算结果 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
 </span>
@@ -453,7 +451,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let clamp = MathUtil.clamp(20, 0, 10);
         console.log(`clamp: ${clamp}`);
     }
@@ -479,7 +477,6 @@ ___
 | `number` | cos值 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
 </span>
@@ -494,7 +491,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的cos值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let cos = MathUtil.cos(Math.PI);
         console.log(`cos: ${cos}`);
     }
@@ -519,7 +516,6 @@ ___
 | `number` | 弧度值 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
 </span>
@@ -533,7 +529,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let degree = 180;
         let radians = MathUtil.degreesToRadians(degree);
         console.log(`degreesToRadians: ${radians}`);
@@ -561,7 +557,6 @@ ___
 | `number` | 数值x 除以 数值y 的余数 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
 </span>
@@ -575,7 +570,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let fmod = MathUtil.fmod(20, 3);
         console.log(`fmod: ${fmod}`);
     }
@@ -603,7 +598,6 @@ ___
 | `number` | 计算结果 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
@@ -623,7 +617,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let lerp = MathUtil.lerp(1, 10, 0.5);
         console.log(`lerp: ${lerp}`);
     }
@@ -649,7 +643,6 @@ ___
 | `number` | 度数 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
 </span>
@@ -663,7 +656,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let radian = Math.PI;
         let degrees = MathUtil.radiansToDegrees(radian);
         console.log(`radiansToDegrees: ${degrees}`);
@@ -691,7 +684,6 @@ ___
 | `number` | 随机范围内的浮点数 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
 </span>
@@ -705,7 +697,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let randomFloat = MathUtil.randomFloat(1, 10);
         console.log(`randomFloat: ${randomFloat}`);
     }
@@ -732,7 +724,6 @@ ___
 | `number` | 随机范围内的整数 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
 </span>
@@ -746,7 +737,7 @@ export default class MathExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let randomInt = MathUtil.randomInt(1, 10);
         console.log(`randomInt: ${randomInt}`);
     }
@@ -772,7 +763,6 @@ ___
 | `number` | sin值 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
 </span>
@@ -787,7 +777,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的sin值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let sin = MathUtil.sin(Math.PI / 2);
         console.log(`sin: ${sin}`);
     }
@@ -812,7 +802,6 @@ ___
 | `number` | tan值 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
 </span>
@@ -827,7 +816,7 @@ export default class MathExample extends Script {
     }
 
     //输出弧度制的tan值
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         let tan = MathUtil.tan(Math.PI / 4);
         console.log(`tan: ${tan}`);
     }

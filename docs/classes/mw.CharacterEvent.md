@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / CharacterEvent
+[界面](../groups/界面.界面.md) / CharacterEvent
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
@@ -7,7 +7,7 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[toInputEvent](mw.CharacterEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
+| **[toInputEvent](mw.CharacterEvent.md#toinputevent)**(): `InputEvent` <Badge type="tip" text="client" />  |
 | :-----|
 | 转化为 InputEvent|
 
@@ -17,12 +17,11 @@
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-• **toInputEvent**(): [`InputEvent`](mw.InputEvent.md) <Badge type="tip" text="client" />
+• **toInputEvent**(): `InputEvent` <Badge type="tip" text="client" />
 
 转化为 InputEvent
 
 #### Returns
 
-| [`InputEvent`](mw.InputEvent.md) | 返回转化后InputEvent |
+| `InputEvent` | 返回转化后InputEvent |
 | :------ | :------ |
-

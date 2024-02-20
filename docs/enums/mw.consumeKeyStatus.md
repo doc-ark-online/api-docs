@@ -1,4 +1,4 @@
-[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / consumeKeyStatus
+[服务](../groups/服务.服务.md) / consumeKeyStatus
 
 # consumeKeyStatus <Badge type="tip" text="Enumeration" /> <Score text="consumeKeyStatus" />
 

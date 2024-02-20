@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / Keys
+[基础类型](../groups/基础类型.基础类型.md) / Keys
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 
@@ -59,6 +59,7 @@
 | **[LeftBracket](mw.Keys.md#leftbracket)** = ``"[LeftBracket](mw.Keys.md#leftbracket)"`` |
 | **[LeftCommand](mw.Keys.md#leftcommand)** = ``"[LeftCommand](mw.Keys.md#leftcommand)"`` |
 | **[LeftControl](mw.Keys.md#leftcontrol)** = ``"[LeftControl](mw.Keys.md#leftcontrol)"`` |
+| **[LeftMouseButton](mw.Keys.md#leftmousebutton)** = ``"[LeftMouseButton](mw.Keys.md#leftmousebutton)"`` |
 | **[LeftShift](mw.Keys.md#leftshift)** = ``"[LeftShift](mw.Keys.md#leftshift)"`` |
 | **[M](mw.Keys.md#m)** = ``"[M](mw.Keys.md#m)"`` |
 | **[MiddleMouseButton](mw.Keys.md#middlemousebutton)** = ``"[MiddleMouseButton](mw.Keys.md#middlemousebutton)"`` |
@@ -529,6 +530,14 @@ ___
 • **LeftControl** = ``"LeftControl"``
 
 左Control键
+
+___
+
+### LeftMouseButton <Score text="LeftMouseButton" /> 
+
+• **LeftMouseButton** = ``"LeftMouseButton"``
+
+鼠标左键
 
 ___
 

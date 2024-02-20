@@ -1,4 +1,4 @@
-[SETTINGS](../groups/SETTINGS.SETTINGS.md) / AvatarSettings
+[设置](../groups/设置.设置.md) / AvatarSettings
 
 # AvatarSettings <Badge type="tip" text="Class" /> <Score text="AvatarSettings" />
 
@@ -26,9 +26,14 @@ export default class ClassExample extends Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[optimizationEnabled](mw.AvatarSettings.md#optimizationenabled)**(): `boolean`  |
+| **[optimizationEnabled](mw.AvatarSettings.md#optimizationenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 开启或关闭角色优化(角色裁剪、动画更新率降低等)|
+| 获取角色优化(角色裁剪、动画更新率降低等)|
+
+### Methods <Score text="Methods" /> 
+| **[setOptimization](mw.AvatarSettings.md#setoptimization)**(`character`: [`Character`](mw.Character.md), `bAnimationBudget`: `boolean`, `bWave`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| :-----|
+| 开启关闭一个角色优化(角色裁剪、动画更新率降低等)|
 
 ## Accessors
 
@@ -53,7 +58,6 @@ export default class ClassExample extends Script {
 
 获取角色优化(角色裁剪、动画更新率降低等)
 
-
 #### Returns
 
 | `boolean` | boolean:角色优化是否开启,如果返回值为undefined，请检查是否在客户端调用 |
@@ -66,14 +70,29 @@ export default class ClassExample extends Script {
 
 开启或关闭角色优化(角色裁剪、动画更新率降低等)
 
-
 #### Parameters
 
 | `isEnable` `boolean` | 是否开启或关闭角色优化 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
+
+
+
+## Methods
+
+### setOptimization <Score text="setOptimization" /> 
+
+• `Static` **setOptimization**(`character`, `bAnimationBudget`, `bWave`): `void` <Badge type="tip" text="client" />
+
+开启关闭一个角色优化(角色裁剪、动画更新率降低等)
+
+#### Parameters
+
+| `character` [`Character`](mw.Character.md) | 角色对象 |
+| :------ | :------ |
+| `bAnimationBudget` `boolean` | 是否开启或关闭角色动画预算分配器 |
+| `bWave` `boolean` | 是否开启或关闭角色距离优化 |
 

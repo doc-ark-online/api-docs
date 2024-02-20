@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / UIConstraintAnchors
+[界面](../groups/界面.界面.md) / UIConstraintAnchors
 
 # UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
 
@@ -15,13 +15,9 @@
 
 构造一个默认的
 
-
 • **new UIConstraintAnchors**(`InConstraintHorizontal`, `InConstraintVertical`)
 
 通过水平和垂直规则构造对象
-
-**`Effect`**
-
 
 #### Parameters
 

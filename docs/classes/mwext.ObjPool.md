@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ObjPool
+[基类](../groups/Extension.基类.md) / ObjPool
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
@@ -92,21 +92,20 @@ class Cube {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[size](mwext.ObjPool.md#size)**(): `number`  |
+| **[size](mwext.ObjPool.md#size)**(): `number`   |
 | :-----|
 | 获取对象池中空闲对象的数量|
 
 ### Methods <Score text="Methods" /> 
-| **[clear](mwext.ObjPool.md#clear)**(): `void`  |
+| **[clear](mwext.ObjPool.md#clear)**(): `void`   |
 | :-----|
 | 清除池中对象|
-| **[despawn](mwext.ObjPool.md#despawn)**(`obj`: `T`): `void`  |
+| **[despawn](mwext.ObjPool.md#despawn)**(`obj`: `T`): `void`   |
 | 归还一个对象|
-| **[spawn](mwext.ObjPool.md#spawn)**(): `T`  |
+| **[spawn](mwext.ObjPool.md#spawn)**(): `T`   |
 | 生成一个对象|
 
 构造一个对象池
-
 
 #### Type parameters
 
@@ -141,7 +140,6 @@ class Cube {
 
 获取对象池中空闲对象的数量
 
-
 #### Returns
 
 </td>
@@ -160,7 +158,6 @@ class Cube {
 清除池中对象
 
 
-
 ___
 
 ### despawn <Score text="despawn" /> 
@@ -175,7 +172,6 @@ ___
 | :------ | :------ |
 
 
-
 ___
 
 ### spawn <Score text="spawn" /> 
@@ -188,4 +184,3 @@ ___
 
 | `T` | 对象 |
 | :------ | :------ |
-

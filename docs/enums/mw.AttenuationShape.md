@@ -1,4 +1,4 @@
-[SOUNDS](../groups/SOUNDS.SOUNDS.md) / AttenuationShape
+[场景](../groups/场景.场景.md) / AttenuationShape
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 

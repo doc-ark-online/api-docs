@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / EventReply
+[界面](../groups/界面.界面.md) / EventReply
 
 # EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 
@@ -7,21 +7,17 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[handled](mw.EventReply.md#handled)**(): [`EventReply`](mw.EventReply.md)  |
+| **[handled](mw.EventReply.md#handled)**(): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 事件已处理|
-| **[unHandled](mw.EventReply.md#unhandled)**(): [`EventReply`](mw.EventReply.md)  |
+| **[unHandled](mw.EventReply.md#unhandled)**(): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
 | 事件未处理|
 
 默认构造
 
-
 • `Private` **new EventReply**()
 
 UE的默认值构造
-
-**`Effect`**
-
 
 ## Accessors
 
@@ -40,7 +36,6 @@ UE的默认值构造
 
 
 事件已处理
-
 
 #### Returns
 
@@ -68,7 +63,6 @@ ___
 
 
 事件未处理
-
 
 #### Returns
 

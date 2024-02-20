@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / AppearanceType
+[角色系统](../groups/角色系统.角色系统.md) / AppearanceType
 
 # AppearanceType <Badge type="tip" text="Enumeration" /> <Score text="AppearanceType" />
 

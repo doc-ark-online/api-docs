@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / TextCommit
+[界面](../groups/界面.界面.md) / TextCommit
 
 # TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 

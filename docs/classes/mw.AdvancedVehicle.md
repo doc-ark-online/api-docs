@@ -1,38 +1,10 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / AdvancedVehicle
+[玩法](../groups/玩法.玩法.md) / AdvancedVehicle
 
 # AdvancedVehicle <Badge type="tip" text="Class" /> <Score text="AdvancedVehicle" />
 
 四轮载具
 
 四轮载具是指模拟四个车轮的交通工具，例如汽车、卡车等。它们被设计成能够在游戏中自由移动、加速和转向，给玩家带来真实的驾驶体验。
-
-四轮载具通过模拟真实的物理来提供逼真的驾驶感觉。它们会考虑到车辆的重量、引擎的动力、车轮的摩擦力等因素。当你加速时，引擎会产生动力，四个轮子会转动，并且车辆会加速。当你转动方向时，车辆会根据轮子的转向角度来改变方向。
-
-1. 载具由什么组成的呢 ？
-
-载具模型简单来说可以总结为车身 + 轮胎 + 弹簧的模型。
-
-- 车身位置额外存在一个带有一定偏移的质心（质量中心简称质心，指物质系统上被认为质量集中于此的一个假想点。）属性，表示整个车的刚体质量中心；
-
-- 轮胎也就是车身下面不考虑自身质量的物体，每个轮胎相较于车身的质心也有一个偏移值；
-
-- 弹簧指的是轮胎将车身承载起来的效果，也就是将现实载具的悬浮功能转化为一个弹簧模型。
-
-车身主要用于储存基础属性，包括质量、车辆骨骼模型、车辆形状等；轮胎主要负责计算轮胎力，也就是与地面平行的平面上的力，包括横向力与纵向力；弹簧则主要负责计算垂直于地面的悬浮力，实现跟现实载具一样的效果。
-
-在车辆行驶的过程中，轮胎力是主要贡献：轮胎的纵向力使得车辆能够前进，而轮胎的横向力让车辆能够正常的转弯。悬浮力的主要功能是让车辆不会掉到地上，而是“飘”在空中，也就像是分摊承载着车辆的重量；并且在车辆有加减速或是转弯等总加速度会产生让车身倾斜的扭矩的情况下，能够正常表现出“颠簸”的感觉。
-
-2. 载具如何使用呢 ？
-
-左侧栏从逻辑对象列表直接用鼠标拖一个高级轮式载具对象进入场景或对象管理器，即可生成一个四轮载具；当然你也可以动态生成一个载具逻辑对象。
-
-高级轮式载具会自带一个触发器和一个交互物逻辑对象。用来触发交互事件，并绑定交互对象及开车动画。运行时进入触发器范围即可开启驾驶模式。WASD控制车身行驶，F下车。
-
-3. 如何DIY自己的车辆 ？
-
-在左侧栏中搜索车辆模型及挂件，放入高级轮式载具子级。
-
-点击高级轮式载具属性面板，在载具属性动力轮组中绑定车轮吸附车轮模型。
 
 ::: warning Precautions
 
@@ -44,7 +16,7 @@
 :::
 
 <span style="font-size: 14px;">
-使用示例: 通过脚本动态创建载具并绑定控制逻辑。创建一个名为"VehicleExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。按下 Q 键创建载具，走到触发器范围自动上车，WASD 进行驾驶，F 键下车。代码如下:
+使用示例: 通过脚本动态创建载具并绑定控制逻辑。创建一个名为"VehicleExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏。按下 Q 键创建载具，走到触发器范围自动上车，WASD 进行驾驶，F 键下车。代码如下：
 </span>
 
 ```ts
@@ -149,13 +121,41 @@ export default class VehicleSample extends Script {
             // 判断是否是玩家角色触碰的触发器，且是当前玩家。
             if (chara && chara.player == await mw.Player.asyncGetLocalPlayer()) {
                 // 关闭角色碰撞，避免与载具发生相互作用。
-                chara.setCollision(CollisionStatus.On);
+                chara.setCollision(CollisionStatus.Off);
                 // 激活交互物，让角色坐在车上。
                 this.interactor.enter(chara, mw.HumanoidSlotType.Buttocks, "14015");
                 // 设置载具的驾驶员，此时开始模拟物理，可以驾驶。
                 this.vehicle.owner = chara.player;
                 // 调整一些参数。
-                this.adjustVehicleParams();
+                const handle_press_one = InputUtil.onKeyDown(Keys.One, () => {
+                    // 按下 1 调整载具质量
+                    this.adjustVehicleMass();
+                });
+                this.controlEventsHandle.push(handle_press_one);
+
+                const handle_press_two = InputUtil.onKeyDown(Keys.Two, () => {
+                    // 按下 2 调整载具摩擦力系数
+                    this.adjustVehicleFriction();
+                });
+                this.controlEventsHandle.push(handle_press_two);
+
+                const handle_press_three = InputUtil.onKeyDown(Keys.Three, () => {
+                    // 按下 3 调整载具发动机最大转速
+                    this.adjustVehicleMaxEngineRPM();
+                });
+                this.controlEventsHandle.push(handle_press_three);
+
+                const handle_press_four = InputUtil.onKeyDown(Keys.Four, () => {
+                    // 按下 4 调整载具加速度
+                    this.adjustVehicleAcceleration();
+                });
+                this.controlEventsHandle.push(handle_press_four);
+
+                const handle_press_five = InputUtil.onKeyDown(Keys.Five, () => {
+                    // 按下 5 调整载具制动力矩
+                    this.adjustVehicleBrakingTorque();
+                });
+                this.controlEventsHandle.push(handle_press_five);
 
                 this.VehicleKeyEvents();
             }
@@ -242,10 +242,49 @@ export default class VehicleSample extends Script {
         this.controlEventsHandle = [];
     }
 
-    // 调整载具参数。
-    private adjustVehicleParams(): void {
-        // 将质量从 1500 改成 10000 Kg。
-        this.vehicle.mass = 10000;
+    // 调整载具质量（1500与10000来回切换）。
+    private adjustVehicleMass(): void {
+        if (this.vehicle.mass == 1500) {
+            this.vehicle.mass = 10000;
+        } else {
+            this.vehicle.mass = 1500;
+        }
+    }
+
+    // 调整载具摩擦力系数（0.01与3来回切换）。
+    private adjustVehicleFriction(): void {
+        if (this.vehicle.friction == 3) {
+            this.vehicle.friction = 0.01;
+        } else {
+            this.vehicle.friction = 3;
+        }
+    }
+
+    // 调整载具发动机最大转速（1000与6000来回切换）。
+    private adjustVehicleMaxEngineRPM(): void {
+        if (this.vehicle.maxEngineRPM == 6000) {
+            this.vehicle.maxEngineRPM = 1000;
+        } else {
+            this.vehicle.maxEngineRPM = 6000;
+        }
+    }
+
+    // 调整载具加速度（0.1与1来回切换）。
+    private adjustVehicleAcceleration(): void {
+        if (this.vehicle.acceleration == 1) {
+            this.vehicle.acceleration = 0.1;
+        } else {
+            this.vehicle.acceleration = 1;
+        }
+    }
+
+    // 调整载具制动力矩（0与1500来回切换）。
+    private adjustVehicleBrakingTorque(): void {
+        if (this.vehicle.brakingTorque == 1500) {
+            this.vehicle.brakingTorque = 0;
+        } else {
+            this.vehicle.brakingTorque = 1500;
+        }
     }
 }
 ```
@@ -259,149 +298,235 @@ export default class VehicleSample extends Script {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
+| **[getOffEventHandle](mw.AdvancedVehicle.md#getoffeventhandle)**: `any`  |
+| :----- |
+| **[getOffFunc](mw.AdvancedVehicle.md#getofffunc)**: `any` |
+| **[handbrakeInputDisableEventHandle](mw.AdvancedVehicle.md#handbrakeinputdisableeventhandle)**: `any` |
+| **[handbrakeInputEnableEventHandle](mw.AdvancedVehicle.md#handbrakeinputenableeventhandle)**: `any` |
 
 
-::: details 点击查看继承
+::: details click
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
 | 物体销毁后事件回调|
 :::
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[brakingTorque](mw.AdvancedVehicle.md#brakingtorque)**(): `number`  |
+| **[acceleration](mw.AdvancedVehicle.md#acceleration)**(): `number`   |
 | :-----|
-| 获取当前制动力矩，单位：牛*米（N*m）。|
-| **[currentGearLevel](mw.AdvancedVehicle.md#currentgearlevel)**(): `number`  |
-| 设置当前档位级别。|
-| **[driveMode](mw.AdvancedVehicle.md#drivemode)**(): [`VehicleDriveMode4WNew`](../enums/mw.VehicleDriveMode4WNew.md)  |
+| 获取加速度。|
+| **[brakingTorque](mw.AdvancedVehicle.md#brakingtorque)**(): `number`   |
+| 获取制动力矩。单位：牛*米（N*m）|
+| **[currentGearLevel](mw.AdvancedVehicle.md#currentgearlevel)**(): `number`   |
+| 获取当前档位级别。|
+| **[driveMode](mw.AdvancedVehicle.md#drivemode)**(): [`VehicleDriveMode4WNew`](../enums/mw.VehicleDriveMode4WNew.md)   |
 | 获取载具驱动模式。|
-| **[friction](mw.AdvancedVehicle.md#friction)**(): `number`  |
+| **[friction](mw.AdvancedVehicle.md#friction)**(): `number`   |
 | 获取载具摩擦力系数。|
-| **[handbrakeInputEnable](mw.AdvancedVehicle.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void`  |
+| **[handbrakeInputEnable](mw.AdvancedVehicle.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void`   |
 | 是否进行手刹，true-进行制动, false-取消制动。|
-| **[mass](mw.AdvancedVehicle.md#mass)**(): `number`  |
-| 设置载具质量，单位：千克（kg）。|
-| **[maxEngineRPM](mw.AdvancedVehicle.md#maxenginerpm)**(): `number`  |
-| 获取最大发动机转速，单位：转/分（r/min）。|
-| **[maxGearLevel](mw.AdvancedVehicle.md#maxgearlevel)**(): `number`  |
+| **[mass](mw.AdvancedVehicle.md#mass)**(): `number`   |
+| 获取质量。|
+| **[maxEngineRPM](mw.AdvancedVehicle.md#maxenginerpm)**(): `number`   |
+| 获取最大发动机转速。单位：转/分（r/min）|
+| **[maxGearLevel](mw.AdvancedVehicle.md#maxgearlevel)**(): `number`   |
 | 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
-| **[owner](mw.AdvancedVehicle.md#owner)**(`inOwner`: [`Player`](mw.Player.md)): `void`  |
-| 设置载具驾驶员。只有驾驶员才可以操作载具。|
-| **[simulatePhysics](mw.AdvancedVehicle.md#simulatephysics)**(`shouldSimulate`: `boolean`): `void`  |
+| **[owner](mw.AdvancedVehicle.md#owner)**(): [`Player`](mw.Player.md) <Badge type="tip" text="other" />  |
+| 获取载具驾驶员。|
+| **[simulatePhysics](mw.AdvancedVehicle.md#simulatephysics)**(`shouldSimulate`: `boolean`): `void`   |
 | 设置四轮载具是否开启物理模拟计算，需要在客户端调用。|
-| **[steeringInput](mw.AdvancedVehicle.md#steeringinput)**(`newInput`: `number`): `void`  |
+| **[steeringInput](mw.AdvancedVehicle.md#steeringinput)**(`newInput`: `number`): `void`   |
 | 控制载具左/右转向，设置转向幅度，取值范围[-1,1]，大于0时右转，小于0则左转。|
-| **[throttleInput](mw.AdvancedVehicle.md#throttleinput)**(`newInput`: `number`): `void`  |
+| **[throttleInput](mw.AdvancedVehicle.md#throttleinput)**(`newInput`: `number`): `void`   |
 | 控制载具前进/后退，设置油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。|
-| **[velocity](mw.AdvancedVehicle.md#velocity)**(): `number`  |
+| **[velocity](mw.AdvancedVehicle.md#velocity)**(): `number`   |
 | 获取当前行驶速度，单位：米/秒（m/s）。|
-| **[wheelNum](mw.AdvancedVehicle.md#wheelnum)**(): `number`  |
+| **[wheelNum](mw.AdvancedVehicle.md#wheelnum)**(): `number`   |
 | 获取车轮数量。|
 
 
-::: details 点击查看继承
+::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.GameObject.md#assetid)**(): `string`  |
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | :-----|
 | 获取当前物体使用资源的GUID|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`  |
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
-| **[isReady](mw.GameObject.md#isready)**(): `boolean`  |
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体本地变换|
-| **[name](mw.GameObject.md#name)**(): `string`  |
-| 设置物体名称|
-| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)  |
+| **[name](mw.GameObject.md#name)**(): `string`   |
+| 返回当前物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
 | 获取当前物体同步状态|
-| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)  |
-| 设置父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string`  |
-| 设置当前物体的标签|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
+| 获取当前父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`   |
+| 获取当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
 | 当前物体世界变换|
 :::
 
 
 ### Methods <Score text="Methods" /> 
-| **[gearDown](mw.AdvancedVehicle.md#geardown)**(): `void`  |
+| **[gearDown](mw.AdvancedVehicle.md#geardown)**(): `void`   |
 | :-----|
 | 降一档，立即切换。|
-| **[gearUp](mw.AdvancedVehicle.md#gearup)**(): `void`  |
+| **[gearUp](mw.AdvancedVehicle.md#gearup)**(): `void`   |
 | 升一档，立即切换。|
-| **[getGearData](mw.AdvancedVehicle.md#getgeardata)**(`gearLevel`: `number`): [`VehicleGearDataNew`](../modules/Core.mw.md#vehiclegeardatanew)  |
+| **[getGearData](mw.AdvancedVehicle.md#getgeardata)**(`gearLevel`: `number`): [`VehicleGearDataNew`](../modules/Core.mw.md#vehiclegeardatanew)   |
 | 获取指定档位属性|
-| **[getWheelMaxSteerAngle](mw.AdvancedVehicle.md#getwheelmaxsteerangle)**(`wheelId`: `number`): `number`  |
+| **[getWheelMaxSteerAngle](mw.AdvancedVehicle.md#getwheelmaxsteerangle)**(`wheelId`: `number`): `number`   |
 | 获取车轮最大转向角度，单位：度（°）。|
-| **[getWheelModel](mw.AdvancedVehicle.md#getwheelmodel)**(`wheelId`: `number`): `string`  |
+| **[getWheelModel](mw.AdvancedVehicle.md#getwheelmodel)**(`wheelId`: `number`): `string`   |
 | 获取轮胎绑定对象。|
-| **[getWheelRadius](mw.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number`  |
+| **[getWheelRadius](mw.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number`   |
 | 获取车轮半径，单位：厘米（cm）。|
-| **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void`  |
+| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void` |
+| **[onPlayerId](mw.AdvancedVehicle.md#onplayerid)**(`path`, `value`, `oldPlayerId`): `void` |
+| **[onStart](mw.AdvancedVehicle.md#onstart)**(): `void` |
+| **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void`   |
 | 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
+| **[setWheelRadius](mw.AdvancedVehicle.md#setwheelradius)**(`wheelId`: `number`, `Radius`: `number`): `void`   |
+| 设置车轮半径，单位：厘米（cm）。|
 
 
-::: details 点击查看继承
+::: details click
 ### Methods <Score text="Methods" /> 
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
 | :-----|
+| 添加一个脚本组件|
+| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 附加脚本|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[destroy](mw.GameObject.md#destroy)**(): `void`  |
+| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
+| 移除脚本|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`  |
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据gameObjectId查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
-| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
-| 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
-| 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
-| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
 | 异步构造一个物体，资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过gameObjectId查找物体|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
-| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过自定义标签获取物体|
-| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
 | 构造一个物体|
 :::
 
 
 ## Properties
 
+### getOffEventHandle <Score text="getOffEventHandle" /> 
+
+• `Private` **getOffEventHandle**: `any`
+
+___
+
+### getOffFunc <Score text="getOffFunc" /> 
+
+• `Private` **getOffFunc**: `any`
+
+___
+
+### handbrakeInputDisableEventHandle <Score text="handbrakeInputDisableEventHandle" /> 
+
+• `Private` **handbrakeInputDisableEventHandle**: `any`
+
+___
+
+### handbrakeInputEnableEventHandle <Score text="handbrakeInputEnableEventHandle" /> 
+
+• `Private` **handbrakeInputEnableEventHandle**: `any`
+
 ## Accessors
+
+### acceleration <Score text="acceleration" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **acceleration**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **acceleration**(`acceleration`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取加速度。
+
+#### Returns
+
+| `number` | 载具加速系数 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置加速度。
+
+**`Range`**
+
+[0.01, 100]
+
+#### Parameters
+
+| `acceleration` `number` |  新的加速系数 default: 1 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -414,22 +539,44 @@ ___
 • `get` **brakingTorque**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **brakingTorque**(`Torque`): `void` 
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
 
 
-获取当前制动力矩，单位：牛*米（N*m）。
+获取制动力矩。单位：牛*米（N*m）
 
 **`Info`**
 
 车辆制动力矩是指应用于车辆制动系统的力矩，用于减速或停止车辆运动。它是制动系统产生的力矩，通过制动器（如刹车盘和刹车片）施加到车轮上，从而减少车轮的旋转速度。
 
-
 #### Returns
 
 | `number` | 当前制动力矩 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置制动力矩。单位：牛*米（N*m）
+
+**`Range`**
+
+[0, 1000000]
+
+#### Parameters
+
+| `Torque` `number` |  新的制动力矩 default: 1500 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -448,7 +595,7 @@ ___
 </th>
 <th style="text-align: left">
 
-• `set` **currentGearLevel**(`level`): `void` <Badge type="tip" text="client" />
+• `set` **currentGearLevel**(`level`): `void` 
 
 </th>
 </tr></thead>
@@ -457,7 +604,6 @@ ___
 
 
 获取当前档位级别。
-
 
 #### Returns
 
@@ -470,7 +616,6 @@ ___
 
 
 设置当前档位级别。
-
 
 **`Range`**
 
@@ -485,7 +630,7 @@ ___
 
 #### Parameters
 
-| `level` | `number` |
+| `level` `number` |  将要切换到的档位 default: 0 |
 | :------ | :------ |
 
 
@@ -512,7 +657,6 @@ ___
 
 获取载具驱动模式。
 
-
 #### Returns
 
 | [`VehicleDriveMode4WNew`](../enums/mw.VehicleDriveMode4WNew.md) | 载具驱动模式 |
@@ -533,6 +677,11 @@ ___
 • `get` **friction**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **friction**(`friction`): `void` 
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
@@ -540,11 +689,28 @@ ___
 
 获取载具摩擦力系数。
 
-
 #### Returns
 
 | `number` | 载具摩擦力系数 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置载具车轮摩擦力系数
+
+**`Range`**
+
+[0.01, 8]
+
+#### Parameters
+
+| `friction` `number` |  新的摩擦力系数 default: 3 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -558,7 +724,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `set` **handbrakeInputEnable**(`useHandbrake`): `void` <Badge type="tip" text="client" />
+• `set` **handbrakeInputEnable**(`useHandbrake`): `void` 
 
 </th>
 </tr></thead>
@@ -568,7 +734,6 @@ ___
 
 是否进行手刹，true-进行制动, false-取消制动。
 
-
 ::: warning Precautions
 
 输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
@@ -577,7 +742,7 @@ ___
 
 #### Parameters
 
-| `useHandbrake` `boolean` |  是否进行手刹，true-进行制动, false-取消制动。 |
+| `useHandbrake` `boolean` |  是否进行手刹，true-进行制动, false-取消制动。default: false |
 | :------ | :------ |
 
 
@@ -599,7 +764,7 @@ ___
 </th>
 <th style="text-align: left">
 
-• `set` **mass**(`mass`): `void` <Badge type="tip" text="client" />
+• `set` **mass**(`mass`): `void` 
 
 </th>
 </tr></thead>
@@ -608,7 +773,6 @@ ___
 
 
 获取质量。
-
 
 #### Returns
 
@@ -621,7 +785,6 @@ ___
 
 
 设置载具质量，单位：千克（kg）。
-
 
 **`Range`**
 
@@ -636,7 +799,7 @@ ___
 
 #### Parameters
 
-| `mass` | `number` |
+| `mass` `number` |  设置值 default: 1500 |
 | :------ | :------ |
 
 
@@ -656,18 +819,40 @@ ___
 • `get` **maxEngineRPM**(): `number` 
 
 </th>
+<th style="text-align: left">
+
+• `set` **maxEngineRPM**(`RPM`): `void` 
+
+</th>
 </tr></thead>
 <tbody><tr>
 <td style="text-align: left">
 
 
-获取最大发动机转速，单位：转/分（r/min）。
-
+获取最大发动机转速。单位：转/分（r/min）
 
 #### Returns
 
 | `number` | 载具发动机转速 |
 | :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置最大发动机转速。单位：转/分（r/min）
+
+**`Range`**
+
+[100, 5000000]
+
+#### Parameters
+
+| `RPM` `number` |  新的载具发动机转速 default: 6000 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -697,7 +882,6 @@ ___
 
 :::
 
-
 #### Returns
 
 | `number` | 最大档位级别 |
@@ -715,7 +899,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `set` **owner**(`inOwner`): `void` <Badge type="tip" text="client" />
+• `get` **owner**(): [`Player`](mw.Player.md) <Badge type="tip" text="other" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **owner**(`inOwner`): `void` <Badge type="tip" text="other" />
 
 </th>
 </tr></thead>
@@ -723,8 +912,19 @@ ___
 <td style="text-align: left">
 
 
-设置载具驾驶员。只有驾驶员才可以操作载具。
+获取载具驾驶员。
 
+#### Returns
+
+| [`Player`](mw.Player.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置载具驾驶员。只有驾驶员才可以操作载具。
 
 #### Parameters
 
@@ -745,7 +945,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `set` **simulatePhysics**(`shouldSimulate`): `void` <Badge type="tip" text="client" />
+• `set` **simulatePhysics**(`shouldSimulate`): `void` 
 
 </th>
 </tr></thead>
@@ -755,7 +955,6 @@ ___
 
 设置四轮载具是否开启物理模拟计算，需要在客户端调用。
 
-
 ::: warning Precautions
 
 四轮载具只在set owner成功后才会进行物理模拟。此时关闭物理模拟将无法继续驱动载具移动。
@@ -764,7 +963,7 @@ ___
 
 #### Parameters
 
-| `shouldSimulate` `boolean` |  是否启用物理模拟。true-启用，false-不启用 |
+| `shouldSimulate` `boolean` |  是否启用物理模拟。true-启用，false-不启用 default: true |
 | :------ | :------ |
 
 
@@ -781,7 +980,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `set` **steeringInput**(`newInput`): `void` <Badge type="tip" text="client" />
+• `set` **steeringInput**(`newInput`): `void` 
 
 </th>
 </tr></thead>
@@ -790,7 +989,6 @@ ___
 
 
 控制载具左/右转向，设置转向幅度，取值范围[-1,1]，大于0时右转，小于0则左转。
-
 
 **`Range`**
 
@@ -806,7 +1004,7 @@ ___
 
 #### Parameters
 
-| `newInput` | `number` |
+| `newInput` `number` |  设置值 default: 0 |
 | :------ | :------ |
 
 
@@ -845,7 +1043,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `set` **throttleInput**(`newInput`): `void` <Badge type="tip" text="client" />
+• `set` **throttleInput**(`newInput`): `void` 
 
 </th>
 </tr></thead>
@@ -854,7 +1052,6 @@ ___
 
 
 控制载具前进/后退，设置油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。
-
 
 **`Range`**
 
@@ -870,7 +1067,7 @@ ___
 
 #### Parameters
 
-| `newInput` | `number` |
+| `newInput` `number` |  设置值 default: 0 |
 | :------ | :------ |
 
 
@@ -919,7 +1116,6 @@ ___
 
 获取当前行驶速度，单位：米/秒（m/s）。
 
-
 #### Returns
 
 | `number` | 当前行驶速度 |
@@ -947,7 +1143,6 @@ ___
 
 获取车轮数量。
 
-
 #### Returns
 
 </td>
@@ -963,20 +1158,18 @@ ___
 
 ### gearDown <Score text="gearDown" /> 
 
-• **gearDown**(): `void` <Badge type="tip" text="client" />
+• **gearDown**(): `void` 
 
 降一档，立即切换。
-
 
 
 ___
 
 ### gearUp <Score text="gearUp" /> 
 
-• **gearUp**(): `void` <Badge type="tip" text="client" />
+• **gearUp**(): `void` 
 
 升一档，立即切换。
-
 
 
 ___
@@ -996,7 +1189,6 @@ ___
 
 | [`VehicleGearDataNew`](../modules/Core.mw.md#vehiclegeardatanew) | 指定档位属性 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -1022,7 +1214,6 @@ ___
 | `number` | 指定车轮最大转向角度 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
@@ -1046,7 +1237,6 @@ ___
 
 | `string` | 指定轮胎绑定对象GUID |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -1072,7 +1262,6 @@ ___
 | `number` | 指定车轮半径 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
@@ -1081,9 +1270,27 @@ ___
 
 ___
 
+### onDestroy <Score text="onDestroy" /> 
+
+• `Protected` **onDestroy**(): `void`
+
+___
+
+### onPlayerId <Score text="onPlayerId" /> 
+
+• `Protected` **onPlayerId**(`path`, `value`, `oldPlayerId`): `void`
+
+___
+
+### onStart <Score text="onStart" /> 
+
+• **onStart**(): `void`
+
+___
+
 ### setCullDistance <Score text="setCullDistance" /> 
 
-• **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
+• **setCullDistance**(`inCullDistance`): `void` 
 
 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
 
@@ -1093,7 +1300,40 @@ ___
 | :------ | :------ |
 
 
-
 ::: warning Precautions
 
 最终的裁剪距离会和画质等级有关
+
+:::
+
+
+
+#### Parameters
+
+| `path` | `string` |
+| :------ | :------ |
+| `value` | `number` |
+| `oldPlayerId` | `number` |
+
+
+| :------ | :------ |
+
+
+___
+
+### setWheelRadius <Score text="setWheelRadius" /> 
+
+• **setWheelRadius**(`wheelId`, `Radius`): `void` 
+
+设置车轮半径，单位：厘米（cm）。
+
+#### Parameters
+
+| `wheelId` `number` |  根据序号指定车轮 |
+| :------ | :------ |
+| `Radius` `number` |  指定车轮半径 |
+
+
+::: warning Precautions
+
+注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。仅在上车前生效，上车后调用此接口无效果。

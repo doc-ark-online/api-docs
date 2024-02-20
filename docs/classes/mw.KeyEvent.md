@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / KeyEvent
+[界面](../groups/界面.界面.md) / KeyEvent
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
@@ -7,12 +7,20 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getKey](mw.KeyEvent.md#getkey)**(): [`KeyEvent`](mw.KeyEvent.md)  |
+| **[getKey](mw.KeyEvent.md#getkey)**(): `string` <Badge type="tip" text="client" />  |
 | :-----|
 | 获取按下的键|
-| **[getUserIndex](mw.KeyEvent.md#getuserindex)**(): `number`  |
+| **[getUserIndex](mw.KeyEvent.md#getuserindex)**(): `number` <Badge type="tip" text="client" />  |
 | 获取事件触发玩家index|
-| **[toInputEvent](mw.KeyEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
+| **[isAltDown](mw.KeyEvent.md#isaltdown)**(): `boolean` <Badge type="tip" text="client" />  |
+| alt键是否按下|
+| **[isCommandDown](mw.KeyEvent.md#iscommanddown)**(): `boolean` <Badge type="tip" text="client" />  |
+| command键是否按下|
+| **[isControlDown](mw.KeyEvent.md#iscontroldown)**(): `boolean` <Badge type="tip" text="client" />  |
+| control键是否按下|
+| **[isShiftDow](mw.KeyEvent.md#isshiftdow)**(): `boolean` <Badge type="tip" text="client" />  |
+| shift键是否按下|
+| **[toInputEvent](mw.KeyEvent.md#toinputevent)**(): `InputEvent` <Badge type="tip" text="client" />  |
 | 转化为 InputEvent*|
 
 默认构造
@@ -21,15 +29,14 @@
 
 ### getKey <Score text="getKey" /> 
 
-• **getKey**(): [`KeyEvent`](mw.KeyEvent.md) <Badge type="tip" text="client" />
+• **getKey**(): `string` <Badge type="tip" text="client" />
 
 获取按下的键
 
 #### Returns
 
-| [`KeyEvent`](mw.KeyEvent.md) | 返回按下的键 |
+| `string` | 返回按下的键的名称 |
 | :------ | :------ |
-
 
 ___
 
@@ -44,17 +51,67 @@ ___
 | `number` | 返回事件触发玩家index |
 | :------ | :------ |
 
+___
+
+### isAltDown <Score text="isAltDown" /> 
+
+• **isAltDown**(): `boolean` <Badge type="tip" text="client" />
+
+alt键是否按下
+
+#### Returns
+
+| `boolean` | 返回Alt键是否按下 |
+| :------ | :------ |
+
+___
+
+### isCommandDown <Score text="isCommandDown" /> 
+
+• **isCommandDown**(): `boolean` <Badge type="tip" text="client" />
+
+command键是否按下
+
+#### Returns
+
+| `boolean` | 返回Command键是否按下 |
+| :------ | :------ |
+
+___
+
+### isControlDown <Score text="isControlDown" /> 
+
+• **isControlDown**(): `boolean` <Badge type="tip" text="client" />
+
+control键是否按下
+
+#### Returns
+
+| `boolean` | 返回Control键是否按下 |
+| :------ | :------ |
+
+___
+
+### isShiftDow <Score text="isShiftDow" /> 
+
+• **isShiftDow**(): `boolean` <Badge type="tip" text="client" />
+
+shift键是否按下
+
+#### Returns
+
+| `boolean` | 返回shift键是否按下 |
+| :------ | :------ |
 
 ___
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-• **toInputEvent**(): [`InputEvent`](mw.InputEvent.md) <Badge type="tip" text="client" />
+• **toInputEvent**(): `InputEvent` <Badge type="tip" text="client" />
 
 转化为 InputEvent*
 
 #### Returns
 
-| [`InputEvent`](mw.InputEvent.md) | 返回转化后 InputEvent |
+| `InputEvent` | 返回转化后 InputEvent |
 | :------ | :------ |
-

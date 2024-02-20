@@ -1,4 +1,4 @@
-[INPUT](../groups/INPUT.INPUT.md) / GestureDelegate
+[输入](../groups/输入.输入.md) / GestureDelegate
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 

@@ -1,11 +1,11 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponReloadComponent
+[玩法](../groups/玩法.玩法.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用了换弹组件，设置参数，添加委托的效果,代码如下:
+使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，代码如下：
 </span>
 
 ```ts
@@ -38,14 +38,14 @@ export default class HotWeaponReloadSample1 extends Script {
 | :-----|
 | 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
 | **[onStartReload](mw.HotWeaponReloadComponent.md#onstartreload)**: `MulticastDelegateInterface`<() => `void`\>  |
-| 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
+| 开始换弹时执行绑定函数。|
 
 ### Accessors <Score text="Accessors" /> 
-| **[animationAssetId](mw.HotWeaponReloadComponent.md#animationassetid)**(): `string`  |
+| **[animationAssetId](mw.HotWeaponReloadComponent.md#animationassetid)**(): `string`   |
 | :-----|
-| 设置动画 GUID。使用示例见类 HotWeaponReloadComponent 使用示例|
-| **[reloadDuration](mw.HotWeaponReloadComponent.md#reloadduration)**(): `number`  |
-| 设置换弹时间。使用示例见类 HotWeaponReloadComponent 使用示例|
+| 获取绑定的动画GUID。|
+| **[reloadDuration](mw.HotWeaponReloadComponent.md#reloadduration)**(): `number`   |
+| 获取换弹时间。|
 
 ## Properties
 
@@ -61,7 +61,7 @@ ___
 
 • **onStartReload**: `MulticastDelegateInterface`<() => `void`\>
 
-开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
+开始换弹时执行绑定函数。
 
 ## Accessors
 
@@ -84,8 +84,7 @@ ___
 <td style="text-align: left">
 
 
-获取绑定的动画GUID。使用示例见类 HotWeaponReloadComponent 使用示例
-
+获取绑定的动画GUID。
 
 #### Returns
 
@@ -97,9 +96,7 @@ ___
 <td style="text-align: left">
 
 
-设置动画 GUID。使用示例见类 HotWeaponReloadComponent 使用示例
-
-调用端自动广播
+设置动画 GUID。
 
 #### Parameters
 
@@ -133,8 +130,7 @@ ___
 <td style="text-align: left">
 
 
-获取换弹时间。使用示例见类 HotWeaponReloadComponent 使用示例
-
+获取换弹时间。
 
 #### Returns
 
@@ -146,9 +142,7 @@ ___
 <td style="text-align: left">
 
 
-设置换弹时间。使用示例见类 HotWeaponReloadComponent 使用示例
-
-调用端自动广播
+设置换弹时间。
 
 ::: warning Precautions
 
@@ -158,7 +152,7 @@ ___
 
 #### Parameters
 
-| `time` `number` |  新换弹时间 |
+| `time` `number` |  新换弹时间 <br> default: 0.1 <br> range: [0.01, 10] |
 | :------ | :------ |
 
 

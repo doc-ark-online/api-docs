@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / BasicStanceType
+[角色系统](../groups/角色系统.角色系统.md) / BasicStanceType
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 

@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / Geometry
+[界面](../groups/界面.界面.md) / Geometry
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
@@ -7,18 +7,18 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getAbsolutePosition](mw.Geometry.md#getabsoluteposition)**(): [`Vector2`](mw.Vector2.md)  |
+| **[getAbsolutePosition](mw.Geometry.md#getabsoluteposition)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 获取绝对坐标|
-| **[getAbsolutePositionAtCoordinates](mw.Geometry.md#getabsolutepositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| **[getAbsolutePositionAtCoordinates](mw.Geometry.md#getabsolutepositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取基于Coordinate的绝对坐标|
-| **[getAbsoluteSize](mw.Geometry.md#getabsolutesize)**(): [`Vector2`](mw.Vector2.md)  |
+| **[getAbsoluteSize](mw.Geometry.md#getabsolutesize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取绝对大小|
-| **[getLocalPositionAtCoordinates](mw.Geometry.md#getlocalpositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| **[getLocalPositionAtCoordinates](mw.Geometry.md#getlocalpositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取基于Coordinate的相对坐标|
-| **[getLocalSize](mw.Geometry.md#getlocalsize)**(): [`Vector2`](mw.Vector2.md)  |
+| **[getLocalSize](mw.Geometry.md#getlocalsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取相对大小|
-| **[isUnderLocation](mw.Geometry.md#isunderlocation)**(`AbsoluteCoordinate`: [`Vector2`](mw.Vector2.md)): `boolean`  |
+| **[isUnderLocation](mw.Geometry.md#isunderlocation)**(`AbsoluteCoordinate`: [`Vector2`](mw.Vector2.md)): `boolean` <Badge type="tip" text="client" />  |
 | 判断该Geometry 是否在AbsoluteCoordinate坐标下|
 
 默认构造
@@ -35,7 +35,6 @@
 
 | [`Vector2`](mw.Vector2.md) | 返回绝对坐标 |
 | :------ | :------ |
-
 
 ___
 
@@ -55,7 +54,6 @@ ___
 | [`Vector2`](mw.Vector2.md) | 返回Coordinate的绝对坐标 |
 | :------ | :------ |
 
-
 ___
 
 ### getAbsoluteSize <Score text="getAbsoluteSize" /> 
@@ -68,7 +66,6 @@ ___
 
 | [`Vector2`](mw.Vector2.md) | 返回绝对大小 |
 | :------ | :------ |
-
 
 ___
 
@@ -88,7 +85,6 @@ ___
 | [`Vector2`](mw.Vector2.md) | 返回Coordinate的相对坐标 |
 | :------ | :------ |
 
-
 ___
 
 ### getLocalSize <Score text="getLocalSize" /> 
@@ -101,7 +97,6 @@ ___
 
 | [`Vector2`](mw.Vector2.md) | 返回相对大小 |
 | :------ | :------ |
-
 
 ___
 
@@ -120,4 +115,3 @@ ___
 
 | `boolean` | 返回是否在AbsoluteCoordinate坐标下 |
 | :------ | :------ |
-

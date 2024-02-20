@@ -7,12 +7,12 @@ Decorator
 ## Table of contents
 
 ### Functions <Score text="Functions" /> 
-| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void`  |
+| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void`   |
 | :-----|
 | 类装饰器-自动执行某个方法|
-| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void`  |
+| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <Badge type="tip" text="server" />  |
 | 方法注解-被注解的net方法不需要回复客户端|
-| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void`  |
+| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void`   |
 | 属性注解-持久化存储属性|
 
 ## Functions
@@ -28,7 +28,6 @@ Decorator
 调用发生在所有游戏脚本的生命周期之前
 
 :::
-
 
 #### Parameters
 
@@ -48,7 +47,6 @@ ___
 
 方法注解-被注解的net方法不需要回复客户端
 
-
 #### Returns
 
 | `fn` | `void` |
@@ -67,7 +65,6 @@ ___
 用于设置数据类(继承Subdata的类)哪些属性是要永久存储的
 
 :::
-
 
 #### Parameters
 

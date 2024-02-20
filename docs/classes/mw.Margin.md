@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / Margin
+[界面](../groups/界面.界面.md) / Margin
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
@@ -18,7 +18,6 @@
 | 上|
 
 使用一个值初始化四个值的构造方法
-
 
 #### Parameters
 

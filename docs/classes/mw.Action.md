@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / Action
+[基础类型](../groups/基础类型.基础类型.md) / Action
 
 # Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
@@ -31,15 +31,15 @@
 代理（助手）具有与你相同的能力和职责，他可以代表你与客户进行交流、签署文件等等。当有事务需要处理时，你将任务委托给代理，代理会代替你执行相关的操作。然而，代理并不是完全取代你的存在。虽然代理可以处理大部分事务，但在某些情况下，代理需要将任务转交给你来处理。例如，当遇到特殊的请求或需要你的个人决策时，代理会将任务交还给你。
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为ActionExample的脚本，放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”将看到代理被调用的效果,按下键盘“2”会看到代理被移除的效果，代码如下：
+使用示例:创建一个名为ActionExample的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”将看到代理被调用的效果，按下键盘“2”会看到代理被移除的效果，代码如下：
 </span>
 
 ```ts
  @Component
  export default class ActionExample extends Script {
      private readonly action:Action = new Action();
-     private readonly action1:Action1<number> = new Action1();
-     private readonly action2:Action2<number, string> = new Action2();
+     private readonly action1:Action1<player> = new Action1();
+     private readonly action2:Action2<number, player> = new Action2();
 
      protected onStart(): void {
 
@@ -49,7 +49,7 @@
          });
          // 添加Action1的监听
          const id = this.action1.add((player: player) => {
-             if(player.age = 18) {
+             if(player.age < 18) {
                  console.log("sorry , only those over 18 years old can enter")
              } else {
                  // 可以对player展开具体的实现逻辑
@@ -113,21 +113,21 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[count](mw.Action.md#count)**(): `number`  |
+| **[count](mw.Action.md#count)**(): `number`   |
 | :-----|
 | 监听方法的数量|
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number`  |
+| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number`   |
 | :-----|
-| 添加一个监听方法(有重复过滤)|
-| **[call](mw.Action.md#call)**(`...params`: `any`): `void`  |
+| 添加一个监听方法|
+| **[call](mw.Action.md#call)**(`...params`: `any`): `void`   |
 | 执行|
-| **[clear](mw.Action.md#clear)**(): `void`  |
+| **[clear](mw.Action.md#clear)**(): `void`   |
 | 清除所有监听|
-| **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`  |
+| **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`   |
 | 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`  |
+| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`   |
 | 移除一个监听方法|
 
 ## Accessors
@@ -148,7 +148,6 @@
 
 监听方法的数量
 
-
 #### Returns
 
 </td>
@@ -164,19 +163,104 @@
 
 • **add**(`fn`, `thisArg?`): `number` 
 
-添加一个监听方法(有重复过滤)
+添加一个监听方法
 
 #### Parameters
 
 | `fn` `Function` |  方法 |
 | :------ | :------ |
-| `thisArg?` `any` |  域 default: undefined |
+| `thisArg?` `any` |  域，以下示例可以为您解释域的概念 default: undefined |
 
 #### Returns
 
-| `number` | 本次监听的唯一标识，可用于remove。如果返回-1，则说明这个方法之前添加过，不会重复添加 |
+| `number` | 本次监听的唯一标识，可用于remove。如果返回-1，则说明这个方法之前添加过，不会重复添加。 |
 | :------ | :------ |
 
+<span style="font-size: 14px;">
+使用示例: 解释“域”的概念
+</span>
+
+```ts
+@Component
+export default class ActionExample extends Script {
+
+    private readonly action1: Action1<player> = new Action1();
+    private readonly action2: Action1<player> = new Action1();
+    private readonly action3: Action1<player> = new Action1();
+    private readonly action4: Action1<player> = new Action1();
+    private readonly action5: Action1<player> = new Action1();
+
+    public playerOne: multiPlayer = new multiPlayer(10.5, "Janny");
+    public playertwo: lowPlayer = new lowPlayer(12, "Danny");
+    public playerthree : multiPlayer = new multiPlayer(11,"Liming");
+
+    private thisarg: number = 0;
+
+    protected onStart(): void {
+        // 域 传入 lowPlayer 对象，获取的是 lowPlayer 中 thisarg 值。
+        this.action1.add(this.clickOne, this.playertwo);
+        // 域 传入this等同于bind(this)，此类的 thisarg 值。
+        this.action2.add(this.clickOne, this);
+        this.action3.add(this.clickOne.bind(this));
+        // 域 什么也不传，为 undefined
+        this.action4.add(this.clickOne);
+        // 域 传入 multiPlayer 对象，获取的是 multiPlayer 中 thisarg 值。
+        this.action5.add(this.clickOne, this.playerthree);
+
+        InputUtil.onKeyDown(Keys.One, () => {
+            console.log("1")
+            this.action1.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Two, () => {
+            console.log("2")
+            this.action2.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Three, () => {
+            console.log("3")
+            this.action3.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Four, () => {
+            console.log("4")
+            this.action4.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Five, () => {
+            console.log("5")
+            this.action5.call(this.playerOne);
+        });
+    }
+
+    private clickOne(player: player): void {
+        console.warn("action1 is called:  " + this.thisarg);
+        player.game();
+    }
+}
+
+class player {
+    public age: number = 20;
+    public name: string = "Li";
+    constructor(age: number, name: string) {
+        this.age = age;
+        this.name = name;
+    }
+    public game() {
+        console.log("player is playing game");
+    }
+}
+class lowPlayer extends player {
+    private thisarg: number = 10;
+    public game(): void {
+        console.log("lowplayer is playing game");
+        console.log(this.age + "   " + this.name);
+    }
+}
+class multiPlayer extends player {
+    private thisarg: number = 20;
+    public game(): void {
+        console.log("multiPlayer is playing game");
+        console.log(this.age + "   " + this.name);
+    }
+}
+```
 
 ___
 
@@ -192,9 +276,8 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
-使用示例:创建一个名为ActionExample的脚本，放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”将看到代理被调用的效果,按下键盘“2”会看到代理被移除的效果，代码如下：
+使用示例:创建一个名为ActionExample的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”将看到代理被调用的效果，按下键盘“2”会看到代理被移除的效果，代码如下：
 </span>
 
 ```ts
@@ -244,7 +327,6 @@ ___
 清除所有监听
 
 
-
 ___
 
 ### includes <Score text="includes" /> 
@@ -264,7 +346,6 @@ ___
 | `boolean` | 结果 |
 | :------ | :------ |
 
-
 ___
 
 ### remove <Score text="remove" /> 
@@ -277,6 +358,5 @@ ___
 
 | `fn` `number`  `Function` |  方法监听唯一标识 |
 | :------ | :------ |
-| `thisArg?` `any` |  域，fn为number时不用写 default: undefined |
-
+| `thisArg?` `any` |  域 default: undefined |
 

@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / TimeUtil
+[工具](../groups/工具.工具.md) / TimeUtil
 
 # TimeUtil <Badge type="tip" text="Class" /> <Score text="TimeUtil" />
 
@@ -14,24 +14,24 @@
 | 是否输出每帧的执行时间|
 
 ### Methods <Score text="Methods" /> 
-| **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void`  |
+| **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void`   |
 | :-----|
 | 清除delayExecute|
-| **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`  |
+| **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`   |
 | 清除setInterval|
-| **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`  |
+| **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`   |
 | 延迟一定帧数执行方法|
-| **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>  |
+| **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>   |
 | 延迟一定秒数,用于异步方法中间的等待|
-| **[deltatime](mw.TimeUtil.md#deltatime)**(): `number`  |
+| **[deltatime](mw.TimeUtil.md#deltatime)**(): `number`   |
 | 每一帧经过的时间 (单位：秒)|
-| **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`  |
+| **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`   |
 | 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
-| **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string`  |
+| **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string`   |
 | 格式化时间戳|
-| **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number`  |
+| **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number`   |
 | 按一定时间间隔执行方法|
-| **[time](mw.TimeUtil.md#time)**(): `number`  |
+| **[time](mw.TimeUtil.md#time)**(): `number`   |
 | 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
 
 ## Properties
@@ -60,7 +60,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.onEnterFrame.add(this.onEnterFrame, this);
     }
@@ -94,7 +94,6 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
 </span>
@@ -107,7 +106,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let id = TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -134,7 +133,6 @@ ___
 | :------ | :------ |
 
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
 </span>
@@ -147,7 +145,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -187,7 +185,6 @@ ___
 | `number` | 用于停止的ID |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
 </span>
@@ -200,7 +197,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -228,7 +225,6 @@ ___
 | `Promise`<`void`\> | Promise |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
 </span>
@@ -241,7 +237,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delaySecond(5).then(() => {
             console.log("5 seconds later");
@@ -270,7 +266,6 @@ ___
 
 :::
 
-
 ___
 
 ### elapsedTime <Score text="elapsedTime" /> 
@@ -283,7 +278,6 @@ ___
 
 | `number` | 自游戏运行后所经过的总时长。 |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -303,7 +297,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         InputUtil.onKeyDown(Keys.F, () => {
             const elapsedTime = TimeUtil.elapsedTime();
@@ -333,7 +327,6 @@ ___
 | `string` | 格式化后时间字符串 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
 </span>
@@ -346,7 +339,7 @@ export default class TimeExample extends Script {
        this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
        if (!SystemUtil.isClient()) return;
        const time = TimeUtil.parseTime(new Date());
        console.log(`time:${time}`);
@@ -375,7 +368,6 @@ ___
 | `number` | 用于停止的ID |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
 </span>
@@ -388,7 +380,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -419,7 +411,6 @@ ___
 | `number` | （UNIX 纪元）开始所经过的秒数。 |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 UNIX 纪元的开始日期为 1970 年 1 月 1 日。
@@ -438,7 +429,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): Promise<void> {
+    private async test(): `Promise`<`void`\> {
         if (!SystemUtil.isClient()) return;
         const time = TimeUtil.time();
         console.log(`time stamp:${time}`);

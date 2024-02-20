@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / JoystickStyleDesigner
+[界面](../groups/界面.界面.md) / JoystickStyleDesigner
 
 # JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
@@ -6,45 +6,6 @@
 
 ## Table of contents
 
-### Properties <Score text="Properties" /> 
-| **[disable](mw.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)  |
-| :-----|
-| 禁用资源|
-| **[normal](mw.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)  |
-| 普通资源|
-| **[touch](mw.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)  |
-| 按压资源|
-
-指定内容构造对象
-
-
-#### Parameters
-
-| `NormalGUID` `string` | 普通资源 |
-| :------ | :------ |
-| `TouchGUID` `string` | 按压资源 |
-| `DisableGUID` `string` | 禁用资源 |
-
-## Properties
-
-### disable <Score text="disable" /> 
-
-• **disable**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)
-
-禁用资源
-
-___
-
-### normal <Score text="normal" /> 
-
-• **normal**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)
-
-普通资源
-
-___
-
-### touch <Score text="touch" /> 
-
-• **touch**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)
-
-按压资源
+### Constructors <Score text="Constructors" /> 
+| [constructor](mw.JoystickStyleDesigner.md#constructor)  |
+| :----- |

@@ -1,4 +1,4 @@
-[TYPE](../groups/TYPE.TYPE.md) / TypeName
+[基础类型](../groups/基础类型.基础类型.md) / TypeName
 
 # TypeName<T\> <Badge type="tip" text="Interface" /> <Score text="TypeName<T\>" />
 

@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / DragDropPayLoad
+[界面](../groups/界面.界面.md) / DragDropPayLoad
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
@@ -19,10 +19,10 @@
 | **[guid](mw.DragDropPayLoad.md#guid)**(): `string`  |
 | :-----|
 | GUID|
-| **[id](mw.DragDropPayLoad.md#id)**(): `number`  |
-| 设置id|
+| **[id](mw.DragDropPayLoad.md#id)**(): `string`  `number`  |
+| 获取id|
 | **[name](mw.DragDropPayLoad.md#name)**(): `string`  |
-| 设置名字|
+| 获取名字|
 
 ## Properties
 
@@ -83,7 +83,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **id**(): `number`
+• `get` **id**(): `string`  `number`
 
 </th>
 <th style="text-align: left">
@@ -100,7 +100,7 @@ ___
 
 #### Returns
 
-| `number` | id |
+| `string`  `number` | id |
 | :------ | :------ |
 
 
@@ -112,7 +112,7 @@ ___
 
 #### Parameters
 
-| `inId` | `number` |
+| `inId` | `string`  `number` |
 | :------ | :------ |
 
 

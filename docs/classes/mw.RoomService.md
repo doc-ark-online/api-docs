@@ -1,4 +1,4 @@
-[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RoomService
+[服务](../groups/服务.服务.md) / RoomService
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
@@ -8,35 +8,35 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getCurrentEnvironment](mw.RoomService.md#getcurrentenvironment)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
+| **[getCurrentEnvironment](mw.RoomService.md#getcurrentenvironment)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`   |
 | :-----|
 | 获取当前的环境|
-| **[getMGSRoomId](mw.RoomService.md#getmgsroomid)**(): `string`  |
+| **[getMGSRoomId](mw.RoomService.md#getmgsroomid)**(): `string`   |
 | 获取MGS平台的RoomId|
-| **[getRoomId](mw.RoomService.md#getroomid)**(): `string`  |
+| **[getRoomId](mw.RoomService.md#getroomid)**(): `string`   |
 | 获取游戏的RoomMgr分配的RoomId|
-| **[isSupported](mw.RoomService.md#issupported)**(): `boolean`  |
+| **[isSupported](mw.RoomService.md#issupported)**(): `boolean`   |
 | 获取当前环境是否支持MGS功能|
-| **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
+| **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`   |
 | 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
-| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void`  |
+| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void` <Badge type="tip" text="other" />  |
 | 将某一玩家踢下线|
-| **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void`  |
+| **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void`   |
 | 注册聊天回调|
-| **[reportLogInfo](mw.RoomService.md#reportloginfo)**(`eventName`: `string`, `eventDesc`: `string`, `jsonData`: `string`): `void`  |
+| **[reportLogInfo](mw.RoomService.md#reportloginfo)**(`eventName`: `string`, `eventDesc`: `string`, `jsonData`: `string`): `void`   |
 | 游戏方调用reportLogInfo接口上报运营所需的埋点数据|
-| **[requestSaveImage](mw.RoomService.md#requestsaveimage)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`  |
+| **[requestSaveImage](mw.RoomService.md#requestsaveimage)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
 | 向233发起imageModify并获得回调|
-| **[requestSavePortrait](mw.RoomService.md#requestsaveportrait)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`  |
+| **[requestSavePortrait](mw.RoomService.md#requestsaveportrait)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
 | 向233发起editProfile并获得回调|
-| **[requestShareScreenShot](mw.RoomService.md#requestsharescreenshot)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`  |
+| **[requestShareScreenShot](mw.RoomService.md#requestsharescreenshot)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void`   |
 | 向233发起shareScreenshot并获得回调|
-| **[showExitGameDialog](mw.RoomService.md#showexitgamedialog)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
+| **[showExitGameDialog](mw.RoomService.md#showexitgamedialog)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`   |
 | 游戏方可调用showExitGameDialog来显示退出游戏确认框|
-| **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void`  |
+| **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void`   |
 | 向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能|
-| **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`  |
-| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效|
+| **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`   |
+| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
 
 ## Methods
 
@@ -50,7 +50,6 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 获取到的当前的环境 |
 | :------ | :------ |
-
 
 
 ::: warning Precautions
@@ -71,7 +70,6 @@ ___
 
 | `string` | MGS平台的RoomId |
 | :------ | :------ |
-
 
 ::: warning Precautions
 
@@ -107,7 +105,6 @@ ___
 | `string` | 游戏的RoomMgr分配的RoomId |
 | :------ | :------ |
 
-
 ::: warning Precautions
 
 只在由233拉起生效
@@ -142,7 +139,6 @@ ___
 | `boolean` | 当前环境是否支持MGS功能 |
 | :------ | :------ |
 
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
 </span>
@@ -172,7 +168,6 @@ ___
 | :------ | :------ |
 
 
-
 ::: warning Precautions
 
 只在移动端由233拉起生效
@@ -194,8 +189,6 @@ ___
 | `message?` `string` | usage：踢出玩家时触发退出UI弹出的信息 |
 
 
-服务端调用
-
 <span style="font-size: 14px;">
 使用示例:
 </span>
@@ -209,7 +202,7 @@ export default class NewScript extends Script {
             Player.spawnDefaultCharacter();
         }
 
-       let player =  mw.Player.asyncGetLocalPlayer()[0];
+       let player = await mw.Player.asyncGetLocalPlayer();
 
         if(SystemUtil.isClient()) {
            mw.InputUtil.onKeyDown(Keys.G,()=>{
@@ -239,16 +232,11 @@ ___
 | :------ | :------ |
 
 
-
 ::: warning Precautions
 
 只在移动端由233拉起生效
 
 :::
-
-<span style="font-size: 14px;">
-使用示例:
-</span>
 
 ```ts
 @Component
@@ -268,7 +256,6 @@ export default class ChatMsgDemoScript extends Script {
     }
 }
 ```
-
 ___
 
 ### reportLogInfo <Score text="reportLogInfo" /> 
@@ -283,7 +270,6 @@ ___
 | :------ | :------ |
 | `eventDesc` `string` | 事件描述 |
 | `jsonData` `string` | 发送的json数据 |
-
 
 
 ::: warning Precautions
@@ -307,7 +293,6 @@ ___
 | `mgsData` `string` | 要保存的图片Url地址 |
 
 
-
 ::: warning Precautions
 
 只在移动端由233拉起生效
@@ -327,7 +312,6 @@ ___
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
 | `mgsData` `string` | 要保存的mgs数据 |
-
 
 
 ::: warning Precautions
@@ -351,7 +335,6 @@ ___
 | `mgsData` `string` | 要保存的图片Url地址 |
 
 
-
 ::: warning Precautions
 
 只在移动端由233拉起生效
@@ -370,7 +353,6 @@ ___
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-
 
 
 ::: warning Precautions
@@ -394,7 +376,6 @@ ___
 | `tab` `number` | 悬浮层功能位置 取值(0: 聊天 1: 好友) |
 
 
-
 ::: warning Precautions
 
 只在移动端由233拉起生效
@@ -407,14 +388,13 @@ ___
 
 • `Static` **showUserProfile**(`resp`, `userId`): `void` 
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效
+若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
 
 #### Parameters
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
 | `userId` `string` | 要显示的用户的userId |
-
 
 
 ::: warning Precautions

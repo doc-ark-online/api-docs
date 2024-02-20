@@ -1,4 +1,4 @@
-[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcessConfig
+[场景](../groups/场景.场景.md) / PostProcessConfig
 
 # PostProcessConfig <Badge type="tip" text="Class" /> <Score text="PostProcessConfig" />
 
