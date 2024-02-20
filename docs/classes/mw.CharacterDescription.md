@@ -160,6 +160,7 @@ export default class CharacterStyleExample extends Script {
 ```
 
 #### Type declaration
+
 | `base?`| **`Description`** 基础 |
 | :------ | :------ |
 | `base.characterSetting?`| **`Description`** 角色设定 |
