@@ -1174,44 +1174,6 @@
     },
     "no_children_files": null
   },
-  "GAMEPLAY": {
-    "file": {
-      "file_name": "GAMEPLAY.GAMEPLAY.md",
-      "file_path": "groups/GAMEPLAY.GAMEPLAY.md",
-      "name": "GAMEPLAY"
-    },
-    "children": null,
-    "no_children_files": {
-      "ModelUtil": {
-        "file": {
-          "file_name": "mw.ModelUtil.md",
-          "file_path": "classes/mw.ModelUtil.md",
-          "name": "ModelUtil"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "PHYSICS": {
-    "file": {
-      "file_name": "PHYSICS.PHYSICS.md",
-      "file_path": "groups/PHYSICS.PHYSICS.md",
-      "name": "PHYSICS"
-    },
-    "children": null,
-    "no_children_files": {
-      "ForceVolume": {
-        "file": {
-          "file_name": "mw.ForceVolume.md",
-          "file_path": "classes/mw.ForceVolume.md",
-          "name": "ForceVolume"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "角色系统": {
     "file": {
       "file_name": "角色系统.角色系统.md",
@@ -1412,53 +1374,6 @@
           "file_name": "mw.GestureDelegate.md",
           "file_path": "classes/mw.GestureDelegate.md",
           "name": "GestureDelegate"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UI": {
-    "file": {
-      "file_name": "UI.UI.md",
-      "file_path": "groups/UI.UI.md",
-      "name": "UI"
-    },
-    "children": null,
-    "no_children_files": {
-      "JoystickBindKeyType": {
-        "file": {
-          "file_name": "mw.JoystickBindKeyType.md",
-          "file_path": "classes/mw.JoystickBindKeyType.md",
-          "name": "JoystickBindKeyType"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UTILITY": {
-    "file": {
-      "file_name": "UTILITY.UTILITY.md",
-      "file_path": "groups/UTILITY.UTILITY.md",
-      "name": "UTILITY"
-    },
-    "children": null,
-    "no_children_files": {
-      "PhysicsService": {
-        "file": {
-          "file_name": "mw.PhysicsService.md",
-          "file_path": "classes/mw.PhysicsService.md",
-          "name": "PhysicsService"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "DebugUtil": {
-        "file": {
-          "file_name": "mw.DebugUtil.md",
-          "file_path": "classes/mw.DebugUtil.md",
-          "name": "DebugUtil"
         },
         "no_children_files": null,
         "children": null
@@ -1769,25 +1684,6 @@
           "file_name": "mw.DebugUtil.md",
           "file_path": "classes/mw.DebugUtil.md",
           "name": "DebugUtil"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "SOCIAL": {
-    "file": {
-      "file_name": "SOCIAL.SOCIAL.md",
-      "file_path": "groups/SOCIAL.SOCIAL.md",
-      "name": "SOCIAL"
-    },
-    "children": null,
-    "no_children_files": {
-      "ChatBubble": {
-        "file": {
-          "file_name": "mw.ChatBubble.md",
-          "file_path": "classes/mw.ChatBubble.md",
-          "name": "ChatBubble"
         },
         "no_children_files": null,
         "children": null
