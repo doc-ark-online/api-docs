@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UITextHorizontalLayout
+[UI](../groups/UI.UI.md) / UITextHorizontalLayout
 
 # UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
-<span class="content-big">
-
 文本框规则显示规则限制
-
-</span>
 
 ## Table of contents
 

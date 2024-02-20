@@ -1,17 +1,11 @@
-[INPUT](../groups/Core.INPUT.md) / TouchInputUtil
+[INPUT](../groups/INPUT.INPUT.md) / TouchInputUtil
 
 # TouchInputUtil <Badge type="tip" text="Class" /> <Score text="TouchInputUtil" />
 
-<span class="content-big">
-
 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开)
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"InputInputExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,触摸屏幕，你将看从Log看到相关结果.代码如下:
-
 </span>
 
 ```ts

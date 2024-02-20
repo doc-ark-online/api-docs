@@ -1,12 +1,8 @@
-[LOCALIZATION](../groups/Core.LOCALIZATION.md) / LocaleUtil
+[LOCALIZATION](../groups/LOCALIZATION.LOCALIZATION.md) / LocaleUtil
 
 # LocaleUtil <Badge type="tip" text="Class" /> <Score text="LocaleUtil" />
 
-<span class="content-big">
-
 本地化工具
-
-</span>
 
 ## Table of contents
 
@@ -30,9 +26,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
-
 </span>
 
 ```ts

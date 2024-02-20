@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / EventReply
+[UI](../groups/UI.UI.md) / EventReply
 
 # EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 
-<span class="content-big">
-
 事件回复
-
-</span>
 
 ## Table of contents
 

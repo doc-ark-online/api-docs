@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraSwitchBlendFunction
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraSwitchBlendFunction
 
 # CameraSwitchBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="CameraSwitchBlendFunction" />
 
-<span class="content-big">
-
 切换摄像机时运用的混合函数
-
-</span>
 
 ## Table of contents
 

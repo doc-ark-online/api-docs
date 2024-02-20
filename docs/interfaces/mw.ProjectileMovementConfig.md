@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ProjectileMovementConfig
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovementConfig
 
 # ProjectileMovementConfig <Badge type="tip" text="Interface" /> <Score text="ProjectileMovementConfig" />
 
-<span class="content-big">
-
 投掷物配置类型
-
-</span>
 
 ## Implemented by
 

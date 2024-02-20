@@ -1,14 +1,10 @@
-[UI](../groups/Core.UI.md) / UIService
+[UI](../groups/UI.UI.md) / UIService
 
 # UIService <Badge type="tip" text="Class" /> <Score text="UIService" />
 
 **`Instance`**
 
-<span class="content-big">
-
 UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
-
-</span>
 需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
 
 ::: warning Precautions

@@ -1,48 +1,20 @@
-[AVATAR](../groups/Core.AVATAR.md) / CharacterDecoration
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterDecoration
 
 # CharacterDecoration <Badge type="tip" text="Class" /> <Score text="CharacterDecoration" />
 
-<span class="content-big">
-
 角色挂件插槽
-
-</span>
-
-<span class="content-big">
 
 除了可以随意的更换人物衣服，脸，身体，还可以在给人物增加更多装饰物。
 
-</span>
-
-<span class="content-big">
-
 CharacterDecoration 如何使用呢？
-
-</span>
-
-<span class="content-big">
 
 CharacterDescription 在 slotAndDecoration 中定义了一个名为 slot 的只读属性，其类型为 ArrayLike，表示一个类数组对象。数组的每个元素是一个对象类型，该对象具有以下属性：
 
-</span>
-
-<span class="content-big">
-
 - slotOffset：一个可选的只读属性，表示插槽位置和方向的信息。
-
-</span>
-
-<span class="content-big">
 
 - decoration：一个可选的只读属性，表示物品的信息。是一个 CharacterDecoration 自定义类型，包含有关物品的附加装饰信息。
 
-</span>
-
-<span class="content-big">
-
 可以通过索引访问，添加左侧栏中已有资源的装饰物，如武器戒指光环等。如何使用详情请看下方接口及示例代码。
-
-</span>
 
 ## Hierarchy
 
@@ -90,9 +62,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Add"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
-
 </span>
 
 ```ts
@@ -148,9 +118,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Clear"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
-
 </span>
 
 ```ts
@@ -207,9 +175,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Delete"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
-
 </span>
 
 ```ts

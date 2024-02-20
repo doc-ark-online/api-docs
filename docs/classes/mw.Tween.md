@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / Tween
+[UTILITY](../groups/UTILITY.UTILITY.md) / Tween
 
 # Tween<T\> <Badge type="tip" text="Class" /> <Score text="Tween<T\>" />
 
-<span class="content-big">
-
 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。
-
-</span>
 你只需告诉它哪些属性要更改，当补间结束运行时它们应该具有哪些最终值，以及这需要多长时间，
 补间引擎将负责计算从起始点到结束点的值。
 
@@ -104,9 +100,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例: 示例
-
 </span>
 
 ```ts
@@ -438,9 +432,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例: 示例
-
 </span>
 
 ```ts

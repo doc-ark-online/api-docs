@@ -82,7 +82,7 @@ mw
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
 | [HideInEditorState](../enums/mw.HideInEditorState.md)  |
-| :----- |
+| 是否在编辑器中隐藏 |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |
@@ -266,6 +266,10 @@ mw
 | 人形外观配置|
 | [CharacterEvent](../classes/mw.CharacterEvent.md)  |
 | 角色输入事件|
+| [ChatBubble](../classes/mw.ChatBubble.md)  |
+| 聊天头顶气泡|
+| [ChatBubbleConfig](../classes/mw.ChatBubbleConfig.md)  |
+| 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |
@@ -405,7 +409,7 @@ mw
 | [RoomSettings](../classes/mw.RoomSettings.md)  |
 | 房间设置|
 | [Rotation](../classes/mw.Rotation.md)  |
-| 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。|
+| 由分量 (x,y,z) 组成的三维空间中的旋转量。|
 | [RouteService](../classes/mw.RouteService.md)  |
 | 游戏管理器|
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
@@ -2324,9 +2328,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:发送Http请求
-
 </span>
 
 ```ts
@@ -2566,9 +2568,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts
@@ -2578,9 +2578,7 @@ export default class NewScript extends mw.Script {
   protected onStart(): void {
     //获取当前用户上传的所有的预制体
     mw.getMyPrefabs(0,20).then(item =>{
-      for (let Index: number = 0;
-Index < item.PrefabInfos.length;
-++Index) {
+      for (let Index: number = 0; Index < item.PrefabInfos.length; ++Index) {
         console.log(item.PrefabInfos[Index].Guid);
       }
     });
@@ -3445,9 +3443,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法 新建一个脚本 NewScript
-
 </span>
 
 ```ts

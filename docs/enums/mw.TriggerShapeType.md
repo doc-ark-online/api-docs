@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / TriggerShapeType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / TriggerShapeType
 
 # TriggerShapeType <Badge type="tip" text="Enumeration" /> <Score text="TriggerShapeType" />
 
-<span class="content-big">
-
 碰撞形状
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / Image
+[UI](../groups/UI.UI.md) / Image
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
-<span class="content-big">
-
 UI 图片
-
-</span>
 
 ## Hierarchy
 

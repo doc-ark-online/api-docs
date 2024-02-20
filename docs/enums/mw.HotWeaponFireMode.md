@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponFireMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponFireMode
 
 # HotWeaponFireMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponFireMode" />
 
-<span class="content-big">
-
 热武器开火模式
-
-</span>
 
 ## Table of contents
 

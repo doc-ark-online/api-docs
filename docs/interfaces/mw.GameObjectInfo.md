@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / GameObjectInfo
+[TYPE](../groups/TYPE.TYPE.md) / GameObjectInfo
 
 # GameObjectInfo <Badge type="tip" text="Interface" /> <Score text="GameObjectInfo" />
 
-<span class="content-big">
-
 构建物体的信息
-
-</span>
 
 ## Table of contents
 

@@ -1,29 +1,15 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SwimmingVolume
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SwimmingVolume
 
 # SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
 
-<span class="content-big">
-
 游泳区域
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 拖入 SwimmingVolume 调整游泳区域的大小，角色进入游泳区域会切换成游泳状态。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:请放置在场景中，通过动态查找获取。不支持动态生成，可重叠使用。
-
 </span>
 
 创建一个名为"SwimmingVolExample"的脚本,放置在对象栏中,打开脚本,输入以下代码，替换GUID保存,运行游戏,你将可以通过F1键获取角色是否处于该GUID对应的游泳区

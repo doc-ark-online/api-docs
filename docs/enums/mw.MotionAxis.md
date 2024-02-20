@@ -1,12 +1,8 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / MotionAxis
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / MotionAxis
 
 # MotionAxis <Badge type="tip" text="Enumeration" /> <Score text="MotionAxis" />
 
-<span class="content-big">
-
 运动坐标系
-
-</span>
 
 ## Table of contents
 

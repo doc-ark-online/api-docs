@@ -2,11 +2,7 @@
 
 # LeaderboardModuleBaseS<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardModuleBaseS<T\>" />
 
-<span class="content-big">
-
 排行榜模块-服务端
-
-</span>
 
 ## Type parameters
 

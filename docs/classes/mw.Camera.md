@@ -1,72 +1,28 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Camera
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Camera
 
 # Camera <Badge type="tip" text="Class" /> <Score text="Camera" />
 
-<span class="content-big">
-
 摄像机
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 Camera 对象定义 3D 游戏世界的视图。
-
-</span>
-
-<span class="content-big">
 
 Camera 的位置在哪里？
 
-</span>
-
-<span class="content-big">
-
 在游戏的一个实例中，每个客户端都有自己的与其关联的 Camera 对象。 相机对象仅存在于查看者的客户端上，驻留在该用户的本地中，因此不能直接从服务器进行编辑。
-
-</span>
-
-<span class="content-big">
 
 每个客户端的特定 Camera 对象都可以通过该客户端上 Camera.currentCamera 属性进行访问。
 
-</span>
-
-<span class="content-big">
-
 Camera 对象如何工作？
-
-</span>
-
-<span class="content-big">
 
 相机的属性定义了 3D 游戏世界的当前视图。 其中最重要的是：
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.worldTransform 表示相机的位置和方向。
-
-</span>
-
-<span class="content-big">
 
 - Camera.currentCamera.rotationMode 属性调整相机的旋转模式，是否跟随人物旋转而旋转、相机固定不旋转、可由鼠标右键控制旋转三种模式。Camera.currentCamera.positionMode 属性调整相机的位置模式。
 
-</span>
-
-<span class="content-big">
-
 - Camera.currentCamera.fov 表示可见的可观察世界的范围。
-
-</span>
 
 ## Hierarchy
 
@@ -241,9 +197,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"CameraExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -258,9 +212,7 @@ export default class CameraExample extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+            for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
@@ -302,9 +254,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏创建一个名为"Camera_SpringArm"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞，按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测。你可以看到禁用这些属性产生的不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -314,9 +264,7 @@ export default class Camera_SpringArm extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
@@ -409,9 +357,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_DownAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
-
 </span>
 
 ```ts
@@ -523,9 +469,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -549,9 +493,7 @@ export default class Example_Camera_FixedElevation extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -637,9 +579,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -670,9 +610,7 @@ export default class Example_Camera_FixedElevation extends Script {
 }
 ```
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -764,9 +702,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
-
 </span>
 
 ```ts
@@ -877,9 +813,7 @@ FOV，也就是透视模式下的水平视野角度，FOV越大，可见的视�
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_FOV"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“2”，增大摄像机FOV,按住键盘“3”，减少摄像机FOV.你将在场景中看到摄像机FOV变化的效果.代码如下:
-
 </span>
 
 ```ts
@@ -990,9 +924,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_MaxLagDistance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置最大位置延迟距离为200,你将在场景中看到摄像机位置延迟后摄像机最远只延迟200cm的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1074,9 +1006,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到摄像机位置延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1178,9 +1108,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置位置延迟恢复速度为1,你将在场景中看到摄像机位置延迟后摄像机缓慢恢复位置的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1282,9 +1210,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_PositionMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“2”，切换摄像机的位置模式.你将在场景中看到摄像机不同位置模式的效果并在控制台看到打印的摄像机当前位置模式.代码如下:
-
 </span>
 
 ```ts
@@ -1361,9 +1287,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Camera_Preset"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机预设.你将在场景中看到摄像机不同预设的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1465,9 +1389,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1578,9 +1500,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1691,9 +1611,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_RotationMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“3”，切换摄像机的旋转模式.你将在场景中看到摄像机不同旋转模式的效果并在控制台看到打印的摄像机当前旋转模式.代码如下:
-
 </span>
 
 ```ts
@@ -1795,9 +1713,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"Example_Camera_UpAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1879,9 +1795,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"CurrentCamera"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -1896,9 +1810,7 @@ export default class CurrentCamera extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+            for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
@@ -1959,9 +1871,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Lock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2027,9 +1937,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2090,9 +1998,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Unlock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2159,9 +2065,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Shake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2197,9 +2101,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_StopShake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2247,9 +2149,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_Camera_Switch"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
-
 </span>
 
 ```ts
@@ -2264,9 +2164,7 @@ export default class Example_Camera_Switch extends Script {
             let curCameraIndex = -1;
             // 在场景中随机创建5个摄像机
             let cameraArray = new Array<Camera>();
-            for (let i = 0;
-i < 5;
-i++) {
+            for (let i = 0; i < 5; i++) {
                 let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
                 camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
                 camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));

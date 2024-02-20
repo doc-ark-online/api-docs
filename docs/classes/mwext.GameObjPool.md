@@ -2,16 +2,10 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-<span class="content-big">
-
 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
-
 </span>
 
 ```ts
@@ -90,9 +84,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
-
 </span>
 
 ```ts
@@ -139,9 +131,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁
-
 </span>
 
 ```ts
@@ -158,9 +148,7 @@ export default class GameObjPoolExample extends Script {
     public createCube(): void {
         const cubeAssetId = "197386";
         //创建10个方块 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //回收该对象但不隐藏
@@ -188,9 +176,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁
-
 </span>
 
 ```ts
@@ -208,9 +194,7 @@ export default class GameObjPoolExample extends Script {
         const cubeAssetId = "197386";
         const cubeAssetId2 = "7675";
         //创建10个方块 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 //只回收前5个方块
@@ -222,9 +206,7 @@ i++) {
             });
         }
         //创建10个球体 且位置不重叠
-        for (let i = 0;
-i < 10;
-i++) {
+        for (let i = 0; i < 10; i++) {
             GameObjPool.asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 300, 0);
                 //只回收前5个球体
@@ -259,9 +241,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
-
 </span>
 
 ```ts
@@ -307,9 +287,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块
-
 </span>
 
 ```ts

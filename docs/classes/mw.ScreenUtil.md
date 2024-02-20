@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / ScreenUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / ScreenUtil
 
 # ScreenUtil <Badge type="tip" text="Class" /> <Score text="ScreenUtil" />
 
-<span class="content-big">
-
 屏幕视口工具
-
-</span>
 
 ## Table of contents
 
@@ -43,9 +39,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，获取触摸位置所对应的世界Object
-
 </span>
 
 ```ts
@@ -66,7 +60,7 @@ export default class ScreenExample extends Script {
     private onTouchBegin(index: number, location: Vector2): mw.GameObject{
        return ScreenUtil.getGameObjectByScreenPosition(location.x, location.y)[0].gameObject;
     }
-
+```
 ___
 
 ### getSightBeadPosition <Score text="getSightBeadPosition" /> 
@@ -82,12 +76,10 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置
-
 </span>
 
-```
+```ts
 @Component
 export default class ScreenExample extends Script {
     touch: TouchInput;
@@ -100,7 +92,7 @@ export default class ScreenExample extends Script {
             }
         })
     }
-
+```
 ___
 
 ### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 

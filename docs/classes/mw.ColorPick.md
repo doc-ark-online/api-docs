@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ColorPick
+[UI](../groups/UI.UI.md) / ColorPick
 
 # ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
-<span class="content-big">
-
 颜色选择器
-
-</span>
 
 ## Hierarchy
 

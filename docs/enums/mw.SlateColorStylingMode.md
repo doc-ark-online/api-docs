@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / SlateColorStylingMode
+[UI](../groups/UI.UI.md) / SlateColorStylingMode
 
 # SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 
-<span class="content-big">
-
 UI颜色应用模式
-
-</span>
 
 ## Table of contents
 

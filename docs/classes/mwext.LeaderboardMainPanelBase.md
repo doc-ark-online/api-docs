@@ -2,11 +2,7 @@
 
 # LeaderboardMainPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPanelBase<T\>" />
 
-<span class="content-big">
-
 排行榜主界面
-
-</span>
 
 ## Type parameters
 

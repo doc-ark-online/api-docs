@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / LanguageType
+[TYPE](../groups/TYPE.TYPE.md) / LanguageType
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 
-<span class="content-big">
-
 游戏语言
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIHorizontalCollation
+[UI](../groups/UI.UI.md) / UIHorizontalCollation
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 
-<span class="content-big">
-
 自动布局子项布局排序 - 水平排序
-
-</span>
 
 ## Table of contents
 

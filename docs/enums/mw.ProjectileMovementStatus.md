@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ProjectileMovementStatus
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileMovementStatus
 
 # ProjectileMovementStatus <Badge type="tip" text="Enumeration" /> <Score text="ProjectileMovementStatus" />
 
-<span class="content-big">
-
 投掷物移动状态
-
-</span>
 
 ## Table of contents
 

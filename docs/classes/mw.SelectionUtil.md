@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / SelectionUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / SelectionUtil
 
 # SelectionUtil <Badge type="tip" text="Class" /> <Score text="SelectionUtil" />
 
-<span class="content-big">
-
 描边绘制工具
-
-</span>
 
 ## Table of contents
 
@@ -38,9 +34,7 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
-
 </span>
 
 ```ts
@@ -63,7 +57,6 @@ export default class SelectionExample extends Script {
                 this.onTouchMove(index, location);
             }
         })
-        this.touch.setPlayerController();
     }
 
     // 开始触摸屏幕，记录初始位置
@@ -104,9 +97,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
-
 </span>
 
 ```ts
@@ -131,15 +122,12 @@ export default class SelectionExample extends Script {
                 this.onTouchEnd(index, location);
             }
         })
-        this.touch.setPlayerController();
     }
 
     //在场景中随机生成一些物体，用于框选
     private creatObjs() {
         const cubeAssetId = "197386";
-        for (let i = 0;
-i < 50;
-i++) {
+        for (let i = 0; i < 50; i++) {
             GameObject.asyncSpawn({ guid: cubeAssetId }).then(obj => {
                 obj.worldLocation = new Vector(MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500));
             })

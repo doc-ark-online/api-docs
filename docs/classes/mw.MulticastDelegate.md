@@ -1,20 +1,14 @@
-[TYPE](../groups/Core.TYPE.md) / MulticastDelegate
+[TYPE](../groups/TYPE.TYPE.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
-<span class="content-big">
-
 多播委托接口
-
-</span>
 
 **`Effect`**
 
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"MultidelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 a+b:5 。
-
 </span>
 
 ```ts

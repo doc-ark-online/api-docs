@@ -1,12 +1,8 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / FogPreset
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / FogPreset
 
 # FogPreset <Badge type="tip" text="Enumeration" /> <Score text="FogPreset" />
 
-<span class="content-big">
-
 环境雾预设枚举
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ButtonPressMethod
+[UI](../groups/UI.UI.md) / ButtonPressMethod
 
 # ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
 
-<span class="content-big">
-
 按钮按压响应规则
-
-</span>
 
 ## Table of contents
 

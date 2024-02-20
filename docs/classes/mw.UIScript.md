@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / UIScript
+[UI](../groups/UI.UI.md) / UIScript
 
 # UIScript <Badge type="tip" text="Class" /> <Score text="UIScript" />
 
-<span class="content-big">
-
 UI的驱动脚本基类
-
-</span>
 
 ## Hierarchy
 
@@ -191,9 +187,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
-
 </span>
 
 ```ts
@@ -211,9 +205,7 @@ mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级�
 ]
 ```
 <span style="font-size: 14px;">
-
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
-
 </span>
 
 ```ts

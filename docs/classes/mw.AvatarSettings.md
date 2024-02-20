@@ -1,17 +1,11 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / AvatarSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / AvatarSettings
 
 # AvatarSettings <Badge type="tip" text="Class" /> <Score text="AvatarSettings" />
 
-<span class="content-big">
-
 控制一些优化项的开启关闭
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
-
 </span>
 
 ```ts

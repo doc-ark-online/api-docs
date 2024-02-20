@@ -1,59 +1,25 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / Impulse
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / Impulse
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 
-<span class="content-big">
-
 冲量
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 冲量是一个瞬间爆发力，为对象提供单一且即时的电源，是一种将力集中在一帧上的感觉。
-
-</span>
-
-<span class="content-big">
 
 冲量对象是如何工作的呢 ？
 
-</span>
-
-<span class="content-big">
-
 - 创建一个冲量对象。可手动将左侧栏中逻辑对象中的冲量拖入场景中，在属性面板中调整参数；也可以在脚本中动态创建冲量对象。
-
-</span>
-
-<span class="content-big">
 
 - 设置冲量对象属性 enable 为 true ，才可触发冲量效果。
 
-</span>
-
-<span class="content-big">
-
 - impulseVector 属性表示力的方向。
-
-</span>
-
-<span class="content-big">
 
 - impulseRadialForce 属性表示力的大小。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中冲量对象的子级,将冲量对象相对缩放改为（5.00,5.00,0.50）,放置在合适的位置,可以在与冲量对象重叠区域放置一个Cube,Cube大小缩放与冲量对象相同.打开脚本,输入以下代码保存,运行游戏,你将在场景中看到人物在Cube上蹦床的效果,代码如下:
-
 </span>
 
 （示例代码中impulseId = "1602E908"中的1602E908替换方式为右键冲量对象，复制对象ID。更换为你的冲量对象ID即可）
@@ -209,9 +175,7 @@ ___
 发生冲量碰撞后的回调函数
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseOnEnterSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
-
 </span>
 
 ```ts
@@ -281,9 +245,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
-
 </span>
 
 ```ts
@@ -398,9 +360,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseRadialForceSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被飞的距离相比默认情况时有变化，代码如下:
-
 </span>
 
 ```ts
@@ -474,9 +434,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseTypeSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
-
 </span>
 
 ```ts
@@ -541,9 +499,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ImpulseVectorSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
-
 </span>
 
 ```ts

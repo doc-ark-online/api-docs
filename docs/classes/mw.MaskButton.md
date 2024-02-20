@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / MaskButton
+[UI](../groups/UI.UI.md) / MaskButton
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 
-<span class="content-big">
-
 遮罩
-
-</span>
 
 ## Hierarchy
 

@@ -1,17 +1,11 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / ScriptingSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / ScriptingSettings
 
 # ScriptingSettings <Badge type="tip" text="Class" /> <Score text="ScriptingSettings" />
 
-<span class="content-big">
-
 全局的脚本配置信息
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在Log中看到对应方法调用信息。代码如下：
-
 </span>
 
 ```ts
@@ -52,9 +46,7 @@ export default class ClassExample extends Script {
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts

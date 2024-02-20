@@ -1,12 +1,8 @@
-[LOCALIZATION](../groups/Core.LOCALIZATION.md) / LanguageUtil
+[LOCALIZATION](../groups/LOCALIZATION.LOCALIZATION.md) / LanguageUtil
 
 # LanguageUtil <Badge type="tip" text="Class" /> <Score text="LanguageUtil" />
 
-<span class="content-big">
-
 多语言工具
-
-</span>
 
 ## Table of contents
 

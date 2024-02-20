@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / ProgressBarFillType
+[UI](../groups/UI.UI.md) / ProgressBarFillType
 
 # ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
 
-<span class="content-big">
-
 进度条填充规则
-
-</span>
 
 ## Table of contents
 

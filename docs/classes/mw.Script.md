@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / Script
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / Script
 
 # Script <Badge type="tip" text="Class" /> <Score text="Script" />
 
-<span class="content-big">
-
 脚本管理
-
-</span>
 
 ## Hierarchy
 

@@ -2,28 +2,21 @@
 
 # PlayerState <Badge type="tip" text="Class" /> <Score text="PlayerState" />
 
-<span class="content-big">
-
 PlayerState基类
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
-
 </span>
 
-```ts
+``` typescript
   // 服务端每个玩家进入游戏时会自动创建一个实例
-  @Component
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property({replicated: true, onChanged: "onRepTest"})
+      @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
-          console.log(`onRepTest path: ${path} value: ${value} oldVal: ${oldVal}`);
+          console.log(`onRepTest path: $`{path}` value: $`{value}` oldVal: $`{oldVal}``);
       }
   }
 
@@ -38,7 +31,7 @@ PlayerState基类
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
               const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
-              console.log(`test: ${playerState.test}`);
+              console.log(`test: $`{playerState.test}``);
           });
 
       }
@@ -50,7 +43,7 @@ PlayerState基类
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
           const playerState = luckPlayer.getPlayerState(GamePlayerState);
-          playerState.test = `random: ${ Math.floor(Math.random() * 100)}`;
+          playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
       }
   }
 ```
@@ -68,7 +61,7 @@ PlayerState基类
 
 ::: details 点击查看继承
 ### Accessors <Score text="Accessors" /> 
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
 | :-----|
 | 脚本对应的GameObject|
 | **[name](mw.Script.md#name)**(): `string` |

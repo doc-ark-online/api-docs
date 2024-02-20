@@ -1,17 +1,11 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / IntegratedMover
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / IntegratedMover
 
 # IntegratedMover <Badge type="tip" text="Class" /> <Score text="IntegratedMover" />
 
-<span class="content-big">
-
 运动器组件
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"IMExample1"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别以开启和不开启平滑运动的方式做重复线性运动.代码如下:
-
 </span>
 
 ```ts
@@ -30,9 +24,9 @@ export default class IMExample1 extends Script {
           // 创建一个长方体
           this.Obj1 = await GameObject.asyncSpawn("197386") as GameObject;
           // 设置起始位置
-          this.Obj1.setWorldLocation(new Vector(300.0, -100.0, 300.0));
+          this.Obj1.worldTransform.position = new Vector(300.0, -100.0, 300.0);
           // 设置起始缩放
-          this.Obj1.setWorldScale(new Vector(0.5, 2.0, 0.5));
+          this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
           // 创建一个运动器，并将运动器挂载到长方体上
           this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
@@ -52,8 +46,8 @@ export default class IMExample1 extends Script {
 
           // 用同样的方式创建第二个长方体与第二个运动器
           this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
-          this.Obj2.setWorldLocation(new Vector(300.0, -100.0, 150.0));
-          this.Obj2.setWorldScale(new Vector(0.5, 2.0, 0.5));
+          this.Obj2.worldTransform.position = new Vector(300.0, -100.0, 150.0);
+          this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
           this.IM2 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
           this.IM2.attachToGameObject(this.Obj2);
           this.IM2.enable = true;
@@ -662,97 +656,67 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"IMExample2"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的非重复线性运动，以及有无起点终点停顿的重复线性运动.代码如下:
-
 </span>
 
 ```ts
 @Component
-export default class IMExample2 extends Script {
+ export default class IMExample1 extends Script {
 
-    // 声明变量
-    Obj1;
-    Obj2;
-    IM1;
-    IM2;
+     // 声明变量
+     Obj1;
+     Obj2;
+     IM1;
+     IM2;
 
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): Promise<void> {
-        if (SystemUtil.isClient()) {
-            // 创建长方体1和长方体2
-            this.Obj1 = await GameObject.asyncSpawn( "197386") as GameObject;
-            this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
-            // 设置起始位置
-            this.Obj1.setWorldLocation(new Vector(300.0, 0.0, 300.0));
-            this.Obj2.setWorldLocation(new Vector(300.0, 0.0, 150.0));
-            // 设置起始缩放
-            this.Obj1.setWorldScale(new Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new Vector(0.5, 2.0, 0.5));
+     // 当脚本被实例后，会在第一帧更新前调用此函数
+     protected async onStart(): Promise<void> {
+       if (SystemUtil.isClient()) {
+           // 创建一个长方体
+           this.Obj1 = await GameObject.asyncSpawn("197386") as GameObject;
+           // 设置起始位置
+           this.Obj1.worldTransform.position = new Vector(300.0, -100.0, 300.0);
+           // 设置起始缩放
+           this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
-            // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
-            this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
-            this.IM1.attachToGameObject(this.Obj1);
-            this.IM1.enable = true;
+           // 创建一个运动器，并将运动器挂载到长方体上
+           this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
+           this.IM1.attachToGameObject(this.Obj1);
 
-            this.IM2 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
-            this.IM2.attachToGameObject(this.Obj2);
-            this.IM2.enable = true;
+           // 测试启用状态
+           console.log("Enable status: " + this.IM1.enable);
+           this.IM1.enable = true;
+           console.log("New enable status: " + this.IM1.enable);
 
-            // 运动器1和2都设置同样的运动速度，运动器2设置延迟五秒启动
-            this.IM1.linearSpeed = new Vector(0.0, 100.0, 0.0);
-            this.IM1.linearRepeat = false;
-            this.IM1.linearDelayStartTime = 0.0;
+           // 添加一个线性运动
+           this.IM1.linearSpeed = new Vector(0.0, 100.0, 0.0);
+           this.IM1.linearRepeat = true;
+           this.IM1.linearRepeatTime = 2.0;
+           this.IM1.linearRepeatDelay = 0.0;
+           this.IM1.linearReturnDelay = 0.0;
 
-            this.IM2.linearSpeed = new Vector(0.0, 100.0, 0.0);
-            this.IM2.linearRepeat = false;
-            this.IM2.linearDelayStartTime = 5.0;
-            // 运动器2绑定延迟启动回调
-            this.IM2.onLinearEnable.add(() => {
-                console.log("IM2 enabled with a delay");
-            })
+           // 用同样的方式创建第二个长方体与第二个运动器
+           this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
+           this.Obj2.worldTransform.position = new Vector(300.0, -100.0, 150.0);
+           this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+           this.IM2 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
+           this.IM2.attachToGameObject(this.Obj2);
+           this.IM2.enable = true;
 
-            // 等待十秒后，将长方体1和2归位，重新设置运动器1和2，让它们变成重复运动模式，且运动器2在起点和终点设置两秒延迟
-            setTimeout(() => {
-                this.IM1.moverReset();
-                this.IM2.moverReset();
+           // 给第二个运动器开启平滑运动
+           console.log("Smooth status: " + this.IM2.smooth);
+           this.IM2.smooth = true;
+           console.log("New smooth status: " + this.IM2.smooth);
 
-                this.IM1.linearRepeat = true;
-                this.IM1.linearRepeatTime = 2.0;
-                this.IM1.linearDelayStartTime = 0.0;
-                this.IM1.linearRepeatDelay = 0.0;
-                this.IM1.linearReturnDelay = 0.0;
-
-                this.IM2.linearRepeat = true;
-                this.IM2.linearRepeatTime = 2.0;
-                this.IM2.linearDelayStartTime = 0.0;
-                this.IM2.linearRepeatDelay = 2.0;
-                // 运动器2绑定终点停顿回调
-                this.IM2.onLinearReturn.add(() => {
-                    console.log("IM2 paused at end point");
-                })
-                this.IM2.linearReturnDelay = 2.0;
-                // 运动器2绑定终点停顿回调
-                this.IM2.onLinearStart.add(() => {
-                    console.log("IM2 paused at start point");
-                })
-            }, 10000);
-        }
-    }
-
-    //
-    // 周期函数 每帧执行
-    // 此函数执行需要将this.useUpdate赋值为true
-    // @param dt 当前帧与上一帧的延迟 / 秒
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
+           // 添加一个同样的线性运动
+           this.IM2.linearSpeed = new Vector(0.0, 100.0, 0.0);
+           this.IM2.linearRepeat = true;
+           this.IM2.linearRepeatTime = 2.0;
+           this.IM2.linearRepeatDelay = 0.0;
+       }
     }
 }
+        
 ```
 ___
 
@@ -1078,9 +1042,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"IMExample3"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的非重复旋转，以及有无起点终点停顿的重复旋转.代码如下:
-
 </span>
 
 ```ts
@@ -1100,11 +1062,11 @@ export default class IMExample3 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
+            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1448,9 +1410,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"IMExample4"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个正方体,分别演示有无延迟启动的非重复缩放，以及有无起点终点停顿的重复缩放.代码如下:
-
 </span>
 
 ```ts
@@ -1470,11 +1430,11 @@ export default class IMExample4 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(1.0, 1.0, 1.0));
-            this.Obj2.setWorldScale(new mw.Vector(1.0, 1.0, 1.0));
+            this.Obj1.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
+            this.Obj2.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1724,9 +1684,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"IMExample5"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的单摆运动.代码如下:
-
 </span>
 
 ```ts
@@ -1746,11 +1704,11 @@ export default class IMExample5 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new mw.Vector(300.0, 200.0, 200.0));
-            this.Obj2.setWorldLocation(new mw.Vector(300.0, -200.0, 200.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new mw.Vector(0.5, 2.0, 0.5));
+            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;

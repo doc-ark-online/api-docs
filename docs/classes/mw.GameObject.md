@@ -1,29 +1,15 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / GameObject
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / GameObject
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
-<span class="content-big">
-
 场景中所有实体的基类
-
-</span>
-
-<span class="content-big">
 
 Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象均继承自GameObject。
 
-</span>
-
-<span class="content-big">
-
 提供复制删除物体，查找获取物体、子物体、脚本等功能。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下:
-
 </span>
 
 ```ts
@@ -887,9 +873,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts
@@ -1020,9 +1004,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:调用方法
-
 </span>
 
 ```ts

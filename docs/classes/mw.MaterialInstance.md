@@ -1,17 +1,11 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / MaterialInstance
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / MaterialInstance
 
 # MaterialInstance <Badge type="tip" text="Class" /> <Score text="MaterialInstance" />
 
-<span class="content-big">
-
 材质实例类
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"MaterialExample"的脚本,把脚本挂载到一个模型对象下,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到动态设置材质的效果.代码如下:
-
 </span>
 
 ```ts

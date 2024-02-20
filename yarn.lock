@@ -597,31 +597,10 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
-"@fingerprintjs/fingerprintjs@^3.0.1":
-  version "3.3.6"
-  resolved "https://registry.npmmirror.com/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.3.6.tgz#4c3f1726dc0cb10b915cfce78d9471b38cd809bd"
-  integrity sha512-Inh0OoFVzO2PLvrUF8RZhY9NVDdg9DJHQ5YlvXhrGtQxSPzy2smS3TWzLAi+zlHSJNHSvi+1zYayLen2lGxjdA==
-  dependencies:
-    tslib "^2.0.1"
-
 "@jridgewell/sourcemap-codec@^1.4.15":
   version "1.4.15"
   resolved "https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
-
-"@metaapp/docsearch-react@^4.3.23":
-  version "4.3.23"
-  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.23.tgz#bfc548c548c9b7bd8219aae282e461d4177bd726"
-  integrity sha512-Mjajdqr3TN1AuuEWK+0glaAJkLCF6avA4CTAlqI884cVJmqSlAl9unOS05NUvq/PW8mi6hFnaXbPkvUR2kpVew==
-  dependencies:
-    "@algolia/autocomplete-core" "1.8.2"
-    "@algolia/autocomplete-preset-algolia" "1.8.2"
-    "@docsearch/css" "3.3.3"
-    algoliasearch "^4.0.0"
-    metaapp-lib-release "^2.0.18"
-    metaapp-simple-pandora-sdk "^1.0.13"
-  optionalDependencies:
-    "@algolia/client-search" "^4.15.0"
 
 "@types/body-scroll-lock@^3.1.0":
   version "3.1.0"
@@ -964,13 +943,6 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-axios@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.npmmirror.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
-  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
-  dependencies:
-    follow-redirects "^1.14.4"
-
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -1015,11 +987,6 @@ braces@~3.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-core-js@3:
-  version "3.27.1"
-  resolved "https://registry.npmmirror.com/core-js/-/core-js-3.27.1.tgz#23cc909b315a6bb4e418bf40a52758af2103ba46"
-  integrity sha512-GutwJLBChfGCpwwhbYoqfv03LAfmiz7e7D/BNxzeMxwQf10GRSzqiOjx7AmtEk+heiD/JWmBuyBPgFtx0Sg1ww==
-
 csstype@^2.6.8:
   version "2.6.21"
   resolved "https://repo.huaweicloud.com/repository/npm/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
@@ -1034,6 +1001,38 @@ detect-browser@^5.3.0:
   version "5.3.0"
   resolved "https://registry.npmmirror.com/detect-browser/-/detect-browser-5.3.0.tgz#9705ef2bddf46072d0f7265a1fe300e36fe7ceca"
   integrity sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==
+
+doc-theme-323@^2.1.17:
+  version "2.1.17"
+  resolved "https://registry.npmmirror.com/doc-theme-323/-/doc-theme-323-2.1.17.tgz#670e1df91a7b8731375858e9d9ef5d778cc8137a"
+  integrity sha512-e0JcT4DsTBRSF1aTqBTT4kAVDfr7/Vri78Iiff8YIJowfwRfW7vo07tteTHSTC6CIfWyhGq/kRGipt/WD7XrRw==
+  dependencies:
+    "@docsearch/css" "^3.3.0"
+    "@docsearch/js" "^3.3.0"
+    "@vitejs/plugin-vue" "^4.0.0"
+    "@vue/devtools-api" "^6.4.5"
+    "@vueuse/core" "^9.8.2"
+    body-scroll-lock "4.0.0-beta.0"
+    detect-browser "^5.3.0"
+    docsearch-react-234 "^4.3.25"
+    sass "^1.67.0"
+    shiki "^0.12.1"
+    viewerjs "^1.11.3"
+    vite "^4.0.2"
+    vitepress-plugin-codeblocks-fold "^1.2.28"
+    vue "^3.2.45"
+
+docsearch-react-234@^4.3.25:
+  version "4.3.25"
+  resolved "https://registry.npmmirror.com/docsearch-react-234/-/docsearch-react-234-4.3.25.tgz#e8efed636e1a2e617a6ba7477f4df8ac17295d63"
+  integrity sha512-D5z+xO81khZtGQVSjXaMETmFXXdgFmUITYfFuxn3Z0EwLUEuRTVRf6E4Y6NFn8BAJKyf4a0YuMSQOY0f8OdIlQ==
+  dependencies:
+    "@algolia/autocomplete-core" "1.8.2"
+    "@algolia/autocomplete-preset-algolia" "1.8.2"
+    "@docsearch/css" "3.3.3"
+    algoliasearch "^4.0.0"
+  optionalDependencies:
+    "@algolia/client-search" "^4.15.0"
 
 esbuild@^0.17.5:
   version "0.17.18"
@@ -1109,11 +1108,6 @@ focus-trap@^7.5.2:
   integrity sha512-p6vGNNWLDGwJCiEjkSK6oERj/hEyI9ITsSwIUICBoKLlWiTWXJRfQibCwcoi50rTZdbi87qDtUlMCmQwsGSgPw==
   dependencies:
     tabbable "^6.2.0"
-
-follow-redirects@^1.14.4:
-  version "1.15.2"
-  resolved "https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
-  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -1200,49 +1194,6 @@ mark.js@8.11.1:
   resolved "https://registry.npmmirror.com/mark.js/-/mark.js-8.11.1.tgz#180f1f9ebef8b0e638e4166ad52db879beb2ffc5"
   integrity sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==
 
-metaapp-lib-release@^2.0.18:
-  version "2.0.18"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-lib-release/-/metaapp-lib-release-2.0.18.tgz#faa06907167856425626a94f4e37c2d1d9cc3277"
-  integrity sha512-IPPxkLp9PUNuvVackjlzePr0m7+mYwrWlTQXonCuueXV4lHbmSEhLzLIP7zs4hEmC9UFsvM4UwRFbaQwu6abqQ==
-
-metaapp-pandora-sdk@5.2.3:
-  version "5.2.3"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-5.2.3.tgz#2594094f41d214d4f4f9506a7dc6bfa2f6a99078"
-  integrity sha512-1OHeJ8GAFFA99Atw8ib2+uf4d+kTnLCDt24bEsj7L1yiQrMHAoKRmpB+JehbNBm6mlHe40cJ45MeNNmZJrV9dg==
-  dependencies:
-    "@fingerprintjs/fingerprintjs" "^3.0.1"
-    axios "^0.24.0"
-    core-js "3"
-    pako "^2.1.0"
-    promise-polyfill "^8.2.0"
-    whatwg-fetch "^3.5.0"
-
-metaapp-prodigytech-doc-theme@^2.1.14:
-  version "2.1.14"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-2.1.14.tgz#75fa7df3d62564a8b27edf3ed1247cdb079fe271"
-  integrity sha512-b/P6cFOgBc9j8ER/4frlCvyFWgixh97Iohne0LWg+qW22kyBeudVjZ6ggeOl0WpY0uLqXKKdxfyvCIct9l+umQ==
-  dependencies:
-    "@docsearch/css" "^3.3.0"
-    "@docsearch/js" "^3.3.0"
-    "@metaapp/docsearch-react" "^4.3.23"
-    "@vitejs/plugin-vue" "^4.0.0"
-    "@vue/devtools-api" "^6.4.5"
-    "@vueuse/core" "^9.8.2"
-    body-scroll-lock "4.0.0-beta.0"
-    detect-browser "^5.3.0"
-    metaapp-pandora-sdk "5.2.3"
-    sass "^1.67.0"
-    shiki "^0.12.1"
-    viewerjs "^1.11.3"
-    vite "^4.0.2"
-    vitepress-plugin-codeblocks-fold "^1.2.27"
-    vue "^3.2.45"
-
-metaapp-simple-pandora-sdk@^1.0.13:
-  version "1.0.13"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-simple-pandora-sdk/-/metaapp-simple-pandora-sdk-1.0.13.tgz#2c91380ec954da03db8ded8d2c2b7a54446f4b94"
-  integrity sha512-OglXJW6iYgYe+HtpV0Yyv4mz8m5HjFAV+3lttvsPMBktttTunetKba8C3dYOYNn4/2eyIlP//BSuVi33q9mDVg==
-
 minimatch@^7.4.1:
   version "7.4.3"
   resolved "https://registry.npmmirror.com/minimatch/-/minimatch-7.4.3.tgz#012cbf110a65134bb354ae9773b55256cdb045a2"
@@ -1279,11 +1230,6 @@ normalize.css@^8.0.1:
   version "8.0.1"
   resolved "https://registry.npmmirror.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
-
-pako@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmmirror.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
-  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
 
 path-scurry@^1.6.1:
   version "1.6.3"
@@ -1339,11 +1285,6 @@ prettier@^2.8.1:
   version "2.8.1"
   resolved "https://repo.huaweicloud.com/repository/npm/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
   integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
-
-promise-polyfill@^8.2.0:
-  version "8.2.3"
-  resolved "https://registry.npmmirror.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
-  integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
 
 readdirp@~3.6.0:
   version "3.6.0"
@@ -1421,11 +1362,6 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-tslib@^2.0.1:
-  version "2.4.1"
-  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
-  integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
-
 typescript@^4.9.4:
   version "4.9.4"
   resolved "https://repo.huaweicloud.com/repository/npm/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
@@ -1458,10 +1394,10 @@ vite@^4.4.9:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress-plugin-codeblocks-fold@^1.2.27:
-  version "1.2.27"
-  resolved "https://registry.npmmirror.com/vitepress-plugin-codeblocks-fold/-/vitepress-plugin-codeblocks-fold-1.2.27.tgz#5a3aa0eeaaaeeb4a4dbc6397edb1a75694d8f367"
-  integrity sha512-zFZ3Brzbz3DiAG9y/eUp1/Vbkops7HkwRha64JD90xkZ30iNvW+9cDpiu1bLPOnvqBG/xx8RmxePPnJuRYPUdQ==
+vitepress-plugin-codeblocks-fold@^1.2.28:
+  version "1.2.28"
+  resolved "https://registry.npmmirror.com/vitepress-plugin-codeblocks-fold/-/vitepress-plugin-codeblocks-fold-1.2.28.tgz#ee9cab0405d55ee3eb9893e54192a726acc3e0c5"
+  integrity sha512-ilckzzYmTIv3A9t4xiCSsTcYCfzCFzlsycV9nDtgvRTuk7Fy1lNHMZgPOk6ysB7PLFG/R71HsgQC44AZZKL8cw==
 
 vitepress@^1.0.0-rc.15:
   version "1.0.0-rc.15"
@@ -1521,8 +1457,3 @@ vue@^3.3.4:
     "@vue/runtime-dom" "3.3.4"
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
-
-whatwg-fetch@^3.5.0:
-  version "3.6.2"
-  resolved "https://registry.npmmirror.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
-  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==

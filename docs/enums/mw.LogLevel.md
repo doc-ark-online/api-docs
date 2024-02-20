@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / LogLevel
+[TYPE](../groups/TYPE.TYPE.md) / LogLevel
 
 # LogLevel <Badge type="tip" text="Enumeration" /> <Score text="LogLevel" />
 
-<span class="content-big">
-
 日志等级
-
-</span>
 
 ## Table of contents
 

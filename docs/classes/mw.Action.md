@@ -1,95 +1,37 @@
-[TYPE](../groups/Core.TYPE.md) / Action
+[TYPE](../groups/TYPE.TYPE.md) / Action
 
 # Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
-<span class="content-big">
-
 代理
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------------
 
-</span>
-
-<span class="content-big">
-
 代理是一种设计模式，它允许你创建一个中间层对象来控制对另一个对象的访问。
-
-</span>
-
-<span class="content-big">
 
 代理是如何工作的呢 ?
 
-</span>
-
-<span class="content-big">
-
 - 编辑器已封装好代理功能，或许与你之前使用代理方式不同，不过这种方式对于你来说或许更方便了。
-
-</span>
-
-<span class="content-big">
 
 - add 方法添加需要代理的具体事务。
 
-</span>
-
-<span class="content-big">
-
 - call 方法执行代理。
-
-</span>
-
-<span class="content-big">
 
 为什么要使用代理 ?
 
-</span>
-
-<span class="content-big">
-
 - 代理可以作为一个门卫，对对象的访问进行控制和限制。它可以验证调用者的权限、限制对敏感操作的访问或者记录访问日志等。代理模式允许你在不改变原始对象的情况下，对其进行安全增强。
-
-</span>
-
-<span class="content-big">
 
 - 代理对象可以在第一次访问时负责创建或初始化真正的对象，并将后续的访问重定向到已创建的对象。
 
-</span>
-
-<span class="content-big">
-
 - 等等..。
-
-</span>
-
-<span class="content-big">
 
 如何通俗易懂了解代理 ?
 
-</span>
-
-<span class="content-big">
-
 假设你是一个忙碌的公司老板，你需要处理很多事务，包括与客户交流、签署文件等等。但是，由于你的时间有限，你无法亲自处理所有的事务。所以你决定雇佣一名助手来帮助你处理这些事务。这名助手就是你的代理。
-
-</span>
-
-<span class="content-big">
 
 代理（助手）具有与你相同的能力和职责，他可以代表你与客户进行交流、签署文件等等。当有事务需要处理时，你将任务委托给代理，代理会代替你执行相关的操作。然而，代理并不是完全取代你的存在。虽然代理可以处理大部分事务，但在某些情况下，代理需要将任务转交给你来处理。例如，当遇到特殊的请求或需要你的个人决策时，代理会将任务交还给你。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ActionExample的脚本，放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”将看到代理被调用的效果,按下键盘“2”会看到代理被移除的效果，代码如下：
-
 </span>
 
 ```ts
@@ -252,9 +194,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为ActionExample的脚本，放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”将看到代理被调用的效果,按下键盘“2”会看到代理被移除的效果，代码如下：
-
 </span>
 
 ```ts

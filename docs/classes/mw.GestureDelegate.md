@@ -1,12 +1,8 @@
-[INPUT](../groups/Core.INPUT.md) / GestureDelegate
+[INPUT](../groups/INPUT.INPUT.md) / GestureDelegate
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 
-<span class="content-big">
-
 手势代理类
-
-</span>
 
 ## Table of contents
 

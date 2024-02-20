@@ -1,17 +1,11 @@
-[INPUT](../groups/Core.INPUT.md) / InputUtil
+[INPUT](../groups/INPUT.INPUT.md) / InputUtil
 
 # InputUtil <Badge type="tip" text="Class" /> <Score text="InputUtil" />
 
-<span class="content-big">
-
 输入事件工具
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"InputExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,点击键盘1键及屏幕，你将看到Input相关效果.代码如下:
-
 </span>
 
 ```ts
@@ -123,9 +117,7 @@ export default class InputExample extends Script {
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
-
 </span>
 
 ```ts
@@ -178,9 +170,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
-
 </span>
 
 ```ts
@@ -231,9 +221,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
-
 </span>
 
 ```ts
@@ -284,9 +272,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
-
 </span>
 
 ```ts
@@ -337,9 +323,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
-
 </span>
 
 ```ts
@@ -390,9 +374,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
-
 </span>
 
 ```ts
@@ -445,9 +427,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
-
 </span>
 
 ```ts
@@ -500,9 +480,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
-
 </span>
 
 ```ts
@@ -553,9 +531,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以通过shift锁定鼠标，按下G键，不可以通过shift锁定鼠标
-
 </span>
 
 ```ts
@@ -599,9 +575,7 @@ export default class InputExample extends Script {
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
-
 </span>
 
 ```ts
@@ -681,9 +655,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
-
 </span>
 
 ```ts
@@ -729,9 +701,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
-
 </span>
 
 ```ts
@@ -773,9 +743,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
-
 </span>
 
 ```ts
@@ -816,9 +784,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
-
 </span>
 
 ```ts
@@ -936,9 +902,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
-
 </span>
 
 ```ts
@@ -1016,9 +980,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
-
 </span>
 
 ```ts

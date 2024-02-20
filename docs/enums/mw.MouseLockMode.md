@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / MouseLockMode
+[UI](../groups/UI.UI.md) / MouseLockMode
 
 # MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
 
-<span class="content-big">
-
 鼠标锁定模式
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / MessageType
+[TYPE](../groups/TYPE.TYPE.md) / MessageType
 
 # MessageType <Badge type="tip" text="Enumeration" /> <Score text="MessageType" />
 
-<span class="content-big">
-
 发送消息的类型
-
-</span>
 
 ## Table of contents
 

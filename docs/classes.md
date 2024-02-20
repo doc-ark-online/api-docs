@@ -38,6 +38,8 @@ Classes
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [UI](groups/UI.UI.md) |
+| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
+| [ChatBubbleConfig](classes/mw.ChatBubbleConfig.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 颜色选择器 | [UI](groups/UI.UI.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [TYPE](groups/TYPE.TYPE.md) |
@@ -193,7 +195,7 @@ Classes
 | :-----| :-----| :-----|
 | [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
-| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 | [TYPE](groups/TYPE.TYPE.md) |
+| [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量。 | [TYPE](groups/TYPE.TYPE.md) |
 | [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 
 

@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / ChatService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / ChatService
 
 # ChatService <Badge type="tip" text="Class" /> <Score text="ChatService" />
 
-<span class="content-big">
-
 聊天服务
-
-</span>
 
 ## Table of contents
 
@@ -39,31 +35,98 @@
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示富文本字体的效果。代码如下：
-
 </span>
 
 ```ts
 @Component
- export default class messageExample extends Script {
+export default class NewExample extends Script {
 
-     protected onStart(): void {
-          this.Mgs();
-     }
+    protected onStart(): void {
+        if (SystemUtil.isClient()){
+            this.test();
+        }
+        if(SystemUtil.isServer()){
+            Event.addClientListener("bro_two",()=>{
+                ChatService.asyncBroadcastMessage(MessageType.Room,"bro").then(()=>{
+                    console.log("asyncBroadcastMessage is called");
+                });
+            });
+        }
+        
+        if(SystemUtil.isClient()){
+            Event.addLocalListener("bro",()=>{
+                Event.dispatchToServer("bro_two");
+            });
+        }
+    }
 
-     @mw.RemoteFunction(mw.Server)
-     public Mgs(){
-         let type: mw.MessageType.Room;
-         // content内容可以是富文本格式文字。
-         // 富文本可使文本实现不同字号、不同颜色等多种效果。
-         // <b>以粗体显示文本。eg:We are <b>not</b> amused. =>not字体为粗体
-         // <color=#ff0000ff>或<color=#red>根据参数值#rrggbbaa设置文本的颜色，分别表示颜色的红、绿、蓝和 Alpha（透明度）值，大小写都能识别.eg:We are <color=#red>colorfully</color> amused. =>colorfully字体为红色。
-         // <u>以下划线显示文本。eg:We are <u>not</u> amused. =>not字体存在下划线。
-         let content = "<b><color=#ff0000ff>系统提示：</color></b>恭喜玩家<b><u><color=#yellow>起个名字好难</color> </u></b>！在<u><color=#red>萌宠转转转</color></u>活动中获得活泼可爱的<u><color=#black>萌兔宝宝</color> </u> ！";
-         ChatService.asyncBroadcastMessage(type,content);
-      }
- }
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.onKeyDown(Keys.F, async () => {
+            let playerPos = Player.localPlayer.character.worldTransform.position;
+            let result = InputUtil.projectWorldPositionToWidgetPosition(playerPos);
+            if (result) {
+                btn.button.position = result.screenPosition;
+            }
+        })
+    }
+
+}
+
+class ButtonUI {
+    public button: StaleButton;
+    public buttonTwo: StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = Canvas.newObject();
+        rootCanvas.size = new Vector2(1920, 1080);
+        rootCanvas.position = Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = StaleButton.newObject(rootCanvas);
+        this.button.position = new Vector2(1000, 310);
+        this.button.size = new Vector2(200, 50);
+        this.button.text = "SendMes";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = LinearColor.red;
+        this.button.visibility = SlateVisibility.Visible;
+        this.button.onClicked.add(() => {
+            console.log("btn ")
+            ChatService.asyncSendMessage("hello").then(()=>{
+                console.log("asyncSendMessage is called");
+            });
+            if (fun) {
+                fun();
+            }
+        });
+        this.buttonTwo = StaleButton.newObject(rootCanvas);
+        this.buttonTwo.position = new Vector2(1700, 310);
+        this.buttonTwo.size = new Vector2(150, 50);
+        this.buttonTwo.text = "BroMes";
+        this.buttonTwo.transitionEnable = true;
+        this.buttonTwo.pressedImagColor = LinearColor.red;
+        this.buttonTwo.visibility = SlateVisibility.Visible;
+        this.buttonTwo.onClicked.add(() => {
+            console.log("btn ")
+            Event.dispatchToLocal("bro");
+            if (fun) {
+                fun();
+            }
+        });
+
+    }
+}
 ```
 
 ___
@@ -86,9 +149,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"MetaWorld is funny"的效果。代码如下：
-
 </span>
 
 ```ts

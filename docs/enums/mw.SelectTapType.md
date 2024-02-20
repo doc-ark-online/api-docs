@@ -1,12 +1,8 @@
-[SCRIPTING](../groups/Core.SCRIPTING.md) / SelectTapType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / SelectTapType
 
 # SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
 
-<span class="content-big">
-
 UGC 选中的单选或者多选
-
-</span>
 
 ## Table of contents
 

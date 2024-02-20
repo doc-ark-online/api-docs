@@ -1,12 +1,8 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / GravityMode
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / GravityMode
 
 # GravityMode <Badge type="tip" text="Enumeration" /> <Score text="GravityMode" />
 
-<span class="content-big">
-
 重力模式
-
-</span>
 
 ## Table of contents
 

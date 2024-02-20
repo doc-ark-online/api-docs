@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / BasicStanceType
+[AVATAR](../groups/AVATAR.AVATAR.md) / BasicStanceType
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 
-<span class="content-big">
-
 基础姿态风格
-
-</span>
 
 ## Table of contents
 

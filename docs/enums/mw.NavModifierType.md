@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / NavModifierType
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / NavModifierType
 
 # NavModifierType <Badge type="tip" text="Enumeration" /> <Score text="NavModifierType" />
 
-<span class="content-big">
-
 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果
-
-</span>
 
 ## Table of contents
 

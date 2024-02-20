@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TextCommit
+[UI](../groups/UI.UI.md) / TextCommit
 
 # TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 
-<span class="content-big">
-
 输入提交模式
-
-</span>
 
 ## Table of contents
 

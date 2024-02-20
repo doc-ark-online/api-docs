@@ -1,12 +1,8 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / PostProcessPreset
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcessPreset
 
 # PostProcessPreset <Badge type="tip" text="Enumeration" /> <Score text="PostProcessPreset" />
 
-<span class="content-big">
-
 后处理预设枚举
-
-</span>
 
 ## Table of contents
 

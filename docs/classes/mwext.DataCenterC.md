@@ -2,16 +2,10 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
-<span class="content-big">
-
 客户端数据中心，里面存放着当前玩家的数据
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
-
 </span>
 
 ```ts
@@ -86,9 +80,7 @@ class PlayerModuleData extends Subdata {
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息
-
 </span>
 
 ```ts

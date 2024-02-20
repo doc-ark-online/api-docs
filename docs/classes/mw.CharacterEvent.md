@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / CharacterEvent
+[UI](../groups/UI.UI.md) / CharacterEvent
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
-<span class="content-big">
-
 角色输入事件
-
-</span>
 
 ## Table of contents
 

@@ -1,5 +1,4 @@
-import type { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
-import { dealConfigSidebar, dealItem } from '../../utils'
+import type { DefaultTheme } from 'doc-theme-323'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
@@ -26,7 +25,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     // core
     {
       text: '基类',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -419,7 +417,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //sence
     {
       text: '场景特效',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -486,7 +483,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //service
     {
       text: '服务',
-      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -1027,6 +1023,29 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       'script',
       {},
       `
+    window.PandoraConfig = {
+      base: {
+        index_type: 'cDEwMTE2/wl',
+        selfpackagename: 'com.metaverse.creator.api',
+      },
+      other: {
+        appkey: 'cDEwMTE2',
+        zone: 'zh',
+        baseUrl: 'https://push.233leyuan.com'
+      }
+    }
+    `
+    ],
+    [
+      'script',
+      {
+        src: 'https://wstatic-01-ali.233leyuan.com/common/pandora/5.2.4/pandora_sdk.min.js'
+      }
+    ],
+    [
+      'script',
+      {},
+      `
             var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -1095,24 +1114,9 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       {
         text: '027 版本',
         items: [
-          {
-            text: '028pre 版本',
-            link: 'https://api-docs-028.ark.online/',
-            path: true
-          },
-          {
-            text: '026 版本',
-            link: 'https://api-docs-026.ark.online/',
-            path: true
-          },
-          {
-            text: '025 版本',
-            link: 'https://api-docs-025.ark.online/',
-            path: true
-          },
-          {
-            text: '024 版本',
-            link: 'https://api-docs-024.ark.online/',
+    {
+            text: '主版本',
+            link: 'https://api-docs.ark.online/',
             path: true
           }
         ]
@@ -1144,7 +1148,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/release-027/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',

@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Gizmo
+[TYPE](../groups/TYPE.TYPE.md) / Gizmo
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 
-<span class="content-big">
-
 Gizmo
-
-</span>
 
 **`Instance`**
 

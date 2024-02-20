@@ -1,114 +1,42 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ObjectLauncher
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ObjectLauncher
 
 # ObjectLauncher <Badge type="tip" text="Class" /> <Score text="ObjectLauncher" />
 
-<span class="content-big">
-
 投掷物发射器
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 投掷物发射器是一种游戏中常见的机制，用于模拟投掷物体的发射和飞行。它可以让玩家或游戏角色通过选择合适的方向和力量，将物体发射到目标位置。
-
-</span>
-
-<span class="content-big">
 
 想象一下，你站在一个阳台上，手里拿着一个小球，并希望将它投向一个目标。投掷物发射器就像是你的手臂和手，它帮助你控制球的发射。你可以调整你的手臂的方向和力量，以便球以特定的方式飞行。
 
-</span>
-
-<span class="content-big">
-
 一旦玩家决定好发射的方向和力量，投掷物发射器就会将投掷物体发射出去。投掷物体会根据发射器设置的速度和发射角度开始飞行。它会在空中经过弧线路径，并受到重力和其他物理效应的影响。
-
-</span>
-
-<span class="content-big">
 
 ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 ProjectileInst 。投掷物实例上挂载着实际发射的物体。
 
-</span>
-
-<span class="content-big">
-
 当 spawnProjectileInstanceLaunch 启动发射时，传入对象ID（注意是场景里的对象 id，不是资源 id），投掷物实例拖着传入的模型进行运动，发射器作为发射终端，维护投掷物发射相关的参数。
-
-</span>
-
-<span class="content-big">
 
 发射器接口调用端可以是服务器，也可以是客户端；发射投掷物的方式有3种：1.双端投掷物 2.发射全客户端投掷物 3.发射单客户端投掷物
 
-</span>
-
-<span class="content-big">
-
 在客户端还是服务端加载 ObjectLauncher 对象呢？
-
-</span>
-
-<span class="content-big">
 
 1. 服务端
 
-</span>
-
-<span class="content-big">
-
 -  在服务端动态生成投掷物发射器，获得一个各端同步的投掷物发射器对象。修改投掷物发射器属性会同步至所有客户端。
-
-</span>
-
-<span class="content-big">
 
 -  在服务器添加投掷物发射器委托后，委托只会在服务器执行，同时执行前提是发射器要存在于服务器。
 
-</span>
-
-<span class="content-big">
-
 -  在服务器调用发射接口时，按服务器当前发射器属性生成双端投掷物发射，发射对象如果在服务端找不到（有可能是单客户端投掷物），直接返回，能找到（发射对象是双端对象），在投掷物上挂载发射物体。双端投掷物的碰撞和轨迹就是服务器计算，即以服务器的计算结果为准。
-
-</span>
-
-<span class="content-big">
 
 2. 客户端
 
-</span>
-
-<span class="content-big">
-
 -  在客户端动态生成投掷物发射器，只能获得一个本地的投掷物发射器对象，仅支持本地发射。
-
-</span>
-
-<span class="content-big">
 
 -  在本地添加回调后，回调只会在本地执行，同时执行前提是发射器要存在于本地。
 
-</span>
-
-<span class="content-big">
-
 -  在本地调用广播发射：按本地当前发射器属性生成单端投掷物，同时通知服务器广播其他客户端按本地当前发射器属性生成单端投掷物。发射对象如果在服务端找不到，直接返回，能找到（发射对象是双端对象），挂上投掷物。
 
-</span>
-
-<span class="content-big">
-
 另外有控制发射器发射初始速度、重力、投掷物半径等参数。
-
-</span>
 
 ## Hierarchy
 
@@ -285,9 +213,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下:
-
 </span>
 
 ```ts
@@ -938,9 +864,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_Acceleration"的代码保存,运行游戏,场景中将会生成一个对象发射器和用于发射的火箭。按下按键”1“，发射火箭。设置对象代码如下:
-
 </span>
 
 ```ts
@@ -1026,9 +950,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下:
-
 </span>
 
 ```

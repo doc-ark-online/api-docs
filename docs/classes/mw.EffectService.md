@@ -1,36 +1,16 @@
-[EFFECTS](../groups/Core.EFFECTS.md) / EffectService
+[EFFECTS](../groups/EFFECTS.EFFECTS.md) / EffectService
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
-<span class="content-big">
-
 特效管理器
-
-</span>
-
-<span class="content-big">
 
 Effect 通常用于增强游戏画面、呈现视觉效果或传达特定的情感或信息。特效可以是各种形式的视觉效果，如粒子效果、光影效果、爆炸效果、烟雾效果等。MW编辑器在左侧特效栏中提供了大量的粒子特效，您可以任意的拖动特效到场景中查看并使用。
 
-</span>
-
-<span class="content-big">
-
 EffectService 中很多静态方法可直接调用，其中：
-
-</span>
-
-<span class="content-big">
 
 - playAtPosition、 playOnGameObject 方法控制粒子特效播放位置。
 
-</span>
-
-<span class="content-big">
-
 - stop 方法控制粒子特效停止播放。
-
-</span>
 
 ## Table of contents
 
@@ -69,9 +49,7 @@ EffectService 中很多静态方法可直接调用，其中：
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后获取该特效对象并移动到(200, 0, 200)位置
-
 </span>
 
 ```ts
@@ -119,9 +97,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在坐标(0, 0, 200)处播放一个火焰特效
-
 </span>
 
 ```ts
@@ -165,9 +141,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在所有玩家的身上播放一个火焰特效
-
 </span>
 
 ```ts
@@ -201,9 +175,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例: 创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后停止特效
-
 </span>
 
 ```ts
@@ -234,9 +206,7 @@ ___
 调用端生效|服务端调用自动广播
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放三个火焰特效，5秒后停止所有特效
-
 </span>
 
 ```ts

@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SpringArm
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SpringArm
 
 # SpringArm <Badge type="tip" text="Class" /> <Score text="SpringArm" />
 
-<span class="content-big">
-
 弹簧臂
-
-</span>
 
 ## Table of contents
 
@@ -93,9 +89,7 @@
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏。创建一个名为"Example_SpringArm_CollisionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞。你可以看到禁用摄像机弹簧杆碰撞摄像机碰撞柱子不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -105,9 +99,7 @@ export default class Example_SpringArm_CollisionEnabled extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
@@ -197,9 +189,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:将使用到的资源:"26950"拖入优先加载栏。创建一个名为"Example_SpringArm_CollisionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞。你可以看到禁用摄像机弹簧杆碰撞摄像机碰撞柱子不同的效果.代码如下:
-
 </span>
 
 ```ts
@@ -209,9 +199,7 @@ export default class Example_SpringArm_CollisionEnabled extends Script {
     protected onStart(): void {
         if(SystemUtil.isServer()) {
             // 生成10根柱子用作摄像机弹簧杆碰撞
-            for (let i = 0;
-i < 10;
-i++) {
+            for (let i = 0; i < 10; i++) {
                 GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
@@ -295,9 +283,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“3”，增加摄像机弹簧臂的长度，按住键盘“4”，减少摄像机弹簧臂的长度.你将在场景中看到摄像机弹簧杆伸缩的效果.代码如下:
-
 </span>
 
 ```ts
@@ -389,9 +375,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_LocalTransform"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原.你将在场景中看到摄像机偏移的效果并在控制台看到打印的变化后的摄像机弹簧臂的本地变换.代码如下:
-
 </span>
 
 ```ts
@@ -489,9 +473,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_UseControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，启用/禁用控制器操作摄像机的旋转5秒.你将在场景中看到禁用控制器操作摄像机后的无法控制摄像机旋转的效果.代码如下:
-
 </span>
 
 ```ts
@@ -588,9 +570,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"Example_SpringArm_WorldTransform"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机弹簧臂的偏移(0, 100, 100)，2秒后复原.你将在场景中看到摄像机偏移的效果并在控制台看到打印的变化后的摄像机弹簧臂的世界变换.代码如下:
-
 </span>
 
 ```ts

@@ -1,6 +1,6 @@
 # 口袋方舟
 
-![口袋方舟|API](https://tc-cdn-forum.ark.online/forum/202302/16/100133d3zgv92vle29999h.png)
+![口袋方舟|API](https://cdn.233xyx.com/online/UtCq1Mh9YAt11702532599968.jpg)
 
 欢迎来到 口袋方舟 API 文档 ！
 口袋方舟是一个功能强大的工具，旨在帮助开发人员创建、编辑和管理游戏资源、场景和逻辑。

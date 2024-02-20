@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / VirtualJoystickPanel
+[UI](../groups/UI.UI.md) / VirtualJoystickPanel
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 
-<span class="content-big">
-
 摇杆
-
-</span>
 
 ## Hierarchy
 

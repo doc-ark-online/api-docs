@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / InputBox
+[UI](../groups/UI.UI.md) / InputBox
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
-<span class="content-big">
-
 UI的输入框
-
-</span>
 
 ## Hierarchy
 

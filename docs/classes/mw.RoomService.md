@@ -1,12 +1,8 @@
-[SOCIAL](../groups/Core.SOCIAL.md) / RoomService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RoomService
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-<span class="content-big">
-
 MGS以及玩家信息、数据、头像等相关API。
-
-</span>
 MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，如发布游戏后的左上角聊天、好友相关信息服务。
 
 ## Table of contents
@@ -40,7 +36,7 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 | **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void`  |
 | 向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能|
 | **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`  |
-| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
+| 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效|
 
 ## Methods
 
@@ -84,9 +80,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -121,9 +115,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
-
 </span>
 
 ```ts
@@ -152,9 +144,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
-
 </span>
 
 ```ts
@@ -207,9 +197,7 @@ ___
 服务端调用
 
 <span style="font-size: 14px;">
-
 使用示例:
-
 </span>
 
 ```ts
@@ -257,6 +245,29 @@ ___
 只在移动端由233拉起生效
 
 :::
+
+<span style="font-size: 14px;">
+使用示例:
+</span>
+
+```ts
+@Component
+export default class ChatMsgDemoScript extends Script {
+
+    protected onStart(): void {
+        // 只在客户端注册，因为回调只在客户端触发
+        if (SystemUtil.isClient()) {
+            // 按照要求的格式声明回调。回调中的数据就是聊天消息，这里我们将收到的聊天消息打印到日志窗口
+            const callback = (receivedMsg: string) => {
+                console.log(`We received chat message[${receivedMsg}] from MGS.`)
+            };
+    
+            // 注册聊天回调之后，当有玩家在MGS聊天框中发送消息，就会触发注册的回调
+            RoomService.registerMGSChatMessageEvent(callback);
+        }
+    }
+}
+```
 
 ___
 
@@ -396,7 +407,7 @@ ___
 
 • `Static` **showUserProfile**(`resp`, `userId`): `void` 
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
+若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗，仅限该userId对应的玩家在同一个房间时有效
 
 #### Parameters
 

@@ -1,17 +1,11 @@
-[SETTINGS](../groups/Core.SETTINGS.md) / RoomSettings
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / RoomSettings
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
-<span class="content-big">
-
 房间设置
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
-
 </span>
 
 ```ts

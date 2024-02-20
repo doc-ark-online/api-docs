@@ -1,12 +1,8 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / VehicleDriveMode4WNew
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / VehicleDriveMode4WNew
 
 # VehicleDriveMode4WNew <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4WNew" />
 
-<span class="content-big">
-
 四轮载具驱动模式
-
-</span>
 
 ## Table of contents
 

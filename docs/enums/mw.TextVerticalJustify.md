@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / TextVerticalJustify
+[UI](../groups/UI.UI.md) / TextVerticalJustify
 
 # TextVerticalJustify <Badge type="tip" text="Enumeration" /> <Score text="TextVerticalJustify" />
 
-<span class="content-big">
-
 文本排列垂直对齐规则
-
-</span>
 
 ## Table of contents
 

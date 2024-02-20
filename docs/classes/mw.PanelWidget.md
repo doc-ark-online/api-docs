@@ -1,12 +1,8 @@
-[UI](../groups/Core.UI.md) / PanelWidget
+[UI](../groups/UI.UI.md) / PanelWidget
 
 # PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
 
-<span class="content-big">
-
 UI的PanelWidget可以挂载子节点
-
-</span>
 
 ## Hierarchy
 

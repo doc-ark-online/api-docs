@@ -1,29 +1,15 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / PostProcess
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / PostProcess
 
 # PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 
-<span class="content-big">
-
 后处理
-
-</span>
-
-<span class="content-big">
 
 ----------------------------------
 
-</span>
-
-<span class="content-big">
-
 后处理是指在渲染完成后对图像进行处理的一系列技术和效果。后处理通常用于增强或修改最终渲染图像的对比度、饱和度等特性，以达到特定的视觉效果或风格。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"PostProcessExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制后处理的伽马值

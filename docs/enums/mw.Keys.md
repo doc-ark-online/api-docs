@@ -1,12 +1,8 @@
-[TYPE](../groups/Core.TYPE.md) / Keys
+[TYPE](../groups/TYPE.TYPE.md) / Keys
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 
-<span class="content-big">
-
 按键Key值
-
-</span>
 
 ## Table of contents
 

@@ -1,12 +1,8 @@
-[DATA](../groups/Core.DATA.md) / DataStorage
+[DATA](../groups/DATA.DATA.md) / DataStorage
 
 # DataStorage <Badge type="tip" text="Class" /> <Score text="DataStorage" />
 
-<span class="content-big">
-
 数据存储
-
-</span>
 
 ## Table of contents
 

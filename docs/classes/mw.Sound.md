@@ -1,17 +1,11 @@
-[SOUND](../groups/Core.SOUND.md) / Sound
+[SOUND](../groups/SOUND.SOUND.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
-<span class="content-big">
-
 音效
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为"SoundExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以听到音效的声音.代码如下:
-
 </span>
 
 ```ts

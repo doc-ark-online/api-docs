@@ -1,47 +1,21 @@
-[LIGHTING](../groups/Core.LIGHTING.md) / Lighting
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / Lighting
 
 # Lighting <Badge type="tip" text="Class" /> <Score text="Lighting" />
 
-<span class="content-big">
-
 光照
-
-</span>
-
-<span class="content-big">
 
 -------------------------
 
-</span>
-
-<span class="content-big">
-
 光照是指模拟现实世界中的光源对物体的照射和影响。
-
-</span>
-
-<span class="content-big">
 
 在三维渲染中，光照用于计算物体的明暗、阴影和反射等效果，以增加场景的真实感和立体感。
 
-</span>
-
-<span class="content-big">
-
 光照模型通常包括光源的类型、颜色、强度以及物体表面的材质属性等因素。常见的光照模型有平行光、点光源等。
-
-</span>
-
-<span class="content-big">
 
 它包括一系列可调整的属性，您可以使用这些静态属性和方法来更改照明的显示方式以及与其他对象的交互方式，如照明属性中所概述。
 
-</span>
-
 <span style="font-size: 14px;">
-
 使用示例: 可按如下操作控制编辑器后处理实时效果
-
 </span>
 
 创建一个名为"LightingExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制光照亮度

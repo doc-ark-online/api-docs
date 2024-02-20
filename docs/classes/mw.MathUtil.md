@@ -1,12 +1,8 @@
-[UTILITY](../groups/Core.UTILITY.md) / MathUtil
+[UTILITY](../groups/UTILITY.UTILITY.md) / MathUtil
 
 # MathUtil <Badge type="tip" text="Class" /> <Score text="MathUtil" />
 
-<span class="content-big">
-
 数学库工具
-
-</span>
 
 ## Table of contents
 
@@ -411,9 +407,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20）
-
 </span>
 
 ```ts
@@ -447,9 +441,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
-
 </span>
 
 ```ts
@@ -489,9 +481,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
-
 </span>
 
 ```ts
@@ -531,9 +521,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
-
 </span>
 
 ```ts
@@ -575,9 +563,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
-
 </span>
 
 ```ts
@@ -625,9 +611,7 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 :::
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的中间值。
-
 </span>
 
 ```ts
@@ -667,9 +651,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
-
 </span>
 
 ```ts
@@ -711,9 +693,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
-
 </span>
 
 ```ts
@@ -754,9 +734,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
-
 </span>
 
 ```ts
@@ -796,9 +774,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
-
 </span>
 
 ```ts
@@ -838,9 +814,7 @@ ___
 
 
 <span style="font-size: 14px;">
-
 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
-
 </span>
 
 ```ts

@@ -1,12 +1,8 @@
-[AVATAR](../groups/Core.AVATAR.md) / SomatotypeV2
+[AVATAR](../groups/AVATAR.AVATAR.md) / SomatotypeV2
 
 # SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
 
-<span class="content-big">
-
 角色体型
-
-</span>
 
 ## Table of contents
 
