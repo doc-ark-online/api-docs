@@ -351,11 +351,12 @@ ___
 
 • **setColor**(`parameterName`, `value`): `void` <Badge type="tip" text="client" />
 
-设置特效颜色参数值
+设置特效颜色参数值。特效颜色参数为特效选中之后右侧属性面板“特效参数控制”中的"color"字段。
+存在一个特效可以设置两种颜色的情况，如："color01"、"color02"。
 
 #### Parameters
 
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 属性面板“特效参数控制”中 的"color"字段|
 | :------ | :------ |
 | `value` [`LinearColor`](mw.LinearColor.md) | 颜色变量 |
 
