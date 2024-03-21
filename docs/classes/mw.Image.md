@@ -93,9 +93,9 @@
 | **[setImageByFile](mw.Image.md#setimagebyfile)**(`absPath`: `string`, `bRefreshCache?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置图片样式为本地图片文件|
 | **[setImageColorByHex](mw.Image.md#setimagecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505|
+| 设置图片颜色。|
 | **[setImageColorDecimal](mw.Image.md#setimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置图片颜色,指定R、G、B、A设置颜色 0 ~255|
+| 设置图片颜色|
 | **[newObject](mw.Image.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Image`](mw.Image.md) <Badge type="tip" text="client" />  |
 | 创建 Image 控件|
 
@@ -381,7 +381,7 @@ ___
 
 ::: warning Precautions
 
-必须调用过setImageByBlendMode后才会生效，高消耗操作注意
+必须调用过 setImageByBlendMode 后才会生效，高消耗操作注意
 
 :::
 
@@ -422,9 +422,9 @@ ___
 
 #### Parameters
 
-| `backgroundPic` `string` | 背景图片绝对路径 |
+| `backgroundPic` `string` | 背景图片绝对路径 range:路径长度 |
 | :------ | :------ |
-| `foregroundPic` `string` | 前景图片绝对路径 |
+| `foregroundPic` `string` | 前景图片绝对路径 range:路径长度 |
 
 
 ___
@@ -437,9 +437,9 @@ ___
 
 #### Parameters
 
-| `GUID` `string` | 背景图片GUID |
+| `GUID` `string` | 背景图片 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
-| `foregroundPic` `string` | 前景图片绝对路径 |
+| `foregroundPic` `string` | 前景图片绝对路径 range: 路径长度 |
 
 
 ___
@@ -452,14 +452,14 @@ ___
 
 #### Parameters
 
-| `absPath` `string` | 图片绝对路径 |
+| `absPath` `string` |  图片绝对路径 range: 路径长度 |
 | :------ | :------ |
-| `bRefreshCache?` `boolean` | 默认为true将重新创建并刷新缓存，为false则使用缓存 |
+| `bRefreshCache?` `boolean` |  默认为 true 将重新创建并刷新缓存，为 false 则使用缓存 <br> default: true |
 
 
 ::: warning Precautions
 
-1.建议设置bRefreshCache=false以提升性能 2.该接口主要配合setImageByBlendMode和asyncExportBlendBrush来为移动编辑器服务的
+1. 建议设置 bRefreshCache = false 以提升性能  2. 该接口主要配合 setImageByBlendMode 和 asyncExportBlendBrush 来为移动编辑器服务的
 
 :::
 
@@ -469,13 +469,15 @@ ___
 
 • **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置图片颜色,指定Hex的颜色文本设定颜色 #05050505
+设置图片颜色。
 
 #### Parameters
 
-| `inHexString` `string` | Hex颜色字符串 |
+| `inHexString` `string` |  Hex 颜色字符串。 <br> range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
+
+指定 Hex 的颜色文本设定颜色 例如: #05050505
 
 ___
 
@@ -483,15 +485,15 @@ ___
 
 • **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置图片颜色,指定R、G、B、A设置颜色 0 ~255
+设置图片颜色
 
 #### Parameters
 
-| `R` `number` | 图片R值，数据范围0~255 |
+| `R` `number` | 图片 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 图片G值，数据范围0~255 |
-| `B` `number` | 图片B值，数据范围0~255 |
-| `A` `number` | 图片透明度，数据范围0~255 |
+| `G` `number` | 图片 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 图片 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 图片 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -506,7 +508,7 @@ ___
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 

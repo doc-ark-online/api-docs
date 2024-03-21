@@ -87,10 +87,10 @@
 
 #### Parameters
 
-| `fieldId` `number` |  字段ID |
+| `fieldId` `number` |  字段 ID range: 依据 ID 长度而定 type: |
 | :------ | :------ |
-| `fieldName` `string` |  字段的标题 |
-| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null |
+| `fieldName` `string` |  字段的标题 range: |
+| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null range:不做限制 |
 
 #### Returns
 
@@ -135,11 +135,11 @@ ___
 
 #### Parameters
 
-| `rankIndex` `number` |  名次索引(0开始) |
+| `rankIndex` `number` |  名次索引(0开始) range: 合理即可，不做限制 type: 整数 |
 | :------ | :------ |
-| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string`  `number` |  字段显示内容 |
-| `textBlockIndex` `number` |  文本控件索引 |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) range: 合理即可，不做限制 type: 整数 |
+| `fieldValue` `string`  `number` |  字段显示内容 range: 合理即可，不做限制 type: 整数 |
+| `textBlockIndex` `number` |  文本控件索引 range: 合理即可，不做限制 type: 整数 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 
 
@@ -209,11 +209,11 @@ ___
 
 #### Parameters
 
-| `title` `string` |  UI标题 |
+| `title` `string` |  UI 标题 range: UI 标题信息 |
 | :------ | :------ |
 | `fieldsAutoLayout` `boolean` |  字段是否自动布局(true-均匀分布, false-所摆即所得） |
-| `showPlayerNum` `number` |  最多显示的玩家数量 |
-| `itemSpacing` `number` |  每条数据的间距 |
+| `showPlayerNum` `number` |  最多显示的玩家数量 range:合理即可 type: 整数 |
+| `itemSpacing` `number` |  每条数据的间距 range:合理即可 type: 整数 |
 
 #### Returns
 
@@ -230,10 +230,10 @@ ___
 
 #### Parameters
 
-| `fieldName` `string` |  字段标题 |
+| `fieldName` `string` |  字段标题 range: 依据 ID 长度而定 type: |
 | :------ | :------ |
-| `valueStyle?` `string` |  字段值样式 default: null |
-| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null |
+| `valueStyle?` `string` |  字段值样式 default: null range:不做限制 |
+| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null range:不做限制 |
 
 #### Returns
 

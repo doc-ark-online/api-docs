@@ -27,12 +27,12 @@
 
 #### Parameters
 
-| `InAssetId` `string` | 资源GUID |
+| `InAssetId` `string` | 资源 ID range: 字符串大小依据资源 ID 而定 |
 | :------ | :------ |
 
 #### Returns
 
-| `boolean` | 未加载将返回false |
+| `boolean` | 未加载将返回 false |
 | :------ | :------ |
 
 <span style="font-size: 14px;">
@@ -70,7 +70,7 @@ ___
 
 #### Parameters
 
-| `InAssetId` `string` | 资源GUID |
+| `InAssetId` `string` | 资源 ID range: 字符串大小依据资源 ID 而定 |
 | :------ | :------ |
 
 #### Returns
@@ -78,7 +78,7 @@ ___
 | `Promise`<`boolean`\> | 下载失败将返回false |
 | :------ | :------ |
 
-此函数只能传入assetID
+此函数只能传入资源 ID
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯

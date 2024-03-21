@@ -1079,7 +1079,7 @@ ___
 
 #### Parameters
 
-| `inPath` `string` | 路径 |
+| `inPath` `string` | 路径 range: 不限制 |
 | :------ | :------ |
 
 #### Returns
@@ -1097,7 +1097,7 @@ ___
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1115,7 +1115,7 @@ ___
 
 #### Parameters
 
-| `name` `string` | 名字 |
+| `name` `string` | 名字 <br> range: 不限制 |
 | :------ | :------ |
 
 #### Returns
@@ -1183,7 +1183,7 @@ ___
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
 | :------ | :------ |
 
 

@@ -108,9 +108,9 @@ ___
 
 #### Parameters
 
-| `playerId` `number` |  玩家id |
+| `playerId` `number` |  玩家 id range: 依据玩家 ID 而定 type:整数 |
 | :------ | :------ |
-| `rankIndex` `number` |  排名(0开始) |
+| `rankIndex` `number` |  排名(0开始) range: 合理即可 type:整数 |
 
 
 ___
@@ -123,11 +123,11 @@ ___
 
 #### Parameters
 
-| `playerId` `number` |  玩家id |
+| `playerId` `number` |  玩家id <br> range: 根据 ID 长度而定 type:整数 |
 | :------ | :------ |
-| `rankIndex` `number` |  名次索引(0开始) |
-| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string`  `number` |  字段显示内容 |
-| `textBlockIndex` `number` |  文本控件索引 |
+| `rankIndex` `number` |  名次索引(0开始) <br> range: 合理即可 type:整数 |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) <br> range: 合理即可 type:整数 |
+| `fieldValue` `string`  `number` |  字段显示内容 <br> range: 合理即可，不做限制 type:整数 |
+| `textBlockIndex` `number` |  文本控件索引 <br> range: 合理即可，不做限制 type:整数 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 

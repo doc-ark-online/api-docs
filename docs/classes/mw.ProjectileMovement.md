@@ -783,8 +783,8 @@ ___
 
 | `startDirection` [`Vector`](mw.Vector.md) |  发射方向 |
 | :------ | :------ |
-| `density` `number` |  预测点密度，等同于模拟的帧率，值越大轨迹越精细，性能消耗越大 |
-| `duration` `number` |  预测时长，等同于模拟时长，值越大轨迹轨迹越长，性能消耗越大 |
+| `density` `number` |  预测点密度，等同于模拟的帧率 range: 不做限制，值越大轨迹越精细，性能消耗越大 type: 浮点数 |
+| `duration` `number` |  预测时长，等同于模拟时长 range: 不做限制，值越大轨迹轨迹越长，性能消耗越大 type: 浮点数 |
 
 #### Returns
 

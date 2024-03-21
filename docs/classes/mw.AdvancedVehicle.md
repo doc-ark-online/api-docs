@@ -6,6 +6,34 @@
 
 四轮载具是指模拟四个车轮的交通工具，例如汽车、卡车等。它们被设计成能够在游戏中自由移动、加速和转向，给玩家带来真实的驾驶体验。
 
+四轮载具通过模拟真实的物理来提供逼真的驾驶感觉。它们会考虑到车辆的重量、引擎的动力、车轮的摩擦力等因素。当你加速时，引擎会产生动力，四个轮子会转动，并且车辆会加速。当你转动方向时，车辆会根据轮子的转向角度来改变方向。
+
+1. 载具由什么组成的呢 ？
+
+载具模型简单来说可以总结为车身 + 轮胎 + 弹簧的模型。
+
+- 车身位置额外存在一个带有一定偏移的质心（质量中心简称质心，指物质系统上被认为质量集中于此的一个假想点。）属性，表示整个车的刚体质量中心；
+
+- 轮胎也就是车身下面不考虑自身质量的物体，每个轮胎相较于车身的质心也有一个偏移值；
+
+- 弹簧指的是轮胎将车身承载起来的效果，也就是将现实载具的悬浮功能转化为一个弹簧模型。
+
+车身主要用于储存基础属性，包括质量、车辆骨骼模型、车辆形状等；轮胎主要负责计算轮胎力，也就是与地面平行的平面上的力，包括横向力与纵向力；弹簧则主要负责计算垂直于地面的悬浮力，实现跟现实载具一样的效果。
+
+在车辆行驶的过程中，轮胎力是主要贡献：轮胎的纵向力使得车辆能够前进，而轮胎的横向力让车辆能够正常的转弯。悬浮力的主要功能是让车辆不会掉到地上，而是“飘”在空中，也就像是分摊承载着车辆的重量；并且在车辆有加减速或是转弯等总加速度会产生让车身倾斜的扭矩的情况下，能够正常表现出“颠簸”的感觉。
+
+2. 载具如何使用呢 ？
+
+左侧栏从逻辑对象列表直接用鼠标拖一个高级轮式载具对象进入场景或对象管理器，即可生成一个四轮载具；当然你也可以动态生成一个载具逻辑对象。
+
+高级轮式载具会自带一个触发器和一个交互物逻辑对象。用来触发交互事件，并绑定交互对象及开车动画。运行时进入触发器范围即可开启驾驶模式。WASD控制车身行驶，F下车。
+
+3. 如何DIY自己的车辆 ？
+
+在左侧栏中搜索车辆模型及挂件，放入高级轮式载具子级。
+
+点击高级轮式载具属性面板，在载具属性动力轮组中绑定车轮吸附车轮模型。
+
 ::: warning Precautions
 
 注意事项
@@ -298,11 +326,6 @@ export default class VehicleSample extends Script {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[getOffEventHandle](mw.AdvancedVehicle.md#getoffeventhandle)**: `any`  |
-| :----- |
-| **[getOffFunc](mw.AdvancedVehicle.md#getofffunc)**: `any` |
-| **[handbrakeInputDisableEventHandle](mw.AdvancedVehicle.md#handbrakeinputdisableeventhandle)**: `any` |
-| **[handbrakeInputEnableEventHandle](mw.AdvancedVehicle.md#handbrakeinputenableeventhandle)**: `any` |
 
 
 ::: details click
@@ -385,9 +408,8 @@ export default class VehicleSample extends Script {
 | 获取轮胎绑定对象。|
 | **[getWheelRadius](mw.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number`   |
 | 获取车轮半径，单位：厘米（cm）。|
-| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void` |
-| **[onPlayerId](mw.AdvancedVehicle.md#onplayerid)**(`path`, `value`, `oldPlayerId`): `void` |
-| **[onStart](mw.AdvancedVehicle.md#onstart)**(): `void` |
+| **[onDestroy](mw.AdvancedVehicle.md#ondestroy)**(): `void`   |
+| 销毁|
 | **[setCullDistance](mw.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void`   |
 | 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setWheelRadius](mw.AdvancedVehicle.md#setwheelradius)**(`wheelId`: `number`, `Radius`: `number`): `void`   |
@@ -396,7 +418,7 @@ export default class VehicleSample extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
 | **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
@@ -414,7 +436,7 @@ export default class VehicleSample extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -425,22 +447,24 @@ export default class VehicleSample extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -455,28 +479,6 @@ export default class VehicleSample extends Script {
 
 
 ## Properties
-
-### getOffEventHandle <Score text="getOffEventHandle" /> 
-
-• `Private` **getOffEventHandle**: `any`
-
-___
-
-### getOffFunc <Score text="getOffFunc" /> 
-
-• `Private` **getOffFunc**: `any`
-
-___
-
-### handbrakeInputDisableEventHandle <Score text="handbrakeInputDisableEventHandle" /> 
-
-• `Private` **handbrakeInputDisableEventHandle**: `any`
-
-___
-
-### handbrakeInputEnableEventHandle <Score text="handbrakeInputEnableEventHandle" /> 
-
-• `Private` **handbrakeInputEnableEventHandle**: `any`
 
 ## Accessors
 
@@ -550,8 +552,6 @@ ___
 
 
 获取制动力矩。单位：牛*米（N*m）
-
-**`Info`**
 
 车辆制动力矩是指应用于车辆制动系统的力矩，用于减速或停止车辆运动。它是制动系统产生的力矩，通过制动器（如刹车盘和刹车片）施加到车轮上，从而减少车轮的旋转速度。
 
@@ -1182,7 +1182,7 @@ ___
 
 #### Parameters
 
-| `gearLevel` `number` |  指定档位级别 |
+| `gearLevel` `number` |  指定档位级别 range: [0, 1] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -1206,7 +1206,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮 <br> range: 0.1.2.3 四个参数 type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1214,11 +1214,7 @@ ___
 | `number` | 指定车轮最大转向角度 |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
@@ -1230,7 +1226,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮 <br> range: 0.1.2.3 四个参数 type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1238,11 +1234,7 @@ ___
 | `string` | 指定轮胎绑定对象GUID |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
@@ -1254,7 +1246,7 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮 <br> range: 0.1.2.3 四个参数 type:整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1262,29 +1254,16 @@ ___
 | `number` | 指定车轮半径 |
 | :------ | :------ |
 
-::: warning Precautions
-
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
 
 ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void`
+• `Protected` **onDestroy**(): `void` 
 
-___
+销毁
 
-### onPlayerId <Score text="onPlayerId" /> 
-
-• `Protected` **onPlayerId**(`path`, `value`, `oldPlayerId`): `void`
-
-___
-
-### onStart <Score text="onStart" /> 
-
-• **onStart**(): `void`
 
 ___
 
@@ -1296,7 +1275,7 @@ ___
 
 #### Parameters
 
-| `inCullDistance` `number` | 裁剪距离 |
+| `inCullDistance` `number` | 裁剪距离 range: 建议 (2000, 4000) type: 浮点数 |
 | :------ | :------ |
 
 
@@ -1305,19 +1284,6 @@ ___
 最终的裁剪距离会和画质等级有关
 
 :::
-
-
-
-#### Parameters
-
-| `path` | `string` |
-| :------ | :------ |
-| `value` | `number` |
-| `oldPlayerId` | `number` |
-
-
-| :------ | :------ |
-
 
 ___
 
@@ -1329,11 +1295,9 @@ ___
 
 #### Parameters
 
-| `wheelId` `number` |  根据序号指定车轮 |
+| `wheelId` `number` |  根据序号指定车轮 <br> range: 0.1.2.3 四个参数 type:整数 |
 | :------ | :------ |
-| `Radius` `number` |  指定车轮半径 |
+| `Radius` `number` |  指定车轮半径 range:不做限制，合理即可 type: 浮点数 |
 
-
-::: warning Precautions
 
 注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。仅在上车前生效，上车后调用此接口无效果。

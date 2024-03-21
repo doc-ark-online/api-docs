@@ -28,7 +28,7 @@ export default class ClassExample extends Script {
 ### Methods <Score text="Methods" /> 
 | **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void`   |
 | :-----|
-| 设置异步回调超时时间，单位毫秒，默认10000|
+| 设置异步回调超时时间|
 
 ## Methods
 
@@ -36,11 +36,11 @@ export default class ClassExample extends Script {
 
 • `Static` **setGlobalAsyncTimeout**(`timeout`): `void` 
 
-设置异步回调超时时间，单位毫秒，默认10000
+设置异步回调超时时间
 
 #### Parameters
 
-| `timeout` `number` | 超时时间 |
+| `timeout` `number` |  超时时间 <br> type: 浮点数。 <br> range: 单位毫秒，默认10000(10秒)。 |
 | :------ | :------ |
 
 

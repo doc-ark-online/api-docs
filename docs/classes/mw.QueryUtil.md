@@ -37,7 +37,7 @@
 | :------ | :------ |
 | `boxExtent` [`Vector`](mw.Vector.md) | 盒体的大小 |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] range:不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 
@@ -74,7 +74,7 @@ ___
 | `orientation` [`Rotation`](mw.Rotation.md) | 盒体朝向 |
 | `multiTrace?` `boolean` | 是否穿透检测 default:false |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] range: 不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 
@@ -106,10 +106,10 @@ ___
 
 | `capsuleCenter` [`Vector`](mw.Vector.md) | 胶囊体中心位置 |
 | :------ | :------ |
-| `radius` `number` | 胶囊体半径 |
-| `halfHeight` `number` | 胶囊体半高 |
+| `radius` `number` | 胶囊体半径 range: 不做限制，但是请使用合适的半径尺度。 type: 浮点型 |
+| `halfHeight` `number` | 胶囊体半高 range: 不做限制，但是请使用合适的尺度。 type: 浮点型 |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] range: 不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 
@@ -142,11 +142,11 @@ ___
 | `start` [`Vector`](mw.Vector.md) | 起始位置 |
 | :------ | :------ |
 | `end` [`Vector`](mw.Vector.md) | 结束位置 |
-| `radius` `number` | 胶囊体半径 |
-| `halfHeight` `number` | 胶囊体半高 |
+| `radius` `number` | 胶囊体半径 range: 不做限制，但是请使用合适的半径尺度。 type: 浮点型 |
+| `halfHeight` `number` | 胶囊体半高 range: 不做限制，但是请使用合适的尺度。 type: 浮点型 |
 | `multiTrace?` `boolean` | 是否穿透检测 default:false |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] range: 不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 
@@ -181,7 +181,7 @@ ___
 | `end` [`Vector`](mw.Vector.md) | 结束位置 |
 | `multiTrace?` `boolean` | 是否穿透检测 default:false |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] range: 不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `traceSkeletonOnly?` `boolean` | 是否进行具体部位的检测 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
@@ -214,9 +214,9 @@ ___
 
 | `sphereCenter` [`Vector`](mw.Vector.md) | 球体中心位置 |
 | :------ | :------ |
-| `sphereRadius` `number` | 球体半径 |
+| `sphereRadius` `number` | 球体半径 range: 不做限制，但是请使用合适的半径尺度。 type: 浮点型 |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象的GUID数组 default:[] range:不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 
@@ -249,10 +249,10 @@ ___
 | `start` [`Vector`](mw.Vector.md) | 起始位置 |
 | :------ | :------ |
 | `end` [`Vector`](mw.Vector.md) | 结束位置 |
-| `radius` `number` | 球体半径 |
+| `radius` `number` | 球体半径 range: [0, +∞] 但是请使用合适的半径尺度。 type: 浮点型 |
 | `multiTrace?` `boolean` | 是否穿透检测 default:false |
 | `drawDebug?` `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] |
+| `objectsToIgnore?` `string`[] | 屏蔽对象guid数组 default:[] range: 不做限制 |
 | `ignoreByType?` `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
 | `source?` [`GameObject`](mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
 

@@ -51,7 +51,7 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 | **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 返回一个新的反向旋转。|
 | **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
-| 当前旋转量乘以一个旋转量|
+| 当前旋转量减去一个旋转量|
 | **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)   |
 | 当前角度旋转一个向量|
 | **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
@@ -77,7 +77,7 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 | **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md)   |
 | 对两个旋转量进行插值|
 | **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
-| 当前旋转量乘以一个旋转量|
+| 当前旋转量减去一个旋转量|
 | **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
 
@@ -132,10 +132,10 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range: 不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range: 不做限制 type: 浮点数 |
 
 ## Properties
 
@@ -235,7 +235,7 @@ ___
 
 | `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
 | :------ | :------ |
-| `epsilon?` `number` | 误差值 default:1.e-7 |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -274,7 +274,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -285,7 +285,7 @@ ___
 
 #### Parameters
 
-| `str` `string` | 字符串数据 |
+| `str` `string` | 字符串数据 range:"P=-431602080.000000 Y=-431602080.000000 R=-431602080.000000" |
 | :------ | :------ |
 
 ### fromVector <Score text="fromVector" /> 
@@ -420,10 +420,10 @@ ___
 
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range:不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range:不做限制 type: 浮点数 |
 
 #### Returns
 
@@ -588,7 +588,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -632,10 +632,10 @@ ___
 
 #### Parameters
 
-| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量 a |
 | :------ | :------ |
-| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `alpha` `number` | 插值 |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量 b |
+| `alpha` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 
 #### Returns
 
@@ -648,7 +648,7 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
-当前旋转量乘以一个旋转量
+当前旋转量减去一个旋转量
 
 ::: warning Precautions
 

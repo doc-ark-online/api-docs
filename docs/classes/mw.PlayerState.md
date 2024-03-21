@@ -1,4 +1,4 @@
-[mw](../modules/Core.mw.md) / PlayerState
+[角色系统](../groups/角色系统.角色系统.md) / PlayerState
 
 # PlayerState <Badge type="tip" text="Class" /> <Score text="PlayerState" />
 
@@ -74,28 +74,19 @@ PlayerState基类
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="other" />  |
+| **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="server" />  |
 | :-----|
 | 销毁组件对象|
-| **[onDestroy](mw.Script.md#ondestroy)**(): `void` <Badge type="tip" text="other" />  |
+| **[onDestroy](mw.Script.md#ondestroy)**(): `void`   |
 | 生命周期函数 - 被销毁时调用|
-| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <Badge type="tip" text="other" />  |
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`   |
 | 属性被同步事件 ClientOnly|
-| **[onStart](mw.Script.md#onstart)**(): `void` <Badge type="tip" text="other" />  |
+| **[onStart](mw.Script.md#onstart)**(): `void`   |
 | 生命周期函数 - 脚本开始执行时调用|
-| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="other" />  |
-| 生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行|
+| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
+| 生命周期函数 - 每帧执行函数|
 :::
 
-
-#### Parameters
-
-| `info` | `MWActorScriptComponent` |
-| :------ | :------ |
-
-#### Overrides
-
-[Script](mw.Script.md).[constructor](mw.Script.md#constructor)
 
 ## Accessors
 

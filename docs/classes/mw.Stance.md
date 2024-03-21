@@ -101,7 +101,7 @@ Stance 如何工作的呢？
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
+使用示例:将使用到的资源:"234423,216081"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
 </span>
 
 ```ts
@@ -116,10 +116,10 @@ export default class Example_Stance_AimOffsetEnabled extends Script {
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadStance("39317");
+            let animeManStance = myCharacter.loadStance("234423");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadStance("30274");
+            let animeWomanStance = myCharacter.loadStance("216081");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法：按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -145,7 +145,7 @@ export default class Example_Stance_AimOffsetEnabled extends Script {
 }
 ```
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
+使用示例:将使用到的资源:"234423,216081"拖入优先加载栏。创建一个名为"Example_Stance_AimOffsetEnabled"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
 </span>
 
 ```ts
@@ -160,10 +160,10 @@ export default class Example_Stance_AimOffsetEnabled extends Script {
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadStance("39317");
+            let animeManStance = myCharacter.loadStance("234423");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadStance("30274");
+            let animeWomanStance = myCharacter.loadStance("216081");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法：按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -214,7 +214,7 @@ ___
 </table>
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_AssetId"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
+使用示例:将使用到的资源:"234423,216081"拖入优先加载栏。创建一个名为"Example_Stance_AssetId"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
 </span>
 
 ```ts
@@ -229,10 +229,10 @@ export default class Example_Stance_AssetId extends Script {
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadStance("39317");
+            let animeManStance = myCharacter.loadStance("234423");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadStance("30274");
+            let animeWomanStance = myCharacter.loadStance("216081");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法：按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -280,7 +280,7 @@ export default class Example_Stance_AssetId extends Script {
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_Play"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
+使用示例:将使用到的资源:"234423,216081"拖入优先加载栏。创建一个名为"Example_Stance_Play"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
 </span>
 
 ```ts
@@ -295,10 +295,10 @@ export default class Example_Stance_Play extends Script {
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadStance("39317");
+            let animeManStance = myCharacter.loadStance("234423");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadStance("30274");
+            let animeWomanStance = myCharacter.loadStance("216081");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法：按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -344,7 +344,7 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Stance_Stop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
+使用示例:将使用到的资源:"234423,216081"拖入优先加载栏。创建一个名为"Example_Stance_Stop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态，按下键盘“1”， 切换播放二次元男性基础姿态和二次元女性基础姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放基础姿态。代码如下：
 </span>
 
 ```ts
@@ -359,10 +359,10 @@ export default class Example_Stance_Stop extends Script {
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadStance("39317");
+            let animeManStance = myCharacter.loadStance("234423");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadStance("30274");
+            let animeWomanStance = myCharacter.loadStance("216081");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法：按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
