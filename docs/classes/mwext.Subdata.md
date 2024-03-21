@@ -211,7 +211,7 @@ ___
 
 #### Parameters
 
-| `propertyName` `string` |  属性名 |
+| `propertyName` `string` |  属性名 range: |
 | :------ | :------ |
 
 #### Returns

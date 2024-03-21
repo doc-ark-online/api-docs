@@ -9,7 +9,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> <Badge type="tip" text="client" />  |
 | :-----|
-| 获取Ark币余额更新的委托|
+| 获取 Ark 币余额更新的委托|
 | **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> <Badge type="tip" text="server" />  |
 | 获取订单发货的委托|
 | **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> <Badge type="tip" text="server" />  |
@@ -54,11 +54,11 @@
 <td style="text-align: left">
 
 
-获取Ark币余额更新的委托
+获取 Ark 币余额更新的委托
 
 ::: warning Precautions
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 233/Playza/口袋方舟 内使用时生效
 
 :::
 
@@ -91,7 +91,7 @@ ___
 
 ::: warning Precautions
 
-1. 只在支持IAP的233/Playza/口袋方舟内使用时生效
+1. 只在支持 IAP 的 233/Playza/口袋方舟 内使用时生效
 2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 :::
@@ -159,7 +159,7 @@ ___
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
 
 :::
 
@@ -182,16 +182,16 @@ ___
 
 #### Parameters
 
-| `boxId` `string` | 宝箱ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 |
+| `boxId` `string` | 宝箱 ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 range:依据 boxId 长度 |
 | :------ | :------ |
-| `number` `number` | 领取的宝箱数量 default: 1 |
-| `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
-| `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
+| `number` `number` | 领取的宝箱数量 <br> default: 1 range: 不做限制 type: 整数 |
+| `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为 1 <br> default: 1 range: 1 type:整数 |
+| `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status 大会员扣除钥匙下单状态 |
 
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
 
 :::
 
@@ -243,10 +243,10 @@ ___
 
 #### Parameters
 
-| `currentPage` `number` | 查找第几页 type:整形 range:1-65535 |
+| `currentPage` `number` | 查找第几页 <br> type:整数型 <br> range:（1, 65535) |
 | :------ | :------ |
-| `pageSize` `number` | 每页大小 type:整形 range:1-100 |
-| `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数，total总页数为-1时表示查找失败，currentPage查找第几页，bill查询结果 |
+| `pageSize` `number` | 每页大小 <br> type:整数型 <br> range:(1, 100) |
+| `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数 |
 
 
 <span style="font-size: 14px;">
@@ -315,12 +315,12 @@ ___
 
 | `getUserKeyNumberResult` (`keyNumber`: `number`) => `void` | 结果回调，查询到结果后执行回调函数。keyNumber : 剩余钥匙数量 |
 | :------ | :------ |
-| `keyType?` `number` | 搜索的钥匙类型，暂时只有类型1 default: 1 |
+| `keyType?` `number` | 搜索的钥匙类型，暂时只有类型 1 <br> default: 1 range: 1 type: 整数 |
 
 
 ::: warning Precautions
 
-暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
+暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
 
 :::
 
@@ -470,17 +470,27 @@ ___
 
 #### Parameters
 
-| `commodityId` `string` |  商品Id |
+| `commodityId` `string` |  商品Id range: 依据商品 ID 长度而定 |
 | :------ | :------ |
-| `amount` `number` |  数量 |
-| `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
+| `amount` `number` |  数量 range:不做限制 type:整数 |
+| `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调 |
 
 
-::: warning Precautions
+status 含义：
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+status = 200: 订单支付成功
 
-:::
+status = 408: 请求超时
+
+status = 409: 处理下单回调报错
+
+status = 410: 处理支付回调报错
+
+status = 501: 余额不足
+
+status = 502: 暂未开放购买
+
+status = 503: amount参数类型错误
 
 ___
 
@@ -492,10 +502,10 @@ ___
 
 #### Parameters
 
-| `player` [`Player`](mw.Player.md) | 需要兑换的玩家对象 |
+| `player` [`Player`](mw.Player.md) |  需要兑换的玩家对象 |
 | :------ | :------ |
-| `GiftCode` `string` | 礼包码 |
-| `redeemCallback` (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void` | 兑换结果的回调函数 |
+| `GiftCode` `string` |  礼包码 <br> range: 依据兑换码长度而定 |
+| `redeemCallback` (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void` |  兑换结果的回调函数 |
 
 
 RedeemResponse中status : 兑换状态。

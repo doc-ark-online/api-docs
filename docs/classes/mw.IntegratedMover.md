@@ -46,7 +46,7 @@ export default class IMExample1 extends Script {
 
           // 用同样的方式创建第二个长方体与第二个运动器
           this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
-          this.Obj2.worldTransform.position = new Vector(300.0, -100.0, 300.0);
+          this.Obj2.worldTransform.position = new Vector(300.0, -100.0, 150.0);
           this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
           this.IM2 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
           this.IM2.attachToGameObject(this.Obj2);
@@ -192,17 +192,15 @@ export default class IMExample1 extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
-| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 附加脚本|
+| **[asyncGetChildByName](mw.GameObject.md#asyncgetchildbyname)**(`name`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
@@ -210,7 +208,7 @@ export default class IMExample1 extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -221,22 +219,26 @@ export default class IMExample1 extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
+| 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -921,11 +923,13 @@ ___
 <td style="text-align: left">
 
 
-设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效
+设置旋转到达后停顿时间
+
+该属性需要重复运动状态为 true 时才会生效
 
 #### Parameters
 
-| `newDelay` `number` | 旋转到达后停顿时间 |
+| `newDelay` `number` |  旋转到达后停顿时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -967,11 +971,13 @@ ___
 <td style="text-align: left">
 
 
-设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效
+设置旋转单程运动时间
+
+该属性需要重复运动状态为 true 时才会生效。
 
 #### Parameters
 
-| `newTime` `number` | 旋转单程运动时间 |
+| `newTime` `number` |  旋转单程运动时间。range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1017,7 +1023,7 @@ ___
 
 #### Parameters
 
-| `newDelay` `number` | 返程后停顿时间 |
+| `newDelay` `number` | 返程后停顿时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1094,11 +1100,11 @@ export default class IMExample3 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
-            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
+            this.Obj1.worldTransform.position = new mw.Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new mw.Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
-            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj1.worldTransform.scale = new mw.Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new mw.Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1201,7 +1207,7 @@ ___
 
 #### Parameters
 
-| `newDelay` `number` | 延时启动时间 |
+| `newDelay` `number` | 延时启动时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1293,7 +1299,7 @@ ___
 
 #### Parameters
 
-| `newDelay` `number` | 到达后停顿时间 |
+| `newDelay` `number` | 到达后停顿时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1339,7 +1345,7 @@ ___
 
 #### Parameters
 
-| `newTime` `number` | 单程运动时间 |
+| `newTime` `number` | 单程运动时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1385,7 +1391,7 @@ ___
 
 #### Parameters
 
-| `newDelay` `number` | 返程后停顿时间 |
+| `newDelay` `number` | 返程后停顿时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1432,7 +1438,7 @@ ___
 
 #### Parameters
 
-| `newSpeed` [`Vector`](mw.Vector.md) | 缩放速度大小 |
+| `newSpeed` [`Vector`](mw.Vector.md) |  缩放速度大小 |
 | :------ | :------ |
 
 
@@ -1462,11 +1468,11 @@ export default class IMExample4 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
-            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
+            this.Obj1.worldTransform.position = new mw.Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new mw.Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
-            this.Obj2.worldTransform.scale = new Vector(1.0, 1.0, 1.0);
+            this.Obj1.worldTransform.scale = new mw.Vector(1.0, 1.0, 1.0);
+            this.Obj2.worldTransform.scale = new mw.Vector(1.0, 1.0, 1.0);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;
@@ -1615,7 +1621,7 @@ ___
 
 #### Parameters
 
-| `newAngle` `number` | 摆动最大角度 |
+| `newAngle` `number` | 摆动最大角度 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1661,7 +1667,7 @@ ___
 
 #### Parameters
 
-| `newDelay` `number` | 延时启动时间 |
+| `newDelay` `number` | 延时启动时间 range: (0, +∞) type:浮点数 |
 | :------ | :------ |
 
 
@@ -1736,11 +1742,11 @@ export default class IMExample5 extends mw.Script {
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             this.Obj2 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
             // 设置起始位置
-            this.Obj1.worldTransform.position = new Vector(300.0, 200.0, 200.0);
-            this.Obj2.worldTransform.position = new Vector(300.0, -200.0, 200.0);
+            this.Obj1.worldTransform.position = new mw.Vector(300.0, 200.0, 200.0);
+            this.Obj2.worldTransform.position = new mw.Vector(300.0, -200.0, 200.0);
             // 设置起始缩放
-            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
-            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj1.worldTransform.scale = new mw.Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new mw.Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await mw.GameObject.asyncSpawn("PhysicsSports") as mw.IntegratedMover;

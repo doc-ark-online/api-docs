@@ -127,23 +127,23 @@
 
 #### Parameters
 
-| `m00?` `number` | 第 0 列第 0 行的元素 default:1 |
+| `m00?` `number` | 第 0 列第 0 行的元素 default:1 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第 0 列第 1 行的元素 default:0 |
-| `m02?` `number` | 第 0 列第 2 行的元素 default:0 |
-| `m03?` `number` | 第 0 列第 3 行的元素 default:0 |
-| `m10?` `number` | 第 1 列第 0 行的元素 default:0 |
-| `m11?` `number` | 第 1 列第 1 行的元素 default:1 |
-| `m12?` `number` | 第 1 列第 2 行的元素 default:0 |
-| `m13?` `number` | 第 1 列第 3 行的元素 default:0 |
-| `m20?` `number` | 第 2 列第 0 行的元素 default:0 |
-| `m21?` `number` | 第 2 列第 1 行的元素 default:0 |
-| `m22?` `number` | 第 2 列第 2 行的元素 default:1 |
-| `m23?` `number` | 第 2 列第 3 行的元素 default:0 |
-| `m30?` `number` | 第 3 列第 0 行的元素 default:0 |
-| `m31?` `number` | 第 3 列第 1 行的元素 default:0 |
-| `m32?` `number` | 第 3 列第 2 行的元素 default:0 |
-| `m33?` `number` | 第 3 列第 3 行的元素 default:1 |
+| `m01?` `number` | 第 0 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m02?` `number` | 第 0 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m03?` `number` | 第 0 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m10?` `number` | 第 1 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m11?` `number` | 第 1 列第 1 行的元素 default:1 range:不做限制 type: 浮点数 |
+| `m12?` `number` | 第 1 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m13?` `number` | 第 1 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m20?` `number` | 第 2 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m21?` `number` | 第 2 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m22?` `number` | 第 2 列第 2 行的元素 default:1 range:不做限制 type: 浮点数 |
+| `m23?` `number` | 第 2 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m30?` `number` | 第 3 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m31?` `number` | 第 3 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m32?` `number` | 第 3 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m33?` `number` | 第 3 列第 3 行的元素 default:1 range:不做限制 type: 浮点数 |
 
 ## Properties
 
@@ -342,7 +342,7 @@ ___
 
 | `other` [`Matrix4x4`](mw.Matrix4x4.md) | 比对的矩阵 |
 | :------ | :------ |
-| `epsilon?` `number` | 误差值 default:mw.MathUtil.EPSILON |
+| `epsilon?` `number` | 误差值 default:MathUtil.EPSILON <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -506,7 +506,7 @@ ___
 
 #### Parameters
 
-| `scalar` `number` | 对矩阵整体缩放的数 |
+| `scalar` `number` | 对矩阵整体缩放的数 range:不做限制 type:浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -526,8 +526,8 @@ ___
 
 | `axis` [`Vector`](mw.Vector.md) | 绕的旋转轴 |
 | :------ | :------ |
-| `rad` `number` | 旋转的弧度 |
-| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
+| `rad` `number` | 旋转的弧度 <br> range: 无限制 type:浮点数 |
+| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -576,23 +576,23 @@ ___
 
 #### Parameters
 
-| `m00?` `number` | 第 0 列第 0 行的元素 default:1 |
+| `m00?` `number` | 第 0 列第 0 行的元素 default:1 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第 0 列第 1 行的元素 default:0 |
-| `m02?` `number` | 第 0 列第 2 行的元素 default:0 |
-| `m03?` `number` | 第 0 列第 3 行的元素 default:0 |
-| `m10?` `number` | 第 1 列第 0 行的元素 default:0 |
-| `m11?` `number` | 第 1 列第 1 行的元素 default:1 |
-| `m12?` `number` | 第 1 列第 2 行的元素 default:0 |
-| `m13?` `number` | 第 1 列第 3 行的元素 default:0 |
-| `m20?` `number` | 第 2 列第 0 行的元素 default:0 |
-| `m21?` `number` | 第 2 列第 1 行的元素 default:0 |
-| `m22?` `number` | 第 2 列第 2 行的元素 default:1 |
-| `m23?` `number` | 第 2 列第 3 行的元素 default:0 |
-| `m30?` `number` | 第 3 列第 0 行的元素 default:0 |
-| `m31?` `number` | 第 3 列第 1 行的元素 default:0 |
-| `m32?` `number` | 第 3 列第 2 行的元素 default:0 |
-| `m33?` `number` | 第 3 列第 3 行的元素 default:1 |
+| `m01?` `number` | 第 0 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m02?` `number` | 第 0 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m03?` `number` | 第 0 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m10?` `number` | 第 1 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m11?` `number` | 第 1 列第 1 行的元素 default:1 range:不做限制 type: 浮点数 |
+| `m12?` `number` | 第 1 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m13?` `number` | 第 1 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m20?` `number` | 第 2 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m21?` `number` | 第 2 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m22?` `number` | 第 2 列第 2 行的元素 default:1 range:不做限制 type: 浮点数 |
+| `m23?` `number` | 第 2 列第 3 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m30?` `number` | 第 3 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m31?` `number` | 第 3 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m32?` `number` | 第 3 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m33?` `number` | 第 3 列第 3 行的元素 default:1 range:不做限制 type: 浮点数 |
 
 #### Returns
 

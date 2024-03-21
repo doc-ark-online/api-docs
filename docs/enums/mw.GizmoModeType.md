@@ -1,4 +1,4 @@
-[基础类型](../groups/基础类型.基础类型.md) / GizmoModeType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / GizmoModeType
 
 # GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
 

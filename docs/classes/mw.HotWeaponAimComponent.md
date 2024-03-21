@@ -160,13 +160,13 @@ Set模拟瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComp
 
 ::: warning Precautions
 
-合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加1.0，对应FOV增加5°
+合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加1.0，对应 FOV 增加5°
 
 :::
 
 #### Parameters
 
-| `newAimingZoom` `number` |  新设置的瞄准镜放大倍数 <br> default: 1 <br> range:[0, 16] |
+| `newAimingZoom` `number` |  新设置的瞄准镜放大倍数 <br> default: 1 <br> range:[0, 16] type:浮点数 |
 | :------ | :------ |
 
 
@@ -218,7 +218,7 @@ Set第三人称瞄准时的连接相机弹簧组件的长度。
 
 #### Parameters
 
-| `NewCameraOffsetDistance` `number` |  新设置的连接相机弹簧组件的长度 <br> default: 400 <br> range: [300, 600] |
+| `NewCameraOffsetDistance` `number` |  新设置的连接相机弹簧组件的长度 <br> default: 400 <br> range: [300, 600] type:浮点数 |
 | :------ | :------ |
 
 
@@ -270,7 +270,7 @@ Set第三人称常态下相机弹簧组件的默认长度。
 
 #### Parameters
 
-| `NewCameraArmLength` `number` |  新设置的连接相机弹簧组件的默认长度 <br> default: 400 <br> range: [300, 600] |
+| `NewCameraArmLength` `number` |  新设置的连接相机弹簧组件的默认长度 <br> default: 400 <br> range: [300, 600] type:浮点数 |
 | :------ | :------ |
 
 </td>

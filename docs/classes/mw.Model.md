@@ -183,11 +183,11 @@ export default class ModelExample extends Script {
 | **[resetMaterial](mw.Model.md#resetmaterial)**(): `void`   |
 | 还原物体材质|
 | **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
-| 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
+| 与玩家之间超出此距离的对象将被剪裁|
 | **[setMaterial](mw.Model.md#setmaterial)**(`MaterialGUID`: `string`): `void`   |
 | 设置物体材质|
 | **[setOutline](mw.Model.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`   |
-| 设置对象描边及描边颜色，需要场景中存在后处理对象。|
+| 设置对象描边及描边颜色|
 | **[setPostProcessOutline](mw.Model.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`   |
 | 设置对象描边及描边颜色。|
 | **[setStaticMeshAsset](mw.Model.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void`   |
@@ -196,17 +196,15 @@ export default class ModelExample extends Script {
 
 ::: details click
 ### Methods <Score text="Methods" /> 
-| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>  |
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
-| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 附加脚本|
+| **[asyncGetChildByName](mw.GameObject.md#asyncgetchildbyname)**(`name`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
@@ -214,7 +212,7 @@ export default class ModelExample extends Script {
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
 | **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 根据gameObjectId查找子物体|
+| 根据 gameObjectId 查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -225,22 +223,26 @@ export default class ModelExample extends Script {
 | 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
-| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\> |
-| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>  |
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
 | 获取脚本组件属性|
-| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`): `T`: extends [`Script`](mw.Script.md)<`T`\>[] |
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
+| 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
-| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| 异步构造一个物体|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
-| 通过gameObjectId查找物体|
+| 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
@@ -1125,9 +1127,9 @@ ___
 
 #### Parameters
 
-| `force` [`Vector`](mw.Vector.md) | - |
+| `force` [`Vector`](mw.Vector.md) | 设置力大小和方向 <br> default: null |
 | :------ | :------ |
-| `velChange?` `boolean` | 是否忽视模型自身质量的影响 default:false 使用示例: 如下示例展示添加力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addForce(new Vector(200,0,0), true); }` ``` |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 <br> default:false 使用示例: 如下示例展示添加力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addForce(new Vector(200,0,0), true); }` ``` |
 
 
 ___
@@ -1150,7 +1152,8 @@ ___
 </span>
 
 ```ts
-if (model.physicsEnabled) { // 确保开启物理模拟
+if (model.physicsEnabled) {
+     // 确保开启物理模拟
      model.addImpulse(new Vector(200,0,0), true);
 }
 ```
@@ -1165,9 +1168,9 @@ ___
 
 #### Parameters
 
-| `torque` [`Vector`](mw.Vector.md) | - |
+| `torque` [`Vector`](mw.Vector.md) | 设置扭力大小和方向 <br> default: null |
 | :------ | :------ |
-| `velChange?` `boolean` | 是否忽视模型自身质量的影响 default:false 使用示例: 如下示例展示添加扭力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addTorque(new Vector(200,0,0), true); }` ``` |
+| `velChange?` `boolean` | 是否忽视模型自身质量的影响 <br> default:false 使用示例: 如下示例展示添加扭力方法 ```ts if (model.physicsEnabled) `{ // 确保开启物理模拟 model.addTorque(new Vector(200,0,0), true); }` ``` |
 
 
 ___
@@ -1180,7 +1183,7 @@ ___
 
 #### Parameters
 
-| `Index` `number` | 第几个材质 |
+| `Index` `number` | 第几个材质 <br> range: 不超过材质数 type: 整数 |
 | :------ | :------ |
 
 
@@ -1212,13 +1215,15 @@ ___
 
 • **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
 
-与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
+与玩家之间超出此距离的对象将被剪裁
 
 #### Parameters
 
-| `inCullDistance` `number` | 裁剪距离 |
+| `inCullDistance` `number` | 裁剪距离 range: 建议 (2000, 4000) type: 浮点数 |
 | :------ | :------ |
 
+
+最终的裁剪距离会和画质等级有关；修改此属性 ≤0 时，裁剪距离会根据对象尺寸自动调整 (自动启用 CullDistanceVolume 功能)
 
 ::: warning Precautions
 
@@ -1236,7 +1241,7 @@ ___
 
 #### Parameters
 
-| `MaterialGUID` `string` |  材质ID default: |
+| `MaterialGUID` `string` |  材质 ID default: null range: 字符串长度依据材质资源 ID 长度而定 |
 | :------ | :------ |
 
 
@@ -1246,9 +1251,9 @@ ___
 
 #### Parameters
 
-| `MaterialGUID` `string` |  材质ID |
+| `MaterialGUID` `string` |  材质 ID range: 字符串长度依据材质资源 ID 长度而定 |
 | :------ | :------ |
-| `index` `number` |  材质下标 |
+| `index` `number` |  材质下标 range: 依据材质 ID 长度而定 type:整数 |
 
 
 ___
@@ -1257,15 +1262,17 @@ ___
 
 • **setOutline**(`enabled`, `color?`, `width?`): `void` 
 
-设置对象描边及描边颜色，需要场景中存在后处理对象。
+设置对象描边及描边颜色
 
 #### Parameters
 
 | `enabled` `boolean` |  是否开启描边 |
 | :------ | :------ |
-| `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
-| `width?` `number` |  设置描边宽度 default:2 |
+| `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色 Index 对应，-1为无颜色。 default: mw.LinearColor.black |
+| `width?` `number` |  设置描边宽度 default:2 range:[0, 100] type: 浮点数 |
 
+
+需要场景中存在后处理对象。
 
 ___
 
@@ -1280,7 +1287,7 @@ ___
 | `enabled` `boolean` |  是否开启描边 |
 | :------ | :------ |
 | `color?` [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
-| `width?` `number` |  设置描边宽度 default:2 |
+| `width?` `number` |  设置描边宽度 default:2 range: [0, 4] type: 浮点数 |
 
 
 ___
@@ -1293,6 +1300,6 @@ ___
 
 #### Parameters
 
-| `InAssetGuid` `string` |  资源GUID |
+| `InAssetGuid` `string` |  资源GUID range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 

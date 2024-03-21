@@ -14,7 +14,11 @@
 
 - **`Widget`**
 
+  ↳ [`Checkbox`](mw.Checkbox.md)
+
   ↳ [`ColorPick`](mw.ColorPick.md)
+
+  ↳ [`Dropdown`](mw.Dropdown.md)
 
   ↳ [`Image`](mw.Image.md)
 
@@ -56,6 +60,8 @@
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
+| **[mouseCursor](mw.Widget.md#mousecursor)**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />  |
+| 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
@@ -409,6 +415,52 @@ ___
 
 | `boolean` | boolean |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### mouseCursor <Score text="mouseCursor" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **mouseCursor**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **mouseCursor**(`type`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取控件上光标类型
+
+#### Returns
+
+| [`MouseCursor`](../enums/mw.MouseCursor.md) | 光标类型 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+将光标类型设置到控件上
+
+#### Parameters
+
+| `type` | [`MouseCursor`](../enums/mw.MouseCursor.md) |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
@@ -1079,7 +1131,7 @@ ___
 
 #### Parameters
 
-| `inPath` `string` | 路径 |
+| `inPath` `string` | 路径 range: 不限制 |
 | :------ | :------ |
 
 #### Returns
@@ -1097,7 +1149,7 @@ ___
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1115,7 +1167,7 @@ ___
 
 #### Parameters
 
-| `name` `string` | 名字 |
+| `name` `string` | 名字 <br> range: 不限制 |
 | :------ | :------ |
 
 #### Returns
@@ -1183,7 +1235,7 @@ ___
 
 #### Parameters
 
-| `index` `number` | 下标 |
+| `index` `number` | 下标 range: 大于 0 type: 整数 |
 | :------ | :------ |
 
 

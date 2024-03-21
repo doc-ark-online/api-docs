@@ -130,8 +130,8 @@ ___
 
 #### Parameters
 
-| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id <br> range: 根据 ID 长度而定 |
 | :------ | :------ |
-| `fieldId` `number` |  字段ID |
-| `value` `string`  `number` |  字段的值 |
+| `fieldId` `number` |  字段ID <br> range: 根据 ID 长度而定 type:整数 |
+| `value` `string`  `number` |  字段的值 <br> range: 不做限制，一个玩家一个数据 type:整数 |
 

@@ -23,6 +23,8 @@ mw
 | 动画模式|
 | [AppearanceType](../enums/mw.AppearanceType.md)  |
 | 形象类型|
+| [AssetIconSize](../enums/mw.AssetIconSize.md)  |
+| 图标的分辨率|
 | [AssetNonHumanoidSlotType](../enums/mw.AssetNonHumanoidSlotType.md)  |
 | 非人形角色插槽类型|
 | [AssetType](../enums/mw.AssetType.md)  |
@@ -73,22 +75,31 @@ mw
 | 事件发送的结果|
 | [DragPivot](../enums/mw.DragPivot.md)  |
 | 拖拽的锚点|
+| [EventType](../enums/mw.EventType.md)  |
+| :----- |
 | [ExpressionType](../enums/mw.ExpressionType.md)  |
 | 表情类型|
+| [FaceStyle](../enums/mw.FaceStyle.md)  |
+| 角色基础脸型|
 | [FogPreset](../enums/mw.FogPreset.md)  |
 | 环境雾预设枚举|
+| [ForceType](../enums/mw.ForceType.md)  |
+| 力区域的施力类型|
 | [GizmoCoordinateType](../enums/mw.GizmoCoordinateType.md)  |
 | gizmo坐标轴类型|
 | [GizmoModeType](../enums/mw.GizmoModeType.md)  |
 | gizmo模式|
+| [GizmoScaleType](../enums/mw.GizmoScaleType.md)  |
+| gizmo空间|
+| [GizmoSocketType](../enums/mw.GizmoSocketType.md)  |
+| gizmo空间|
 | [GizmoSpaceType](../enums/mw.GizmoSpaceType.md)  |
 | gizmo空间|
-| [GraphicsLevel](../enums/mw.GraphicsLevel.md)  |
-| 画质等级|
+| [GraphicsLevel](../enums/Core.mw.GraphicsLevel.md) |
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
 | [HideInEditorState](../enums/mw.HideInEditorState.md)  |
-| :----- |
+| 是否在编辑器里隐藏|
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |
@@ -101,6 +112,8 @@ mw
 | 开发给用户用的URL枚举，需要与C++层的枚举对应|
 | [HumanoidSlotType](../enums/mw.HumanoidSlotType.md)  |
 | 人形角色插槽类型|
+| [IKPart](../enums/mw.IKPart.md)  |
+| IK锚点类型|
 | [ImpulseForceType](../enums/mw.ImpulseForceType.md)  |
 | 冲量力类型|
 | [ImpulseType](../enums/mw.ImpulseType.md)  |
@@ -109,12 +122,12 @@ mw
 | 定义如何开始(从零开始，或者从随机值开始)|
 | [InputTextLimit](../enums/mw.InputTextLimit.md)  |
 | 输入框限制|
+| [InsertNewLineType](../enums/mw.InsertNewLineType.md)  |
+| 输入款回车键功能|
 | [Keys](../enums/mw.Keys.md)  |
 | 按键Key值|
 | [LanguageType](../enums/mw.LanguageType.md)  |
 | 游戏语言|
-| [LogLevel](../enums/mw.LogLevel.md)  |
-| 日志等级|
 | [MaskButtonType](../enums/mw.MaskButtonType.md)  |
 | 遮罩类型|
 | [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md)  |
@@ -125,6 +138,8 @@ mw
 | 发送消息的类型|
 | [MotionAxis](../enums/mw.MotionAxis.md)  |
 | 运动坐标系|
+| [MouseCursor](../enums/mw.MouseCursor.md)  |
+| 光标类型|
 | [MouseLockMode](../enums/mw.MouseLockMode.md)  |
 | 鼠标锁定模式|
 | [MoveControlMode](../enums/mw.MoveControlMode.md)  |
@@ -149,24 +164,18 @@ mw
 | 振荡器波形|
 | [PostProcessPreset](../enums/mw.PostProcessPreset.md)  |
 | 后处理预设枚举|
-| [PrefabStatus](../enums/mw.PrefabStatus.md)  |
-| 预制体审核状态|
 | [ProgressBarFillType](../enums/mw.ProgressBarFillType.md)  |
 | 进度条填充规则|
 | [ProjectileMovementStatus](../enums/mw.ProjectileMovementStatus.md)  |
 | 投掷物移动状态|
 | [PropertyStatus](../enums/mw.PropertyStatus.md)  |
 | 属性状态|
-| [ReleaseStatus](../enums/mw.ReleaseStatus.md)  |
-| UGC 发布的状态|
 | [RuntimePlatform](../enums/mw.RuntimePlatform.md)  |
 | 运行平台|
 | [ScrollBarDefaultLocation](../enums/mw.ScrollBarDefaultLocation.md)  |
 | 滚动条默认位置|
 | [SelectInfo](../enums/mw.SelectInfo.md)  |
 | 列表视图选择来源信息|
-| [SelectTapType](../enums/mw.SelectTapType.md)  |
-| UGC 选中的单选或者多选|
 | [SelectionMode](../enums/mw.SelectionMode.md)  |
 | 列表视图选择模式|
 | [SkyPreset](../enums/mw.SkyPreset.md)  |
@@ -223,8 +232,6 @@ mw
 | 文本框规则显示规则限制|
 | [UIVerticalCollation](../enums/mw.UIVerticalCollation.md)  |
 | 自动布局子项布局排序 - 垂直排序|
-| [UploadPrefabResultType](../enums/mw.UploadPrefabResultType.md)  |
-| 移动编辑器上传预制体返回状态|
 | [VehicleDriveMode4WNew](../enums/mw.VehicleDriveMode4WNew.md)  |
 | 四轮载具驱动模式|
 | [VehicleWheelPosition4WNew](../enums/mw.VehicleWheelPosition4WNew.md)  |
@@ -252,6 +259,8 @@ mw
 | 广告服务，支持激励/插屏类型|
 | [AdvancedVehicle](../classes/mw.AdvancedVehicle.md)  |
 | 四轮载具|
+| [AnalyticsService](../classes/mw.AnalyticsService.md)  |
+| 分析服务|
 | [Animation](../classes/mw.Animation.md)  |
 | 动画|
 | [AssetIconData](../classes/mw.AssetIconData.md)  |
@@ -264,6 +273,8 @@ mw
 | 禁行区|
 | [Button](../classes/mw.Button.md)  |
 | 按钮|
+| [ButtonStyle](../classes/mw.ButtonStyle.md)  |
+| Button 控件风格类型|
 | [Camera](../classes/mw.Camera.md)  |
 | 摄像机|
 | [Canvas](../classes/mw.Canvas.md)  |
@@ -280,10 +291,12 @@ mw
 | 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
+| [Checkbox](../classes/mw.Checkbox.md)  |
+| 界面/控件/勾选框|
+| [CheckboxStyle](../classes/mw.CheckboxStyle.md)  |
+| Checkbox 控件风格类型|
 | [ColorPick](../classes/mw.ColorPick.md)  |
 | 调色板|
-| [Component](../classes/mw.Component.md)  |
-| :----- |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
 | 屏幕坐标转换结果|
 | [DataStorage](../classes/mw.DataStorage.md)  |
@@ -298,6 +311,10 @@ mw
 | UI 拖拽事件|
 | [DragDropPayLoad](../classes/mw.DragDropPayLoad.md)  |
 | 拖拽事件数据传递类|
+| [Dropdown](../classes/mw.Dropdown.md)  |
+| Dropdown|
+| [DropdownStyle](../classes/mw.DropdownStyle.md)  |
+| Dropdown 控件风格类型|
 | [Effect](../classes/mw.Effect.md)  |
 | 特效|
 | [EffectService](../classes/mw.EffectService.md)  |
@@ -312,12 +329,12 @@ mw
 | 事件回复|
 | [Fog](../classes/mw.Fog.md)  |
 | 环境雾|
+| [ForceVolume](../classes/mw.ForceVolume.md)  |
+| 物理力区域|
 | [GameObject](../classes/mw.GameObject.md)  |
 | 场景中所有实体的基类|
 | [Geometry](../classes/mw.Geometry.md)  |
 | 几何坐标信息|
-| [GestureDelegate](../classes/mw.GestureDelegate.md)  |
-| 手势代理类|
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md)  |
 | 图片画质设置|
 | [HitResult](../classes/mw.HitResult.md)  |
@@ -336,8 +353,12 @@ mw
 | 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）|
 | [HotWeaponReloadComponent](../classes/mw.HotWeaponReloadComponent.md)  |
 | 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑|
+| [IKAnchor](../classes/mw.IKAnchor.md)  |
+| IK锚点|
 | [Image](../classes/mw.Image.md)  |
 | 图片|
+| [ImageInfo](../classes/mw.ImageInfo.md)  |
+| 图片信息类|
 | [Impulse](../classes/mw.Impulse.md)  |
 | 冲量|
 | [InputBox](../classes/mw.InputBox.md)  |
@@ -359,7 +380,9 @@ mw
 | [Lighting](../classes/mw.Lighting.md)  |
 | 光照|
 | [LinearColor](../classes/mw.LinearColor.md)  |
-| 线性RGBA颜色，r, g, b颜色值的有效范围是float的精度|
+| r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0|
+| [ListItemStyle](../classes/mw.ListItemStyle.md)  |
+| 背景图片风格类型|
 | [LocaleUtil](../classes/mw.LocaleUtil.md)  |
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
@@ -376,6 +399,8 @@ mw
 | 四维矩阵|
 | [Model](../classes/mw.Model.md)  |
 | 物理模拟与材质设置|
+| [ModelUtil](../classes/mw.ModelUtil.md)  |
+| 模型工具类|
 | [MulticastDelegate](../classes/mw.MulticastDelegate.md)  |
 | 多播委托接口|
 | [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md)  |
@@ -386,7 +411,8 @@ mw
 | 寻路|
 | [ObjectLauncher](../classes/mw.ObjectLauncher.md)  |
 | 投掷物发射器|
-| [PanelWidget](../classes/Core.mw.PanelWidget.md) |
+| [PanelWidget](../classes/Core.mw.PanelWidget.md)  |
+| :----- |
 | [Pawn](../classes/mw.Pawn.md)  |
 | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsService](../classes/mw.PhysicsService.md)  |
@@ -415,6 +441,8 @@ mw
 | 四元数|
 | [QueryUtil](../classes/mw.QueryUtil.md)  |
 | 射线检测工具|
+| [RigidConstraint](../classes/mw.RigidConstraint.md)  |
+| 物理链接组件|
 | [RoomService](../classes/mw.RoomService.md)  |
 | MGS以及玩家信息、数据、头像等相关API。|
 | [RoomSettings](../classes/mw.RoomSettings.md)  |
@@ -431,6 +459,8 @@ mw
 | 全局的脚本配置信息|
 | [ScrollBox](../classes/mw.ScrollBox.md)  |
 | 滑动框|
+| [ScrollbarStyle](../classes/mw.ScrollbarStyle.md)  |
+| 滚动条风格类型|
 | [SelectionUtil](../classes/mw.SelectionUtil.md)  |
 | 描边绘制工具|
 | [Skybox](../classes/mw.Skybox.md)  |
@@ -451,8 +481,7 @@ mw
 | 字符串工具|
 | [SubStance](../classes/mw.SubStance.md)  |
 | 二级姿态|
-| [SwimmingVolume](../classes/mw.SwimmingVolume.md)  |
-| 游泳区域|
+| [SwimmingVolume](../classes/Core.mw.SwimmingVolume.md) |
 | [SystemUtil](../classes/mw.SystemUtil.md)  |
 | 状态信息获取工具|
 | [TabGroup](../classes/mw.TabGroup.md)  |
@@ -461,6 +490,8 @@ mw
 | 多场景和传送服务|
 | [TextBlock](../classes/mw.TextBlock.md)  |
 | 文本|
+| [TextStyle](../classes/mw.TextStyle.md)  |
+| 文本风格类型|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
 | [TouchPad](../classes/mw.TouchPad.md)  |
@@ -493,7 +524,7 @@ mw
 | [UIService](../classes/mw.UIService.md)  |
 | UI 管理类|
 | [UITransform](../classes/mw.UITransform.md)  |
-| 节点Transform|
+| Transform|
 | [UIWidget](../classes/mw.UIWidget.md)  |
 | 世界 UI|
 | [UserWidget](../classes/mw.UserWidget.md)  |
@@ -506,6 +537,8 @@ mw
 | 齐次向量|
 | [VirtualJoystickPanel](../classes/mw.VirtualJoystickPanel.md)  |
 | 摇杆|
+| [WaterVolume](../classes/mw.WaterVolume.md)  |
+| 水体区域|
 | [Widget](../classes/mw.Widget.md)  |
 | 控件的基类|
 | [WindowUtil](../classes/mw.WindowUtil.md)  |
@@ -558,10 +591,6 @@ mw
 | 收到MGS事件调用|
 | **[MGSResponse](Core.mw.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`  |
 | 收到233回复|
-| **[MyPrefabsResult](Core.mw.md#myprefabsresult)**: `Object`  |
-| 移动编辑器获取自己上传的所有预制体资源信息|
-| **[MyPrefabsResultInfo](Core.mw.md#myprefabsresultinfo)**: `Object`  |
-| 移动编辑器上传预制体资源信息|
 | **[OnArkBalanceUpdated](Core.mw.md#onarkbalanceupdated)**: (`amount`: `number`) => `void`  |
 | 客户端接收余额更新的消息格式|
 | **[OnDescriptionChange](Core.mw.md#ondescriptionchange)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`  |
@@ -584,8 +613,6 @@ mw
 | 发布成功的UGC消费态游戏信息|
 | **[RedeemResponse](Core.mw.md#redeemresponse)**: `Object`  |
 | status : 兑换状态。|
-| **[ReleaseGameData](Core.mw.md#releasegamedata)**: `Object`  |
-| 已发布的游戏数据，用于继承服务器数据。|
 | **[SetAppearanceDataCallback](Core.mw.md#setappearancedatacallback)**: (`APIName`: `string`) => `void`  |
 | 设置编辑数据完成的回调|
 | **[StringCallback](Core.mw.md#stringcallback)**: (`str`: `string`) => `void`  |
@@ -610,8 +637,6 @@ mw
 | UGC模板信息|
 | **[UploadDataResponse](Core.mw.md#uploaddataresponse)**: (`success`: `boolean`) => `void`  |
 | 下载角色形象的回调消息格式|
-| **[UploadPrefabResult](Core.mw.md#uploadprefabresult)**: `Object`  |
-| 移动编辑器上传预制体返回结果|
 | **[VehicleGearDataNew](Core.mw.md#vehiclegeardatanew)**: `Object`  |
 | 四轮载具挡位属性|
 | **[VehicleWheelDataNew](Core.mw.md#vehiclewheeldatanew)**: `Object`  |
@@ -633,6 +658,8 @@ mw
 | 客户端|
 | **[Multicast](Core.mw.md#multicast)**: `FunctionOption`   |
 | 多播|
+| **[Result](Core.mw.md#result)**: `FunctionOption`   |
+| 与Client Server配合实现RPC函数返回值|
 | **[Server](Core.mw.md#server)**: `FunctionOption`   |
 | 服务端|
 | **[UILayerBottom](Core.mw.md#uilayerbottom)**: ``1``  |
@@ -653,7 +680,7 @@ mw
 | 顶层 zOrder开始于400000|
 
 ### Functions <Score text="Functions" /> 
-| **[Property](Core.mw.md#property)**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void`   |
+| **[Property](Core.mw.md#property)**(`option?`): (`target`: `object`, `key`: `string`) => `void`   |
 | :-----|
 | 属性支持同步|
 | **[RemoteFunction](Core.mw.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`, `descriptor`: `PropertyDescriptor`) => `void`   |
@@ -666,46 +693,16 @@ mw
 | 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
 | **[assetIDChangeIconUrlRequest](Core.mw.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <Badge type="tip" text="client" />  |
 | 异步请求资源的ICON信息|
-| **[asyncCaptureAvatar](Core.mw.md#asynccaptureavatar)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <Badge type="tip" text="client" />  |
-| 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
-| **[asyncCaptureAvatarMSAA](Core.mw.md#asynccaptureavatarmsaa)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `SampleCount`: `number`, `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <Badge type="tip" text="client" />  |
-| 异步对指定虚拟角色进行截取(开启MSAA)，截图保存在本地固定路径下|
-| **[asyncGetQualityGameList](Core.mw.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\> <Badge type="tip" text="client" />  |
-| 获取优质作品列表|
-| **[asyncGetReleaseGameData](Core.mw.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`, `bDownload?`: `boolean`): `Promise`<[`ReleaseGameData`](Core.mw.md#releasegamedata)\> <Badge type="tip" text="client" />  |
-| 通过指定的消费态游戏ID和版本号获取已发布的游戏数据|
-| **[asyncGetResourceList](Core.mw.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <Badge type="tip" text="client" />  |
-| 获取资源列表|
-| **[asyncSaveProject](Core.mw.md#asyncsaveproject)**(): `Promise`<`boolean`\>   |
-| 保存当前游戏项目|
-| **[beginActorPropertiesChange](Core.mw.md#beginactorpropertieschange)**(`target`: `Base`): `void` <Badge type="tip" text="client" />  |
-| 开始记录撤销恢复的actor属性|
-| **[beginActorTransformChange](Core.mw.md#beginactortransformchange)**(`target`: `Base`): `void` <Badge type="tip" text="client" />  |
-| 开始记录actor的transform属性|
-| **[calculateActorEqualScale](Core.mw.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/mw.Vector.md), `deltaScale`: [`Vector`](../classes/mw.Vector.md)): [`Vector`](../classes/mw.Vector.md) <Badge type="tip" text="client" />  |
-| 计算actor的等比缩放|
 | **[cancelDragDrop](Core.mw.md#canceldragdrop)**(): `void` <Badge type="tip" text="client" />  |
 | 中断所有的DragDrop|
-| **[captureAvatar](Core.mw.md#captureavatar)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
-| **[captureAvatarMSAA](Core.mw.md#captureavatarmsaa)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `SampleCount`: `number`, `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 模拟MSAA对指定虚拟角色截取图像，截图保存在本地固定路径下|
-| **[clearUselessLocalMaterials](Core.mw.md#clearuselesslocalmaterials)**(`IgnoreMatGuids?`: `string`[]): `void`   |
-| 清除项目中没有引用的本地材质资源|
-| **[convertScreenLocationToWorldSpace](Core.mw.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md)   |
-| 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[createUI](Core.mw.md#createui)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建UIPrefab|
 | **[createUIByName](Core.mw.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 创建UIPrefab|
+| 创建 UIPrefab|
 | **[createUIByPath](Core.mw.md#createuibypath)**(`UIPath`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 创建UIPrefab|
+| 创建 UIPrefab|
 | **[createUIOnlyClass](Core.mw.md#createuionlyclass)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
-| 创建空的UI|
-| **[endActorPropertiesChange](Core.mw.md#endactorpropertieschange)**(`target`: `Base`): `void` <Badge type="tip" text="client" />  |
-| 结束记录actor属性的撤销恢复|
-| **[endActorTransformChange](Core.mw.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 结束记录actor的transform|
+| 创建空的 UI|
 | **[endDragDrop](Core.mw.md#enddragdrop)**(`InReply`: [`EventReply`](../classes/mw.EventReply.md)): `void` <Badge type="tip" text="client" />  |
 | 中断一个拖拽事件, 传入一个操作的事件|
 | **[executiveCommand](Core.mw.md#executivecommand)**(`cmd`: `string`): `void` <Badge type="tip" text="client" />  |
@@ -713,27 +710,19 @@ mw
 | **[fetch](Core.mw.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/mw.RequestInit.md)): `Promise`<[`Response`](../interfaces/mw.Response.md)\>   |
 | HTTP请求|
 | **[findUIScript](Core.mw.md#finduiscript)**(`UI`: [`Widget`](../classes/mw.Widget.md)): [`UIScript`](../classes/mw.UIScript.md) <Badge type="tip" text="client" />  |
-| 获取UI脚本|
+| 获取 UI 脚本|
 | **[generalHttpRequest](Core.mw.md#generalhttprequest)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/mw.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean`   |
-| 通用Http请求|
+| 通用 Http 请求|
 | **[getAbsoluteSize](Core.mw.md#getabsolutesize)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 返回绝对空间中几何图形的大小|
 | **[getAssetIconDataByAssetID](Core.mw.md#getasseticondatabyassetid)**(`asset`: `string`): [`AssetIconData`](../classes/mw.AssetIconData.md) <Badge type="tip" text="client" />  |
-| 获取资源的ICON信息|
+| 获取资源的 ICON 信息|
 | **[getCurrentMousePosition](Core.mw.md#getcurrentmouseposition)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取当前鼠标所在的绝对位置|
 | **[getDragDroppingContent](Core.mw.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/mw.DragDropOperation.md) <Badge type="tip" text="client" />  |
 | 获取当前的DragDrop事件|
-| **[getGameTransmissionData](Core.mw.md#getgametransmissiondata)**(): `string` <Badge type="tip" text="client" />  |
-| 蓝军自定义启动参数，每个游戏可以是不一样的，推荐使用一个JSON字符串|
-| **[getGizmo](Core.mw.md#getgizmo)**(): `mw.Gizmo` <Badge type="tip" text="client" />  |
-| 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
-| **[getHeadSculpture](Core.mw.md#getheadsculpture)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 对指定虚拟角色进行截取后上传到服务器|
 | **[getLastMousePosition](Core.mw.md#getlastmouseposition)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取上一次鼠标所在的绝对位置|
-| **[getLocalMaterialsCount](Core.mw.md#getlocalmaterialscount)**(): `number`   |
-| 获取创建的本地材质数量|
 | **[getLocalSize](Core.mw.md#getlocalsize)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 返回局部空间中几何图形的大小|
 | **[getLocalTopLeft](Core.mw.md#getlocaltopleft)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
@@ -742,32 +731,12 @@ mw
 | 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。|
 | **[getMousePositionOnViewport](Core.mw.md#getmousepositiononviewport)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取平台的鼠标光标在视口控件的本地空间中的位置。|
-| **[getMyPrefabs](Core.mw.md#getmyprefabs)**(`lastId`: `number`, `size`: `number`): `Promise`<[`MyPrefabsResult`](Core.mw.md#myprefabsresult)\> <Badge type="tip" text="other" />  |
-| 移动编辑器获取自己上传的所有预制体资源Id和状态|
-| **[getOneFingerMoveGestureDelegate](Core.mw.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 获取单指滑动的代理|
-| **[getPinchGestureDelegate](Core.mw.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="client" />  |
-| 获取挤压手势的代理|
 | **[getPlayerScreenWidgetGeometry](Core.mw.md#getplayerscreenwidgetgeometry)**(`player`: [`Player`](../classes/mw.Player.md)): [`Geometry`](../classes/mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
 | **[getResolutionChanged](Core.mw.md#getresolutionchanged)**(`Delegate`: [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\>): `void` <Badge type="tip" text="client" />  |
 | 分辨率改变时的回调|
-| **[getSavedDir](Core.mw.md#getsaveddir)**(): `string` <Badge type="tip" text="client" />  |
-| 获取截图的保存路径|
-| **[getTapGestureDelegate](Core.mw.md#gettapgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 获取点击事件的代理|
-| **[getTouchBeganGestureDelegate](Core.mw.md#gettouchbegangesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 获取手指按下代理|
-| **[getTouchData](Core.mw.md#gettouchdata)**(): [`Vector`](../classes/mw.Vector.md)[] <Badge type="tip" text="client" />  |
-| 获取touch的数组|
-| **[getTouchEndGestureDelegate](Core.mw.md#gettouchendgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />  |
-| 获取手指抬起代理|
-| **[getTouchMoveGestureDelegate](Core.mw.md#gettouchmovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 获取手指滑动代理|
-| **[getTwoFingerMoveGestureDelegate](Core.mw.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 获取双指滑动的代理|
 | **[getUrlParameter](Core.mw.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string`   |
-| 获取url参数|
+| 获取 url 参数|
 | **[getViewportScale](Core.mw.md#getviewportscale)**(): `number` <Badge type="tip" text="client" />  |
 | 获取应用于视口和所有小部件的当前DPI Scale。|
 | **[getViewportSize](Core.mw.md#getviewportsize)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
@@ -784,60 +753,22 @@ mw
 | 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。|
 | **[localToViewport](Core.mw.md#localtoviewport)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `localPosition`: [`Vector2`](../classes/mw.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/mw.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/mw.Vector2.md)): `void` <Badge type="tip" text="client" />  |
 | 将几何体的局部坐标转换为局部视口坐标。|
-| **[markActorRenderStateDirty](Core.mw.md#markactorrenderstatedirty)**(`target`: `Base`): `void` <Badge type="tip" text="client" />  |
-| 标记Actor所有组件的渲染状态为脏|
-| **[mobileReleaseGame](Core.mw.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<`number`\>   |
-| 移动端编辑器发布游戏|
-| **[projectWorldPositionToWidgetPosition](Core.mw.md#projectworldpositiontowidgetposition)**(`worldLocation`: [`Vector`](../classes/mw.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md)   |
-| 获取角色在世界中的位置，投射到屏幕上|
-| **[pushShippingLog](Core.mw.md#pushshippinglog)**(`logLevel`: [`LogLevel`](../enums/mw.LogLevel.md), `log`: `string`): `void`  |
-| 移动编辑器推送shipping下的日志|
-| **[recordingCharacterGif](Core.mw.md#recordingcharactergif)**(`Character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <Badge type="tip" text="client" />  |
-| 连续截图，生成GIF素材发送给服务器|
-| **[redo](Core.mw.md#redo)**(): `void` <Badge type="tip" text="client" />  |
-| 执行恢复操作|
 | **[releaseAssetIconTextureFromCache](Core.mw.md#releaseasseticontexturefromcache)**(`asset`: `string`): `void` <Badge type="tip" text="client" />  |
-| 尝试标记资源的ICON图为待释放的等待释放|
-| **[saveProject](Core.mw.md#saveproject)**(): `void`   |
-| 保存当前游戏项目|
-| **[screenShot](Core.mw.md#screenshot)**(`Resolution`: [`Vector2`](../classes/mw.Vector2.md), `StartPoint`: [`Vector2`](../classes/mw.Vector2.md), `Width`: `number`, `Height`: `number`, `callback`: (`dataString`: `string`) => `void`, `bShowUI?`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 屏幕指定区域截图|
-| **[screenShotExist](Core.mw.md#screenshotexist)**(`absPath`: `string`): `boolean` <Badge type="tip" text="client" />  |
-| 验证绝对路径下截图是否存在|
+| 尝试标记资源的 ICON 图为待释放的等待释放|
 | **[screenToViewport](Core.mw.md#screentoviewport)**(`screenPosition`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 将屏幕位置(以像素为单位)转换为视口控件的本地空间。|
 | **[screenToWidgetAbsolute](Core.mw.md#screentowidgetabsolute)**(`screenPosition`: [`Vector2`](../classes/mw.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
 | **[screenToWidgetLocal](Core.mw.md#screentowidgetlocal)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `screenPosition`: [`Vector2`](../classes/mw.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
-| **[sendShareId](Core.mw.md#sendshareid)**(`absPath`: `string`, `shareId`: `string`, `bShowUuid`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 将角色数据ID连同角色截图一同发给MGS|
-| **[setButtonDisableImageByURL](Core.mw.md#setbuttondisableimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void` <Badge type="tip" text="other" />  |
-| 通过URL设置按钮控件不可以图片|
-| **[setButtonNormalImageByURL](Core.mw.md#setbuttonnormalimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void` <Badge type="tip" text="other" />  |
-| 通过URL设置按钮控件普通图片|
-| **[setButtonPressedImageByURL](Core.mw.md#setbuttonpressedimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void` <Badge type="tip" text="other" />  |
-| 通过URL设置按钮控件按下图片|
 | **[setFocusToGameViewport](Core.mw.md#setfocustogameviewport)**(): `void` <Badge type="tip" text="client" />  |
 | 设置关注游戏窗口|
-| **[setImageImageByURL](Core.mw.md#setimageimagebyurl)**(`image`: [`Image`](../classes/mw.Image.md), `url`: `string`): `void` <Badge type="tip" text="other" />  |
-| 通过URL设置图片控件图片|
 | **[setInputModeGameAndUI](Core.mw.md#setinputmodegameandui)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md), `hideCursorDuringCapture?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会|
 | **[setInputModeGameOnly](Core.mw.md#setinputmodegameonly)**(): `void` <Badge type="tip" text="client" />  |
 | 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入|
 | **[setInputModeUIOnly](Core.mw.md#setinputmodeuionly)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md)): `void` <Badge type="tip" text="client" />  |
 | 设置只允许UI响应用户输入的输入模式。|
-| **[setMultiSwipeTime](Core.mw.md#setmultiswipetime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
-| 双指移动的时间- 必须大于这个时间才执行双指移动事件|
-| **[setPinchAngleTolerance](Core.mw.md#setpinchangletolerance)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
-| 挤压手势的偏差角度|
-| **[setSingleSwipeTime](Core.mw.md#setsingleswipetime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
-| 单指移动的时间- 必须大于这个时间才会开始执行单指移动|
-| **[setSwipeTolerance](Core.mw.md#setswipetolerance)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
-| 双指移动的偏差量- 值越大误差则可以越大|
-| **[setTapTime](Core.mw.md#settaptime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
-| tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move|
 | **[startRecord](Core.mw.md#startrecord)**(`screenX`: `number`, `screenY`: `number`, `screenW`: `number`, `screenH`: `number`): `string` <Badge type="tip" text="client" />  |
 | 录屏|
 | **[stopRecord](Core.mw.md#stoprecord)**(): `void` <Badge type="tip" text="client" />  |
@@ -846,16 +777,6 @@ mw
 | 转化绝对空间下矢量到局部空间下|
 | **[transformVectorLocalToAbsolute](Core.mw.md#transformvectorlocaltoabsolute)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `localVector`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 转化局部空间下矢量到绝对空间下|
-| **[undo](Core.mw.md#undo)**(): `void` <Badge type="tip" text="client" />  |
-| 执行撤销操作|
-| **[uploadPrefab](Core.mw.md#uploadprefab)**(`assetId`: `string`, `name`: `string`, `imagePath`: `string`): `Promise`<[`UploadPrefabResult`](Core.mw.md#uploadprefabresult)\> <Badge type="tip" text="other" />  |
-| 移动编辑器上传预制体|
-| **[uploadScreenShot](Core.mw.md#uploadscreenshot)**(`filePath`: `string`, `fileType`: `number`, `callbackURL?`: (`responseURL`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 上传角色头像或全身照到服务器后发送到MGS|
-| **[uploadScreenShots](Core.mw.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
-| 上传角色头像及全身照到服务器后发送到MGS|
-| **[uploadShippingLog](Core.mw.md#uploadshippinglog)**(`uploadCurrentLog`: `boolean`): `Promise`<`string`\>  |
-| 移动编辑器推送shipping下的日志|
 | **[urlDecode](Core.mw.md#urldecode)**(`str`: `string`): `string`   |
 | url解码|
 | **[urlEncode](Core.mw.md#urlencode)**(`str`: `string`): `string`   |
@@ -1065,60 +986,6 @@ ___
 ##### Returns
 
 `void`
-
-___
-
-### MyPrefabsResult <Score text="MyPrefabsResult" /> 
-
-Ƭ **MyPrefabsResult**: `Object`
-
-移动编辑器获取自己上传的所有预制体资源信息
-
-**`Param`**
-
-usage: 尾部Id
-
-**`Param`**
-
-usage: 移动编辑器上传预制体资源信息
-
-#### Type declaration
-
-| `lastId` | `number` |
-| :------ | :------ |
-| `prefabInfos` | [`MyPrefabsResultInfo`](Core.mw.md#myprefabsresultinfo)[] |
-
-___
-
-### MyPrefabsResultInfo <Score text="MyPrefabsResultInfo" /> 
-
-Ƭ **MyPrefabsResultInfo**: `Object`
-
-移动编辑器上传预制体资源信息
-
-**`Param`**
-
-usage: id
-
-**`Param`**
-
-usage: 资源id入库前为空
-
-**`Param`**
-
-usage: 入库前的唯一标识
-
-**`Param`**
-
-usage: 资源状态
-
-#### Type declaration
-
-| `guid` | `string` |
-| :------ | :------ |
-| `id` | `number` |
-| `prefabStatus` | [`PrefabStatus`](../enums/mw.PrefabStatus.md) |
-| `uuid` | `string` |
 
 ___
 
@@ -1371,21 +1238,6 @@ message : 兑换信息
 
 ___
 
-### ReleaseGameData <Score text="ReleaseGameData" /> 
-
-Ƭ **ReleaseGameData**: `Object`
-
-已发布的游戏数据，用于继承服务器数据。
-
-#### Type declaration
-
-| `bDownloaded` `boolean` | 是否已下载到本地 |
-| :------ | :------ |
-| `gameCover` `string` | (bDownloaded=true:本地文件路径bDownloaded=false:服务器URL) |
-| `gameName` `string` | 游戏名称 |
-
-___
-
 ### SetAppearanceDataCallback <Score text="SetAppearanceDataCallback" /> 
 
 Ƭ **SetAppearanceDataCallback**: (`APIName`: `string`) => `void`
@@ -1595,28 +1447,6 @@ ___
 
 ___
 
-### UploadPrefabResult <Score text="UploadPrefabResult" /> 
-
-Ƭ **UploadPrefabResult**: `Object`
-
-移动编辑器上传预制体返回结果
-
-**`Param`**
-
-usage: 移动编辑器上传预制体返回状态
-
-**`Param`**
-
-usage: 资源标识
-
-#### Type declaration
-
-| `assetId` | `string` |
-| :------ | :------ |
-| `uploadPrefabResultType` | [`UploadPrefabResultType`](../enums/mw.UploadPrefabResultType.md) |
-
-___
-
 ### VehicleGearDataNew <Score text="VehicleGearDataNew" /> 
 
 Ƭ **VehicleGearDataNew**: `Object`
@@ -1752,6 +1582,14 @@ ___
 
 ___
 
+### Result <Score text="Result" /> 
+
+• `Const` **Result**: `FunctionOption` 
+
+与Client Server配合实现RPC函数返回值
+
+___
+
 ### Server <Score text="Server" /> 
 
 • `Const` **Server**: `FunctionOption` 
@@ -1826,7 +1664,7 @@ ___
 
 ### Property <Score text="Property" /> 
 
-• **Property**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+• **Property**(`option?`): (`target`: `object`, `key`: `string`) => `void` 
 
 属性支持同步
 
@@ -1936,274 +1774,12 @@ ___
 
 ___
 
-### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
-
-• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-异步对指定虚拟角色进行截取，截图保存在本地固定路径下
-
-#### Parameters
-
-| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  视场; |
-| `fileName` `string` |  文件名 |
-
-#### Returns
-
-| `Promise`<`string`\> | 生成的截图的本地绝对路径 |
-| :------ | :------ |
-
-___
-
-### asyncCaptureAvatarMSAA <Score text="asyncCaptureAvatarMSAA" /> 
-
-• **asyncCaptureAvatarMSAA**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `SampleCount`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-异步对指定虚拟角色进行截取(开启MSAA)，截图保存在本地固定路径下
-
-#### Parameters
-
-| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `SampleCount` `number` |  MSAA采样, 推荐设置为4(移动)或8(桌面) |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  视场; |
-| `fileName` `string` |  文件名 |
-
-#### Returns
-
-| `Promise`<`string`\> | 生成的截图的本地绝对路径 |
-| :------ | :------ |
-
-___
-
-### asyncGetQualityGameList <Score text="asyncGetQualityGameList" /> 
-
-• **asyncGetQualityGameList**(`resourceId`, `pageIndex`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-获取优质作品列表
-
-#### Parameters
-
-| `resourceId` `number` | T台Id |
-| :------ | :------ |
-| `pageIndex` `number` | 分页索引 |
-
-#### Returns
-
-| `Promise`<`string`\> | 请求结果(Json字符串) |
-| :------ | :------ |
-
-___
-
-### asyncGetReleaseGameData <Score text="asyncGetReleaseGameData" /> 
-
-• **asyncGetReleaseGameData**(`gameId`, `version?`, `bDownload?`): `Promise`<[`ReleaseGameData`](Core.mw.md#releasegamedata)\> <Badge type="tip" text="client" />
-
-通过指定的消费态游戏ID和版本号获取已发布的游戏数据
-
-#### Parameters
-
-| `gameId` `string` | 消费态游戏Id |
-| :------ | :------ |
-| `version?` `string` | 消费态游戏版本号 default:"" |
-| `bDownload?` `boolean` | 是否下载到本地 default:true |
-
-#### Returns
-
-| `Promise`<[`ReleaseGameData`](Core.mw.md#releasegamedata)\> | 请求结果(结构体对象：`{gameName:游戏名称, gameCover:(bDownloaded=true:本地文件路径|bDownloaded=false:服务器URL), bDownloaded:是否已下载到本地}`) |
-| :------ | :------ |
-
-___
-
-### asyncGetResourceList <Score text="asyncGetResourceList" /> 
-
-• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-获取资源列表
-
-#### Parameters
-
-| `classification` `number` | 分类id |
-| :------ | :------ |
-| `lastID` `number` | 查询偏移量 |
-| `pageSize` `number` | 每页查询大小 |
-
-#### Returns
-
-| `Promise`<`string`\> | 请求结果(Json字符串) |
-| :------ | :------ |
-
-___
-
-### asyncSaveProject <Score text="asyncSaveProject" /> 
-
-• **asyncSaveProject**(): `Promise`<`boolean`\> 
-
-保存当前游戏项目
-
-::: warning Precautions
-
-只在ListenServer模式下调用生效，在PIE模式下无法调用
-
-:::
-
-#### Returns
-
-| `Promise`<`boolean`\> | 保存成功或失败 |
-| :------ | :------ |
-
-___
-
-### beginActorPropertiesChange <Score text="beginActorPropertiesChange" /> 
-
-• **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="client" />
-
-开始记录撤销恢复的actor属性
-
-#### Parameters
-
-| `target` `Base` | 记录的对象 |
-| :------ | :------ |
-
-
-___
-
-### beginActorTransformChange <Score text="beginActorTransformChange" /> 
-
-• **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="client" />
-
-开始记录actor的transform属性
-
-#### Parameters
-
-| `target` `Base` | 记录的对象 |
-| :------ | :------ |
-
-
-___
-
-### calculateActorEqualScale <Score text="calculateActorEqualScale" /> 
-
-• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/mw.Vector.md) <Badge type="tip" text="client" />
-
-计算actor的等比缩放
-
-#### Parameters
-
-| `currentScale` [`Vector`](../classes/mw.Vector.md) | 当前缩放值 |
-| :------ | :------ |
-| `deltaScale` [`Vector`](../classes/mw.Vector.md) | 缩放值增量 |
-
-#### Returns
-
-| [`Vector`](../classes/mw.Vector.md) | 计算后的缩放值 |
-| :------ | :------ |
-
-___
-
 ### cancelDragDrop <Score text="cancelDragDrop" /> 
 
 • **cancelDragDrop**(): `void` <Badge type="tip" text="client" />
 
 中断所有的DragDrop
 
-
-___
-
-### captureAvatar <Score text="captureAvatar" /> 
-
-• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
-
-同步对指定虚拟角色进行截取，截图保存在本地固定路径下
-
-#### Parameters
-
-| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  视场; |
-| `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
-
-
-___
-
-### captureAvatarMSAA <Score text="captureAvatarMSAA" /> 
-
-• **captureAvatarMSAA**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `SampleCount`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
-
-模拟MSAA对指定虚拟角色截取图像，截图保存在本地固定路径下
-
-::: warning Precautions
-
-后处理(曝光，色调映射等)对抗锯齿截图效果影响较大
-
-:::
-
-#### Parameters
-
-| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `SampleCount` `number` |  MSAA采样, 推荐设置为4(移动)或8(桌面) |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  视场; |
-| `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
-
-
-___
-
-### clearUselessLocalMaterials <Score text="clearUselessLocalMaterials" /> 
-
-• **clearUselessLocalMaterials**(`IgnoreMatGuids?`): `void` 
-
-清除项目中没有引用的本地材质资源
-
-::: warning Precautions
-
-只在MobileEditor模式下调用生效
-
-:::
-
-#### Parameters
-
-| `IgnoreMatGuids?` `string`[] | 清除时即使未使用也不清除的材质资源Guid default:[] |
-| :------ | :------ |
-
-
-___
-
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
-
-• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) 
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-#### Parameters
-
-| `ScreenX` `number` |  屏幕X轴坐标值 default: |
-| :------ | :------ |
-| `ScreenY` `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-| [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 |
-| :------ | :------ |
 
 ___
 
@@ -2220,9 +1796,9 @@ ___
 
 #### Parameters
 
-| `UIPrefabName` `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径,为空的话等于createUIOnlyClass |
+| `UIPrefabName` `string` | 指定 UI 自定义控件的相对于工程的路径或则相对于 UI 目录的路径，为空的话等于 createUIOnlyClass range: 路径长度不做限制 |
 | :------ | :------ |
-| `panelClass` () => `T` | 继承至UI身上脚本的派生类 |
+| `panelClass` () => `T` | 继承至 UI 身上脚本的派生类 |
 
 #### Returns
 
@@ -2235,11 +1811,11 @@ ___
 
 • **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />
 
-创建UIPrefab
+创建 UIPrefab
 
 #### Parameters
 
-| `UIPrefabName` `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+| `UIPrefabName` `string` | 指定 UI 自定义控件的相对于工程的路径或则相对于 UI 目录的路径 range: 路径长度不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -2253,11 +1829,11 @@ ___
 
 • **createUIByPath**(`UIPath`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />
 
-创建UIPrefab
+创建 UIPrefab
 
 #### Parameters
 
-| `UIPath` `string` | 创建UI 的完整路径 |
+| `UIPath` `string` | 创建 UI 的完整路径 range: 路径长度 |
 | :------ | :------ |
 
 #### Returns
@@ -2271,7 +1847,7 @@ ___
 
 • **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="client" />
 
-创建空的UI
+创建空的 UI
 
 #### Type parameters
 
@@ -2280,42 +1856,13 @@ ___
 
 #### Parameters
 
-| `panelClass` () => `T` | 指定UI控件身上的行为脚本 |
+| `panelClass` () => `T` | 指定 UI 控件身上的行为脚本 |
 | :------ | :------ |
 
 #### Returns
 
 | `T` | 对应的UI |
 | :------ | :------ |
-
-___
-
-### endActorPropertiesChange <Score text="endActorPropertiesChange" /> 
-
-• **endActorPropertiesChange**(`target`): `void` <Badge type="tip" text="client" />
-
-结束记录actor属性的撤销恢复
-
-#### Parameters
-
-| `target` `Base` | 记录的对象 |
-| :------ | :------ |
-
-
-___
-
-### endActorTransformChange <Score text="endActorTransformChange" /> 
-
-• **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="client" />
-
-结束记录actor的transform
-
-#### Parameters
-
-| `target` `Base` | 记录的对象 |
-| :------ | :------ |
-| `bIsGizmoActor?` `boolean` | 是否是gizmo actor default:false |
-
 
 ___
 
@@ -2341,7 +1888,7 @@ ___
 
 #### Parameters
 
-| `cmd` `string` | 命令字符串 |
+| `cmd` `string` | 命令字符串 <br> default: null 必填参数 <br> range: 不限制 |
 | :------ | :------ |
 
 
@@ -2355,7 +1902,7 @@ HTTP请求
 
 #### Parameters
 
-| `url` `string` | url |
+| `url` `string` | url range: 不做限制 |
 | :------ | :------ |
 | `init?` [`RequestInit`](../interfaces/mw.RequestInit.md) | 请求信息 default:请求信息 |
 
@@ -2370,7 +1917,7 @@ ___
 
 • **findUIScript**(`UI`): [`UIScript`](../classes/mw.UIScript.md) <Badge type="tip" text="client" />
 
-获取UI脚本
+获取 UI 脚本
 
 #### Parameters
 
@@ -2388,7 +1935,7 @@ ___
 
 • **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` 
 
-通用Http请求
+通用 Http 请求
 
 <span style="font-size: 14px;">
 使用示例:发送Http请求
@@ -2403,7 +1950,7 @@ generalHttpRequest(Response,Url,Param,JsonContent)
 | `response` [`HttpResponse`](Core.mw.md#httpresponse) | OnHttpResponse |
 | :------ | :------ |
 | `requestUrl` [`HttpRequestURL`](../enums/mw.HttpRequestURL.md) | EHttpRequestURL |
-| `param` `string` | string |
+| `param` `string` | string range: 不做限制 |
 | `jsonContent` `any` | any |
 | `requestType` [`HttpRequestType`](../enums/mw.HttpRequestType.md) | 0是Get 1是Post |
 
@@ -2436,11 +1983,11 @@ ___
 
 • **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/mw.AssetIconData.md) <Badge type="tip" text="client" />
 
-获取资源的ICON信息
+获取资源的 ICON 信息
 
 #### Parameters
 
-| `asset` `string` | 指定资源的id |
+| `asset` `string` | 指定资源的 id range: 依据资源 ID 长度而定。 |
 | :------ | :------ |
 
 #### Returns
@@ -2476,53 +2023,6 @@ ___
 
 ___
 
-### getGameTransmissionData <Score text="getGameTransmissionData" /> 
-
-• **getGameTransmissionData**(): `string` <Badge type="tip" text="client" />
-
-蓝军自定义启动参数，每个游戏可以是不一样的，推荐使用一个JSON字符串
-
-#### Returns
-
-| `string` | 自定义启动参数的字符串形式 |
-| :------ | :------ |
-
-___
-
-### getGizmo <Score text="getGizmo" /> 
-
-• **getGizmo**(): `mw.Gizmo` <Badge type="tip" text="client" />
-
-获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
-
-#### Returns
-
-| `mw.Gizmo` | 返回编辑态的坐标轴 |
-| :------ | :------ |
-
-___
-
-### getHeadSculpture <Score text="getHeadSculpture" /> 
-
-• **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
-
-对指定虚拟角色进行截取后上传到服务器
-
-#### Parameters
-
-| `character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  视场; |
-| `fileName` `string` |  文件名 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
-
-
-___
-
 ### getLastMousePosition <Score text="getLastMousePosition" /> 
 
 • **getLastMousePosition**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />
@@ -2532,25 +2032,6 @@ ___
 #### Returns
 
 | [`Vector2`](../classes/mw.Vector2.md) | 绝对位置 |
-| :------ | :------ |
-
-___
-
-### getLocalMaterialsCount <Score text="getLocalMaterialsCount" /> 
-
-• **getLocalMaterialsCount**(): `number` 
-
-获取创建的本地材质数量
-
-::: warning Precautions
-
-只在MobileEditor模式下调用生效
-
-:::
-
-#### Returns
-
-| `number` | 本地材质数量 |
 | :------ | :------ |
 
 ___
@@ -2617,78 +2098,6 @@ ___
 
 ___
 
-### getMyPrefabs <Score text="getMyPrefabs" /> 
-
-• **getMyPrefabs**(`lastId`, `size`): `Promise`<[`MyPrefabsResult`](Core.mw.md#myprefabsresult)\> <Badge type="tip" text="other" />
-
-移动编辑器获取自己上传的所有预制体资源Id和状态
-
-::: warning Precautions
-
-只在MobileEditor模式下调用生效；异步请求；滚动分页接口请求
-
-:::
-
-<span style="font-size: 14px;">
-使用示例:调用方法 新建一个脚本 NewScript
-</span>
-
-```ts
-@Component
-export default class NewScript extends Script {
-  //当脚本被实例后，会在第一帧更新前调用此函数
-  protected onStart(): void {
-    //获取当前用户上传的所有的预制体
-    mw.getMyPrefabs(0,20).then(item =>{
-      for (let Index: number = 0;
-Index < item.PrefabInfos.length;
-++Index) {
-        console.log(item.PrefabInfos[Index].Guid);
-      }
-    });
-  }
-}
-```
-
-#### Parameters
-
-| `lastId` `number` | 尾部Id |
-| :------ | :------ |
-| `size` `number` | 每页数量 |
-
-#### Returns
-
-| `Promise`<[`MyPrefabsResult`](Core.mw.md#myprefabsresult)\> | 移动编辑器获取自己上传的所有预制体资源信息 |
-| :------ | :------ |
-
-___
-
-### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
-
-• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
-
-获取单指滑动的代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回单指滑动的代理 |
-| :------ | :------ |
-
-___
-
-### getPinchGestureDelegate <Score text="getPinchGestureDelegate" /> 
-
-• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="client" />
-
-获取挤压手势的代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> | 返回挤压手势的代理 |
-| :------ | :------ |
-
-___
-
 ### getPlayerScreenWidgetGeometry <Score text="getPlayerScreenWidgetGeometry" /> 
 
 • **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/mw.Geometry.md) <Badge type="tip" text="client" />
@@ -2721,108 +2130,17 @@ ___
 
 ___
 
-### getSavedDir <Score text="getSavedDir" /> 
-
-• **getSavedDir**(): `string` <Badge type="tip" text="client" />
-
-获取截图的保存路径
-
-#### Returns
-
-| `string` | 保存路径的绝对路径 |
-| :------ | :------ |
-
-___
-
-### getTapGestureDelegate <Score text="getTapGestureDelegate" /> 
-
-• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
-
-获取点击事件的代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回的代理 |
-| :------ | :------ |
-
-___
-
-### getTouchBeganGestureDelegate <Score text="getTouchBeganGestureDelegate" /> 
-
-• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
-
-获取手指按下代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回手指按下时的代理 |
-| :------ | :------ |
-
-___
-
-### getTouchData <Score text="getTouchData" /> 
-
-• **getTouchData**(): [`Vector`](../classes/mw.Vector.md)[] <Badge type="tip" text="client" />
-
-获取touch的数组
-
-#### Returns
-
-| [`Vector`](../classes/mw.Vector.md)[] | 返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况 |
-| :------ | :------ |
-
-___
-
-### getTouchEndGestureDelegate <Score text="getTouchEndGestureDelegate" /> 
-
-• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />
-
-获取手指抬起代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> | 返回抬起手指时候的代理 |
-| :------ | :------ |
-
-___
-
-### getTouchMoveGestureDelegate <Score text="getTouchMoveGestureDelegate" /> 
-
-• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
-
-获取手指滑动代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回手指滑动的代理 |
-| :------ | :------ |
-
-___
-
-### getTwoFingerMoveGestureDelegate <Score text="getTwoFingerMoveGestureDelegate" /> 
-
-• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
-
-获取双指滑动的代理
-
-#### Returns
-
-| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回双指滑动的代理 |
-| :------ | :------ |
-
-___
-
 ### getUrlParameter <Score text="getUrlParameter" /> 
 
 • **getUrlParameter**(`url`, `parameterName`): `string` 
 
-获取url参数
+获取 url 参数
 
 #### Parameters
 
-| `url` `string` | url |
+| `url` `string` | url range: 不做限制，依据具体的 url 的长度 |
 | :------ | :------ |
-| `parameterName` `string` | 参数名 |
+| `parameterName` `string` | 参数名 range: 不做限制 |
 
 #### Returns
 
@@ -2880,8 +2198,8 @@ Http请求接口
 
 | `response` [`HttpResponse`](Core.mw.md#httpresponse) |  请求的回调 |
 | :------ | :------ |
-| `paramUrl` `string` |  请求的参数和值 |
-| `jsonContent` `string` |  请求数据内容，json格式 |
+| `paramUrl` `string` |  请求的参数和值 range: 不做限制 |
+| `jsonContent` `string` |  请求数据内容，json格式 range: 不做限制 |
 | `requestType` [`HttpRequestType`](../enums/mw.HttpRequestType.md) |  请求类型。HttpRequestType枚举值 |
 
 #### Returns
@@ -2959,178 +2277,17 @@ ___
 
 ___
 
-### markActorRenderStateDirty <Score text="markActorRenderStateDirty" /> 
-
-• **markActorRenderStateDirty**(`target`): `void` <Badge type="tip" text="client" />
-
-标记Actor所有组件的渲染状态为脏
-
-#### Parameters
-
-| `target` `Base` | 标记的对象 |
-| :------ | :------ |
-
-
-___
-
-### mobileReleaseGame <Score text="mobileReleaseGame" /> 
-
-• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`number`\> 
-
-移动端编辑器发布游戏
-
-::: warning Precautions
-
-只在ListenServer模式下调用生效，在PIE模式下无法调用,发布游戏会自动保存一次工程
-
-:::
-
-#### Parameters
-
-| `InGameName` `string` | 游戏名称 |
-| :------ | :------ |
-| `InExtraData?` `string` | 游戏扩展数据 default:"" |
-
-#### Returns
-
-| `Promise`<`number`\> | 保存成功或失败 |
-| :------ | :------ |
-
-___
-
-### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 
-
-• **projectWorldPositionToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) 
-
-获取角色在世界中的位置，投射到屏幕上
-
-#### Parameters
-
-| `worldLocation` [`Vector`](../classes/mw.Vector.md) |  世界坐标 |
-| :------ | :------ |
-| `playerViewportRelative?` `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-| [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO |
-| :------ | :------ |
-
-___
-
-### pushShippingLog <Score text="pushShippingLog" /> 
-
-• **pushShippingLog**(`logLevel`, `log`): `void`
-
-移动编辑器推送shipping下的日志
-
-#### Parameters
-
-| `logLevel` [`LogLevel`](../enums/mw.LogLevel.md) |  日志等级 |
-| :------ | :------ |
-| `log` `string` |  日志内容 |
-
-
-___
-
-### recordingCharacterGif <Score text="recordingCharacterGif" /> 
-
-• **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="client" />
-
-连续截图，生成GIF素材发送给服务器
-
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
-#### Parameters
-
-| `Character` [`Character`](../classes/mw.Character.md) |  指定截取GIF的Character |
-| :------ | :------ |
-| `relativeLocation` [`Vector`](../classes/mw.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` [`Rotation`](../classes/mw.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
-| `resolution` [`Vector2`](../classes/mw.Vector2.md) |  截图尺寸 |
-| `bShowOnly` `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` `number` |  镜头FOV值 |
-| `picNum` `number` |  截取图像张数 |
-| `recordingTime` `number` |  截取持续时长 |
-
-
-___
-
-### redo <Score text="redo" /> 
-
-• **redo**(): `void` <Badge type="tip" text="client" />
-
-执行恢复操作
-
-
-___
-
 ### releaseAssetIconTextureFromCache <Score text="releaseAssetIconTextureFromCache" /> 
 
 • **releaseAssetIconTextureFromCache**(`asset`): `void` <Badge type="tip" text="client" />
 
-尝试标记资源的ICON图为待释放的等待释放
+尝试标记资源的 ICON 图为待释放的等待释放
 
 #### Parameters
 
-| `asset` `string` | 指定资源的id |
+| `asset` `string` | 指定资源的 id range: 依据资源 ID 长度而定。 |
 | :------ | :------ |
 
-
-___
-
-### saveProject <Score text="saveProject" /> 
-
-• **saveProject**(): `void` 
-
-保存当前游戏项目
-
-::: warning Precautions
-
-只在ListenServer模式下调用生效，在PIE模式下无法调用
-
-:::
-
-
-___
-
-### screenShot <Score text="screenShot" /> 
-
-• **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`, `bShowUI?`): `void` <Badge type="tip" text="client" />
-
-屏幕指定区域截图
-
-#### Parameters
-
-| `Resolution` [`Vector2`](../classes/mw.Vector2.md) | 分辨率 |
-| :------ | :------ |
-| `StartPoint` [`Vector2`](../classes/mw.Vector2.md) | 截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
-| `Width` `number` | 截图区域的宽度 |
-| `Height` `number` | 截图区域的高度 |
-| `callback` (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
-| `bShowUI?` `boolean` | 是否包含UI |
-
-
-___
-
-### screenShotExist <Score text="screenShotExist" /> 
-
-• **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="client" />
-
-验证绝对路径下截图是否存在
-
-#### Parameters
-
-| `absPath` `string` |  图片的绝对路径 |
-| :------ | :------ |
-
-#### Returns
-
-| `boolean` | 该文件是否存在 |
-| :------ | :------ |
 
 ___
 
@@ -3191,102 +2348,12 @@ ___
 
 ___
 
-### sendShareId <Score text="sendShareId" /> 
-
-• **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="client" />
-
-将角色数据ID连同角色截图一同发给MGS
-
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
-#### Parameters
-
-| `absPath` `string` |  分享截图的绝对路径 |
-| :------ | :------ |
-| `shareId` `string` |  分享的角色数据id,可为空 |
-| `bShowUuid` `boolean` |  是否在显示账户的Uuid |
-
-
-___
-
-### setButtonDisableImageByURL <Score text="setButtonDisableImageByURL" /> 
-
-• **setButtonDisableImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
-
-通过URL设置按钮控件不可以图片
-
-#### Parameters
-
-| `button` [`Button`](../classes/mw.Button.md) | 按钮控件 |
-| :------ | :------ |
-| `url` `string` | 图片链接 |
-
-
-是否设置成功
-
-___
-
-### setButtonNormalImageByURL <Score text="setButtonNormalImageByURL" /> 
-
-• **setButtonNormalImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
-
-通过URL设置按钮控件普通图片
-
-#### Parameters
-
-| `button` [`Button`](../classes/mw.Button.md) | 按钮控件 |
-| :------ | :------ |
-| `url` `string` | 图片链接 |
-
-
-是否设置成功
-
-___
-
-### setButtonPressedImageByURL <Score text="setButtonPressedImageByURL" /> 
-
-• **setButtonPressedImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
-
-通过URL设置按钮控件按下图片
-
-#### Parameters
-
-| `button` [`Button`](../classes/mw.Button.md) | 按钮控件 |
-| :------ | :------ |
-| `url` `string` | 图片链接 |
-
-
-是否设置成功
-
-___
-
 ### setFocusToGameViewport <Score text="setFocusToGameViewport" /> 
 
 • **setFocusToGameViewport**(): `void` <Badge type="tip" text="client" />
 
 设置关注游戏窗口
 
-
-___
-
-### setImageImageByURL <Score text="setImageImageByURL" /> 
-
-• **setImageImageByURL**(`image`, `url`): `void` <Badge type="tip" text="other" />
-
-通过URL设置图片控件图片
-
-#### Parameters
-
-| `image` [`Image`](../classes/mw.Image.md) | 图片控件 |
-| :------ | :------ |
-| `url` `string` | 图片链接 |
-
-
-是否设置成功
 
 ___
 
@@ -3330,76 +2397,6 @@ ___
 
 ___
 
-### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
-
-• **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
-
-双指移动的时间- 必须大于这个时间才执行双指移动事件
-
-#### Parameters
-
-| `time` `number` |  双指移动限定的时间 |
-| :------ | :------ |
-
-
-___
-
-### setPinchAngleTolerance <Score text="setPinchAngleTolerance" /> 
-
-• **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="client" />
-
-挤压手势的偏差角度
-
-#### Parameters
-
-| `time` `number` |  偏差角度 |
-| :------ | :------ |
-
-
-___
-
-### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 
-
-• **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
-
-单指移动的时间- 必须大于这个时间才会开始执行单指移动
-
-#### Parameters
-
-| `time` `number` |  单指移动的限定时间 |
-| :------ | :------ |
-
-
-___
-
-### setSwipeTolerance <Score text="setSwipeTolerance" /> 
-
-• **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="client" />
-
-双指移动的偏差量- 值越大误差则可以越大
-
-#### Parameters
-
-| `time` `number` |  偏差值 |
-| :------ | :------ |
-
-
-___
-
-### setTapTime <Score text="setTapTime" /> 
-
-• **setTapTime**(`time`): `void` <Badge type="tip" text="client" />
-
-tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
-
-#### Parameters
-
-| `time` `number` |  tap限定的时间 |
-| :------ | :------ |
-
-
-___
-
 ### startRecord <Score text="startRecord" /> 
 
 • **startRecord**(`screenX`, `screenY`, `screenW`, `screenH`): `string` <Badge type="tip" text="client" />
@@ -3408,15 +2405,15 @@ ___
 
 #### Parameters
 
-| `screenX` `number` | 屏幕左上角x值 |
+| `screenX` `number` |  屏幕左上角 X 值 <br> default: null 必填参数 <br> range: 不限制 <br> type: 浮点数 |
 | :------ | :------ |
-| `screenY` `number` | 屏幕左上角Y值 |
-| `screenW` `number` | 录制图像宽度 |
-| `screenH` `number` | 录制图像高度 |
+| `screenY` `number` |  屏幕左上角 Y 值 <br> default: null 必填参数 <br> range: 不限制 <br> type: 浮点数 |
+| `screenW` `number` |  录制图像宽度 <br> default: null 必填参数 <br> range: 不限制 <br> type: 浮点数 |
+| `screenH` `number` |  录制图像高度 <br> default: null 必填参数 <br> range: 不限制 <br> type: 浮点数 |
 
 #### Returns
 
-| `string` |  |
+| `string` | mp4 文件路径。文件路径固定，不同平台路径会有些许差别。 |
 | :------ | :------ |
 
 ___
@@ -3468,121 +2465,6 @@ ___
 
 ___
 
-### undo <Score text="undo" /> 
-
-• **undo**(): `void` <Badge type="tip" text="client" />
-
-执行撤销操作
-
-
-___
-
-### uploadPrefab <Score text="uploadPrefab" /> 
-
-• **uploadPrefab**(`assetId`, `name`, `imagePath`): `Promise`<[`UploadPrefabResult`](Core.mw.md#uploadprefabresult)\> <Badge type="tip" text="other" />
-
-移动编辑器上传预制体
-
-::: warning Precautions
-
-只在MobileEditor模式下调用生效；异步请求
-
-:::
-
-<span style="font-size: 14px;">
-使用示例:调用方法 新建一个脚本 NewScript
-</span>
-
-```ts
-@Component
-export default class NewScript extends Script {
-  //当脚本被实例后，会在第一帧更新前调用此函数
-  protected onStart(): void {
-    //把guid='23C1ED241027B9E0'的预制体上传到服务器上，预制体的名字=我的预制体，缩略图=C:/icon.png
-    mw.uploadPrefab('23C1ED241027B9E0','我的预制体','C:/icon.png').then(item =>{
-       console.log(item.AssetId)
-    });
-  }
-}
-```
-
-#### Parameters
-
-| `assetId` `string` | 预制体资源Id |
-| :------ | :------ |
-| `name` `string` | 名字 |
-| `imagePath` `string` | 512*512的透明png缩略图 |
-
-#### Returns
-
-| `Promise`<[`UploadPrefabResult`](Core.mw.md#uploadprefabresult)\> | 移动编辑器上传预制体返回结果 |
-| :------ | :------ |
-
-___
-
-### uploadScreenShot <Score text="uploadScreenShot" /> 
-
-• **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void` <Badge type="tip" text="client" />
-
-上传角色头像或全身照到服务器后发送到MGS
-
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
-#### Parameters
-
-| `filePath` `string` | 图片路径 |
-| :------ | :------ |
-| `fileType` `number` | 图片类型 default:0-全身照,1-男性头像 2-女性头像 |
-| `callbackURL?` (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
-
-
-___
-
-### uploadScreenShots <Score text="uploadScreenShots" /> 
-
-• **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="client" />
-
-上传角色头像及全身照到服务器后发送到MGS
-
-::: warning Precautions
-
-Playza定制接口
-
-:::
-
-#### Parameters
-
-| `gender` `number` | 角色性别，1-男 2-女 0-未知 |
-| :------ | :------ |
-| `portraitPath` `string` | 头像照路径 |
-| `fullPicPath` `string` | 全身照路径 |
-| `callbackURL?` (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
-
-
-___
-
-### uploadShippingLog <Score text="uploadShippingLog" /> 
-
-• **uploadShippingLog**(`uploadCurrentLog`): `Promise`<`string`\>
-
-移动编辑器推送shipping下的日志
-
-#### Parameters
-
-| `uploadCurrentLog` `boolean` |  true 上传当前的log false 上传备份log |
-| :------ | :------ |
-
-#### Returns
-
-| `Promise`<`string`\> |  |
-| :------ | :------ |
-
-___
-
 ### urlDecode <Score text="urlDecode" /> 
 
 • **urlDecode**(`str`): `string` 
@@ -3591,7 +2473,7 @@ url解码
 
 #### Parameters
 
-| `str` `string` | 内容 |
+| `str` `string` | 内容 range: 不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -3609,7 +2491,7 @@ url转码
 
 #### Parameters
 
-| `str` `string` | 内容 |
+| `str` `string` | 内容 range: 不做限制 |
 | :------ | :------ |
 
 #### Returns

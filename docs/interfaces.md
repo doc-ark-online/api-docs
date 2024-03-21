@@ -25,8 +25,12 @@ Interfaces
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [IBagItemSkin](interfaces/mwext.IBagItemSkin.md) | 格子皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [IBagStruct](interfaces/mwext.IBagStruct.md) | 背包数据结构 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [IItemDeleteSkin](interfaces/mwext.IItemDeleteSkin.md) | 道具删除皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 排行榜面板一条数据的UI结构接口 | [界面](groups/界面.界面.md) |
 | [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 排行榜面板的UI结构接口 | [界面](groups/界面.界面.md) |
+| [ItemConfig](interfaces/mwext.ItemConfig.md) | 道具配置 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 
 
 ## P

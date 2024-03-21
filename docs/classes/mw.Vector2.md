@@ -405,9 +405,9 @@
 
 #### Parameters
 
-| `x?` `number` | x分量 default:0 |
+| `x?` `number` | x分量 default:0 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y?` `number` | y分量 default:0 |
+| `y?` `number` | y分量 default:0 range: 不做限制 type: 浮点数 |
 
 • **new Vector2**(`f`)
 
@@ -415,7 +415,7 @@
 
 #### Parameters
 
-| `f` `number` | 给定的 f 值 |
+| `f` `number` | 给定的 f 值 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
 
 ## Properties
@@ -761,7 +761,7 @@ ___
 | [`Vector2`](mw.Vector2.md) | 克隆得到的新 Vector2 向量 |
 | :------ | :------ |
 ### divide <Score text="divide" /> 
-| `v` `number` | 相除的向量对象 |
+| `v` `number` | 相除的向量对象 range: 不做限制 type:浮点值 |
 | :------ | :------ |
 
 #### Returns
@@ -777,7 +777,7 @@ ___
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量 b |
+| `b` `number` | 向量 b <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -813,7 +813,7 @@ outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 o
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -849,7 +849,7 @@ outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 o
 
 #### Parameters
 
-| `v` `number` | 每个分量乘以的参数 |
+| `v` `number` | 每个分量乘以的参数 range:不做限制 type:浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -899,13 +899,13 @@ ___
 
 #### Parameters
 
-| `x?` `number` | x 分量 default:0.0 |
+| `x?` `number` | x 分量 default:0.0 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y?` `number` | y 分量 default:0.0 |
+| `y?` `number` | y 分量 default:0.0 range: 不做限制 type: 浮点数 |
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | `this` |
+| [`Vector2`](mw.Vector2.md) | this |
 | :------ | :------ |
 
 ___
@@ -1201,7 +1201,7 @@ outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 o
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量 b |
+| `b` `number` | 向量 b <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1237,7 +1237,7 @@ outer 为可选参数。作用是：当传入 outer，计算结果会赋值给 o
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` [`Vector2`](mw.Vector2.md) | 向量 b |
+| `b` [`Vector2`](mw.Vector2.md) | 向量 b <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1277,7 +1277,7 @@ ___
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `b` [`Vector2`](mw.Vector2.md) | 向量 b |
-| `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
+| `epsilon?` `number` | 最小误差数 default:MathUtil.EPSILON <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -1315,7 +1315,7 @@ ___
 
 #### Parameters
 
-| `str` `string` | 传入的字符串 |
+| `str` `string` | 传入的字符串 range:"0.000000,0.000000" |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
@@ -1380,7 +1380,7 @@ ___
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
-| `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
+| `epsilon?` `number` | 最小误差数 default:MathUtil.EPSILON <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -1404,7 +1404,7 @@ ___
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
 | `b` [`Vector2`](mw.Vector2.md) | 向量 b |
-| `t` `number` | 插值 |
+| `t` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1487,7 +1487,7 @@ ___
 | `current` [`Vector2`](mw.Vector2.md) | 当前向量 |
 | :------ | :------ |
 | `target` [`Vector2`](mw.Vector2.md) | 目标向量 |
-| `maxDistanceDelta` `number` | 最大移动距离 |
+| `maxDistanceDelta` `number` | 最大移动距离 <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1509,7 +1509,7 @@ ___
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `b` `number` | 向量 b |
+| `b` `number` | 数值 b <br> range: 不限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1646,7 +1646,7 @@ ___
 
 #### Parameters
 
-| `range?` `number` | 范围 default:1.0 |
+| `range?` `number` | 范围 default:1.0 <br> range: 不限制 type:浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -1688,7 +1688,7 @@ ___
 
 | `v` [`Vector2`](mw.Vector2.md) | 向量v |
 | :------ | :------ |
-| `radians` `number` | 旋转角度 |
+| `radians` `number` | 旋转角度 <br> range: 无限制 type:浮点数 |
 | `outer?` [`Vector2`](mw.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
@@ -1729,8 +1729,8 @@ ___
 
 | `a` [`Vector2`](mw.Vector2.md) | 向量 a |
 | :------ | :------ |
-| `x` `number` | 修改的 x 值 |
-| `y` `number` | 修改的 y 值 |
+| `x` `number` | 修改的 x 值 <br> range: 不限制 type:浮点数 |
+| `y` `number` | 修改的 y 值 <br> range: 不限制 type:浮点数 |
 
 #### Returns
 
@@ -1739,7 +1739,7 @@ ___
 
 ::: warning Precautions
 
-向量a不能为空对象
+向量 a 不能为空对象
 
 :::
 

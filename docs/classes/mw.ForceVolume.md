@@ -1,0 +1,514 @@
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ForceVolume
+
+# ForceVolume <Badge type="tip" text="Class" /> <Score text="ForceVolume" />
+
+物理力区域
+
+-------------------------
+
+进入力区域的角色或开启物理模拟的物体，会受到力的作用
+
+如何使用力区域：
+
+- 创建一个力区域对象。可手动将左侧栏中逻辑对象中的力区域拖入场景中，在编辑器属性面板中调整参数；也可以在脚本中动态创建力区域。
+
+- 设置力区域对象属性 自动启用/enabled 为 true ，才可触发力的效果。
+
+- 选择一种力区域的类型，指向力会向指定方向施加指定大小的力，而径向力会沿球心方向施加指定大小的力
+
+- 对于指向力，需要设置 指向力值/directionalForce 指定大小和方向；对于径向力，需要设置 径向力值/radialForce 指定大小
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"ForceVolumeSample"的脚本，按 Q 使方块进入力区域，接下来使用数字键 1 控制开关，使用数字键 2 切换力的类型，使用数字键 3 切换力的大小，就可以看到方块在力区域中的表现了
+</span>
+
+注意：默认给的径向力大小不足以使方块运动起来，所以不调整大小的情况下切换为径向力之后方块坠地为正常表现；如果方块在运动过程中离开了区域，再按一次 Q 可以将方块重新置于力区域中；由于力区域仅存在于服务端，对于以主控端表现为主的角色无影响也是正常表现
+代码如下：
+```ts
+@Component
+export default class ForceVolumeSample extends Script {
+
+   public myFV: ForceVolume;
+   public myCube: Model;
+   public myFlag: boolean = true;
+
+   // 当脚本被实例后，会在第一帧更新前调用此函数
+   protected async onStart(): `Promise`<`void`\> {
+
+       // 在服务端添加一个开启物理模拟并移动位置的监听回调函数
+       if (SystemUtil.isServer()) {
+           Event.addClientListener("EnablePhysicsAndSetPosition", (player: Player)=>{
+               this.myCube.physicsEnabled = true;
+               this.myCube.localTransform.position = new Vector(500, 0, 0);
+           });
+       }
+
+       // 在服务端添加一个开启/关闭力区域的监听回调函数
+       if (SystemUtil.isServer()) {
+           Event.addClientListener("SwitchForceVolumeEnabledStatus", (player: Player)=>{
+               if (this.myFV.enabled) {
+                   this.myFV.enabled = false;
+               } else {
+                   this.myFV.enabled = true;
+               }
+           });
+       }
+
+       // 在服务端添加一个切换指向力/径向力区域的监听回调函数
+       if (SystemUtil.isServer()) {
+           Event.addClientListener("SwitchForceVolumeType", (player: Player)=>{
+               if (this.myFV.forceType == ForceType.Directed) {
+                   this.myFV.forceType = ForceType.Radial;
+               } else {
+                   this.myFV.forceType = ForceType.Directed;
+               }
+           });
+       }
+
+       // 在服务端添加一个切换切换指向力/径向力大小（正常大小与三倍大小）的监听回调函数
+       if (SystemUtil.isServer()) {
+           Event.addClientListener("SwitchForceVolumeIntensity", (player: Player)=>{
+               if (this.myFlag) {
+                   this.myFV.directionalForce = new Vector(0, 0, 900000);
+                   this.myFV.radialForce = 900000;
+                   this.myFlag = false;
+               } else {
+                   this.myFV.directionalForce = new Vector(0, 0, 300000);
+                   this.myFV.radialForce = 300000;
+                   this.myFlag = true;
+               }
+           });
+       }
+
+       // 在服务端创建一个力区域对象
+       if (SystemUtil.isServer()) {
+           this.myFV = await GameObject.asyncSpawn<ForceVolume>("ForceVolume",
+           {
+               replicates: true,
+               transform: new Transform()
+           });
+       }
+
+       // 在服务端修改力区域的位置与缩放
+       if (SystemUtil.isServer()) {
+           let myFVTrans = this.myFV.localTransform;
+           let newPosition = new Vector(500, 0, 250);
+           myFVTrans.position = newPosition;
+           let newScale = new Vector(5, 5, 5);
+           myFVTrans.scale = newScale;
+       }
+
+       // 在服务端修改力区域的具体数据，并绑定进出区域事件输出log
+       if (SystemUtil.isServer()) {
+           this.myFV.enabled = true;
+           this.myFV.forceType = ForceType.Directed;
+           this.myFV.directionalForce = new Vector(0, 0, 300000);
+           this.myFV.radialForce = 300000;
+           this.myFV.onEnter.add(()=>{
+               console.log("Something entered ForceVolume");
+           });
+           this.myFV.onLeave.add(()=>{
+               console.log("Something left ForceVolume");
+           });
+       }
+
+       // 在服务端创建一个方块，客户端按下 Q 开启物理模拟，并将方块移动到力区域内
+       if (SystemUtil.isServer()) {
+           this.myCube = await GameObject.asyncSpawn<Model>("197386",
+           {
+               replicates: true,
+               transform: new Transform()
+           });
+       }
+       InputUtil.onKeyDown(Keys.Q, ()=>{
+           // 客户端通知服务器执行相应操作
+           Event.dispatchToServer("EnablePhysicsAndSetPosition");
+       });
+
+       // 在客户端按数字键 1 来开启/关闭力区域
+       InputUtil.onKeyDown(Keys.One, ()=>{
+           // 客户端通知服务器执行相应操作
+           Event.dispatchToServer("SwitchForceVolumeEnabledStatus");
+       });
+
+       // 在客户端按数字键 2 来切换指向力/径向力区域
+       InputUtil.onKeyDown(Keys.Two, ()=>{
+           // 客户端通知服务器执行相应操作
+           Event.dispatchToServer("SwitchForceVolumeType");
+       })
+
+       // 在客户端按数字键 3 来切换指向力/径向力大小（正常大小与三倍大小）
+       InputUtil.onKeyDown(Keys.Three, ()=>{
+           // 客户端通知服务器执行相应操作
+           Event.dispatchToServer("SwitchForceVolumeIntensity");
+       })
+   }
+}
+```
+
+## Hierarchy
+
+- [`GameObject`](mw.GameObject.md)
+
+  ↳ **`ForceVolume`**
+
+## Table of contents
+
+### Properties <Score text="Properties" /> 
+| **[onEnter](mw.ForceVolume.md#onenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| :-----|
+| 进入物理力区域回调函数|
+| **[onLeave](mw.ForceVolume.md#onleave)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| 离开物理力区域回调函数|
+
+
+::: details click
+### Properties <Score text="Properties" /> 
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
+| :-----|
+| 物体销毁后事件回调|
+:::
+
+
+### Accessors <Score text="Accessors" /> 
+| **[directionalForce](mw.ForceVolume.md#directionalforce)**(): [`Vector`](mw.Vector.md)   |
+| :-----|
+| 获取物理力区域在指向类型时力的大小|
+| **[enabled](mw.ForceVolume.md#enabled)**(): `boolean`   |
+| 获取是否启用物理力区域|
+| **[forceType](mw.ForceVolume.md#forcetype)**(): [`ForceType`](../enums/mw.ForceType.md)   |
+| 获取物理力区域力的应用方式|
+| **[radialForce](mw.ForceVolume.md#radialforce)**(): `number`   |
+| 获取物理力区域在指向类型时力的大小|
+
+
+::: details click
+### Accessors <Score text="Accessors" /> 
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
+| :-----|
+| 获取当前物体使用资源的GUID|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
+| 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
+| 当前物体状态|
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
+| 当前物体本地变换|
+| **[name](mw.GameObject.md#name)**(): `string`   |
+| 返回当前物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)   |
+| 获取当前物体同步状态|
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
+| 获取当前父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`   |
+| 获取当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
+| 当前物体世界变换|
+:::
+
+
+### Methods <Score text="Methods" /> 
+
+
+::: details click
+### Methods <Score text="Methods" /> 
+| **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| :-----|
+| 添加一个脚本组件|
+| **[asyncGetChildByName](mw.GameObject.md#asyncgetchildbyname)**(`name`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 异步根据名称查找子物体|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 物体准备好后返回|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
+| 复制对象|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`   |
+| 删除对象|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
+| 获取物体边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 根据 gameObjectId 查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 根据名称查找子物体|
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 根据路径查找子物体|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
+| 获取子物体|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
+| 通过名字查找所有的子物体|
+| **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
+| 获取指定类型的组件|
+| **[getComponentPropertys](mw.GameObject.md#getcomponentpropertys)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `Map`<`string`, `IPropertyOptions`\>   |
+| 获取脚本组件属性|
+| **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
+| 获取指定类型的所有组件|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
+| 获取物体是否被显示|
+| **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
+| 设置物体localTransform是相对于父物体或者世界|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
+| 设置物体是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 通过 gameObjectId 异步查找 GameObject|
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 通过路径异步查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
+| 异步构造一个物体|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 通过 gameObjectId 查找物体|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 通过名字查找物体|
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
+| 通过名字查找物体|
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]   |
+| 通过自定义标签获取物体|
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
+| 通过路径查找物体|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
+| 构造一个物体|
+:::
+
+
+## Properties
+
+___
+
+### onEnter <Score text="onEnter" /> 
+
+• **onEnter**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+进入物理力区域回调函数
+
+<span style="font-size: 14px;">
+使用示例:（回调使用）创建一个名为"FVOnEnterSample"的脚本，将脚本挂载到对象管理器中的力区域下，控制角色走进区域，你将会看到服务端和客户端的log输出，代码如下：
+</span>
+
+```ts
+@Component
+export default class FVOnEnterSample extends Script {
+
+   // 当脚本被实例后，会在第一帧更新前调用此函数
+   protected onStart(): void {
+       let FV = this.gameObject as ForceVolume;
+       FV.onEnter.add(()=>{
+           console.log("Something entered ForceVolume");
+       });
+   }
+}
+```
+
+___
+
+### onLeave <Score text="onLeave" /> 
+
+• **onLeave**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+离开物理力区域回调函数
+
+<span style="font-size: 14px;">
+使用示例:（回调使用）创建一个名为"FVOnLeaveSample"的脚本，将脚本挂载到对象管理器中的力区域下，控制角色走进再离开区域，你将会看到服务端和客户端的log输出，代码如下：
+</span>
+
+```ts
+@Component
+export default class FVOnLeaveSample extends Script {
+
+   // 当脚本被实例后，会在第一帧更新前调用此函数
+   protected onStart(): void {
+       let FV = this.gameObject as ForceVolume;
+       FV.onLeave.add(()=>{
+           console.log("Something left ForceVolume");
+       });
+   }
+}
+```
+
+## Accessors
+
+___
+
+### directionalForce <Score text="directionalForce" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **directionalForce**(): [`Vector`](mw.Vector.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **directionalForce**(`newVector`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取物理力区域在指向类型时力的大小
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 当前指向力的向量 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置物理力区域在指向类型时力的大小
+
+#### Parameters
+
+| `newVector` [`Vector`](mw.Vector.md) |  指向力向量 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### enabled <Score text="enabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **enabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **enabled**(`newEnabledStatus`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否启用物理力区域
+
+#### Returns
+
+| `boolean` | 是否启用物理力区域 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否启用物理力区域，禁用状态下，不会应用力到物体上
+
+#### Parameters
+
+| `newEnabledStatus` `boolean` |  是否启用该物理区域，设置为 false 后依然会有碰撞事件，但不会应用力 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### forceType <Score text="forceType" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **forceType**(): [`ForceType`](../enums/mw.ForceType.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **forceType**(`newForceType`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取物理力区域力的应用方式
+
+#### Returns
+
+| [`ForceType`](../enums/mw.ForceType.md) | 当前物理力区域的类型 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置物理力区域力的应用方式
+
+#### Parameters
+
+| `newForceType` [`ForceType`](../enums/mw.ForceType.md) |  力区域的类型 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### radialForce <Score text="radialForce" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **radialForce**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **radialForce**(`newIntensity`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取物理力区域在指向类型时力的大小
+
+#### Returns
+
+| `number` | 当前径向力的大小 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置物理力区域在径向类型时力的大小
+
+#### Parameters
+
+| `newIntensity` `number` |  径向力大小 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+
+
+## Methods

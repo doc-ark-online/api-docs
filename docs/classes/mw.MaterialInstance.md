@@ -57,7 +57,7 @@ export default class MaterialExample extends Script {
 | **[getVectorParameterValue](mw.MaterialInstance.md#getvectorparametervalue)**(`parameterName`: `string`): [`LinearColor`](mw.LinearColor.md)   |
 | 获取颜色参数值|
 | **[setScalarParameterValue](mw.MaterialInstance.md#setscalarparametervalue)**(`parameterName`: `string`, `value`: `number`): `void`   |
-| 设置浮点参数值|
+| 设置浮点参数值。|
 | **[setTextureParameterValue](mw.MaterialInstance.md#settextureparametervalue)**(`parameterName`: `string`, `value`: `string`): `void`   |
 | 设置贴图参数值|
 | **[setVectorParameterValue](mw.MaterialInstance.md#setvectorparametervalue)**(`parameterName`: `string`, `value`: [`LinearColor`](mw.LinearColor.md)): `void`   |
@@ -112,13 +112,19 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  传入材质标量参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | 参数值 |
 | :------ | :------ |
+
+使用这个函数可以在代码中获取材质实例中指定标量参数的值。
+
+标量参数是材质中的一个可调节的数值，可以用于控制材质的各种属性，例如颜色、强度、透明度等。
+
+通过获取标量参数的值，可以根据需要在游戏中进行动态调整和使用。
 
 ___
 
@@ -130,7 +136,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  参数名称 range: 想要设置的贴图参数名字长度 |
 | :------ | :------ |
 
 #### Returns
@@ -148,7 +154,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -162,13 +168,13 @@ ___
 
 • **setScalarParameterValue**(`parameterName`, `value`): `void` 
 
-设置浮点参数值
+设置浮点参数值。
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
 | :------ | :------ |
-| `value` `number` |  参数值 |
+| `value` `number` |  参数值 设置可调节参数的数值为多少。type: 浮点数 range: 不做限制。 |
 
 
 ___
@@ -181,9 +187,9 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  参数名称 range: 想要设置的贴图参数名字长度 |
 | :------ | :------ |
-| `value` `string` |  参数值 |
+| `value` `string` |  参数值 range: 被设置的值，不做限制，合理即可 |
 
 
 ___
@@ -196,7 +202,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 |
+| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
 | :------ | :------ |
-| `value` [`LinearColor`](mw.LinearColor.md) |  参数值 |
+| `value` [`LinearColor`](mw.LinearColor.md) |  参数值 type: 浮点数 range: 不做限制。 |
 

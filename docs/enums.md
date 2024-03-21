@@ -12,6 +12,7 @@ Enums
 | [AnimSlot](enums/mw.AnimSlot.md) | 动画插槽 | [动画](groups/动画.动画.md) |
 | [AnimationMode](enums/mw.AnimationMode.md) | 动画模式 | [动画](groups/动画.动画.md) |
 | [AppearanceType](enums/mw.AppearanceType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
+| [AssetIconSize](enums/mw.AssetIconSize.md) | 图标的分辨率 | [GUI](groups/GUI.GUI.md) |
 | [AssetNonHumanoidSlotType](enums/mw.AssetNonHumanoidSlotType.md) | 非人形角色插槽类型 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [AssetType](enums/mw.AssetType.md) | 资源类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [AttenuationDistanceModel](enums/mw.AttenuationDistanceModel.md) | 音效衰减函数模型 | [场景](groups/场景.场景.md) |
@@ -63,23 +64,27 @@ Enums
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [FaceStyle](enums/mw.FaceStyle.md) | 角色基础脸型 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [FogPreset](enums/mw.FogPreset.md) | 环境雾预设枚举 | [场景](groups/场景.场景.md) |
+| [ForceType](enums/mw.ForceType.md) | 力区域的施力类型 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
 
 
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [基类](groups/基类.基类.md) |
-| [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [基础类型](groups/基础类型.基础类型.md) |
-| [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [基础类型](groups/基础类型.基础类型.md) |
-| [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |
-| [GraphicsLevel](enums/mw.GraphicsLevel.md) | 画质等级 | [基础类型](groups/基础类型.基础类型.md) |
+| [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoScaleType](enums/mw.GizmoScaleType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoSocketType](enums/mw.GizmoSocketType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [GravityMode](enums/mw.GravityMode.md) | 重力模式 | [设置](groups/设置.设置.md) |
 
 
 ## H
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [HideInEditorState](enums/mw.HideInEditorState.md) | 是否在编辑器里隐藏 | [基础类型](groups/基础类型.基础类型.md) |
 | [HotWeaponAimMode](enums/mw.HotWeaponAimMode.md) | 热武器瞄准模式 | [玩法](groups/玩法.玩法.md) |
 | [HotWeaponFireMode](enums/mw.HotWeaponFireMode.md) | 热武器开火模式 | [玩法](groups/玩法.玩法.md) |
 | [HotWeaponState](enums/mw.HotWeaponState.md) | 热武器状态 | [玩法](groups/玩法.玩法.md) |
@@ -91,10 +96,13 @@ Enums
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [IKPart](enums/mw.IKPart.md) | IK锚点类型 | [玩法](groups/玩法.玩法.md) |
 | [ImpulseForceType](enums/mw.ImpulseForceType.md) | 冲量力类型 | [玩法](groups/玩法.玩法.md) |
 | [ImpulseType](enums/mw.ImpulseType.md) | 冲量的应用方式 | [玩法](groups/玩法.玩法.md) |
 | [InitialOscillatorOffset](enums/mw.InitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [玩法](groups/玩法.玩法.md) |
 | [InputTextLimit](enums/mw.InputTextLimit.md) | 输入框限制 | [界面](groups/界面.界面.md) |
+| [InsertNewLineType](enums/mw.InsertNewLineType.md) | 输入款回车键功能 | [界面](groups/界面.界面.md) |
+| [ItemQuality](enums/mwext.ItemQuality.md) | 道具品质 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 
 
 ## K
@@ -107,7 +115,6 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageType](enums/mw.LanguageType.md) | 游戏语言 | [基础类型](groups/基础类型.基础类型.md) |
-| [LogLevel](enums/mw.LogLevel.md) | 日志等级 | [基础类型](groups/基础类型.基础类型.md) |
 
 
 ## M
@@ -118,6 +125,7 @@ Enums
 | [MessageState](enums/mw.MessageState.md) | 发送消息的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageType](enums/mw.MessageType.md) | 发送消息的类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [MotionAxis](enums/mw.MotionAxis.md) | 运动坐标系 | [玩法](groups/玩法.玩法.md) |
+| [MouseCursor](enums/mw.MouseCursor.md) | 光标类型 | [界面](groups/界面.界面.md) |
 | [MouseLockMode](enums/mw.MouseLockMode.md) | 鼠标锁定模式 | [界面](groups/界面.界面.md) |
 | [MoveControlMode](enums/mw.MoveControlMode.md) | 移动控制模式 | [角色系统](groups/角色系统.角色系统.md) |
 | [MoveFacingDirection](enums/mw.MoveFacingDirection.md) | 运动时面朝方向 | [角色系统](groups/角色系统.角色系统.md) |
@@ -145,7 +153,6 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [场景](groups/场景.场景.md) |
-| [PrefabStatus](enums/mw.PrefabStatus.md) | 预制体审核状态 | [数据处理](groups/数据处理.数据处理.md) |
 | [ProgressBarFillType](enums/mw.ProgressBarFillType.md) | 进度条填充规则 | [界面](groups/界面.界面.md) |
 | [ProjectileMovementStatus](enums/mw.ProjectileMovementStatus.md) | 投掷物移动状态 | [玩法](groups/玩法.玩法.md) |
 | [PropertyStatus](enums/mw.PropertyStatus.md) | 属性状态 | [基础类型](groups/基础类型.基础类型.md) |
@@ -154,7 +161,6 @@ Enums
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ReleaseStatus](enums/mw.ReleaseStatus.md) | UGC 发布的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [RuntimePlatform](enums/mw.RuntimePlatform.md) | 运行平台 | [基础类型](groups/基础类型.基础类型.md) |
 
 
@@ -163,7 +169,6 @@ Enums
 | :-----| :-----| :-----|
 | [ScrollBarDefaultLocation](enums/mw.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [界面](groups/界面.界面.md) |
 | [SelectInfo](enums/mw.SelectInfo.md) | 列表视图选择来源信息 | [GUI](groups/GUI.GUI.md) |
-| [SelectTapType](enums/mw.SelectTapType.md) | UGC 选中的单选或者多选 | [基础类型](groups/基础类型.基础类型.md) |
 | [SelectionMode](enums/mw.SelectionMode.md) | 列表视图选择模式 | [GUI](groups/GUI.GUI.md) |
 | [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [场景](groups/场景.场景.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [界面](groups/界面.界面.md) |
@@ -202,7 +207,6 @@ Enums
 | [UIScrollBoxAnimationType](enums/mw.UIScrollBoxAnimationType.md) | 滚动框动画类型 | [界面](groups/界面.界面.md) |
 | [UITextHorizontalLayout](enums/mw.UITextHorizontalLayout.md) | 文本框规则显示规则限制 | [界面](groups/界面.界面.md) |
 | [UIVerticalCollation](enums/mw.UIVerticalCollation.md) | 自动布局子项布局排序 - 垂直排序 | [界面](groups/界面.界面.md) |
-| [UploadPrefabResultType](enums/mw.UploadPrefabResultType.md) | 移动编辑器上传预制体返回状态 | [数据处理](groups/数据处理.数据处理.md) |
 
 
 ## V

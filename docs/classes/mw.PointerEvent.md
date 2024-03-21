@@ -7,10 +7,8 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[effectingButton](mw.PointerEvent.md#effectingbutton)**(): [`KeyEvent`](mw.KeyEvent.md) <Badge type="tip" text="client" />  |
-| :-----|
-| 获取响应的事件key|
 | **[isTouchEvent](mw.PointerEvent.md#istouchevent)**(): `boolean` <Badge type="tip" text="client" />  |
+| :-----|
 | 判断是不是触摸事件|
 | **[lastScreenSpacePosition](mw.PointerEvent.md#lastscreenspaceposition)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取该事件上一次的屏幕位置|
@@ -35,33 +33,6 @@
 默认构造
 
 ## Accessors
-
-### effectingButton <Score text="effectingButton" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **effectingButton**(): [`KeyEvent`](mw.KeyEvent.md) <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取响应的事件key
-
-#### Returns
-
-| [`KeyEvent`](mw.KeyEvent.md) | 返回响应的事件key |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
 
 ### isTouchEvent <Score text="isTouchEvent" /> 
 

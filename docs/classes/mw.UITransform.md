@@ -2,7 +2,7 @@
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
-节点Transform
+Transform
 
 ## Table of contents
 
@@ -13,15 +13,15 @@
 | **[size](mw.UITransform.md#size)**: [`Vector2`](mw.Vector2.md)  |
 | 大小|
 
-构造每一个值
+构造
 
 #### Parameters
 
-| `x` `number` | 位置 Position.X |
+| `x` `number` | 位置 Position.X range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` |  位置 Position.Y |
-| `w` `number` | 大小 Size.W 宽 |
-| `h` `number` | 大小 Size.H 高 |
+| `y` `number` |  位置 Position.Y range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2 type: 浮点数 |
+| `w` `number` | 大小 Size.W 宽 range:不做限制 type: 浮点数 |
+| `h` `number` | 大小 Size.H 高 range:不做限制 type: 浮点数 |
 
 • **new UITransform**(`xy`, `wh`)
 

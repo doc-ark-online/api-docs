@@ -16,13 +16,13 @@
 ### Methods <Score text="Methods" /> 
 | **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void`   |
 | :-----|
-| 清除delayExecute|
+| 清除 delayExecute|
 | **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`   |
-| 清除setInterval|
+| 清除 setInterval|
 | **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`   |
 | 延迟一定帧数执行方法|
 | **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>   |
-| 延迟一定秒数,用于异步方法中间的等待|
+| 延迟一定秒数，用于异步方法中间的等待|
 | **[deltatime](mw.TimeUtil.md#deltatime)**(): `number`   |
 | 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`   |
@@ -86,11 +86,11 @@ ___
 
 • `Static` **clearDelayExecute**(`id`): `void` 
 
-清除delayExecute
+清除 delayExecute
 
 #### Parameters
 
-| `id` `number` |  delayExecute方法返回的ID |
+| `id` `number` |  delayExecute 方法返回的 ID <br> range: 根据 ID 长度而定。 type: 整数 |
 | :------ | :------ |
 
 
@@ -125,11 +125,11 @@ ___
 
 • `Static` **clearInterval**(`id`): `void` 
 
-清除setInterval
+清除 setInterval
 
 #### Parameters
 
-| `id` `number` |  setInterval方法返回的ID |
+| `id` `number` |  setInterval 方法返回的 ID <br> range: 根据 ID 长度而定。 type: 浮点数 |
 | :------ | :------ |
 
 
@@ -178,7 +178,7 @@ ___
 
 | `handler` () => `void` |  执行的方法 |
 | :------ | :------ |
-| `frameNum?` `number` |  要延迟的帧数 default: 1 |
+| `frameNum?` `number` |  要延迟的帧数 default: 1 <br> range: 根据你想要延迟的帧数而定，不做限制。 type: 整数 |
 
 #### Returns
 
@@ -213,11 +213,11 @@ ___
 
 • `Static` **delaySecond**(`second`): `Promise`<`void`\> 
 
-延迟一定秒数,用于异步方法中间的等待
+延迟一定秒数，用于异步方法中间的等待
 
 #### Parameters
 
-| `second` `number` |  时间(单位：秒) |
+| `second` `number` |  时间(单位：秒) <br> range: 不限制 type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -318,9 +318,9 @@ ___
 
 #### Parameters
 
-| `timeData` `Date` | 标准时间, 时间戳等 |
+| `timeData` `Date` | 标准时间，时间戳等 |
 | :------ | :------ |
-| `format?` `string` | 日期字符造串 default:outer |
+| `format?` `string` | 日期字符串 default:outer range: 传入时间格式，如：1996-01-20 |
 
 #### Returns
 
@@ -360,12 +360,12 @@ ___
 
 | `handler` () => `void` |  要执行的方法 |
 | :------ | :------ |
-| `timeout` `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` () => `boolean` |  退出的判断方法 返回true停止 default: null |
+| `timeout` `number` |  间隔时间（最小时间为两帧时间差 单位：秒） <br> range:[0, +∞] type: 浮点数 |
+| `exitJudge?` () => `boolean` |  退出的判断方法 返回 true 停止 default: null |
 
 #### Returns
 
-| `number` | 用于停止的ID |
+| `number` | 用于停止的 ID |
 | :------ | :------ |
 
 <span style="font-size: 14px;">

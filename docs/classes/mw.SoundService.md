@@ -21,7 +21,7 @@
 ### Methods <Score text="Methods" /> 
 | **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\> <Badge type="tip" text="client" />  |
 | :-----|
-| 根据播放id获取一个3DSound|
+| 根据播放 id 获取一个 3DSound|
 | **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md), `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number` <Badge type="tip" text="other" />  |
 | 在目标播放3D音效|
 | **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void` <Badge type="tip" text="other" />  |
@@ -198,16 +198,16 @@ ___
 
 • `Static` **get3DSoundById**(`playId`): `Promise`<[`Sound`](mw.Sound.md)\> <Badge type="tip" text="client" />
 
-根据播放id获取一个3DSound
+根据播放 id 获取一个 3DSound
 
 #### Parameters
 
-| `playId` `number` |  播放id |
+| `playId` `number` |  播放的唯一标识，音效资源 ID，等同于 assetId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 type:整数 |
 | :------ | :------ |
 
 #### Returns
 
-| `Promise`<[`Sound`](mw.Sound.md)\> | Sound对象的gameObject |
+| `Promise`<[`Sound`](mw.Sound.md)\> | Sound 对象的 gameObject |
 | :------ | :------ |
 
 <span style="font-size: 14px;">
@@ -251,11 +251,11 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  资源Id |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 | `target` `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID  GameObject  世界坐标) |
-| `loopCount?` `number` |  循环次数 default: 1 |
-| `volume?` `number` |  音量 default: 1 |
+| `loopCount?` `number` |  循环次数，当=0时，为无限播放 default: 1 range:不做限制 type:整数 |
+| `volume?` `number` |  音量 default: 1 range:不做限制 type:整数 |
 | `params?` `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
 | `params.falloffDistance?` `number` | - |
 | `params.radius?` `number` | - |
@@ -309,9 +309,9 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  资源Id |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
-| `volume?` `number` |  音量 default: 1 |
+| `volume?` `number` |  音量 default: 1 range:不做限制 type:整数 |
 
 
 <span style="font-size: 14px;">
@@ -345,10 +345,10 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  资源id |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
-| `loopCount?` `number` |  循环次数(0无限) default: 1 |
-| `volume?` `number` |  音量 default: 1 |
+| `loopCount?` `number` |  循环次数，当=0时，为无限播放 default: 1 range:不做限制 type:整数 |
+| `volume?` `number` |  音量 default: 1 range:不做限制 type:整数 |
 
 #### Returns
 
@@ -395,7 +395,7 @@ ___
 
 #### Parameters
 
-| `playId` `number` |  播放声音的唯一标识 |
+| `playId` `number` |  播放的唯一标识，音效资源 ID，等同于 assetId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 type:整数 |
 | :------ | :------ |
 
 
@@ -564,7 +564,7 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  资源Id |
+| `assetId` `string` |  播放的唯一标识，音效资源 ID，等同于 playId。区别是 playId 传递的是 number 类型，如：4330；assetId 传字符串类型 "4330" 即可。 range: 字符串长度依据资源 ID 长度而定 |
 | :------ | :------ |
 
 

@@ -332,7 +332,7 @@ class PlayerModuleData extends Subdata {
 ### Methods <Score text="Methods" /> 
 | **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`   |
 | :-----|
-| 调用一个模块的onExecute方法|
+| 调用一个模块的 onExecute 方法|
 | **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>   |
 | 根据类型获取一个模块。|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`   |
@@ -350,14 +350,14 @@ class PlayerModuleData extends Subdata {
 
 • `Static` **callExecute**<`T`\>(`moduleClass`, `type?`, `...params`): `any` 
 
-调用一个模块的onExecute方法
+调用一个模块的 onExecute 方法
 
 #### Parameters
 
 | `moduleClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  模块 |
 | :------ | :------ |
-| `type?` `number` |  给onExecute方法传递的操作类型，需要各个模块自己定义 default: 0 |
-| `...params` `any`[] |  给onExecute方法传递的参数，需要各个模块自己定义 |
+| `type?` `number` |  给 onExecute 方法传递的操作类型，需要各个模块自己定义 default: 0 range: type: |
+| `...params` `any`[] |  给 onExecute 方法传递的参数，需要各个模块自己定义 |
 
 #### Returns
 

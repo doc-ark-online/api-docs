@@ -33,7 +33,7 @@
 
 #### Parameters
 
-| `key` `string` | 字符串类型键 |
+| `key` `string` | 字符串类型键，用来查找唯一标识存储的数据 <br> range: 字符串长度依据 asyncSetData 设置的而定。 |
 | :------ | :------ |
 
 #### Returns
@@ -51,9 +51,9 @@ ___
 
 #### Parameters
 
-| `gameId` `string` | 开发者后台其他游戏的gameId |
+| `gameId` `string` | 开发者后台其他游戏的 gameId。<br> range: 字符串长度依据 gameId 长度而定。 |
 | :------ | :------ |
-| `key` `string` | 字符串类型键 |
+| `key` `string` | 字符串类型键，用来查找唯一标识存储的数据。 <br> range: 字符串长度依据设置长度而定。 |
 
 #### Returns
 
@@ -70,7 +70,7 @@ ___
 
 #### Parameters
 
-| `key` `string` | 字符串类型键 |
+| `key` `string` | 字符串类型键，用来查找唯一标识存储的数据 <br> range: 字符串长度依据 asyncSetData 设置的而定。 |
 | :------ | :------ |
 
 #### Returns
@@ -88,9 +88,9 @@ ___
 
 #### Parameters
 
-| `key` `string` | 字符串类型的键，用来唯一标识存储的数据。 |
+| `key` `string` | 字符串类型的键，用来唯一标识存储的数据。<br> range: 字符串长度不做限制，但请设置合适的标识。 |
 | :------ | :------ |
-| `value` `any` | 要保存的数据,不支持map类型及数据结构中包含map,且无法还原function |
+| `value` `any` | 要保存的数据，不支持 map 类型及数据结构中包含 map，且无法还原 function |
 
 #### Returns
 
@@ -107,10 +107,10 @@ ___
 
 #### Parameters
 
-| `gameId` `string` | 开发者后台其他游戏的gameId |
+| `gameId` `string` | 开发者后台其他游戏的 gameId <br> range: 字符串长度依据 gameId 长度而定。 |
 | :------ | :------ |
-| `key` `string` | 字符串类型键 |
-| `value` `any` | 要保存的数据,不支持map类型及数据结构中包含map,且无法还原function |
+| `key` `string` | 字符串类型键，用来查找唯一标识存储的数据 <br> range: 字符串长度依据设置长度而定。 |
+| `value` `any` | 要保存的数据，不支持 map 类型及数据结构中包含 map，且无法还原 function |
 
 #### Returns
 

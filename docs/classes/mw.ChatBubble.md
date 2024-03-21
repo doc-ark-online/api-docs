@@ -1,4 +1,4 @@
-[服务](../groups/服务.服务.md) / ChatBubble
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / ChatBubble
 
 # ChatBubble <Badge type="tip" text="Class" /> <Score text="ChatBubble" />
 
@@ -42,7 +42,7 @@
 | 当收到某一段文字时触发的委托|
 
 ### Methods <Score text="Methods" /> 
-| **[displayChatBubbble](mw.ChatBubble.md#displaychatbubbble)**(`parent`: [`GameObject`](mw.GameObject.md), `message`: `string`): `void`  |
+| **[displayChatBubbble](mw.ChatBubble.md#displaychatbubbble)**(`parent`: [`GameObject`](mw.GameObject.md), `message`: `string`): `void`   |
 | :-----|
 | 显示气泡|
 
@@ -805,15 +805,15 @@ ___
 
 ### displayChatBubbble <Score text="displayChatBubbble" /> 
 
-• `Static` **displayChatBubbble**(`parent`, `message`): `void`
+• `Static` **displayChatBubbble**(`parent`, `message`): `void` 
 
 显示气泡
 
 #### Parameters
 
-| `parent` | [`GameObject`](mw.GameObject.md) |
+| `parent` [`GameObject`](mw.GameObject.md) |  气泡挂载的 gameobject 物体 |
 | :------ | :------ |
-| `message` | `string` |
+| `message` `string` |  气泡显示的文字 <br> range: 不限制 |
 
 
 <span style="font-size: 14px;">

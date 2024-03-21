@@ -66,7 +66,7 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 | `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
 
@@ -122,7 +122,7 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 | `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
 
@@ -277,7 +277,7 @@ ___
 
 #### Parameters
 
-| `guid` `string` |  资源GUID |
+| `guid` `string` |  资源 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 | `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
 

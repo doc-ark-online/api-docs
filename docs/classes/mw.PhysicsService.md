@@ -1,4 +1,4 @@
-[玩法](../groups/玩法.玩法.md) / PhysicsService
+[UTILITY](../groups/UTILITY.UTILITY.md) / PhysicsService
 
 # PhysicsService <Badge type="tip" text="Class" /> <Score text="PhysicsService" />
 
@@ -35,19 +35,16 @@
 
 #### Parameters
 
-| `name` `string` | 碰撞组名 |
+| `name` `string` | 碰撞组名 range: 不限制 |
 | :------ | :------ |
 
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"GroupA,GroupB,GroupC"
+使用示例:在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下 1 后可在编辑器窗口客户端内看到输出 "GroupA,GroupB,GroupC"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -62,16 +59,8 @@ export default class CollisionGroup extends Script {
             console.log(PhysicsService.getValidCollisionGroups());
         })
     }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
 }
+```
 
 ___
 
@@ -83,19 +72,16 @@ ___
 
 #### Parameters
 
-| `name` `string` | 碰撞组名 |
+| `name` `string` | 碰撞组名 range: 不限制 |
 | :------ | :------ |
 
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"GroupB"
+使用示例:在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下 1 后可在编辑器窗口客户端内看到输出"GroupB"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -120,6 +106,7 @@ export default class CollisionGroup extends Script {
 
     }
 }
+```
 
 ___
 
@@ -134,15 +121,12 @@ ___
 | `number` | 剩余可用碰撞组数量 |
 | :------ | :------ |
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"8"
+使用示例: 在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下 1 后可在编辑器窗口客户端内看到输出 "8"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -156,16 +140,8 @@ export default class CollisionGroup extends Script {
             console.log(PhysicsService.getAvailableCollisionGroupsCount());
         })
     }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
 }
+```
 
 ___
 
@@ -177,24 +153,21 @@ ___
 
 #### Parameters
 
-| `group1` `string` | 碰撞组名1 |
+| `group1` `string` | 碰撞组名 1 range: 不限制 |
 | :------ | :------ |
-| `group2` `string` | 碰撞组名2 |
+| `group2` `string` | 碰撞组名 2 range: 不限制 |
 
 #### Returns
 
 | `boolean` | 碰撞关系(是否可发生碰撞) |
 | :------ | :------ |
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"false"
+使用示例: 在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下 1 后可在编辑器窗口客户端内看到输出 "false"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -208,16 +181,8 @@ export default class CollisionGroup extends Script {
             console.log(PhysicsService.getCollisionBetweenGroups("GroupA", "GroupB"));
         })
     }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
 }
+```
 
 ___
 
@@ -232,15 +197,12 @@ ___
 | `string`[] | 当前已添加的碰撞组名列表 |
 | :------ | :------ |
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"GroupA,GroupB"
+使用示例: 在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出 "GroupA,GroupB"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -254,16 +216,8 @@ export default class CollisionGroup extends Script {
             console.log(PhysicsService.getValidCollisionGroups());
         })
     }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
 }
+```
 
 ___
 
@@ -275,7 +229,7 @@ ___
 
 #### Parameters
 
-| `name` `string` | 碰撞组名 |
+| `name` `string` | 碰撞组名 range: 不限制 |
 | :------ | :------ |
 
 #### Returns
@@ -283,15 +237,12 @@ ___
 | `boolean` | 碰撞组是否有效 |
 | :------ | :------ |
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"false"
+使用示例:在场景中创建一个名为 CollisionGroup 的脚本，并拖入场景中，并复制以下代码进入脚本。按下 1 后可在编辑器窗口客户端内看到输出 "false"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -305,16 +256,8 @@ export default class CollisionGroup extends Script {
             console.log(PhysicsService.isCollisionGroupValid("GroupC"));
         })
     }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
 }
+```
 
 ___
 
@@ -326,20 +269,17 @@ ___
 
 #### Parameters
 
-| `previousName` `string` | 碰撞组名 |
+| `previousName` `string` | 碰撞组名 range: 不限制 |
 | :------ | :------ |
-| `newName` `string` | 新碰撞组名 |
+| `newName` `string` | 新碰撞组名 range: 不限制 |
 
 
-```ts
 <span style="font-size: 14px;">
 使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1后可在编辑器窗口客户端内看到输出"GroupB,GroupC"
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
@@ -364,6 +304,7 @@ export default class CollisionGroup extends Script {
 
     }
 }
+```
 
 ___
 
@@ -375,21 +316,18 @@ ___
 
 #### Parameters
 
-| `group1` `string` | 碰撞组名1 |
+| `group1` `string` | 碰撞组名1 range: 不限制 |
 | :------ | :------ |
-| `group2` `string` | 碰撞组名2 |
+| `group2` `string` | 碰撞组名2 range: 不限制 |
 | `collidable` `boolean` | 是否可碰撞 |
 
 
-```ts
 <span style="font-size: 14px;">
-使用示例:在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1和2会看到场景中生成了两个小球，并推动距离最近的小球去撞击另一个，会发现玩家可以与球体发生碰撞，但两个小球间可穿透。
+使用示例: 在场景中创建一个名为CollisionGroup的脚本，并拖入场景中，并复制以下代码进入脚本。按下1和2会看到场景中生成了两个小球，并推动距离最近的小球去撞击另一个，会发现玩家可以与球体发生碰撞，但两个小球间可穿透。
 </span>
 
-```
-
-**`Component`**
-
+```ts
+@Component
 export default class CollisionGroup extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -408,19 +346,10 @@ export default class CollisionGroup extends Script {
         })
     }
 
-   protected onUpdate(dt: number): void {
-
-    }
-
-    // 脚本被销毁时最后一帧执行完调用此函数
-    protected onDestroy(): void {
-
-    }
-
     @mw.RemoteFunction(mw.Server)
     serverCreateBall(pos:Vector, Group:string, bPhysicsSimulate:boolean)
     {
-        GameObject.asyncSpawn("197388", `{replicates:true}`).then((obj)=>{
+        GameObject.asyncSpawn("197388", {replicates:true}).then((obj)=>{
             let ball  = obj as mw.Model;
             ball.worldTransform.position = pos;
             if (bPhysicsSimulate)
@@ -433,3 +362,4 @@ export default class CollisionGroup extends Script {
         })
     }
 }
+```

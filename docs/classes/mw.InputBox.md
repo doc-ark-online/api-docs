@@ -34,6 +34,8 @@
 | 获取输入框的输入格式|
 | **[isRichText](mw.InputBox.md#isrichtext)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否为富文本|
+| **[newLineKeyBind](mw.InputBox.md#newlinekeybind)**(): [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) <Badge type="tip" text="client" />  |
+| 插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,枚举可能通过 “|” 组合在一起设置。判定支不支持需要通过“&”来判定|
 | **[onTextChanged](mw.InputBox.md#ontextchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="client" />  |
 | 文本改变事件|
 | **[onTextCommitted](mw.InputBox.md#ontextcommitted)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/mw.TextCommit.md)) => `void`\> <Badge type="tip" text="client" />  |
@@ -85,6 +87,8 @@
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
+| **[mouseCursor](mw.Widget.md#mousecursor)**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />  |
+| 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
@@ -125,17 +129,17 @@
 | **[focus](mw.InputBox.md#focus)**(): `void` <Badge type="tip" text="client" />  |
 | 设置输入框聚焦状态，进入可输入状态|
 | **[setContentColorByHex](mw.InputBox.md#setcontentcolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置输入框的内容颜色 指定Hex的颜色文本设定颜色 #05050505|
+| 设置输入框的内容颜色，指定 Hex 的颜色文本设定颜色 #05050505|
 | **[setContentColorDecimal](mw.InputBox.md#setcontentcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置输入框的内容颜色 指定R、G、B、A设置颜色 0 ~255|
+| 设置输入框的内容颜色|
 | **[setFontColorByHex](mw.InputBox.md#setfontcolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置文本颜色,指定Hex的颜色文本设定颜色 #05050505|
+| 设置文本颜色，指定 Hex 的颜色文本设定颜色 #05050505|
 | **[setFontColorDecimal](mw.InputBox.md#setfontcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置文本颜色,指定R、G、B、A设置颜色 0 ~255|
+| 设置文本颜色|
 | **[setShadowColorByHex](mw.InputBox.md#setshadowcolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置阴影颜色,指定Hex的颜色文本设定颜色 #05050505|
+| 设置阴影颜色，指定 Hex 的颜色文本设定颜色 #05050505|
 | **[setShadowColorDecimal](mw.InputBox.md#setshadowcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置阴影颜色,指定R、G、B、A设置颜色 0 ~255|
+| 设置阴影颜色|
 | **[setTextJustification](mw.InputBox.md#settextjustification)**(`inTextJustification`: [`TextJustify`](../enums/mw.TextJustify.md)): `void` <Badge type="tip" text="client" />  |
 | 设置输入框的对齐方式|
 | **[newObject](mw.InputBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`InputBox`](mw.InputBox.md) <Badge type="tip" text="client" />  |
@@ -626,6 +630,52 @@ ___
 #### Parameters
 
 | `isRichText` | `boolean` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### newLineKeyBind <Score text="newLineKeyBind" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **newLineKeyBind**(): [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **newLineKeyBind**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,枚举可能通过 “|” 组合在一起设置。判定支不支持需要通过“&”来判定
+
+#### Returns
+
+| [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,可以将枚举通过 “|” 组合在一起设置。
+
+#### Parameters
+
+| `value` | [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) |
 | :------ | :------ |
 
 
@@ -1274,11 +1324,11 @@ ___
 
 • **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置输入框的内容颜色 指定Hex的颜色文本设定颜色 #05050505
+设置输入框的内容颜色，指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | Hex颜色字符串 |
+| `inHexString` `string` | Hex 颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1288,15 +1338,15 @@ ___
 
 • **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置输入框的内容颜色 指定R、G、B、A设置颜色 0 ~255
+设置输入框的内容颜色
 
 #### Parameters
 
-| `R` `number` | 内容R值，数据范围0~255 |
+| `R` `number` | 图片 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 内容G值，数据范围0~255 |
-| `B` `number` | 内容B值，数据范围0~255 |
-| `A` `number` | 内容透明度，数据范围0~255 |
+| `G` `number` | 图片 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 图片 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 图片 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1305,11 +1355,11 @@ ___
 
 • **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置文本颜色,指定Hex的颜色文本设定颜色 #05050505
+设置文本颜色，指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | Hex颜色字符串 |
+| `inHexString` `string` | Hex颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1319,15 +1369,15 @@ ___
 
 • **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置文本颜色,指定R、G、B、A设置颜色 0 ~255
+设置文本颜色
 
 #### Parameters
 
-| `R` `number` | 文本R值，数据范围0~255 |
+| `R` `number` | 文本 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 文本G值，数据范围0~255 |
-| `B` `number` | 文本B值，数据范围0~255 |
-| `A` `number` | 文本透明度，数据范围0~255 |
+| `G` `number` | 文本 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 文本 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 文本 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1336,11 +1386,11 @@ ___
 
 • **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置阴影颜色,指定Hex的颜色文本设定颜色 #05050505
+设置阴影颜色，指定 Hex 的颜色文本设定颜色 #05050505
 
 #### Parameters
 
-| `inHexString` `string` | Hex颜色字符串 |
+| `inHexString` `string` | Hex 颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1350,15 +1400,15 @@ ___
 
 • **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置阴影颜色,指定R、G、B、A设置颜色 0 ~255
+设置阴影颜色
 
 #### Parameters
 
-| `R` `number` | 阴影R值，数据范围0~255 |
+| `R` `number` | 阴影 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 阴影G值，数据范围0~255 |
-| `B` `number` | 阴影B值，数据范围0~255 |
-| `A` `number` | 阴影透明度，数据范围0~255 |
+| `G` `number` | 阴影 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 阴影 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 阴影 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1387,7 +1437,7 @@ ___
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 

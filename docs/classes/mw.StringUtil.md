@@ -9,13 +9,13 @@
 ### Methods <Score text="Methods" /> 
 | **[clipboardCopy](mw.StringUtil.md#clipboardcopy)**(`text`: `string`): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 文本复制，将字符串复制到剪切板|
+| 文本复制|
 | **[clipboardPaste](mw.StringUtil.md#clipboardpaste)**(): `string` <Badge type="tip" text="client" />  |
 | 文本粘贴，获取剪切板的文本|
 | **[format](mw.StringUtil.md#format)**(`str`: `string`, `...param`: `any`[]): `string`   |
 | 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
 | **[isEmpty](mw.StringUtil.md#isempty)**(`str`: `string`): `boolean`   |
-| 判断字符串是否为空(null或"")|
+| 判断字符串是否为空 (null或"")|
 | **[maskWordCheck](mw.StringUtil.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](mw.StringUtil.md#maskwordcheck)Result`](../modules/Core.mw.md#maskwordcheckresult)\>   |
 | 屏蔽字检测|
 
@@ -25,13 +25,15 @@
 
 • `Static` **clipboardCopy**(`text`): `void` <Badge type="tip" text="client" />
 
-文本复制，将字符串复制到剪切板
+文本复制
 
 #### Parameters
 
-| `text` `string` | 复制到剪切板的文本 |
+| `text` `string` | 复制到剪切板的文本 <br> range: 无限制 |
 | :------ | :------ |
 
+
+将字符串复制到剪切板
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
@@ -97,7 +99,7 @@ ___
 
 #### Parameters
 
-| `str` `string` |  要处理的字符串 |
+| `str` `string` |  要处理的字符串 range: 不做限制 |
 | :------ | :------ |
 | `...param` `any`[] |  替换序列 |
 
@@ -133,11 +135,11 @@ ___
 
 • `Static` **isEmpty**(`str`): `boolean` 
 
-判断字符串是否为空(null或"")
+判断字符串是否为空 (null或"")
 
 #### Parameters
 
-| `str` `string` |  要判断的字符串 |
+| `str` `string` |  要判断的字符串 range: 不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -176,7 +178,7 @@ ___
 
 #### Parameters
 
-| `text` `string` |  要检测的文本 |
+| `text` `string` |  要检测的文本 range: 不做限制 |
 | :------ | :------ |
 
 #### Returns
@@ -186,7 +188,7 @@ ___
 
 ::: warning Precautions
 
-接口中遇到异常情况会返回reject，使用该接口需要用catch处理这种异常情况
+接口中遇到异常情况会返回 reject，使用该接口需要用 catch 处理这种异常情况
 
 :::
 

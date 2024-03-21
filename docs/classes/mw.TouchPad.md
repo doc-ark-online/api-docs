@@ -39,6 +39,8 @@
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
+| **[mouseCursor](mw.Widget.md#mousecursor)**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />  |
+| 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
@@ -216,7 +218,7 @@ ___
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Outer对象 default:null |
 | :------ | :------ |
-| `InName?` `string` | 创建控件的名称 default:null |
+| `InName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 
