@@ -530,6 +530,271 @@
             "children": null
           }
         }
+      },
+      "控件": {
+        "file": null,
+        "children": {
+          "遥杆": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "SlateColor": {
+                "file": {
+                  "file_name": "mw.SlateColor.md",
+                  "file_path": "classes/mw.SlateColor.md",
+                  "name": "SlateColor"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "JoystickStyleDesigner": {
+                "file": {
+                  "file_name": "mw.JoystickStyleDesigner.md",
+                  "file_path": "classes/mw.JoystickStyleDesigner.md",
+                  "name": "JoystickStyleDesigner"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "VirtualJoystickPanel": {
+                "file": {
+                  "file_name": "mw.VirtualJoystickPanel.md",
+                  "file_path": "classes/mw.VirtualJoystickPanel.md",
+                  "name": "VirtualJoystickPanel"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "JoystickBindKeyType": {
+                "file": {
+                  "file_name": "mw.JoystickBindKeyType.md",
+                  "file_path": "classes/mw.JoystickBindKeyType.md",
+                  "name": "JoystickBindKeyType"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "图片": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "AssetIconData": {
+                "file": {
+                  "file_name": "mw.AssetIconData.md",
+                  "file_path": "classes/mw.AssetIconData.md",
+                  "name": "AssetIconData"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "Image": {
+                "file": {
+                  "file_name": "mw.Image.md",
+                  "file_path": "classes/mw.Image.md",
+                  "name": "Image"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "进度条": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "ProgressBar": {
+                "file": {
+                  "file_name": "mw.ProgressBar.md",
+                  "file_path": "classes/mw.ProgressBar.md",
+                  "name": "ProgressBar"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "文本按钮": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "StaleButton": {
+                "file": {
+                  "file_name": "mw.StaleButton.md",
+                  "file_path": "classes/mw.StaleButton.md",
+                  "name": "StaleButton"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "调色板": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "ColorPick": {
+                "file": {
+                  "file_name": "mw.ColorPick.md",
+                  "file_path": "classes/mw.ColorPick.md",
+                  "name": "ColorPick"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "容器": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "UIChildCollation": {
+                "file": {
+                  "file_name": "mw.UIChildCollation.md",
+                  "file_path": "classes/mw.UIChildCollation.md",
+                  "name": "UIChildCollation"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "UILayout": {
+                "file": {
+                  "file_name": "mw.UILayout.md",
+                  "file_path": "classes/mw.UILayout.md",
+                  "name": "UILayout"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "Canvas": {
+                "file": {
+                  "file_name": "mw.Canvas.md",
+                  "file_path": "classes/mw.Canvas.md",
+                  "name": "Canvas"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "遮罩按钮": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "MaskButton": {
+                "file": {
+                  "file_name": "mw.MaskButton.md",
+                  "file_path": "classes/mw.MaskButton.md",
+                  "name": "MaskButton"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "按钮": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "Button": {
+                "file": {
+                  "file_name": "mw.Button.md",
+                  "file_path": "classes/mw.Button.md",
+                  "name": "Button"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "文本": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "TextBlock": {
+                "file": {
+                  "file_name": "mw.TextBlock.md",
+                  "file_path": "classes/mw.TextBlock.md",
+                  "name": "TextBlock"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "摄像机滑动区": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "TouchPad": {
+                "file": {
+                  "file_name": "mw.TouchPad.md",
+                  "file_path": "classes/mw.TouchPad.md",
+                  "name": "TouchPad"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "自定义控件": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "UserWidget": {
+                "file": {
+                  "file_name": "mw.UserWidget.md",
+                  "file_path": "classes/mw.UserWidget.md",
+                  "name": "UserWidget"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "滚动框": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "ScrollBox": {
+                "file": {
+                  "file_name": "mw.ScrollBox.md",
+                  "file_path": "classes/mw.ScrollBox.md",
+                  "name": "ScrollBox"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "输入框": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "InputBox": {
+                "file": {
+                  "file_name": "mw.InputBox.md",
+                  "file_path": "classes/mw.InputBox.md",
+                  "name": "InputBox"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          }
+        },
+        "no_children_files": {
+          "UserWidget": {
+            "file": {
+              "file_name": "mw.UserWidget.md",
+              "file_path": "classes/mw.UserWidget.md",
+              "name": "UserWidget"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
       }
     },
     "no_children_files": {
@@ -708,11 +973,11 @@
             "no_children_files": null,
             "children": null
           },
-          "RigidConstraint": {
+          "PhysicsService": {
             "file": {
-              "file_name": "mw.RigidConstraint.md",
-              "file_path": "classes/mw.RigidConstraint.md",
-              "name": "RigidConstraint"
+              "file_name": "mw.PhysicsService.md",
+              "file_path": "classes/mw.PhysicsService.md",
+              "name": "PhysicsService"
             },
             "no_children_files": null,
             "children": null
@@ -899,25 +1164,6 @@
       }
     },
     "no_children_files": null
-  },
-  "GAMEPLAY": {
-    "file": {
-      "file_name": "GAMEPLAY.GAMEPLAY.md",
-      "file_path": "groups/GAMEPLAY.GAMEPLAY.md",
-      "name": "GAMEPLAY"
-    },
-    "children": null,
-    "no_children_files": {
-      "ModelUtil": {
-        "file": {
-          "file_name": "mw.ModelUtil.md",
-          "file_path": "classes/mw.ModelUtil.md",
-          "name": "ModelUtil"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
   },
   "角色系统": {
     "file": {
@@ -1119,53 +1365,6 @@
           "file_name": "mw.GestureDelegate.md",
           "file_path": "classes/mw.GestureDelegate.md",
           "name": "GestureDelegate"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UI": {
-    "file": {
-      "file_name": "UI.UI.md",
-      "file_path": "groups/UI.UI.md",
-      "name": "UI"
-    },
-    "children": null,
-    "no_children_files": {
-      "JoystickBindKeyType": {
-        "file": {
-          "file_name": "mw.JoystickBindKeyType.md",
-          "file_path": "classes/mw.JoystickBindKeyType.md",
-          "name": "JoystickBindKeyType"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UTILITY": {
-    "file": {
-      "file_name": "UTILITY.UTILITY.md",
-      "file_path": "groups/UTILITY.UTILITY.md",
-      "name": "UTILITY"
-    },
-    "children": null,
-    "no_children_files": {
-      "PhysicsService": {
-        "file": {
-          "file_name": "mw.PhysicsService.md",
-          "file_path": "classes/mw.PhysicsService.md",
-          "name": "PhysicsService"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "DebugUtil": {
-        "file": {
-          "file_name": "mw.DebugUtil.md",
-          "file_path": "classes/mw.DebugUtil.md",
-          "name": "DebugUtil"
         },
         "no_children_files": null,
         "children": null
@@ -1470,22 +1669,12 @@
         },
         "no_children_files": null,
         "children": null
-      }
-    }
-  },
-  "SOCIAL": {
-    "file": {
-      "file_name": "SOCIAL.SOCIAL.md",
-      "file_path": "groups/SOCIAL.SOCIAL.md",
-      "name": "SOCIAL"
-    },
-    "children": null,
-    "no_children_files": {
-      "ChatBubble": {
+      },
+      "DebugUtil": {
         "file": {
-          "file_name": "mw.ChatBubble.md",
-          "file_path": "classes/mw.ChatBubble.md",
-          "name": "ChatBubble"
+          "file_name": "mw.DebugUtil.md",
+          "file_path": "classes/mw.DebugUtil.md",
+          "name": "DebugUtil"
         },
         "no_children_files": null,
         "children": null
@@ -1579,6 +1768,15 @@
               "file_name": "mw.RoomService.md",
               "file_path": "classes/mw.RoomService.md",
               "name": "RoomService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ChatBubble": {
+            "file": {
+              "file_name": "mw.ChatBubble.md",
+              "file_path": "classes/mw.ChatBubble.md",
+              "name": "ChatBubble"
             },
             "no_children_files": null,
             "children": null

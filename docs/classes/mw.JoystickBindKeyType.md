@@ -1,4 +1,4 @@
-[UI](../groups/UI.UI.md) / JoystickBindKeyType
+[界面](../groups/界面.界面.md) / JoystickBindKeyType
 
 # JoystickBindKeyType <Badge type="tip" text="Class" /> <Score text="JoystickBindKeyType" />
 

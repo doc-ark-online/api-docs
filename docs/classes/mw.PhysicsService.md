@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / PhysicsService
+[玩法](../groups/玩法.玩法.md) / PhysicsService
 
 # PhysicsService <Badge type="tip" text="Class" /> <Score text="PhysicsService" />
 
