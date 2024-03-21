@@ -1,0 +1,338 @@
+[基础类型](../groups/基础类型.基础类型.md) / Action
+
+# Action <Badge type="tip" text="Class" /> <Score text="Action" />
+
+代理
+
+----------------------------------------
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为ActionExample的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”将看到代理被调用的效果，按下键盘“2”会看到代理被移除的效果，代码如下：
+</span>
+
+```ts
+ @Component
+ export default class ActionExample extends Script {
+     private readonly action:Action = new Action();
+     private readonly action1:Action1<player> = new Action1();
+     private readonly action2:Action2<number, player> = new Action2();
+
+     protected onStart(): void {
+
+         // 添加Action的监听
+         this.action.add(() => {
+             console.log("action");
+         });
+         // 添加Action1的监听
+         const id = this.action1.add((player: player) => {
+             if(player.age < 18) {
+                 console.log("sorry , only those over 18 years old can enter")
+             } else {
+                 // 可以对player展开具体的实现逻辑
+                 player.game();
+             }
+         });
+         // 添加Action2的监听
+         this.action2.add(this.onAction2);
+
+         // 按下键盘的1键触发各个Action
+         InputUtil.onKeyDown(Keys.One, () => {
+             this.action.call();
+             let playerOne : multiPlayer = new multiPlayer(10.5,"Janny");
+             this.action1.call(playerOne);
+             this.action2.call(2,playerOne);
+         });
+
+     }
+     // Action2的监听函数
+     private onAction2(num: number, player: player) {
+         console.log("action2");
+         player.game();
+     }
+ }
+ class player
+ {
+     public age:number = 2;
+     public name:string = "Li";
+     constructor(age: number, name: string) {
+         this.age = age;
+         this.name = name;
+     }
+     public game(){
+         console.log("player is playing game");
+     }
+ }
+ class lowPlayer extends player
+ {
+     public game(): void {
+         console.log("lowplayer is playing game");
+     }
+ }
+ class multiPlayer extends player
+ {
+     public game(): void {
+         console.log("multiPlayer is playing game");
+     }
+ }
+```
+
+## Hierarchy
+
+- **`Action`**
+
+  ↳ [`Action1`](mw.Action1.md)
+
+  ↳ [`Action2`](mw.Action2.md)
+
+  ↳ [`Action3`](mw.Action3.md)
+
+## Table of contents
+
+### Accessors <Score text="Accessors" /> 
+| **[count](mw.Action.md#count)**(): `number`   |
+| :-----|
+| 监听方法的数量|
+
+### Methods <Score text="Methods" /> 
+| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number`   |
+| :-----|
+| 添加一个监听方法|
+| **[call](mw.Action.md#call)**(`...params`: `any`): `void`   |
+| 执行|
+| **[clear](mw.Action.md#clear)**(): `void`   |
+| 清除所有监听|
+| **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`   |
+| 判断是否包含某个监听方法|
+| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`   |
+| 移除一个监听方法|
+
+## Accessors
+
+### count <Score text="count" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **count**(): `number` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+监听方法的数量
+
+#### Returns
+
+</td>
+</tr></tbody>
+</table>
+
+| `number` |  |
+| :------ | :------ |
+
+## Methods
+
+### add <Score text="add" /> 
+
+• **add**(`fn`, `thisArg?`): `number` 
+
+添加一个监听方法
+
+#### Parameters
+
+| `fn` `Function` |  方法 |
+| :------ | :------ |
+| `thisArg?` `any` |  域，以下示例可以为您解释域的概念 default: undefined |
+
+#### Returns
+
+| `number` | 本次监听的唯一标识，可用于remove。如果返回-1，则说明这个方法之前添加过，不会重复添加。 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例: 解释“域”的概念
+</span>
+
+```ts
+@Component
+export default class ActionExample extends Script {
+
+    private readonly action1: Action1<player> = new Action1();
+    private readonly action2: Action1<player> = new Action1();
+    private readonly action3: Action1<player> = new Action1();
+    private readonly action4: Action1<player> = new Action1();
+    private readonly action5: Action1<player> = new Action1();
+
+    public playerOne: multiPlayer = new multiPlayer(10.5, "Janny");
+    public playertwo: lowPlayer = new lowPlayer(12, "Danny");
+    public playerthree : multiPlayer = new multiPlayer(11,"Liming");
+
+    private thisarg: number = 0;
+
+    protected onStart(): void {
+        // 域 传入 lowPlayer 对象，获取的是 lowPlayer 中 thisarg 值。
+        this.action1.add(this.clickOne, this.playertwo);
+        // 域 传入this等同于bind(this)，此类的 thisarg 值。
+        this.action2.add(this.clickOne, this);
+        this.action3.add(this.clickOne.bind(this));
+        // 域 什么也不传，为 undefined
+        this.action4.add(this.clickOne);
+        // 域 传入 multiPlayer 对象，获取的是 multiPlayer 中 thisarg 值。
+        this.action5.add(this.clickOne, this.playerthree);
+
+        InputUtil.onKeyDown(Keys.One, () => {
+            console.log("1")
+            this.action1.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Two, () => {
+            console.log("2")
+            this.action2.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Three, () => {
+            console.log("3")
+            this.action3.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Four, () => {
+            console.log("4")
+            this.action4.call(this.playerOne);
+        });
+        InputUtil.onKeyDown(Keys.Five, () => {
+            console.log("5")
+            this.action5.call(this.playerOne);
+        });
+    }
+
+    private clickOne(player: player): void {
+        console.warn("action1 is called:  " + this.thisarg);
+        player.game();
+    }
+}
+
+class player {
+    public age: number = 20;
+    public name: string = "Li";
+    constructor(age: number, name: string) {
+        this.age = age;
+        this.name = name;
+    }
+    public game() {
+        console.log("player is playing game");
+    }
+}
+class lowPlayer extends player {
+    private thisarg: number = 10;
+    public game(): void {
+        console.log("lowplayer is playing game");
+        console.log(this.age + "   " + this.name);
+    }
+}
+class multiPlayer extends player {
+    private thisarg: number = 20;
+    public game(): void {
+        console.log("multiPlayer is playing game");
+        console.log(this.age + "   " + this.name);
+    }
+}
+```
+
+___
+
+### call <Score text="call" /> 
+
+• **call**(`...params`): `void` 
+
+执行
+
+#### Parameters
+
+| `...params` `any` |  参数序列 |
+| :------ | :------ |
+
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为ActionExample的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”将看到代理被调用的效果，按下键盘“2”会看到代理被移除的效果，代码如下：
+</span>
+
+```ts
+@Component
+export default class ActionExample extends Script {
+    private readonly action:Action = new Action();
+    private readonly action1:Action1<number> = new Action1();
+    private readonly action2:Action2<number, string> = new Action2();
+
+    protected onStart(): void {
+        // 添加Action的监听
+        this.action.add(() => {
+            console.log("action");
+        });
+        // 添加Action1的监听
+        const id = this.action1.add((num: number) => {
+            console.log("onAction1", num);
+        });
+        // 添加Action2的监听
+        this.action2.add(this.onAction2, this);
+
+        // 按下键盘的1键触发各个Action
+        InputUtil.onKeyDown(Keys.One, () => {
+            this.action.call();
+            this.action1.call(1);
+            this.action2.call(2, "testString");
+        });
+        // 按下键盘的2键移除各个Action的监听，移除后再触发不会执行
+        InputUtil.onKeyDown(Keys.Two, () => {
+            this.action1.remove(id);
+            this.action2.remove(this.onAction2, this);
+        });
+    }
+    // Action2的监听函数
+    private onAction2(num: number, str: string) {
+        console.log("onAction2", num, str);
+    }
+}
+```
+
+___
+
+### clear <Score text="clear" /> 
+
+• **clear**(): `void` 
+
+清除所有监听
+
+
+___
+
+### includes <Score text="includes" /> 
+
+• **includes**(`fn`, `thisArg`): `boolean` 
+
+判断是否包含某个监听方法
+
+#### Parameters
+
+| `fn` `Function` |  方法 |
+| :------ | :------ |
+| `thisArg` `any` |  域 |
+
+#### Returns
+
+| `boolean` | 结果 |
+| :------ | :------ |
+
+___
+
+### remove <Score text="remove" /> 
+
+• **remove**(`fn`, `thisArg?`): `void` 
+
+移除一个监听方法
+
+#### Parameters
+
+| `fn` `number`  `Function` |  方法监听唯一标识 |
+| :------ | :------ |
+| `thisArg?` `any` |  域 default: undefined |
+

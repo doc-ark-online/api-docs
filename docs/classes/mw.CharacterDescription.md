@@ -1,0 +1,453 @@
+[角色系统](../groups/角色系统.角色系统.md) / CharacterDescription
+
+# CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
+
+人形外观配置
+
+-------------------------------------------------------------------------
+
+什么是 CharacterDescription 呢？
+
+- 它是一个用于存储 advance 和 base 配置的 Character 描述。
+
+- 人形外观分为高级人形和基础人形。高级人形可更改人物的服装（衬衫、裤子、裙子...)、头部（脸型、嘴巴、鼻子、头发...）等外观； 基础人形是一个整体的形象，可从左侧角色/NPC中基础人形形象中选择你喜欢的资源。
+
+CharacterDescription 如何使用呢？
+
+- 本质是一个嵌套的只读对象类型，用于存储一些角色设置的高级信息。这些信息按照层级结构进行组织，其中每个层级都是一个只读对象类型。
+
+- 在 Character 类中有一个名为 description 的属性，他的返回值类型为 CharacterDescription ，使用角色类中 description 的属性调用。
+
+- 口袋方舟为您提供了大量的美术模型资源，请在左侧栏自助翻找，标有GUID供你使用。
+
+详情可参考下面列出的参数，开始对你的人性外观自定义修改吧~
+
+## Table of contents
+
+### Properties <Score text="Properties" /> 
+| **[advance](mw.CharacterDescription.md#advance)**: `Object`  |
+| :-----|
+| 高级人形对象外观配置类|
+| **[base](mw.CharacterDescription.md#base)**: `Object`  |
+| 基础人形对象外观配置类 与 advance 互斥|
+
+## Properties
+
+### advance <Score text="advance" /> 
+
+• `Optional` `Readonly` **advance**: `Object`
+
+高级人形对象外观配置类
+
+高级人形之所以称为高级，原因是有很多可自定义部分。
+
+1. 基础(base)部分
+
+- 可更改角色 characterTemplate ，有八种类型（二次元男性、女性；lowpoly男性、女性；写实男性、女性；美卡男性、女性）
+
+- 更换体型 somatotype
+
+<span style="font-size: 14px;">
+使用示例: 点击 P 键切换角色
+</span>
+
+```ts
+protected onStart(): void {
+    InputUtil.onKeyDown(Keys.P,()=>{
+        Player.localPlayer.character.description.advance.base.characterSetting.characterTemplate = CharacterTemplate.CartoonyMale;
+    })
+}
+```
+
+2. 头部(headFeatures)部分
+
+脸部在游戏中有很多用途。它可以让你个性化你的角色，就像在现实生活中一样定制你的外貌。你可以调整脸型、眼睛、嘴巴和其他特征，使你的角色与众不同，塑造一个与你自己身份和想象相符的角色，展示你独一无二的样貌。
+
+注：脸型、眉毛、眼睛等为一级；例如脸型二级还可再细化，分为：颧骨、脸颊、下颌、下巴等。三级调整其上下左右位置等参数。下面一样。
+
+![角色](https://cdn.233xyx.com/online/yunwKDOwGwNd1700214170368.jpg)
+
+3. 身材(bodyFeatures)部分
+
+调整角色身材可以影响到角色的能力和特点。在一些角色扮演游戏中，身材的不同可能会影响到角色的速度、力量、耐力等属性。比如，一个高大的角色可能更具有威慑力和力量，而一个敏捷的角色可能更擅长于迅速移动和躲避攻击。通过调整角色的身材，你可以根据自己的游戏策略和喜好来优化角色的能力和特点，使其更符合你的游戏风格。
+
+![角色](https://cdn.233xyx.com/online/VFhWsK3GUw6P1700214149886.jpg)
+
+4. 化妆(makeup)部分
+
+化妆可以让你的角色更加美丽或者独特。你可以选择不同的化妆风格，如浓妆、淡妆、霓虹风、恶魔风等，根据自己的喜好和创意来设计角色的妆容。这样的个性化定制能够让你的角色在游戏世界中脱颖而出，成为其他玩家眼中的焦点。
+
+![角色](https://cdn.233xyx.com/online/Of9JJfsZi68m1700214139253.jpg)
+
+5. 发型(hair)部分
+
+一个毛刺的蓝色发型可以表达出叛逆和冒险的个性，而一个典雅的束发则展现出优雅和自信。
+
+![角色](https://cdn.233xyx.com/online/tyBRnsySIPdo1700214121169.jpg)
+
+6. 装扮(clothing)部分
+
+选择不同的服装风格和配饰，你可以塑造出独特的角色形象。无论是时尚潮流、古典优雅还是奇幻冒险，你可以根据自己的喜好和创意来打造角色的时尚造型。
+
+![角色](https://cdn.233xyx.com/online/lu6uc2RD4ZCN1700214181451.jpg)
+
+7. 插槽(clothing)部分
+
+<span style="font-size: 14px;">
+使用示例: 以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
+</span>
+
+```ts
+@Component
+export default class CharacterStyleExample extends Script {
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.isDescriptionReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onDescriptionComplete.add(() => {
+                // 播放换装完成特效
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
+                // 获取角色默认外观风格
+                defaultStyle = myCharacter.getDescription();
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 体型:身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Keys.Three, () => {
+                myCharacter.syncDescription();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Keys.Four, () => {
+                myCharacter.clearDescription();
+            });
+        }
+    }
+}
+```
+
+#### Type declaration
+
+| `base?`| **`Description`** 基础 |
+| :------ | :------ |
+| `base.characterSetting?`| **`Description`** 角色设定 |
+| `base.characterSetting.characterTemplate?` [`CharacterTemplate`](../enums/mw.CharacterTemplate.md) | **`Description`** 切换角色,配置中优先执行 |
+| `base.characterSetting.somatotype?` [`SomatotypeV2`](../enums/mw.SomatotypeV2.md) | **`Description`** 切换体型 |
+| `bodyFeatures?` | **`Description`** 身材相关 |
+| `bodyFeatures.arms?` | **`Description`** 手臂 |
+| `bodyFeatures.arms.forearmFrontalScale?` `number` | **`Description`** 小臂前后缩放 |
+| `bodyFeatures.arms.forearmHorizontalScale?` `number` | **`Description`** 小臂左右缩放 |
+| `bodyFeatures.arms.forearmVerticalScale?` `number` | **`Description`** 小臂上下缩放 |
+| `bodyFeatures.arms.shoulderFrontalScale?` `number` | **`Description`** 肩臂前后缩放 |
+| `bodyFeatures.arms.shoulderHorizontalScale?` `number` | **`Description`** 肩臂左右缩放 |
+| `bodyFeatures.arms.upperArmFrontalScale?` `number` | **`Description`** 大臂前后缩放 |
+| `bodyFeatures.arms.upperArmHorizontalScale?` `number` | **`Description`** 大臂左右缩放 |
+| `bodyFeatures.arms.upperArmVerticalScale?` `number` | **`Description`** 大臂上下缩放 |
+| `bodyFeatures.body?` | **`Description`** 身体 |
+| `bodyFeatures.body.height?` `number` | **`Description`** 身高 |
+| `bodyFeatures.breast?` | **`Description`** 胸部 |
+| `bodyFeatures.breast.breastHorizontalShift?` `number` | **`Description`** 胸部左右移动 |
+| `bodyFeatures.breast.breastLength?` `number` | **`Description`** 胸部长度 |
+| `bodyFeatures.breast.breastOverallScale?` `number` | **`Description`** 胸部整体缩放 |
+| `bodyFeatures.breast.breastVerticalShift?` `number` | **`Description`** 胸部上下移动 |
+| `bodyFeatures.chest?`  | **`Description`** 胸腔 |
+| `bodyFeatures.chest.chestFrontalScale?` `number` | **`Description`** 胸腔前后缩放 |
+| `bodyFeatures.chest.chestHorizontalScale?` `number` | **`Description`** 胸腔左右缩放 |
+| `bodyFeatures.chest.chestVerticalScale?` `number` | **`Description`** 胸腔上下缩放 |
+| `bodyFeatures.feet?`  | **`Description`** 脚 |
+| `bodyFeatures.feet.feetOverallScale?` `number` | **`Description`** 脚整体缩放 |
+| `bodyFeatures.hands?` | **`Description`** 手 |
+| `bodyFeatures.hands.handOverallScale?` `number` | **`Description`** 手整体缩放 |
+| `bodyFeatures.hips?`  | **`Description`** 胯 |
+| `bodyFeatures.hips.hipFrontalScale?` `number` | **`Description`** 胯前后缩放 |
+| `bodyFeatures.hips.hipHorizontalScale?` `number` | **`Description`** 胯左右缩放 |
+| `bodyFeatures.legs?`| **`Description`** 腿 |
+| `bodyFeatures.legs.calfFrontalScale?` `number` | **`Description`** 小腿前后缩放 |
+| `bodyFeatures.legs.calfHorizontalScale?` `number` | **`Description`** 小腿左右缩放 |
+| `bodyFeatures.legs.calfVerticalScale?` `number` | **`Description`** 小腿上下缩放 |
+| `bodyFeatures.legs.thighFrontalScale?` `number` | **`Description`** 大腿前后缩放 |
+| `bodyFeatures.legs.thighHorizontalScale?` `number` | **`Description`** 大腿左右缩放 |
+| `bodyFeatures.legs.thighVerticalScale?` `number` | **`Description`** 大腿上下缩放 |
+| `bodyFeatures.neck?` | **`Description`** 脖子 |
+| `bodyFeatures.neck.neckFrontalScale?` `number` | **`Description`** 脖子前后缩放 |
+| `bodyFeatures.neck.neckHorizontalScale?` `number` | **`Description`** 脖子左右缩放 |
+| `bodyFeatures.neck.neckVerticalScale?` `number` | **`Description`** 脖子上下缩放 |
+| `bodyFeatures.ribs?` | **`Description`** 肋部 |
+| `bodyFeatures.ribs.ribFrontalScale?` `number` | **`Description`** 肋骨前后缩放 |
+| `bodyFeatures.ribs.ribHorizontalScale?` `number` | **`Description`** 肋骨左右缩放 |
+| `bodyFeatures.waist?` | **`Description`** 腰 |
+| `bodyFeatures.waist.waistFrontalScale?` `number` | **`Description`** 腰部前后缩放 |
+| `bodyFeatures.waist.waistHorizontalScale?` `number` | **`Description`** 腰部左右缩放 |
+| `bodyFeatures.waist.waistVerticalScale?` `number` | **`Description`** 腰部上下缩放 |
+| `clothing?`  | **`Description`** 装扮 |
+| `clothing.gloves?` | **`Description`** 手套 |
+| `clothing.gloves.part?` | **`Description`** 调整区域 |
+| `clothing.gloves.style?` `string` | **`Description`** 手套样式 |
+| `clothing.lowerCloth?`  | **`Description`** 下装 |
+| `clothing.lowerCloth.part?`  | **`Description`** 调整区域 |
+| `clothing.lowerCloth.style?` `string` | **`Description`** 下装样式 |
+| `clothing.shoes?` | **`Description`** 鞋 |
+| `clothing.shoes.part?`| **`Description`** 调整区域 |
+| `clothing.shoes.style?` `string` | **`Description`** 鞋子样式 |
+| `clothing.upperCloth?` | **`Description`** 上装 |
+| `clothing.upperCloth.part?`  | **`Description`** 调整区域 |
+| `clothing.upperCloth.style?` `string` | **`Description`** 上装样式 |
+| `hair?` | **`Description`** 发型 |
+| `hair.backHair?` | **`Description`** 后发 |
+| `hair.backHair.accessories?`  | **`Description`** 头饰 |
+| `hair.backHair.color?` | **`Description`** 颜色 |
+| `hair.backHair.color.color?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
+| `hair.backHair.color.gradientArea?` `number` | **`Description`** 渐变区域 |
+| `hair.backHair.color.gradientColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
+| `hair.backHair.highlight?`| **`Description`** 高光 |
+| `hair.backHair.highlight.highlightStyle?` `string` | **`Description`** 高光样式 |
+| `hair.backHair.style?` `string` | **`Description`** 样式 |
+| `hair.frontHair?` | **`Description`** 前发 |
+| `hair.frontHair.accessories?`| **`Description`** 头饰 |
+| `hair.frontHair.color?` | **`Description`** 颜色 |
+| `hair.frontHair.color.color?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
+| `hair.frontHair.color.gradientArea?` `number` | **`Description`** 渐变区域 |
+| `hair.frontHair.color.gradientColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 渐变颜色 |
+| `hair.frontHair.highlight?` | **`Description`** 高光 |
+| `hair.frontHair.highlight.highlightStyle?` `string` | **`Description`** 高光样式 |
+| `hair.frontHair.style?` `string` | **`Description`** 样式 |
+| `headFeatures?` | **`Description`** 头部相关 |
+| `headFeatures.ears?` | **`Description`** 耳朵 |
+| `headFeatures.ears.earFrontalRotation?` `number` | **`Description`** 耳朵前后旋转 |
+| `headFeatures.ears.earHorizontalRotation?` `number` | **`Description`** 耳朵左右旋转 |
+| `headFeatures.ears.earLowerScale?` `number` | **`Description`** 耳朵下部缩放 |
+| `headFeatures.ears.earOverallScale?` `number` | **`Description`** 耳朵整体缩放 |
+| `headFeatures.ears.earUpperScale?` `number` | **`Description`** 耳朵上部缩放 |
+| `headFeatures.expressions?`  | **`Description`** 表情 |
+| `headFeatures.expressions.changeExpression?` [`ExpressionType`](../enums/mw.ExpressionType.md) | **`Description`** 切换表情 |
+| `headFeatures.eyebrows?`  | **`Description`** 眉毛 |
+| `headFeatures.eyebrows.eyebrowBridgeFrontalShift?` `number` | **`Description`** 眉间前后移动 |
+| `headFeatures.eyebrows.eyebrowFrontalShift?` `number` | **`Description`** 眉毛前后移动 |
+| `headFeatures.eyebrows.eyebrowHorizontalShift?` `number` | **`Description`** 眉毛左右移动 |
+| `headFeatures.eyebrows.eyebrowInnerVerticalShift?` `number` | **`Description`** 眉头上下移动 |
+| `headFeatures.eyebrows.eyebrowOuterVerticalShift?` `number` | **`Description`** 眉尾上下移动 |
+| `headFeatures.eyebrows.eyebrowOverallRotation?` `number` | **`Description`** 眉毛整体旋转 |
+| `headFeatures.eyebrows.eyebrowVerticalShift?` `number` | **`Description`** 眉毛上下移动 |
+| `headFeatures.eyes?`  | **`Description`** 眼睛 |
+| `headFeatures.eyes.eyeCorners?`  | **`Description`** 眼角 |
+| `headFeatures.eyes.eyeCorners.innerEyeCornerHorizontalShift?` `number` | **`Description`** 内眼角左右移动 |
+| `headFeatures.eyes.eyeCorners.outerEyeCornerVerticalShift?` `number` | **`Description`** 外眼角上下移动 |
+| `headFeatures.eyes.overall?` | **`Description`** 整体 |
+| `headFeatures.eyes.overall.eyeFrontalShift?` `number` | **`Description`** 眼睛前后移动 |
+| `headFeatures.eyes.overall.eyeHorizontalScale?` `number` | **`Description`** 眼睛左右缩放 |
+| `headFeatures.eyes.overall.eyeHorizontalShift?` `number` | **`Description`** 眼睛左右移动 |
+| `headFeatures.eyes.overall.eyeOverallRotation?` `number` | **`Description`** 眼睛整体旋转 |
+| `headFeatures.eyes.overall.eyeVerticalScale?` `number` | **`Description`** 眼睛上下缩放 |
+| `headFeatures.eyes.overall.eyeVerticalShift?` `number` | **`Description`** 眼睛上下移动 |
+| `headFeatures.eyes.pupils?`  | **`Description`** 瞳孔 |
+| `headFeatures.eyes.pupils.pupilHorizontalScale?` `number` | **`Description`** 瞳孔左右缩放 |
+| `headFeatures.eyes.pupils.pupilHorizontalShift?` `number` | **`Description`** 瞳孔左右移动 |
+| `headFeatures.eyes.pupils.pupilVerticalScale?` `number` | **`Description`** 瞳孔上下缩放 |
+| `headFeatures.eyes.pupils.pupilVerticalShift?` `number` | **`Description`** 瞳孔上下移动 |
+| `headFeatures.faceShape?` | **`Description`** 脸型 |
+| `headFeatures.faceShape.cheek?` | **`Description`** 脸颊 |
+| `headFeatures.faceShape.cheek.cheekFrontalShift?` `number` | **`Description`** 脸颊前后移动 |
+| `headFeatures.faceShape.cheek.cheekHorizontalScale?` `number` | **`Description`** 脸颊左右缩放 |
+| `headFeatures.faceShape.cheek.cheekVerticalShift?` `number` | **`Description`** 脸颊上下移动 |
+| `headFeatures.faceShape.cheekbone?`  | **`Description`** 颧骨 |
+| `headFeatures.faceShape.cheekbone.cheekboneFrontalShift?` `number` | **`Description`** 颧骨前后移动 |
+| `headFeatures.faceShape.cheekbone.cheekboneHorizontalScale?` `number` | **`Description`** 颧骨左右缩放 |
+| `headFeatures.faceShape.chin?`  | **`Description`** 下巴 |
+| `headFeatures.faceShape.chin.chinFrontalShift?` `number` | **`Description`** 下巴前后移动 |
+| `headFeatures.faceShape.chin.chinTipFrontalShift?` `number` | **`Description`** 下巴尖前后移动 |
+| `headFeatures.faceShape.chin.chinTipHorizontalScale?` `number` | **`Description`** 下巴尖左右缩放 |
+| `headFeatures.faceShape.chin.chinTipVerticalShift?` `number` | **`Description`** 下巴尖上下移动 |
+| `headFeatures.faceShape.jawline?`  | **`Description`** 下颌 |
+| `headFeatures.faceShape.jawline.jawFrontalShift?` `number` | **`Description`** 下颌前后移动 |
+| `headFeatures.faceShape.jawline.jawHorizontalScale?` `number` | **`Description`** 下颌左右缩放 |
+| `headFeatures.faceShape.jawline.jawlineRoundness?` `number` | **`Description`** 下颌圆度 |
+| `headFeatures.faceShape.jawline.jawlineVerticalShift?` `number` | **`Description`** 下颌上下移动 |
+| `headFeatures.faceShape.overall?` | **`Description`** 整体 |
+| `headFeatures.faceShape.overall.faceHorizontalScale?` `number` | **`Description`** 面部左右缩放 |
+| `headFeatures.faceShape.overall.lowerFaceFrontalShift?` `number` | **`Description`** 下半脸前后移动 |
+| `headFeatures.faceShape.overall.lowerFaceHorizontalScale?` `number` | **`Description`** 下半脸左右缩放 |
+| `headFeatures.faceShape.overall.upperFaceFrontalShift?` `number` | **`Description`** 上半脸前后移动 |
+| `headFeatures.faceShape.overall.upperFaceOverallScale?` `number` | **`Description`** 上半脸整体缩放 |
+| `headFeatures.faceShape.overall.upperFaceVerticalShift?` `number` | **`Description`** 上半脸上下移动 |
+| `headFeatures.head?`  | **`Description`** 头部 |
+| `headFeatures.head.headHorizontalScale?` `number` | **`Description`** 头部左右缩放 |
+| `headFeatures.head.headOverallScale?` `number` | **`Description`** 头部整体缩放 |
+| `headFeatures.head.style?` `string` | **`Description`** 头部样式 |
+| `headFeatures.mouth?`  | **`Description`** 嘴 |
+| `headFeatures.mouth.lips?` | **`Description`** 嘴唇 |
+| `headFeatures.mouth.lips.lowerLipThickness?` `number` | **`Description`** 下嘴唇薄厚 |
+| `headFeatures.mouth.lips.upperLipThickness?` `number` | **`Description`** 上嘴唇薄厚 |
+| `headFeatures.mouth.mouthCorners?`  | **`Description`** 嘴角 |
+| `headFeatures.mouth.mouthCorners.mouthCornerFrontalShift?` `number` | **`Description`** 嘴角前后移动 |
+| `headFeatures.mouth.mouthCorners.mouthCornerVerticalShift?` `number` | **`Description`** 嘴角上下移动 |
+| `headFeatures.mouth.overall?`  | **`Description`** 整体 |
+| `headFeatures.mouth.overall.mouthFrontalShift?` `number` | **`Description`** 嘴巴前后移动 |
+| `headFeatures.mouth.overall.mouthHorizontalScale?` `number` | **`Description`** 嘴巴左右缩放 |
+| `headFeatures.mouth.overall.mouthVerticalShift?` `number` | **`Description`** 嘴巴上下移动 |
+| `headFeatures.nose?` | **`Description`** 鼻子 |
+| `headFeatures.nose.noseBridge?` | **`Description`** 鼻梁 |
+| `headFeatures.nose.noseBridge.noseBridgeFrontalShift?` `number` | **`Description`** 鼻梁前后移动 |
+| `headFeatures.nose.noseBridge.noseBridgeHorizontalScale?` `number` | **`Description`** 鼻梁左右缩放 |
+| `headFeatures.nose.noseTip?`  | **`Description`** 鼻尖 |
+| `headFeatures.nose.noseTip.noseTipVerticalShift?` `number` | **`Description`** 鼻尖上下移动 |
+| `headFeatures.nose.nostrils?`  | **`Description`** 鼻翼 |
+| `headFeatures.nose.nostrils.nostrilForntalShift?` `number` | **`Description`** 鼻翼前后移动 |
+| `headFeatures.nose.nostrils.nostrilHorizontalScale?` `number` | **`Description`** 鼻翼左右缩放 |
+| `headFeatures.nose.nostrils.nostrilVerticalShift?` `number` | **`Description`** 鼻翼上下移动 |
+| `headFeatures.nose.overall?` | **`Description`** 整体 |
+| `headFeatures.nose.overall.noseOverallFrontalShift?` `number` | **`Description`** 鼻子整体前后移动 |
+| `headFeatures.nose.overall.noseOverallVerticalShift?` `number` | **`Description`** 鼻子整体上下移动 |
+| `makeup?`| **`Description`** 化妆 |
+| `makeup.blush?` | **`Description`** 腮红 |
+| `makeup.blush.blushColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 腮红颜色 |
+| `makeup.blush.blushStyle?` `string` | **`Description`** 腮红样式 |
+| `makeup.bodyDecal?` | **`Description`** 身体贴花 |
+| `makeup.coloredContacts?`| **`Description`** 美瞳 |
+| `makeup.coloredContacts.decal?` | **`Description`** 贴花 |
+| `makeup.coloredContacts.decal.pupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色 |
+| `makeup.coloredContacts.decal.pupilHorizontalPosition?` `number` | **`Description`** 瞳孔左右位置 |
+| `makeup.coloredContacts.decal.pupilSizeScale?` `number` | **`Description`** 瞳孔大小缩放 |
+| `makeup.coloredContacts.decal.pupilStyle?` `string` | **`Description`** 瞳孔样式 |
+| `makeup.coloredContacts.decal.pupilVerticalPosition?` `number` | **`Description`** 瞳孔上下位置 |
+| `makeup.coloredContacts.highlight?`  | **`Description`** 高光 |
+| `makeup.coloredContacts.highlight.lowerHighlightColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 下高光颜色 |
+| `makeup.coloredContacts.highlight.lowerHighlightStyle?` `string` | **`Description`** 下高光样式 |
+| `makeup.coloredContacts.highlight.upperHighlightColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 上高光颜色 |
+| `makeup.coloredContacts.highlight.upperHighlightStyle?` `string` | **`Description`** 上高光样式 |
+| `makeup.coloredContacts.style?`| **`Description`** 样式 |
+| `makeup.coloredContacts.style.leftPupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 左瞳孔颜色，二次元风格生效 |
+| `makeup.coloredContacts.style.pupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 瞳孔颜色, 除二次元以外风格生效 |
+| `makeup.coloredContacts.style.pupilStyle?` `string` | **`Description`** 瞳孔样式 |
+| `makeup.coloredContacts.style.rightPupilColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 右瞳孔颜色，二次元风格生效 |
+| `makeup.eyeShadow?`  | **`Description`** 眼影 |
+| `makeup.eyeShadow.eyeshadowStyle?` `string` | **`Description`** 眼影样式 |
+| `makeup.eyeShadow.eyeshaowColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 眼影颜色 |
+| `makeup.eyebrows?`  | **`Description`** 眉毛 |
+| `makeup.eyebrows.eyebrowColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 眉毛颜色 |
+| `makeup.eyebrows.eyebrowStyle?` `string` | **`Description`** 眉毛样式 |
+| `makeup.eyelashes?` | **`Description`** 睫毛 |
+| `makeup.eyelashes.eyelashColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 睫毛颜色 |
+| `makeup.eyelashes.eyelashStyle?` `string` | **`Description`** 睫毛样式 |
+| `makeup.faceDecal?`| **`Description`** 脸部贴花 |
+| `makeup.headDecal?`  | **`Description`** 头部贴花 |
+| `makeup.headDecal.decalColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 贴花颜色 |
+| `makeup.headDecal.decalStyle?` `string` | **`Description`** 贴花样式 |
+| `makeup.lipstick?` | **`Description`** 口红 |
+| `makeup.lipstick.lipstickColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 口红颜色 |
+| `makeup.lipstick.lipstickStyle?` `string` | **`Description`** 口红样式 |
+| `makeup.skinTone?` | **`Description`** 肤色 |
+| `makeup.skinTone.skinColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
+| `slotAndDecoration?`  | 插槽和物品 |
+| `slotAndDecoration.slot`  | **`Description`** 插槽数据 |
+
+
+___
+
+### base <Score text="base" /> 
+
+• `Optional` `Readonly` **base**: `Object`
+
+基础人形对象外观配置类 与 advance 互斥
+
+<span style="font-size: 14px;">
+使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
+</span>
+
+```ts
+@Component
+export default class CharacterStyleExample extends Script {
+    protected onStart(): void {
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.isDescriptionReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onDescriptionComplete.add(() => {
+                // 播放换装完成特效
+                EffectService.playOnGameObject("161245", myCharacter, {slotType: HumanoidSlotType.Root});
+                // 获取角色默认外观风格
+                defaultStyle = myCharacter.getDescription();
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Keys.Three, () => {
+                myCharacter.syncDescription();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Keys.Four, () => {
+                myCharacter.clearDescription();
+            });
+        }
+    }
+}
+```
+
+#### Type declaration
+
+| `wholeBody?` `string` | **`Description`** 全身模型 |
+| :------ | :------ |
