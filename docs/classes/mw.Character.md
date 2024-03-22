@@ -5827,6 +5827,7 @@ ___
 
 <span style="font-size: 14px;">
 使用示例:按 R 后禁用飞行状态，再按 2 切换飞行 
+</span>
 
 ```ts
 @Component
