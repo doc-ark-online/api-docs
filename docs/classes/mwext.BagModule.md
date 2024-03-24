@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / BagModule
+[拓展](../groups/Extension.拓展.md) / BagModule
 
 # BagModule <Badge type="tip" text="Class" /> <Score text="BagModule" />
 

@@ -24,9 +24,9 @@ Classes
 ## B
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [BagItemUI](classes/mwext.BagItemUI.md) | 背包道具父类,继承这个类来实现自己的道具格子界面，使用BagModule.skin来指定皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
-| [BagModule](classes/mwext.BagModule.md) | 背包实例 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
-| [BagUI](classes/mwext.BagUI.md) | 背包界面父类,继承这个类来实现自己的背包界面，使用BagModule.skin来指定皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [BagItemUI](classes/mwext.BagItemUI.md) | 背包道具父类,继承这个类来实现自己的道具格子界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
+| [BagModule](classes/mwext.BagModule.md) | 背包实例 | [拓展](groups/拓展.拓展.md) |
+| [BagUI](classes/mwext.BagUI.md) | 背包界面父类,继承这个类来实现自己的背包界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 | [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [界面](groups/界面.界面.md) |
 | [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [界面](groups/界面.界面.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
@@ -43,9 +43,9 @@ Classes
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 角色挂件插槽 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [界面](groups/界面.界面.md) |
-| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
+| [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [服务](groups/服务.服务.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [服务](groups/服务.服务.md) |
-| [Checkbox](classes/mw.Checkbox.md) | 界面/控件/勾选框 | [GUI](groups/GUI.GUI.md) |
+| [Checkbox](classes/mw.Checkbox.md) | 勾选框 | [界面](groups/界面.界面.md) |
 | [CheckboxStyle](classes/mw.CheckboxStyle.md) | Checkbox 控件风格类型 | [界面](groups/界面.界面.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 调色板 | [界面](groups/界面.界面.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [输入](groups/输入.输入.md) |
@@ -58,7 +58,7 @@ Classes
 | [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据。 | [基类](groups/基类.基类.md) |
 | [DataStorage](classes/mw.DataStorage.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [DebugService](classes/mw.DebugService.md) | debug调试服务 | [服务](groups/服务.服务.md) |
-| [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [工具](groups/工具.工具.md) |
 | [Delegate](classes/mw.Delegate.md) | 委托 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [界面](groups/界面.界面.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [界面](groups/界面.界面.md) |
@@ -81,7 +81,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Fog](classes/mw.Fog.md) | 环境雾 | [场景](groups/场景.场景.md) |
-| [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
+| [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [玩法](groups/玩法.玩法.md) |
 
 
 ## G
@@ -109,7 +109,7 @@ Classes
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [IBagSkin](classes/mwext.IBagSkin.md) | 背包皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [IBagSkin](classes/mwext.IBagSkin.md) | 背包皮肤 | [拓展](groups/拓展.拓展.md) |
 | [IKAnchor](classes/mw.IKAnchor.md) | IK锚点 | [玩法](groups/玩法.玩法.md) |
 | [Image](classes/mw.Image.md) | 图片 | [界面](groups/界面.界面.md) |
 | [ImageInfo](classes/mw.ImageInfo.md) | 图片信息类 | [界面](groups/界面.界面.md) |
@@ -118,13 +118,13 @@ Classes
 | [InputUtil](classes/mw.InputUtil.md) | 输入事件工具 | [输入](groups/输入.输入.md) |
 | [IntegratedMover](classes/mw.IntegratedMover.md) | 运动器组件 | [玩法](groups/玩法.玩法.md) |
 | [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [玩法](groups/玩法.玩法.md) |
-| [ItemDeleteUI](classes/mwext.ItemDeleteUI.md) | 背包删除界面父类,继承这个类来实现自己的道具删除界面，使用BagModule.skin来指定皮肤 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ItemDeleteUI](classes/mwext.ItemDeleteUI.md) | 背包删除界面父类,继承这个类来实现自己的道具删除界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 
 
 ## J
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [JoystickBindKeyType](classes/mw.JoystickBindKeyType.md) | 摇杆按键绑定 | [UI](groups/UI.UI.md) |
+| [JoystickBindKeyType](classes/mw.JoystickBindKeyType.md) | 摇杆按键绑定 | [界面](groups/界面.界面.md) |
 | [JoystickStyleDesigner](classes/mw.JoystickStyleDesigner.md) | 摇杆信息 | [界面](groups/界面.界面.md) |
 
 
@@ -159,7 +159,7 @@ Classes
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Model](classes/mw.Model.md) | 物理模拟与材质设置 | [玩法](groups/玩法.玩法.md) |
-| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [工具](groups/工具.工具.md) |
 | [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleService](classes/mwext.ModuleService.md) | 服务端客户端及数据模块管理 | [基类](groups/基类.基类.md) |
@@ -185,7 +185,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
-| [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [玩法](groups/玩法.玩法.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
 | [PlayerState](classes/mw.PlayerState.md) | PlayerState基类 | [角色系统](groups/角色系统.角色系统.md) |

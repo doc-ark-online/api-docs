@@ -1,4 +1,4 @@
-[SOCIAL](../groups/SOCIAL.SOCIAL.md) / ChatBubble
+[服务](../groups/服务.服务.md) / ChatBubble
 
 # ChatBubble <Badge type="tip" text="Class" /> <Score text="ChatBubble" />
 

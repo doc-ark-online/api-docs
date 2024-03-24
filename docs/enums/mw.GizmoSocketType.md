@@ -1,4 +1,4 @@
-[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / GizmoSocketType
+[基础类型](../groups/基础类型.基础类型.md) / GizmoSocketType
 
 # GizmoSocketType <Badge type="tip" text="Enumeration" /> <Score text="GizmoSocketType" />
 

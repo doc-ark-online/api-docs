@@ -292,7 +292,7 @@ mw
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [Checkbox](../classes/mw.Checkbox.md)  |
-| 界面/控件/勾选框|
+| 勾选框|
 | [CheckboxStyle](../classes/mw.CheckboxStyle.md)  |
 | Checkbox 控件风格类型|
 | [ColorPick](../classes/mw.ColorPick.md)  |

@@ -1,4 +1,4 @@
-[GUI](../groups/GUI.GUI.md) / SelectInfo
+[界面](../groups/界面.界面.md) / SelectInfo
 
 # SelectInfo <Badge type="tip" text="Enumeration" /> <Score text="SelectInfo" />
 

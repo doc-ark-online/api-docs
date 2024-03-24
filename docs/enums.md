@@ -12,8 +12,8 @@ Enums
 | [AnimSlot](enums/mw.AnimSlot.md) | 动画插槽 | [动画](groups/动画.动画.md) |
 | [AnimationMode](enums/mw.AnimationMode.md) | 动画模式 | [动画](groups/动画.动画.md) |
 | [AppearanceType](enums/mw.AppearanceType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
-| [AssetIconSize](enums/mw.AssetIconSize.md) | 图标的分辨率 | [GUI](groups/GUI.GUI.md) |
-| [AssetNonHumanoidSlotType](enums/mw.AssetNonHumanoidSlotType.md) | 非人形角色插槽类型 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [AssetIconSize](enums/mw.AssetIconSize.md) | 图标的分辨率 | [界面](groups/界面.界面.md) |
+| [AssetNonHumanoidSlotType](enums/mw.AssetNonHumanoidSlotType.md) | 非人形角色插槽类型 | [角色系统](groups/角色系统.角色系统.md) |
 | [AssetType](enums/mw.AssetType.md) | 资源类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [AttenuationDistanceModel](enums/mw.AttenuationDistanceModel.md) | 音效衰减函数模型 | [场景](groups/场景.场景.md) |
 | [AttenuationShape](enums/mw.AttenuationShape.md) | 音效衰减形状 | [场景](groups/场景.场景.md) |
@@ -38,7 +38,7 @@ Enums
 | [CameraProjectionMode](enums/mw.CameraProjectionMode.md) | 摄像机镜头模式 | [玩法](groups/玩法.玩法.md) |
 | [CameraRotationMode](enums/mw.CameraRotationMode.md) | 摄像机旋转模式 | [玩法](groups/玩法.玩法.md) |
 | [CameraSwitchBlendFunction](enums/mw.CameraSwitchBlendFunction.md) | 切换摄像机时运用的混合函数 | [玩法](groups/玩法.玩法.md) |
-| [CharacterStateType](enums/mw.CharacterStateType.md) | 角色状态 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [CharacterStateType](enums/mw.CharacterStateType.md) | 角色状态 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterTemplate](enums/mw.CharacterTemplate.md) | 角色体型 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterType](enums/mw.CharacterType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
 | [CheckBoxState](enums/mw.CheckBoxState.md) | 选中规则 | [界面](groups/界面.界面.md) |
@@ -64,20 +64,20 @@ Enums
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [FaceStyle](enums/mw.FaceStyle.md) | 角色基础脸型 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [FaceStyle](enums/mw.FaceStyle.md) | 角色基础脸型 | [角色系统](groups/角色系统.角色系统.md) |
 | [FogPreset](enums/mw.FogPreset.md) | 环境雾预设枚举 | [场景](groups/场景.场景.md) |
-| [ForceType](enums/mw.ForceType.md) | 力区域的施力类型 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
+| [ForceType](enums/mw.ForceType.md) | 力区域的施力类型 | [玩法](groups/玩法.玩法.md) |
 
 
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [基类](groups/基类.基类.md) |
-| [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
-| [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
-| [GizmoScaleType](enums/mw.GizmoScaleType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
-| [GizmoSocketType](enums/mw.GizmoSocketType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
-| [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [基础类型](groups/基础类型.基础类型.md) |
+| [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [基础类型](groups/基础类型.基础类型.md) |
+| [GizmoScaleType](enums/mw.GizmoScaleType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |
+| [GizmoSocketType](enums/mw.GizmoSocketType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |
+| [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |
 | [GravityMode](enums/mw.GravityMode.md) | 重力模式 | [设置](groups/设置.设置.md) |
 
 
@@ -102,7 +102,7 @@ Enums
 | [InitialOscillatorOffset](enums/mw.InitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [玩法](groups/玩法.玩法.md) |
 | [InputTextLimit](enums/mw.InputTextLimit.md) | 输入框限制 | [界面](groups/界面.界面.md) |
 | [InsertNewLineType](enums/mw.InsertNewLineType.md) | 输入款回车键功能 | [界面](groups/界面.界面.md) |
-| [ItemQuality](enums/mwext.ItemQuality.md) | 道具品质 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ItemQuality](enums/mwext.ItemQuality.md) | 道具品质 | [拓展](groups/拓展.拓展.md) |
 
 
 ## K
@@ -138,7 +138,7 @@ Enums
 | :-----| :-----| :-----|
 | [NavModifierType](enums/mw.NavModifierType.md) | 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果 | [玩法](groups/玩法.玩法.md) |
 | [NetStatus](enums/mw.NetStatus.md) | 同步状态 | [基础类型](groups/基础类型.基础类型.md) |
-| [NonHumanoidSlotType](enums/mw.NonHumanoidSlotType.md) | 非人形角色插槽类型 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [NonHumanoidSlotType](enums/mw.NonHumanoidSlotType.md) | 非人形角色插槽类型 | [角色系统](groups/角色系统.角色系统.md) |
 
 
 ## O
@@ -168,8 +168,8 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScrollBarDefaultLocation](enums/mw.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [界面](groups/界面.界面.md) |
-| [SelectInfo](enums/mw.SelectInfo.md) | 列表视图选择来源信息 | [GUI](groups/GUI.GUI.md) |
-| [SelectionMode](enums/mw.SelectionMode.md) | 列表视图选择模式 | [GUI](groups/GUI.GUI.md) |
+| [SelectInfo](enums/mw.SelectInfo.md) | 列表视图选择来源信息 | [界面](groups/界面.界面.md) |
+| [SelectionMode](enums/mw.SelectionMode.md) | 列表视图选择模式 | [界面](groups/界面.界面.md) |
 | [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [场景](groups/场景.场景.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [界面](groups/界面.界面.md) |
 | [SlateBrushTileType](enums/mw.SlateBrushTileType.md) | 图片画刷填充模式 | [界面](groups/界面.界面.md) |

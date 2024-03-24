@@ -1,8 +1,8 @@
-[GUI](../groups/GUI.GUI.md) / Checkbox
+[界面](../groups/界面.界面.md) / Checkbox
 
 # Checkbox <Badge type="tip" text="Class" /> <Score text="Checkbox" />
 
-界面/控件/勾选框
+勾选框
 
 ## Hierarchy
 

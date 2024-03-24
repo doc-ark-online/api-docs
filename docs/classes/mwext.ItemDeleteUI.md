@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ItemDeleteUI
+[拓展](../groups/Extension.拓展.md) / ItemDeleteUI
 
 # ItemDeleteUI <Badge type="tip" text="Class" /> <Score text="ItemDeleteUI" />
 

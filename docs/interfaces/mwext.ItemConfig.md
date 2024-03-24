@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ItemConfig
+[拓展](../groups/Extension.拓展.md) / ItemConfig
 
 # ItemConfig <Badge type="tip" text="Interface" /> <Score text="ItemConfig" />
 

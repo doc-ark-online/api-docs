@@ -11,7 +11,7 @@
 | :-----|
 | 启用碰撞|
 | **[collisionInterpSpeed](mw.SpringArm.md#collisioninterpspeed)**(): `number` <Badge type="tip" text="client" />  |
-| 碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑;|
+| 碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑|
 | **[length](mw.SpringArm.md#length)**(): `number` <Badge type="tip" text="client" />  |
 | 弹簧臂长度|
 | **[localTransform](mw.SpringArm.md#localtransform)**(): [`Transform`](mw.Transform.md) <Badge type="tip" text="client" />  |
@@ -144,7 +144,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑;
+碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑
 
 ::: warning Precautions
 
@@ -164,7 +164,7 @@ ___
 <td style="text-align: left">
 
 
-碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑;
+碰撞插值速度,该值用于调整摄像机从碰撞状态恢复为非碰撞状态的速度,用于使摄像机碰撞效果更加平滑
 
 ::: warning Precautions
 

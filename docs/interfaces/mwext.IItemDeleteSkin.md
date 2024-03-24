@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / IItemDeleteSkin
+[拓展](../groups/Extension.拓展.md) / IItemDeleteSkin
 
 # IItemDeleteSkin <Badge type="tip" text="Interface" /> <Score text="IItemDeleteSkin" />
 

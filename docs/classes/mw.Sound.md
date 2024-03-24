@@ -14,7 +14,7 @@ export default class SoundExample extends Script {
 
     private readonly sound = {
         assetID: "14929",
-        object: null as Sound,
+        object: null as mw.Sound,
     };
 
     protected onStart(): void {
@@ -29,7 +29,7 @@ export default class SoundExample extends Script {
                 this.sound.object = await GameObject.asyncSpawn<mw.Sound>(this.sound.assetID);
 
                 // 设置音效transform
-                const transform = new Transform(new Vector(500, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
+                const transform = new Transform(new Vector(0, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
                 this.sound.object.worldTransform = transform;
 
                 // 设置音效为空间音效
@@ -356,9 +356,13 @@ ___
 
 
 设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。
+
 球体 X是球体半径，Y和Z未使用
+
 胶囊 X是半高，Y是半径，Z未使用
+
 长方体 X、Y和Z是长方体的尺寸
+
 圆锥体 X是圆锥体半径，Y是圆锥体角度，Z是圆锥体衰减角度
 
 #### Parameters

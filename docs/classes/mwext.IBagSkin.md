@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / IBagSkin
+[拓展](../groups/Extension.拓展.md) / IBagSkin
 
 # IBagSkin <Badge type="tip" text="Class" /> <Score text="IBagSkin" />
 

@@ -1,4 +1,4 @@
-[GUI](../groups/GUI.GUI.md) / AssetIconSize
+[界面](../groups/界面.界面.md) / AssetIconSize
 
 # AssetIconSize <Badge type="tip" text="Enumeration" /> <Score text="AssetIconSize" />
 

@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / IBagStruct
+[拓展](../groups/Extension.拓展.md) / IBagStruct
 
 # IBagStruct <Badge type="tip" text="Interface" /> <Score text="IBagStruct" />
 

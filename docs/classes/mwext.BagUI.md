@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / BagUI
+[拓展](../groups/Extension.拓展.md) / BagUI
 
 # BagUI <Badge type="tip" text="Class" /> <Score text="BagUI" />
 

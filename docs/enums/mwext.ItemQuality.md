@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ItemQuality
+[拓展](../groups/Extension.拓展.md) / ItemQuality
 
 # ItemQuality <Badge type="tip" text="Enumeration" /> <Score text="ItemQuality" />
 

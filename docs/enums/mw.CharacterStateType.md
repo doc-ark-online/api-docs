@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterStateType
+[角色系统](../groups/角色系统.角色系统.md) / CharacterStateType
 
 # CharacterStateType <Badge type="tip" text="Enumeration" /> <Score text="CharacterStateType" />
 

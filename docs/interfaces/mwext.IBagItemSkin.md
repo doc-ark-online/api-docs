@@ -1,4 +1,4 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / IBagItemSkin
+[拓展](../groups/Extension.拓展.md) / IBagItemSkin
 
 # IBagItemSkin <Badge type="tip" text="Interface" /> <Score text="IBagItemSkin" />
 
@@ -100,6 +100,7 @@ ___
 • **nameText**: [`TextBlock`](../classes/mw.TextBlock.md) <Badge type="tip" text="client" />
 
 物品名称文本
+
 
 ## Accessors
 
