@@ -1,4 +1,4 @@
-[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ForceVolume
+[玩法](../groups/玩法.玩法.md) / ForceVolume
 
 # ForceVolume <Badge type="tip" text="Class" /> <Score text="ForceVolume" />
 

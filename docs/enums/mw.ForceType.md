@@ -1,4 +1,4 @@
-[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ForceType
+[玩法](../groups/玩法.玩法.md) / ForceType
 
 # ForceType <Badge type="tip" text="Enumeration" /> <Score text="ForceType" />
 

@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ModelUtil
+[玩法](../groups/玩法.玩法.md) / ModelUtil
 
 # ModelUtil <Badge type="tip" text="Class" /> <Score text="ModelUtil" />
 
