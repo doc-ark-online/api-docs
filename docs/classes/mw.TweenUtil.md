@@ -79,7 +79,7 @@ class DaoDanScript {
         let tempPos: Vector = Vector.zero
 
         // 创建起点为导弹位置的一个Tween
-        const newTween = new TweenUtil.Tween(this.prefab.worldTransform.position.clone())
+        const newTween = new mw.Tween(this.prefab.worldTransform.position.clone())
 
         newTween.to({
             // X轴飞行路径（这些路径点可以自由定义）
@@ -146,12 +146,12 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
         let tempRotate: Rotation = Rotation.zero
         let startPos: Vector = this.prefab.worldTransform.position.clone()
 
-        let tweenA = new TweenUtil.Tween({ y: 0 }).to({ y: 60 + Math.random() * 30 }, 1000).onUpdate((value) => {
+        let tweenA = new mw.Tween({ y: 0 }).to({ y: 60 + Math.random() * 30 }, 1000).onUpdate((value) => {
             tempRotate.y = value.y
             this.prefab.worldTransform.rotation = tempRotate
         }).start().easing(TweenUtil.Easing.Cubic.Out)
 
-        let tweenB = new TweenUtil.Tween(startPos).to(startPos.clone().add(new mw.Vector(0, 0, Math.random() * 100)), 1000).onUpdate((value) => {
+        let tweenB = new mw.Tween(startPos).to(startPos.clone().add(new mw.Vector(0, 0, Math.random() * 100)), 1000).onUpdate((value) => {
             this.prefab.worldTransform.position = value
         }).start().easing(TweenUtil.Easing.Cubic.Out)
     }
