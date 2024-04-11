@@ -8,7 +8,8 @@
 
 由分量 (x,y,z) 组成的三维空间中的旋转量。
 
-Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
+Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
+绕三个轴的旋转值：Pitch，Yaw，Roll翻译为俯仰角，偏航角，翻滚角。分别代表绕X轴，Y轴，Z轴的旋转值。
 
 ::: warning Precautions
 
