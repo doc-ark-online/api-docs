@@ -34,6 +34,8 @@
 | 获取输入框的输入格式|
 | **[isRichText](mw.InputBox.md#isrichtext)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否为富文本|
+| **[newLineKeyBind](mw.InputBox.md#newlinekeybind)**(): [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) <Badge type="tip" text="client" />  |
+| 插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,枚举可能通过 “|” 组合在一起设置。判定支不支持需要通过“&”来判定|
 | **[onTextChanged](mw.InputBox.md#ontextchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="client" />  |
 | 文本改变事件|
 | **[onTextCommitted](mw.InputBox.md#ontextcommitted)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/mw.TextCommit.md)) => `void`\> <Badge type="tip" text="client" />  |
@@ -85,6 +87,8 @@
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
+| **[mouseCursor](mw.Widget.md#mousecursor)**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />  |
+| 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
@@ -626,6 +630,52 @@ ___
 #### Parameters
 
 | `isRichText` | `boolean` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### newLineKeyBind <Score text="newLineKeyBind" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **newLineKeyBind**(): [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **newLineKeyBind**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,枚举可能通过 “|” 组合在一起设置。判定支不支持需要通过“&”来判定
+
+#### Returns
+
+| [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+插入换行的回车交互，请注意只要触发换行，就无法触发提交文本,可以将枚举通过 “|” 组合在一起设置。
+
+#### Parameters
+
+| `value` | [`InsertNewLineType`](../enums/mw.InsertNewLineType.md) |
 | :------ | :------ |
 
 

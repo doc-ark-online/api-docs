@@ -24,10 +24,14 @@ Classes
 ## B
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [BagItemUI](classes/mwext.BagItemUI.md) | 背包道具父类,继承这个类来实现自己的道具格子界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
+| [BagModule](classes/mwext.BagModule.md) | 背包实例 | [拓展](groups/拓展.拓展.md) |
+| [BagUI](classes/mwext.BagUI.md) | 背包界面父类,继承这个类来实现自己的背包界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 | [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [界面](groups/界面.界面.md) |
 | [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [界面](groups/界面.界面.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
 | [Button](classes/mw.Button.md) | 按钮 | [界面](groups/界面.界面.md) |
+| [ButtonStyle](classes/mw.ButtonStyle.md) | Button 控件风格类型 | [界面](groups/界面.界面.md) |
 
 
 ## C
@@ -41,6 +45,8 @@ Classes
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [界面](groups/界面.界面.md) |
 | [ChatBubble](classes/mw.ChatBubble.md) | 聊天头顶气泡 | [服务](groups/服务.服务.md) |
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [服务](groups/服务.服务.md) |
+| [Checkbox](classes/mw.Checkbox.md) | 勾选框 | [界面](groups/界面.界面.md) |
+| [CheckboxStyle](classes/mw.CheckboxStyle.md) | Checkbox 控件风格类型 | [界面](groups/界面.界面.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 调色板 | [界面](groups/界面.界面.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [输入](groups/输入.输入.md) |
 
@@ -56,6 +62,8 @@ Classes
 | [Delegate](classes/mw.Delegate.md) | 委托 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [界面](groups/界面.界面.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [界面](groups/界面.界面.md) |
+| [Dropdown](classes/mw.Dropdown.md) | Dropdown | [界面](groups/界面.界面.md) |
+| [DropdownStyle](classes/mw.DropdownStyle.md) | Dropdown 控件风格类型 | [界面](groups/界面.界面.md) |
 
 
 ## E
@@ -73,7 +81,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Fog](classes/mw.Fog.md) | 环境雾 | [场景](groups/场景.场景.md) |
-| [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
+| [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [玩法](groups/玩法.玩法.md) |
 
 
 ## G
@@ -101,12 +109,16 @@ Classes
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [IBagSkin](classes/mwext.IBagSkin.md) | 背包皮肤 | [拓展](groups/拓展.拓展.md) |
+| [IKAnchor](classes/mw.IKAnchor.md) | IK锚点 | [玩法](groups/玩法.玩法.md) |
 | [Image](classes/mw.Image.md) | 图片 | [界面](groups/界面.界面.md) |
+| [ImageInfo](classes/mw.ImageInfo.md) | 图片信息类 | [界面](groups/界面.界面.md) |
 | [Impulse](classes/mw.Impulse.md) | 冲量 | [玩法](groups/玩法.玩法.md) |
 | [InputBox](classes/mw.InputBox.md) | 输入框 | [界面](groups/界面.界面.md) |
 | [InputUtil](classes/mw.InputUtil.md) | 输入事件工具 | [输入](groups/输入.输入.md) |
 | [IntegratedMover](classes/mw.IntegratedMover.md) | 运动器组件 | [玩法](groups/玩法.玩法.md) |
 | [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [玩法](groups/玩法.玩法.md) |
+| [ItemDeleteUI](classes/mwext.ItemDeleteUI.md) | 背包删除界面父类,继承这个类来实现自己的道具删除界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 
 
 ## J
@@ -133,6 +145,7 @@ Classes
 | [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [界面](groups/界面.界面.md) |
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
 | [LinearColor](classes/mw.LinearColor.md) | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
+| [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
@@ -146,7 +159,7 @@ Classes
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Model](classes/mw.Model.md) | 物理模拟与材质设置 | [玩法](groups/玩法.玩法.md) |
-| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [工具](groups/工具.工具.md) |
 | [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleService](classes/mwext.ModuleService.md) | 服务端客户端及数据模块管理 | [基类](groups/基类.基类.md) |
@@ -209,6 +222,7 @@ Classes
 | [Script](classes/mw.Script.md) | 脚本的基类 | [基类](groups/基类.基类.md) |
 | [ScriptingSettings](classes/mw.ScriptingSettings.md) | 全局的脚本配置信息 | [设置](groups/设置.设置.md) |
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [界面](groups/界面.界面.md) |
+| [ScrollbarStyle](classes/mw.ScrollbarStyle.md) | 滚动条风格类型 | [界面](groups/界面.界面.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 描边绘制工具 | [工具](groups/工具.工具.md) |
 | [Skybox](classes/mw.Skybox.md) | 天空盒 | [场景](groups/场景.场景.md) |
 | [SlateColor](classes/mw.SlateColor.md) | 颜色管理 | [界面](groups/界面.界面.md) |
@@ -229,6 +243,7 @@ Classes
 | [TabGroup](classes/mw.TabGroup.md) | 选项卡组 | [界面](groups/界面.界面.md) |
 | [TeleportService](classes/mw.TeleportService.md) | 多场景和传送服务 | [服务](groups/服务.服务.md) |
 | [TextBlock](classes/mw.TextBlock.md) | 文本 | [界面](groups/界面.界面.md) |
+| [TextStyle](classes/mw.TextStyle.md) | 文本风格类型 | [界面](groups/界面.界面.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [工具](groups/工具.工具.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [界面](groups/界面.界面.md) |
 | [Transform](classes/mw.Transform.md) | 三维变换 | [基础类型](groups/基础类型.基础类型.md) |

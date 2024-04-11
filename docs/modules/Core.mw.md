@@ -23,6 +23,8 @@ mw
 | 动画模式|
 | [AppearanceType](../enums/mw.AppearanceType.md)  |
 | 形象类型|
+| [AssetIconSize](../enums/mw.AssetIconSize.md)  |
+| 图标的分辨率|
 | [AssetNonHumanoidSlotType](../enums/mw.AssetNonHumanoidSlotType.md)  |
 | 非人形角色插槽类型|
 | [AssetType](../enums/mw.AssetType.md)  |
@@ -73,6 +75,8 @@ mw
 | 事件发送的结果|
 | [DragPivot](../enums/mw.DragPivot.md)  |
 | 拖拽的锚点|
+| [EventType](../enums/mw.EventType.md)  |
+| :----- |
 | [ExpressionType](../enums/mw.ExpressionType.md)  |
 | 表情类型|
 | [FaceStyle](../enums/mw.FaceStyle.md)  |
@@ -81,8 +85,17 @@ mw
 | 环境雾预设枚举|
 | [ForceType](../enums/mw.ForceType.md)  |
 | 力区域的施力类型|
-| [GraphicsLevel](../enums/Core.mw.GraphicsLevel.md)  |
-| :----- |
+| [GizmoCoordinateType](../enums/mw.GizmoCoordinateType.md)  |
+| gizmo坐标轴类型|
+| [GizmoModeType](../enums/mw.GizmoModeType.md)  |
+| gizmo模式|
+| [GizmoScaleType](../enums/mw.GizmoScaleType.md)  |
+| gizmo空间|
+| [GizmoSocketType](../enums/mw.GizmoSocketType.md)  |
+| gizmo空间|
+| [GizmoSpaceType](../enums/mw.GizmoSpaceType.md)  |
+| gizmo空间|
+| [GraphicsLevel](../enums/Core.mw.GraphicsLevel.md) |
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
 | [HideInEditorState](../enums/mw.HideInEditorState.md)  |
@@ -99,6 +112,8 @@ mw
 | 开发给用户用的URL枚举，需要与C++层的枚举对应|
 | [HumanoidSlotType](../enums/mw.HumanoidSlotType.md)  |
 | 人形角色插槽类型|
+| [IKPart](../enums/mw.IKPart.md)  |
+| IK锚点类型|
 | [ImpulseForceType](../enums/mw.ImpulseForceType.md)  |
 | 冲量力类型|
 | [ImpulseType](../enums/mw.ImpulseType.md)  |
@@ -107,6 +122,8 @@ mw
 | 定义如何开始(从零开始，或者从随机值开始)|
 | [InputTextLimit](../enums/mw.InputTextLimit.md)  |
 | 输入框限制|
+| [InsertNewLineType](../enums/mw.InsertNewLineType.md)  |
+| 输入款回车键功能|
 | [Keys](../enums/mw.Keys.md)  |
 | 按键Key值|
 | [LanguageType](../enums/mw.LanguageType.md)  |
@@ -121,6 +138,8 @@ mw
 | 发送消息的类型|
 | [MotionAxis](../enums/mw.MotionAxis.md)  |
 | 运动坐标系|
+| [MouseCursor](../enums/mw.MouseCursor.md)  |
+| 光标类型|
 | [MouseLockMode](../enums/mw.MouseLockMode.md)  |
 | 鼠标锁定模式|
 | [MoveControlMode](../enums/mw.MoveControlMode.md)  |
@@ -254,6 +273,8 @@ mw
 | 禁行区|
 | [Button](../classes/mw.Button.md)  |
 | 按钮|
+| [ButtonStyle](../classes/mw.ButtonStyle.md)  |
+| Button 控件风格类型|
 | [Camera](../classes/mw.Camera.md)  |
 | 摄像机|
 | [Canvas](../classes/mw.Canvas.md)  |
@@ -270,6 +291,10 @@ mw
 | 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
+| [Checkbox](../classes/mw.Checkbox.md)  |
+| 勾选框|
+| [CheckboxStyle](../classes/mw.CheckboxStyle.md)  |
+| Checkbox 控件风格类型|
 | [ColorPick](../classes/mw.ColorPick.md)  |
 | 调色板|
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
@@ -286,6 +311,10 @@ mw
 | UI 拖拽事件|
 | [DragDropPayLoad](../classes/mw.DragDropPayLoad.md)  |
 | 拖拽事件数据传递类|
+| [Dropdown](../classes/mw.Dropdown.md)  |
+| Dropdown|
+| [DropdownStyle](../classes/mw.DropdownStyle.md)  |
+| Dropdown 控件风格类型|
 | [Effect](../classes/mw.Effect.md)  |
 | 特效|
 | [EffectService](../classes/mw.EffectService.md)  |
@@ -324,8 +353,12 @@ mw
 | 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）|
 | [HotWeaponReloadComponent](../classes/mw.HotWeaponReloadComponent.md)  |
 | 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑|
+| [IKAnchor](../classes/mw.IKAnchor.md)  |
+| IK锚点|
 | [Image](../classes/mw.Image.md)  |
 | 图片|
+| [ImageInfo](../classes/mw.ImageInfo.md)  |
+| 图片信息类|
 | [Impulse](../classes/mw.Impulse.md)  |
 | 冲量|
 | [InputBox](../classes/mw.InputBox.md)  |
@@ -348,6 +381,8 @@ mw
 | 光照|
 | [LinearColor](../classes/mw.LinearColor.md)  |
 | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0|
+| [ListItemStyle](../classes/mw.ListItemStyle.md)  |
+| 背景图片风格类型|
 | [LocaleUtil](../classes/mw.LocaleUtil.md)  |
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
@@ -424,6 +459,8 @@ mw
 | 全局的脚本配置信息|
 | [ScrollBox](../classes/mw.ScrollBox.md)  |
 | 滑动框|
+| [ScrollbarStyle](../classes/mw.ScrollbarStyle.md)  |
+| 滚动条风格类型|
 | [SelectionUtil](../classes/mw.SelectionUtil.md)  |
 | 描边绘制工具|
 | [Skybox](../classes/mw.Skybox.md)  |
@@ -453,6 +490,8 @@ mw
 | 多场景和传送服务|
 | [TextBlock](../classes/mw.TextBlock.md)  |
 | 文本|
+| [TextStyle](../classes/mw.TextStyle.md)  |
+| 文本风格类型|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
 | [TouchPad](../classes/mw.TouchPad.md)  |
@@ -619,6 +658,8 @@ mw
 | 客户端|
 | **[Multicast](Core.mw.md#multicast)**: `FunctionOption`   |
 | 多播|
+| **[Result](Core.mw.md#result)**: `FunctionOption`   |
+| 与Client Server配合实现RPC函数返回值|
 | **[Server](Core.mw.md#server)**: `FunctionOption`   |
 | 服务端|
 | **[UILayerBottom](Core.mw.md#uilayerbottom)**: ``1``  |
@@ -639,7 +680,7 @@ mw
 | 顶层 zOrder开始于400000|
 
 ### Functions <Score text="Functions" /> 
-| **[Property](Core.mw.md#property)**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void`   |
+| **[Property](Core.mw.md#property)**(`option?`): (`target`: `object`, `key`: `string`) => `void`   |
 | :-----|
 | 属性支持同步|
 | **[RemoteFunction](Core.mw.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`, `descriptor`: `PropertyDescriptor`) => `void`   |
@@ -1541,6 +1582,14 @@ ___
 
 ___
 
+### Result <Score text="Result" /> 
+
+• `Const` **Result**: `FunctionOption` 
+
+与Client Server配合实现RPC函数返回值
+
+___
+
 ### Server <Score text="Server" /> 
 
 • `Const` **Server**: `FunctionOption` 
@@ -1615,7 +1664,7 @@ ___
 
 ### Property <Score text="Property" /> 
 
-• **Property**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+• **Property**(`option?`): (`target`: `object`, `key`: `string`) => `void` 
 
 属性支持同步
 

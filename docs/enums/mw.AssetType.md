@@ -9,6 +9,7 @@
 ### Enumeration Members <Score text="Enumeration" /> 
 | **[All](mw.AssetType.md#all)** = ``0``  |
 | :----- |
+| **[BTAStaticMesh](mw.AssetType.md#btastaticmesh)** = ``10`` |
 | **[Character](mw.AssetType.md#character)** = ``7`` |
 | **[Cloth](mw.AssetType.md#cloth)** = ``3`` |
 | **[DynamicAttachment](mw.AssetType.md#dynamicattachment)** = ``9`` |
@@ -26,6 +27,14 @@
 • **All** = ``0``
 
 All
+
+___
+
+### BTAStaticMesh <Score text="BTAStaticMesh" /> 
+
+• **BTAStaticMesh** = ``10``
+
+BTAStaticMesh
 
 ___
 

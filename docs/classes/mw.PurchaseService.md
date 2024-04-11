@@ -476,11 +476,21 @@ ___
 | `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调 |
 
 
-::: warning Precautions
+status 含义：
 
-只在支持 IAP 的 233/Playza/口袋方舟 内使用时生效
+status = 200: 订单支付成功
 
-:::
+status = 408: 请求超时
+
+status = 409: 处理下单回调报错
+
+status = 410: 处理支付回调报错
+
+status = 501: 余额不足
+
+status = 502: 暂未开放购买
+
+status = 503: amount参数类型错误
 
 ___
 

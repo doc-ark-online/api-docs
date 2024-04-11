@@ -20,6 +20,8 @@
 | 获取图片绘制类型|
 | **[imageGuid](mw.Image.md#imageguid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取图片id|
+| **[imageInfo](mw.Image.md#imageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
+| 图片资源信息|
 | **[imageSize](mw.Image.md#imagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取图片大小|
 | **[margin](mw.Image.md#margin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
@@ -45,6 +47,8 @@
 | 获取控件GUID|
 | **[isHovered](mw.Widget.md#ishovered)**(): `boolean` <Badge type="tip" text="client" />  |
 | 是否是hovered|
+| **[mouseCursor](mw.Widget.md#mousecursor)**(): [`MouseCursor`](../enums/mw.MouseCursor.md) <Badge type="tip" text="client" />  |
+| 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
@@ -267,6 +271,33 @@ ___
 | :------ | :------ |
 
 
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### imageInfo <Score text="imageInfo" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **imageInfo**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+图片资源信息
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) |  |
+| :------ | :------ |
 
 </td>
 </tr></tbody>

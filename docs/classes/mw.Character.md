@@ -4,7 +4,7 @@
 
 角色
 
-
+--------------------------------------
 
 <span style="font-size: 14px;">
 使用示例: 生成一个角色
@@ -155,6 +155,8 @@
 | 沿着给定的方向向量添加移动输入|
 | **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)): `void`   |
 | 将物体附着到人物角色的指定插槽|
+| **[cancelHeadFollow](mw.Character.md#cancelheadfollow)**(): `void` <Badge type="tip" text="client" />  |
+| 取消头部追踪|
 | **[changeState](mw.Character.md#changestate)**(`stateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)): `void`   |
 | 改变角色的状态|
 | **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void`   |
@@ -171,6 +173,8 @@
 | 获取角色插槽的世界坐标|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md)   |
 | 通过头部模型顶点 index 实时获取顶点位置|
+| **[headFollow](mw.Character.md#headfollow)**(`target`: ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
+| 头部追踪|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
 | 为角色加载一个动画资源|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
@@ -787,8 +791,6 @@ export default class Example_Braking extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -2332,8 +2334,6 @@ export default class Example_GroundFriction extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 行走制动速率为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
@@ -2432,8 +2432,6 @@ export default class Example_GroundFriction extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 行走制动速率为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Keys.One, () => {
@@ -2826,8 +2824,6 @@ export default class Example_Character extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -3006,8 +3002,6 @@ export default class Example_Character_MaxAcceleration extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -3631,8 +3625,6 @@ export default class Example_MaxWalkSpeed extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -4216,12 +4208,6 @@ ___
 
 设置角色物理模拟状态
 
-当 physicsEnabled 设置为 true 时，它仅参与物理模拟，而不进行空间查询。这意味着它不会对射线投射、扫描或重叠等空间查询产生任何影响。
-这种设置适用于那些不需要进行空间查询，只需要参与物理模拟的物体。例如，柔软部分或不需要按骨骼进行检测的角色或某些部分。
-
-当 physicsEnabled 设置为 false 时，它仅参与空间查询，而不进行物理模拟。这意味着它不会受到物理引擎的影响，也不会对物理模拟产生任何效果。
-这种设置适用于那些不需要进行物理模拟，只需要进行空间查询的物体。例如，角色移动或其他不需要物理模拟的对象。
-
 #### Parameters
 
 | `value` `boolean` | 是否开启角色物理模拟。 |
@@ -4306,8 +4292,6 @@ export default class Example_Character_RotateRate extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -4389,8 +4373,6 @@ export default class Example_Character extends Script {
             myCharacter.maxWalkSpeed = 2 * myCharacter.maxWalkSpeed;
             // 最大加速度为原来的0.1倍
             myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
             // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
             InputUtil.onKeyDown(Keys.One, () => {
@@ -4827,6 +4809,15 @@ export default class Example_Character_AttachToSlot extends Script {
     }
 }
 ```
+
+___
+
+### cancelHeadFollow <Score text="cancelHeadFollow" /> 
+
+• **cancelHeadFollow**(): `void` <Badge type="tip" text="client" />
+
+取消头部追踪
+
 
 ___
 
@@ -5464,6 +5455,20 @@ export default class Example_Character_GetVertexPosition extends Script {
 
 ___
 
+### headFollow <Score text="headFollow" /> 
+
+• **headFollow**(`target`): `void` <Badge type="tip" text="client" />
+
+头部追踪
+
+#### Parameters
+
+| `target` ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) |  追踪点或者追踪对象 |
+| :------ | :------ |
+
+
+___
+
 ### loadAnimation <Score text="loadAnimation" /> 
 
 • **loadAnimation**(`assetId`): [`Animation`](mw.Animation.md) 
@@ -5891,6 +5896,7 @@ export default class NewScript1 extends Script {
     }
 }
 ``` 
+
 
 
 ___

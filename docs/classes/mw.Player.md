@@ -8,11 +8,11 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 
 角色管理器类会维护一个字典，用于存储所有角色的唯一标识符。用于区分不同的角色。
 
-角色管理器会提供方法来添加、删除和检索角色的ID。当创建一个新角色时，该角色的ID会被分配并添加到管理器的列表中。当角色不再存在时，该ID会被从列表中删除。通过这些方法，可以方便地管理角色的ID集合。
+角色管理器会提供方法来添加、删除和检索角色的 ID。当创建一个新角色时，该角色的ID会被分配并添加到管理器的列表中。当角色不再存在时，该ID会被从列表中删除。通过这些方法，可以方便地管理角色的ID集合。
 
-角色管理器还提供获取玩家的功能。通过玩家的ID，可以轻松地从管理器中获取对应的角色对象。这样，其他部分的代码可以使用玩家的ID来获取与之相关联的角色实例，进行进一步的处理和操作。
+角色管理器还提供获取玩家的功能。通过玩家的 ID，可以轻松地从管理器中获取对应的角色对象。这样，其他部分的代码可以使用玩家的ID来获取与之相关联的角色实例，进行进一步的处理和操作。
 
-值得注意的是可通过Player.localPlayer.character获取本地玩家角色，开启本地角色玩家的配置。
+值得注意的是可通过 Player.localPlayer.character 获取本地玩家角色，开启本地角色玩家的配置。
 
 ## Table of contents
 
@@ -992,20 +992,17 @@ ___
 | :------ | :------ |
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，代码如下：
+使用示例:创建一个名为"Example_Player_GetPlayer"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果。代码如下：
 </span>
 
 ```ts
 @Component
-export default class Example_Player_GetPlayer extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
+export default class Example_Player extends Script {
+
     protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            Player.asyncGetPlayer(Player.localPlayer.playerId).then((player)=>{
-                console.log(player.playerId);
-            });
-        }
+        Player.asyncGetPlayer(Player.localPlayer.playerId).then((player)=>{
+            console.log(player.playerId)
+        });
     }
 }
 ```
@@ -1148,32 +1145,15 @@ ___
 :::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将通过getPlayer接口获取玩家。按下键盘“1”，使用 getPlayer 函数通过 userId 或 playerId 获取玩家对象并打印名字在控制台中看到 getPlayer 的效果。代码如下：
+使用示例:创建一个名为"Example_Player"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将通过getPlayer接口获取玩家。按下键盘“1”，使用 getPlayer 函数通过 userId 或 playerId 获取玩家对象并打印名字在控制台中看到 getPlayer 的效果。代码如下：
 </span>
 
 ```ts
 @Component
-export default class Example_Player_GetPlayer extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
+export default class Example_Player extends Script {
+
     protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 添加一个按键方法：按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字
-            InputUtil.onKeyDown(Keys.One, () => {
-                // 获取当前客户端的玩家(自己)并打印userId和playerId
-                let myself = Player.localPlayer;
-                console.log("My userId: " + myself.userId);
-                console.log("My playerId: " + myself.playerId);
-                // 通过userId获取玩家(自己)并打印userId和playerId
-                let myself_2 = Player.getPlayer(myself.userId);
-                console.log("myself_2 userId: " + myself_2.userId);
-                console.log("myself_2 playerId: " + myself_2.playerId);
-                // 通过playerId获取玩家(自己)并打印userId和playerId
-                let myself_3 = Player.getPlayer(myself.playerId);
-                console.log("myself_3 userId: " + myself_3.userId);
-                console.log("myself_3 playerId: " + myself_3.playerId);
-            });
-        }
+        Player.getPlayer(Player.localPlayer.playerId);
     }
 }
 ```

@@ -107,8 +107,10 @@ Camera 对象如何工作？
 
 
 ### Methods <Score text="Methods" /> 
-| **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void` <Badge type="tip" text="client" />  |
+| **[applySavedSerializedData](mw.Camera.md#applysavedserializeddata)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
+| 应用序列化数据|
+| **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void` <Badge type="tip" text="client" />  |
 | 相机锁定目标|
 | **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
 | 摄像机朝向目标|
@@ -127,14 +129,12 @@ Camera 对象如何工作？
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
-| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 附加脚本|
+| **[asyncGetChildByName](mw.GameObject.md#asyncgetchildbyname)**(`name`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
@@ -161,6 +161,8 @@ Camera 对象如何工作？
 | 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
+| 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
@@ -1733,6 +1735,66 @@ i++) {
 | :------ | :------ |
 
 ## Methods
+
+___
+
+### applySavedSerializedData <Score text="applySavedSerializedData" /> 
+
+• **applySavedSerializedData**(): `void` <Badge type="tip" text="client" />
+
+应用序列化数据
+
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Camera_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
+</span>
+
+```ts
+@Component
+export default class Example_Camera_LookAt extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家角色
+            let myCharacter = myPlayer.character;
+            // 创建一个敌方角色作为锁定目标
+            let enemy = Player.spawnDefaultCharacter();
+            enemy.switchToFlying()
+            enemy.worldTransform.position = new Vector(1000, 500, 130);
+            // 敌方角色追踪玩家角色
+            TimeUtil.setInterval(() => {
+                let distance = Vector.subtract(myCharacter.worldTransform.position, enemy.worldTransform.position);
+                if(distance.length < 200) {
+                    enemy.addMovement(new Vector(0, 0, 5));
+                } else {
+                    let dir = distance.normalized;
+                    enemy.addMovement(dir);
+                    enemy.worldTransform.rotation = distance.toRotation();
+                }
+            }, 0.02)
+            // 添加一个按键方法：按下键盘“1”，锁定敌方角色
+            InputUtil.onKeyDown(Keys.One, () => {
+                console.error("Start Lock");
+                let myCamera = Camera.currentCamera;
+                myCamera.lock(enemy, {lockInterval:0, lockSpeed: 0, lockRange: 500, lockDistance: 5000, lockOffset: new Vector(0, 0, 80), bPause: true});
+            });
+            // 添加一个按键方法：按下键盘“2”,手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程
+            InputUtil.onKeyDown(Keys.Two, () => {
+                let myCamera = Camera.currentCamera;
+                myCamera.unlock();
+            });
+            // 添加一个按键方法：按下键盘“3”,角色看向目标（无追踪效果）
+            InputUtil.onKeyDown(Keys.Three, () => {
+                let myCamera = Camera.currentCamera;
+                myCamera.lookAt(enemy);
+            });
+        }
+    }
+}
+```
 
 ___
 

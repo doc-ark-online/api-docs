@@ -844,7 +844,7 @@ ___
 <td style="text-align: left">
 
 
-设置天空盒亮度3
+设置天空盒亮度
 
 #### Parameters
 

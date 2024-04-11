@@ -112,15 +112,13 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  传入材质标量参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
+| `parameterName` `string` |  传入材质标量参数名称 range:参数名称 |
 | :------ | :------ |
 
 #### Returns
 
 | `number` | 参数值 |
 | :------ | :------ |
-
-使用这个函数可以在代码中获取材质实例中指定标量参数的值。
 
 标量参数是材质中的一个可调节的数值，可以用于控制材质的各种属性，例如颜色、强度、透明度等。
 
@@ -136,7 +134,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 range: 想要设置的贴图参数名字长度 |
+| `parameterName` `string` |  参数名称 range: |
 | :------ | :------ |
 
 #### Returns
@@ -154,7 +152,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
+| `parameterName` `string` |  参数名称 range: |
 | :------ | :------ |
 
 #### Returns
@@ -172,7 +170,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
+| `parameterName` `string` |  参数名称 range: |
 | :------ | :------ |
 | `value` `number` |  参数值 设置可调节参数的数值为多少。type: 浮点数 range: 不做限制。 |
 
@@ -187,7 +185,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 range: 想要设置的贴图参数名字长度 |
+| `parameterName` `string` |  参数名称 range: |
 | :------ | :------ |
 | `value` `string` |  参数值 range: 被设置的值，不做限制，合理即可 |
 
@@ -202,7 +200,7 @@ ___
 
 #### Parameters
 
-| `parameterName` `string` |  参数名称 range: 不做限制，字符串长度依据标量参数名称长度而定 |
+| `parameterName` `string` |  参数名称 range: |
 | :------ | :------ |
 | `value` [`LinearColor`](mw.LinearColor.md) |  参数值 type: 浮点数 range: 不做限制。 |
 

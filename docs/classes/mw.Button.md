@@ -26,6 +26,8 @@
 | 获取禁用图片绘制类型|
 | **[disableImageGuid](mw.Button.md#disableimageguid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取禁用图片ID|
+| **[disableImageInfo](mw.Button.md#disableimageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
+| 获取按钮Disable图片的ImageInfo|
 | **[disableImageMargin](mw.Button.md#disableimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
 | 获取禁用图片边距|
 | **[disableImageSize](mw.Button.md#disableimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
@@ -38,6 +40,8 @@
 | 获取普通图片绘制类型|
 | **[normalImageGuid](mw.Button.md#normalimageguid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取普通图片ID|
+| **[normalImageInfo](mw.Button.md#normalimageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
+| 获取按钮normal图片的ImageInfo|
 | **[normalImageMargin](mw.Button.md#normalimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
 | 获取普通图片边距|
 | **[normalImageSize](mw.Button.md#normalimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
@@ -58,6 +62,8 @@
 | 获取按压图片绘制类型|
 | **[pressedImageGuid](mw.Button.md#pressedimageguid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取按下图片ID|
+| **[pressedImageInfo](mw.Button.md#pressedimageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
+| 获取按钮Pressed图片的ImageInfo|
 | **[pressedImageMargin](mw.Button.md#pressedimagemargin)**(): `Readonly`<[`Margin`](mw.Margin.md)\> <Badge type="tip" text="client" />  |
 | 获取按压图片边距|
 | **[pressedImageSize](mw.Button.md#pressedimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
@@ -264,6 +270,33 @@ ___
 | :------ | :------ |
 
 
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### disableImageInfo <Score text="disableImageInfo" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **disableImageInfo**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取按钮Disable图片的ImageInfo
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) | 返回ImageInfo对象 |
+| :------ | :------ |
 
 </td>
 </tr></tbody>
@@ -540,6 +573,33 @@ ___
 | :------ | :------ |
 
 
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### normalImageInfo <Score text="normalImageInfo" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **normalImageInfo**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取按钮normal图片的ImageInfo
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) | 返回ImageInfo对象 |
+| :------ | :------ |
 
 </td>
 </tr></tbody>
@@ -905,6 +965,33 @@ ___
 | :------ | :------ |
 
 
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### pressedImageInfo <Score text="pressedImageInfo" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **pressedImageInfo**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取按钮Pressed图片的ImageInfo
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) | 返回ImageInfo对象 |
+| :------ | :------ |
 
 </td>
 </tr></tbody>

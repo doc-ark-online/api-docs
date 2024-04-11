@@ -32,6 +32,14 @@ https://docs-028.ark.online/UI/LifeCycleandEventDescriptionofUIScripts.html
 
 - **`UIScript`**
 
+  ↳ [`BagItemUI`](mwext.BagItemUI.md)
+
+  ↳ [`BagUI`](mwext.BagUI.md)
+
+  ↳ [`ItemDeleteUI`](mwext.ItemDeleteUI.md)
+
+  ↳ [`IBagItemSkin`](../interfaces/mwext.IBagItemSkin.md)
+
   ↳ [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)
 
   ↳ [`ILeaderboardPanelView`](../interfaces/mwext.ILeaderboardPanelView.md)

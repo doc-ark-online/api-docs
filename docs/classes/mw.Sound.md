@@ -22,7 +22,7 @@ export default class SoundExample extends Script {
     }
 
     @mw.RemoteFunction(mw.Client)
-    public async createSound(): Promise<void> {
+    public async createSound(): `Promise`<`void`\> {
         const success = await AssetUtil.asyncDownloadAsset(this.sound.assetID);
             if (success) {
                 // 下载完毕创建音效
@@ -129,14 +129,14 @@ export default class SoundExample extends Script {
 
 
 ### Methods <Score text="Methods" /> 
-| **[pause](mw.Sound.md#pause)**(`bPause?`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| **[pause](mw.Sound.md#pause)**(`bPause?`: `boolean`): `void`   |
 | :-----|
 | 暂停播放音效|
-| **[play](mw.Sound.md#play)**(`startTime?`: `number`, `onSuccess?`: () => `void`): `void` <Badge type="tip" text="client" />  |
+| **[play](mw.Sound.md#play)**(`startTime?`: `number`, `onSuccess?`: () => `void`): `void`   |
 | 播放音效|
 | **[setSoundAsset](mw.Sound.md#setsoundasset)**(`assetGUID`: `string`): `void` <Badge type="tip" text="client" />  |
 | 通过 GUID 设置音效|
-| **[stop](mw.Sound.md#stop)**(): `void` <Badge type="tip" text="client" />  |
+| **[stop](mw.Sound.md#stop)**(): `void`   |
 | 停止播放音效|
 
 
@@ -145,14 +145,12 @@ export default class SoundExample extends Script {
 | **[addComponent](mw.GameObject.md#addcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>, `bInReplicates?`: `boolean`): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
 | :-----|
 | 添加一个脚本组件|
-| **[addScriptToObject](mw.GameObject.md#addscripttoobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 附加脚本|
+| **[asyncGetChildByName](mw.GameObject.md#asyncgetchildbyname)**(`name`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
+| 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
-| **[delScriptFromObject](mw.GameObject.md#delscriptfromobject)**(`script`: [`Script`](mw.Script.md)): `void`   |
-| 移除脚本|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
@@ -179,6 +177,8 @@ export default class SoundExample extends Script {
 | 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
+| 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
@@ -356,9 +356,13 @@ ___
 
 
 设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。
+
 球体 X是球体半径，Y和Z未使用
+
 胶囊 X是半高，Y是半径，Z未使用
+
 长方体 X、Y和Z是长方体的尺寸
+
 圆锥体 X是圆锥体半径，Y是圆锥体角度，Z是圆锥体衰减角度
 
 #### Parameters
@@ -385,7 +389,7 @@ ___
 </th>
 <th style="text-align: left">
 
-• `set` **falloffDistance**(`fallOffDistance`): `void` <Badge type="tip" text="client" />
+• `set` **falloffDistance**(`falloffDistance`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -409,7 +413,7 @@ ___
 
 #### Parameters
 
-| `fallOffDistance` `number` | 距离 |
+| `falloffDistance` `number` | 距离 |
 | :------ | :------ |
 
 
@@ -689,7 +693,7 @@ ___
 
 ### pause <Score text="pause" /> 
 
-• **pause**(`bPause?`): `void` <Badge type="tip" text="client" />
+• **pause**(`bPause?`): `void` 
 
 暂停播放音效
 
@@ -703,7 +707,7 @@ ___
 
 ### play <Score text="play" /> 
 
-• **play**(`startTime?`, `onSuccess?`): `void` <Badge type="tip" text="client" />
+• **play**(`startTime?`, `onSuccess?`): `void` 
 
 播放音效
 
@@ -732,7 +736,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): `void` <Badge type="tip" text="client" />
+• **stop**(): `void` 
 
 停止播放音效
 
