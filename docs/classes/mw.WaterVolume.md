@@ -1,37 +1,31 @@
-[玩法](../groups/玩法.玩法.md) / PhysicsThruster
+[玩法](../groups/玩法.玩法.md) / WaterVolume
 
-# PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
+# WaterVolume <Badge type="tip" text="Class" /> <Score text="WaterVolume" />
 
-推进器
+水体区域
 
-::: warning Precautions
+----------------------------------
 
-服务器设置，双端自动同步
-
-:::
+拖入 WaterVolume 调整水体区域的大小，角色进入水体区域会切换成游泳状态。
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"Example"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，保存游戏，并按下键盘'1'键，你将在场景中看到已放置好的物体被推进器推动效果(注意只有开启物理模拟的物体可以被推进器推动)
+使用示例:创建一个名为"WaterVolumeExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，替换GUID保存，运行游戏，你将可以通过F1键获取角色是否处于该GUID对应的游泳区。
 </span>
 
 ```ts
 @Component
-export default class NewScript extends Script {
-    protected onStart(): void {
-        if (SystemUtil.isServer()) return;
-        InputUtil.onKeyDown(Keys.One, ()=>{
-            this.serverThruster();
-        })
-    }
-
-    @mw.RemoteFunction(mw.Server)
-    async serverThruster() {
-        console.log("Create Thruster Success");
-        let box = GameObject.findGameObjectById("物体ID") as Model;
-        let thruster = await GameObject.asyncSpawn("PhysicsThruster") as mw.PhysicsThruster;
-        thruster.parent = box;
-        thruster.strength = 1000000;
-        thruster.enable = true;
+export default class WaterVolumeExample extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): `Promise`<`void`\> {
+        // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
+        let WaterVolume = await GameObject.asyncFindGameObjectById(`GUID`) as WaterVolume;
+        if(SystemUtil.isClient())
+        {
+            InputUtil.onKeyDown(Keys.F1,()=>{
+                // F1键 通知获取流体摩擦力
+                console.log("当前游泳区流体摩擦力为：" + WaterVolume.fluidFriction);
+            });
+        }
     }
 }
 ```
@@ -40,11 +34,16 @@ export default class NewScript extends Script {
 
 - [`GameObject`](mw.GameObject.md)
 
-  ↳ **`PhysicsThruster`**
+  ↳ **`WaterVolume`**
 
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
+| **[onEnter](mw.WaterVolume.md#onenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| :-----|
+| 进入水体区域事件|
+| **[onLeave](mw.WaterVolume.md#onleave)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| 离开水体区域事件|
 
 
 ::: details click
@@ -56,11 +55,25 @@ export default class NewScript extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[enable](mw.PhysicsThruster.md#enable)**(): `boolean`   |
+| **[divingEnabled](mw.WaterVolume.md#divingenabled)**(): `boolean`   |
 | :-----|
-| 获取启用状态|
-| **[strength](mw.PhysicsThruster.md#strength)**(): `number`   |
-| 获取推进力|
+| 获取潜水|
+| **[flowAngle](mw.WaterVolume.md#flowangle)**(): `number`   |
+| 获取水波角度|
+| **[flowSpeed](mw.WaterVolume.md#flowspeed)**(): `number`   |
+| 获取水波速度|
+| **[flowTile](mw.WaterVolume.md#flowtile)**(): `number`   |
+| 获取水波密度|
+| **[fluidFriction](mw.WaterVolume.md#fluidfriction)**(): `number`   |
+| 获取流体摩擦力|
+| **[normalFlat](mw.WaterVolume.md#normalflat)**(): `number`   |
+| 获取水波强度|
+| **[surfaceColor](mw.WaterVolume.md#surfacecolor)**(): [`LinearColor`](mw.LinearColor.md)   |
+| 获取水面颜色|
+| **[transmittance](mw.WaterVolume.md#transmittance)**(): `number`   |
+| 获取水体透明度|
+| **[waterColor](mw.WaterVolume.md#watercolor)**(): [`LinearColor`](mw.LinearColor.md)   |
+| 获取水体颜色|
 
 
 ::: details click
@@ -154,22 +167,38 @@ export default class NewScript extends Script {
 
 ## Properties
 
+___
+
+### onEnter <Score text="onEnter" /> 
+
+• **onEnter**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+进入水体区域事件
+
+___
+
+### onLeave <Score text="onLeave" /> 
+
+• **onLeave**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+离开水体区域事件
+
 ## Accessors
 
 ___
 
-### enable <Score text="enable" /> 
+### divingEnabled <Score text="divingEnabled" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **enable**(): `boolean` 
+• `get` **divingEnabled**(): `boolean` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **enable**(`enable`): `void` 
+• `set` **divingEnabled**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -177,11 +206,11 @@ ___
 <td style="text-align: left">
 
 
-获取启用状态
+获取潜水
 
 #### Returns
 
-| `boolean` | 启用状态 |
+| `boolean` | 当前游泳区是否启用潜水 |
 | :------ | :------ |
 
 
@@ -189,11 +218,11 @@ ___
 <td style="text-align: left">
 
 
-设置启用状态
+设置潜水
 
 #### Parameters
 
-| `enable` `boolean` | 布尔值 |
+| `value` `boolean` | 设置游泳区是否启用潜水 |
 | :------ | :------ |
 
 
@@ -204,18 +233,18 @@ ___
 
 ___
 
-### strength <Score text="strength" /> 
+### flowAngle <Score text="flowAngle" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **strength**(): `number` 
+• `get` **flowAngle**(): `number` 
 
 </th>
 <th style="text-align: left">
 
-• `set` **strength**(`value`): `void` 
+• `set` **flowAngle**(`value`): `void` 
 
 </th>
 </tr></thead>
@@ -223,11 +252,11 @@ ___
 <td style="text-align: left">
 
 
-获取推进力
+获取水波角度
 
 #### Returns
 
-| `number` | 推进力大小 |
+| `number` | 当前游泳区水波角度 |
 | :------ | :------ |
 
 
@@ -235,11 +264,314 @@ ___
 <td style="text-align: left">
 
 
-设置推进力
+设置水波角度
 
 #### Parameters
 
-| `value` `number` | 推进力大小 |
+| `value` `number` | 设置游泳区水波角度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### flowSpeed <Score text="flowSpeed" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **flowSpeed**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **flowSpeed**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水波速度
+
+#### Returns
+
+| `number` | 当前游泳区水波速度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水波速度
+
+#### Parameters
+
+| `value` `number` | 设置游泳区水波速度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### flowTile <Score text="flowTile" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **flowTile**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **flowTile**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水波密度
+
+#### Returns
+
+| `number` | 当前游泳区水波密度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水波密度
+
+#### Parameters
+
+| `value` `number` | 设置游泳区水波密度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### fluidFriction <Score text="fluidFriction" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **fluidFriction**(): `number` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取流体摩擦力
+
+#### Returns
+
+| `number` | 当前游泳区流体摩擦力 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### normalFlat <Score text="normalFlat" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **normalFlat**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **normalFlat**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水波强度
+
+#### Returns
+
+| `number` | 当前游泳区水波强度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水波强度
+
+#### Parameters
+
+| `value` `number` | 设置游泳区水波强度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### surfaceColor <Score text="surfaceColor" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **surfaceColor**(): [`LinearColor`](mw.LinearColor.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **surfaceColor**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水面颜色
+
+#### Returns
+
+| [`LinearColor`](mw.LinearColor.md) | 当前游泳区水面颜色 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水面颜色
+
+#### Parameters
+
+| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区水面颜色 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### transmittance <Score text="transmittance" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **transmittance**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **transmittance**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水体透明度
+
+#### Returns
+
+| `number` | 当前游泳区水体透明度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水体透明度
+
+#### Parameters
+
+| `value` `number` | 设置游泳区水体透明度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### waterColor <Score text="waterColor" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **waterColor**(): [`LinearColor`](mw.LinearColor.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **waterColor**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水体颜色
+
+#### Returns
+
+| [`LinearColor`](mw.LinearColor.md) | 当前游泳区水体颜色 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水体颜色
+
+#### Parameters
+
+| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区水体颜色 |
 | :------ | :------ |
 
 </td>

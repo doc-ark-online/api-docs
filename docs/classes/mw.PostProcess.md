@@ -41,10 +41,22 @@ export default class PostProcessExample extends mw.Script {
 | **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
 | :-----|
 | 获取泛光|
+| **[blurEnabled](mw.PostProcess.md#blurenabled)**(): `boolean`   |
+| 获取模糊|
+| **[blurIntensity](mw.PostProcess.md#blurintensity)**(): `number`   |
+| 获取模糊强度|
 | **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md)   |
 | 获取后处理属性配置|
 | **[contrast](mw.PostProcess.md#contrast)**(): `number`   |
 | 获取全局对比度|
+| **[depthOfFieldEnabled](mw.PostProcess.md#depthoffieldenabled)**(): `boolean`   |
+| 获取景深开关|
+| **[depthOfFieldIntensity](mw.PostProcess.md#depthoffieldintensity)**(): `number`   |
+| 获取景深强度|
+| **[focusDistance](mw.PostProcess.md#focusdistance)**(): `number`   |
+| 获取焦距距离|
+| **[focusPosition](mw.PostProcess.md#focusposition)**(): `number`   |
+| 获取焦距位置|
 | **[preset](mw.PostProcess.md#preset)**(`newPreset`: [`PostProcessPreset`](../enums/mw.PostProcessPreset.md)): `void` <Badge type="tip" text="client" />  |
 | 设置预设|
 | **[saturation](mw.PostProcess.md#saturation)**(): `number`   |
@@ -84,6 +96,98 @@ export default class PostProcessExample extends mw.Script {
 
 
 设置泛光（0 ~ 8）
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### blurEnabled <Score text="blurEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **blurEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **blurEnabled**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取模糊
+
+#### Returns
+
+| `boolean` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+开关模糊
+
+#### Parameters
+
+| `Value` `boolean` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### blurIntensity <Score text="blurIntensity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **blurIntensity**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **blurIntensity**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取模糊强度
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+模糊强度开关
 
 #### Parameters
 
@@ -176,6 +280,190 @@ ___
 
 
 设置全局对比度 （0.2 ~ 5.0）
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### depthOfFieldEnabled <Score text="depthOfFieldEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **depthOfFieldEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **depthOfFieldEnabled**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取景深开关
+
+#### Returns
+
+| `boolean` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+开关景深
+
+#### Parameters
+
+| `Value` `boolean` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### depthOfFieldIntensity <Score text="depthOfFieldIntensity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **depthOfFieldIntensity**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **depthOfFieldIntensity**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取景深强度
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置景深强度
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### focusDistance <Score text="focusDistance" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **focusDistance**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **focusDistance**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取焦距距离
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置焦距距离
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### focusPosition <Score text="focusPosition" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **focusPosition**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **focusPosition**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取焦距位置
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置焦距位置
 
 #### Parameters
 

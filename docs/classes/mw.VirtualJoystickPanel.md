@@ -127,7 +127,7 @@
 | **[newObject](mw.VirtualJoystickPanel.md#newobject)**(`Outer?`: [`Widget`](mw.Widget.md), `InName?`: `string`): [`VirtualJoystickPanel`](mw.VirtualJoystickPanel.md) <Badge type="tip" text="client" />  |
 | 创建 VirtualJoystickPanelDesigner 控件|
 | **[newObjectAndAdd](mw.VirtualJoystickPanel.md#newobjectandadd)**(`InCanvas?`: [`Canvas`](mw.Canvas.md), `Outer?`: [`Widget`](mw.Widget.md), `InName?`: `string`): [`VirtualJoystickPanel`](mw.VirtualJoystickPanel.md) <Badge type="tip" text="client" />  |
-| 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
+| 创建 TouchPad 控件|
 
 
 ::: details click
@@ -1153,9 +1153,9 @@ ___
 
 #### Parameters
 
-| `Outer?` [`Widget`](mw.Widget.md) | 创建控件的外Outer对象 default:null |
+| `Outer?` [`Widget`](mw.Widget.md) | 创建控件的外 Outer 对象 default:null |
 | :------ | :------ |
-| `InName?` `string` | 创建控件的名称 default:null |
+| `InName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 
@@ -1168,16 +1168,18 @@ ___
 
 • `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](mw.VirtualJoystickPanel.md) <Badge type="tip" text="client" />
 
-创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
+创建 TouchPad 控件
 
 #### Parameters
 
 | `InCanvas?` [`Canvas`](mw.Canvas.md) | 父节点 default:null |
 | :------ | :------ |
-| `Outer?` [`Widget`](mw.Widget.md) | 创建控件的外Outer对象 default:null |
-| `InName?` `string` |  创建控件的名称 default: null |
+| `Outer?` [`Widget`](mw.Widget.md) | 创建控件的外 Outer 对象 default:null |
+| `InName?` `string` |  创建控件的名称 default: null range:设置合理的名称即可 |
 
 #### Returns
 
 | [`VirtualJoystickPanel`](mw.VirtualJoystickPanel.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当 Outer 和 InName 与已有的对象相同时，旧的对象会被销毁

@@ -59,15 +59,15 @@
 | :-----|
 | 根据类型获取画布下子对象序列|
 | **[hide](mwext.BaseView.md#hide)**(): `void` <Badge type="tip" text="client" />  |
-| 关闭界面|
+| 关闭全局唯一界面|
 | **[show](mwext.BaseView.md#show)**(`...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
-| 显示界面|
+| 显示全局唯一界面|
 | **[create](mwext.BaseView.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建界面|
 | **[hide](mwext.BaseView.md#hide-1)**(): `void` <Badge type="tip" text="client" />  |
-| 关闭全局唯一界面，静态方法|
+| 关闭全局唯一界面|
 | **[show](mwext.BaseView.md#show-1)**(`...params`: `any`[]): `void` <Badge type="tip" text="client" />  |
-| 显示全局唯一界面，静态方法|
+| 显示全局唯一界面|
 :::
 
 

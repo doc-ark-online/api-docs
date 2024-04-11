@@ -7,7 +7,7 @@
 ## Table of contents
 
 ### Enumeration Members <Score text="Enumeration" /> 
-| **[Cartoon](mw.BasicStanceType.md#cartoon)** = ``"30274"``  |
+| **[Cartoon](mw.BasicStanceType.md#cartoon)** = ``"216081"``  |
 | :----- |
 | **[SakuraSchool1](mw.BasicStanceType.md#sakuraschool1)** = ``"Default"`` |
 
@@ -15,7 +15,7 @@
 
 ### Cartoon <Score text="Cartoon" /> 
 
-• **Cartoon** = ``"30274"``
+• **Cartoon** = ``"216081"``
 
 二次元风格
 

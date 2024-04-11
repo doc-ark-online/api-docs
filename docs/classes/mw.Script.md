@@ -28,6 +28,10 @@
 
 当在编辑器中点击新建脚本时，会默认生成一个继承自 Script 的脚本类：
 
+<span style="font-size: 14px;">
+使用示例: 默认脚本格式
+</span>
+
 ```ts
 @Component
 export default class GameStart extends Script {
@@ -54,6 +58,10 @@ export default class GameStart extends Script {
 - :mushroom: 不继承 Script 的其他类。
 
 例如
+
+<span style="font-size: 14px;">
+使用示例: 普通类脚本格式
+</span>
 
 ```ts
 export default class PlayerModS extends ModuleS<PlayerModC,null> {
@@ -111,22 +119,17 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 | 获取脚本是否启用 onUpdate 生命周期函数|
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="other" />  |
+| **[destroy](mw.Script.md#destroy)**(): `void` <Badge type="tip" text="server" />  |
 | :-----|
 | 销毁组件对象|
-| **[onDestroy](mw.Script.md#ondestroy)**(): `void` <Badge type="tip" text="other" />  |
+| **[onDestroy](mw.Script.md#ondestroy)**(): `void`   |
 | 生命周期函数 - 被销毁时调用|
-| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <Badge type="tip" text="other" />  |
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`   |
 | 属性被同步事件 ClientOnly|
-| **[onStart](mw.Script.md#onstart)**(): `void` <Badge type="tip" text="other" />  |
+| **[onStart](mw.Script.md#onstart)**(): `void`   |
 | 生命周期函数 - 脚本开始执行时调用|
-| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void` <Badge type="tip" text="other" />  |
-| 生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行|
-
-#### Parameters
-
-| `...params` | `any`[] |
-| :------ | :------ |
+| **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
+| 生命周期函数 - 每帧执行函数|
 
 ## Accessors
 
@@ -224,7 +227,7 @@ ___
 
 ### destroy <Score text="destroy" /> 
 
-• **destroy**(): `void` <Badge type="tip" text="other" />
+• **destroy**(): `void` <Badge type="tip" text="server" />
 
 销毁组件对象
 
@@ -233,7 +236,7 @@ ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onDestroy**(): `void` 
 
 生命周期函数 - 被销毁时调用
 
@@ -242,13 +245,13 @@ ___
 
 ### onReplicated <Score text="onReplicated" /> 
 
-• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` <Badge type="tip" text="other" />
+• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` 
 
 属性被同步事件 ClientOnly
 
 #### Parameters
 
-| `path` `string` | 属性路径 |
+| `path` `string` | 属性路径 range: 依据路径长度而定 |
 | :------ | :------ |
 | `value` `unknown` | 属性值 |
 | `oldVal` `unknown` | 同步前的值 |
@@ -258,7 +261,7 @@ ___
 
 ### onStart <Score text="onStart" /> 
 
-• `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onStart**(): `void` 
 
 生命周期函数 - 脚本开始执行时调用
 
@@ -267,12 +270,14 @@ ___
 
 ### onUpdate <Score text="onUpdate" /> 
 
-• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
+• `Protected` **onUpdate**(`dt`): `void` 
 
-生命周期函数 - 每帧执行函数。setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行
+生命周期函数 - 每帧执行函数
 
 #### Parameters
 
-| `dt` `number` | 与上一帧的延迟 单位:秒 |
+| `dt` `number` | 与上一帧的延迟 单位:秒 <br> range: dt 的大小会根据游戏性能发生变化，游戏性能下降，帧率可能会下降，从而导致 onUpdate 函数的调用频率减少。（详情请看类开头描述） type:浮点类型数值 |
 | :------ | :------ |
 
+
+setUpdate 设置为 true 后，每帧被执行，设置为false，不会执行

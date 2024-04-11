@@ -216,7 +216,7 @@ ___
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Outer对象 default:null |
 | :------ | :------ |
-| `InName?` `string` | 创建控件的名称 default:null |
+| `InName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 

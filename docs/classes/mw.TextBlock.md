@@ -117,15 +117,15 @@
 | :-----|
 | 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505|
 | **[setFontColorDecimal](mw.TextBlock.md#setfontcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置字体颜色,指定R、G、B、A设置颜色 0 ~255|
+| 设置字体颜色|
 | **[setOutlineColorByHex](mw.TextBlock.md#setoutlinecolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置当前的描边颜色，指定描边颜色设定颜色 #05050505|
+| 设置当前的描边颜色|
 | **[setOutlineColorDecimal](mw.TextBlock.md#setoutlinecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255|
+| 设置当前的描边颜色|
 | **[setShadowColorByHex](mw.TextBlock.md#setshadowcolorbyhex)**(`inHexString`: `string`): `void` <Badge type="tip" text="client" />  |
 | 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果，指定Hex的颜色文本设定颜色 #05050505|
 | **[setShadowColorDecimal](mw.TextBlock.md#setshadowcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <Badge type="tip" text="client" />  |
-| 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果， 指定R、G、B、A设置颜色 0 ~255|
+| 设置字体的阴影颜色|
 | **[newObject](mw.TextBlock.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`TextBlock`](mw.TextBlock.md) <Badge type="tip" text="client" />  |
 | 创建 TextBlock 控件|
 
@@ -1148,7 +1148,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | Hex颜色字符串 |
+| `inHexString` `string` | Hex颜色字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1158,15 +1158,15 @@ ___
 
 • **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置字体颜色,指定R、G、B、A设置颜色 0 ~255
+设置字体颜色
 
 #### Parameters
 
-| `R` `number` | 字体R值，数据范围0~255 |
+| `R` `number` | 字体颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 字体G值，数据范围0~255 |
-| `B` `number` | 字体B值，数据范围0~255 |
-| `A` `number` | 字体透明度，数据范围0~255 |
+| `G` `number` | 字体颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 字体颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 字体颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1175,13 +1175,15 @@ ___
 
 • **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
-设置当前的描边颜色，指定描边颜色设定颜色 #05050505
+设置当前的描边颜色
 
 #### Parameters
 
-| `inHexString` `string` | 十六进制的字符串 |
+| `inHexString` `string` | 十六进制的字符串 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
+
+例如： #05050505
 
 ___
 
@@ -1189,15 +1191,15 @@ ___
 
 • **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
+设置当前的描边颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R通道的值，数据范围0~255 |
+| `R` `number` | 颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G通道的值，数据范围0~255 |
-| `B` `number` | 颜色B通道的值，数据范围0~255 |
-| `A` `number` | 透明度，数据范围0~255 |
+| `G` `number` | 颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
 
 ___
@@ -1210,7 +1212,7 @@ ___
 
 #### Parameters
 
-| `inHexString` `string` | 颜色 |
+| `inHexString` `string` | 颜色 range: 符合 Hex 特点的字符串类型 |
 | :------ | :------ |
 
 
@@ -1220,16 +1222,18 @@ ___
 
 • **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
-设置字体的阴影颜色,Shadow Offset必须设值才能看到效果， 指定R、G、B、A设置颜色 0 ~255
+设置字体的阴影颜色
 
 #### Parameters
 
-| `R` `number` | 颜色R通道的值，数据范围0~255 |
+| `R` `number` | 阴影颜色 R 值。 <br> range:[0, 255] type: 整数 |
 | :------ | :------ |
-| `G` `number` | 颜色G通道的值，数据范围0~255 |
-| `B` `number` | 颜色B通道的值，数据范围0~255 |
-| `A` `number` | 透明度，数据范围0~255 |
+| `G` `number` | 阴影颜色 G 值。 <br> range:[0, 255] type: 整数 |
+| `B` `number` | 阴影颜色 B 值。 <br> range:[0, 255] type: 整数 |
+| `A` `number` | 阴影颜色 透明度。 <br> range:[0, 255] type: 整数 |
 
+
+Shadow Offset 必须设值才能看到效果。
 
 ___
 
@@ -1243,7 +1247,7 @@ ___
 
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
 | :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null |
+| `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 

@@ -134,16 +134,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '029 版本',
+        text: '030 版本',
         items: [
           {
             text: '031 版本',
             link: 'https://api-docs-031.ark.online/',
-            path: true
-          },
-          {
-            text: '030 版本',
-            link: 'https://api-docs-030.ark.online/',
             path: true
           },
           {

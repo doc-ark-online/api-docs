@@ -57,7 +57,7 @@ ___
 
 #### Returns
 
-| `number` |  |
+| `number` | 插槽的 index |
 | :------ | :------ |
 
 ::: warning Precautions

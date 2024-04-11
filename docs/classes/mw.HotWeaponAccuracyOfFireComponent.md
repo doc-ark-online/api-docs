@@ -124,7 +124,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 #### Parameters
 
-| `NewValue` `number` |  新设置的圆型范围半径值 <br> default: <br> range: |
+| `NewValue` `number` |  新设置的圆型范围半径值 <br> default: <br> range: type:浮点数 |
 | :------ | :------ |
 
 

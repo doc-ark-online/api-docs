@@ -1,69 +1,74 @@
-[界面](../groups/界面.界面.md) / UIWidget
+[玩法](../groups/玩法.玩法.md) / RigidConstraint
 
-# UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
+# RigidConstraint <Badge type="tip" text="Class" /> <Score text="RigidConstraint" />
 
-世界 UI
+物理链接组件
 
-----------------------
+::: warning Precautions
 
-1. UI 界面分为两种：屏幕 UI 和世界 UI。
+服务器设置，双端自动同步
 
-UIWidget 是专门用来制作世界 UI 的。屏幕 UI 的详细制作方式请参考 UIService 或 UserWidget。
-
-![界面](https://cdn.233xyx.com/online/jf2eFfCbfVmJ1701944462027.png)
-
-2. UIWidget 有两种方式制作世界 UI ：
-
-- :cactus: 动态加载（只使用代码动态创建一个世界 UI）
+:::
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个世界 UI - 滑动条
+使用示例: 创建一个名为"RigidTest"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到一个正方体和一个球体，将设置绳子约束启用，进行绞盘效果。代码如下:
 </span>
 
 ```ts
 @Component
-export default class NewScript extends Script {
-
-    user:UserWidget;
-    widget:UIWidget;
-    progressBar:ProgressBar;
-
+export default class RigidTest extends Script {
+    box:mw.Model;
+    ball:mw.Model;
+    rigid:mw.RigidConstraint;
+    // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
-        if(SystemUtil.isClient()){
-            this.creatUI();
-            this.widget = GameObject.spawn<UIWidget>("UIWidget",{replicates:false});
-            this.widget.worldTransform.position = new Vector(0,0,100);
-            this.widget.setTargetUIWidget(this.user);
+        if(SystemUtil.isServer()) {
+
+            GameObject.asyncSpawn("197386",{replicates:true}).then((obj)=>{
+                this.box = obj as mw.Model;
+                this.box.worldTransform.position = new Vector(200,0,1200);
+            });
+            GameObject.asyncSpawn("197388",{replicates:true}).then((obj)=>{
+                this.ball = obj as mw.Model;
+                this.ball.worldTransform.position = new Vector(100,0,100);
+                // 使用链接组件的一方必须开启物理模拟
+                this.ball.physicsEnabled = true;
+            })
+            // 创建链接组件链接Box与ball
+            setTimeout(()=>{
+                GameObject.asyncSpawn("RigidConstraint",{replicates:true}).then((obj)=>{
+                    this.rigid = obj as mw.RigidConstraint;
+                    this.rigid.constraint1 = this.box;
+                    this.rigid.constraint2 = this.ball;
+                    this.rigid.softConstraintEnabled = true;
+                    this.rigid.length = 800;
+                    this.rigid.autoEnable = true;
+                    // 开启铰链拉到ball到target位置
+                    setTimeout(() => {
+                        this.rigid.winchEnabled = true;
+                        this.rigid.winchForce = 10000;
+                        this.rigid.winchSpeed = 150;
+                        this.rigid.winchTarget = 200;
+                    }, 5000);
+                })
+            }, 10000);
         }
-    }
-
-    public creatUI(){
-        this.user = UserWidget.newObject();
-
-        let rootCanvas = Canvas.newObject();
-        rootCanvas.size = new Vector2(1920, 1080);
-        rootCanvas.position = Vector2.zero;
-
-        this.user.rootContent = rootCanvas;
-
-        this.progressBar = ProgressBar.newObject(rootCanvas);
     }
 }
 ```
-
-- :cactus: 在对象管理器中提前在物体上挂载世界 UI 逻辑对象，在属性面板中放置对应的 UIPrefab。
-
-![界面](https://cdn.233xyx.com/online/CwCG1XOsbH4V1701944484681.png)
 
 ## Hierarchy
 
 - [`GameObject`](mw.GameObject.md)
 
-  ↳ **`UIWidget`**
+  ↳ **`RigidConstraint`**
 
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
+| **[onWinchComplete](mw.RigidConstraint.md#onwinchcomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| :-----|
+| 绞盘达到目标时触发回调函数|
 
 
 ::: details click
@@ -75,33 +80,29 @@ export default class NewScript extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[distanceScaleFactor](mw.UIWidget.md#distancescalefactor)**(): `number`  |
+| **[autoEnable](mw.RigidConstraint.md#autoenable)**(): `boolean`  |
 | :-----|
-| 获取缩放距离系数|
-| **[drawSize](mw.UIWidget.md#drawsize)**(): [`Vector2`](mw.Vector2.md)  |
-| 获取实际渲染大小|
-| **[extraParam](mw.UIWidget.md#extraparam)**(): `string`  |
-| 获取扩展参数|
-| **[headUIMaxVisibleDistance](mw.UIWidget.md#headuimaxvisibledistance)**(): `number`  |
-| 获取最大头顶UI可见距离|
-| **[hideByDistanceEnable](mw.UIWidget.md#hidebydistanceenable)**(): `boolean`  |
-| 获取是否启用最大可见距离|
-| **[interaction](mw.UIWidget.md#interaction)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取世界UI交互状态|
-| **[isEnemy](mw.UIWidget.md#isenemy)**(): `boolean`  |
-| 获取是否作为敌方玩家，敌方玩家不显示头顶UI|
-| **[occlusionEnable](mw.UIWidget.md#occlusionenable)**(): `boolean`  |
-| 获取是否可被遮挡|
-| **[pivot](mw.UIWidget.md#pivot)**(): [`Vector2`](mw.Vector2.md)  |
-| 获取锚点位置|
-| **[scaledByDistanceEnable](mw.UIWidget.md#scaledbydistanceenable)**(): `boolean`  |
-| 获取是否开启近大远小|
-| **[selfOcclusion](mw.UIWidget.md#selfocclusion)**(): `boolean`  |
-| 获取是否可被自己遮挡|
-| **[translucentSortPriority](mw.UIWidget.md#translucentsortpriority)**(): `number` <Badge type="tip" text="client" />  |
-| 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
-| **[widgetSpace](mw.UIWidget.md#widgetspace)**(): [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md)  |
-| 获取显示方式|
+| 在运行时自动启用约束效果|
+| **[constraint1](mw.RigidConstraint.md#constraint1)**(): [`GameObject`](mw.GameObject.md)  |
+| 被约束对象1，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效|
+| **[constraint2](mw.RigidConstraint.md#constraint2)**(): [`GameObject`](mw.GameObject.md)  |
+| 被约束对象2，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效|
+| **[currentDistance](mw.RigidConstraint.md#currentdistance)**(): `number`  |
+| 两个被约束对象的间隔距离|
+| **[isVisible](mw.RigidConstraint.md#isvisible)**(): `boolean`  |
+| 显示连接线|
+| **[length](mw.RigidConstraint.md#length)**(): `number`  |
+| 设置两个被约束对象的最大连接距离，当两个被约束对象的当前距离大于连接长度时，会自动收缩物理连接，接两个被约束对象拉进到设定距离|
+| **[softConstraintEnabled](mw.RigidConstraint.md#softconstraintenabled)**(): `boolean`  |
+| 开启软连接后，两个被约束的对象间隔距离不可超过连接长度的限制，可以短于连接长度并自由旋转。开启软连接后可以使用铰盘功能|
+| **[winchEnabled](mw.RigidConstraint.md#winchenabled)**(): `boolean`  |
+| 开启后，软连接自动执行铰盘效果|
+| **[winchForce](mw.RigidConstraint.md#winchforce)**(): `number`  |
+| 设置绞盘的拉力，拉动的目标质量越大，所需要的拉力越大|
+| **[winchSpeed](mw.RigidConstraint.md#winchspeed)**(): `number`  |
+| 设置绞盘运动速度（cm/s）|
+| **[winchTarget](mw.RigidConstraint.md#winchtarget)**(): `number`  |
+| 设置绞盘运动的目标距离，当被约束的两个对象间隔距离达到绞盘目标时，停止运动|
 
 
 ::: details click
@@ -129,15 +130,6 @@ export default class NewScript extends Script {
 
 
 ### Methods <Score text="Methods" /> 
-| **[getTargetUIWidget](mw.UIWidget.md#gettargetuiwidget)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| :-----|
-| 获取UI对象资源|
-| **[refresh](mw.UIWidget.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
-| 请求重新绘制|
-| **[setTargetUIWidget](mw.UIWidget.md#settargetuiwidget)**(`uiUserWidget`: [`UserWidget`](mw.UserWidget.md)): `void` <Badge type="tip" text="client" />  |
-| 设置UI，可以对当前的UI设置UI资源，UI资源可以从路径获取或直接取其他UI组件引用的资源|
-| **[setUIbyID](mw.UIWidget.md#setuibyid)**(`ID`: `string`): `void` <Badge type="tip" text="client" />  |
-| 通过 GUID 设置 UI|
 
 
 ::: details click
@@ -204,22 +196,30 @@ export default class NewScript extends Script {
 
 ## Properties
 
+___
+
+### onWinchComplete <Score text="onWinchComplete" /> 
+
+• **onWinchComplete**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+
+绞盘达到目标时触发回调函数
+
 ## Accessors
 
 ___
 
-### distanceScaleFactor <Score text="distanceScaleFactor" /> 
+### autoEnable <Score text="autoEnable" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **distanceScaleFactor**(): `number`
+• `get` **autoEnable**(): `boolean`
 
 </th>
 <th style="text-align: left">
 
-• `set` **distanceScaleFactor**(`Value`): `void`
+• `set` **autoEnable**(`newEnable`): `void`
 
 </th>
 </tr></thead>
@@ -227,11 +227,11 @@ ___
 <td style="text-align: left">
 
 
-获取缩放距离系数
+在运行时自动启用约束效果
 
 #### Returns
 
-| `number` | 距离系数 |
+| `boolean` | 启用状态 |
 | :------ | :------ |
 
 
@@ -239,11 +239,11 @@ ___
 <td style="text-align: left">
 
 
-设置缩放距离系数
+在运行时自动启用约束效果
 
 #### Parameters
 
-| `Value` `number` | 距离系数 |
+| `newEnable` `boolean` | 启用状态 |
 | :------ | :------ |
 
 
@@ -254,18 +254,18 @@ ___
 
 ___
 
-### drawSize <Score text="drawSize" /> 
+### constraint1 <Score text="constraint" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **drawSize**(): [`Vector2`](mw.Vector2.md)
+• `get` **constraint1**(): [`GameObject`](mw.GameObject.md)
 
 </th>
 <th style="text-align: left">
 
-• `set` **drawSize**(`newSize`): `void`
+• `set` **constraint1**(`constraintObject`): `void`
 
 </th>
 </tr></thead>
@@ -273,11 +273,11 @@ ___
 <td style="text-align: left">
 
 
-获取实际渲染大小
+被约束对象1，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 渲染大小2D |
+| [`GameObject`](mw.GameObject.md) | 约束对象1 |
 | :------ | :------ |
 
 
@@ -285,11 +285,11 @@ ___
 <td style="text-align: left">
 
 
-设置实际渲染大小
+被约束对象1，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效
 
 #### Parameters
 
-| `newSize` [`Vector2`](mw.Vector2.md) | 渲染大小2D |
+| `constraintObject` [`GameObject`](mw.GameObject.md) | 约束对象1 |
 | :------ | :------ |
 
 
@@ -300,18 +300,18 @@ ___
 
 ___
 
-### extraParam <Score text="extraParam" /> 
+### constraint2 <Score text="constraint" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **extraParam**(): `string`
+• `get` **constraint2**(): [`GameObject`](mw.GameObject.md)
 
 </th>
 <th style="text-align: left">
 
-• `set` **extraParam**(`Value`): `void`
+• `set` **constraint2**(`constraintObject`): `void`
 
 </th>
 </tr></thead>
@@ -319,11 +319,11 @@ ___
 <td style="text-align: left">
 
 
-获取扩展参数
+被约束对象2，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效
 
 #### Returns
 
-| `string` | 扩展参数 |
+| [`GameObject`](mw.GameObject.md) | 约束对象2 |
 | :------ | :------ |
 
 
@@ -331,11 +331,11 @@ ___
 <td style="text-align: left">
 
 
-设置扩展参数
+被约束对象2，当前可约束类型为模型、角色、NPC、载具，其他对象约束无效
 
 #### Parameters
 
-| `Value` `string` | 扩展参数 |
+| `constraintObject` [`GameObject`](mw.GameObject.md) | 约束对象2 |
 | :------ | :------ |
 
 
@@ -346,18 +346,13 @@ ___
 
 ___
 
-### headUIMaxVisibleDistance <Score text="headUIMaxVisibleDistance" /> 
+### currentDistance <Score text="currentDistance" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **headUIMaxVisibleDistance**(): `number`
-
-</th>
-<th style="text-align: left">
-
-• `set` **headUIMaxVisibleDistance**(`Value`): `void`
+• `get` **currentDistance**(): `number`
 
 </th>
 </tr></thead>
@@ -365,11 +360,43 @@ ___
 <td style="text-align: left">
 
 
-获取最大头顶UI可见距离
+两个被约束对象的间隔距离
 
 #### Returns
 
-| `number` | 可见距离 |
+| `number` | 两约束对象的间隔距离 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### isVisible <Score text="isVisible" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **isVisible**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **isVisible**(`visible`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+显示连接线
+
+#### Returns
+
+| `boolean` | 显示状态 |
 | :------ | :------ |
 
 
@@ -377,11 +404,11 @@ ___
 <td style="text-align: left">
 
 
-设置最大头顶UI可见距离
+显示连接线
 
 #### Parameters
 
-| `Value` `number` | 可见距离 |
+| `visible` | `boolean` |
 | :------ | :------ |
 
 
@@ -392,18 +419,18 @@ ___
 
 ___
 
-### hideByDistanceEnable <Score text="hideByDistanceEnable" /> 
+### length <Score text="length" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **hideByDistanceEnable**(): `boolean`
+• `get` **length**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **hideByDistanceEnable**(`Value`): `void`
+• `set` **length**(`maxLength`): `void`
 
 </th>
 </tr></thead>
@@ -411,11 +438,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否启用最大可见距离
+设置两个被约束对象的最大连接距离，当两个被约束对象的当前距离大于连接长度时，会自动收缩物理连接，接两个被约束对象拉进到设定距离
 
 #### Returns
 
-| `boolean` | true：开启 |
+| `number` | 最大连接距离 |
 | :------ | :------ |
 
 
@@ -423,11 +450,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否启用最大可见距离
+设置两个被约束对象的最大连接距离，当两个被约束对象的当前距离大于连接长度时，会自动收缩物理连接，接两个被约束对象拉进到设定距离
 
 #### Parameters
 
-| `Value` `boolean` | 布尔值 |
+| `maxLength` `number` | 最大连接距离 |
 | :------ | :------ |
 
 
@@ -438,18 +465,18 @@ ___
 
 ___
 
-### interaction <Score text="interaction" /> 
+### softConstraintEnabled <Score text="softConstraintEnabled" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **interaction**(): `boolean` <Badge type="tip" text="client" />
+• `get` **softConstraintEnabled**(): `boolean`
 
 </th>
 <th style="text-align: left">
 
-• `set` **interaction**(`inInteraction`): `void` <Badge type="tip" text="client" />
+• `set` **softConstraintEnabled**(`newEnable`): `void`
 
 </th>
 </tr></thead>
@@ -457,17 +484,11 @@ ___
 <td style="text-align: left">
 
 
-获取世界UI交互状态
-
-::: warning Precautions
-
-对世界UI，头顶UI生效
-
-:::
+开启软连接后，两个被约束的对象间隔距离不可超过连接长度的限制，可以短于连接长度并自由旋转。开启软连接后可以使用铰盘功能
 
 #### Returns
 
-| `boolean` | 是否可交互 |
+| `boolean` | 软链接启用状态 |
 | :------ | :------ |
 
 
@@ -475,65 +496,11 @@ ___
 <td style="text-align: left">
 
 
-设置世界UI交互状态
-
-::: warning Precautions
-
-对世界UI，头顶UI生效
-
-:::
+开启软连接后，两个被约束的对象间隔距离不可超过连接长度的限制，可以短于连接长度并自由旋转。开启软连接后可以使用铰盘功能
 
 #### Parameters
 
-| `inInteraction` `boolean` | 是否可交互 |
-| :------ | :------ |
-
-
-是否设置成功
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### isEnemy <Score text="isEnemy" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **isEnemy**(): `boolean`
-
-</th>
-<th style="text-align: left">
-
-• `set` **isEnemy**(`Value`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取是否作为敌方玩家，敌方玩家不显示头顶UI
-
-#### Returns
-
-| `boolean` | 布尔值 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置是否作为敌方玩家，敌方玩家不显示头顶UI
-
-#### Parameters
-
-| `Value` `boolean` | 布尔值 |
+| `newEnable` `boolean` | 软链接启用状态 |
 | :------ | :------ |
 
 
@@ -544,18 +511,18 @@ ___
 
 ___
 
-### occlusionEnable <Score text="occlusionEnable" /> 
+### winchEnabled <Score text="winchEnabled" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **occlusionEnable**(): `boolean`
+• `get` **winchEnabled**(): `boolean`
 
 </th>
 <th style="text-align: left">
 
-• `set` **occlusionEnable**(`Value`): `void`
+• `set` **winchEnabled**(`newEnable`): `void`
 
 </th>
 </tr></thead>
@@ -563,11 +530,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否可被遮挡
+开启后，软连接自动执行铰盘效果
 
 #### Returns
 
-| `boolean` | true：可被遮挡 |
+| `boolean` | 绞盘启用状态 |
 | :------ | :------ |
 
 
@@ -575,11 +542,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否可被遮挡
+开启后，软连接自动执行铰盘效果
 
 #### Parameters
 
-| `Value` `boolean` | 布尔值 |
+| `newEnable` `boolean` | 绞盘启用状态 |
 | :------ | :------ |
 
 
@@ -590,18 +557,18 @@ ___
 
 ___
 
-### pivot <Score text="pivot" /> 
+### winchForce <Score text="winchForce" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **pivot**(): [`Vector2`](mw.Vector2.md)
+• `get` **winchForce**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **pivot**(`position`): `void`
+• `set` **winchForce**(`force`): `void`
 
 </th>
 </tr></thead>
@@ -609,11 +576,11 @@ ___
 <td style="text-align: left">
 
 
-获取锚点位置
+设置绞盘的拉力，拉动的目标质量越大，所需要的拉力越大
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 位置信息 |
+| `number` | 绞盘力大小 |
 | :------ | :------ |
 
 
@@ -621,11 +588,11 @@ ___
 <td style="text-align: left">
 
 
-设置锚点位置
+设置绞盘的拉力，拉动的目标质量越大，所需要的拉力越大
 
 #### Parameters
 
-| `position` [`Vector2`](mw.Vector2.md) | 位置信息 |
+| `force` `number` | 绞盘力大小 |
 | :------ | :------ |
 
 
@@ -636,18 +603,18 @@ ___
 
 ___
 
-### scaledByDistanceEnable <Score text="scaledByDistanceEnable" /> 
+### winchSpeed <Score text="winchSpeed" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **scaledByDistanceEnable**(): `boolean`
+• `get` **winchSpeed**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **scaledByDistanceEnable**(`Value`): `void`
+• `set` **winchSpeed**(`speed`): `void`
 
 </th>
 </tr></thead>
@@ -655,11 +622,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否开启近大远小
+设置绞盘运动速度（cm/s）
 
 #### Returns
 
-| `boolean` | true：开启 |
+| `number` | 绞盘运动速度 |
 | :------ | :------ |
 
 
@@ -667,11 +634,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启近大远小
+设置绞盘运动速度（cm/s）
 
 #### Parameters
 
-| `Value` `boolean` | 布尔值 |
+| `speed` `number` | 绞盘运动速度 |
 | :------ | :------ |
 
 
@@ -682,18 +649,18 @@ ___
 
 ___
 
-### selfOcclusion <Score text="selfOcclusion" /> 
+### winchTarget <Score text="winchTarget" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **selfOcclusion**(): `boolean`
+• `get` **winchTarget**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **selfOcclusion**(`Value`): `void`
+• `set` **winchTarget**(`targetLength`): `void`
 
 </th>
 </tr></thead>
@@ -701,11 +668,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否可被自己遮挡
+设置绞盘运动的目标距离，当被约束的两个对象间隔距离达到绞盘目标时，停止运动
 
 #### Returns
 
-| `boolean` | 布尔值 |
+| `number` | 绞盘目标距离 |
 | :------ | :------ |
 
 
@@ -713,115 +680,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否可被自己遮挡
+设置绞盘运动的目标距离，当被约束的两个对象间隔距离达到绞盘目标时，停止运动
 
 #### Parameters
 
-| `Value` `boolean` | 布尔值 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### translucentSortPriority <Score text="translucentSortPriority" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **translucentSortPriority**(): `number` <Badge type="tip" text="client" />
-
-</th>
-<th style="text-align: left">
-
-• `set` **translucentSortPriority**(`value`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
-
-::: warning Precautions
-
-请在客户端调用
-
-:::
-
-#### Returns
-
-| `number` |  |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
-
-::: warning Precautions
-
-请在客户端调用
-
-:::
-
-#### Parameters
-
-| `value` `number` |  新的渲染层级，值范围为 [0, 31] |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### widgetSpace <Score text="widgetSpace" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **widgetSpace**(): [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md)
-
-</th>
-<th style="text-align: left">
-
-• `set` **widgetSpace**(`newSpace`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取显示方式
-
-#### Returns
-
-| [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md) | 显示方式枚举 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置显示方式
-
-#### Parameters
-
-| `newSpace` [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md) | 显示方式 |
+| `targetLength` `number` | 绞盘目标距离 |
 | :------ | :------ |
 
 </td>
@@ -831,53 +694,3 @@ ___
 
 
 ## Methods
-
-___
-
-### getTargetUIWidget <Score text="getTargetUIWidget" /> 
-
-• **getTargetUIWidget**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />
-
-获取UI对象资源
-
-#### Returns
-
-| [`UserWidget`](mw.UserWidget.md) | UI对象资源 |
-| :------ | :------ |
-
-___
-
-### refresh <Score text="refresh" /> 
-
-• **refresh**(): `void` <Badge type="tip" text="client" />
-
-请求重新绘制
-
-
-___
-
-### setTargetUIWidget <Score text="setTargetUIWidget" /> 
-
-• **setTargetUIWidget**(`uiUserWidget`): `void` <Badge type="tip" text="client" />
-
-设置UI，可以对当前的UI设置UI资源，UI资源可以从路径获取或直接取其他UI组件引用的资源
-
-#### Parameters
-
-| `uiUserWidget` [`UserWidget`](mw.UserWidget.md) | UI资源对象 |
-| :------ | :------ |
-
-
-___
-
-### setUIbyID <Score text="setUIbyID" /> 
-
-• **setUIbyID**(`ID`): `void` <Badge type="tip" text="client" />
-
-通过 GUID 设置 UI
-
-#### Parameters
-
-| `ID` `string` | UI 的 ID range: 依据资源 Id 长度决定 |
-| :------ | :------ |
-

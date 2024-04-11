@@ -61,7 +61,7 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
 
@@ -109,7 +109,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
@@ -124,7 +124,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但请设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 |
 
@@ -143,7 +143,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
@@ -158,7 +158,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `listener` (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
 
@@ -208,9 +208,9 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
-| `data` `string` | 带的数据 |
+| `data` `string` | 携带的数据 <br> range: 长度不做限制。 |
 
 
 ___
@@ -223,9 +223,9 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名称 |
+| `eventName` `string` | 事件名称 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
-| `data` `string` | 携带的数据 |
+| `data` `string` | 携带的数据 <br> range: 长度不做限制。 |
 
 
 ___
@@ -238,7 +238,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 
@@ -290,7 +290,7 @@ ___
 
 | `player` [`Player`](mw.Player.md) | 客户端 |
 | :------ | :------ |
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | `...params` `unknown`[] | 可变长参数 |
 
 #### Returns
@@ -314,7 +314,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，与添加事件名配对。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 事件内容 |
 
@@ -333,7 +333,7 @@ ___
 
 #### Parameters
 
-| `eventName` `string` | 事件名 |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
 | :------ | :------ |
 | `...params` `unknown`[] | 可变长参数 |
 

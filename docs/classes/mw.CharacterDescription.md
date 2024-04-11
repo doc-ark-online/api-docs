@@ -372,6 +372,8 @@ export default class CharacterStyleExample extends Script {
 | `makeup.skinTone.skinColor?` `string`  [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
 | `slotAndDecoration?`  | 插槽和物品 |
 | `slotAndDecoration.slot`  | **`Description`** 插槽数据 |
+
+
 ___
 
 ### base <Score text="base" /> 

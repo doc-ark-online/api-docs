@@ -219,7 +219,7 @@ ___
 
 #### Parameters
 
-| `zOrder` `number` | 添加到屏幕的层级关系 |
+| `zOrder` `number` | 添加到屏幕的层级关系 range:不做限制 type:整数 |
 | :------ | :------ |
 
 

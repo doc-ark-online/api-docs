@@ -11,18 +11,20 @@
 ### Accessors <Score text="Accessors" /> 
 | **[onVoiceStatusChange](mw.ChatService.md#onvoicestatuschange)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`userId`: `string`, `lastVolume`: `number`, `currentVolume`: `number`, `isOpenAudio`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | :-----|
-| 每次语音回调|
+| 语音聊天委托,每次语音的回调|
 | **[voiceChatEnabled](mw.ChatService.md#voicechatenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否既不能听也不能说功能，false为否既不能听也不能说；true为既可以听也可以说。|
 
 ### Methods <Score text="Methods" /> 
-| **[getUserCanChat](mw.ChatService.md#getusercanchat)**(`userId`: `string`): `Promise`<`boolean`\>  |
-| :-----|
-| 获取指定用户聊天权限|
 | **[asyncBroadcastMessage](mw.ChatService.md#asyncbroadcastmessage)**(`type`: [`MessageType`](../enums/mw.MessageType.md), `content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />  |
+| :-----|
 | 发送富文本消息到聊天窗口中，禁止回调中调用该接口。|
 | **[asyncCloseMic](mw.ChatService.md#asyncclosemic)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 关闭自己的语音。|
+| **[asyncCollapseChatWindow](mw.ChatService.md#asynccollapsechatwindow)**(`isCollapsed`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
+| 是否打开或者折叠游戏中的聊天框。true是打开；false是折叠。|
+| **[asyncEnableChatWindow](mw.ChatService.md#asyncenablechatwindow)**(`isEnabled`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
+| 打开或关闭某个客户端的聊天功能。true是打开；false是关闭。|
 | **[asyncMuteAll](mw.ChatService.md#asyncmuteall)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 一键屏蔽所有玩家的语音。|
 | **[asyncMutePlayer](mw.ChatService.md#asyncmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="other" />  |
@@ -35,9 +37,10 @@
 | 一键打开所有玩家的语音。|
 | **[asyncUnmutePlayer](mw.ChatService.md#asyncunmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 打开指定玩家的语音。|
-| **[asyncsetUserCanChat](mw.ChatService.md#asyncsetusercanchat)**(`userId`: `string`, `canChat`: `boolean`): `Promise`<`boolean`\>  |
+| **[asyncsetUserCanChat](mw.ChatService.md#asyncsetusercanchat)**(`userId`: `string`, `canChat`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 设置指定用户聊天权限|
-| **[sendAudio](mw.ChatService.md#sendaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `openAudio`: `boolean`, `openId`: `string`): `void` |
+| **[getUserCanChat](mw.ChatService.md#getusercanchat)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
+| 获取指定用户聊天权限|
 
 ## Accessors
 
@@ -55,7 +58,7 @@
 <td style="text-align: left">
 
 
-每次语音回调
+语音聊天委托,每次语音的回调
 
 #### Returns
 
@@ -107,7 +110,7 @@ note: 开启语音功能，接口才可生效
 
 #### Parameters
 
-| `voice` | `boolean` |
+| `voice` `boolean` |  开启或者关闭 <br> default:true |
 | :------ | :------ |
 
 
@@ -120,24 +123,6 @@ note: 开启语音功能，接口才可生效
 
 ## Methods
 
-### getUserCanChat <Score text="getUserCanChat" /> 
-
-• **getUserCanChat**(`userId`): `Promise`<`boolean`\>
-
-获取指定用户聊天权限
-
-#### Parameters
-
-| `userId` | `string` |
-| :------ | :------ |
-
-#### Returns
-
-| `Promise`<`boolean`\> |  |
-| :------ | :------ |
-
-___
-
 ### asyncBroadcastMessage <Score text="asyncBroadcastMessage" /> 
 
 • `Static` **asyncBroadcastMessage**(`type`, `content`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />
@@ -148,14 +133,14 @@ ___
 
 | `type` [`MessageType`](../enums/mw.MessageType.md) | 发送消息类型 |
 | :------ | :------ |
-| `content` `string` | 消息内容 |
+| `content` `string` | 消息内容 range:小于 1200 个字符串长度 |
 
 #### Returns
 
 | `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> | 发送消息的结果 |
 | :------ | :------ |
 
-限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
+限制每个消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
 
 note: 开启聊天框聊天功能，接口才可生效
 
@@ -285,6 +270,70 @@ note: 开启语音功能，接口才可生效
 
 ___
 
+### asyncCollapseChatWindow <Score text="asyncCollapseChatWindow" /> 
+
+• `Static` **asyncCollapseChatWindow**(`isCollapsed`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
+
+是否打开或者折叠游戏中的聊天框。true是打开；false是折叠。
+
+#### Parameters
+
+| `isCollapsed` `boolean` | 折叠框打开关闭布尔参数 |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<`boolean`\> | 返回打开折叠是否成功。 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"ChatExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，此效果只能在mobile端测试，代码如下：
+</span>
+
+```ts
+@Component
+ export default class ChatExample extends Script {
+
+     protected onStart(): void {
+          ChatService.asyncCollapseChatWindow(true);
+     }
+ }
+```
+
+___
+
+### asyncEnableChatWindow <Score text="asyncEnableChatWindow" /> 
+
+• `Static` **asyncEnableChatWindow**(`isEnabled`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
+
+打开或关闭某个客户端的聊天功能。true是打开；false是关闭。
+
+#### Parameters
+
+| `isEnabled` `boolean` | 聊天功能打开关闭布尔参数 |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<`boolean`\> | 聊天功能打开或者关闭是否成功。 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"ChatExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，此效果只能在mobile端测试，代码如下：
+</span>
+
+```ts
+@Component
+ export default class ChatExample extends Script {
+
+     protected onStart(): void {
+          ChatService.asyncEnableChatWindow(true);
+     }
+ }
+```
+
+___
+
 ### asyncMuteAll <Score text="asyncMuteAll" /> 
 
 • `Static` **asyncMuteAll**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />
@@ -322,7 +371,7 @@ ___
 
 #### Parameters
 
-| `userId` | `string` |
+| `userId` `string` |  玩家的 userid <br> default:null range: 依据 userId 长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -385,7 +434,7 @@ ___
 
 #### Parameters
 
-| `content` `string` | 消息内容 |
+| `content` `string` | 消息内容 range:小于 128 个字符串长度 |
 | :------ | :------ |
 
 #### Returns
@@ -449,7 +498,7 @@ ___
 
 #### Parameters
 
-| `userId` | `string` |
+| `userId` `string` |  玩家的 userid <br> default:null range: 依据 userId 的长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -477,31 +526,35 @@ ___
 
 ### asyncsetUserCanChat <Score text="asyncsetUserCanChat" /> 
 
-• `Static` **asyncsetUserCanChat**(`userId`, `canChat`): `Promise`<`boolean`\>
+• `Static` **asyncsetUserCanChat**(`userId`, `canChat`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
 
 设置指定用户聊天权限
 
 #### Parameters
 
-| `userId` | `string` |
+| `userId` `string` |  用户 ID range: 根据 ID 长度决定 |
 | :------ | :------ |
-| `canChat` | `boolean` |
+| `canChat` `boolean` |  是否开启用户聊天权限。 |
 
 #### Returns
 
-| `Promise`<`boolean`\> |  |
+| `Promise`<`boolean`\> | 是否设置成功 |
 | :------ | :------ |
 
 ___
 
-### sendAudio <Score text="sendAudio" /> 
+### getUserCanChat <Score text="getUserCanChat" /> 
 
-• `Static` **sendAudio**(`resp`, `openAudio`, `openId`): `void`
+• `Static` **getUserCanChat**(`userId`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
+
+获取指定用户聊天权限
 
 #### Parameters
 
-| `resp` | [`MGSResponse`](../modules/Core.mw.md#mgsresponse) |
+| `userId` `string` |  用户 ID range: 不限制 |
 | :------ | :------ |
-| `openAudio` | `boolean` |
-| `openId` | `string` |
 
+#### Returns
+
+| `Promise`<`boolean`\> | 是否获取成功 |
+| :------ | :------ |

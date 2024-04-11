@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / AssetNonHumanoidSlotType
+[角色系统](../groups/角色系统.角色系统.md) / AssetNonHumanoidSlotType
 
 # AssetNonHumanoidSlotType <Badge type="tip" text="Enumeration" /> <Score text="AssetNonHumanoidSlotType" />
 
