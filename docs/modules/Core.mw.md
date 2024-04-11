@@ -88,7 +88,7 @@ mw
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
 | [HideInEditorState](../enums/mw.HideInEditorState.md)  |
-| 是否在编辑器中隐藏 |
+| :----- |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |

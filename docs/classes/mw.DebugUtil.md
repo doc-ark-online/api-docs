@@ -1,4 +1,4 @@
-[UTILITY](../groups/UTILITY.UTILITY.md) / DebugUtil
+[工具](../groups/工具.工具.md) / DebugUtil
 
 # DebugUtil <Badge type="tip" text="Class" /> <Score text="DebugUtil" />
 

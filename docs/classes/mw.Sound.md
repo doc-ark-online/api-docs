@@ -14,7 +14,7 @@ export default class SoundExample extends Script {
 
     private readonly sound = {
         assetID: "14929",
-        object: null as Sound,
+        object: null as mw.Sound,
     };
 
     protected onStart(): void {
@@ -22,14 +22,14 @@ export default class SoundExample extends Script {
     }
 
     @mw.RemoteFunction(mw.Client)
-    public async createSound(): `Promise`<`void`\> {
+    public async createSound(): Promise<void> {
         const success = await AssetUtil.asyncDownloadAsset(this.sound.assetID);
             if (success) {
                 // 下载完毕创建音效
                 this.sound.object = await GameObject.asyncSpawn<mw.Sound>(this.sound.assetID);
 
                 // 设置音效transform
-                const transform = new Transform(new Vector(500, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
+                const transform = new Transform(new Vector(0, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
                 this.sound.object.worldTransform = transform;
 
                 // 设置音效为空间音效

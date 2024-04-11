@@ -4,8 +4,8 @@
 
 ### 获得帮助
 
-1. 如果您刚接触我们的产品，可以先从[官方教程](https://meta.feishu.cn/wiki/wikcnmY0MQweLdbnlywkJJiDucd)开始，先尝试做一个游戏 demo：
-2. 如果您想探索更多功能，可以直接查看我们的[产品手册](https://meta.feishu.cn/wiki/wikcnTRMsvWdaJq2SOenbuHjXmf)和[API手册](https://api-docs.ark.online/);
+1. 如果您刚接触我们的产品，可以先从[官方教程](https://learning.ark.online/)开始，先尝试做一个游戏 demo：
+2. 如果您想探索更多功能，可以直接查看我们的[产品手册](https://docs.ark.online/)和[API手册](https://api-docs.ark.online/);
 3. 如果你在创作过程中有任何疑问，可以直接访问[论坛](https://forum.ark.online/)与其他创作者沟通讨论；
 
 ### 网站结构
