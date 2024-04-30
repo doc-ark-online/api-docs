@@ -8,12 +8,6 @@
 
 动画是指通过一系列连续的图像或模型变化来模拟物体或角色的运动和行为。当你在玩一个角色扮演游戏，你控制的角色需要行走、跳跃、攻击等。这些动作都是通过动画来实现的。
 
-想象一下你在玩一个动作冒险游戏，你的角色需要执行一系列复杂的动作，如攻击连击、翻滚和特殊技能等。这些动作可以通过 Animation 来组合和管理。
-
-资源库中每个片段代表一个特定的动作。例如，你可以创建一个攻击片段，一个跳跃片段，一个翻滚片段等等。这些片段可以按照特定的顺序组合在一起，形成一个完整的动画序列。
-
-你可以选择不同的动画片段，并设置它们的播放顺序、持续时间和循环。你还可以定义触发条件，例如按下特定的按键或触发特定的事件，来触发动画的播放。
-
 如何使用 Animation ？
 
 - 想要播放一个动画资源， 需要执行 Character 中 loadAnimation 方法, 下载并加载一个动画资源。
@@ -33,7 +27,7 @@
 
 ::: warning Precautions
 
-请不要直接使用new创建，loadAnimation可以返回动画， 以进行更加精细的动画控制。
+请不要直接使用new创建，loadAnimation 可以返回动画， 以进行更加精细的动画控制。
 
 :::
 
@@ -59,6 +53,8 @@
 | 获取动画播放插槽|
 | **[speed](mw.Animation.md#speed)**(): `number`   |
 | 获取动画的播放速率|
+| **[startTime](mw.Animation.md#starttime)**(): `number`   |
+| 获取动画开始时间|
 
 ### Methods <Score text="Methods" /> 
 | **[pause](mw.Animation.md#pause)**(): `boolean`   |
@@ -376,7 +372,10 @@ ___
 
 
 获取动画播放循环次数。
-当 loop 设置为 0 时，可无限循环播放，设置完成时，调用Play() 函数即可看到角色播放动画效果。
+
+当 loop 设置为 0 时，可无限循环播放。
+
+设置完成时，调用 Play() 函数即可看到角色播放动画。
 
 
 #### Returns
@@ -641,6 +640,8 @@ ___
 | `speed` | `number` |
 | :------ | :------ |
 
+
+
 </td>
 </tr></tbody>
 </table>
@@ -671,6 +672,111 @@ export default class Example_Animation_Speed extends Script {
             // 给【动画完成】委托添加函数，播放一个升级特效
             danceAnimation.onFinish.add(() => {
                 EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidSlotType.Root});
+            });
+            // 添加一个按键方法:按下键盘“1”，开始播放
+            InputUtil.onKeyDown(Keys.One, () => {
+                danceAnimation.play();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“2”，暂停播放
+            InputUtil.onKeyDown(Keys.Two, () => {
+                danceAnimation.pause();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“3”，继续播放
+            InputUtil.onKeyDown(Keys.Three, () => {
+                danceAnimation.resume();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
+                danceAnimation.stop();
+                console.log("动画播放 " + danceAnimation.isPlaying);
+            });
+        }
+    }
+}
+```
+___
+
+### startTime <Score text="startTime" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **startTime**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **startTime**(`time`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画开始时间
+
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画的开始点时间
+
+::: warning Precautions
+
+最终生效范围[0,动画长度]
+
+:::
+
+#### Parameters
+
+| `time` | `number` |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”， 开始播放动画。按下键盘“2”， 暂停播放动画。按下键盘“3”， 继续播放动画。按下键盘“4”， 停止播放动画。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Animation_Loop extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 给角色加载一个舞蹈动画
+            let danceAnimation = myCharacter.loadAnimation("14700");
+            // 动画的属性
+            console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
+            danceAnimation.loop = 10;
+            // 2倍播放速度
+            danceAnimation.speed = 2;
+             //从动画一半开始播放
+             danceAnimation.startTime = danceAnimation.length * 0.5
+            // 给【动画完成】委托添加函数，播放一个升级特效
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidSlotType.Root});
+                console.log("动画开始点 = " + danceAnimation.startTime);
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
             InputUtil.onKeyDown(Keys.One, () => {

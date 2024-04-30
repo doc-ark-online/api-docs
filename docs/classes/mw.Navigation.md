@@ -30,8 +30,14 @@
 | 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
 | **[follow](mw.Navigation.md#follow)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `target`: [`GameObject`](mw.GameObject.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `boolean`   |
 | 跟随目标|
+| **[getClosestReachablePoint](mw.Navigation.md#getclosestreachablepoint)**(`targetPoint`: [`Vector`](mw.Vector.md), `queryExtent`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| 自动寻找与目标点距离最近的可寻路位置|
+| **[getRandomReachablePointInRadius](mw.Navigation.md#getrandomreachablepointinradius)**(`targetPoint`: [`Vector`](mw.Vector.md), `radius`: `number`): [`Vector`](mw.Vector.md)   |
+| 在指定位置限制半径内的可导航区域中生成一个随机可到达的位置|
 | **[navigateTo](mw.Navigation.md#navigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `position`: [`Vector`](mw.Vector.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void`   |
 | 寻路移动|
+| **[navigationRaycast](mw.Navigation.md#navigationraycast)**(`rayStart`: [`Vector`](mw.Vector.md), `rayEnd`: [`Vector`](mw.Vector.md)): `boolean`   |
+| 判断两点连线上是否存在障碍或超出寻路区域范围|
 | **[stopFollow](mw.Navigation.md#stopfollow)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 停止跟随|
 | **[stopNavigateTo](mw.Navigation.md#stopnavigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void`   |
@@ -102,7 +108,7 @@ ___
 | `relatedObject` [`GameObject`](mw.GameObject.md) | 寻路作用对象 |
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) | 被跟随目标 |
-| `radius?` `number` | 距目标半径 default:0 |
+| `radius?` `number` | 距目标半径 default:0 range: 不做限制 type: 浮点型 |
 | `OnSuccess?` () => `void` | 成功回调（当跟随到设定的目标范围内时触发——可多次） default:null |
 | `OnFail?` () => `void` | 失败回调（当跟随的目标消失或离开寻路区域范围触发——可多次） default:null |
 
@@ -110,6 +116,8 @@ ___
 
 | `boolean` | 跟随请求是否成功 |
 | :------ | :------ |
+
+角色和客户端NPC在客户端调用时生效，双端在服务端调用时生效
 
 <span style="font-size: 14px;">
 使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：
@@ -159,6 +167,96 @@ ___
 
 ___
 
+### getClosestReachablePoint <Score text="getClosestReachablePoint" /> 
+
+• `Static` **getClosestReachablePoint**(`targetPoint`, `queryExtent`): [`Vector`](mw.Vector.md) 
+
+自动寻找与目标点距离最近的可寻路位置
+
+#### Parameters
+
+| `targetPoint` [`Vector`](mw.Vector.md) | 目的地位置 |
+| :------ | :------ |
+| `queryExtent` [`Vector`](mw.Vector.md) | 目的地搜索范围 |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 范围内最近可寻路位置（null则未找到） |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例: 总资源库中拖入寻路区域于(0,0,0)位置处，并设置其缩放为(50,50,3)，拖入两个球体分别放置于(2940,1960,0)和(44,-3330,0)，再拖入一个正方体放置于(20,1020,0)，并设置其缩放为（12，1，1），创建一个默认脚本，复制下列代码于脚本中并保存，将脚本拖至Ground上，保存运行游戏，按脚本设置按键，即可看到效果
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+
+protected async onStart(): `Promise`<`void`\> {
+    let player = Player.localPlayer;
+    let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
+    let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
+
+    //自动寻找与目标点距离最近的可寻路位置
+    InputUtil.onKeyDown(Keys.One,()=>{
+        let TargetPoint = Navigation.getClosestReachablePoint(NAVabox.worldTransform.position,new Vector(500,500,10));
+        if(TargetPoint == null){
+            console.log(`寻路位置是个空的`);
+        }else{
+            Navigation.navigateTo(player.character,TargetPoint);
+        }
+    });
+}
+}
+```
+
+___
+
+### getRandomReachablePointInRadius <Score text="getRandomReachablePointInRadius" /> 
+
+• `Static` **getRandomReachablePointInRadius**(`targetPoint`, `radius`): [`Vector`](mw.Vector.md) 
+
+在指定位置限制半径内的可导航区域中生成一个随机可到达的位置
+
+#### Parameters
+
+| `targetPoint` [`Vector`](mw.Vector.md) | 目的地位置 |
+| :------ | :------ |
+| `radius` `number` | 半径范围 <br> range: 不限制 <br> type: 浮点数 |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 范围内随机可到达位置（null则未找到） |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例: 总资源库中拖入寻路区域于(0,0,0)位置处，并设置其缩放为(50,50,3)，拖入两个球体分别放置于(2940,1960,0)和(44,-3330,0)，再拖入一个正方体放置于(20,1020,0)，并设置其缩放为（12，1，1），创建一个默认脚本，复制下列代码于脚本中并保存，将脚本拖至Ground上，保存运行游戏，按脚本设置按键，即可看到效果
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+
+protected async onStart(): `Promise`<`void`\> {
+    let player = Player.localPlayer;
+    let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
+    let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
+
+    //在指定位置限制半径内的可导航区域中生成一个随机可到达的位置
+    InputUtil.onKeyDown(Keys.Two,()=>{
+        let TargetPoint = Navigation.getRandomReachablePointInRadius(new mw.Vector(0,0,0),8000);
+        if(TargetPoint == null){
+            console.log(`寻路位置是个空的`);
+        }else{
+            Navigation.navigateTo(player.character,TargetPoint);
+        }
+    });
+}
+}
+```
+
+___
+
 ### navigateTo <Score text="navigateTo" /> 
 
 • `Static` **navigateTo**(`relatedObject`, `position`, `radius?`, `OnSuccess?`, `OnFail?`): `void` 
@@ -170,13 +268,13 @@ ___
 | `relatedObject` [`GameObject`](mw.GameObject.md) | 寻路作用对象 |
 | :------ | :------ |
 | `position` [`Vector`](mw.Vector.md) | 目标位置 |
-| `radius?` `number` | 距目标半径 default:0 |
+| `radius?` `number` | 距目标半径 default:0 range: 不做限制 type: 浮点型 |
 | `OnSuccess?` () => `void` | 成功回调 default:null |
 | `OnFail?` () => `void` | 失败回调 default:null |
 
 
 <span style="font-size: 14px;">
-使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存，运行游戏，按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下：
+使用示例: 在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。最后拖入一个目标对象关闭碰撞后放置在坐标（2400，-400，0）.创建一个脚本挂载在目标对象下方.在脚本中复制下列"Example_Navigation_NavigateTo"的代码保存，运行游戏，按下按键”1“，角色寻路移动至目标位置，按下按键“2”，角色停止寻路。代码如下：
 </span>
 
 ```ts
@@ -208,6 +306,46 @@ ___
 
 ___
 
+### navigationRaycast <Score text="navigationRaycast" /> 
+
+• `Static` **navigationRaycast**(`rayStart`, `rayEnd`): `boolean` 
+
+判断两点连线上是否存在障碍或超出寻路区域范围
+
+#### Parameters
+
+| `rayStart` [`Vector`](mw.Vector.md) | 起始点 |
+| :------ | :------ |
+| `rayEnd` [`Vector`](mw.Vector.md) | 结束点 |
+
+#### Returns
+
+| `boolean` | 是否两点连线存在障碍或超出范围 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例: 总资源库中拖入寻路区域于(0,0,0)位置处，并设置其缩放为(50,50,3)，拖入两个球体分别放置于(2940,1960,0)和(44,-3330,0)，再拖入一个正方体放置于(20,1020,0)，并设置其缩放为（12，1，1），创建一个默认脚本，复制下列代码于脚本中并保存，将脚本拖至Ground上，保存运行游戏，按脚本设置按键，即可看到效果
+</span>
+
+```ts
+@Component
+export default class NewScript extends Script {
+protected async onStart(): `Promise`<`void`\> {
+    let player = Player.localPlayer;
+    let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
+    let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
+
+    //判断两点连线上是否存在障碍或超出寻路区域范围
+    InputUtil.onKeyDown(Keys.Three,()=>{
+        let NavigationCAV = Navigation.navigationRaycast(new Vector(0,0,0),NAVasphere.worldTransform.position)
+        console.log(`直线路径上是否有障碍：`,NavigationCAV);
+    })
+}
+}
+```
+
+___
+
 ### stopFollow <Score text="stopFollow" /> 
 
 • `Static` **stopFollow**(`relatedObject`): `void` 
@@ -219,6 +357,8 @@ ___
 | `relatedObject` [`GameObject`](mw.GameObject.md) | 寻路作用对象 |
 | :------ | :------ |
 
+
+角色和客户端NPC在客户端调用时生效，双端在服务端调用时生效
 
 <span style="font-size: 14px;">
 使用示例:在场景中拖入一个寻路区域，坐标为（0， 0， 0），缩放为（50， 10， 3）.同时拖入三个缩放为（1，7，1）的立方体，并分别放置在坐标（400，-150，0），（1000, 150, 0)和（1700， -450，0）。在坐标（2400，-400，0）处生成一个npc.创建一个脚本挂载在目标对象下.在脚本中复制下列"Example_Navigation_Follow"的代码保存，运行游戏，按下按键”1“，npc寻路跟随玩家，按下按键“2”，npc停止跟随。代码如下：

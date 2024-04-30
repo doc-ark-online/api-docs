@@ -981,15 +981,14 @@ export default class FogExample extends Script {
 
 #### Parameters
 
-| `presetIndex` | [`FogPreset`](../enums/mw.FogPreset.md) |
+| `presetIndex` [`FogPreset`](../enums/mw.FogPreset.md) | 雾预设 <br> default:null |
 | :------ | :------ |
 
 
 <span style="font-size: 14px;">
-使用示例: 可按如下操作控制编辑器后处理实时效果
+使用示例: 可按如下操作控制编辑器后处理实时效果创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制雾预设
 </span>
 
-创建一个名为"FogExample"的脚本，放置在对象栏中，打开脚本，输入以下代码，运行游戏，你将可以通过1键控制雾预设
 ```ts
 @Component
 export default class FogExample extends Script {

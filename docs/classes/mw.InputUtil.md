@@ -42,7 +42,7 @@ export default class InputExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[isCursorInteractiveWithUI](mw.InputUtil.md#iscursorinteractivewithui)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取鼠标指针是否能与UI交互|
+| 获取鼠标指针是否能与 UI 交互|
 | **[isCursorLockEnabled](mw.InputUtil.md#iscursorlockenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否允许通过快捷方式切换鼠标的使用组合模式|
 | **[isCursorLocked](mw.InputUtil.md#iscursorlocked)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -98,12 +98,12 @@ ___
 <td style="text-align: left">
 
 
-获取鼠标指针是否能与UI交互
+获取鼠标指针是否能与 UI 交互
 
 
 #### Returns
 
-| `boolean` | 是否能与UI交互 |
+| `boolean` | 是否能与 UI 交互 |
 | :------ | :------ |
 
 
@@ -575,9 +575,9 @@ ___
 
 #### Parameters
 
-| `screenX` `number` |  屏幕X轴坐标值 default: |
+| `screenX` `number` |  屏幕 X 轴坐标值 default:null range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2 type: 浮点数 |
 | :------ | :------ |
-| `screenY` `number` |  屏幕Y轴坐标值 |
+| `screenY` `number` |  屏幕 Y 轴坐标值 default:null range:不超过屏幕坐标，关于屏幕坐标详情请看 class Vector2 type: 浮点数 |
 
 #### Returns
 
@@ -585,7 +585,7 @@ ___
 | :------ | :------ |
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下 F 键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
 </span>
 
 ```

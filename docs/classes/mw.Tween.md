@@ -64,7 +64,7 @@
 | **[update](mw.Tween.md#update)**(`time?`: `number`, `autoStart?`: `boolean`): `boolean`   |
 | 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
 | **[yoyo](mw.Tween.md#yoyo)**(`[yoyo](mw.Tween.md#yoyo)?`): [`Tween`](mw.Tween.md)<`T`\>   |
-| 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。|
+| 设置往复（悠悠球效果）|
 
 补间构造函数
 
@@ -123,7 +123,7 @@ ___
 
 #### Parameters
 
-| `amount?` `number` |  延迟时间，单位：ms。 default: 0 |
+| `amount?` `number` |  延迟时间，单位：ms。 default: 0 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -141,7 +141,7 @@ ___
 
 #### Parameters
 
-| `d?` `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
+| `d?` `number` |  完成补间需要的时间，单位：ms。 default: 1000 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -375,7 +375,7 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  暂停生效时间 default: 当前时间 |
+| `time?` `number` |  暂停生效时间 default: 当前时间 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -399,7 +399,7 @@ ___
 
 #### Parameters
 
-| `times?` `number` |  重复次数 default: 0 |
+| `times?` `number` |  重复次数 default: 0 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -432,13 +432,17 @@ ___
 
 #### Parameters
 
-| `amount?` `number` |  延迟时间，单位：ms。 default: undefined |
+| `amount?` `number` |  延迟时间，单位：ms。 default: undefined type: 浮点数 range: [0, +∞] |
 | :------ | :------ |
 
 #### Returns
 
 | [`Tween`](mw.Tween.md)<`T`\> | 当前补间对象，可链式调用 |
 | :------ | :------ |
+
+**`Range`**
+
+: [0, +∞]
 
 ___
 
@@ -450,7 +454,7 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  恢复生效时间 default: 当前时间 |
+| `time?` `number` |  恢复生效时间 default: 当前时间 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -474,7 +478,7 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  启动生效时间 default: 当前时间 |
+| `time?` `number` |  启动生效时间 default: 当前时间 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 
 #### Returns
@@ -526,7 +530,7 @@ ___
 
 | `properties` [`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops) |  目标状态，可以是一个数组: 例如 to([0,100,200], time) |
 | :------ | :------ |
-| `duration?` `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
+| `duration?` `number` |  完成补间需要的时间，单位：ms。 default: 1000 <br> range: [0, +∞] type: 浮点数 |
 
 #### Returns
 
@@ -543,7 +547,7 @@ ___
 
 #### Parameters
 
-| `time?` `number` |  要绑定的回调函数 default: 当前时间 |
+| `time?` `number` |  要绑定的回调函数 default: 当前时间 <br> range: [0, +∞] type: 浮点数 |
 | :------ | :------ |
 | `autoStart?` `boolean` |  是否自动开始 default: true |
 
@@ -558,7 +562,7 @@ ___
 
 • **yoyo**(`yoyo?`): [`Tween`](mw.Tween.md)<`T`\> 
 
-设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。
+设置往复（悠悠球效果）
 
 #### Parameters
 
@@ -569,4 +573,7 @@ ___
 
 | [`Tween`](mw.Tween.md)<`T`\> | 当前补间对象，可链式调用 |
 | :------ | :------ |
+
+这个功能只有在独自使用 repeat 时才有效果。
+
 启用后，补间的行为将像悠悠球一样，会在起始值和结束值之间往复，而不是从头开始重复。

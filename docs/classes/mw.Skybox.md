@@ -78,7 +78,7 @@ export default class SkyboxExample extends mw.Script {
 | **[skyDomeMiddleColor](mw.Skybox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 天空中层颜色|
 | **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置天空盒贴图|
+| 设置天空盒贴图资源ID|
 | **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取天空顶层颜色|
 | **[starDensity](mw.Skybox.md#stardensity)**(): `number` <Badge type="tip" text="client" />  |
@@ -844,7 +844,7 @@ ___
 <td style="text-align: left">
 
 
-设置天空盒亮度3
+设置天空盒亮度
 
 #### Parameters
 
@@ -919,11 +919,11 @@ ___
 <td style="text-align: left">
 
 
-设置天空盒贴图
+设置天空盒贴图资源ID
 
 #### Parameters
 
-| `value` `string` | 贴图ID |
+| `value` `string` | 贴图资源ID |
 | :------ | :------ |
 
 

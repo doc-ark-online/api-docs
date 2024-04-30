@@ -9,7 +9,7 @@
 ### Methods <Score text="Methods" /> 
 | **[nextID](mw.TweenSequence.md#nextid)**(): `number`   |
 | :-----|
-| 获取下一个ID|
+| 获取下一个 ID|
 
 ## Methods
 
@@ -17,9 +17,9 @@
 
 • `Static` **nextID**(): `number` 
 
-获取下一个ID
+获取下一个 ID
 
 #### Returns
 
-| `number` | 下一个ID |
+| `number` | 下一个 ID |
 | :------ | :------ |

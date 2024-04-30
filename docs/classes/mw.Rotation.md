@@ -8,8 +8,7 @@
 
 由分量 (x,y,z) 组成的三维空间中的旋转量。
 
-Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
-绕三个轴的旋转值：Pitch，Yaw，Roll翻译为俯仰角，偏航角，翻滚角。分别代表绕X轴，Y轴，Z轴的旋转值。
+Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 ::: warning Precautions
 
@@ -133,10 +132,10 @@ Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
 
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range: 不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range: 不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range: 不做限制 type: 浮点数 |
 
 ## Properties
 
@@ -236,7 +235,7 @@ ___
 
 | `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
 | :------ | :------ |
-| `epsilon?` `number` | 误差值 default:1.e-7 |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -275,7 +274,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -286,7 +285,7 @@ ___
 
 #### Parameters
 
-| `str` `string` | 字符串数据 |
+| `str` `string` | 字符串数据 range:"P=-431602080.000000 Y=-431602080.000000 R=-431602080.000000" |
 | :------ | :------ |
 
 ### fromVector <Score text="fromVector" /> 
@@ -421,10 +420,10 @@ ___
 
 #### Parameters
 
-| `x` `number` | 旋转的 x 分量 |
+| `x` `number` | 旋转的 x 分量 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `y` `number` | 旋转的 y 分量 |
-| `z` `number` | 旋转的 z 分量 |
+| `y` `number` | 旋转的 y 分量 range:不做限制 type: 浮点数 |
+| `z` `number` | 旋转的 z 分量 range:不做限制 type: 浮点数 |
 
 #### Returns
 
@@ -589,7 +588,7 @@ ___
 
 #### Parameters
 
-| `v` `string` | string |
+| `v` `string` | 字符串 range:"0.00000,0.00000,0.00000" |
 | :------ | :------ |
 | `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
@@ -633,10 +632,10 @@ ___
 
 #### Parameters
 
-| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量 a |
 | :------ | :------ |
-| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `alpha` `number` | 插值 |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量 b |
+| `alpha` `number` | 插值 <br> range: [0, 1] type:浮点数 |
 
 #### Returns
 

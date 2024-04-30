@@ -41,9 +41,9 @@
 | 将当前矩阵设为单位矩阵。|
 
 ### Methods <Score text="Methods" /> 
-| **[add](mw.Matrix3x3.md#add)**(`mat`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
+| **[add](mw.Matrix3x3.md#add)**(`a`, `b`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | :-----|
-| 矩阵逐元素相加。|
+| 逐元素矩阵加法|
 | **[clone](mw.Matrix3x3.md#clone)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 获得指定矩阵的拷贝|
 | **[determinant](mw.Matrix3x3.md#determinant)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md)): `number`   |
@@ -60,7 +60,7 @@
 | 在给定矩阵变换基础上加入新旋转变换|
 | **[scale](mw.Matrix3x3.md#scale)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md), `v`: [`Vector`](mw.Vector.md), `outer?`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 在给定矩阵变换基础上加入新缩放变换|
-| **[set](mw.Matrix3x3.md#set)**(`other`): [`Matrix3x3`](mw.Matrix3x3.md)   |
+| **[set](mw.Matrix3x3.md#set)**(`other`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 设置当前矩阵使其与指定矩阵相等。|
 | **[strictEquals](mw.Matrix3x3.md#strictequals)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md), `b`: [`Matrix3x3`](mw.Matrix3x3.md)): `boolean`   |
 | 矩阵等价判断|
@@ -70,8 +70,8 @@
 | 返回当前矩阵的字符串表示。|
 | **[transpose](mw.Matrix3x3.md#transpose)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md), `outer?`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 将目标矩阵变为转置矩阵|
-| **[add](mw.Matrix3x3.md#add-1)**(`mat`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
-| 矩阵逐元素相加。|
+| **[add](mw.Matrix3x3.md#add-1)**(`a`, `b`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md)   |
+| 逐元素矩阵加法|
 | **[clone](mw.Matrix3x3.md#clone-1)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md)): [`Matrix3x3`](mw.Matrix3x3.md)   |
 | 获得指定矩阵的拷贝|
 | **[determinant](mw.Matrix3x3.md#determinant-1)**(`a`: [`Matrix3x3`](mw.Matrix3x3.md)): `number`   |
@@ -122,16 +122,16 @@
 
 #### Parameters
 
-| `m00?` `number` | 第 0 列第 0 行的元素 default:1 |
+| `m00?` `number` | 第 0 列第 0 行的元素 default:1 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第 0 列第 1 行的元素 default:0 |
-| `m02?` `number` | 第 0 列第 2 行的元素 default:0 |
-| `m10?` `number` | 第 1 列第 0 行的元素 default:0 |
-| `m11?` `number` | 第 1 列第 1 行的元素 default:1 |
-| `m12?` `number` | 第 1 列第 2 行的元素 default:0 |
-| `m20?` `number` | 第 2 列第 0 行的元素 default:0 |
-| `m21?` `number` | 第 2 列第 1 行的元素 default:0 |
-| `m22?` `number` | 第 2 列第 2 行的元素 default:1 |
+| `m01?` `number` | 第 0 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m02?` `number` | 第 0 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m10?` `number` | 第 1 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m11?` `number` | 第 1 列第 1 行的元素 default:1 range:不做限制 type: 浮点数 |
+| `m12?` `number` | 第 1 列第 2 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m20?` `number` | 第 2 列第 0 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m21?` `number` | 第 2 列第 1 行的元素 default:0 range:不做限制 type: 浮点数 |
+| `m22?` `number` | 第 2 列第 2 行的元素 default:1 range:不做限制 type: 浮点数 |
 
 ## Properties
 
@@ -224,9 +224,9 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -234,10 +234,10 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
 | :------ | :------ |
 
-#### Parameters
 
-| `mat` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 |
-| :------ | :------ |
+
+___
+
 ### clone <Score text="clone" /> 
 
 • **clone**(): [`Matrix3x3`](mw.Matrix3x3.md) 
@@ -280,10 +280,10 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
-| `epsilon?` `number` | 误差值 default:1.e-7 |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -321,57 +321,60 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 求逆后的矩阵 |
 | :------ | :------ |
 
+### multiply <Score text="multiply" /> 
+
+• **multiply**(`mat`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
 矩阵乘法。将当前矩阵左乘指定矩阵的结果赋值给当前矩阵。
 
 #### Parameters
 
-| `mat` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
+| `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
-| [`Matrix3x3`](mw.Matrix3x3.md) | this |
+| [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
 | :------ | :------ |
 
-• **multiply**(`v`): [`Matrix3x3`](mw.Matrix3x3.md) 
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
-矩阵数乘。将当前矩阵与指定标量的数乘结果赋值给当前矩阵。
+取四阶矩阵的前三阶，与三维矩阵相乘
 
 #### Parameters
 
-| `v` `number` | 数 |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
+| `b` [`Matrix4x4`](mw.Matrix4x4.md) | 矩阵 b |
+| `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
-| [`Matrix3x3`](mw.Matrix3x3.md) | this |
+| [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
 | :------ | :------ |
+
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
+
+矩阵标量乘法
+
+#### Parameters
+
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
+| :------ | :------ |
+| `b` `number` | 数字b <br> range: 无限制 type:浮点数 |
+| `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
+
+#### Returns
+
+| [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
+| :------ | :------ |
+
+
 
 ___
 
-### rotate <Score text="rotate" /> 
-
-• **rotate**(`rad`): [`Matrix3x3`](mw.Matrix3x3.md) 
-
-将当前矩阵左乘旋转矩阵的结果赋值给当前矩阵，旋转矩阵由旋转轴和旋转角度给出。
-
-#### Parameters
-
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 需要变换的矩阵 |
-| :------ | :------ |
-| `rad` `number` | 旋转弧度 |
-| `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
-
-#### Returns
-
-| [`Matrix3x3`](mw.Matrix3x3.md) | 旋转后的三维矩阵 |
-| :------ | :------ |
-
-#### Parameters
-
-| `rad` `number` | 旋转的弧度 |
-| :------ | :------ |
 ### scale <Score text="scale" /> 
 
 • **scale**(`vec`): [`Matrix3x3`](mw.Matrix3x3.md) 
@@ -390,10 +393,10 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 缩放后的三维矩阵 |
 | :------ | :------ |
 
-#### Parameters
 
-| `vec` [`Vector`](mw.Vector.md) | 对矩阵缩放的向量 |
-| :------ | :------ |
+
+___
+
 ### set <Score text="set" /> 
 
 • **set**(`other`): [`Matrix3x3`](mw.Matrix3x3.md) 
@@ -416,16 +419,16 @@ ___
 
 #### Parameters
 
-| `m00?` `number` | 第0行第0列的元素 default:1 |
+| `m00?` `number` | 第 0 行第 0 列的元素 default:1 range:不做限制 type: 浮点数 |
 | :------ | :------ |
-| `m01?` `number` | 第0行第1列的元素 default:0 |
-| `m02?` `number` | 第0行第2列的元素 default:0 |
-| `m10?` `number` | 第1行第0列的元素 default:0 |
-| `m11?` `number` | 第1行第1列的元素 default:1 |
-| `m12?` `number` | 第1行第2列的元素 default:0 |
-| `m20?` `number` | 第2行第0列的元素 default:0 |
-| `m21?` `number` | 第2行第1列的元素 default:0 |
-| `m22?` `number` | 第2行第2列的元素 default:1 |
+| `m01?` `number` | 第 0 行第 1 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m02?` `number` | 第 0 行第 2 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m10?` `number` | 第 1 行第 0 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m11?` `number` | 第 1 行第 1 列的元素 default:1 range:不做限制 type: 浮点数 |
+| `m12?` `number` | 第 1 行第 2 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m20?` `number` | 第 2 行第 0 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m21?` `number` | 第 2 行第 1 列的元素 default:0 range:不做限制 type: 浮点数 |
+| `m22?` `number` | 第 2 行第 2 列的元素 default:1 range:不做限制 type: 浮点数 |
 
 #### Returns
 
@@ -442,9 +445,9 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 
 #### Returns
 
@@ -464,9 +467,9 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -474,10 +477,10 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
 | :------ | :------ |
 
-#### Parameters
 
-| `mat` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 |
-| :------ | :------ |
+
+___
+
 ### toString <Score text="toString" /> 
 
 • **toString**(): `string` 
@@ -508,20 +511,17 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 转置后的矩阵 |
 | :------ | :------ |
 
+### add <Score text="add" /> 
+
+• `Static` **add**(`a`, `b`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
 逐元素矩阵加法
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -575,10 +575,10 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
-| `epsilon?` `number` | 误差值 default:1.e-7 |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
@@ -604,12 +604,6 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 提取后的三维矩阵 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### fromRotation <Score text="fromRotation" /> 
@@ -620,7 +614,7 @@ ___
 
 #### Parameters
 
-| `rad` `number` | 旋转弧度 |
+| `rad` `number` | 旋转弧度 <br> range: 无限制 type:浮点数 |
 | :------ | :------ |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
@@ -628,12 +622,6 @@ ___
 
 | [`Matrix3x3`](mw.Matrix3x3.md) | 含旋转信息的三维矩阵 |
 | :------ | :------ |
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -654,12 +642,6 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 含缩放信息的三维矩阵 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### fromTranslation <Score text="fromTranslation" /> 
@@ -679,12 +661,6 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 含位移信息的三维矩阵 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### fromViewUp <Score text="fromViewUp" /> 
@@ -699,18 +675,12 @@ ___
 | :------ | :------ |
 | `up?` [`Vector`](mw.Vector.md) | 视口的上向量 default:null |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
-| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
+| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON <br> range: 建议传入小于 1 的值。 type:浮点数 |
 
 #### Returns
 
 | [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的三维矩阵 |
 | :------ | :------ |
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -731,12 +701,6 @@ ___
 | [`Matrix3x3`](mw.Matrix3x3.md) | 逆转置后的三维矩阵 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### invert <Score text="invert" /> 
@@ -744,12 +708,6 @@ ___
 • `Static` **invert**(`a`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
 将目标矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 
@@ -772,9 +730,9 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -786,17 +744,11 @@ ___
 
 取四阶矩阵的前三阶，与三维矩阵相乘
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix4x4`](mw.Matrix4x4.md) | 矩阵b |
+| `b` [`Matrix4x4`](mw.Matrix4x4.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -808,29 +760,17 @@ ___
 
 矩阵标量乘法
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` `number` | 数字b |
+| `b` `number` | 数字b <br> range: 无限制 type:浮点数 |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 | [`Matrix3x3`](mw.Matrix3x3.md) | 计算后的矩阵 |
 | :------ | :------ |
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 ___
 
@@ -840,17 +780,11 @@ ___
 
 在给定矩阵变换基础上加入新旋转变换
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 #### Parameters
 
 | `a` [`Matrix3x3`](mw.Matrix3x3.md) | 需要变换的矩阵 |
 | :------ | :------ |
-| `rad` `number` | 旋转弧度 |
+| `rad` `number` | 旋转弧度 <br> range: 无限制 type:浮点数 |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
@@ -865,12 +799,6 @@ ___
 • `Static` **scale**(`a`, `v`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
 在给定矩阵变换基础上加入新缩放变换
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 
@@ -894,9 +822,9 @@ ___
 
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 
 #### Returns
 
@@ -911,17 +839,11 @@ ___
 
 逐元素矩阵减法
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 #### Parameters
 
-| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵a |
+| `a` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 a |
 | :------ | :------ |
-| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵b |
+| `b` [`Matrix3x3`](mw.Matrix3x3.md) | 矩阵 b |
 | `outer?` [`Matrix3x3`](mw.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
@@ -949,12 +871,6 @@ ___
 | [`Vector`](mw.Vector.md) | 变换后的三维向量 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### transformVector2 <Score text="transformVector" /> 
@@ -975,12 +891,6 @@ ___
 | [`Vector2`](mw.Vector2.md) | 变换后的二维向量 |
 | :------ | :------ |
 
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
-
 ___
 
 ### transpose <Score text="transpose" /> 
@@ -988,12 +898,6 @@ ___
 • `Static` **transpose**(`a`, `outer?`): [`Matrix3x3`](mw.Matrix3x3.md) 
 
 将目标矩阵变为转置矩阵
-
-::: warning Precautions
-
-如果 outer 不为空, 返回 outer,否则返回一个新的 Matrix3x3 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
-
-:::
 
 #### Parameters
 

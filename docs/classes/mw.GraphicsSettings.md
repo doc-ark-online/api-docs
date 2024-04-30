@@ -22,6 +22,12 @@ export default class ClassExample extends Script {
        let gpu = mw.GraphicsLevel.Low2;
        GraphicsSettings.setGraphicsCPULevel(cpu);
        GraphicsSettings.setGraphicsGPULevel(gpu);
+       //开启自动分辨率
+       GraphicsSettings.setAutoScreenPercentage(true);
+       //设置FSR抗锯齿等级
+       GraphicsSettings.setFSRLevel(3);
+       //设置锐化程度
+       GraphicsSettings.setSharpness(1);
 
        //获取当前CPU画质等级
        let cpulevel = GraphicsSettings.getCPULevel();
@@ -31,124 +37,161 @@ export default class ClassExample extends Script {
        let Defaultcpulevel = GraphicsSettings.getDefaultCPULevel();
        //获取默认GPU画质等级
        let Defaultcgpulevel = GraphicsSettings.getDefaultGPULevel();
+       //获取当前自动分辨率开启状态
+       GraphicsSettings.getAutoScreenPercentage();
+       //获取当前FSR抗锯齿等级
+       GraphicsSettings.getFSRLevel();
+       //获取当前锐化程度
+       GraphicsSettings.getSharpness();
    }
 }
 ```
 
 ## Table of contents
 
-### Methods <Score text="Methods" /> 
-| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
+### Accessors <Score text="Accessors" /> 
+| **[occlusionCullingEnabled](mw.GraphicsSettings.md#occlusioncullingenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取当前CPU画质等级|
-| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
-| 获取默认CPU画质等级|
-| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
-| 获取默认GPU画质等级|
-| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
-| 获取当前GPU画质等级|
-| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
-| 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
-| 设置当前GPU画质等级|
-| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
-| 设置CPU和GPU的画质等级|
+| 获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)|
+
+### Methods <Score text="Methods" /> 
+| **[getAutoScreenPercentage](mw.GraphicsSettings.md#getautoscreenpercentage)**(): `boolean` <Badge type="tip" text="client" />  |
+| :-----|
+| 获取自动分辨率开关状态|
+| **[getFSRLevel](mw.GraphicsSettings.md#getfsrlevel)**(): `number` <Badge type="tip" text="client" />  |
+| 获取FSR画质等级|
+| **[getSharpness](mw.GraphicsSettings.md#getsharpness)**(): `number` <Badge type="tip" text="client" />  |
+| 获取锐化程度|
+| **[setAutoScreenPercentage](mw.GraphicsSettings.md#setautoscreenpercentage)**(`bEnable`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| 设置是否开启自动分辨率|
+| **[setFSRLevel](mw.GraphicsSettings.md#setfsrlevel)**(`FSRLevel`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置TSR等级|
+| **[setSharpness](mw.GraphicsSettings.md#setsharpness)**(`Sharpness`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置锐化程度|
+
+## Accessors
+
+### occlusionCullingEnabled <Score text="occlusionCullingEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **occlusionCullingEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **occlusionCullingEnabled**(`Enabled`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+
+#### Returns
+
+| `boolean` | 当前是否开启遮挡剔除。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+
+#### Parameters
+
+| `Enabled` `boolean` | 是否开启遮挡剔除 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+
 
 ## Methods
 
-### getCPULevel <Score text="getCPULevel" /> 
+### getAutoScreenPercentage <Score text="getAutoScreenPercentage" /> 
 
-• `Static` **getCPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+• `Static` **getAutoScreenPercentage**(): `boolean` <Badge type="tip" text="client" />
 
-获取当前CPU画质等级
+获取自动分辨率开关状态
 
 #### Returns
 
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| `boolean` | 获取自动分辨率开关状态。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
 ___
 
-### getDefaultCPULevel <Score text="getDefaultCPULevel" /> 
+### getFSRLevel <Score text="getFSRLevel" /> 
 
-• `Static` **getDefaultCPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+• `Static` **getFSRLevel**(): `number` <Badge type="tip" text="client" />
 
-获取默认CPU画质等级
+获取FSR画质等级
 
 #### Returns
 
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| `number` | 获取FSR画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
 ___
 
-### getDefaultGPULevel <Score text="getDefaultGPULevel" /> 
+### getSharpness <Score text="getSharpness" /> 
 
-• `Static` **getDefaultGPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+• `Static` **getSharpness**(): `number` <Badge type="tip" text="client" />
 
-获取默认GPU画质等级
+获取锐化程度
 
 #### Returns
 
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| `number` | 获取锐化程度。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
 ___
 
-### getGPULevel <Score text="getGPULevel" /> 
+### setAutoScreenPercentage <Score text="setAutoScreenPercentage" /> 
 
-• `Static` **getGPULevel**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+• `Static` **setAutoScreenPercentage**(`bEnable`): `void` <Badge type="tip" text="client" />
 
-获取当前GPU画质等级
-
-#### Returns
-
-| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
-| :------ | :------ |
-
-___
-
-### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
-
-• `Static` **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="client" />
-
-设置当前CPU画质等级
+设置是否开启自动分辨率
 
 #### Parameters
 
-| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
+| `bEnable` `boolean` | 开关 |
 | :------ | :------ |
 
 
 ___
 
-### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
+### setFSRLevel <Score text="setFSRLevel" /> 
 
-• `Static` **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="client" />
+• `Static` **setFSRLevel**(`FSRLevel`): `void` <Badge type="tip" text="client" />
 
-设置当前GPU画质等级
+设置TSR等级
 
 #### Parameters
 
-| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
+| `FSRLevel` `number` | FSR等级 |
 | :------ | :------ |
 
 
 ___
 
-### setGraphicsLevel <Score text="setGraphicsLevel" /> 
+### setSharpness <Score text="setSharpness" /> 
 
-• `Static` **setGraphicsLevel**(`CPULevel`, `GPULevel`): `void` <Badge type="tip" text="client" />
+• `Static` **setSharpness**(`Sharpness`): `void` <Badge type="tip" text="client" />
 
-设置CPU和GPU的画质等级
+设置锐化程度
 
 #### Parameters
 
-| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
+| `Sharpness` `number` | 锐化程度 0-1 |
 | :------ | :------ |
-| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
 
-
-::: warning Precautions
-
-移动端设置的值不可超过Type.GraphicsLevel.Cinematic2,设置的值超过会被强制转为Type.GraphicsLevel.Cinematic2

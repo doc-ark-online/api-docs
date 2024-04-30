@@ -27,12 +27,12 @@
 
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔 range:不做限制 type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
 | `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) | - |
+| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) |  自动布局类型 |
 | `InAutoLayout` `boolean` | 是否自动布局 |
 | `InAutoWrap` `boolean` | 是否网格模式 |
 
@@ -42,12 +42,12 @@
 
 #### Parameters
 
-| `InLayoutSpace` `number` | 排列间隔 |
+| `InLayoutSpace` `number` | 排列间隔 range:不做限制 type: 浮点数 |
 | :------ | :------ |
 | `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
 | `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
 | `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) | - |
+| `InHugType` [`UIHugContent`](Core.mw.UIHugContent.md) |  自动布局类型 |
 | `InAutoLayout` `boolean` | 是否自动布局 |
 | `InAutoWrap` `boolean` | 是否网格模式 |
 | `InChildCollation` [`UIChildCollation`](mw.UIChildCollation.md) | 子项排序规则 |

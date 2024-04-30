@@ -100,7 +100,7 @@ ___
 
 #### Parameters
 
-| `GUID` `string` |  需要设置的蒙太奇动画 GUID |
+| `GUID` `string` |  需要设置的蒙太奇动画 GUID range: 依据资源 ID 长度而定 |
 | :------ | :------ |
 
 
@@ -152,7 +152,7 @@ ___
 
 #### Parameters
 
-| `time` `number` |  新换弹时间 <br> default: 0.1 <br> range: [0.01, 10] |
+| `time` `number` |  新换弹时间 <br> default: 0.1 <br> range: [0.01, 10] type:浮点数 |
 | :------ | :------ |
 
 
