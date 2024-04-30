@@ -1,156 +1,4 @@
 {
-  "拓展": {
-    "file": {
-      "file_name": "拓展.拓展.md",
-      "file_path": "groups/拓展.拓展.md",
-      "name": "拓展"
-    },
-    "children": {
-      "背包": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "IItemDeleteSkin": {
-            "file": {
-              "file_name": "mwext.IItemDeleteSkin.md",
-              "file_path": "interfaces/mwext.IItemDeleteSkin.md",
-              "name": "IItemDeleteSkin"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "IBagItemSkin": {
-            "file": {
-              "file_name": "mwext.IBagItemSkin.md",
-              "file_path": "interfaces/mwext.IBagItemSkin.md",
-              "name": "IBagItemSkin"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ItemConfig": {
-            "file": {
-              "file_name": "mwext.ItemConfig.md",
-              "file_path": "interfaces/mwext.ItemConfig.md",
-              "name": "ItemConfig"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "IBagStruct": {
-            "file": {
-              "file_name": "mwext.IBagStruct.md",
-              "file_path": "interfaces/mwext.IBagStruct.md",
-              "name": "IBagStruct"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ItemDeleteUI": {
-            "file": {
-              "file_name": "mwext.ItemDeleteUI.md",
-              "file_path": "classes/mwext.ItemDeleteUI.md",
-              "name": "ItemDeleteUI"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "BagUI": {
-            "file": {
-              "file_name": "mwext.BagUI.md",
-              "file_path": "classes/mwext.BagUI.md",
-              "name": "BagUI"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "BagItemUI": {
-            "file": {
-              "file_name": "mwext.BagItemUI.md",
-              "file_path": "classes/mwext.BagItemUI.md",
-              "name": "BagItemUI"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "IBagSkin": {
-            "file": {
-              "file_name": "mwext.IBagSkin.md",
-              "file_path": "classes/mwext.IBagSkin.md",
-              "name": "IBagSkin"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "BagModule": {
-            "file": {
-              "file_name": "mwext.BagModule.md",
-              "file_path": "classes/mwext.BagModule.md",
-              "name": "BagModule"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      }
-    },
-    "no_children_files": null
-  },
-  "数据处理": {
-    "file": {
-      "file_name": "数据处理.数据处理.md",
-      "file_path": "groups/数据处理.数据处理.md",
-      "name": "数据处理"
-    },
-    "children": null,
-    "no_children_files": {
-      "TeleportOptions": {
-        "file": {
-          "file_name": "mw.TeleportOptions.md",
-          "file_path": "interfaces/mw.TeleportOptions.md",
-          "name": "TeleportOptions"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "DataStorageResult": {
-        "file": {
-          "file_name": "mw.DataStorageResult.md",
-          "file_path": "interfaces/mw.DataStorageResult.md",
-          "name": "DataStorageResult"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "RoomInfo": {
-        "file": {
-          "file_name": "mw.RoomInfo.md",
-          "file_path": "interfaces/mw.RoomInfo.md",
-          "name": "RoomInfo"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "TeleportResult": {
-        "file": {
-          "file_name": "mw.TeleportResult.md",
-          "file_path": "interfaces/mw.TeleportResult.md",
-          "name": "TeleportResult"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "DataStorage": {
-        "file": {
-          "file_name": "mw.DataStorage.md",
-          "file_path": "classes/mw.DataStorage.md",
-          "name": "DataStorage"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "基础类型": {
     "file": {
       "file_name": "基础类型.基础类型.md",
@@ -380,6 +228,61 @@
       }
     },
     "no_children_files": null
+  },
+  "数据处理": {
+    "file": {
+      "file_name": "数据处理.数据处理.md",
+      "file_path": "groups/数据处理.数据处理.md",
+      "name": "数据处理"
+    },
+    "children": null,
+    "no_children_files": {
+      "TeleportOptions": {
+        "file": {
+          "file_name": "mw.TeleportOptions.md",
+          "file_path": "interfaces/mw.TeleportOptions.md",
+          "name": "TeleportOptions"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "DataStorageResult": {
+        "file": {
+          "file_name": "mw.DataStorageResult.md",
+          "file_path": "interfaces/mw.DataStorageResult.md",
+          "name": "DataStorageResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "RoomInfo": {
+        "file": {
+          "file_name": "mw.RoomInfo.md",
+          "file_path": "interfaces/mw.RoomInfo.md",
+          "name": "RoomInfo"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "TeleportResult": {
+        "file": {
+          "file_name": "mw.TeleportResult.md",
+          "file_path": "interfaces/mw.TeleportResult.md",
+          "name": "TeleportResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "DataStorage": {
+        "file": {
+          "file_name": "mw.DataStorage.md",
+          "file_path": "classes/mw.DataStorage.md",
+          "name": "DataStorage"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
   },
   "界面": {
     "file": {
@@ -1430,63 +1333,6 @@
     },
     "no_children_files": null
   },
-  "GUI": {
-    "file": {
-      "file_name": "GUI.GUI.md",
-      "file_path": "groups/GUI.GUI.md",
-      "name": "GUI"
-    },
-    "children": null,
-    "no_children_files": {
-      "Checkbox": {
-        "file": {
-          "file_name": "mw.Checkbox.md",
-          "file_path": "classes/mw.Checkbox.md",
-          "name": "Checkbox"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "GAMEPLAY": {
-    "file": {
-      "file_name": "GAMEPLAY.GAMEPLAY.md",
-      "file_path": "groups/GAMEPLAY.GAMEPLAY.md",
-      "name": "GAMEPLAY"
-    },
-    "children": null,
-    "no_children_files": {
-      "ModelUtil": {
-        "file": {
-          "file_name": "mw.ModelUtil.md",
-          "file_path": "classes/mw.ModelUtil.md",
-          "name": "ModelUtil"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "PHYSICS": {
-    "file": {
-      "file_name": "PHYSICS.PHYSICS.md",
-      "file_path": "groups/PHYSICS.PHYSICS.md",
-      "name": "PHYSICS"
-    },
-    "children": null,
-    "no_children_files": {
-      "ForceVolume": {
-        "file": {
-          "file_name": "mw.ForceVolume.md",
-          "file_path": "classes/mw.ForceVolume.md",
-          "name": "ForceVolume"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "角色系统": {
     "file": {
       "file_name": "角色系统.角色系统.md",
@@ -1687,53 +1533,6 @@
           "file_name": "mw.GestureDelegate.md",
           "file_path": "classes/mw.GestureDelegate.md",
           "name": "GestureDelegate"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UI": {
-    "file": {
-      "file_name": "UI.UI.md",
-      "file_path": "groups/UI.UI.md",
-      "name": "UI"
-    },
-    "children": null,
-    "no_children_files": {
-      "JoystickBindKeyType": {
-        "file": {
-          "file_name": "mw.JoystickBindKeyType.md",
-          "file_path": "classes/mw.JoystickBindKeyType.md",
-          "name": "JoystickBindKeyType"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "UTILITY": {
-    "file": {
-      "file_name": "UTILITY.UTILITY.md",
-      "file_path": "groups/UTILITY.UTILITY.md",
-      "name": "UTILITY"
-    },
-    "children": null,
-    "no_children_files": {
-      "PhysicsService": {
-        "file": {
-          "file_name": "mw.PhysicsService.md",
-          "file_path": "classes/mw.PhysicsService.md",
-          "name": "PhysicsService"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "DebugUtil": {
-        "file": {
-          "file_name": "mw.DebugUtil.md",
-          "file_path": "classes/mw.DebugUtil.md",
-          "name": "DebugUtil"
         },
         "no_children_files": null,
         "children": null
@@ -2077,116 +1876,6 @@
       }
     }
   },
-  "SOCIAL": {
-    "file": {
-      "file_name": "SOCIAL.SOCIAL.md",
-      "file_path": "groups/SOCIAL.SOCIAL.md",
-      "name": "SOCIAL"
-    },
-    "children": null,
-    "no_children_files": {
-      "ChatBubble": {
-        "file": {
-          "file_name": "mw.ChatBubble.md",
-          "file_path": "classes/mw.ChatBubble.md",
-          "name": "ChatBubble"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "EXTENSION": {
-    "file": {
-      "file_name": "EXTENSION.EXTENSION.md",
-      "file_path": "groups/EXTENSION.EXTENSION.md",
-      "name": "EXTENSION"
-    },
-    "children": null,
-    "no_children_files": {
-      "IItemDeleteSkin": {
-        "file": {
-          "file_name": "mwext.IItemDeleteSkin.md",
-          "file_path": "interfaces/mwext.IItemDeleteSkin.md",
-          "name": "IItemDeleteSkin"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "IBagItemSkin": {
-        "file": {
-          "file_name": "mwext.IBagItemSkin.md",
-          "file_path": "interfaces/mwext.IBagItemSkin.md",
-          "name": "IBagItemSkin"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "ItemConfig": {
-        "file": {
-          "file_name": "mwext.ItemConfig.md",
-          "file_path": "interfaces/mwext.ItemConfig.md",
-          "name": "ItemConfig"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "IBagStruct": {
-        "file": {
-          "file_name": "mwext.IBagStruct.md",
-          "file_path": "interfaces/mwext.IBagStruct.md",
-          "name": "IBagStruct"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "ItemDeleteUI": {
-        "file": {
-          "file_name": "mwext.ItemDeleteUI.md",
-          "file_path": "classes/mwext.ItemDeleteUI.md",
-          "name": "ItemDeleteUI"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "BagUI": {
-        "file": {
-          "file_name": "mwext.BagUI.md",
-          "file_path": "classes/mwext.BagUI.md",
-          "name": "BagUI"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "BagItemUI": {
-        "file": {
-          "file_name": "mwext.BagItemUI.md",
-          "file_path": "classes/mwext.BagItemUI.md",
-          "name": "BagItemUI"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "IBagSkin": {
-        "file": {
-          "file_name": "mwext.IBagSkin.md",
-          "file_path": "classes/mwext.IBagSkin.md",
-          "name": "IBagSkin"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "BagModule": {
-        "file": {
-          "file_name": "mwext.BagModule.md",
-          "file_path": "classes/mwext.BagModule.md",
-          "name": "BagModule"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "服务": {
     "file": {
       "file_name": "服务.服务.md",
@@ -2425,5 +2114,102 @@
         }
       }
     }
+  },
+  "拓展": {
+    "file": {
+      "file_name": "拓展.拓展.md",
+      "file_path": "groups/拓展.拓展.md",
+      "name": "拓展"
+    },
+    "children": {
+      "背包": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "IItemDeleteSkin": {
+            "file": {
+              "file_name": "mwext.IItemDeleteSkin.md",
+              "file_path": "interfaces/mwext.IItemDeleteSkin.md",
+              "name": "IItemDeleteSkin"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "IBagItemSkin": {
+            "file": {
+              "file_name": "mwext.IBagItemSkin.md",
+              "file_path": "interfaces/mwext.IBagItemSkin.md",
+              "name": "IBagItemSkin"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ItemConfig": {
+            "file": {
+              "file_name": "mwext.ItemConfig.md",
+              "file_path": "interfaces/mwext.ItemConfig.md",
+              "name": "ItemConfig"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "IBagStruct": {
+            "file": {
+              "file_name": "mwext.IBagStruct.md",
+              "file_path": "interfaces/mwext.IBagStruct.md",
+              "name": "IBagStruct"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ItemDeleteUI": {
+            "file": {
+              "file_name": "mwext.ItemDeleteUI.md",
+              "file_path": "classes/mwext.ItemDeleteUI.md",
+              "name": "ItemDeleteUI"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "BagUI": {
+            "file": {
+              "file_name": "mwext.BagUI.md",
+              "file_path": "classes/mwext.BagUI.md",
+              "name": "BagUI"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "BagItemUI": {
+            "file": {
+              "file_name": "mwext.BagItemUI.md",
+              "file_path": "classes/mwext.BagItemUI.md",
+              "name": "BagItemUI"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "IBagSkin": {
+            "file": {
+              "file_name": "mwext.IBagSkin.md",
+              "file_path": "classes/mwext.IBagSkin.md",
+              "name": "IBagSkin"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "BagModule": {
+            "file": {
+              "file_name": "mwext.BagModule.md",
+              "file_path": "classes/mwext.BagModule.md",
+              "name": "BagModule"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      }
+    },
+    "no_children_files": null
   }
 }
