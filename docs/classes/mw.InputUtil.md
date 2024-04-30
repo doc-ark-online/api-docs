@@ -64,6 +64,12 @@ export default class InputExample extends Script {
 | 键盘输入事件-按压|
 | **[onKeyUp](mw.InputUtil.md#onkeyup)**(`Key`: [`Keys`](../enums/mw.Keys.md), `listener`: () => `void`): [`EventListener`](mw.EventListener.md)   |
 | 键盘输入事件-抬起|
+| **[onRawTouchBegin](mw.InputUtil.md#onrawtouchbegin)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指按下代理,不被UI等影响的输入事件|
+| **[onRawTouchEnd](mw.InputUtil.md#onrawtouchend)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指抬起代理,不被UI等影响的输入事件|
+| **[onRawTouchMove](mw.InputUtil.md#onrawtouchmove)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指滑动代理,不被UI等影响的输入事件|
 | **[onTouch](mw.InputUtil.md#ontouch)**(`listener`: (`index`: `number`, `location`: [`Vector2`](mw.Vector2.md), `touchType`: [`TouchInputType`](../enums/mw.TouchInputType.md)) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="client" />  |
 | 触摸事件|
 | **[onTouchBegin](mw.InputUtil.md#ontouchbegin)**(`listener`: (`index`: `number`, `location`: [`Vector2`](mw.Vector2.md), `touchType`: [`TouchInputType`](../enums/mw.TouchInputType.md)) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="client" />  |
@@ -731,6 +737,45 @@ export default class InputExample extends Script {
 
 }
 ```ts
+
+___
+
+### onRawTouchBegin <Score text="onRawTouchBegin" /> 
+
+• `Static` **onRawTouchBegin**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取手指按下代理,不被UI等影响的输入事件
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> | 返回手指按下时的代理 |
+| :------ | :------ |
+
+___
+
+### onRawTouchEnd <Score text="onRawTouchEnd" /> 
+
+• `Static` **onRawTouchEnd**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />
+
+获取手指抬起代理,不被UI等影响的输入事件
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> | 返回抬起手指时候的代理 |
+| :------ | :------ |
+
+___
+
+### onRawTouchMove <Score text="onRawTouchMove" /> 
+
+• `Static` **onRawTouchMove**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取手指滑动代理,不被UI等影响的输入事件
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](mw.Vector2.md)) => `void`\> | 返回手指滑动的代理 |
+| :------ | :------ |
 
 ___
 

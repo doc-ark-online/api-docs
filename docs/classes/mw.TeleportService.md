@@ -44,7 +44,7 @@
 
 #### Parameters
 
-| `userId` `string` | 目标玩家的 userId range: 依据 roomid 的长度而定 |
+| `userId` `string` | 目标玩家的 userId range: 依据 userId 的长度而定 |
 | :------ | :------ |
 
 #### Returns
@@ -366,7 +366,7 @@ ___
 
 #### Parameters
 
-| `teleportId` `string` | 要查询的传送Id default: range:依据 teleportId 长度而定的 |
+| `teleportId` `string` | 要查询的传送 Id default: range:依据 teleportId 长度而定的 |
 | :------ | :------ |
 
 #### Returns

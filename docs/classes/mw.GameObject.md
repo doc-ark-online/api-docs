@@ -97,8 +97,10 @@ export default class GameObjectExample extends Script {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
+| **[onBeforeDestroyDelegate](mw.GameObject.md#onbeforedestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
+| 物体销毁前事件回调|
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
 
 ### Accessors <Score text="Accessors" /> 
@@ -107,6 +109,8 @@ export default class GameObjectExample extends Script {
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isDestroyed](mw.GameObject.md#isdestroyed)**(): `boolean`   |
+| 当前物体是否被销毁|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
@@ -134,7 +138,7 @@ export default class GameObjectExample extends Script {
 | 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| **[getBoundingBox](mw.GameObject.md#getboundingbox)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
@@ -158,16 +162,36 @@ export default class GameObjectExample extends Script {
 | 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的速度矢量随时间平滑地移动对象|
+| **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前位置平滑移动至目标位置|
+| **[rotateBy](mw.GameObject.md#rotateby)**(`rotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `multiplier`: `number`, `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的旋转量随时间平滑地旋转对象|
+| **[rotateTo](mw.GameObject.md#rotateto)**(`targetRotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前旋转平滑变化至目标旋转|
+| **[scaleBy](mw.GameObject.md#scaleby)**(`scale`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按每秒给定的缩放矢量随时间平滑缩放对象|
+| **[scaleTo](mw.GameObject.md#scaleto)**(`targetScale`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
+| **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
+| 中断moveTo()、moveBy()的进一步移动|
+| **[stopRotate](mw.GameObject.md#stoprotate)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从rotateTo()或rotateBy()的进一步旋转|
+| **[stopScale](mw.GameObject.md#stopscale)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从ScaleTo()或ScaleBy()的进一步缩放|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
 | 异步构造一个物体|
+| **[bulkPivotTo](mw.GameObject.md#bulkpivotto)**(`gameObjects`: [`GameObject`](mw.GameObject.md)[], `transforms`: [`Transform`](mw.Transform.md)[]): `void`   |
+| 批量设置位置|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -182,6 +206,14 @@ export default class GameObjectExample extends Script {
 | 构造一个物体|
 
 ## Properties
+
+### onBeforeDestroyDelegate <Score text="onBeforeDestroyDelegate" /> 
+
+• **onBeforeDestroyDelegate**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> 
+
+物体销毁前事件回调
+
+___
 
 ### onDestroyDelegate <Score text="onDestroyDelegate" /> 
 
@@ -237,6 +269,33 @@ ___
 #### Returns
 
 | `string` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### isDestroyed <Score text="isDestroyed" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **isDestroyed**(): `boolean` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+当前物体是否被销毁
+
+#### Returns
+
+| `boolean` |  |
 | :------ | :------ |
 
 </td>
@@ -541,9 +600,9 @@ ___
 
 #### Parameters
 
-| `constructor` (...`args`: `unknown`[]) => `T` |  ScriptComponentClass 添加脚本的类型 <br> default:null |
+| `constructor` (...`args`: `unknown`[]) => `T` |  ScriptComponentClass 添加脚本的类型 <br> default: null |
 | :------ | :------ |
-| `bInReplicates?` `boolean` |  是否开启同步 <br> default: false |
+| `bInReplicates?` `boolean` |  是否开启同步 <br> default: 在服务端调用，默认会同步；在客户端调用，默认不同步。 |
 
 #### Returns
 
@@ -619,9 +678,9 @@ ___
 
 ___
 
-### getBoundingBoxExtent <Score text="getBoundingBoxExtent" /> 
+### getBoundingBox <Score text="getBoundingBox" /> 
 
-• **getBoundingBoxExtent**(`nonColliding?`, `includeFromChild?`, `outer?`): [`Vector`](mw.Vector.md) 
+• **getBoundingBox**(`nonColliding?`, `includeFromChild?`, `outer?`): [`Vector`](mw.Vector.md) 
 
 获取物体包围盒大小
 
@@ -869,6 +928,181 @@ ___
 
 ___
 
+### moveBy <Score text="moveBy" /> 
+
+• **moveBy**(`velocity`, `isLocal?`): `void` <Badge type="tip" text="other" />
+
+按给定的速度矢量随时间平滑地移动对象
+
+#### Parameters
+
+| `velocity` [`Vector`](mw.Vector.md) | 速度 |
+| :------ | :------ |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.moveBy(new Vector(10, 10, 0), true);
+```
+
+___
+
+### moveTo <Score text="moveTo" /> 
+
+• **moveTo**(`targetPosition`, `time`, `isLocal?`, `onComplete?`): `void` <Badge type="tip" text="other" />
+
+在指定时间内从当前位置平滑移动至目标位置
+
+#### Parameters
+
+| `targetPosition` [`Vector`](mw.Vector.md) | 目标位置 |
+| :------ | :------ |
+| `time` `number` | 缓动时间 range: > 0 type: number |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+| `onComplete?` () => `void` | 完成回调方法 default:undefined |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.moveTo(new Vector(1000, 0, 0), 10, true, () => {
+   console.log("moveTo complete");
+});
+```
+
+___
+
+### rotateBy <Score text="rotateBy" /> 
+
+• **rotateBy**(`rotation`, `multiplier`, `isLocal?`): `void` <Badge type="tip" text="other" />
+
+按给定的旋转量随时间平滑地旋转对象
+
+#### Parameters
+
+| `rotation` [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md) | 旋转速度 |
+| :------ | :------ |
+| `multiplier` `number` | 旋转乘数 range: > 0 type: number |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.rotateBy(new Rotation(1, 0, 1), 5, true);
+```
+
+___
+
+### rotateTo <Score text="rotateTo" /> 
+
+• **rotateTo**(`targetRotation`, `time`, `isLocal?`, `onComplete?`): `void` <Badge type="tip" text="other" />
+
+在指定时间内从当前旋转平滑变化至目标旋转
+
+#### Parameters
+
+| `targetRotation` [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md) | 目标朝向 |
+| :------ | :------ |
+| `time` `number` | 缓动时间 range: > 0 type: number |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+| `onComplete?` () => `void` | 完成回调方法 default:undefined |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.rotateTo(new Rotation(45, 0, 0), 10, true, () => {
+   console.log("rotateTo complete");
+});
+```
+
+___
+
+### scaleBy <Score text="scaleBy" /> 
+
+• **scaleBy**(`scale`, `isLocal?`): `void` <Badge type="tip" text="other" />
+
+按每秒给定的缩放矢量随时间平滑缩放对象
+
+#### Parameters
+
+| `scale` [`Vector`](mw.Vector.md) | 缩放速度 |
+| :------ | :------ |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.scaleBy(new Vector(1, 1, 0), true);
+```
+
+___
+
+### scaleTo <Score text="scaleTo" /> 
+
+• **scaleTo**(`targetScale`, `time`, `isLocal?`, `onComplete?`): `void` <Badge type="tip" text="other" />
+
+在指定时间内从当前缩放平滑变化至目标缩放
+
+#### Parameters
+
+| `targetScale` [`Vector`](mw.Vector.md) | 目标缩放 |
+| :------ | :------ |
+| `time` `number` | 缓动时间 range: > 0 type: number |
+| `isLocal?` `boolean` | 是否本地空间生效 default:true |
+| `onComplete?` () => `void` | 完成回调方法 default:undefined |
+
+
+<span style="font-size: 14px;">
+使用示例: 调用方式
+</span>
+
+```ts
+let cube = GameObject.spawn<Model>("197386", {
+   replicates: true,
+   transform: new Transform()
+});
+cube.scaleTo(new Vector(2, 2, 0), 10, true, () => {
+   console.log("scaleTo complete");
+});
+```
+
+___
+
 ### setAbsolute <Score text="setAbsolute" /> 
 
 • **setAbsolute**(`absolutePosition?`, `absoluteRotation?`, `absoluteScale?`): `void` 
@@ -898,6 +1132,33 @@ ___
 | `status` `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
 | :------ | :------ |
 | `propagateToChildren?` `boolean` |  是否设置子物体 <br> default:false |
+
+
+___
+
+### stopMove <Score text="stopMove" /> 
+
+• **stopMove**(): `void` <Badge type="tip" text="other" />
+
+中断moveTo()、moveBy()的进一步移动
+
+
+___
+
+### stopRotate <Score text="stopRotate" /> 
+
+• **stopRotate**(): `void` <Badge type="tip" text="other" />
+
+中断从rotateTo()或rotateBy()的进一步旋转
+
+
+___
+
+### stopScale <Score text="stopScale" /> 
+
+• **stopScale**(): `void` <Badge type="tip" text="other" />
+
+中断从ScaleTo()或ScaleBy()的进一步缩放
 
 
 ___
@@ -974,6 +1235,21 @@ let obj = await GameObject.asyncSpawn<Model>("197386", {
 
 | `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
 | :------ | :------ |
+
+___
+
+### bulkPivotTo <Score text="bulkPivotTo" /> 
+
+• `Static` **bulkPivotTo**(`gameObjects`, `transforms`): `void` 
+
+批量设置位置
+
+#### Parameters
+
+| `gameObjects` [`GameObject`](mw.GameObject.md)[] | 准备更新Transform的GameObject列表 |
+| :------ | :------ |
+| `transforms` [`Transform`](mw.Transform.md)[] | 位置提供目标值的Transform列表 |
+
 
 ___
 

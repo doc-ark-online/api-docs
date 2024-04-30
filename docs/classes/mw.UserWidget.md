@@ -20,6 +20,8 @@ UI控件的集合，预制体UI
 | 获取是否响应键盘焦点事件|
 | **[rootContent](mw.UserWidget.md#rootcontent)**(): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
 | 获取根Canvas|
+| **[safeAreaEnable](mw.UserWidget.md#safeareaenable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 是否适配安全区|
 
 
 ::: details click
@@ -202,6 +204,52 @@ ___
 #### Parameters
 
 | `content` [`Canvas`](mw.Canvas.md) | 根UI的内容 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### safeAreaEnable <Score text="safeAreaEnable" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **safeAreaEnable**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **safeAreaEnable**(`isEnable`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否适配安全区
+
+#### Returns
+
+| `boolean` | 是否适配 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+是否适配安全区
+
+#### Parameters
+
+| `isEnable` `boolean` | 是否适配 |
 | :------ | :------ |
 
 </td>

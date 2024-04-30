@@ -113,8 +113,10 @@
 | 获取角色的最大行走速度|
 | **[maxWalkSpeedCrouched](mw.Character.md#maxwalkspeedcrouched)**(): `number`   |
 | 获取角色最大蹲伏行走速度|
-| **[meshOffset](mw.Character.md#meshoffset)**(): [`Vector`](mw.Vector.md)   |
+| **[meshPositionOffset](mw.Character.md#meshpositionoffset)**(): [`Vector`](mw.Vector.md)   |
 | 获取mesh相对角色坐标点的偏移|
+| **[meshRotationOffset](mw.Character.md#meshrotationoffset)**(): [`Rotation`](mw.Rotation.md)   |
+| 获取mesh相对角色旋转的偏移|
 | **[moveFacingDirection](mw.Character.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md)   |
 | 获取角色运动面朝方向|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md)   |
@@ -125,6 +127,8 @@
 | 获取角色头顶名字的界面|
 | **[physicsEnabled](mw.Character.md#physicsenabled)**(): `boolean`  |
 | 获取角色物理模拟状态|
+| **[ragdollEnabled](mw.Character.md#ragdollenabled)**(): `boolean`  |
+| 启用布娃娃|
 | **[rotateRate](mw.Character.md#rotaterate)**(): `number`   |
 | 获取角色最大转向速度|
 | **[velocity](mw.Character.md#velocity)**(): [`Vector`](mw.Vector.md)   |
@@ -165,16 +169,24 @@
 | 将角色插槽附着的对象全部分离|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 将物体从插槽中分离|
+| **[getCenterVertexByMorphName](mw.Character.md#getcentervertexbymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)   |
+| 通过头部模型MorphName实时获取中心顶点位置|
 | **[getCurrentState](mw.Character.md#getcurrentstate)**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md)   |
 | 获取当前角色的状态|
 | **[getDescription](mw.Character.md#getdescription)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
 | 获取角色外观数据|
+| **[getFeatureValueRange](mw.Character.md#getfeaturevaluerange)**(`featureType`: [`CharacterFeatureType`](../enums/mw.CharacterFeatureType.md)): ``null``  [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取该角色外观功能属性的取值区间|
 | **[getSlotWorldPosition](mw.Character.md#getslotworldposition)**(`slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): [`Vector`](mw.Vector.md)   |
 | 获取角色插槽的世界坐标|
+| **[getVertexArrayByMorphName](mw.Character.md#getvertexarraybymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)[]   |
+| 通过头部模型MorphName实时获取所有顶点位置|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md)   |
 | 通过头部模型顶点 index 实时获取顶点位置|
 | **[headFollow](mw.Character.md#headfollow)**(`target`: ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
 | 头部追踪|
+| **[jump](mw.Character.md#jump)**(): `void`   |
+| 使角色触发一个跳跃行为|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
 | 为角色加载一个动画资源|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
@@ -206,6 +218,8 @@
 
 
 ## Properties
+
+___
 
 ### onDescriptionChange <Score text="onDescriptionChange" /> 
 
@@ -383,6 +397,7 @@ ___
 • **onStateChanged**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`prevState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `currentState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)) => `void`\>
 
 角色状态改变回调
+
 <span style="font-size: 14px;">
 使用示例:按0-9，Z、X、C、V后查看打印
 </span>
@@ -3753,18 +3768,18 @@ export default class Example_MaxWalkSpeedCrouched extends Script {
 ```
 ___
 
-### meshOffset <Score text="meshOffset" /> 
+### meshPositionOffset <Score text="meshPositionOffset" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **meshOffset**(): [`Vector`](mw.Vector.md) 
+• `get` **meshPositionOffset**(): [`Vector`](mw.Vector.md) 
 
 </th>
 <th style="text-align: left">
 
-• `set` **meshOffset**(`offset`): `void` 
+• `set` **meshPositionOffset**(`offset`): `void` 
 
 </th>
 </tr></thead>
@@ -3789,6 +3804,52 @@ ___
 #### Parameters
 
 | `offset` | [`Vector`](mw.Vector.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### meshRotationOffset <Score text="meshRotationOffset" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **meshRotationOffset**(): [`Rotation`](mw.Rotation.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **meshRotationOffset**(`offset`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取mesh相对角色旋转的偏移
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | mesh相对角色坐标点的偏移 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置mesh相对角色旋转的偏移
+
+#### Parameters
+
+| `offset` | [`Rotation`](mw.Rotation.md) |
 | :------ | :------ |
 
 
@@ -4219,6 +4280,106 @@ ___
 </tr></tbody>
 </table>
 
+___
+
+### ragdollEnabled <Score text="ragdollEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **ragdollEnabled**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **ragdollEnabled**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+启用布娃娃
+
+::: warning Precautions
+
+角色当前是否使用布娃娃状态。true表示使用，false表示禁用。
+
+:::
+
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+角色的布娃娃效果，与其他物体进行交互时，使角色在发生某些条件时可以像布娃娃一样松弛和摆动，而不是保持刚体的僵硬状态。
+
+::: warning Precautions
+
+角色当前是否使用布娃娃状态。true表示使用，false表示禁用。
+
+:::
+
+#### Parameters
+
+| `value` `boolean` |  true为启用布娃娃效果，false为禁用。 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"27693"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏你将在场景中生成一个循环黑洞特效。如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色。如果角色与黑洞中心距离小于50，则开启布娃娃。你可以看到角色开关布娃娃时的不同效果。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            this.useUpdate = true;
+            // 生成一个黑洞特效循环播放
+            EffectService.playAtPosition("27693", new Vector(500, 0, 50), {loopCount: 0});
+        }
+    }
+    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
+    protected onUpdate(dt: number): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家控制的角色
+            let myCharacter = myPlayer.character;
+            // 如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色
+            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 300 && !myCharacter.ragdollEnabled) {
+                let dir = new Vector(500, 0, 50).subtract(myCharacter.worldTransform.position).normalize();
+                myCharacter.addMovement(new Vector(dir.x, dir.y, 0));
+            }
+            // 如果角色与黑洞中心距离小于50，则开启布娃娃
+            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 50) {
+                myCharacter.ragdollEnabled = true;
+                setTimeout(() => {
+                    myCharacter.worldTransform.position = new Vector(0, 0, 130);
+                    myCharacter.ragdollEnabled = false;
+                }, 2000);
+            }
+        }
+    }
+}
+```
 ___
 
 ### rotateRate <Score text="rotateRate" /> 
@@ -4829,9 +4990,76 @@ ___
 
 #### Parameters
 
-| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 使用示例: 按0-9，Z、X、C、V后查看当前角色状态 ``` @Component export default class NewScript1 extends Script `{ private character: Character; // 当脚本被实例后，会在第一帧更新前调用此函数 protected onStart(): void { Player.asyncGetLocalPlayer().then((player) => { this.character = player.character; this.character.onStateChanged.add((pre, curr)=>{ console.log(`pre: ${pre}` curr: $`{curr}``); }) }); InputUtil.onKeyDown(Keys.Zero, ()=>`{ this.character.changeState(CharacterStateType.None); }`) InputUtil.onKeyDown(Keys.One, ()=>`{ this.character.changeState(CharacterStateType.Running); }`) InputUtil.onKeyDown(Keys.Two, ()=>`{ this.character.changeState(CharacterStateType.Flying); }`) InputUtil.onKeyDown(Keys.Three, ()=>`{ this.character.changeState(CharacterStateType.Swimming); }`) InputUtil.onKeyDown(Keys.Four, ()=>`{ this.character.changeState(CharacterStateType.Jumping); }`) InputUtil.onKeyDown(Keys.Five, ()=>`{ this.character.changeState(CharacterStateType.Freefall); }`) InputUtil.onKeyDown(Keys.Six, ()=>`{ this.character.changeState(CharacterStateType.Ragdoll); }`) InputUtil.onKeyDown(Keys.Seven, ()=>`{ this.character.changeState(CharacterStateType.GettingUp); }`) InputUtil.onKeyDown(Keys.Eight, ()=>`{ this.character.changeState(CharacterStateType.Climbing); }`) InputUtil.onKeyDown(Keys.Nine, ()=>`{ this.character.changeState(CharacterStateType.Crouching); }`) InputUtil.onKeyDown(Keys.Z, ()=>`{ this.character.changeState(CharacterStateType.Pushed); }`) InputUtil.onKeyDown(Keys.X, ()=>`{ this.character.changeState(CharacterStateType.Landed); }`) InputUtil.onKeyDown(Keys.C, ()=>`{ this.character.changeState(CharacterStateType.Hit); }`) InputUtil.onKeyDown(Keys.V, ()=>`{ this.character.changeState(CharacterStateType.Dead); }`) InputUtil.onKeyDown(Keys.E, ()=>`{ console.log("currentState=="+this.character.getCurrentState()); }`) } } ``` |
+| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 |
 | :------ | :------ |
 
+
+<span style="font-size: 14px;">
+使用示例: 按0-9，Z、X、C、V后查看当前角色状态
+</span>
+
+```ts
+@Component
+export default class NewScript1 extends Script {
+    private character: Character;
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        Player.asyncGetLocalPlayer().then((player) => {
+            this.character = player.character;
+            this.character.onStateChanged.add((pre, curr)=>{
+                console.log(`pre: ${pre} curr: ${curr}`);
+
+            })
+        });
+
+      InputUtil.onKeyDown(Keys.Zero, ()=>{
+            this.character.changeState(CharacterStateType.None);
+        })
+        InputUtil.onKeyDown(Keys.One, ()=>{
+            this.character.changeState(CharacterStateType.Running);
+        })
+        InputUtil.onKeyDown(Keys.Two, ()=>{
+            this.character.changeState(CharacterStateType.Flying);
+        })
+        InputUtil.onKeyDown(Keys.Three, ()=>{
+            this.character.changeState(CharacterStateType.Swimming);
+        })
+        InputUtil.onKeyDown(Keys.Four, ()=>{
+            this.character.changeState(CharacterStateType.Jumping);
+        })
+        InputUtil.onKeyDown(Keys.Five, ()=>{
+            this.character.changeState(CharacterStateType.Freefall);
+        })
+        InputUtil.onKeyDown(Keys.Six, ()=>{
+            this.character.changeState(CharacterStateType.Ragdoll);
+        })
+        InputUtil.onKeyDown(Keys.Seven, ()=>{
+            this.character.changeState(CharacterStateType.GettingUp);
+        })
+        InputUtil.onKeyDown(Keys.Eight, ()=>{
+            this.character.changeState(CharacterStateType.Climbing);
+        })
+        InputUtil.onKeyDown(Keys.Nine, ()=>{
+            this.character.changeState(CharacterStateType.Crouching);
+        })
+        InputUtil.onKeyDown(Keys.Z, ()=>{
+            this.character.changeState(CharacterStateType.Pushed);
+        })
+        InputUtil.onKeyDown(Keys.X, ()=>{
+            this.character.changeState(CharacterStateType.Landed);
+        })
+        InputUtil.onKeyDown(Keys.C, ()=>{
+            this.character.changeState(CharacterStateType.Hit);
+        })
+        InputUtil.onKeyDown(Keys.V, ()=>{
+            this.character.changeState(CharacterStateType.Dead);
+        })
+        InputUtil.onKeyDown(Keys.E, ()=>{
+            console.log("currentState=="+this.character.getCurrentState());
+        })
+    }
+}
+```
 
 ___
 
@@ -5102,6 +5330,24 @@ export default class Example_Character_DetachFromSlot extends Script {
 
 ___
 
+### getCenterVertexByMorphName <Score text="getCenterVertexByMorphName" /> 
+
+• **getCenterVertexByMorphName**(`morphName`): [`Vector`](mw.Vector.md) 
+
+通过头部模型MorphName实时获取中心顶点位置
+
+#### Parameters
+
+| `morphName` `string` |  MorphName |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | ``` |
+| :------ | :------ |
+
+___
+
 ### getCurrentState <Score text="getCurrentState" /> 
 
 • **getCurrentState**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md) 
@@ -5271,6 +5517,24 @@ export default class Example_Character extends Script {
 
 ___
 
+### getFeatureValueRange <Score text="getFeatureValueRange" /> 
+
+• **getFeatureValueRange**(`featureType`): ``null``  [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+
+获取该角色外观功能属性的取值区间
+
+#### Parameters
+
+| `featureType` [`CharacterFeatureType`](../enums/mw.CharacterFeatureType.md) | 角色外观功能属性名称 |
+| :------ | :------ |
+
+#### Returns
+
+| ``null``  [`Vector2`](mw.Vector2.md) | 取值范围，x 对应最小值，y 对应最大值 |
+| :------ | :------ |
+
+___
+
 ### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
 • **getSlotWorldPosition**(`slotName`): [`Vector`](mw.Vector.md) 
@@ -5363,6 +5627,53 @@ export default class Example_Character_GetSlotWorldPosition extends Script {
 
 ___
 
+### getVertexArrayByMorphName <Score text="getVertexArrayByMorphName" /> 
+
+• **getVertexArrayByMorphName**(`morphName`): [`Vector`](mw.Vector.md)[] 
+
+通过头部模型MorphName实时获取所有顶点位置
+
+#### Parameters
+
+| `morphName` `string` |  MorphName range: morph名字 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md)[] | 顶点位置数组 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_GetVertexPosition"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character_GetVertexPosition extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    *    private character: Character;
+   private obj: Model;
+   protected onStart(): void {
+       this.useUpdate = true;
+       Player.asyncGetLocalPlayer().then((player)=>{
+           this.character = player.character;
+       })
+       GameObject.asyncSpawn("84121").then((obj)=>{
+           this.obj = obj as Model;
+           this.obj.worldTransform.scale = new Vector(0.1,0.1,0.1);
+           this.obj.setCollision(CollisionStatus.Off);
+       })
+   }*
+   protected onUpdate(dt: number): void {
+       if (this.character && this.obj) {
+           this.obj.worldTransform.position = this.character.getVertexArrayByMorphName("EarOverallScale")[0];
+       }
+   }
+}
+```
+
+___
+
 ### getVertexPosition <Score text="getVertexPosition" /> 
 
 • **getVertexPosition**(`index`): [`Vector`](mw.Vector.md) 
@@ -5389,67 +5700,24 @@ ___
 @Component
 export default class Example_Character_GetVertexPosition extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            let halo = null;
-            // 添加一个按键方法：按下键盘“1”，添加 / 移除角色的头顶光环
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(halo) {
-                    myCharacter.detachFromSlot(halo);
-                    setTimeout(() => {
-                        halo.destroy();
-                        halo = null;
-                    }, 1000);
-                } else {
-                    // 在角色头顶生成一个光环并附加到头顶插槽
-                    halo = GameObject.spawn("27704") as Effect;
-                    myCharacter.attachToSlot(halo, HumanoidSlotType.Rings);
-                    halo.play();
-                }
-            });
-            // 生成三件装备
-            let sword = GameObject.spawn("29052",{transform: new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one)});
-            let shield = GameObject.spawn("118149",{transform: new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one)});
-            let spike = GameObject.spawn("122953",{transform: new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one)});
-            // 添加一个按键方法：按下键盘“2”，给角色插槽增加装备
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.attachToSlot(sword, HumanoidSlotType.RightHand);
-                myCharacter.attachToSlot(shield, HumanoidSlotType.LeftHand);
-                myCharacter.attachToSlot(spike, HumanoidSlotType.LeftBack);
-            });
-            // 添加一个按键方法：按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除
-            InputUtil.onKeyDown(Keys.Three, () => {
-                myCharacter.detachAllFromSlot();
-                sword.worldTransform = new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one);
-                shield.worldTransform = new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one);
-                spike.worldTransform = new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one);
-            });
-            // 添加一个按键方法：按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效
-            InputUtil.onKeyDown(Keys.Four, () => {
-                let pos = myCharacter.getVertexPosition(0);
-                if(pos) {
-                    let zzz = GameObject.spawn("26168") as Effect;
-                    zzz.worldTransform.position = pos;
-                    zzz.play(() => {
-                        zzz.destroy();
-                    });
-                }
-                pos = myCharacter.getSlotWorldPosition(HumanoidSlotType.Rings);
-                if(pos) {
-                    let zzz = GameObject.spawn("26168") as Effect;
-                    zzz.worldTransform.position = pos;
-                    zzz.play(() => {
-                        zzz.destroy();
-                    });
-                }
-            });
-        }
-    }
+    *    private character: Character;
+   private obj: Model;
+   protected onStart(): void {
+       this.useUpdate = true;
+       Player.asyncGetLocalPlayer().then((player)=>{
+           this.character = player.character;
+       })
+       GameObject.asyncSpawn("84121").then((obj)=>{
+           this.obj = obj as Model;
+           this.obj.worldTransform.scale = new Vector(0.1,0.1,0.1);
+           this.obj.setCollision(CollisionStatus.Off);
+       })
+   }*
+   protected onUpdate(dt: number): void {
+       if (this.character && this.obj) {
+           this.obj.worldTransform.position = this.character.getVertexPosition(0);
+       }
+   }
 }
 ```
 
@@ -5466,6 +5734,49 @@ ___
 | `target` ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) |  追踪点或者追踪对象 |
 | :------ | :------ |
 
+
+___
+
+### jump <Score text="jump" /> 
+
+• **jump**(): `void` 
+
+使角色触发一个跳跃行为
+
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Character_Jump"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，设置角色最大跳跃高度为300，最高三连跳。按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character_Jump extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家控制的角色
+            let myCharacter = myPlayer.character;
+            // 最大跳跃高度为300
+            myCharacter.maxJumpHeight = 300;
+            // 最高三连跳
+            myCharacter.jumpMaxCount = 3;
+            // 添加一个按键方法：按下键盘“1”，角色跳跃。
+            InputUtil.onKeyDown(Keys.One, () => {
+                myCharacter.jump();
+                console.log("当前角色是否在跳跃 " + myCharacter.isJumping);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用跳跃能力。
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCharacter.jumpEnabled = !myCharacter.jumpEnabled;
+                console.log("当前角色跳跃能力 " + myCharacter.jumpEnabled);
+            });
+        }
+    }
+}
+```
 
 ___
 
@@ -5830,8 +6141,9 @@ ___
 | :------ | :------ |
 | `enabled` `boolean` |  角色状态是否启用 |
 
+
 <span style="font-size: 14px;">
-使用示例:按 R 后禁用飞行状态，再按 2 切换飞行 
+使用示例:按 R 后禁用飞行状态，再按 2 切换飞行
 </span>
 
 ```ts
@@ -5847,7 +6159,6 @@ export default class NewScript1 extends Script {
 
             })
         });
-
       InputUtil.onKeyDown(Keys.Zero, ()=>{
             this.character.changeState(CharacterStateType.None);
         })
@@ -5890,13 +6201,15 @@ export default class NewScript1 extends Script {
         InputUtil.onKeyDown(Keys.V, ()=>{
             this.character.changeState(CharacterStateType.Dead);
         })
-        InputUtil.onKeyDown(Keys.E, ()=>{
-            console.log("currentState=="+this.character.getCurrentState());
+      InputUtil.onKeyDown(Keys.E, ()=>{
+          console.log("currentState=="+this.character.getCurrentState());
+        })
+      InputUtil.onKeyDown(Keys.R, ()=>{
+          this.character.setStateEnabled(CharacterStateType.Flying, false);
         })
     }
 }
 ```
-
 
 ___
 

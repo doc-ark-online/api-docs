@@ -20,6 +20,8 @@
 
   ↳ [`Dropdown`](mw.Dropdown.md)
 
+  ↳ [`FlipBook`](mw.FlipBook.md)
+
   ↳ [`Image`](mw.Image.md)
 
   ↳ [`InputBox`](mw.InputBox.md)
