@@ -55,6 +55,8 @@ mw
 | 摄像机旋转模式|
 | [CameraSwitchBlendFunction](../enums/mw.CameraSwitchBlendFunction.md)  |
 | 切换摄像机时运用的混合函数|
+| [CharacterFeatureType](../enums/mw.CharacterFeatureType.md)  |
+| 外观属性的 Morph 和 Bone 换装项的枚举|
 | [CharacterStateType](../enums/mw.CharacterStateType.md)  |
 | 角色状态|
 | [CharacterTemplate](../enums/mw.CharacterTemplate.md)  |
@@ -248,6 +250,8 @@ mw
 | 四轮载具驱动模式|
 | [VehicleWheelPosition4WNew](../enums/mw.VehicleWheelPosition4WNew.md)  |
 | 四轮载具车轮位置|
+| [WaterPreset](../enums/mw.WaterPreset.md)  |
+| 水体预设枚举|
 | [WidgetGeometryMode](../enums/mw.WidgetGeometryMode.md)  |
 | UI形状枚举|
 | [WidgetSpaceMode](../enums/mw.WidgetSpaceMode.md)  |
@@ -385,6 +389,8 @@ mw
 | 输入框|
 | [InputUtil](../classes/mw.InputUtil.md)  |
 | 输入事件工具|
+| [InstanceInfo](../classes/mw.InstanceInfo.md)  |
+| :----- |
 | [IntegratedMover](../classes/mw.IntegratedMover.md)  |
 | 运动器组件|
 | [Interactor](../classes/mw.Interactor.md)  |
@@ -419,8 +425,6 @@ mw
 | 四维矩阵|
 | [Model](../classes/mw.Model.md)  |
 | 物理模拟与材质设置|
-| [ModelUtil](../classes/mw.ModelUtil.md)  |
-| 模型工具类|
 | [MulticastDelegate](../classes/mw.MulticastDelegate.md)  |
 | 多播委托接口|
 | [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md)  |
@@ -431,8 +435,7 @@ mw
 | 寻路|
 | [ObjectLauncher](../classes/mw.ObjectLauncher.md)  |
 | 投掷物发射器|
-| [PanelWidget](../classes/Core.mw.PanelWidget.md)  |
-| :----- |
+| [PanelWidget](../classes/Core.mw.PanelWidget.md) |
 | [Pawn](../classes/mw.Pawn.md)  |
 | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsService](../classes/mw.PhysicsService.md)  |

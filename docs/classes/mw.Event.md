@@ -28,11 +28,11 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 | **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />  |
 | :-----|
 | 服务器监听客户端发来的事件|
-| **[addGameEventListener](mw.Event.md#addgameeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): `void` <Badge type="tip" text="server" />  |
+| **[addGameEventListener](mw.Event.md#addgameeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />  |
 | 注册游戏级的事件|
 | **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)   |
 | 添加本地事件。|
-| **[addSceneEventListener](mw.Event.md#addsceneeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): `void` <Badge type="tip" text="server" />  |
+| **[addSceneEventListener](mw.Event.md#addsceneeventlistener)**(`eventName`: `string`, `callback`: (`data`: `string`) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />  |
 | 注册场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播|
 | **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="client" />  |
 | 客户端监听服务器事件|
@@ -103,7 +103,7 @@ ___
 
 ### addGameEventListener <Score text="addGameEventListener" /> 
 
-• `Static` **addGameEventListener**(`eventName`, `callback`): `void` <Badge type="tip" text="server" />
+• `Static` **addGameEventListener**(`eventName`, `callback`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />
 
 注册游戏级的事件
 
@@ -113,6 +113,10 @@ ___
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
+#### Returns
+
+| [`EventListener`](mw.EventListener.md) |  |
+| :------ | :------ |
 
 ___
 
@@ -137,7 +141,7 @@ ___
 
 ### addSceneEventListener <Score text="addSceneEventListener" /> 
 
-• `Static` **addSceneEventListener**(`eventName`, `callback`): `void` <Badge type="tip" text="server" />
+• `Static` **addSceneEventListener**(`eventName`, `callback`): [`EventListener`](mw.EventListener.md) <Badge type="tip" text="server" />
 
 注册场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播
 
@@ -147,6 +151,10 @@ ___
 | :------ | :------ |
 | `callback` (`data`: `string`) => `void` | 收到注册的事件时会触发的回调 |
 
+#### Returns
+
+| [`EventListener`](mw.EventListener.md) |  |
+| :------ | :------ |
 
 ___
 

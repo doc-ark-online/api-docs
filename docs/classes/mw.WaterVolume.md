@@ -57,25 +57,27 @@ export default class WaterVolumeExample extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[divingEnabled](mw.WaterVolume.md#divingenabled)**(): `boolean`   |
+| **[deepColor](mw.WaterVolume.md#deepcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />  |
 | :-----|
+| 获取水体深层颜色|
+| **[divingEnabled](mw.WaterVolume.md#divingenabled)**(): `boolean`   |
 | 获取潜水|
-| **[flowAngle](mw.WaterVolume.md#flowangle)**(): `number`   |
+| **[flowAngle](mw.WaterVolume.md#flowangle)**(): `number` <Badge type="tip" text="client" />  |
 | 获取水波角度|
-| **[flowSpeed](mw.WaterVolume.md#flowspeed)**(): `number`   |
+| **[flowSpeed](mw.WaterVolume.md#flowspeed)**(): `number` <Badge type="tip" text="client" />  |
 | 获取水波速度|
-| **[flowTile](mw.WaterVolume.md#flowtile)**(): `number`   |
+| **[flowTile](mw.WaterVolume.md#flowtile)**(): `number` <Badge type="tip" text="client" />  |
 | 获取水波密度|
 | **[fluidFriction](mw.WaterVolume.md#fluidfriction)**(): `number`   |
 | 获取流体摩擦力|
-| **[normalFlat](mw.WaterVolume.md#normalflat)**(): `number`   |
+| **[normalFlat](mw.WaterVolume.md#normalflat)**(): `number` <Badge type="tip" text="client" />  |
 | 获取水波强度|
+| **[preset](mw.WaterVolume.md#preset)**(): [`WaterPreset`](../enums/mw.WaterPreset.md) <Badge type="tip" text="client" />  |
+| 获取预设,仅对面板值生效|
 | **[surfaceColor](mw.WaterVolume.md#surfacecolor)**(): [`LinearColor`](mw.LinearColor.md)   |
-| 获取水面颜色|
-| **[transmittance](mw.WaterVolume.md#transmittance)**(): `number`   |
+| 获取水体浅层颜色|
+| **[transmittance](mw.WaterVolume.md#transmittance)**(): `number` <Badge type="tip" text="client" />  |
 | 获取水体透明度|
-| **[waterColor](mw.WaterVolume.md#watercolor)**(): [`LinearColor`](mw.LinearColor.md)   |
-| 获取水体颜色|
 
 
 ::: details click
@@ -120,7 +122,7 @@ export default class WaterVolumeExample extends Script {
 | 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| **[getBoundingBox](mw.GameObject.md#getboundingbox)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
@@ -211,6 +213,52 @@ ___
 
 ___
 
+### deepColor <Score text="deepColor" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **deepColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **deepColor**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水体深层颜色
+
+#### Returns
+
+| [`LinearColor`](mw.LinearColor.md) | 当前游泳区深层颜色 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水体深层颜色
+
+#### Parameters
+
+| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区深层颜色 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### divingEnabled <Score text="divingEnabled" /> 
 
 <table class="get-set-table">
@@ -263,12 +311,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **flowAngle**(): `number` 
+• `get` **flowAngle**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **flowAngle**(`value`): `void` 
+• `set` **flowAngle**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -309,12 +357,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **flowSpeed**(): `number` 
+• `get` **flowSpeed**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **flowSpeed**(`value`): `void` 
+• `set` **flowSpeed**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -355,12 +403,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **flowTile**(): `number` 
+• `get` **flowTile**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **flowTile**(`value`): `void` 
+• `set` **flowTile**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -428,12 +476,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **normalFlat**(): `number` 
+• `get` **normalFlat**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **normalFlat**(`value`): `void` 
+• `set` **normalFlat**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -468,6 +516,52 @@ ___
 
 ___
 
+### preset <Score text="preset" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **preset**(): [`WaterPreset`](../enums/mw.WaterPreset.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **preset**(`NewPreset`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取预设,仅对面板值生效
+
+#### Returns
+
+| [`WaterPreset`](../enums/mw.WaterPreset.md) | 返回预设 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置预设
+
+#### Parameters
+
+| `NewPreset` [`WaterPreset`](../enums/mw.WaterPreset.md) | 预设枚举 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### surfaceColor <Score text="surfaceColor" /> 
 
 <table class="get-set-table">
@@ -487,11 +581,11 @@ ___
 <td style="text-align: left">
 
 
-获取水面颜色
+获取水体浅层颜色
 
 #### Returns
 
-| [`LinearColor`](mw.LinearColor.md) | 当前游泳区水面颜色 |
+| [`LinearColor`](mw.LinearColor.md) | 当前游泳区浅层颜色 |
 | :------ | :------ |
 
 
@@ -499,11 +593,11 @@ ___
 <td style="text-align: left">
 
 
-设置水面颜色
+设置水体浅层颜色
 
 #### Parameters
 
-| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区水面颜色 |
+| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区浅层颜色 |
 | :------ | :------ |
 
 
@@ -520,12 +614,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **transmittance**(): `number` 
+• `get` **transmittance**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **transmittance**(`value`): `void` 
+• `set` **transmittance**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -550,52 +644,6 @@ ___
 #### Parameters
 
 | `value` `number` | 设置游泳区水体透明度 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### waterColor <Score text="waterColor" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **waterColor**(): [`LinearColor`](mw.LinearColor.md) 
-
-</th>
-<th style="text-align: left">
-
-• `set` **waterColor**(`value`): `void` 
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取水体颜色
-
-#### Returns
-
-| [`LinearColor`](mw.LinearColor.md) | 当前游泳区水体颜色 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置水体颜色
-
-#### Parameters
-
-| `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区水体颜色 |
 | :------ | :------ |
 
 </td>

@@ -18,7 +18,7 @@
 | command键是否按下|
 | **[isControlDown](mw.KeyEvent.md#iscontroldown)**(): `boolean` <Badge type="tip" text="client" />  |
 | control键是否按下|
-| **[isShiftDow](mw.KeyEvent.md#isshiftdow)**(): `boolean` <Badge type="tip" text="client" />  |
+| **[isShiftDown](mw.KeyEvent.md#isshiftdown)**(): `boolean` <Badge type="tip" text="client" />  |
 | shift键是否按下|
 | **[toInputEvent](mw.KeyEvent.md#toinputevent)**(): `InputEvent` <Badge type="tip" text="client" />  |
 | 转化为 InputEvent*|
@@ -92,9 +92,9 @@ control键是否按下
 
 ___
 
-### isShiftDow <Score text="isShiftDow" /> 
+### isShiftDown <Score text="isShiftDown" /> 
 
-• **isShiftDow**(): `boolean` <Badge type="tip" text="client" />
+• **isShiftDown**(): `boolean` <Badge type="tip" text="client" />
 
 shift键是否按下
 

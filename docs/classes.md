@@ -93,6 +93,7 @@ Classes
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
+| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -162,7 +163,6 @@ Classes
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Model](classes/mw.Model.md) | 物理模拟与材质设置 | [玩法](groups/玩法.玩法.md) |
-| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [工具](groups/工具.工具.md) |
 | [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleService](classes/mwext.ModuleService.md) | 服务端客户端及数据模块管理 | [基类](groups/基类.基类.md) |

@@ -38,6 +38,7 @@ Enums
 | [CameraProjectionMode](enums/mw.CameraProjectionMode.md) | 摄像机镜头模式 | [玩法](groups/玩法.玩法.md) |
 | [CameraRotationMode](enums/mw.CameraRotationMode.md) | 摄像机旋转模式 | [玩法](groups/玩法.玩法.md) |
 | [CameraSwitchBlendFunction](enums/mw.CameraSwitchBlendFunction.md) | 切换摄像机时运用的混合函数 | [玩法](groups/玩法.玩法.md) |
+| [CharacterFeatureType](enums/mw.CharacterFeatureType.md) | 外观属性的 Morph 和 Bone 换装项的枚举 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterStateType](enums/mw.CharacterStateType.md) | 角色状态 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterTemplate](enums/mw.CharacterTemplate.md) | 角色体型 | [角色系统](groups/角色系统.角色系统.md) |
 | [CharacterType](enums/mw.CharacterType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
@@ -115,6 +116,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageType](enums/mw.LanguageType.md) | 游戏语言 | [基础类型](groups/基础类型.基础类型.md) |
+| [LogLevel](enums/mw.LogLevel.md) | 日志等级 | [基础类型](groups/基础类型.基础类型.md) |
 
 
 ## M
@@ -163,6 +165,7 @@ Enums
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ReleaseStatus](enums/mw.ReleaseStatus.md) | UGC 发布的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [RuntimePlatform](enums/mw.RuntimePlatform.md) | 运行平台 | [基础类型](groups/基础类型.基础类型.md) |
 
 
@@ -223,6 +226,7 @@ Enums
 ## W
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [WaterPreset](enums/mw.WaterPreset.md) | 水体预设枚举 | [玩法](groups/玩法.玩法.md) |
 | [WidgetGeometryMode](enums/mw.WidgetGeometryMode.md) | UI形状枚举 | [界面](groups/界面.界面.md) |
 | [WidgetSpaceMode](enums/mw.WidgetSpaceMode.md) | UI空间位置枚举 | [界面](groups/界面.界面.md) |
 

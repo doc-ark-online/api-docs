@@ -9,11 +9,14 @@
 ### Enumeration Members <Score text="Enumeration" /> 
 | **[Crouching](mw.CharacterStateType.md#crouching)** = ``8``  |
 | :----- |
+| **[Dead](mw.CharacterStateType.md#dead)** = ``10`` |
 | **[Flying](mw.CharacterStateType.md#flying)** = ``2`` |
 | **[Freefall](mw.CharacterStateType.md#freefall)** = ``5`` |
+| **[GettingUp](mw.CharacterStateType.md#gettingup)** = ``9`` |
 | **[Jumping](mw.CharacterStateType.md#jumping)** = ``4`` |
 | **[Landed](mw.CharacterStateType.md#landed)** = ``6`` |
 | **[None](mw.CharacterStateType.md#none)** = ``0`` |
+| **[Pushed](mw.CharacterStateType.md#pushed)** = ``11`` |
 | **[Ragdoll](mw.CharacterStateType.md#ragdoll)** = ``7`` |
 | **[Running](mw.CharacterStateType.md#running)** = ``1`` |
 | **[Swimming](mw.CharacterStateType.md#swimming)** = ``3`` |
@@ -25,6 +28,14 @@
 • **Crouching** = ``8``
 
 下蹲状态
+
+___
+
+### Dead <Score text="Dead" /> 
+
+• **Dead** = ``10``
+
+死亡状态
 
 ___
 
@@ -41,6 +52,14 @@ ___
 • **Freefall** = ``5``
 
 自由落体状态
+
+___
+
+### GettingUp <Score text="GettingUp" /> 
+
+• **GettingUp** = ``9``
+
+起身状态
 
 ___
 
@@ -65,6 +84,14 @@ ___
 • **None** = ``0``
 
 无状态/未知状态
+
+___
+
+### Pushed <Score text="Pushed" /> 
+
+• **Pushed** = ``11``
+
+推动状态
 
 ___
 

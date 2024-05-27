@@ -138,7 +138,7 @@ export default class GameObjectExample extends Script {
 | 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
+| **[getBoundingBox](mw.GameObject.md#getboundingbox)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
 | 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`   |
 | 获取物体边界|
@@ -600,9 +600,9 @@ ___
 
 #### Parameters
 
-| `constructor` (...`args`: `unknown`[]) => `T` |  ScriptComponentClass 添加脚本的类型 <br> default:null |
+| `constructor` (...`args`: `unknown`[]) => `T` |  ScriptComponentClass 添加脚本的类型 <br> default: null |
 | :------ | :------ |
-| `bInReplicates?` `boolean` |  是否开启同步 <br> default: false |
+| `bInReplicates?` `boolean` |  是否开启同步 <br> default: 在服务端调用，默认会同步；在客户端调用，默认不同步。 |
 
 #### Returns
 
@@ -678,9 +678,9 @@ ___
 
 ___
 
-### getBoundingBoxExtent <Score text="getBoundingBoxExtent" /> 
+### getBoundingBox <Score text="getBoundingBox" /> 
 
-• **getBoundingBoxExtent**(`nonColliding?`, `includeFromChild?`, `outer?`): [`Vector`](mw.Vector.md) 
+• **getBoundingBox**(`nonColliding?`, `includeFromChild?`, `outer?`): [`Vector`](mw.Vector.md) 
 
 获取物体包围盒大小
 
