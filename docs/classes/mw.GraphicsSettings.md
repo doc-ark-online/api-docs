@@ -22,6 +22,12 @@ export default class ClassExample extends Script {
        let gpu = mw.GraphicsLevel.Low2;
        GraphicsSettings.setGraphicsCPULevel(cpu);
        GraphicsSettings.setGraphicsGPULevel(gpu);
+       //开启自动分辨率
+       GraphicsSettings.setAutoScreenPercentage(true);
+       //设置FSR抗锯齿等级
+       GraphicsSettings.setFSRLevel(3);
+       //设置锐化程度
+       GraphicsSettings.setSharpness(1);
 
        //获取当前CPU画质等级
        let cpulevel = GraphicsSettings.getCPULevel();
@@ -31,6 +37,12 @@ export default class ClassExample extends Script {
        let Defaultcpulevel = GraphicsSettings.getDefaultCPULevel();
        //获取默认GPU画质等级
        let Defaultcgpulevel = GraphicsSettings.getDefaultGPULevel();
+       //获取当前自动分辨率开启状态
+       GraphicsSettings.getAutoScreenPercentage();
+       //获取当前FSR抗锯齿等级
+       GraphicsSettings.getFSRLevel();
+       //获取当前锐化程度
+       GraphicsSettings.getSharpness();
    }
 }
 ```
@@ -43,6 +55,19 @@ export default class ClassExample extends Script {
 | 获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)|
 
 ### Methods <Score text="Methods" /> 
+| **[getAutoScreenPercentage](mw.GraphicsSettings.md#getautoscreenpercentage)**(): `boolean` <Badge type="tip" text="client" />  |
+| :-----|
+| 获取自动分辨率开关状态|
+| **[getFSRLevel](mw.GraphicsSettings.md#getfsrlevel)**(): `number` <Badge type="tip" text="client" />  |
+| 获取FSR画质等级|
+| **[getSharpness](mw.GraphicsSettings.md#getsharpness)**(): `number` <Badge type="tip" text="client" />  |
+| 获取锐化程度|
+| **[setAutoScreenPercentage](mw.GraphicsSettings.md#setautoscreenpercentage)**(`bEnable`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| 设置是否开启自动分辨率|
+| **[setFSRLevel](mw.GraphicsSettings.md#setfsrlevel)**(`FSRLevel`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置TSR等级|
+| **[setSharpness](mw.GraphicsSettings.md#setsharpness)**(`Sharpness`: `number`): `void` <Badge type="tip" text="client" />  |
+| 设置锐化程度|
 
 ## Accessors
 
@@ -91,3 +116,82 @@ export default class ClassExample extends Script {
 
 
 ## Methods
+
+### getAutoScreenPercentage <Score text="getAutoScreenPercentage" /> 
+
+• `Static` **getAutoScreenPercentage**(): `boolean` <Badge type="tip" text="client" />
+
+获取自动分辨率开关状态
+
+#### Returns
+
+| `boolean` | 获取自动分辨率开关状态。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
+### getFSRLevel <Score text="getFSRLevel" /> 
+
+• `Static` **getFSRLevel**(): `number` <Badge type="tip" text="client" />
+
+获取FSR画质等级
+
+#### Returns
+
+| `number` | 获取FSR画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
+### getSharpness <Score text="getSharpness" /> 
+
+• `Static` **getSharpness**(): `number` <Badge type="tip" text="client" />
+
+获取锐化程度
+
+#### Returns
+
+| `number` | 获取锐化程度。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
+### setAutoScreenPercentage <Score text="setAutoScreenPercentage" /> 
+
+• `Static` **setAutoScreenPercentage**(`bEnable`): `void` <Badge type="tip" text="client" />
+
+设置是否开启自动分辨率
+
+#### Parameters
+
+| `bEnable` `boolean` | 开关 |
+| :------ | :------ |
+
+
+___
+
+### setFSRLevel <Score text="setFSRLevel" /> 
+
+• `Static` **setFSRLevel**(`FSRLevel`): `void` <Badge type="tip" text="client" />
+
+设置TSR等级
+
+#### Parameters
+
+| `FSRLevel` `number` | FSR等级 |
+| :------ | :------ |
+
+
+___
+
+### setSharpness <Score text="setSharpness" /> 
+
+• `Static` **setSharpness**(`Sharpness`): `void` <Badge type="tip" text="client" />
+
+设置锐化程度
+
+#### Parameters
+
+| `Sharpness` `number` | 锐化程度 0-1 |
+| :------ | :------ |
+

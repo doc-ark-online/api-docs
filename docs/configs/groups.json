@@ -1,272 +1,4 @@
 {
-  "基类": {
-    "file": {
-      "file_name": "基类.基类.md",
-      "file_path": "groups/基类.基类.md",
-      "name": "基类"
-    },
-    "children": {
-      "对象池": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "ObjPool": {
-            "file": {
-              "file_name": "mwext.ObjPool.md",
-              "file_path": "classes/mwext.ObjPool.md",
-              "name": "ObjPool"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "GameObjPool": {
-            "file": {
-              "file_name": "mwext.GameObjPool.md",
-              "file_path": "classes/mwext.GameObjPool.md",
-              "name": "GameObjPool"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "数据拓展": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "Subdata": {
-            "file": {
-              "file_name": "mwext.Subdata.md",
-              "file_path": "classes/mwext.Subdata.md",
-              "name": "Subdata"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "DataCenterS": {
-            "file": {
-              "file_name": "mwext.DataCenterS.md",
-              "file_path": "classes/mwext.DataCenterS.md",
-              "name": "DataCenterS"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "DataCenterC": {
-            "file": {
-              "file_name": "mwext.DataCenterC.md",
-              "file_path": "classes/mwext.DataCenterC.md",
-              "name": "DataCenterC"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "C&S拓展": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "ModuleS": {
-            "file": {
-              "file_name": "mwext.ModuleS.md",
-              "file_path": "classes/mwext.ModuleS.md",
-              "name": "ModuleS"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ModuleC": {
-            "file": {
-              "file_name": "mwext.ModuleC.md",
-              "file_path": "classes/mwext.ModuleC.md",
-              "name": "ModuleC"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ModuleService": {
-            "file": {
-              "file_name": "mwext.ModuleService.md",
-              "file_path": "classes/mwext.ModuleService.md",
-              "name": "ModuleService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "场景所有物体基类": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "GameObjectInfo": {
-            "file": {
-              "file_name": "mw.GameObjectInfo.md",
-              "file_path": "interfaces/mw.GameObjectInfo.md",
-              "name": "GameObjectInfo"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "GameObject": {
-            "file": {
-              "file_name": "mw.GameObject.md",
-              "file_path": "classes/mw.GameObject.md",
-              "name": "GameObject"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      }
-    },
-    "no_children_files": {
-      "Script": {
-        "file": {
-          "file_name": "mw.Script.md",
-          "file_path": "classes/mw.Script.md",
-          "name": "Script"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
-  "数据处理": {
-    "file": {
-      "file_name": "基类.基类.md",
-      "file_path": "groups/基类.基类.md",
-      "name": "基类"
-    },
-    "children": {
-      "场景所有物体基类": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "GameObjectInfo": {
-            "file": {
-              "file_name": "mw.GameObjectInfo.md",
-              "file_path": "interfaces/mw.GameObjectInfo.md",
-              "name": "GameObjectInfo"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "GameObject": {
-            "file": {
-              "file_name": "mw.GameObject.md",
-              "file_path": "classes/mw.GameObject.md",
-              "name": "GameObject"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "对象池": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "ObjPool": {
-            "file": {
-              "file_name": "mwext.ObjPool.md",
-              "file_path": "classes/mwext.ObjPool.md",
-              "name": "ObjPool"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "GameObjPool": {
-            "file": {
-              "file_name": "mwext.GameObjPool.md",
-              "file_path": "classes/mwext.GameObjPool.md",
-              "name": "GameObjPool"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "数据拓展": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "Subdata": {
-            "file": {
-              "file_name": "mwext.Subdata.md",
-              "file_path": "classes/mwext.Subdata.md",
-              "name": "Subdata"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "DataCenterS": {
-            "file": {
-              "file_name": "mwext.DataCenterS.md",
-              "file_path": "classes/mwext.DataCenterS.md",
-              "name": "DataCenterS"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "DataCenterC": {
-            "file": {
-              "file_name": "mwext.DataCenterC.md",
-              "file_path": "classes/mwext.DataCenterC.md",
-              "name": "DataCenterC"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "C&S拓展": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "ModuleS": {
-            "file": {
-              "file_name": "mwext.ModuleS.md",
-              "file_path": "classes/mwext.ModuleS.md",
-              "name": "ModuleS"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ModuleC": {
-            "file": {
-              "file_name": "mwext.ModuleC.md",
-              "file_path": "classes/mwext.ModuleC.md",
-              "name": "ModuleC"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ModuleService": {
-            "file": {
-              "file_name": "mwext.ModuleService.md",
-              "file_path": "classes/mwext.ModuleService.md",
-              "name": "ModuleService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      }
-    },
-    "no_children_files": {
-      "Script": {
-        "file": {
-          "file_name": "mw.Script.md",
-          "file_path": "classes/mw.Script.md",
-          "name": "Script"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "基础类型": {
     "file": {
       "file_name": "基础类型.基础类型.md",
@@ -496,6 +228,61 @@
       }
     },
     "no_children_files": null
+  },
+  "数据处理": {
+    "file": {
+      "file_name": "数据处理.数据处理.md",
+      "file_path": "groups/数据处理.数据处理.md",
+      "name": "数据处理"
+    },
+    "children": null,
+    "no_children_files": {
+      "TeleportOptions": {
+        "file": {
+          "file_name": "mw.TeleportOptions.md",
+          "file_path": "interfaces/mw.TeleportOptions.md",
+          "name": "TeleportOptions"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "DataStorageResult": {
+        "file": {
+          "file_name": "mw.DataStorageResult.md",
+          "file_path": "interfaces/mw.DataStorageResult.md",
+          "name": "DataStorageResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "RoomInfo": {
+        "file": {
+          "file_name": "mw.RoomInfo.md",
+          "file_path": "interfaces/mw.RoomInfo.md",
+          "name": "RoomInfo"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "TeleportResult": {
+        "file": {
+          "file_name": "mw.TeleportResult.md",
+          "file_path": "interfaces/mw.TeleportResult.md",
+          "name": "TeleportResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "DataStorage": {
+        "file": {
+          "file_name": "mw.DataStorage.md",
+          "file_path": "classes/mw.DataStorage.md",
+          "name": "DataStorage"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
   },
   "界面": {
     "file": {
@@ -769,20 +556,20 @@
                 "no_children_files": null,
                 "children": null
               },
-              "JoystickBindKeyType": {
-                "file": {
-                  "file_name": "mw.JoystickBindKeyType.md",
-                  "file_path": "classes/mw.JoystickBindKeyType.md",
-                  "name": "JoystickBindKeyType"
-                },
-                "no_children_files": null,
-                "children": null
-              },
               "VirtualJoystickPanel": {
                 "file": {
                   "file_name": "mw.VirtualJoystickPanel.md",
                   "file_path": "classes/mw.VirtualJoystickPanel.md",
                   "name": "VirtualJoystickPanel"
+                },
+                "no_children_files": null,
+                "children": null
+              },
+              "JoystickBindKeyType": {
+                "file": {
+                  "file_name": "mw.JoystickBindKeyType.md",
+                  "file_path": "classes/mw.JoystickBindKeyType.md",
+                  "name": "JoystickBindKeyType"
                 },
                 "no_children_files": null,
                 "children": null
@@ -1088,6 +875,36 @@
                 "children": null
               }
             }
+          },
+          "帧动画": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "FlipBook": {
+                "file": {
+                  "file_name": "mw.FlipBook.md",
+                  "file_path": "classes/mw.FlipBook.md",
+                  "name": "FlipBook"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
+          },
+          "广告按钮": {
+            "file": null,
+            "children": null,
+            "no_children_files": {
+              "AdsButton": {
+                "file": {
+                  "file_name": "mw.AdsButton.md",
+                  "file_path": "classes/mw.AdsButton.md",
+                  "name": "AdsButton"
+                },
+                "no_children_files": null,
+                "children": null
+              }
+            }
           }
         },
         "no_children_files": {
@@ -1186,29 +1003,11 @@
             "no_children_files": null,
             "children": null
           },
-          "ModelUtil": {
-            "file": {
-              "file_name": "mw.ModelUtil.md",
-              "file_path": "classes/mw.ModelUtil.md",
-              "name": "ModelUtil"
-            },
-            "no_children_files": null,
-            "children": null
-          },
           "Response": {
             "file": {
               "file_name": "mw.Response.md",
               "file_path": "interfaces/mw.Response.md",
               "name": "Response"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ModelUtil": {
-            "file": {
-              "file_name": "mw.ModelUtil.md",
-              "file_path": "classes/mw.ModelUtil.md",
-              "name": "ModelUtil"
             },
             "no_children_files": null,
             "children": null
@@ -1297,15 +1096,6 @@
         "file": null,
         "children": null,
         "no_children_files": {
-          "PhysicsService": {
-            "file": {
-              "file_name": "mw.PhysicsService.md",
-              "file_path": "classes/mw.PhysicsService.md",
-              "name": "PhysicsService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
           "IntegratedMover": {
             "file": {
               "file_name": "mw.IntegratedMover.md",
@@ -1315,20 +1105,11 @@
             "no_children_files": null,
             "children": null
           },
-          "ForceVolume": {
-            "file": {
-              "file_name": "mw.ForceVolume.md",
-              "file_path": "classes/mw.ForceVolume.md",
-              "name": "ForceVolume"
-            },
-            "no_children_files": null,
-            "children": null
-          },
           "RigidConstraint": {
             "file": {
-              "file_name": "mw.ForceVolume.md",
-              "file_path": "classes/mw.ForceVolume.md",
-              "name": "ForceVolume"
+              "file_name": "mw.RigidConstraint.md",
+              "file_path": "classes/mw.RigidConstraint.md",
+              "name": "RigidConstraint"
             },
             "no_children_files": null,
             "children": null
@@ -1362,18 +1143,9 @@
           },
           "PhysicsService": {
             "file": {
-              "file_name": "mw.RigidConstraint.md",
-              "file_path": "classes/mw.RigidConstraint.md",
-              "name": "RigidConstraint"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ForceVolume": {
-            "file": {
-              "file_name": "mw.ForceVolume.md",
-              "file_path": "classes/mw.ForceVolume.md",
-              "name": "ForceVolume"
+              "file_name": "mw.PhysicsService.md",
+              "file_path": "classes/mw.PhysicsService.md",
+              "name": "PhysicsService"
             },
             "no_children_files": null,
             "children": null
@@ -1557,30 +1329,6 @@
             "children": null
           }
         }
-      },
-      "游泳": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "SwimmingVolume": {
-            "file": {
-              "file_name": "mw.SwimmingVolume.md",
-              "file_path": "classes/mw.SwimmingVolume.md",
-              "name": "SwimmingVolume"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "WaterVolume": {
-            "file": {
-              "file_name": "mw.WaterVolume.md",
-              "file_path": "classes/mw.WaterVolume.md",
-              "name": "WaterVolume"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
       }
     },
     "no_children_files": null
@@ -1699,282 +1447,6 @@
       }
     }
   },
-  "服务": {
-    "file": {
-      "file_name": "服务.服务.md",
-      "file_path": "groups/服务.服务.md",
-      "name": "服务"
-    },
-    "no_children_files": null,
-    "children": {
-      "货币": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "AdsService": {
-            "file": {
-              "file_name": "mw.AdsService.md",
-              "file_path": "classes/mw.AdsService.md",
-              "name": "AdsService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "PurchaseService": {
-            "file": {
-              "file_name": "mw.PurchaseService.md",
-              "file_path": "classes/mw.PurchaseService.md",
-              "name": "PurchaseService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "社交": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "AccountService": {
-            "file": {
-              "file_name": "mw.AccountService.md",
-              "file_path": "classes/mw.AccountService.md",
-              "name": "AccountService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "RouteService": {
-            "file": {
-              "file_name": "mw.RouteService.md",
-              "file_path": "classes/mw.RouteService.md",
-              "name": "RouteService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ChatBubble": {
-            "file": {
-              "file_name": "mw.ChatBubble.md",
-              "file_path": "classes/mw.ChatBubble.md",
-              "name": "ChatBubble"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ChatService": {
-            "file": {
-              "file_name": "mw.ChatService.md",
-              "file_path": "classes/mw.ChatService.md",
-              "name": "ChatService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "RoomService": {
-            "file": {
-              "file_name": "mw.RoomService.md",
-              "file_path": "classes/mw.RoomService.md",
-              "name": "RoomService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ChatBubble": {
-            "file": {
-              "file_name": "mw.ChatBubble.md",
-              "file_path": "classes/mw.ChatBubble.md",
-              "name": "ChatBubble"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "埋点分析": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "AnalyticsService": {
-            "file": {
-              "file_name": "mw.AnalyticsService.md",
-              "file_path": "classes/mw.AnalyticsService.md",
-              "name": "AnalyticsService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "调试": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "DebugService": {
-            "file": {
-              "file_name": "mw.DebugService.md",
-              "file_path": "classes/mw.DebugService.md",
-              "name": "DebugService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "传送": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "TeleportService": {
-            "file": {
-              "file_name": "mw.TeleportService.md",
-              "file_path": "classes/mw.TeleportService.md",
-              "name": "TeleportService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      }
-    }
-  },
-  "场景": {
-    "file": {
-      "file_name": "场景.场景.md",
-      "file_path": "groups/场景.场景.md",
-      "name": "场景"
-    },
-    "no_children_files": null,
-    "children": {
-      "音效": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "Sound": {
-            "file": {
-              "file_name": "mw.Sound.md",
-              "file_path": "classes/mw.Sound.md",
-              "name": "Sound"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "SoundService": {
-            "file": {
-              "file_name": "mw.SoundService.md",
-              "file_path": "classes/mw.SoundService.md",
-              "name": "SoundService"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "灯光": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "Skybox": {
-            "file": {
-              "file_name": "mw.Skybox.md",
-              "file_path": "classes/mw.Skybox.md",
-              "name": "Skybox"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "Fog": {
-            "file": {
-              "file_name": "mw.Fog.md",
-              "file_path": "classes/mw.Fog.md",
-              "name": "Fog"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "PostProcessConfig": {
-            "file": {
-              "file_name": "mw.PostProcessConfig.md",
-              "file_path": "classes/mw.PostProcessConfig.md",
-              "name": "PostProcessConfig"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "PostProcess": {
-            "file": {
-              "file_name": "mw.PostProcess.md",
-              "file_path": "classes/mw.PostProcess.md",
-              "name": "PostProcess"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "Lighting": {
-            "file": {
-              "file_name": "mw.Lighting.md",
-              "file_path": "classes/mw.Lighting.md",
-              "name": "Lighting"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "特效": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "EffectService": {
-            "file": {
-              "file_name": "mw.EffectService.md",
-              "file_path": "classes/mw.EffectService.md",
-              "name": "EffectService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "Effect": {
-            "file": {
-              "file_name": "mw.Effect.md",
-              "file_path": "classes/mw.Effect.md",
-              "name": "Effect"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      }
-    }
-  },
-  "输入": {
-    "file": {
-      "file_name": "输入.输入.md",
-      "file_path": "groups/输入.输入.md",
-      "name": "输入"
-    },
-    "children": null,
-    "no_children_files": {
-      "InputUtil": {
-        "file": {
-          "file_name": "mw.InputUtil.md",
-          "file_path": "classes/mw.InputUtil.md",
-          "name": "InputUtil"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "ConvertScreenResult": {
-        "file": {
-          "file_name": "mw.ConvertScreenResult.md",
-          "file_path": "classes/mw.ConvertScreenResult.md",
-          "name": "ConvertScreenResult"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "设置": {
     "file": {
       "file_name": "设置.设置.md",
@@ -2024,6 +1496,186 @@
           "file_name": "mw.ScriptingSettings.md",
           "file_path": "classes/mw.ScriptingSettings.md",
           "name": "ScriptingSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
+  },
+  "输入": {
+    "file": {
+      "file_name": "输入.输入.md",
+      "file_path": "groups/输入.输入.md",
+      "name": "输入"
+    },
+    "children": null,
+    "no_children_files": {
+      "InputUtil": {
+        "file": {
+          "file_name": "mw.InputUtil.md",
+          "file_path": "classes/mw.InputUtil.md",
+          "name": "InputUtil"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "ConvertScreenResult": {
+        "file": {
+          "file_name": "mw.ConvertScreenResult.md",
+          "file_path": "classes/mw.ConvertScreenResult.md",
+          "name": "ConvertScreenResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GestureDelegate": {
+        "file": {
+          "file_name": "mw.GestureDelegate.md",
+          "file_path": "classes/mw.GestureDelegate.md",
+          "name": "GestureDelegate"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
+  },
+  "基类": {
+    "file": {
+      "file_name": "基类.基类.md",
+      "file_path": "groups/基类.基类.md",
+      "name": "基类"
+    },
+    "children": {
+      "对象池": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "ObjPool": {
+            "file": {
+              "file_name": "mwext.ObjPool.md",
+              "file_path": "classes/mwext.ObjPool.md",
+              "name": "ObjPool"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "GameObjPool": {
+            "file": {
+              "file_name": "mwext.GameObjPool.md",
+              "file_path": "classes/mwext.GameObjPool.md",
+              "name": "GameObjPool"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "数据拓展": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "Subdata": {
+            "file": {
+              "file_name": "mwext.Subdata.md",
+              "file_path": "classes/mwext.Subdata.md",
+              "name": "Subdata"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "DataCenterS": {
+            "file": {
+              "file_name": "mwext.DataCenterS.md",
+              "file_path": "classes/mwext.DataCenterS.md",
+              "name": "DataCenterS"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "DataCenterC": {
+            "file": {
+              "file_name": "mwext.DataCenterC.md",
+              "file_path": "classes/mwext.DataCenterC.md",
+              "name": "DataCenterC"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "C&S拓展": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "ModuleS": {
+            "file": {
+              "file_name": "mwext.ModuleS.md",
+              "file_path": "classes/mwext.ModuleS.md",
+              "name": "ModuleS"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ModuleC": {
+            "file": {
+              "file_name": "mwext.ModuleC.md",
+              "file_path": "classes/mwext.ModuleC.md",
+              "name": "ModuleC"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ModuleService": {
+            "file": {
+              "file_name": "mwext.ModuleService.md",
+              "file_path": "classes/mwext.ModuleService.md",
+              "name": "ModuleService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "场景所有物体基类": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "GameObjectInfo": {
+            "file": {
+              "file_name": "mw.GameObjectInfo.md",
+              "file_path": "interfaces/mw.GameObjectInfo.md",
+              "name": "GameObjectInfo"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "GameObject": {
+            "file": {
+              "file_name": "mw.GameObject.md",
+              "file_path": "classes/mw.GameObject.md",
+              "name": "GameObject"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      }
+    },
+    "no_children_files": {
+      "Script": {
+        "file": {
+          "file_name": "mw.Script.md",
+          "file_path": "classes/mw.Script.md",
+          "name": "Script"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GameApplication": {
+        "file": {
+          "file_name": "mw.GameApplication.md",
+          "file_path": "classes/mw.GameApplication.md",
+          "name": "GameApplication"
         },
         "no_children_files": null,
         "children": null
@@ -2221,6 +1873,245 @@
         },
         "no_children_files": null,
         "children": null
+      }
+    }
+  },
+  "服务": {
+    "file": {
+      "file_name": "服务.服务.md",
+      "file_path": "groups/服务.服务.md",
+      "name": "服务"
+    },
+    "no_children_files": null,
+    "children": {
+      "货币": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "AdsService": {
+            "file": {
+              "file_name": "mw.AdsService.md",
+              "file_path": "classes/mw.AdsService.md",
+              "name": "AdsService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "PurchaseService": {
+            "file": {
+              "file_name": "mw.PurchaseService.md",
+              "file_path": "classes/mw.PurchaseService.md",
+              "name": "PurchaseService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "社交": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "AccountService": {
+            "file": {
+              "file_name": "mw.AccountService.md",
+              "file_path": "classes/mw.AccountService.md",
+              "name": "AccountService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "RouteService": {
+            "file": {
+              "file_name": "mw.RouteService.md",
+              "file_path": "classes/mw.RouteService.md",
+              "name": "RouteService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ChatService": {
+            "file": {
+              "file_name": "mw.ChatService.md",
+              "file_path": "classes/mw.ChatService.md",
+              "name": "ChatService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "RoomService": {
+            "file": {
+              "file_name": "mw.RoomService.md",
+              "file_path": "classes/mw.RoomService.md",
+              "name": "RoomService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ChatBubble": {
+            "file": {
+              "file_name": "mw.ChatBubble.md",
+              "file_path": "classes/mw.ChatBubble.md",
+              "name": "ChatBubble"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "埋点分析": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "AnalyticsService": {
+            "file": {
+              "file_name": "mw.AnalyticsService.md",
+              "file_path": "classes/mw.AnalyticsService.md",
+              "name": "AnalyticsService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "调试": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "DebugService": {
+            "file": {
+              "file_name": "mw.DebugService.md",
+              "file_path": "classes/mw.DebugService.md",
+              "name": "DebugService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "传送": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "TeleportService": {
+            "file": {
+              "file_name": "mw.TeleportService.md",
+              "file_path": "classes/mw.TeleportService.md",
+              "name": "TeleportService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      }
+    }
+  },
+  "场景": {
+    "file": {
+      "file_name": "场景.场景.md",
+      "file_path": "groups/场景.场景.md",
+      "name": "场景"
+    },
+    "no_children_files": null,
+    "children": {
+      "音效": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "Sound": {
+            "file": {
+              "file_name": "mw.Sound.md",
+              "file_path": "classes/mw.Sound.md",
+              "name": "Sound"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "SoundService": {
+            "file": {
+              "file_name": "mw.SoundService.md",
+              "file_path": "classes/mw.SoundService.md",
+              "name": "SoundService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "灯光": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "Skybox": {
+            "file": {
+              "file_name": "mw.Skybox.md",
+              "file_path": "classes/mw.Skybox.md",
+              "name": "Skybox"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Fog": {
+            "file": {
+              "file_name": "mw.Fog.md",
+              "file_path": "classes/mw.Fog.md",
+              "name": "Fog"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "PostProcessConfig": {
+            "file": {
+              "file_name": "mw.PostProcessConfig.md",
+              "file_path": "classes/mw.PostProcessConfig.md",
+              "name": "PostProcessConfig"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "PostProcess": {
+            "file": {
+              "file_name": "mw.PostProcess.md",
+              "file_path": "classes/mw.PostProcess.md",
+              "name": "PostProcess"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Lighting": {
+            "file": {
+              "file_name": "mw.Lighting.md",
+              "file_path": "classes/mw.Lighting.md",
+              "name": "Lighting"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "特效": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "EffectService": {
+            "file": {
+              "file_name": "mw.EffectService.md",
+              "file_path": "classes/mw.EffectService.md",
+              "name": "EffectService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Effect": {
+            "file": {
+              "file_name": "mw.Effect.md",
+              "file_path": "classes/mw.Effect.md",
+              "name": "Effect"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
       }
     }
   },

@@ -70,6 +70,8 @@ export default class LightingExample extends mw.Script {
 | 获取天光颜色|
 | **[skyLightIntensity](mw.Lighting.md#skylightintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取天光强度|
+| **[skyLightTextureId](mw.Lighting.md#skylighttextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取天光颜色|
 | **[temperature](mw.Lighting.md#temperature)**(): `number` <Badge type="tip" text="client" />  |
 | 获取色温|
 | **[temperatureEnabled](mw.Lighting.md#temperatureenabled)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -485,6 +487,52 @@ ___
 #### Parameters
 
 | `value` `number` | 强度值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### skyLightTextureId <Score text="skyLightTextureId" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **skyLightTextureId**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **skyLightTextureId**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取天光颜色
+
+#### Returns
+
+| `string` | 天光颜色 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置光照贴图
+
+#### Parameters
+
+| `value` `string`  `number` | 光照贴图ID |
 | :------ | :------ |
 
 

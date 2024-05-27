@@ -24,9 +24,9 @@ export default class IMExample1 extends Script {
           // 创建一个长方体
           this.Obj1 = await GameObject.asyncSpawn("197386") as GameObject;
           // 设置起始位置
-          this.Obj1.setWorldLocation(new Vector(300.0, -100.0, 300.0));
+          this.Obj1.worldTransform.position = new Vector(300.0, -100.0, 300.0);
           // 设置起始缩放
-          this.Obj1.setWorldScale(new Vector(0.5, 2.0, 0.5));
+          this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
           // 创建一个运动器，并将运动器挂载到长方体上
           this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
@@ -102,8 +102,10 @@ export default class IMExample1 extends Script {
 
 ::: details click
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
+| **[onBeforeDestroyDelegate](mw.GameObject.md#onbeforedestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
+| 物体销毁前事件回调|
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
 :::
 
@@ -126,6 +128,8 @@ export default class IMExample1 extends Script {
 | 获取平移速度大小|
 | **[motionCoordinate](mw.IntegratedMover.md#motioncoordinate)**(): [`MotionAxis`](../enums/mw.MotionAxis.md)   |
 | 获取运动坐标系|
+| **[motionMode](mw.IntegratedMover.md#motionmode)**(): [`MotionMode`](../enums/mw.MotionMode.md)   |
+| 获取运动模式|
 | **[rotationDelayStartTime](mw.IntegratedMover.md#rotationdelaystarttime)**(): `number`   |
 | 获取延时启动旋转运行时间|
 | **[rotationRepeat](mw.IntegratedMover.md#rotationrepeat)**(): `boolean`   |
@@ -167,6 +171,8 @@ export default class IMExample1 extends Script {
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isDestroyed](mw.GameObject.md#isdestroyed)**(): `boolean`   |
+| 当前物体是否被销毁|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
@@ -227,16 +233,36 @@ export default class IMExample1 extends Script {
 | 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的速度矢量随时间平滑地移动对象|
+| **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前位置平滑移动至目标位置|
+| **[rotateBy](mw.GameObject.md#rotateby)**(`rotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `multiplier`: `number`, `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的旋转量随时间平滑地旋转对象|
+| **[rotateTo](mw.GameObject.md#rotateto)**(`targetRotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前旋转平滑变化至目标旋转|
+| **[scaleBy](mw.GameObject.md#scaleby)**(`scale`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按每秒给定的缩放矢量随时间平滑缩放对象|
+| **[scaleTo](mw.GameObject.md#scaleto)**(`targetScale`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
+| **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
+| 中断moveTo()、moveBy()的进一步移动|
+| **[stopRotate](mw.GameObject.md#stoprotate)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从rotateTo()或rotateBy()的进一步旋转|
+| **[stopScale](mw.GameObject.md#stopscale)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从ScaleTo()或ScaleBy()的进一步缩放|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
 | 异步构造一个物体|
+| **[bulkPivotTo](mw.GameObject.md#bulkpivotto)**(`gameObjects`: [`GameObject`](mw.GameObject.md)[], `transforms`: [`Transform`](mw.Transform.md)[]): `void`   |
+| 批量设置位置|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -682,11 +708,11 @@ export default class IMExample2 extends Script {
             this.Obj1 = await GameObject.asyncSpawn( "197386") as GameObject;
             this.Obj2 = await GameObject.asyncSpawn("197386") as GameObject;
             // 设置起始位置
-            this.Obj1.setWorldLocation(new Vector(300.0, 0.0, 300.0));
-            this.Obj2.setWorldLocation(new Vector(300.0, 0.0, 150.0));
+            this.Obj1.worldTransform.position = new Vector(300.0, 0.0, 300.0);
+            this.Obj2.worldTransform.position = new Vector(300.0, 0.0, 150.0);
             // 设置起始缩放
-            this.Obj1.setWorldScale(new Vector(0.5, 2.0, 0.5));
-            this.Obj2.setWorldScale(new Vector(0.5, 2.0, 0.5));
+            this.Obj1.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
+            this.Obj2.worldTransform.scale = new Vector(0.5, 2.0, 0.5);
 
             // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
             this.IM1 = await GameObject.asyncSpawn("PhysicsSports") as IntegratedMover;
@@ -790,6 +816,52 @@ ___
 #### Parameters
 
 | `newMotionCoordinate` [`MotionAxis`](../enums/mw.MotionAxis.md) | 运动坐标系 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### motionMode <Score text="motionMode" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **motionMode**(): [`MotionMode`](../enums/mw.MotionMode.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **motionMode**(`mode`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取运动模式
+
+#### Returns
+
+| [`MotionMode`](../enums/mw.MotionMode.md) | 运动器运动模式 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置运动模式
+
+#### Parameters
+
+| `mode` [`MotionMode`](../enums/mw.MotionMode.md) | 运动器运动模式 |
 | :------ | :------ |
 
 

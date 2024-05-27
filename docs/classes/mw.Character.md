@@ -207,6 +207,8 @@
 
 ## Properties
 
+___
+
 ### onDescriptionChange <Score text="onDescriptionChange" /> 
 
 • **onDescriptionChange**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionChange`](../modules/Core.mw.md#ondescriptionchange)\> 
@@ -383,8 +385,9 @@ ___
 • **onStateChanged**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`prevState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `currentState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)) => `void`\>
 
 角色状态改变回调
+
 <span style="font-size: 14px;">
-使用示例:按0-9，Z、X、C、V后查看打印
+使用示例: 按0-9，Z、X、C、V后查看打印
 </span>
 
 ```ts
@@ -4829,9 +4832,76 @@ ___
 
 #### Parameters
 
-| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 使用示例: 按0-9，Z、X、C、V后查看当前角色状态 ``` @Component export default class NewScript1 extends Script `{ private character: Character; // 当脚本被实例后，会在第一帧更新前调用此函数 protected onStart(): void { Player.asyncGetLocalPlayer().then((player) => { this.character = player.character; this.character.onStateChanged.add((pre, curr)=>{ console.log(`pre: ${pre}` curr: $`{curr}``); }) }); InputUtil.onKeyDown(Keys.Zero, ()=>`{ this.character.changeState(CharacterStateType.None); }`) InputUtil.onKeyDown(Keys.One, ()=>`{ this.character.changeState(CharacterStateType.Running); }`) InputUtil.onKeyDown(Keys.Two, ()=>`{ this.character.changeState(CharacterStateType.Flying); }`) InputUtil.onKeyDown(Keys.Three, ()=>`{ this.character.changeState(CharacterStateType.Swimming); }`) InputUtil.onKeyDown(Keys.Four, ()=>`{ this.character.changeState(CharacterStateType.Jumping); }`) InputUtil.onKeyDown(Keys.Five, ()=>`{ this.character.changeState(CharacterStateType.Freefall); }`) InputUtil.onKeyDown(Keys.Six, ()=>`{ this.character.changeState(CharacterStateType.Ragdoll); }`) InputUtil.onKeyDown(Keys.Seven, ()=>`{ this.character.changeState(CharacterStateType.GettingUp); }`) InputUtil.onKeyDown(Keys.Eight, ()=>`{ this.character.changeState(CharacterStateType.Climbing); }`) InputUtil.onKeyDown(Keys.Nine, ()=>`{ this.character.changeState(CharacterStateType.Crouching); }`) InputUtil.onKeyDown(Keys.Z, ()=>`{ this.character.changeState(CharacterStateType.Pushed); }`) InputUtil.onKeyDown(Keys.X, ()=>`{ this.character.changeState(CharacterStateType.Landed); }`) InputUtil.onKeyDown(Keys.C, ()=>`{ this.character.changeState(CharacterStateType.Hit); }`) InputUtil.onKeyDown(Keys.V, ()=>`{ this.character.changeState(CharacterStateType.Dead); }`) InputUtil.onKeyDown(Keys.E, ()=>`{ console.log("currentState=="+this.character.getCurrentState()); }`) } } ``` |
+| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 |
 | :------ | :------ |
 
+
+<span style="font-size: 14px;">
+使用示例: 按0-9，Z、X、C、V后查看当前角色状态
+</span>
+
+```ts
+@Component
+export default class NewScript1 extends Script {
+    private character: Character;
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        Player.asyncGetLocalPlayer().then((player) => {
+            this.character = player.character;
+            this.character.onStateChanged.add((pre, curr)=>{
+                console.log(`pre: ${pre} curr: ${curr}`);
+
+            })
+        });
+
+      InputUtil.onKeyDown(Keys.Zero, ()=>{
+            this.character.changeState(CharacterStateType.None);
+        })
+        InputUtil.onKeyDown(Keys.One, ()=>{
+            this.character.changeState(CharacterStateType.Running);
+        })
+        InputUtil.onKeyDown(Keys.Two, ()=>{
+            this.character.changeState(CharacterStateType.Flying);
+        })
+        InputUtil.onKeyDown(Keys.Three, ()=>{
+            this.character.changeState(CharacterStateType.Swimming);
+        })
+        InputUtil.onKeyDown(Keys.Four, ()=>{
+            this.character.changeState(CharacterStateType.Jumping);
+        })
+        InputUtil.onKeyDown(Keys.Five, ()=>{
+            this.character.changeState(CharacterStateType.Freefall);
+        })
+        InputUtil.onKeyDown(Keys.Six, ()=>{
+            this.character.changeState(CharacterStateType.Ragdoll);
+        })
+        InputUtil.onKeyDown(Keys.Seven, ()=>{
+            this.character.changeState(CharacterStateType.GettingUp);
+        })
+        InputUtil.onKeyDown(Keys.Eight, ()=>{
+            this.character.changeState(CharacterStateType.Climbing);
+        })
+        InputUtil.onKeyDown(Keys.Nine, ()=>{
+            this.character.changeState(CharacterStateType.Crouching);
+        })
+        InputUtil.onKeyDown(Keys.Z, ()=>{
+            this.character.changeState(CharacterStateType.Pushed);
+        })
+        InputUtil.onKeyDown(Keys.X, ()=>{
+            this.character.changeState(CharacterStateType.Landed);
+        })
+        InputUtil.onKeyDown(Keys.C, ()=>{
+            this.character.changeState(CharacterStateType.Hit);
+        })
+        InputUtil.onKeyDown(Keys.V, ()=>{
+            this.character.changeState(CharacterStateType.Dead);
+        })
+        InputUtil.onKeyDown(Keys.E, ()=>{
+            console.log("currentState=="+this.character.getCurrentState());
+        })
+    }
+}
+```
 
 ___
 
@@ -5830,8 +5900,9 @@ ___
 | :------ | :------ |
 | `enabled` `boolean` |  角色状态是否启用 |
 
+
 <span style="font-size: 14px;">
-使用示例:按 R 后禁用飞行状态，再按 2 切换飞行 
+使用示例:按 R 后禁用飞行状态，再按 2 切换飞行
 </span>
 
 ```ts

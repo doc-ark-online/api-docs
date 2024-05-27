@@ -6,18 +6,6 @@
 
 热武器功能是指游戏中武器的使用和管理机制，它使得玩家可以在战斗中使用各种类型的武器。
 
-我们可以将热武器功能类比为现实生活中的枪械。想象你正在玩一款真实的射击游戏。你手持一把火力强大的热武器，可以进行射击。当你按下射击按钮时，武器会发射子弹，产生火花和声音效果，仿佛你真的在战斗中。
-
-射击并不是无限制的。你的武器需要装填弹药才能进行射击。所以，你需要按下上膛按钮来将新的弹药装入武器。这样，你就能够继续射击，而不必担心弹药用尽。
-
-当你的弹药接近用尽时，你需要进行换弹操作。你按下换弹按钮，角色会迅速将弹夹从武器中取出，并插入一新的装满子弹的弹夹。这样，你就能够继续战斗，而不必等待重新装填现有弹夹。
-
-在射击过程中，你会感受到武器的后坐力效果。后坐力是由于子弹离开枪口时的反冲所产生的力量。你会感觉到武器稍微后退，仿佛你真的在使用真实的武器。这为游戏增添了一定的现实感和沉浸感。
-
-热武器功能为玩家提供了更多的战术选择和策略性。
-
-总之
-
 1. 射击 - 玩家按下开火键，武器会射出子弹或光线。
 
 2. 上膛 - 每次射击后，都需要加载下一发弹药进入膛室。
@@ -25,10 +13,6 @@
 3. 换弹 - 当弹夹为空时，需要更换新的弹夹。
 
 4. 后坐力 - 射击时会产生后坐力，让准星会稍稍偏移。
-
-equip是热武器的核心函数，人物和热武器交互的通道。当热武器实例调用equip接口，并传入角色及角色插槽相关参数，传入的角色才可与热武器交互。
-
-HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWeapon对象时使用。创建出一个热武器实例后，可调用HotWeapon类中accuracyOfFireComponent、aimComponent、fireComponent等变量，调节功能细节。
 
 ::: warning Precautions
 
@@ -206,8 +190,10 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 ::: details click
 ### Properties <Score text="Properties" /> 
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
+| **[onBeforeDestroyDelegate](mw.GameObject.md#onbeforedestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
+| 物体销毁前事件回调|
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
 :::
 
@@ -233,6 +219,8 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isDestroyed](mw.GameObject.md#isdestroyed)**(): `boolean`   |
+| 当前物体是否被销毁|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean`   |
 | 当前物体状态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)   |
@@ -319,16 +307,36 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 获取指定类型的所有组件|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的速度矢量随时间平滑地移动对象|
+| **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前位置平滑移动至目标位置|
+| **[rotateBy](mw.GameObject.md#rotateby)**(`rotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `multiplier`: `number`, `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按给定的旋转量随时间平滑地旋转对象|
+| **[rotateTo](mw.GameObject.md#rotateto)**(`targetRotation`: [`Quaternion`](mw.Quaternion.md)  [`Rotation`](mw.Rotation.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前旋转平滑变化至目标旋转|
+| **[scaleBy](mw.GameObject.md#scaleby)**(`scale`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
+| 按每秒给定的缩放矢量随时间平滑缩放对象|
+| **[scaleTo](mw.GameObject.md#scaleto)**(`targetScale`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
+| 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
+| **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
+| 中断moveTo()、moveBy()的进一步移动|
+| **[stopRotate](mw.GameObject.md#stoprotate)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从rotateTo()或rotateBy()的进一步旋转|
+| **[stopScale](mw.GameObject.md#stopscale)**(): `void` <Badge type="tip" text="other" />  |
+| 中断从ScaleTo()或ScaleBy()的进一步缩放|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过 gameObjectId 异步查找 GameObject|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
 | 异步构造一个物体|
+| **[bulkPivotTo](mw.GameObject.md#bulkpivotto)**(`gameObjects`: [`GameObject`](mw.GameObject.md)[], `transforms`: [`Transform`](mw.Transform.md)[]): `void`   |
+| 批量设置位置|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过 gameObjectId 查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)   |

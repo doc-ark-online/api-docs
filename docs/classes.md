@@ -12,7 +12,8 @@ Classes
 | [Action1](classes/mw.Action1.md) | 一个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
 | [Action2](classes/mw.Action2.md) | 两个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
 | [Action3](classes/mw.Action3.md) | 三个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
-| [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [服务](groups/服务.服务.md) |
+| [AdsButton](classes/mw.AdsButton.md) | 广告按钮，请注意广告按钮不允许被遮挡 | [界面](groups/界面.界面.md) |
+| [AdsService](classes/mw.AdsService.md) | 广告服务 | [服务](groups/服务.服务.md) |
 | [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [玩法](groups/玩法.玩法.md) |
 | [AnalyticsService](classes/mw.AnalyticsService.md) | 分析服务 | [服务](groups/服务.服务.md) |
 | [Animation](classes/mw.Animation.md) | 动画 | [动画](groups/动画.动画.md) |
@@ -80,6 +81,7 @@ Classes
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [FlipBook](classes/mw.FlipBook.md) | 帧动画控件 | [界面](groups/界面.界面.md) |
 | [Fog](classes/mw.Fog.md) | 环境雾 | [场景](groups/场景.场景.md) |
 | [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [玩法](groups/玩法.玩法.md) |
 
@@ -87,6 +89,7 @@ Classes
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [GameApplication](classes/mw.GameApplication.md) | main脚本的基类 | [基类](groups/基类.基类.md) |
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
