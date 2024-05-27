@@ -5,3 +5,4 @@ dist
 .temp
 .env
 updateVersion.mjs
+docs/yarn.lock

@@ -45,8 +45,12 @@ Camera 对象如何工作？
 | **[onBeforeDestroyDelegate](mw.GameObject.md#onbeforedestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
 | 物体销毁前事件回调|
+| **[onCustomPropertyChange](mw.GameObject.md#oncustompropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
+| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
+| 监听系统属性同步事件|
 :::
 
 
@@ -111,10 +115,8 @@ Camera 对象如何工作？
 
 
 ### Methods <Score text="Methods" /> 
-| **[applySavedSerializedData](mw.Camera.md#applysavedserializeddata)**(): `void` <Badge type="tip" text="client" />  |
-| :-----|
-| 应用序列化数据|
 | **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void` <Badge type="tip" text="client" />  |
+| :-----|
 | 相机锁定目标|
 | **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
 | 摄像机朝向目标|
@@ -163,6 +165,14 @@ Camera 对象如何工作？
 | 获取脚本组件属性|
 | **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
 | 获取指定类型的所有组件|
+| **[getCustomProperties](mw.GameObject.md#getcustomproperties)**(): `string`[]   |
+| 获取所有自定义属性|
+| **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
+| 获取自定义属性|
+| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 给定对象属性修改时触发的事件代理|
+| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
@@ -179,6 +189,8 @@ Camera 对象如何工作？
 | 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
+| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void`   |
+| 设置自定义属性|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
@@ -1759,66 +1771,6 @@ i++) {
 | :------ | :------ |
 
 ## Methods
-
-___
-
-### applySavedSerializedData <Score text="applySavedSerializedData" /> 
-
-• **applySavedSerializedData**(): `void` <Badge type="tip" text="client" />
-
-应用序列化数据
-
-
-<span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Camera_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
-</span>
-
-```ts
-@Component
-export default class Example_Camera_LookAt extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家角色
-            let myCharacter = myPlayer.character;
-            // 创建一个敌方角色作为锁定目标
-            let enemy = Player.spawnDefaultCharacter();
-            enemy.switchToFlying()
-            enemy.worldTransform.position = new Vector(1000, 500, 130);
-            // 敌方角色追踪玩家角色
-            TimeUtil.setInterval(() => {
-                let distance = Vector.subtract(myCharacter.worldTransform.position, enemy.worldTransform.position);
-                if(distance.length < 200) {
-                    enemy.addMovement(new Vector(0, 0, 5));
-                } else {
-                    let dir = distance.normalized;
-                    enemy.addMovement(dir);
-                    enemy.worldTransform.rotation = distance.toRotation();
-                }
-            }, 0.02)
-            // 添加一个按键方法：按下键盘“1”，锁定敌方角色
-            InputUtil.onKeyDown(Keys.One, () => {
-                console.error("Start Lock");
-                let myCamera = Camera.currentCamera;
-                myCamera.lock(enemy, {lockInterval:0, lockSpeed: 0, lockRange: 500, lockDistance: 5000, lockOffset: new Vector(0, 0, 80), bPause: true});
-            });
-            // 添加一个按键方法：按下键盘“2”,手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程
-            InputUtil.onKeyDown(Keys.Two, () => {
-                let myCamera = Camera.currentCamera;
-                myCamera.unlock();
-            });
-            // 添加一个按键方法：按下键盘“3”,角色看向目标（无追踪效果）
-            InputUtil.onKeyDown(Keys.Three, () => {
-                let myCamera = Camera.currentCamera;
-                myCamera.lookAt(enemy);
-            });
-        }
-    }
-}
-```
 
 ___
 

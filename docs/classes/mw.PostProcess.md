@@ -57,8 +57,8 @@ export default class PostProcessExample extends mw.Script {
 | 获取焦距距离|
 | **[focusPosition](mw.PostProcess.md#focusposition)**(): `number`   |
 | 获取焦距位置|
-| **[preset](mw.PostProcess.md#preset)**(`newPreset`: [`PostProcessPreset`](../enums/mw.PostProcessPreset.md)): `void` <Badge type="tip" text="client" />  |
-| 设置预设|
+| **[preset](mw.PostProcess.md#preset)**(): [`PostProcessPreset`](../enums/mw.PostProcessPreset.md) <Badge type="tip" text="client" />  |
+| 获取预设|
 | **[saturation](mw.PostProcess.md#saturation)**(): `number`   |
 | 获取全局饱和度|
 
@@ -484,11 +484,28 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **preset**(): [`PostProcessPreset`](../enums/mw.PostProcessPreset.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **preset**(`newPreset`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取预设
+
+#### Returns
+
+| [`PostProcessPreset`](../enums/mw.PostProcessPreset.md) | 预设枚举 |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 

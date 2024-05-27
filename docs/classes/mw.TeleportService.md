@@ -184,7 +184,7 @@ ___
 | `roomId` `string` | 要传送的目标游戏Id default:undefined range: 依据 roomid 的长度决定 |
 | :------ | :------ |
 | `userIds` `string`[] | 要传送的玩家userId数组 default:undefined range: 依据 roomid 的长度决定 |
-| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息 default:undefined |
+| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息. 不支持 createNewPrivateRoom 参数，设置为true也不会创建新房间 default:undefined |
 
 #### Returns
 
@@ -194,6 +194,12 @@ ___
 ::: warning Precautions
 
 指定房间不存在或者可容纳人数不足，则会失败。参与传送的玩家数量越多，失败率越高
+
+:::
+
+::: warning Precautions
+
+不支持 createNewPrivateRoom 参数，设置为true也不会创建新房间
 
 :::
 

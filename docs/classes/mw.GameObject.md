@@ -100,8 +100,12 @@ export default class GameObjectExample extends Script {
 | **[onBeforeDestroyDelegate](mw.GameObject.md#onbeforedestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | :-----|
 | 物体销毁前事件回调|
+| **[onCustomPropertyChange](mw.GameObject.md#oncustompropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
+| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
+| 监听系统属性同步事件|
 
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
@@ -160,6 +164,14 @@ export default class GameObjectExample extends Script {
 | 获取脚本组件属性|
 | **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
 | 获取指定类型的所有组件|
+| **[getCustomProperties](mw.GameObject.md#getcustomproperties)**(): `string`[]   |
+| 获取所有自定义属性|
+| **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
+| 获取自定义属性|
+| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 给定对象属性修改时触发的事件代理|
+| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
@@ -176,6 +188,8 @@ export default class GameObjectExample extends Script {
 | 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
+| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void`   |
+| 设置自定义属性|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
@@ -215,11 +229,39 @@ export default class GameObjectExample extends Script {
 
 ___
 
+### onCustomPropertyChange <Score text="onCustomPropertyChange" /> 
+
+• **onCustomPropertyChange**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />
+
+监听自定义属性同步事件
+
+```ts
+this.onCustomPropertyChange.add((path, value, oldValue) => {
+    console.log(`属性 ${path} 改变了，新值为 ${value}，旧值为 ${oldValue}`);
+});
+```
+
+___
+
 ### onDestroyDelegate <Score text="onDestroyDelegate" /> 
 
 • **onDestroyDelegate**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> 
 
 物体销毁后事件回调
+
+___
+
+### onPropertyChange <Score text="onPropertyChange" /> 
+
+• **onPropertyChange**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>
+
+监听系统属性同步事件
+
+```ts
+this.onPropertyChange.add((path, value, oldValue) => {
+    console.log(`属性 ${path} 改变了，新值为 ${value}，旧值为 ${oldValue}`);
+});
+```
 
 ## Accessors
 
@@ -915,6 +957,84 @@ ___
 
 ___
 
+### getCustomProperties <Score text="getCustomProperties" /> 
+
+• **getCustomProperties**(): `string`[] 
+
+获取所有自定义属性
+
+#### Returns
+
+| `string`[] | 属性名列表 |
+| :------ | :------ |
+
+```ts
+const attributes = this.getAttributes();
+console.log(attributes);
+// ["name", "age"]
+```
+
+___
+
+### getCustomProperty <Score text="getCustomProperty" /> 
+
+• **getCustomProperty**<`T`\>(`propertyName`): `T` 
+
+获取自定义属性
+
+#### Parameters
+
+| `propertyName` | `string` |
+| :------ | :------ |
+
+#### Returns
+
+| `T` | 属性值 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype) |
+| :------ | :------ |
+
+___
+
+### getCustomPropertyChangeDelegate <Score text="getCustomPropertyChangeDelegate" /> 
+
+• **getCustomPropertyChangeDelegate**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />
+
+给定对象属性修改时触发的事件代理
+
+#### Parameters
+
+| `property` `string` | 对象属性名字 |
+| :------ | :------ |
+
+#### Returns
+
+| `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> | 代理对象 |
+| :------ | :------ |
+
+___
+
+### getPropertyChangeDelegate <Score text="getPropertyChangeDelegate" /> 
+
+• **getPropertyChangeDelegate**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />
+
+给定对象属性修改时触发的事件代理
+
+#### Parameters
+
+| `property` `string` | 对象属性名字 例如：'x' 'rotation.x' |
+| :------ | :------ |
+
+#### Returns
+
+| `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> | 代理对象 |
+| :------ | :------ |
+
+___
+
 ### getVisibility <Score text="getVisibility" /> 
 
 • **getVisibility**(): `boolean` 
@@ -1117,6 +1237,21 @@ ___
 | :------ | :------ |
 | `absoluteRotation?` `boolean` |  旋转是否为相对于世界 default: false |
 | `absoluteScale?` `boolean` |  缩放是否为相对于世界 default: false |
+
+
+___
+
+### setCustomProperty <Score text="setCustomProperty" /> 
+
+• **setCustomProperty**(`propertyName`, `value`): `void` 
+
+设置自定义属性
+
+#### Parameters
+
+| `propertyName` `string` | - |
+| :------ | :------ |
+| `value` `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype) | 属性值 |
 
 
 ___

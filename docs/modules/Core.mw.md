@@ -19,14 +19,14 @@ mw
 | 广告类型|
 | [AnimSlot](../enums/mw.AnimSlot.md)  |
 | 动画插槽|
+| [AnimationBlendMode](../enums/mw.AnimationBlendMode.md)  |
+| 动画曲线|
 | [AnimationMode](../enums/mw.AnimationMode.md)  |
 | 动画模式|
 | [AppearanceType](../enums/mw.AppearanceType.md)  |
 | 形象类型|
 | [AssetIconSize](../enums/mw.AssetIconSize.md)  |
 | 图标的分辨率|
-| [AssetNonHumanoidSlotType](../enums/mw.AssetNonHumanoidSlotType.md)  |
-| 非人形角色插槽类型|
 | [AssetType](../enums/mw.AssetType.md)  |
 | 资源类型|
 | [AttenuationDistanceModel](../enums/mw.AttenuationDistanceModel.md)  |
@@ -134,6 +134,8 @@ mw
 | 日志等级|
 | [MaskButtonType](../enums/mw.MaskButtonType.md)  |
 | 遮罩类型|
+| [MenuPlacement](../enums/mw.MenuPlacement.md)  |
+| 菜单呼出位置枚举|
 | [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md)  |
 | 枚举各个通道的使用与接收方|
 | [MessageState](../enums/mw.MessageState.md)  |
@@ -317,6 +319,8 @@ mw
 | 调色板|
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md)  |
 | 屏幕坐标转换结果|
+| [DataFile](../classes/mw.DataFile.md)  |
+| 数据文件获取工具|
 | [DataStorage](../classes/mw.DataStorage.md)  |
 | 数据存储|
 | [DebugService](../classes/mw.DebugService.md)  |
@@ -409,6 +413,10 @@ mw
 | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0|
 | [ListItemStyle](../classes/mw.ListItemStyle.md)  |
 | 背景图片风格类型|
+| [ListView](../classes/mw.ListView.md)  |
+| 列表视图|
+| [ListViewItemDataBase](../classes/mw.ListViewItemDataBase.md)  |
+| 列表视图节点数据基类|
 | [LocaleUtil](../classes/mw.LocaleUtil.md)  |
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
@@ -515,6 +523,8 @@ mw
 | 文本|
 | [TextStyle](../classes/mw.TextStyle.md)  |
 | 文本风格类型|
+| [TileView](../classes/mw.TileView.md)  |
+| 平铺视图|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
 | [TouchPad](../classes/mw.TouchPad.md)  |
@@ -598,6 +608,8 @@ mw
 | 发送消息的结果|
 | **[ChatEvent](Core.mw.md#chatevent)**: (`jsonData`: `string`) => `void`  |
 | 收到MGS事件调用|
+| **[CustomPropertyType](Core.mw.md#custompropertytype)**: `number`  `boolean`  `string`  [`Vector2`](../classes/mw.Vector2.md)  [`Vector`](../classes/mw.Vector.md)  [`Vector4`](../classes/mw.Vector4.md)  [`Rotation`](../classes/mw.Rotation.md)  [`LinearColor`](../classes/mw.LinearColor.md)  |
+| 自定义属性类型|
 | **[DelegateFuncType](Core.mw.md#delegatefunctype)**: (...`arg`: `unknown`[]) => `unknown` <Badge type="tip" text="other" />  |
 | 代理回调函数签名|
 | **[DownloadDataResponse](Core.mw.md#downloaddataresponse)**: () => `void`  |
@@ -626,8 +638,6 @@ mw
 | 移动状态切换委托|
 | **[OnOrderDelivered](Core.mw.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`  |
 | 服务端接收发货通知的消息格式|
-| **[OnRecvChatMessage](Core.mw.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void`  |
-| 接收聊天信息回调方法类型|
 | **[OnViewLayoutSwitched](Core.mw.md#onviewlayoutswitched)**: (`newState`: `number`) => `void`  |
 | 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Core.mw.md#onviewrefreshed)**: () => `void`  |
@@ -635,7 +645,7 @@ mw
 | **[PublishedUGCGameInfo](Core.mw.md#publishedugcgameinfo)**: `Object`  |
 | 发布成功的UGC消费态游戏信息|
 | **[RedeemResponse](Core.mw.md#redeemresponse)**: `Object`  |
-| status : 兑换状态。|
+| status : 兑换状态。 \|
 | **[ReleaseGameData](Core.mw.md#releasegamedata)**: `Object`  |
 | 已发布的游戏数据，用于继承服务器数据。|
 | **[SetAppearanceDataCallback](Core.mw.md#setappearancedatacallback)**: (`APIName`: `string`) => `void`  |
@@ -703,6 +713,8 @@ mw
 | 系统 zOrder开始于600000|
 | **[UILayerTop](Core.mw.md#uilayertop)**: ``4``  |
 | 顶层 zOrder开始于400000|
+| **[Unreliable](Core.mw.md#unreliable)**: `FunctionOption`   |
+| 不可靠rpc|
 
 ### Functions <Score text="Functions" /> 
 | **[Component](Core.mw.md#component)**<`T`: extends typeof [`Script`](../classes/mw.Script.md)\>(`component`: `T`): `T`: extends typeof [`Script`](../classes/mw.Script.md)   |
@@ -734,8 +746,6 @@ mw
 | 创建空的 UI|
 | **[endDragDrop](Core.mw.md#enddragdrop)**(`InReply`: [`EventReply`](../classes/mw.EventReply.md)): `void` <Badge type="tip" text="client" />  |
 | 中断一个拖拽事件, 传入一个操作的事件|
-| **[executiveCommand](Core.mw.md#executivecommand)**(`cmd`: `string`): `void` <Badge type="tip" text="client" />  |
-| 执行命令|
 | **[fetch](Core.mw.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/mw.RequestInit.md)): `Promise`<[`Response`](../interfaces/mw.Response.md)\>   |
 | HTTP请求|
 | **[findUIScript](Core.mw.md#finduiscript)**(`UI`: [`Widget`](../classes/mw.Widget.md)): [`UIScript`](../classes/mw.UIScript.md) <Badge type="tip" text="client" />  |
@@ -910,6 +920,14 @@ ___
 ##### Returns
 
 `void`
+
+___
+
+### CustomPropertyType <Score text="CustomPropertyType" /> 
+
+Ƭ **CustomPropertyType**: `number`  `boolean`  `string`  [`Vector2`](../classes/mw.Vector2.md)  [`Vector`](../classes/mw.Vector.md)  [`Vector4`](../classes/mw.Vector4.md)  [`Rotation`](../classes/mw.Rotation.md)  [`LinearColor`](../classes/mw.LinearColor.md)
+
+自定义属性类型
 
 ___
 
@@ -1202,28 +1220,6 @@ ___
 
 ___
 
-### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
-
-Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
-
-#### Type declaration
-
-• (`nCount`, `ChatContent`): `void`
-
-接收聊天信息回调方法类型
-
-##### Parameters
-
-| `nCount` | `number` |
-| :------ | :------ |
-| `ChatContent` | `string` |
-
-##### Returns
-
-`void`
-
-___
-
 ### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
@@ -1279,32 +1275,24 @@ ___
 
 Ƭ **RedeemResponse**: `Object`
 
-status : 兑换状态。
-
-01 ： 兑换成功
-
-02 ： 兑换失败（兑换码不存在）
-
-03 ： 兑换失败（兑换码不在使用期限内）
-
-04 ： 兑换失败（兑换码已使用）
-
-05 ： 兑换失败（兑换超时）
-
-06 ： 兑换失败（礼包库存不足）
-
-07 ： 兑换失败（超出兑换次数）
-
-message : 兑换信息
-
-当兑换状态为成功时：兑换信息为礼包内容道具详情。
-
-当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。
+status : 兑换状态。 \
+01 ： 兑换成功 \
+02 ： 兑换失败（兑换码不存在） \
+03 ： 兑换失败（兑换码不在使用期限内） \
+04 ： 兑换失败（兑换码已使用） \
+05 ： 兑换失败（兑换超时） \
+06 ： 兑换失败（礼包库存不足） \
+07 ： 兑换失败（超出兑换次数） \
+message : 兑换信息 \
+当兑换状态为成功时：兑换信息为礼包内容道具详情。 \
+当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。 \
+player : 兑换的玩家的Gameplay.Player
 
 #### Type declaration
 
 | `message` | `string` |
 | :------ | :------ |
+| `player` | [`Player`](../classes/mw.Player.md) |
 | `status` | `number` |
 
 ___
@@ -1746,6 +1734,14 @@ ___
 
 顶层 zOrder开始于400000
 
+___
+
+### Unreliable <Score text="Unreliable" /> 
+
+• `Const` **Unreliable**: `FunctionOption` 
+
+不可靠rpc
+
 ## Functions
 
 ### Component <Score text="Component" /> 
@@ -2003,20 +1999,6 @@ ___
 #### Parameters
 
 | `InReply` [`EventReply`](../classes/mw.EventReply.md) | 事件 |
-| :------ | :------ |
-
-
-___
-
-### executiveCommand <Score text="executiveCommand" /> 
-
-• **executiveCommand**(`cmd`): `void` <Badge type="tip" text="client" />
-
-执行命令
-
-#### Parameters
-
-| `cmd` `string` | 命令字符串 <br> default: null 必填参数 <br> range: 不限制 |
 | :------ | :------ |
 
 

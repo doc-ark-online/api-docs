@@ -57,6 +57,7 @@ Classes
 | :-----| :-----| :-----|
 | [DataCenterC](classes/mwext.DataCenterC.md) | 客户端数据中心，里面存放着当前玩家的数据 | [基类](groups/基类.基类.md) |
 | [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据。 | [基类](groups/基类.基类.md) |
+| [DataFile](classes/mw.DataFile.md) | 数据文件获取工具 | [工具](groups/工具.工具.md) |
 | [DataStorage](classes/mw.DataStorage.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [DebugService](classes/mw.DebugService.md) | debug调试服务 | [服务](groups/服务.服务.md) |
 | [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [工具](groups/工具.工具.md) |
@@ -150,6 +151,8 @@ Classes
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
 | [LinearColor](classes/mw.LinearColor.md) | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
 | [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
+| [ListView](classes/mw.ListView.md) | 列表视图 | [界面](groups/界面.界面.md) |
+| [ListViewItemDataBase](classes/mw.ListViewItemDataBase.md) | 列表视图节点数据基类 | [GUI](groups/GUI.GUI.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
@@ -247,6 +250,7 @@ Classes
 | [TeleportService](classes/mw.TeleportService.md) | 多场景和传送服务 | [服务](groups/服务.服务.md) |
 | [TextBlock](classes/mw.TextBlock.md) | 文本 | [界面](groups/界面.界面.md) |
 | [TextStyle](classes/mw.TextStyle.md) | 文本风格类型 | [界面](groups/界面.界面.md) |
+| [TileView](classes/mw.TileView.md) | 平铺视图 | [界面](groups/界面.界面.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [工具](groups/工具.工具.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [界面](groups/界面.界面.md) |
 | [Transform](classes/mw.Transform.md) | 三维变换 | [基础类型](groups/基础类型.基础类型.md) |

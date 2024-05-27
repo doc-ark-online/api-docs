@@ -56,6 +56,8 @@ PlayerState基类
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 
 
@@ -79,7 +81,7 @@ PlayerState基类
 | 销毁组件对象|
 | **[onDestroy](mw.Script.md#ondestroy)**(): `void`   |
 | 生命周期函数 - 被销毁时调用|
-| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`   |
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `boolean`  `void`   |
 | 属性被同步事件 ClientOnly|
 | **[onStart](mw.Script.md#onstart)**(): `void`   |
 | 生命周期函数 - 脚本开始执行时调用|
@@ -87,6 +89,8 @@ PlayerState基类
 | 生命周期函数 - 每帧执行函数|
 :::
 
+
+## Properties
 
 ## Accessors
 

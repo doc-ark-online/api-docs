@@ -224,7 +224,7 @@ export default class SoundExample extends mw.Script {
     }
 
     private async test(): `Promise`<`void`\> {
-        const player = await mw.asyncGetCurrentPlayer();
+        const player = await mw.asyncGetLocalPlayer();
         const bgmSoundAssetId = "12721";
         const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
@@ -375,7 +375,7 @@ export default class SoundExample extends mw.Script {
     }
 
     private async test(): `Promise`<`void`\> {
-        const player = await mw.asyncGetCurrentPlayer();
+        const player = await mw.asyncGetLocalPlayer();
         const boomSoundAssetId = "13896";
         InputUtil.onKeyDown(Keys.F, () => {
             SoundService.playSound(boomSoundAssetId);
@@ -497,7 +497,7 @@ export default class SoundExample extends mw.Script {
     }
 
     private async test(): `Promise`<`void`\> {
-        const player = await mw.asyncGetCurrentPlayer();
+        const player = await mw.asyncGetLocalPlayer();
         const boomSoundAssetId = "13896";
         const boomSoundAssetId2 = "20479";
         let isPlay = false;
@@ -582,7 +582,7 @@ export default class SoundExample extends mw.Script {
     }
 
     private async test(): `Promise`<`void`\> {
-        const player = await mw.asyncGetCurrentPlayer();
+        const player = await mw.asyncGetLocalPlayer();
         const boomSoundAssetId = "13896";
         let isPlay = false;
         InputUtil.onKeyDown(Keys.F, () => {

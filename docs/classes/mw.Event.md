@@ -42,12 +42,18 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 | 广播场景级的事件，在同一个场景中的不同房间，都可以收到该事件广播|
 | **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
 | 服务器发送事件给所有客户端|
+| **[dispatchToAllClientUnreliable](mw.Event.md#dispatchtoallclientunreliable)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
+| 服务器发送不可靠事件给所有客户端，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失|
 | **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
 | 服务器发送事件给指定客户端|
+| **[dispatchToClientUnreliable](mw.Event.md#dispatchtoclientunreliable)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />  |
+| 服务器发送不可靠事件给指定客户端，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失|
 | **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)   |
 | 执行已添加的本地事件。|
 | **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />  |
 | 客户端发送事件给服务器|
+| **[dispatchToServerUnreliable](mw.Event.md#dispatchtoserverunreliable)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />  |
+| 客户端发送不可靠事件给服务器，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失|
 | **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void`   |
 | 移除事件监听器|
 
@@ -288,11 +294,87 @@ ___
 
 ___
 
+### dispatchToAllClientUnreliable <Score text="dispatchToAllClientUnreliable" /> 
+
+• `Static` **dispatchToAllClientUnreliable**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
+
+服务器发送不可靠事件给所有客户端，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失
+
+#### Parameters
+
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
+::: warning Precautions
+
+应在服务器逻辑里调用
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在客户端中看到每帧打印ok,代码如下：
+</span>
+
+```ts
+@Component
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
+         this.useUpdate = true;
+         // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
+         // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if(SystemUtil.isClient()){
+             Event.addServerListener("eventOne",()=>{console.log("ok")});
+         }
+     }
+     protected onUpdate(dt: number): void {
+         // 服务器每帧对所有客户端发送 eventOne 事件
+         // 服务端发送 eventOne 事件可以看作灯的开关，每帧打开一次灯泡的开关
+         if (SystemUtil.isServer()){
+             Event.dispatchToAllClientUnreliable("eventOne");
+         }
+     }
+ }
+```
+
+___
+
 ### dispatchToClient <Score text="dispatchToClient" /> 
 
 • `Static` **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给指定客户端
+
+#### Parameters
+
+| `player` [`Player`](mw.Player.md) | 客户端 |
+| :------ | :------ |
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
+::: warning Precautions
+
+应在服务器逻辑里调用
+
+:::
+
+___
+
+### dispatchToClientUnreliable <Score text="dispatchToClientUnreliable" /> 
+
+• `Static` **dispatchToClientUnreliable**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
+
+服务器发送不可靠事件给指定客户端，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失
 
 #### Parameters
 
@@ -369,6 +451,54 @@ ___
          // 客户端发送 eventOne 事件可以看作灯的开关
          if(SystemUtil.isClient()){
              Event.dispatchToServer("eventOne");
+         }
+         // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
+         // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if (SystemUtil.isServer()){
+             Event.addClientListener("eventOne" ,()=>{console.log("ok")});
+         }
+     }
+ }
+```
+
+___
+
+### dispatchToServerUnreliable <Score text="dispatchToServerUnreliable" /> 
+
+• `Static` **dispatchToServerUnreliable**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />
+
+客户端发送不可靠事件给服务器，不可靠事件没有重发机制，当遭遇网络波动或者其他情况时会丢失
+
+#### Parameters
+
+| `eventName` `string` | 事件名 <br> range: 长度不做限制，但建议设置合适的长度和名称。 |
+| :------ | :------ |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
+::: warning Precautions
+
+应在客户端逻辑里面调用
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"EventSample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在服务端中看到每帧打印ok,代码如下：
+</span>
+
+```ts
+ @Component
+ export default class EventSample extends Script {
+     protected async onStart(): `Promise`<`void`\> {
+         this.useUpdate = true;
+         // 客户端向服务器发送 eventOne 事件
+         // 客户端发送 eventOne 事件可以看作灯的开关
+         if(SystemUtil.isClient()){
+             Event.dispatchToServerUnreliable("eventOne");
          }
          // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
          // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了

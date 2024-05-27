@@ -28,6 +28,8 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 玩家离开委托|
 | **[onPlayerReconnect](mw.Player.md#onplayerreconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
 | 玩家重连委托|
+| **[onUserAvatarUpdated](mw.Player.md#onuseravatarupdated)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
+| 用户平台形象变化时，执行绑定函数|
 
 ### Accessors <Score text="Accessors" /> 
 | **[character](mw.Player.md#character)**(): [`Character`](mw.Character.md)   |
@@ -349,6 +351,43 @@ export default class Example_Player_OnPlayerReconnect extends Script {
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onUserAvatarUpdated <Score text="onUserAvatarUpdated" /> 
+
+▪ `Static` **onUserAvatarUpdated**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+
+用户平台形象变化时，执行绑定函数
+
+::: warning Precautions
+
+当玩家切出游戏，进入角色编辑器修改外观保存后，切回游戏时触发该事件。
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Player_onUserAvatarUpdated"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【用户平台形象变化】事件绑定一个函数：请求平台形象并应用与角色。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Player_onUserAvatarUpdated extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            Player.onUserAvatarUpdated.add(() => {
+                AccountService.downloadData(Player.localPlayer.character, () => {}, 0);
             });
         }
     }
@@ -899,7 +938,11 @@ ___
 | `T` | PlayerState实例 |
 | :------ | :------ |
 
-此类是个基类，开发者可继承，继承它的类可给指定客户端同步属性的功能。此类不需要有接口。
+PlayerState 对象的作用是帮助游戏追踪和管理玩家的个人数据。它存储了与每个玩家相关的信息，这样游戏就可以根据需要随时访问和更新这些信息。
+
+举个例子来说，假设你正在玩一款多人射击游戏。每个玩家都有一个 PlayerState 对象，其中包含了玩家的得分、击杀数和死亡数等数据。当玩家击败敌人时，游戏会将得分加到对应玩家的PlayerState中。这样，游戏就可以根据每个玩家的PlayerState来显示排行榜或者判断胜负。
+
+总的来说，用于跟踪和存储与每个玩家相关的数据和状态。它帮助游戏管理玩家的个人信息，如得分、生命值等，并在多人游戏中确保玩家状态的同步。通过 PlayerState，游戏可以更好地处理多人游戏中的个人和团队数据，以提供更丰富的游戏体验。
 
 <span style="font-size: 14px;">
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值。

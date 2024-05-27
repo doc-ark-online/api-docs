@@ -10,10 +10,10 @@ Enums
 | [AdsState](enums/mw.AdsState.md) | 广告状态，调用show方法的时候可能返回的广告状态 | [服务](groups/服务.服务.md) |
 | [AdsType](enums/mw.AdsType.md) | 广告类型 | [服务](groups/服务.服务.md) |
 | [AnimSlot](enums/mw.AnimSlot.md) | 动画插槽 | [动画](groups/动画.动画.md) |
+| [AnimationBlendMode](enums/mw.AnimationBlendMode.md) | 动画曲线 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [AnimationMode](enums/mw.AnimationMode.md) | 动画模式 | [动画](groups/动画.动画.md) |
 | [AppearanceType](enums/mw.AppearanceType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
 | [AssetIconSize](enums/mw.AssetIconSize.md) | 图标的分辨率 | [界面](groups/界面.界面.md) |
-| [AssetNonHumanoidSlotType](enums/mw.AssetNonHumanoidSlotType.md) | 非人形角色插槽类型 | [角色系统](groups/角色系统.角色系统.md) |
 | [AssetType](enums/mw.AssetType.md) | 资源类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [AttenuationDistanceModel](enums/mw.AttenuationDistanceModel.md) | 音效衰减函数模型 | [场景](groups/场景.场景.md) |
 | [AttenuationShape](enums/mw.AttenuationShape.md) | 音效衰减形状 | [场景](groups/场景.场景.md) |
@@ -123,6 +123,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [MaskButtonType](enums/mw.MaskButtonType.md) | 遮罩类型 | [界面](groups/界面.界面.md) |
+| [MenuPlacement](enums/mw.MenuPlacement.md) | 菜单呼出位置枚举 | [界面](groups/界面.界面.md) |
 | [MessageChannelReceiver](enums/mw.MessageChannelReceiver.md) | 枚举各个通道的使用与接收方 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageState](enums/mw.MessageState.md) | 发送消息的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageType](enums/mw.MessageType.md) | 发送消息的类型 | [基础类型](groups/基础类型.基础类型.md) |
