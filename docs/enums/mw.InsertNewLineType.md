@@ -2,7 +2,7 @@
 
 # InsertNewLineType <Badge type="tip" text="Enumeration" /> <Score text="InsertNewLineType" />
 
-输入款回车键功能
+输入框回车键功能
 
 ## Table of contents
 

@@ -6,6 +6,40 @@
 
 --------------------------------------
 
+什么是角色？
+
+角色是指代表玩家游戏实体。它是游戏中能够在虚拟世界中移动、与环境和其他角色进行交互的主要对象。可以将 Character 看作是游戏中的角色扮演者，它可以是玩家控制的角色或由游戏系统控制的角色。
+
+![角色](https://cdn.233xyx.com/online/V9WvFIuNOivQ1701245655341.gif)
+
+角色具备哪些功能？
+
+移动和交互。Character 具备在游戏世界中移动和与环境进行交互的能力。它可以行走、跑动、跳跃或飞行等，根据游戏规则和角色设计的不同， Character 可以执行各种动作。
+
+功能和行为。Character 可以具备各种功能和行为。例如，一个角色可以是战士，具有攻击和防御技能；另一个角色可以是商人，负责交易和提供物品。 Character 的功能和行为由游戏开发者根据游戏需求进行定义和实现。
+
+总的来说：
+
+1. 控制角色移动：你可以使用它来指定角色的移动速度、方向和加速度等参数。它允许你以编程的方式控制角色的运动，例如让角色向前移动、旋转或跳跃等。并支持多种移动方式：例如，它可以实现直线运动、旋转、跳跃、游泳、蹲伏和飞行等。根据你的游戏需求，你可以选择合适的移动方式，并使用对应接口来实现。
+
+![角色](https://cdn.233xyx.com/online/Zt8eV42ByG9u1701244956943.png)
+
+2. 处理物理模拟与碰撞：它可以使用物理引擎来模拟角色的重力、碰撞和惯性等效果。通过物理模拟，角色可以与游戏世界中的其他对象进行交互，并受到合理的物理影响。执行碰撞检测：它可以检测角色与墙壁、地面或其他角色的碰撞，并采取相应的行动。这有助于实现更真实和可靠的角色移动和交互。
+
+3. 处理角色外观：可以给角色赋予各种各样的外貌。为角色选择合适的服装、装备和特征。无论是超级英雄的紧身服、中世纪骑士的盔甲还是未来战士的高科技装备，感受到角色的独特风格和个性。
+
+4. 实现生动的动画：还能赋予角色生动的动画效果。能够让角色在游戏中跳跃、奔跑、战斗，甚至是展现出各种特殊技能和动作。
+
+![角色](https://cdn.233xyx.com/online/17KojkcDWZuD1702177797656.png)
+
+其中比较重要的：
+
+- addMovement 函数控制角色沿着给定方向移动。
+
+- loadAnimation 函数将左侧动画资源加载在角色身上，使角色自如的使用多种动作。
+
+- description 属性更改角色外观，左侧栏中提供角色大量的衣服、饰品等资源，传入资源ID字符串进行随意更换外观。
+
 <span style="font-size: 14px;">
 使用示例: 生成一个角色
 </span>
@@ -13,7 +47,6 @@
 ```ts
 @Component
  export default class NewExample extends Script {
-
      protected onStart(): void {
          GameObject.asyncSpawn<Model>("183107",{transform: new Transform(new Vector(100,0,0),new Rotation(0,0,0),new Vector(1,1,1))}).then(()=>{
              console.log("233娘 success！");
@@ -44,21 +77,21 @@
 | :-----|
 | 获取角色的飞行制动速率|
 | **[brakingDecelerationSwimming](mw.Character.md#brakingdecelerationswimming)**(): `number`   |
-| 获取角色游泳制动速率|
+| 获取角色游泳制动速率\|
 | **[brakingDecelerationWalking](mw.Character.md#brakingdecelerationwalking)**(): `number`   |
-| 设置角色行走制动速率。|
+| 设置角色行走制动速率。\|
 | **[canJumpOutOfWater](mw.Character.md#canjumpoutofwater)**(): `boolean`   |
 | 获取角色是否可以跳出水面到陆地上|
 | **[canStandOn](mw.Character.md#canstandon)**(): `boolean`   |
-| 获取角色是否可以被其他玩家站立。|
+| 获取角色是否可以被其他玩家站立。\|
 | **[capsuleCorrectionEnabled](mw.Character.md#capsulecorrectionenabled)**(): `boolean`   |
-| 获取角色当前是否使用胶囊体修正|
+| 获取角色当前是否使用胶囊体修正\|
 | **[characterType](mw.Character.md#charactertype)**(): [`CharacterType`](../enums/mw.CharacterType.md)  |
-| 获取角色是什么类型|
+| 获取角色是什么类型\|
 | **[collisionExtent](mw.Character.md#collisionextent)**(): [`Vector`](mw.Vector.md)   |
-| 获取包裹角色碰撞体的形状大小|
+| 获取包裹角色碰撞体的形状大小\|
 | **[collisionShape](mw.Character.md#collisionshape)**(): [`CustomShapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md)](../enums/mw.CustomShapeType.md)   |
-| 获取角色碰撞形状（胶囊体型、球型、盒型）|
+| 获取角色碰撞形状（胶囊体型、球型、盒型）\|
 | **[collisionWithOtherCharacterEnabled](mw.Character.md#collisionwithothercharacterenabled)**(): `boolean`   |
 | 获取角色当前是否可以与其他角色产生碰撞。|
 | **[complexMovementEnabled](mw.Character.md#complexmovementenabled)**(): `boolean`  |
@@ -72,65 +105,69 @@
 | **[currentSubStance](mw.Character.md#currentsubstance)**(): [`SubStance`](mw.SubStance.md)  |
 | 获取当前正在播放的二级姿态，二级姿态类型为SubStance|
 | **[description](mw.Character.md#description)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 角色外观配置|
+| 角色外观配置\|
 | **[displayName](mw.Character.md#displayname)**(): `string`  |
-| 获取角色名称|
+| 获取角色名称\|
 | **[driftControl](mw.Character.md#driftcontrol)**(): `number`   |
-| 获取角色在空中的灵活度|
+| 获取角色在空中的灵活度\|
 | **[forceUpdateMovement](mw.Character.md#forceupdatemovement)**(`value`: `boolean`): `void`   |
 | 强制更新移动|
 | **[gravityScale](mw.Character.md#gravityscale)**(): `number`   |
-| 获取重力的倍率|
+| 获取重力的倍率\|
 | **[groundFriction](mw.Character.md#groundfriction)**(): `number`   |
 | 获取地面摩檫力|
 | **[groundFrictionEnabled](mw.Character.md#groundfrictionenabled)**(): `boolean`   |
-| 获取单独制动摩擦状态|
+| 获取单独制动摩擦状态\|
 | **[horizontalBrakingDecelerationFalling](mw.Character.md#horizontalbrakingdecelerationfalling)**(): `number`   |
-| 获取角色下落制动速率|
+| 获取角色下落制动速率\|
 | **[isCrouching](mw.Character.md#iscrouching)**(): `boolean`   |
 | 获取角色是否正在蹲下|
 | **[isDescriptionReady](mw.Character.md#isdescriptionready)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取当前角色外观是否准备完毕。|
+| 获取当前角色外观是否准备完毕。\|
 | **[isJumping](mw.Character.md#isjumping)**(): `boolean`   |
 | 获取角色是否正在跳跃|
 | **[isMoving](mw.Character.md#ismoving)**(): `boolean`   |
 | 获取角色是否正在移动|
 | **[jumpMaxCount](mw.Character.md#jumpmaxcount)**(): `number`   |
-| 获取角色最大可跳跃次数|
+| 获取角色最大可跳跃次数\|
 | **[maxAcceleration](mw.Character.md#maxacceleration)**(): `number`   |
-| 获取角色最大加速度|
+| 获取角色最大加速度\|
 | **[maxFallingSpeed](mw.Character.md#maxfallingspeed)**(): `number`   |
-| 设置角色最大下落速度|
+| 设置角色最大下落速度\|
 | **[maxFlySpeed](mw.Character.md#maxflyspeed)**(): `number`   |
-| 获取角色最大飞行速度|
+| 获取角色最大飞行速度\|
 | **[maxJumpHeight](mw.Character.md#maxjumpheight)**(): `number`   |
-| 获取角色最大跳跃高度|
+| 获取角色最大跳跃高度\|
 | **[maxStepHeight](mw.Character.md#maxstepheight)**(): `number`   |
-| 获取角色最大可跨越高度|
+| 获取角色最大可跨越高度\|
 | **[maxSwimSpeed](mw.Character.md#maxswimspeed)**(): `number`   |
-| 获取角色最大游泳速度|
+| 获取角色最大游泳速度\|
 | **[maxWalkSpeed](mw.Character.md#maxwalkspeed)**(): `number`   |
-| 获取角色的最大行走速度|
+| 获取角色的最大行走速度\|
 | **[maxWalkSpeedCrouched](mw.Character.md#maxwalkspeedcrouched)**(): `number`   |
 | 获取角色最大蹲伏行走速度|
-| **[meshOffset](mw.Character.md#meshoffset)**(): [`Vector`](mw.Vector.md)   |
+| **[meshPositionOffset](mw.Character.md#meshpositionoffset)**(): [`Vector`](mw.Vector.md)   |
 | 获取mesh相对角色坐标点的偏移|
+| **[meshRotationOffset](mw.Character.md#meshrotationoffset)**(): [`Rotation`](mw.Rotation.md)   |
+| 获取mesh相对角色旋转的偏移|
 | **[moveFacingDirection](mw.Character.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md)   |
-| 获取角色运动面朝方向|
+| 获取角色运动面朝方向\|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md)   |
-| 获取角色运动正方向|
+| 获取角色运动正方向\|
 | **[outOfWaterVerticalSpeed](mw.Character.md#outofwaterverticalspeed)**(): `number`   |
 | 出水时垂直方向速度|
 | **[overheadUI](mw.Character.md#overheadui)**(): [`UIWidget`](mw.UIWidget.md) <Badge type="tip" text="client" />  |
 | 获取角色头顶名字的界面|
 | **[physicsEnabled](mw.Character.md#physicsenabled)**(): `boolean`  |
 | 获取角色物理模拟状态|
+| **[ragdollEnabled](mw.Character.md#ragdollenabled)**(): `boolean`  |
+| 启用布娃娃|
 | **[rotateRate](mw.Character.md#rotaterate)**(): `number`   |
-| 获取角色最大转向速度|
+| 获取角色最大转向速度\|
 | **[velocity](mw.Character.md#velocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取角色当前移动速度|
 | **[walkableFloorAngle](mw.Character.md#walkablefloorangle)**(): `number`   |
-| 获取角色可行走的最大角度|
+| 获取角色可行走的最大角度\|
 | **[nameDisplayDistance](mw.Character.md#namedisplaydistance)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前客户端所有角色头顶显示名称可见距离。|
 | **[nameVisible](mw.Character.md#namevisible)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -150,49 +187,55 @@
 ### Methods <Score text="Methods" /> 
 | **[addImpulse](mw.Character.md#addimpulse)**(`vector`: [`Vector`](mw.Vector.md), `ignoreMass?`: `boolean`): `void` <Badge type="tip" text="server" />  |
 | :-----|
-| 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。|
+| 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
-| 沿着给定的方向向量添加移动输入|
-| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)): `void`   |
-| 将物体附着到人物角色的指定插槽|
+| 沿着给定的方向向量添加移动输入\|
+| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
+| 将物体附着到人物角色的指定插槽\|
 | **[cancelHeadFollow](mw.Character.md#cancelheadfollow)**(): `void` <Badge type="tip" text="client" />  |
 | 取消头部追踪|
 | **[changeState](mw.Character.md#changestate)**(`stateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)): `void`   |
 | 改变角色的状态|
 | **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void`   |
-| 清空角色外观数据|
+| 清空角色外观数据\|
 | **[detachAllFromSlot](mw.Character.md#detachallfromslot)**(`param?`: `Object`): `void`   |
-| 将角色插槽附着的对象全部分离|
+| 将角色插槽附着的对象全部分离\|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 将物体从插槽中分离|
+| **[getCenterVertexByMorphName](mw.Character.md#getcentervertexbymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)   |
+| 通过头部模型MorphName实时获取中心顶点位置|
 | **[getCurrentState](mw.Character.md#getcurrentstate)**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md)   |
 | 获取当前角色的状态|
 | **[getDescription](mw.Character.md#getdescription)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 获取角色外观数据|
+| 获取角色外观数据\|
 | **[getSlotWorldPosition](mw.Character.md#getslotworldposition)**(`slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): [`Vector`](mw.Vector.md)   |
-| 获取角色插槽的世界坐标|
+| 获取角色插槽的世界坐标\|
+| **[getVertexArrayByMorphName](mw.Character.md#getvertexarraybymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)[]   |
+| 通过头部模型MorphName实时获取所有顶点位置|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md)   |
-| 通过头部模型顶点 index 实时获取顶点位置|
+| 通过头部模型顶点 index 实时获取顶点位置\|
 | **[headFollow](mw.Character.md#headfollow)**(`target`: ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
 | 头部追踪|
+| **[jump](mw.Character.md#jump)**(): `void`   |
+| 使角色触发一个跳跃行为|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
-| 为角色加载一个动画资源|
+| 为角色加载一个动画资源\|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
-| 为角色加载一个基础姿态|
+| 为角色加载一个基础姿态\|
 | **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md)   |
 | 为角色加载一个二级姿态|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void`   |
 | 为角色设置不同形状不同大小的碰撞体|
 | **[setDescription](mw.Character.md#setdescription)**(`data`: `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md)): `void`   |
-| 设置角色外观数据|
+| 设置角色外观数据\|
 | **[setStateEnabled](mw.Character.md#setstateenabled)**(`characterStateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `enabled`: `boolean`): `void`   |
 | 设置角色状态开关|
 | **[swimDown](mw.Character.md#swimdown)**(`speed`: `number`): `void`   |
-| 使角色在水中下潜|
+| 使角色在水中下潜\|
 | **[swimUp](mw.Character.md#swimup)**(`speed`: `number`): `void`   |
-| 使角色在水中上浮|
+| 使角色在水中上浮\|
 | **[syncDescription](mw.Character.md#syncdescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 同步角色外观数据|
+| 同步角色外观数据\|
 
 
 ::: details click
@@ -206,6 +249,8 @@
 
 
 ## Properties
+
+___
 
 ### onDescriptionChange <Score text="onDescriptionChange" /> 
 
@@ -383,6 +428,7 @@ ___
 • **onStateChanged**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`prevState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `currentState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)) => `void`\>
 
 角色状态改变回调
+
 <span style="font-size: 14px;">
 使用示例:按0-9，Z、X、C、V后查看打印
 </span>
@@ -488,8 +534,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色飞行制动速率
-
+设置角色飞行制动速率\
 角色在空中飞行时减速且不施加加速度。
 
 #### Parameters
@@ -592,8 +637,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色游泳制动速率
-
+获取角色游泳制动速率\
 角色在游泳状态下移动时受到的减速度。
 
 
@@ -731,10 +775,8 @@ ___
 <td style="text-align: left">
 
 
-设置角色行走制动速率。
-
-行走制动速率是指角色在行走状态下的刹车减速度。当角色在行走状态下停止移动或改变方向时，刹车减速度会影响角色减速的速率。
-
+设置角色行走制动速率。\
+行走制动速率是指角色在行走状态下的刹车减速度。当角色在行走状态下停止移动或改变方向时，刹车减速度会影响角色减速的速率。\
 较高的值将导致角色更快地减速，而较低的值将导致角色减速得更慢。
 
 
@@ -848,8 +890,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色是否可以跳出水面到陆地上
-
+设置角色是否可以跳出水面到陆地上\
 角色通过 swimUp 接口上浮到水面时，可打开此属性跳出水面。
 
 #### Parameters
@@ -974,8 +1015,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色是否可以被其他玩家站立。
-
+获取角色是否可以被其他玩家站立。\
 true表示其他角色可以站到玩家头上。false表示其他角色不可以站到玩家头上。
 
 
@@ -1066,8 +1106,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色当前是否使用胶囊体修正
-
+获取角色当前是否使用胶囊体修正\
 true代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 
@@ -1153,8 +1192,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色是什么类型
-
+获取角色是什么类型\
 角色类型分为基础人形、高级人形和四足类型。
 
 
@@ -1261,8 +1299,7 @@ ___
 <td style="text-align: left">
 
 
-获取包裹角色碰撞体的形状大小
-
+获取包裹角色碰撞体的形状大小\
 角色碰撞盒形状的大小，决定角色与场景对象交互时检测碰撞范围的大小。
 
 
@@ -1353,8 +1390,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色碰撞形状（胶囊体型、球型、盒型）
-
+获取角色碰撞形状（胶囊体型、球型、盒型）\
 角色碰撞盒形状的大小，决定角色与场景对象交互时检测碰撞范围的大小。球体取xyz最小值，胶囊体半径取xy最小值，z为半长，盒体xyz为半长宽高。
 
 
@@ -1553,10 +1589,8 @@ ___
 <td style="text-align: left">
 
 
-是否启用复杂移动策略
-
-当开启复杂移动策略时，会根据当前的移动模式决定应该采取的移动逻辑。它会根据角色的输入、物理属性（如质量、摩擦力等）计算角色在当前帧应该移动的距离和方向。
-
+是否启用复杂移动策略\
+当开启复杂移动策略时，会根据当前的移动模式决定应该采取的移动逻辑。它会根据角色的输入、物理属性（如质量、摩擦力等）计算角色在当前帧应该移动的距离和方向。\
 实现了角色的高级移动逻辑和物理模拟，确保角色在游戏世界中按照预期的方式进行移动，并与周围的环境进行交互。
 
 #### Parameters
@@ -1845,8 +1879,7 @@ ___
 <td style="text-align: left">
 
 
-角色外观配置
-
+角色外观配置\
 返回值为 CharacterDescription 类。调用 description 变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。
 
 
@@ -1953,8 +1986,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色名称
-
+获取角色名称\
 角色名称默认会显示在角色头顶上方。
 
 
@@ -1968,8 +2000,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色名称
-
+设置角色名称\
 名字为随机初始化的一个英文名，可根据自己的喜好随意更换角色名字。
 
 #### Parameters
@@ -1990,7 +2021,6 @@ ___
 ```ts
 @Component
 export default class Example_Character extends Script {
-
     protected onStart(): void {
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
@@ -2030,8 +2060,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色在空中的灵活度
-
+获取角色在空中的灵活度\
 角色在空中时, 控制水平方向移动的灵活度；范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
 
 
@@ -2197,8 +2226,7 @@ ___
 <td style="text-align: left">
 
 
-获取重力的倍率
-
+获取重力的倍率\
 对于角色来说，重力会乘以该值。范围0~10, 过大和过小的值都会被限制。
 
 
@@ -2378,8 +2406,7 @@ ___
 <td style="text-align: left">
 
 
-获取单独制动摩擦状态
-
+获取单独制动摩擦状态\
 开启后使用行走制动速率进行计算摩擦效果，不开启则使用的是地面摩擦力进行计算摩擦效果。
 
 
@@ -2393,8 +2420,7 @@ ___
 <td style="text-align: left">
 
 
-设置单独制动摩擦状态
-
+设置单独制动摩擦状态\
 当角色处于运动状态，制动摩擦用于让角色去停止移动（当没有加速时）。
 
 #### Parameters
@@ -2476,8 +2502,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色下落制动速率
-
+获取角色下落制动速率\
 角色在下落状态下移动时受到的减速度。
 
 
@@ -2624,8 +2649,7 @@ ___
 <td style="text-align: left">
 
 
-获取当前角色外观是否准备完毕。
-
+获取当前角色外观是否准备完毕。\
 刚进入场景中或角色还未加载出外观衣服等时，isDescriptionReady为false，完全加载完成后变为true。
 
 
@@ -2868,8 +2892,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大可跳跃次数
-
+获取角色最大可跳跃次数\
 角色能够执行跳跃的最大次数。
 
 
@@ -2950,8 +2973,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大加速度
-
+获取角色最大加速度\
 角色移动时，角色可以达到的最大加速度
 
 
@@ -3046,8 +3068,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色最大下落速度
-
+设置角色最大下落速度\
 角色在下落状态下移动时，角色可达到的最大移动速度
 
 
@@ -3127,8 +3148,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大飞行速度
-
+获取角色最大飞行速度\
 角色在飞行状态下进行移动时，角色可达到的最大移动速度
 
 
@@ -3244,8 +3264,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大跳跃高度
-
+获取角色最大跳跃高度\
 角色跳跃时，从起跳位置到最高位置的距离。该值受重力影响。
 
 
@@ -3326,8 +3345,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大可跨越高度
-
+获取角色最大可跨越高度\
 角色跨越台阶时，台阶的最大高度，大于等于该高度角色均无法跨越。
 
 
@@ -3432,8 +3450,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大游泳速度
-
+获取角色最大游泳速度\
 角色在游泳状态下，可达到的最大移动速度。
 
 
@@ -3571,10 +3588,8 @@ ___
 <td style="text-align: left">
 
 
-获取角色的最大行走速度
-
-角色移动时，并不是直接变为最大速度，而是随着输入或其他控制，速度逐渐增加，最大行走速度为角色可以达到的最大速度。
-
+获取角色的最大行走速度\
+角色移动时，并不是直接变为最大速度，而是随着输入或其他控制，速度逐渐增加，最大行走速度为角色可以达到的最大速度。\
 同时也是跌倒时的最大横向速度。
 
 
@@ -3753,18 +3768,18 @@ export default class Example_MaxWalkSpeedCrouched extends Script {
 ```
 ___
 
-### meshOffset <Score text="meshOffset" /> 
+### meshPositionOffset <Score text="meshPositionOffset" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **meshOffset**(): [`Vector`](mw.Vector.md) 
+• `get` **meshPositionOffset**(): [`Vector`](mw.Vector.md) 
 
 </th>
 <th style="text-align: left">
 
-• `set` **meshOffset**(`offset`): `void` 
+• `set` **meshPositionOffset**(`offset`): `void` 
 
 </th>
 </tr></thead>
@@ -3799,6 +3814,52 @@ ___
 
 ___
 
+### meshRotationOffset <Score text="meshRotationOffset" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **meshRotationOffset**(): [`Rotation`](mw.Rotation.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **meshRotationOffset**(`offset`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取mesh相对角色旋转的偏移
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | mesh相对角色坐标点的偏移 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置mesh相对角色旋转的偏移
+
+#### Parameters
+
+| `offset` | [`Rotation`](mw.Rotation.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### moveFacingDirection <Score text="moveFacingDirection" /> 
 
 <table class="get-set-table">
@@ -3818,14 +3879,10 @@ ___
 <td style="text-align: left">
 
 
-获取角色运动面朝方向
-
-角色模型运动时朝向的方向：
-
-1. 始终朝向移动方向:主角模型面朝方向始终朝向移动方向。
-
-2. 始终朝向固定方向:主角模型面朝方向始终朝向固定方向。
-
+获取角色运动面朝方向\
+角色模型运动时朝向的方向：\
+1. 始终朝向移动方向:主角模型面朝方向始终朝向移动方向。\
+2. 始终朝向固定方向:主角模型面朝方向始终朝向固定方向。\
 3. 始终朝向控制器方向:主角模型面朝方向始终朝向控制器
 
 
@@ -3910,14 +3967,12 @@ ___
 <td style="text-align: left">
 
 
-获取角色运动正方向
-
-角色运动时依据的正方向。
-
+获取角色运动正方向\
+角色运动时依据的正方向。\
 1. 控制器方向，就以控制器坐标系为轴;
-
+\
 2. 如果是定轴方向，就以世界坐标系中movementAxisDirection为轴;
-
+\
 3. 如果是视线方向，就以相机坐标系的为轴。在玩家相机不存在Z轴旋转时，控制器方向和视线方向效果一致，人形对象的控制器方向和视线方向效果永远一致。
 
 
@@ -4221,6 +4276,106 @@ ___
 
 ___
 
+### ragdollEnabled <Score text="ragdollEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **ragdollEnabled**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **ragdollEnabled**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+启用布娃娃
+
+::: warning Precautions
+
+角色当前是否使用布娃娃状态。true表示使用，false表示禁用。
+
+:::
+
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+角色的布娃娃效果，与其他物体进行交互时，使角色在发生某些条件时可以像布娃娃一样松弛和摆动，而不是保持刚体的僵硬状态。
+
+::: warning Precautions
+
+角色当前是否使用布娃娃状态。true表示使用，false表示禁用。
+
+:::
+
+#### Parameters
+
+| `value` `boolean` |  true为启用布娃娃效果，false为禁用。 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"27693"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏你将在场景中生成一个循环黑洞特效。如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色。如果角色与黑洞中心距离小于50，则开启布娃娃。你可以看到角色开关布娃娃时的不同效果。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            this.useUpdate = true;
+            // 生成一个黑洞特效循环播放
+            EffectService.playAtPosition("27693", new Vector(500, 0, 50), {loopCount: 0});
+        }
+    }
+    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
+    protected onUpdate(dt: number): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家控制的角色
+            let myCharacter = myPlayer.character;
+            // 如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色
+            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 300 && !myCharacter.ragdollEnabled) {
+                let dir = new Vector(500, 0, 50).subtract(myCharacter.worldTransform.position).normalize();
+                myCharacter.addMovement(new Vector(dir.x, dir.y, 0));
+            }
+            // 如果角色与黑洞中心距离小于50，则开启布娃娃
+            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 50) {
+                myCharacter.ragdollEnabled = true;
+                setTimeout(() => {
+                    myCharacter.worldTransform.position = new Vector(0, 0, 130);
+                    myCharacter.ragdollEnabled = false;
+                }, 2000);
+            }
+        }
+    }
+}
+```
+___
+
 ### rotateRate <Score text="rotateRate" /> 
 
 <table class="get-set-table">
@@ -4240,8 +4395,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大转向速度
-
+获取角色最大转向速度\
 角色每秒旋转的最大速度。设置为负值时，转向速度被视为无限大，可以瞬间转向。
 
 
@@ -4417,8 +4571,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色可行走的最大角度
-
+获取角色可行走的最大角度\
 角色站立在斜坡上时，斜坡的最大角度，超过该角度，角色将无法站立在这个斜坡上，角色会存在坠落的表现。使用范围在0-90之间。
 
 
@@ -4614,7 +4767,7 @@ ___
 
 • **addImpulse**(`vector`, `ignoreMass?`): `void` <Badge type="tip" text="server" />
 
-添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。
+添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\
 
 #### Parameters
 
@@ -4623,7 +4776,6 @@ ___
 | `ignoreMass?` `boolean` | 是否忽略质量对冲量的影响 default:false |
 
 
-质量固定为100，受质量影响的算法为: 冲量按位除以质量
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"122180,122182,132631,75354"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成一个生成大炮模型。在大炮附加生成一个触发器并添加进入委托，当角色进入范围后向服务器发送【发射】事件。如果角色进入触发器则，你可以看到角色添加一个冲量被大炮发射出去的效果。代码如下：
@@ -4667,15 +4819,13 @@ ___
 
 • **addMovement**(`direction`): `void` 
 
-沿着给定的方向向量添加移动输入
+沿着给定的方向向量添加移动输入\
 
 #### Parameters
 
 | `direction` [`Vector`](mw.Vector.md) | 输入的方向 |
 | :------ | :------ |
 
-
-不会自动应用移动，由开发者在 onUpdate 事件中执行此操作。
 
 效果受 movementDirection 属性影响。如果此时同时有用户输入效果是叠加而不是覆盖。
 
@@ -4727,16 +4877,15 @@ ___
 
 • **attachToSlot**(`gameObject`, `slotName`): `void` 
 
-将物体附着到人物角色的指定插槽
+将物体附着到人物角色的指定插槽\
 
 #### Parameters
 
 | `gameObject` [`GameObject`](mw.GameObject.md) |  被附着的物体 |
 | :------ | :------ |
-| `slotName` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
+| `slotName` [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
 
 
-只适用于人形角色，附加规则是 KeepRelative，会保留物体之前的 localTransform
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_AttachToSlot"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下：
@@ -4829,7 +4978,7 @@ ___
 
 #### Parameters
 
-| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 使用示例: 按0-9，Z、X、C、V后查看当前角色状态 ``` @Component export default class NewScript1 extends Script `{ private character: Character; // 当脚本被实例后，会在第一帧更新前调用此函数 protected onStart(): void { Player.asyncGetLocalPlayer().then((player) => { this.character = player.character; this.character.onStateChanged.add((pre, curr)=>{ console.log(`pre: ${pre}` curr: $`{curr}``); }) }); InputUtil.onKeyDown(Keys.Zero, ()=>`{ this.character.changeState(CharacterStateType.None); }`) InputUtil.onKeyDown(Keys.One, ()=>`{ this.character.changeState(CharacterStateType.Running); }`) InputUtil.onKeyDown(Keys.Two, ()=>`{ this.character.changeState(CharacterStateType.Flying); }`) InputUtil.onKeyDown(Keys.Three, ()=>`{ this.character.changeState(CharacterStateType.Swimming); }`) InputUtil.onKeyDown(Keys.Four, ()=>`{ this.character.changeState(CharacterStateType.Jumping); }`) InputUtil.onKeyDown(Keys.Five, ()=>`{ this.character.changeState(CharacterStateType.Freefall); }`) InputUtil.onKeyDown(Keys.Six, ()=>`{ this.character.changeState(CharacterStateType.Ragdoll); }`) InputUtil.onKeyDown(Keys.Seven, ()=>`{ this.character.changeState(CharacterStateType.GettingUp); }`) InputUtil.onKeyDown(Keys.Eight, ()=>`{ this.character.changeState(CharacterStateType.Climbing); }`) InputUtil.onKeyDown(Keys.Nine, ()=>`{ this.character.changeState(CharacterStateType.Crouching); }`) InputUtil.onKeyDown(Keys.Z, ()=>`{ this.character.changeState(CharacterStateType.Pushed); }`) InputUtil.onKeyDown(Keys.X, ()=>`{ this.character.changeState(CharacterStateType.Landed); }`) InputUtil.onKeyDown(Keys.C, ()=>`{ this.character.changeState(CharacterStateType.Hit); }`) InputUtil.onKeyDown(Keys.V, ()=>`{ this.character.changeState(CharacterStateType.Dead); }`) InputUtil.onKeyDown(Keys.E, ()=>`{ console.log("currentState=="+this.character.getCurrentState()); }`) } } ``` |
+| `stateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  新的状态 使用示例: 按0-9，Z、X、C、V后查看当前角色状态 ``` |
 | :------ | :------ |
 
 
@@ -4839,7 +4988,7 @@ ___
 
 • **clearDescription**(`appearance?`, `slotAndDecoration?`): `void` 
 
-清空角色外观数据
+清空角色外观数据\
 
 #### Parameters
 
@@ -4848,7 +4997,6 @@ ___
 | `slotAndDecoration?` `boolean` | 是否清空插槽和物品数据 default:true |
 
 
-清空角色外观数据，此时角色不具备任何视觉表现。
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果。【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下：
@@ -4930,7 +5078,7 @@ ___
 
 • **detachAllFromSlot**(`param?`): `void` 
 
-将角色插槽附着的对象全部分离
+将角色插槽附着的对象全部分离\
 
 #### Parameters
 
@@ -4940,7 +5088,6 @@ ___
 | `param.slotName?` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) | usage：分离的插槽名称 |
 
 
-如果不填入插槽则将全部插槽的附着对象分离。仅对高级人型角色生效。
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_DetachAllFromSlot"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下：
@@ -5102,6 +5249,24 @@ export default class Example_Character_DetachFromSlot extends Script {
 
 ___
 
+### getCenterVertexByMorphName <Score text="getCenterVertexByMorphName" /> 
+
+• **getCenterVertexByMorphName**(`morphName`): [`Vector`](mw.Vector.md) 
+
+通过头部模型MorphName实时获取中心顶点位置
+
+#### Parameters
+
+| `morphName` `string` |  MorphName |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | @networkStatus usage:双端 |
+| :------ | :------ |
+
+___
+
 ### getCurrentState <Score text="getCurrentState" /> 
 
 • **getCurrentState**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md) 
@@ -5127,10 +5292,8 @@ export default class NewScript1 extends Script {
             this.character = player.character;
             this.character.onStateChanged.add((pre, curr)=>{
                 console.log(`pre: ${pre} curr: ${curr}`);
-
             })
         });
-
       InputUtil.onKeyDown(Keys.Zero, ()=>{
             this.character.changeState(CharacterStateType.None);
         })
@@ -5186,13 +5349,12 @@ ___
 
 • **getDescription**(): [`CharacterDescription`](mw.CharacterDescription.md) 
 
-获取角色外观数据
+获取角色外观数据\
 
 #### Returns
 
 | [`CharacterDescription`](mw.CharacterDescription.md) | 角色外观数据的拷贝 |
 | :------ | :------ |
-
 该接口获取角色当前外观数据的拷贝
 
 <span style="font-size: 14px;">
@@ -5275,7 +5437,7 @@ ___
 
 • **getSlotWorldPosition**(`slotName`): [`Vector`](mw.Vector.md) 
 
-获取角色插槽的世界坐标
+获取角色插槽的世界坐标\
 
 #### Parameters
 
@@ -5286,7 +5448,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 坐标位置 |
 | :------ | :------ |
-
 受角色外观中插槽偏移影响，仅对高级人型角色生效。
 
 <span style="font-size: 14px;">
@@ -5363,11 +5524,58 @@ export default class Example_Character_GetSlotWorldPosition extends Script {
 
 ___
 
+### getVertexArrayByMorphName <Score text="getVertexArrayByMorphName" /> 
+
+• **getVertexArrayByMorphName**(`morphName`): [`Vector`](mw.Vector.md)[] 
+
+通过头部模型MorphName实时获取所有顶点位置
+
+#### Parameters
+
+| `morphName` `string` |  MorphName range: morph名字 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md)[] | 顶点位置数组 |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_GetVertexPosition"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character_GetVertexPosition extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    *    private character: Character;
+   private obj: Model;
+   protected onStart(): void {
+       this.useUpdate = true;
+       Player.asyncGetLocalPlayer().then((player)=>{
+           this.character = player.character;
+       })
+       GameObject.asyncSpawn("84121").then((obj)=>{
+           this.obj = obj as Model;
+           this.obj.worldTransform.scale = new Vector(0.1,0.1,0.1);
+           this.obj.setCollision(CollisionStatus.Off);
+       })
+   }
+   protected onUpdate(dt: number): void {
+       if (this.character && this.obj) {
+           this.obj.worldTransform.position = this.character.getVertexArrayByMorphName("EarOverallScale")[0];
+       }
+   }
+}
+```
+
+___
+
 ### getVertexPosition <Score text="getVertexPosition" /> 
 
 • **getVertexPosition**(`index`): [`Vector`](mw.Vector.md) 
 
-通过头部模型顶点 index 实时获取顶点位置
+通过头部模型顶点 index 实时获取顶点位置\
 
 #### Parameters
 
@@ -5378,7 +5586,6 @@ ___
 
 | [`Vector`](mw.Vector.md) | 顶点位置 |
 | :------ | :------ |
-
 目前顶点 index 只能从内部工程中查看
 
 <span style="font-size: 14px;">
@@ -5389,67 +5596,24 @@ ___
 @Component
 export default class Example_Character_GetVertexPosition extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            let halo = null;
-            // 添加一个按键方法：按下键盘“1”，添加 / 移除角色的头顶光环
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(halo) {
-                    myCharacter.detachFromSlot(halo);
-                    setTimeout(() => {
-                        halo.destroy();
-                        halo = null;
-                    }, 1000);
-                } else {
-                    // 在角色头顶生成一个光环并附加到头顶插槽
-                    halo = GameObject.spawn("27704") as Effect;
-                    myCharacter.attachToSlot(halo, HumanoidSlotType.Rings);
-                    halo.play();
-                }
-            });
-            // 生成三件装备
-            let sword = GameObject.spawn("29052",{transform: new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one)});
-            let shield = GameObject.spawn("118149",{transform: new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one)});
-            let spike = GameObject.spawn("122953",{transform: new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one)});
-            // 添加一个按键方法：按下键盘“2”，给角色插槽增加装备
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.attachToSlot(sword, HumanoidSlotType.RightHand);
-                myCharacter.attachToSlot(shield, HumanoidSlotType.LeftHand);
-                myCharacter.attachToSlot(spike, HumanoidSlotType.LeftBack);
-            });
-            // 添加一个按键方法：按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除
-            InputUtil.onKeyDown(Keys.Three, () => {
-                myCharacter.detachAllFromSlot();
-                sword.worldTransform = new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one);
-                shield.worldTransform = new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one);
-                spike.worldTransform = new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one);
-            });
-            // 添加一个按键方法：按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效
-            InputUtil.onKeyDown(Keys.Four, () => {
-                let pos = myCharacter.getVertexPosition(0);
-                if(pos) {
-                    let zzz = GameObject.spawn("26168") as Effect;
-                    zzz.worldTransform.position = pos;
-                    zzz.play(() => {
-                        zzz.destroy();
-                    });
-                }
-                pos = myCharacter.getSlotWorldPosition(HumanoidSlotType.Rings);
-                if(pos) {
-                    let zzz = GameObject.spawn("26168") as Effect;
-                    zzz.worldTransform.position = pos;
-                    zzz.play(() => {
-                        zzz.destroy();
-                    });
-                }
-            });
-        }
-    }
+    *    private character: Character;
+   private obj: Model;
+   protected onStart(): void {
+       this.useUpdate = true;
+       Player.asyncGetLocalPlayer().then((player)=>{
+           this.character = player.character;
+       })
+       GameObject.asyncSpawn("84121").then((obj)=>{
+           this.obj = obj as Model;
+           this.obj.worldTransform.scale = new Vector(0.1,0.1,0.1);
+           this.obj.setCollision(CollisionStatus.Off);
+       })
+   }
+   protected onUpdate(dt: number): void {
+       if (this.character && this.obj) {
+           this.obj.worldTransform.position = this.character.getVertexPosition(0);
+       }
+   }
 }
 ```
 
@@ -5469,11 +5633,54 @@ ___
 
 ___
 
+### jump <Score text="jump" /> 
+
+• **jump**(): `void` 
+
+使角色触发一个跳跃行为
+
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Character_Jump"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，设置角色最大跳跃高度为300，最高三连跳。按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character_Jump extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家控制的角色
+            let myCharacter = myPlayer.character;
+            // 最大跳跃高度为300
+            myCharacter.maxJumpHeight = 300;
+            // 最高三连跳
+            myCharacter.jumpMaxCount = 3;
+            // 添加一个按键方法：按下键盘“1”，角色跳跃。
+            InputUtil.onKeyDown(Keys.One, () => {
+                myCharacter.jump();
+                console.log("当前角色是否在跳跃 " + myCharacter.isJumping);
+            });
+            // 添加一个按键方法：按下键盘“2”，启用/禁用跳跃能力。
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCharacter.jumpEnabled = !myCharacter.jumpEnabled;
+                console.log("当前角色跳跃能力 " + myCharacter.jumpEnabled);
+            });
+        }
+    }
+}
+```
+
+___
+
 ### loadAnimation <Score text="loadAnimation" /> 
 
 • **loadAnimation**(`assetId`): [`Animation`](mw.Animation.md) 
 
-为角色加载一个动画资源
+为角色加载一个动画资源\
 
 #### Parameters
 
@@ -5484,7 +5691,6 @@ ___
 
 | [`Animation`](mw.Animation.md) | 动画对象 |
 | :------ | :------ |
-
 loadAnimation 会将给定的动画加载到角色上，返回一个可播放的Animation。
 
 <span style="font-size: 14px;">
@@ -5545,7 +5751,7 @@ ___
 
 • **loadStance**(`assetId`): [`Stance`](mw.Stance.md) 
 
-为角色加载一个基础姿态
+为角色加载一个基础姿态\
 
 #### Parameters
 
@@ -5556,7 +5762,6 @@ ___
 
 | [`Stance`](mw.Stance.md) | 基础姿态对象 |
 | :------ | :------ |
-
 loadStance会将给定的基础姿态加载到角色上，返回一个可播放的基础姿态 stance 类型。
 
 <span style="font-size: 14px;">
@@ -5730,15 +5935,13 @@ ___
 
 • **setDescription**(`data`): `void` 
 
-设置角色外观数据
+设置角色外观数据\
 
 #### Parameters
 
 | `data` `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md) | 外观数据 |
 | :------ | :------ |
 
-
-此函数无法更换基础角色。
 
 setStyle 设置角色的外观，可以传入 CharacterDescription 对象 / 角色外观文件的数组 / 挂件数据文件的 guid。
 
@@ -5828,75 +6031,7 @@ ___
 
 | `characterStateType` [`CharacterStateType`](../enums/mw.CharacterStateType.md) |  角色状态 |
 | :------ | :------ |
-| `enabled` `boolean` |  角色状态是否启用 |
-
-<span style="font-size: 14px;">
-使用示例:按 R 后禁用飞行状态，再按 2 切换飞行 
-</span>
-
-```ts
-@Component
-export default class NewScript1 extends Script {
-    private character: Character;
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        Player.asyncGetLocalPlayer().then((player) => {
-            this.character = player.character;
-            this.character.onStateChanged.add((pre, curr)=>{
-                console.log(`pre: ${pre} curr: ${curr}`);
-
-            })
-        });
-
-      InputUtil.onKeyDown(Keys.Zero, ()=>{
-            this.character.changeState(CharacterStateType.None);
-        })
-        InputUtil.onKeyDown(Keys.One, ()=>{
-            this.character.changeState(CharacterStateType.Running);
-        })
-        InputUtil.onKeyDown(Keys.Two, ()=>{
-            this.character.changeState(CharacterStateType.Flying);
-        })
-        InputUtil.onKeyDown(Keys.Three, ()=>{
-            this.character.changeState(CharacterStateType.Swimming);
-        })
-        InputUtil.onKeyDown(Keys.Four, ()=>{
-            this.character.changeState(CharacterStateType.Jumping);
-        })
-        InputUtil.onKeyDown(Keys.Five, ()=>{
-            this.character.changeState(CharacterStateType.Freefall);
-        })
-        InputUtil.onKeyDown(Keys.Six, ()=>{
-            this.character.changeState(CharacterStateType.Ragdoll);
-        })
-        InputUtil.onKeyDown(Keys.Seven, ()=>{
-            this.character.changeState(CharacterStateType.GettingUp);
-        })
-        InputUtil.onKeyDown(Keys.Eight, ()=>{
-            this.character.changeState(CharacterStateType.Climbing);
-        })
-        InputUtil.onKeyDown(Keys.Nine, ()=>{
-            this.character.changeState(CharacterStateType.Crouching);
-        })
-        InputUtil.onKeyDown(Keys.Z, ()=>{
-            this.character.changeState(CharacterStateType.Pushed);
-        })
-        InputUtil.onKeyDown(Keys.X, ()=>{
-            this.character.changeState(CharacterStateType.Landed);
-        })
-        InputUtil.onKeyDown(Keys.C, ()=>{
-            this.character.changeState(CharacterStateType.Hit);
-        })
-        InputUtil.onKeyDown(Keys.V, ()=>{
-            this.character.changeState(CharacterStateType.Dead);
-        })
-        InputUtil.onKeyDown(Keys.E, ()=>{
-            console.log("currentState=="+this.character.getCurrentState());
-        })
-    }
-}
-``` 
-
+| `enabled` `boolean` |  角色状态是否启用 使用示例:按 R 后禁用飞行状态，再按 2 切换飞行 ``` |
 
 
 ___
@@ -5905,7 +6040,7 @@ ___
 
 • **swimDown**(`speed`): `void` 
 
-使角色在水中下潜
+使角色在水中下潜\
 
 #### Parameters
 
@@ -5913,7 +6048,6 @@ ___
 | :------ | :------ |
 
 
-不能超过MaxSwimSpeed(游泳最大速度)
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimDown"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成拱形容器并适配游泳区域。按下键盘“1”，角色切换游泳。按下键盘“4”，角色修改最大游泳速度进行喷射加速。你可以看到的角色最大游泳速度变化的效果。代码如下：
@@ -6012,7 +6146,7 @@ ___
 
 • **swimUp**(`speed`): `void` 
 
-使角色在水中上浮
+使角色在水中上浮\
 
 #### Parameters
 
@@ -6020,7 +6154,6 @@ ___
 | :------ | :------ |
 
 
-不能超过 MaxSwimSpeed (游泳最大速度)
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimUp"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成拱形容器并适配游泳区域。按下键盘“1”，角色切换游泳。按下键盘“4”，角色修改最大游泳速度进行喷射加速。你可以看到的角色最大游泳速度变化的效果。代码如下：
@@ -6119,7 +6252,7 @@ ___
 
 • **syncDescription**(`appearance?`, `slotAndDecoration?`): `void` <Badge type="tip" text="client" />
 
-同步角色外观数据
+同步角色外观数据\
 
 #### Parameters
 
@@ -6128,7 +6261,6 @@ ___
 | `slotAndDecoration?` `boolean` | 插槽和装饰同步 default:true |
 
 
-角色在客户端设置外观后只会更换本地角色的外观，其他客户端角色外观未修改。通过该接口可以将本地外观广播至其他客户端。
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果。给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下：

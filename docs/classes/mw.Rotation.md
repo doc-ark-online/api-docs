@@ -8,8 +8,7 @@
 
 由分量 (x,y,z) 组成的三维空间中的旋转量。
 
-Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
-绕三个轴的旋转值：Pitch，Yaw，Roll翻译为俯仰角，偏航角，翻滚角。分别代表绕X轴，Y轴，Z轴的旋转值。
+Rotation 是三个欧拉角Pitch、Yaw、Roll的封装 绕三个轴的旋转值：Pitch，Yaw，Roll翻译为俯仰角，偏航角，翻滚角。分别代表绕X轴，Y轴，Z轴的旋转值。
 
 ::: warning Precautions
 
@@ -52,7 +51,7 @@ Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
 | **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 返回一个新的反向旋转。|
 | **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
-| 当前旋转量减去一个旋转量|
+| 当前旋转量乘以一个旋转量|
 | **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)   |
 | 当前角度旋转一个向量|
 | **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
@@ -78,7 +77,7 @@ Rotation 是三个欧拉角Pitch、Yaw、Roll的封装
 | **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md)   |
 | 对两个旋转量进行插值|
 | **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
-| 当前旋转量减去一个旋转量|
+| 当前旋转量乘以一个旋转量|
 | **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 当前旋转量减去一个旋转量|
 
@@ -649,7 +648,7 @@ ___
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Rotation`](mw.Rotation.md) 
 
-当前旋转量减去一个旋转量
+当前旋转量乘以一个旋转量
 
 ::: warning Precautions
 

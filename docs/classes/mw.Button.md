@@ -46,6 +46,8 @@
 | 获取普通图片边距|
 | **[normalImageSize](mw.Button.md#normalimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取图片大小|
+| **[onAssetDragEnter](mw.Button.md#onassetdragenter)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`assetGUID`: `string`) => `void`\> |
+| **[onAssetDragLeave](mw.Button.md#onassetdragleave)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> |
 | **[onClicked](mw.Button.md#onclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 点击事件|
 | **[onHovered](mw.Button.md#onhovered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
@@ -692,6 +694,56 @@ ___
 | :------ | :------ |
 
 
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### onAssetDragEnter <Score text="onAssetDragEnter" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onAssetDragEnter**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`assetGUID`: `string`) => `void`\>
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`assetGUID`: `string`) => `void`\> |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### onAssetDragLeave <Score text="onAssetDragLeave" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onAssetDragLeave**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> |  |
+| :------ | :------ |
 
 </td>
 </tr></tbody>

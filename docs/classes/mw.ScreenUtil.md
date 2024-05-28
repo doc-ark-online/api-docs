@@ -7,15 +7,37 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <Badge type="tip" text="client" />  |
+| **[checkWidgetAt](mw.ScreenUtil.md#checkwidgetat)**(`screenPosition`: [`Vector2`](mw.Vector2.md)): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
+| 获取屏幕坐标点处是否有UI，注意该方法性能过差，不要频繁调用|
+| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <Badge type="tip" text="client" />  |
 | 获取视口相应位置的物体|
 | **[getSightBeadPosition](mw.ScreenUtil.md#getsightbeadposition)**(): [`Vector`](mw.Vector.md) <Badge type="tip" text="client" />  |
 | 获取相机中心点所瞄准的世界位置|
+| **[getWidgetAt](mw.ScreenUtil.md#getwidgetat)**(`screenPosition`: [`Vector2`](mw.Vector2.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 获取屏幕坐标点处的UI，注意该方法性能过差，不要频繁调用|
 | **[projectWorldPositionToWidgetPosition](mw.ScreenUtil.md#projectworldpositiontowidgetposition)**(`player`: [`Player`](mw.Player.md), `worldLocation`: [`Vector`](mw.Vector.md), `outScreenPosition`: [`Vector2`](mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <Badge type="tip" text="client" />  |
 | 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
 
 ## Methods
+
+### checkWidgetAt <Score text="checkWidgetAt" /> 
+
+• `Static` **checkWidgetAt**(`screenPosition`): `boolean` <Badge type="tip" text="client" />
+
+获取屏幕坐标点处是否有UI，注意该方法性能过差，不要频繁调用
+
+#### Parameters
+
+| `screenPosition` [`Vector2`](mw.Vector2.md) | 屏幕坐标点 |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 是否有UI在这个位置 |
+| :------ | :------ |
+
+___
 
 ### getGameObjectByScreenPosition <Score text="getGameObjectByScreenPosition" /> 
 
@@ -92,6 +114,24 @@ export default class ScreenExample extends Script {
             }
         })
     }
+
+___
+
+### getWidgetAt <Score text="getWidgetAt" /> 
+
+• `Static` **getWidgetAt**(`screenPosition`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />
+
+获取屏幕坐标点处的UI，注意该方法性能过差，不要频繁调用
+
+#### Parameters
+
+| `screenPosition` [`Vector2`](mw.Vector2.md) | 屏幕坐标点 |
+| :------ | :------ |
+
+#### Returns
+
+| [`Widget`](mw.Widget.md) | 返回这个点的UI，如果没有返回空 |
+| :------ | :------ |
 
 ___
 

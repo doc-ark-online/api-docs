@@ -25,8 +25,10 @@
 | 添加OnPause结束时执行的回调函数|
 
 ### Methods <Score text="Methods" /> 
-| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string`   |
+| **[closeLoadingView](mw.SystemUtil.md#closeloadingview)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
+| 关闭引擎初始化ui|
+| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string`   |
 | 获取当前环境|
 | **[getEditorVersion](mw.SystemUtil.md#geteditorversion)**(): `string`   |
 | 获取编辑器版本号|
@@ -180,6 +182,32 @@ ___
 | :------ | :------ |
 
 ## Methods
+
+### closeLoadingView <Score text="closeLoadingView" /> 
+
+• `Static` **closeLoadingView**(): `void` <Badge type="tip" text="client" />
+
+关闭引擎初始化ui
+
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，执行时将关闭引擎ui
+</span>
+
+```ts
+@Component
+export default class SystemExample extends Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        InputUtil.onKeyDown(Keys.F, () => {
+            SystemUtil.closeLoadingView();
+        }))
+    }
+}
+```
+
+___
 
 ### getCurrentEnv <Score text="getCurrentEnv" /> 
 

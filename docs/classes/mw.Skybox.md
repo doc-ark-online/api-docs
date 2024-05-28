@@ -49,8 +49,8 @@ export default class SkyboxExample extends mw.Script {
 | 获取云的透明度|
 | **[cloudSpeed](mw.Skybox.md#cloudspeed)**(): `number` <Badge type="tip" text="client" />  |
 | 获取云速度|
-| **[cloudTextureID](mw.Skybox.md#cloudtextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置云贴图资源ID|
+| **[cloudTextureID](mw.Skybox.md#cloudtextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取云贴图ID|
 | **[cloudVisible](mw.Skybox.md#cloudvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启云|
 | **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
@@ -59,8 +59,8 @@ export default class SkyboxExample extends mw.Script {
 | 获取月亮亮度|
 | **[moonSize](mw.Skybox.md#moonsize)**(): `number` <Badge type="tip" text="client" />  |
 | 获取月亮大小|
-| **[moonTextureID](mw.Skybox.md#moontextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置月亮贴图资源ID|
+| **[moonTextureID](mw.Skybox.md#moontextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取月亮贴图ID|
 | **[moonVisible](mw.Skybox.md#moonvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启月亮|
 | **[preset](mw.Skybox.md#preset)**(): [`SkyPreset`](../enums/mw.SkyPreset.md) <Badge type="tip" text="client" />  |
@@ -77,16 +77,16 @@ export default class SkyboxExample extends mw.Script {
 | 获取天空盒亮度|
 | **[skyDomeMiddleColor](mw.Skybox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 天空中层颜色|
-| **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置天空盒贴图|
+| **[skyDomeTextureID](mw.Skybox.md#skydometextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取天空盒贴图资源ID|
 | **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取天空顶层颜色|
 | **[starDensity](mw.Skybox.md#stardensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取星星密度|
 | **[starIntensity](mw.Skybox.md#starintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取星星亮度|
-| **[starTextureID](mw.Skybox.md#startextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置星星贴图资源ID|
+| **[starTextureID](mw.Skybox.md#startextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取星星贴图ID|
 | **[starVisible](mw.Skybox.md#starvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启星星|
 | **[sunColor](mw.Skybox.md#suncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
@@ -95,8 +95,8 @@ export default class SkyboxExample extends mw.Script {
 | 获取太阳光亮度|
 | **[sunSize](mw.Skybox.md#sunsize)**(): `number` <Badge type="tip" text="client" />  |
 | 获取太阳大小|
-| **[sunTextureID](mw.Skybox.md#suntextureid)**(`value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置太阳贴图资源ID|
+| **[sunTextureID](mw.Skybox.md#suntextureid)**(): `string` <Badge type="tip" text="client" />  |
+| 获取太阳贴图ID|
 | **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启太阳|
 | **[yawAngle](mw.Skybox.md#yawangle)**(): `number` <Badge type="tip" text="client" />  |
@@ -301,11 +301,28 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **cloudTextureID**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **cloudTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取云贴图ID
+
+#### Returns
+
+| `string` | 云贴图ID |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 
@@ -514,11 +531,28 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **moonTextureID**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **moonTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取月亮贴图ID
+
+#### Returns
+
+| `string` | 月亮贴图ID |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 
@@ -911,6 +945,11 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **skyDomeTextureID**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **skyDomeTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
@@ -919,11 +958,23 @@ ___
 <td style="text-align: left">
 
 
-设置天空盒贴图
+获取天空盒贴图资源ID
+
+#### Returns
+
+| `string` | 贴图资源ID |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置天空盒贴图资源ID
 
 #### Parameters
 
-| `value` `string` | 贴图ID |
+| `value` `string` | 贴图资源ID |
 | :------ | :------ |
 
 
@@ -1078,11 +1129,28 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **starTextureID**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **starTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取星星贴图ID
+
+#### Returns
+
+| `string` | 星星贴图ID |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 
@@ -1291,11 +1359,28 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `Static` `get` **sunTextureID**(): `string` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `Static` `set` **sunTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取太阳贴图ID
+
+#### Returns
+
+| `string` | 太阳贴图ID |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 

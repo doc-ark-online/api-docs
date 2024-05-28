@@ -36,7 +36,7 @@
 | **[placeOrder](mw.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](mw.PurchaseService.md#placeorder)Result`): `void` <Badge type="tip" text="client" />  |
 | 下单指定数量的指定商品|
 | **[redeemGiftCode](mw.PurchaseService.md#redeemgiftcode)**(`player`: [`Player`](mw.Player.md), `GiftCode`: `string`, `redeemCallback`: (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void`): `void` <Badge type="tip" text="server" />  |
-| 礼包码兑换|
+| 礼包码兑换 \|
 
 ## Accessors
 
@@ -498,7 +498,7 @@ ___
 
 • `Static` **redeemGiftCode**(`player`, `GiftCode`, `redeemCallback`): `void` <Badge type="tip" text="server" />
 
-礼包码兑换
+礼包码兑换 \
 
 #### Parameters
 
@@ -508,27 +508,16 @@ ___
 | `redeemCallback` (`result`: [`RedeemResponse`](../modules/Core.mw.md#redeemresponse)) => `void` |  兑换结果的回调函数 |
 
 
-RedeemResponse中status : 兑换状态。
-
-01 ： 兑换成功
-
-02 ： 兑换失败（兑换码不存在）
-
-03 ： 兑换失败（兑换码不在使用期限内）
-
-04 ： 兑换失败（兑换码已使用）
-
-05 ： 兑换失败（兑换超时）
-
-06 ： 兑换失败（礼包库存不足）
-
-07 ： 兑换失败（超出兑换次数）
-
-RedeemResponse中message : 兑换信息
-
-当兑换状态为成功时：兑换信息为礼包内容道具详情。
-
-当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。
+01 ： 兑换成功 \
+02 ： 兑换失败（兑换码不存在） \
+03 ： 兑换失败（兑换码不在使用期限内） \
+04 ： 兑换失败（兑换码已使用） \
+05 ： 兑换失败（兑换超时） \
+06 ： 兑换失败（礼包库存不足） \
+07 ： 兑换失败（超出兑换次数） \
+RedeemResponse中message : 兑换信息 \
+当兑换状态为成功时：兑换信息为礼包内容道具详情。 \
+当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。 \
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额

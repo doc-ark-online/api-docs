@@ -22,7 +22,8 @@
 
 - 在调用 play 时, 会自动根据当前角色的网络状态及所处的端判断是否进行网络同步。
 
-- 如果角色在服务端, 则在所有客户端执行动画播放（动画首先在服务器上创建并复制到客户端）;如果角色在客户端, 则直接在本地播放动画。
+- 如果角色在服务端, 则在所有客户端执行动画播放（动画首先在服务器上创建并复制到客户端）;
+如果角色在客户端, 则直接在本地播放动画。
 
 ::: warning Precautions
 
@@ -36,7 +37,11 @@
 | **[assetId](mw.Animation.md#assetid)**(): `string`   |
 | :-----|
 | 获取动画资源ID。目前是动画资源在编辑器左侧栏中，由美术创作者上传，鼠标指向可看到动画的GUID。|
+| **[blendInMode](mw.Animation.md#blendinmode)**(): [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md)  |
+| 获取动画混出时间|
 | **[blendInTime](mw.Animation.md#blendintime)**(): `number`  |
+| 获取动画混出时间|
+| **[blendOutMode](mw.Animation.md#blendoutmode)**(): [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md)  |
 | 获取动画混出时间|
 | **[blendOutTime](mw.Animation.md#blendouttime)**(): `number`  |
 | 获取动画混出时间|
@@ -97,6 +102,52 @@
 
 ___
 
+### blendInMode <Score text="blendInMode" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **blendInMode**(): [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **blendInMode**(`mode`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画混出时间
+
+#### Returns
+
+| [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画混出时间 AlphaBlendOption
+
+#### Parameters
+
+| `mode` | [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### blendInTime <Score text="blendInTime" /> 
 
 <table class="get-set-table">
@@ -133,6 +184,52 @@ ___
 #### Parameters
 
 | `time` | `number` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### blendOutMode <Score text="blendOutMode" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **blendOutMode**(): [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **blendOutMode**(`mode`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取动画混出时间
+
+#### Returns
+
+| [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置动画混出时间
+
+#### Parameters
+
+| `mode` | [`AnimationBlendMode`](../enums/mw.AnimationBlendMode.md) |
 | :------ | :------ |
 
 

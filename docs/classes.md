@@ -12,7 +12,8 @@ Classes
 | [Action1](classes/mw.Action1.md) | 一个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
 | [Action2](classes/mw.Action2.md) | 两个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
 | [Action3](classes/mw.Action3.md) | 三个参数的代理 | [基础类型](groups/基础类型.基础类型.md) |
-| [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [服务](groups/服务.服务.md) |
+| [AdsButton](classes/mw.AdsButton.md) | 广告按钮，请注意广告按钮不允许被遮挡 | [界面](groups/界面.界面.md) |
+| [AdsService](classes/mw.AdsService.md) | 广告服务 | [服务](groups/服务.服务.md) |
 | [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具 | [玩法](groups/玩法.玩法.md) |
 | [AnalyticsService](classes/mw.AnalyticsService.md) | 分析服务 | [服务](groups/服务.服务.md) |
 | [Animation](classes/mw.Animation.md) | 动画 | [动画](groups/动画.动画.md) |
@@ -56,6 +57,7 @@ Classes
 | :-----| :-----| :-----|
 | [DataCenterC](classes/mwext.DataCenterC.md) | 客户端数据中心，里面存放着当前玩家的数据 | [基类](groups/基类.基类.md) |
 | [DataCenterS](classes/mwext.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据。 | [基类](groups/基类.基类.md) |
+| [DataFile](classes/mw.DataFile.md) | 数据文件获取工具 | [工具](groups/工具.工具.md) |
 | [DataStorage](classes/mw.DataStorage.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [DebugService](classes/mw.DebugService.md) | debug调试服务 | [服务](groups/服务.服务.md) |
 | [DebugUtil](classes/mw.DebugUtil.md) | 游戏性能数据，辅助 Debug 和性能优化 | [工具](groups/工具.工具.md) |
@@ -80,6 +82,7 @@ Classes
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [FlipBook](classes/mw.FlipBook.md) | 帧动画控件 | [界面](groups/界面.界面.md) |
 | [Fog](classes/mw.Fog.md) | 环境雾 | [场景](groups/场景.场景.md) |
 | [ForceVolume](classes/mw.ForceVolume.md) | 物理力区域 | [玩法](groups/玩法.玩法.md) |
 
@@ -87,9 +90,11 @@ Classes
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [GameApplication](classes/mw.GameApplication.md) | main脚本的基类 | [基类](groups/基类.基类.md) |
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
+| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -146,6 +151,8 @@ Classes
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
 | [LinearColor](classes/mw.LinearColor.md) | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
 | [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
+| [ListView](classes/mw.ListView.md) | 列表视图 | [界面](groups/界面.界面.md) |
+| [ListViewItemDataBase](classes/mw.ListViewItemDataBase.md) | 列表视图节点数据基类 | [GUI](groups/GUI.GUI.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
@@ -159,7 +166,6 @@ Classes
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Model](classes/mw.Model.md) | 物理模拟与材质设置 | [玩法](groups/玩法.玩法.md) |
-| [ModelUtil](classes/mw.ModelUtil.md) | 模型工具类 | [工具](groups/工具.工具.md) |
 | [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [基类](groups/基类.基类.md) |
 | [ModuleService](classes/mwext.ModuleService.md) | 服务端客户端及数据模块管理 | [基类](groups/基类.基类.md) |
@@ -244,6 +250,7 @@ Classes
 | [TeleportService](classes/mw.TeleportService.md) | 多场景和传送服务 | [服务](groups/服务.服务.md) |
 | [TextBlock](classes/mw.TextBlock.md) | 文本 | [界面](groups/界面.界面.md) |
 | [TextStyle](classes/mw.TextStyle.md) | 文本风格类型 | [界面](groups/界面.界面.md) |
+| [TileView](classes/mw.TileView.md) | 平铺视图 | [界面](groups/界面.界面.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [工具](groups/工具.工具.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [界面](groups/界面.界面.md) |
 | [Transform](classes/mw.Transform.md) | 三维变换 | [基础类型](groups/基础类型.基础类型.md) |

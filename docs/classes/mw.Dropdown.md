@@ -61,6 +61,34 @@ Dropdown
 | 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
+| **[onFocusChange](mw.Widget.md#onfocuschange)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 焦点改变事件|
+| **[onFoucsLost](mw.Widget.md#onfoucslost)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 丢失焦点事件|
+| **[onKeyDownEvent](mw.Widget.md#onkeydownevent)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `keyEvent`: [`KeyEvent`](mw.KeyEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 按键按下事件|
+| **[onKeyUpEvent](mw.Widget.md#onkeyupevent)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `keyEvent`: [`KeyEvent`](mw.KeyEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 按键抬起事件|
+| **[onMouseButtonDoubleClick](mw.Widget.md#onmousebuttondoubleclick)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标双击事件|
+| **[onMouseButtonDown](mw.Widget.md#onmousebuttondown)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标按下事件|
+| **[onMouseButtonUp](mw.Widget.md#onmousebuttonup)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标抬起事件|
+| **[onMouseEnter](mw.Widget.md#onmouseenter)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标进入控件事件|
+| **[onMouseLeave](mw.Widget.md#onmouseleave)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标离开控件事件|
+| **[onMouseMove](mw.Widget.md#onmousemove)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标移动事件|
+| **[onMouseWheel](mw.Widget.md#onmousewheel)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 鼠标滚轮滚动事件|
+| **[onTouchEnded](mw.Widget.md#ontouchended)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 触摸结束事件|
+| **[onTouchMoved](mw.Widget.md#ontouchmoved)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 触摸移动事件|
+| **[onTouchStarted](mw.Widget.md#ontouchstarted)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
+| 触摸按下事件|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
@@ -104,10 +132,12 @@ Dropdown
 | 获取下拉顺序坐标|
 | **[getOptionByIndex](mw.Dropdown.md#getoptionbyindex)**(`index`: `number`): `string` <Badge type="tip" text="client" />  |
 | 菜单项内容|
+| **[getShowTextVisible](mw.Dropdown.md#getshowtextvisible)**(): `boolean` |
 | **[removeOption](mw.Dropdown.md#removeoption)**(`option`: `string`): `void` <Badge type="tip" text="client" />  |
 | 移除菜单项|
 | **[setOptionByIndex](mw.Dropdown.md#setoptionbyindex)**(`index`: `number`, `value`: `string`): `void` <Badge type="tip" text="client" />  |
 | 修改索引处的值|
+| **[setShowTextVisible](mw.Dropdown.md#setshowtextvisible)**(`bVisible`): `void` |
 | **[newObject](mw.Dropdown.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Dropdown`](mw.Dropdown.md) <Badge type="tip" text="client" />  |
 | 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
@@ -570,6 +600,14 @@ ___
 
 ___
 
+### getShowTextVisible <Score text="getShowTextVisible" /> 
+
+• **getShowTextVisible**(): `boolean`
+
+获取显示的选中文本的可见性
+
+___
+
 ### removeOption <Score text="removeOption" /> 
 
 • **removeOption**(`option`): `void` <Badge type="tip" text="client" />
@@ -580,6 +618,7 @@ ___
 
 | `option` `string` | 菜单项 <br> range: 不做限制，合理即可。 |
 | :------ | :------ |
+
 
 
 ___
@@ -599,6 +638,14 @@ ___
 
 ___
 
+### setShowTextVisible <Score text="setShowTextVisible" /> 
+
+• **setShowTextVisible**(`bVisible`): `void`
+
+设置显示的选中文本的可见性
+
+___
+
 ### newObject <Score text="newObject" /> 
 
 • `Static` **newObject**(`parent?`, `inName?`): [`Dropdown`](mw.Dropdown.md) <Badge type="tip" text="client" />
@@ -615,3 +662,9 @@ ___
 
 | [`Dropdown`](mw.Dropdown.md) | 返回创建的对象 |
 | :------ | :------ |
+
+
+| `bVisible` | `boolean` |
+| :------ | :------ |
+
+

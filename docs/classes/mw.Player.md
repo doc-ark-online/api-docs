@@ -28,6 +28,8 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 玩家离开委托|
 | **[onPlayerReconnect](mw.Player.md#onplayerreconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
 | 玩家重连委托|
+| **[onUserAvatarUpdated](mw.Player.md#onuseravatarupdated)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
+| 用户平台形象变化时，执行绑定函数|
 
 ### Accessors <Score text="Accessors" /> 
 | **[character](mw.Player.md#character)**(): [`Character`](mw.Character.md)   |
@@ -349,6 +351,43 @@ export default class Example_Player_OnPlayerReconnect extends Script {
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onUserAvatarUpdated <Score text="onUserAvatarUpdated" /> 
+
+▪ `Static` **onUserAvatarUpdated**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+
+用户平台形象变化时，执行绑定函数
+
+::: warning Precautions
+
+当玩家切出游戏，进入角色编辑器修改外观保存后，切回游戏时触发该事件。
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Player_onUserAvatarUpdated"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【用户平台形象变化】事件绑定一个函数：请求平台形象并应用与角色。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Player_onUserAvatarUpdated extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            Player.onUserAvatarUpdated.add(() => {
+                AccountService.downloadData(Player.localPlayer.character, () => {}, 0);
             });
         }
     }

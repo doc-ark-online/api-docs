@@ -105,11 +105,15 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 
 ## Hierarchy
 
-- **`Script`**
+- `Base`
 
-  ↳ [`PlayerState`](mw.PlayerState.md)
+  ↳ **`Script`**
+
+  ↳↳ [`PlayerState`](mw.PlayerState.md)
 
 ## Table of contents
+
+### Properties <Score text="Properties" /> 
 
 ### Accessors <Score text="Accessors" /> 
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
@@ -124,12 +128,14 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 | 销毁组件对象|
 | **[onDestroy](mw.Script.md#ondestroy)**(): `void`   |
 | 生命周期函数 - 被销毁时调用|
-| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void`   |
+| **[onReplicated](mw.Script.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `boolean`  `void`   |
 | 属性被同步事件 ClientOnly|
 | **[onStart](mw.Script.md#onstart)**(): `void`   |
 | 生命周期函数 - 脚本开始执行时调用|
 | **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
 | 生命周期函数 - 每帧执行函数|
+
+## Properties
 
 ## Accessors
 
@@ -245,7 +251,7 @@ ___
 
 ### onReplicated <Score text="onReplicated" /> 
 
-• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` 
+• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `boolean`  `void` 
 
 属性被同步事件 ClientOnly
 
@@ -256,6 +262,10 @@ ___
 | `value` `unknown` | 属性值 |
 | `oldVal` `unknown` | 同步前的值 |
 
+#### Returns
+
+| `boolean`  `void` |  |
+| :------ | :------ |
 
 ___
 

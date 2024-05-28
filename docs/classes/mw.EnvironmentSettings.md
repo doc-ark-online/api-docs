@@ -31,6 +31,13 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
+### Accessors <Score text="Accessors" /> 
+| **[deathBoundaryEnabled](mw.EnvironmentSettings.md#deathboundaryenabled)**(): `boolean`   |
+| :-----|
+| 是否开启死亡边界。启用后死亡边界高度限制才会生效|
+| **[deathBoundaryHeight](mw.EnvironmentSettings.md#deathboundaryheight)**(): `number`   |
+| 获取死亡边界高度，range: [-50000, 50000]。开启死亡边界高度功能后，角色掉落到死亡边界之下会进入死亡状态并重生，其他对象会销毁|
+
 ### Methods <Score text="Methods" /> 
 | **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
@@ -39,6 +46,60 @@ export default class ClassExample extends Script {
 | 获取当前重力模式|
 | **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void` <Badge type="tip" text="other" />  |
 | 设置世界整体膨胀时间速度|
+
+## Accessors
+
+### deathBoundaryEnabled <Score text="deathBoundaryEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **deathBoundaryEnabled**(): `boolean` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否开启死亡边界。启用后死亡边界高度限制才会生效
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### deathBoundaryHeight <Score text="deathBoundaryHeight" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **deathBoundaryHeight**(): `number` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取死亡边界高度，range: [-50000, 50000]。开启死亡边界高度功能后，角色掉落到死亡边界之下会进入死亡状态并重生，其他对象会销毁
+
+#### Returns
+
+</td>
+</tr></tbody>
+</table>
+
+| `number` |  |
+| :------ | :------ |
 
 ## Methods
 
