@@ -1,7 +1,5 @@
-import VPTheme from 'doc-theme-323'
-import Layout from './Layout.vue'
+import VPTheme from 'metaapp-prodigytech-doc-theme'
 
 export default {
-  ...VPTheme,
-  Layout
+  ...VPTheme
 }
