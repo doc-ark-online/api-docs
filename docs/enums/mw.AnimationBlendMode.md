@@ -1,4 +1,4 @@
-[AVATAR](../groups/AVATAR.AVATAR.md) / AnimationBlendMode
+[角色系统](../groups/角色系统.角色系统.md) / AnimationBlendMode
 
 # AnimationBlendMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationBlendMode" />
 

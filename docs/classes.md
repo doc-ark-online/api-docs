@@ -152,7 +152,7 @@ Classes
 | [LinearColor](classes/mw.LinearColor.md) | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
 | [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
 | [ListView](classes/mw.ListView.md) | 列表视图 | [界面](groups/界面.界面.md) |
-| [ListViewItemDataBase](classes/mw.ListViewItemDataBase.md) | 列表视图节点数据基类 | [GUI](groups/GUI.GUI.md) |
+| [ListViewItemDataBase](classes/mw.ListViewItemDataBase.md) | 列表视图节点数据基类 | [界面](groups/界面.界面.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
