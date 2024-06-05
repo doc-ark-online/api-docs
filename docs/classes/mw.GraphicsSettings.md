@@ -52,7 +52,7 @@ export default class ClassExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[occlusionCullingEnabled](mw.GraphicsSettings.md#occlusioncullingenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)|
+| 获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DrawCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)|
 
 ### Methods <Score text="Methods" /> 
 | **[getAutoScreenPercentage](mw.GraphicsSettings.md#getautoscreenpercentage)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -62,11 +62,11 @@ export default class ClassExample extends Script {
 | 获取FSR画质等级|
 | **[getSharpness](mw.GraphicsSettings.md#getsharpness)**(): `number` <Badge type="tip" text="client" />  |
 | 获取锐化程度|
-| **[setAutoScreenPercentage](mw.GraphicsSettings.md#setautoscreenpercentage)**(`bEnable`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| **[setAutoScreenPercentage](mw.GraphicsSettings.md#setautoscreenpercentage)**(`isEnabled`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置是否开启自动分辨率|
 | **[setFSRLevel](mw.GraphicsSettings.md#setfsrlevel)**(`FSRLevel`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置TSR等级|
-| **[setSharpness](mw.GraphicsSettings.md#setsharpness)**(`Sharpness`: `number`): `void` <Badge type="tip" text="client" />  |
+| **[setSharpness](mw.GraphicsSettings.md#setsharpness)**(`sharpness`: `number`): `void` <Badge type="tip" text="client" />  |
 | 设置锐化程度|
 
 ## Accessors
@@ -82,7 +82,7 @@ export default class ClassExample extends Script {
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **occlusionCullingEnabled**(`Enabled`): `void` <Badge type="tip" text="client" />
+• `Static` `set` **occlusionCullingEnabled**(`isEnabled`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -90,7 +90,7 @@ export default class ClassExample extends Script {
 <td style="text-align: left">
 
 
-获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+获取是否开启遮挡剔除(遮挡剔除开启后能一定程度上降低DrawCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
 
 #### Returns
 
@@ -102,11 +102,11 @@ export default class ClassExample extends Script {
 <td style="text-align: left">
 
 
-设置遮挡剔除(遮挡剔除开启后能一定程度上降低DraCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
+设置遮挡剔除(遮挡剔除开启后能一定程度上降低DrawCall，具体效果取决于场景物体相互遮挡的程度, 但是可能会导致物体从被剔除切换到不被剔除时延迟3帧才渲染)
 
 #### Parameters
 
-| `Enabled` `boolean` | 是否开启遮挡剔除 |
+| `isEnabled` `boolean` | 是否开启遮挡剔除 |
 | :------ | :------ |
 
 </td>
@@ -158,13 +158,13 @@ ___
 
 ### setAutoScreenPercentage <Score text="setAutoScreenPercentage" /> 
 
-• `Static` **setAutoScreenPercentage**(`bEnable`): `void` <Badge type="tip" text="client" />
+• `Static` **setAutoScreenPercentage**(`isEnabled`): `void` <Badge type="tip" text="client" />
 
 设置是否开启自动分辨率
 
 #### Parameters
 
-| `bEnable` `boolean` | 开关 |
+| `isEnabled` `boolean` | 开关 |
 | :------ | :------ |
 
 
@@ -186,12 +186,12 @@ ___
 
 ### setSharpness <Score text="setSharpness" /> 
 
-• `Static` **setSharpness**(`Sharpness`): `void` <Badge type="tip" text="client" />
+• `Static` **setSharpness**(`sharpness`): `void` <Badge type="tip" text="client" />
 
 设置锐化程度
 
 #### Parameters
 
-| `Sharpness` `number` | 锐化程度 0-1 |
+| `sharpness` `number` | 锐化程度 0-1 |
 | :------ | :------ |
 

@@ -28,12 +28,12 @@ export default class ClassExample extends Script {
 ### Accessors <Score text="Accessors" /> 
 | **[optimizationEnabled](mw.AvatarSettings.md#optimizationenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取角色优化(角色裁剪、动画更新率降低等)|
+| 开启或关闭角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。|
 
 ### Methods <Score text="Methods" /> 
-| **[setOptimization](mw.AvatarSettings.md#setoptimization)**(`character`: [`Character`](mw.Character.md), `bAnimationBudget`: `boolean`, `bWave`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| **[setOptimization](mw.AvatarSettings.md#setoptimization)**(`character`: [`Character`](mw.Character.md), `useAnimationBudget`: `boolean`, `useWave`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 开启关闭一个角色优化(角色裁剪、动画更新率降低等)|
+| 开启关闭一个角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。|
 
 ## Accessors
 
@@ -48,7 +48,7 @@ export default class ClassExample extends Script {
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **optimizationEnabled**(`isEnable`): `void` <Badge type="tip" text="client" />
+• `Static` `set` **optimizationEnabled**(`isEnabled`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -56,11 +56,11 @@ export default class ClassExample extends Script {
 <td style="text-align: left">
 
 
-获取角色优化(角色裁剪、动画更新率降低等)
+开启或关闭角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。
 
 #### Returns
 
-| `boolean` | boolean:角色优化是否开启,如果返回值为undefined，请检查是否在客户端调用 |
+| `boolean` | boolean:角色优化是否开启,如果返回值为undefined，请检查是否在客户端调用,默认值是:true |
 | :------ | :------ |
 
 
@@ -68,11 +68,11 @@ export default class ClassExample extends Script {
 <td style="text-align: left">
 
 
-开启或关闭角色优化(角色裁剪、动画更新率降低等)
+开启或关闭角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。
 
 #### Parameters
 
-| `isEnable` `boolean` | 是否开启或关闭角色优化 |
+| `isEnabled` `boolean` | 是否开启或关闭角色优化 |
 | :------ | :------ |
 
 </td>
@@ -85,14 +85,14 @@ export default class ClassExample extends Script {
 
 ### setOptimization <Score text="setOptimization" /> 
 
-• `Static` **setOptimization**(`character`, `bAnimationBudget`, `bWave`): `void` <Badge type="tip" text="client" />
+• `Static` **setOptimization**(`character`, `useAnimationBudget`, `useWave`): `void` <Badge type="tip" text="client" />
 
-开启关闭一个角色优化(角色裁剪、动画更新率降低等)
+开启关闭一个角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。
 
 #### Parameters
 
 | `character` [`Character`](mw.Character.md) | 角色对象 |
 | :------ | :------ |
-| `bAnimationBudget` `boolean` | 是否开启或关闭角色动画预算分配器 |
-| `bWave` `boolean` | 是否开启或关闭角色距离优化 |
+| `useAnimationBudget` `boolean` | 是否开启或关闭角色动画预算分配器 |
+| `useWave` `boolean` | 该参数现已弃用 |
 

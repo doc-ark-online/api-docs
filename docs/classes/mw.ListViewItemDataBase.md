@@ -1,4 +1,4 @@
-[GUI](../groups/GUI.GUI.md) / ListViewItemDataBase
+[界面](../groups/界面.界面.md) / ListViewItemDataBase
 
 # ListViewItemDataBase <Badge type="tip" text="Class" /> <Score text="ListViewItemDataBase" />
 
