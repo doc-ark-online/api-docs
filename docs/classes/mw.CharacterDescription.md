@@ -417,21 +417,9 @@ export default class CharacterStyleExample extends Script {
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Keys.Two, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    // 头部:头大小为1.5倍
-                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
-                    // 身高为1.2倍
-                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
-                    // 腮红为75674
-                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
-                    // 前发为57731，后发为63910
-                    myCharacter.description.advance.hair.frontHair.style = "57731";
-                    myCharacter.description.advance.hair.backHair.style = "63910";
-                    // 上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.description.advance.clothing.gloves.style = "60384";
-                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                if(myCharacter.characterType == CharacterType.HumanoidV1) {
+                    // 加载一个 V1/四足外观
+                    character.description.base.wholeBody = "147807"
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
