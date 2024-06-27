@@ -1606,6 +1606,24 @@
         "file": null,
         "children": null,
         "no_children_files": {
+          "vectorSequencePoint": {
+            "file": {
+              "file_name": "mw.vectorSequencePoint.md",
+              "file_path": "classes/mw.vectorSequencePoint.md",
+              "name": "vectorSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ParticleEmitter": {
+            "file": {
+              "file_name": "mw.ParticleEmitter.md",
+              "file_path": "classes/mw.ParticleEmitter.md",
+              "name": "ParticleEmitter"
+            },
+            "no_children_files": null,
+            "children": null
+          },
           "EffectService": {
             "file": {
               "file_name": "mw.EffectService.md",
@@ -1620,6 +1638,24 @@
               "file_name": "mw.Effect.md",
               "file_path": "classes/mw.Effect.md",
               "name": "Effect"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "numberSequencePoint": {
+            "file": {
+              "file_name": "mw.numberSequencePoint.md",
+              "file_path": "classes/mw.numberSequencePoint.md",
+              "name": "numberSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "colorSequencePoint": {
+            "file": {
+              "file_name": "mw.colorSequencePoint.md",
+              "file_path": "classes/mw.colorSequencePoint.md",
+              "name": "colorSequencePoint"
             },
             "no_children_files": null,
             "children": null

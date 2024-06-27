@@ -1,27 +1,33 @@
-[界面](../groups/界面.界面.md) / UserWidget
+[界面](../groups/界面.界面.md) / Mask
 
-# UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
+# Mask <Badge type="tip" text="Class" /> <Score text="Mask" />
 
-自定义控件
+遮罩容器
 
-UI控件的集合，预制体UI
+----------------------
+
+类继承widget，自带添加、移除子级控件的功能
 
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
 
-  ↳ **`UserWidget`**
+  ↳ **`Mask`**
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[focusable](mw.UserWidget.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
+| **[alphaThreshold](mw.Mask.md#alphathreshold)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取是否响应键盘焦点事件|
-| **[rootContent](mw.UserWidget.md#rootcontent)**(): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
-| 获取根Canvas|
-| **[safeAreaEnable](mw.UserWidget.md#safeareaenable)**(): `boolean` <Badge type="tip" text="client" />  |
-| 是否适配安全区|
+| 获取AlphaThreshold值|
+| **[cornerRadius](mw.Mask.md#cornerradius)**(): `number` <Badge type="tip" text="client" />  |
+| 获取CornerRadius值|
+| **[inverted](mw.Mask.md#inverted)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取CornerRadius值|
+| **[maskImageInfo](mw.Mask.md#maskimageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
+| 获取MaskImage的ImageInfo|
+| **[type](mw.Mask.md#type)**(): [`MaskType`](../enums/mw.MaskType.md) <Badge [type](mw.Mask.md#type)="tip" text="client" />  |
+| 获取遮罩类型|
 
 
 ::: details click
@@ -83,13 +89,9 @@ UI控件的集合，预制体UI
 
 
 ### Methods <Score text="Methods" /> 
-| **[addToViewport](mw.UserWidget.md#addtoviewport)**(`zOrder`: `number`): `void` <Badge type="tip" text="client" />  |
+| **[newObject](mw.Mask.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Mask`](mw.Mask.md) <Badge type="tip" text="client" />  |
 | :-----|
-| 添加到屏幕上|
-| **[removeRootContent](mw.UserWidget.md#removerootcontent)**(): `void` <Badge type="tip" text="client" />  |
-| 移除根Canvas，会销毁根Canvas，无法再次使用|
-| **[newObject](mw.UserWidget.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md)): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
-| 创建 UserWidget 控件|
+| 创建Canvas控件|
 
 
 ::: details click
@@ -126,18 +128,18 @@ UI控件的集合，预制体UI
 
 ___
 
-### focusable <Score text="focusable" /> 
+### alphaThreshold <Score text="alphaThreshold" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **focusable**(): `boolean` <Badge type="tip" text="client" />
+• `get` **alphaThreshold**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **focusable**(`isFocus`): `void` <Badge type="tip" text="client" />
+• `set` **alphaThreshold**(`inAlphaThreshold`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -145,11 +147,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否响应键盘焦点事件
+获取AlphaThreshold值
 
 #### Returns
 
-| `boolean` | 返回相应键盘的焦点事件 |
+| `number` | AlphaThreshold值 |
 | :------ | :------ |
 
 
@@ -157,11 +159,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否响应键盘焦点事件
+设置AlphaThreshold值
 
 #### Parameters
 
-| `isFocus` `boolean` | 是否相应 |
+| `inAlphaThreshold` `number` | AlphaThreshold值 |
 | :------ | :------ |
 
 
@@ -172,18 +174,18 @@ ___
 
 ___
 
-### rootContent <Score text="rootContent" /> 
+### cornerRadius <Score text="cornerRadius" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **rootContent**(): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />
+• `get` **cornerRadius**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **rootContent**(`content`): `void` <Badge type="tip" text="client" />
+• `set` **cornerRadius**(`inCornerRadius`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -191,11 +193,11 @@ ___
 <td style="text-align: left">
 
 
-获取根Canvas
+获取CornerRadius值
 
 #### Returns
 
-| [`Canvas`](mw.Canvas.md) | 返回根Canvas |
+| `number` | CornerRadius值 |
 | :------ | :------ |
 
 
@@ -203,11 +205,11 @@ ___
 <td style="text-align: left">
 
 
-设置UI的根Canvas
+设置CornerRadius值
 
 #### Parameters
 
-| `content` [`Canvas`](mw.Canvas.md) | 根UI的内容 |
+| `inCornerRadius` `number` | CornerRadius值 |
 | :------ | :------ |
 
 
@@ -218,18 +220,18 @@ ___
 
 ___
 
-### safeAreaEnable <Score text="safeAreaEnable" /> 
+### inverted <Score text="inverted" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **safeAreaEnable**(): `boolean` <Badge type="tip" text="client" />
+• `get` **inverted**(): `boolean` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **safeAreaEnable**(`isEnable`): `void` <Badge type="tip" text="client" />
+• `set` **inverted**(`inInverted`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -237,11 +239,11 @@ ___
 <td style="text-align: left">
 
 
-是否适配安全区
+获取CornerRadius值
 
 #### Returns
 
-| `boolean` | 是否适配 |
+| `boolean` | CornerRadius值 |
 | :------ | :------ |
 
 
@@ -249,11 +251,84 @@ ___
 <td style="text-align: left">
 
 
-是否适配安全区
+设置CornerRadius值
 
 #### Parameters
 
-| `isEnable` `boolean` | 是否适配 |
+| `inInverted` `boolean` | CornerRadius值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### maskImageInfo <Score text="maskImageInfo" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **maskImageInfo**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取MaskImage的ImageInfo
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) | ImageInfo |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### type <Score text="type" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **type**(): [`MaskType`](../enums/mw.MaskType.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **type**(`maskType`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取遮罩类型
+
+#### Returns
+
+| [`MaskType`](../enums/mw.MaskType.md) | 遮罩类型 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置遮罩类型
+
+#### Parameters
+
+| `maskType` [`MaskType`](../enums/mw.MaskType.md) | 遮罩类型 |
 | :------ | :------ |
 
 </td>
@@ -263,94 +338,24 @@ ___
 
 
 ## Methods
-___
-
-### addToViewport <Score text="addToViewport" /> 
-
-• **addToViewport**(`zOrder`): `void` <Badge type="tip" text="client" />
-
-添加到屏幕上
-
-#### Parameters
-
-| `zOrder` `number` | 添加到屏幕的层级关系 range:不做限制 type:整数 |
-| :------ | :------ |
-
-
-<span style="font-size: 14px;">
-使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像，PC环境下为白图
-</span>
-
-```ts
-@Component
-export default class AccountExample extends Script {
-
-    protected onStart(): void {
-        if (!SystemUtil.isClient()) return;
-        let button = new ButtonUI();
-    }
-}
-
-class ButtonUI {
-    public button:StaleButton;
-
-    constructor() {
-        this.creatUI();
-    }
-
-    private creatUI() {
-        let size = WindowUtil.getViewportSize();
-
-        // 创建一个UI对象
-        let ui = UserWidget.newObject();
-        // 将UI添加到屏幕上
-        ui.addToViewport(1);
-
-        // 创建一个画布组件
-        let canvas = Canvas.newObject();
-        canvas.size = new Vector2(1920, 1080);
-        canvas.position = Vector2.zero;
-        // 将Ui的根画布设置为canvas
-        ui.rootContent = canvas;
-
-        this.button = StaleButton.newObject(canvas);
-        this.button.size = new Vector2(size.x / 14, size.y / 20);
-        this.button.text = "StaleButton";
-        this.button.fontSize = 18;
-        this.button.transitionEnable = true;
-        InputUtil.bindButton(Keys.X, this.button);
-        this.button.setPressedImageColorDecimal(200, 200, 200, 255);
-        this.button.onClicked.add(() => {
-        // 当按下按钮执行以下逻辑
-            console.log("The \"StaleButton\" button was pressed ~");
-        })
-    }
-}
-```
-
-___
-
-### removeRootContent <Score text="removeRootContent" /> 
-
-• **removeRootContent**(): `void` <Badge type="tip" text="client" />
-
-移除根Canvas，会销毁根Canvas，无法再次使用
-
 
 ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />
+• `Static` **newObject**(`parent?`, `inName?`): [`Mask`](mw.Mask.md) <Badge type="tip" text="client" />
 
-创建 UserWidget 控件
+创建Canvas控件
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外Outer对象 default:null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
 | :------ | :------ |
+| `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 
-| [`UserWidget`](mw.UserWidget.md) | 返回创建的控件 |
+| [`Mask`](mw.Mask.md) | 返回创建的对象 |
 | :------ | :------ |
+
+当parent和inName与已有的对象相同时，旧的对象会被销毁

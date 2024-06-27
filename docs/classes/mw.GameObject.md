@@ -62,6 +62,8 @@ export default class GameObjectExample extends Script {
 
   ↳↳ [`IKAnchor`](mw.IKAnchor.md)
 
+  ↳↳ [`ParticleEmitter`](mw.ParticleEmitter.md)
+
   ↳↳ [`Sound`](mw.Sound.md)
 
   ↳↳ [`SwimmingVolume`](Core.mw.SwimmingVolume.md)

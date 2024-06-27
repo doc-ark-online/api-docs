@@ -128,10 +128,14 @@ mw
 | 输入框回车键功能|
 | [Keys](../enums/mw.Keys.md)  |
 | 按键Key值|
+| [LanguageCodeType](../enums/mw.LanguageCodeType.md)  |
+| 游戏本地化语言|
 | [LanguageType](../enums/mw.LanguageType.md)  |
 | 游戏语言|
 | [MaskButtonType](../enums/mw.MaskButtonType.md)  |
 | 遮罩类型|
+| [MaskType](../enums/mw.MaskType.md)  |
+| 新版遮罩类型|
 | [MenuPlacement](../enums/mw.MenuPlacement.md)  |
 | 菜单呼出位置枚举|
 | [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md)  |
@@ -168,6 +172,10 @@ mw
 | 滚动框类型|
 | [OscillatorWaveform](../enums/mw.OscillatorWaveform.md)  |
 | 振荡器波形|
+| [ParticleEmitterShape](../enums/mw.ParticleEmitterShape.md)  |
+| 特效形状枚举|
+| [ParticleEmitterShapeStyle](../enums/mw.ParticleEmitterShapeStyle.md)  |
+| 特效发射类型|
 | [PlayStatus](../enums/mw.PlayStatus.md)  |
 | 帧动画播放规则|
 | [PostProcessPreset](../enums/mw.PostProcessPreset.md)  |
@@ -413,6 +421,8 @@ mw
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
 | 基础的边距，提供4个方向的数值修改|
+| [Mask](../classes/mw.Mask.md)  |
+| 遮罩容器|
 | [MaskButton](../classes/mw.MaskButton.md)  |
 | 遮罩按钮|
 | [MaterialInstance](../classes/mw.MaterialInstance.md)  |
@@ -439,6 +449,8 @@ mw
 | 投掷物发射器|
 | [PanelWidget](../classes/Core.mw.PanelWidget.md)  |
 | :----- |
+| [ParticleEmitter](../classes/mw.ParticleEmitter.md)  |
+| 粒子特效|
 | [Pawn](../classes/mw.Pawn.md)  |
 | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsService](../classes/mw.PhysicsService.md)  |
@@ -575,6 +587,12 @@ mw
 | 控件的基类|
 | [WindowUtil](../classes/mw.WindowUtil.md)  |
 | 窗口设置工具。|
+| [colorSequencePoint](../classes/mw.colorSequencePoint.md)  |
+| 特效颜色值曲线节点|
+| [numberSequencePoint](../classes/mw.numberSequencePoint.md)  |
+| 特效标量值曲线节点|
+| [vectorSequencePoint](../classes/mw.vectorSequencePoint.md)  |
+| 特效向量值曲线节点|
 
 ### Interfaces <Score text="Interfaces" /> 
 | [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md)  |

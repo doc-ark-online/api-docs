@@ -38,8 +38,12 @@ export default class PostProcessExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
+| **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number`   |
 | :-----|
+| 获取环境光遮蔽强度|
+| **[ambientOcclusionRadius](mw.PostProcess.md#ambientocclusionradius)**(): `number`   |
+| 获取环境光遮蔽半径|
+| **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
 | 获取泛光|
 | **[blurEnabled](mw.PostProcess.md#blurenabled)**(): `boolean`   |
 | 获取模糊|
@@ -63,6 +67,98 @@ export default class PostProcessExample extends mw.Script {
 | 获取全局饱和度|
 
 ## Accessors
+
+### ambientOcclusionIntensity <Score text="ambientOcclusionIntensity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **ambientOcclusionIntensity**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **ambientOcclusionIntensity**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取环境光遮蔽强度
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置环境光遮蔽强度（0 ~ 1）数值越大,强度越大
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### ambientOcclusionRadius <Score text="ambientOcclusionRadius" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **ambientOcclusionRadius**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **ambientOcclusionRadius**(`Value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取环境光遮蔽半径
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置环境光遮蔽半径（0.1 ~ 500.0）数值越小半径越小
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
 
 ### bloom <Score text="bloom" /> 
 

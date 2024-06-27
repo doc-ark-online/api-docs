@@ -13,6 +13,13 @@
 | **[unHandled](mw.EventReply.md#unhandled)**(): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
 | 事件未处理|
 
+### Methods <Score text="Methods" /> 
+| **[captureMouse](mw.EventReply.md#capturemouse)**(`widget`: [`Widget`](mw.Widget.md)): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
+| :-----|
+| 捕获光标|
+| **[releaseMouseCapture](mw.EventReply.md#releasemousecapture)**(): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />  |
+| 释放光标|
+
 默认构造
 
 • `Private` **new EventReply**()
@@ -66,8 +73,40 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
+| [`EventReply`](mw.EventReply.md) |  |
+| :------ | :------ |
+
+## Methods
+
+### captureMouse <Score text="captureMouse" /> 
+
+• **captureMouse**(`widget`): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />
+
+捕获光标
+
+#### Parameters
+
+| `widget` [`Widget`](mw.Widget.md) | 自身控件 |
+| :------ | :------ |
+
+#### Returns
+
+| [`EventReply`](mw.EventReply.md) |  |
+| :------ | :------ |
+
+___
+
+### releaseMouseCapture <Score text="releaseMouseCapture" /> 
+
+• **releaseMouseCapture**(): [`EventReply`](mw.EventReply.md) <Badge type="tip" text="client" />
+
+释放光标
+
+#### Returns
+
+| [`EventReply`](mw.EventReply.md) |  |
+| :------ | :------ |

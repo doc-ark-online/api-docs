@@ -72,6 +72,8 @@
 
 ## Accessors
 
+___
+
 ### allowOverscroll <Score text="allowOverscroll" /> 
 
 <table class="get-set-table">

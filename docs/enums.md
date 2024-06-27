@@ -115,6 +115,7 @@ Enums
 ## L
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [LanguageCodeType](enums/mw.LanguageCodeType.md) | 游戏本地化语言 | [基础类型](groups/基础类型.基础类型.md) |
 | [LanguageType](enums/mw.LanguageType.md) | 游戏语言 | [基础类型](groups/基础类型.基础类型.md) |
 
 
@@ -122,6 +123,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [MaskButtonType](enums/mw.MaskButtonType.md) | 遮罩类型 | [界面](groups/界面.界面.md) |
+| [MaskType](enums/mw.MaskType.md) | 新版遮罩类型 | [界面](groups/界面.界面.md) |
 | [MenuPlacement](enums/mw.MenuPlacement.md) | 菜单呼出位置枚举 | [界面](groups/界面.界面.md) |
 | [MessageChannelReceiver](enums/mw.MessageChannelReceiver.md) | 枚举各个通道的使用与接收方 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageState](enums/mw.MessageState.md) | 发送消息的状态 | [基础类型](groups/基础类型.基础类型.md) |
@@ -155,6 +157,8 @@ Enums
 ## P
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ParticleEmitterShape](enums/mw.ParticleEmitterShape.md) | 特效形状枚举 | [场景](groups/场景.场景.md) |
+| [ParticleEmitterShapeStyle](enums/mw.ParticleEmitterShapeStyle.md) | 特效发射类型 | [场景](groups/场景.场景.md) |
 | [PlayStatus](enums/mw.PlayStatus.md) | 帧动画播放规则 | [界面](groups/界面.界面.md) |
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [场景](groups/场景.场景.md) |
 | [ProgressBarFillType](enums/mw.ProgressBarFillType.md) | 进度条填充规则 | [界面](groups/界面.界面.md) |
