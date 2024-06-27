@@ -533,6 +533,11 @@ ___
 玩家是否可以使用shift,切换鼠标锁定状态
 
 
+#### Parameters
+
+| `b` `boolean` | 如果为True，玩家在游戏中按下鼠标锁定按键（默认shift）后，玩家可以自行切换鼠标锁定状态 |
+| :------ | :------ |
+
 </td>
 </tr></tbody>
 </table>
@@ -560,13 +565,8 @@ export default class InputExample extends Script {
             InputUtil.mouseLockOptionEnabled = false;
         })
     }
-
 }
-
-#### Parameters
-
-| `b` `boolean` | 如果为True，玩家在游戏中按下鼠标锁定按键（默认shift）后，玩家可以自行切换鼠标锁定状态 |
-| :------ | :------ |
+```
 
 
 ## Methods
@@ -594,7 +594,7 @@ ___
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下 F 键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
 </span>
 
-```
+```ts
 @Component
 export default class InputExample extends Script {
 
@@ -614,7 +614,7 @@ export default class InputExample extends Script {
     }
 
 }
-```ts
+```
 
 ___
 
@@ -639,7 +639,7 @@ ___
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
 </span>
 
-```
+```ts
 @Component
 export default class InputExample extends Script {
 
@@ -655,7 +655,7 @@ export default class InputExample extends Script {
     }
 
 }
-```ts
+```
 
 ___
 
@@ -680,7 +680,7 @@ ___
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
 </span>
 
-```
+```ts
 @Component
 export default class InputExample extends Script {
 
@@ -695,7 +695,7 @@ export default class InputExample extends Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -720,7 +720,7 @@ ___
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
 </span>
 
-```
+```ts
 @Component
 export default class InputExample extends Script {
 
@@ -736,7 +736,7 @@ export default class InputExample extends Script {
     }
 
 }
-```ts
+```
 
 ___
 
@@ -872,7 +872,7 @@ ___
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
 </span>
 
-```
+```ts
 @Component
 export default class InputExample extends Script {
 
@@ -929,4 +929,4 @@ class ButtonUI {
 
     }
 }
-```ts
+```
