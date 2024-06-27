@@ -50,12 +50,18 @@ export default class MaterialExample extends Script {
 | 返回所有的贴图材质参数|
 | **[getAllVectorParameterName](mw.MaterialInstance.md#getallvectorparametername)**(): `string`[]   |
 | 返回所有的颜色材质参数|
+| **[getProperty](mw.MaterialInstance.md#getproperty)**(`propertyName`: `string`): `any`   |
+| 获取材质指定名称属性|
+| **[getPropertyNames](mw.MaterialInstance.md#getpropertynames)**(): `string`[]   |
+| 获取材质所有属性名称|
 | **[getScalarParameterValue](mw.MaterialInstance.md#getscalarparametervalue)**(`parameterName`: `string`): `number`   |
 | 获取浮点参数值|
 | **[getTextureParameterValue](mw.MaterialInstance.md#gettextureparametervalue)**(`parameterName`: `string`): `string`   |
 | 获取贴图参数值|
 | **[getVectorParameterValue](mw.MaterialInstance.md#getvectorparametervalue)**(`parameterName`: `string`): [`LinearColor`](mw.LinearColor.md)   |
 | 获取颜色参数值|
+| **[setProperty](mw.MaterialInstance.md#setproperty)**(`propertyName`: `string`, `value`: `any`): `void`   |
+| 设置材质属性|
 | **[setScalarParameterValue](mw.MaterialInstance.md#setscalarparametervalue)**(`parameterName`: `string`, `value`: `number`): `void`   |
 | 设置浮点参数值。|
 | **[setTextureParameterValue](mw.MaterialInstance.md#settextureparametervalue)**(`parameterName`: `string`, `value`: `string`): `void`   |
@@ -100,6 +106,37 @@ ___
 #### Returns
 
 | `string`[] | 材质参数数组 |
+| :------ | :------ |
+
+___
+
+### getProperty <Score text="getProperty" /> 
+
+• **getProperty**(`propertyName`): `any` 
+
+获取材质指定名称属性
+
+#### Parameters
+
+| `propertyName` | `string` |
+| :------ | :------ |
+
+#### Returns
+
+| `any` |  |
+| :------ | :------ |
+
+___
+
+### getPropertyNames <Score text="getPropertyNames" /> 
+
+• **getPropertyNames**(): `string`[] 
+
+获取材质所有属性名称
+
+#### Returns
+
+| `string`[] | 返回属性名称列表 |
 | :------ | :------ |
 
 ___
@@ -159,6 +196,21 @@ ___
 
 | [`LinearColor`](mw.LinearColor.md) | 参数值 |
 | :------ | :------ |
+
+___
+
+### setProperty <Score text="setProperty" /> 
+
+• **setProperty**(`propertyName`, `value`): `void` 
+
+设置材质属性
+
+#### Parameters
+
+| `propertyName` | `string` |
+| :------ | :------ |
+| `value` | `any` |
+
 
 ___
 

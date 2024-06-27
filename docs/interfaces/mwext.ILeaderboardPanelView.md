@@ -1,4 +1,4 @@
-[界面](../groups/Extension.界面.md) / ILeaderboardPanelView
+[拓展](../groups/Extension.拓展.md) / ILeaderboardPanelView
 
 # ILeaderboardPanelView <Badge type="tip" text="Interface" /> <Score text="ILeaderboardPanelView" />
 

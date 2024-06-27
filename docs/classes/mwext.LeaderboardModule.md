@@ -1,4 +1,4 @@
-[界面](../groups/Extension.界面.md) / LeaderboardModule
+[拓展](../groups/Extension.拓展.md) / LeaderboardModule
 
 # LeaderboardModule <Badge type="tip" text="Class" /> <Score text="LeaderboardModule" />
 

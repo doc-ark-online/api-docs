@@ -13,6 +13,7 @@
 | **[Character](mw.AssetType.md#character)** = ``7`` |
 | **[Cloth](mw.AssetType.md#cloth)** = ``3`` |
 | **[DynamicAttachment](mw.AssetType.md#dynamicattachment)** = ``9`` |
+| **[JsonParticleSystem](mw.AssetType.md#jsonparticlesystem)** = ``11`` |
 | **[ParticleSystem](mw.AssetType.md#particlesystem)** = ``8`` |
 | **[Prefab](mw.AssetType.md#prefab)** = ``6`` |
 | **[SkeletalMesh](mw.AssetType.md#skeletalmesh)** = ``2`` |
@@ -59,6 +60,14 @@ ___
 • **DynamicAttachment** = ``9``
 
 DynamicAttachment
+
+___
+
+### JsonParticleSystem <Score text="JsonParticleSystem" /> 
+
+• **JsonParticleSystem** = ``11``
+
+JsonParticleSystem
 
 ___
 

@@ -1,4 +1,4 @@
-[界面](../groups/Extension.界面.md) / BasePanel
+[拓展](../groups/Extension.拓展.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 

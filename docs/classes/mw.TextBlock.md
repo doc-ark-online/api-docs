@@ -87,34 +87,6 @@
 | 获取控件上光标类型|
 | **[name](mw.Widget.md#name)**(): `string` <Badge type="tip" text="client" />  |
 | 获取名字|
-| **[onFocusChange](mw.Widget.md#onfocuschange)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 焦点改变事件|
-| **[onFoucsLost](mw.Widget.md#onfoucslost)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 丢失焦点事件|
-| **[onKeyDownEvent](mw.Widget.md#onkeydownevent)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `keyEvent`: [`KeyEvent`](mw.KeyEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 按键按下事件|
-| **[onKeyUpEvent](mw.Widget.md#onkeyupevent)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `keyEvent`: [`KeyEvent`](mw.KeyEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 按键抬起事件|
-| **[onMouseButtonDoubleClick](mw.Widget.md#onmousebuttondoubleclick)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标双击事件|
-| **[onMouseButtonDown](mw.Widget.md#onmousebuttondown)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标按下事件|
-| **[onMouseButtonUp](mw.Widget.md#onmousebuttonup)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标抬起事件|
-| **[onMouseEnter](mw.Widget.md#onmouseenter)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标进入控件事件|
-| **[onMouseLeave](mw.Widget.md#onmouseleave)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标离开控件事件|
-| **[onMouseMove](mw.Widget.md#onmousemove)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标移动事件|
-| **[onMouseWheel](mw.Widget.md#onmousewheel)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 鼠标滚轮滚动事件|
-| **[onTouchEnded](mw.Widget.md#ontouchended)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 触摸结束事件|
-| **[onTouchMoved](mw.Widget.md#ontouchmoved)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 触摸移动事件|
-| **[onTouchStarted](mw.Widget.md#ontouchstarted)**(): [`Delegate`](mw.Delegate.md)<(`absolutionPosition`: [`Vector2`](mw.Vector2.md), `pointEvent`: [`PointerEvent`](mw.PointerEvent.md)) => `boolean`\> <Badge type="tip" text="client" />  |
-| 触摸按下事件|
 | **[paintSpaceGeometry](mw.Widget.md#paintspacegeometry)**(): [`Geometry`](mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |

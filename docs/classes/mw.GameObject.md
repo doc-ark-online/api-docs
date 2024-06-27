@@ -76,6 +76,8 @@ export default class GameObjectExample extends Script {
 
   ↳↳ [`Interactor`](mw.Interactor.md)
 
+  ↳↳ [`PointLight`](mw.PointLight.md)
+
   ↳↳ [`NavModifierVolume`](mw.NavModifierVolume.md)
 
   ↳↳ [`RigidConstraint`](mw.RigidConstraint.md)

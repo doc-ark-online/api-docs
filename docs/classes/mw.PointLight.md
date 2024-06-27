@@ -1,183 +1,18 @@
-[玩法](../groups/玩法.玩法.md) / ForceVolume
+[场景](../groups/场景.场景.md) / PointLight
 
-# ForceVolume <Badge type="tip" text="Class" /> <Score text="ForceVolume" />
+# PointLight <Badge type="tip" text="Class" /> <Score text="PointLight" />
 
-物理力区域
-
--------------------------
-
-进入力区域的角色或开启物理模拟的物体，会受到力的作用
-
-如何使用力区域：
-
-- 创建一个力区域对象。可手动将左侧栏中逻辑对象中的力区域拖入场景中，在编辑器属性面板中调整参数；也可以在脚本中动态创建力区域。
-
-- 设置力区域对象属性 自动启用/enabled 为 true ，才可触发力的效果。
-
-- 选择一种力区域的类型，指向力会向指定方向施加指定大小的力，而径向力会沿球心方向施加指定大小的力
-
-- 对于指向力，需要设置 指向力值/directionalForce 指定大小和方向；对于径向力，需要设置 径向力值/radialForce 指定大小
-
-<span style="font-size: 14px;">
-使用示例:创建一个名为"ForceVolumeSample"的脚本，按 Q 使方块进入力区域，接下来使用数字键 1 控制开关，使用数字键 2 切换力的类型，使用数字键 3 切换力的大小，就可以看到方块在力区域中的表现了
-</span>
-
-注意：默认给的径向力大小不足以使方块运动起来，所以不调整大小的情况下切换为径向力之后方块坠地为正常表现；如果方块在运动过程中离开了区域，再按一次 Q 可以将方块重新置于力区域中；由于力区域仅存在于服务端，对于以主控端表现为主的角色无影响也是正常表现
-代码如下：
-```ts
-@Component
-export default class ForceVolumeSample extends Script {
-
-   public myFV: ForceVolume;
-   public myCube: Model;
-   public myFlag: boolean = true;
-
-   // 当脚本被实例后，会在第一帧更新前调用此函数
-   protected async onStart(): `Promise`<`void`\> {
-
-       // 在服务端添加一个开启物理模拟并移动位置的监听回调函数
-       if (SystemUtil.isServer()) {
-           Event.addClientListener("EnablePhysicsAndSetPosition", (player: Player)=>{
-               this.myCube.physicsEnabled = true;
-               this.myCube.localTransform.position = new Vector(500, 0, 0);
-           });
-       }
-
-       // 在服务端添加一个开启/关闭力区域的监听回调函数
-       if (SystemUtil.isServer()) {
-           Event.addClientListener("SwitchForceVolumeEnabledStatus", (player: Player)=>{
-               if (this.myFV.enabled) {
-                   this.myFV.enabled = false;
-               } else {
-                   this.myFV.enabled = true;
-               }
-           });
-       }
-
-       // 在服务端添加一个切换指向力/径向力区域的监听回调函数
-       if (SystemUtil.isServer()) {
-           Event.addClientListener("SwitchForceVolumeType", (player: Player)=>{
-               if (this.myFV.forceType == ForceType.Directed) {
-                   this.myFV.forceType = ForceType.Radial;
-               } else {
-                   this.myFV.forceType = ForceType.Directed;
-               }
-           });
-       }
-
-       // 在服务端添加一个切换切换指向力/径向力大小（正常大小与三倍大小）的监听回调函数
-       if (SystemUtil.isServer()) {
-           Event.addClientListener("SwitchForceVolumeIntensity", (player: Player)=>{
-               if (this.myFlag) {
-                   this.myFV.directionalForce = new Vector(0, 0, 900000);
-                   this.myFV.radialForce = 900000;
-                   this.myFlag = false;
-               } else {
-                   this.myFV.directionalForce = new Vector(0, 0, 300000);
-                   this.myFV.radialForce = 300000;
-                   this.myFlag = true;
-               }
-           });
-       }
-
-       // 在服务端添加一个切换稳定性系数（0与50）的监听回调函数
-       if (SystemUtil.isServer()) {
-           Event.addClientListener("SwitchStability", (player: Player)=>{
-               if (this.myFV.stability == 0) {
-                   this.myFV.stability = 50;
-               } else {
-                   this.myFV.stability = 0;
-               }
-           });
-       }
-
-       // 在服务端创建一个力区域对象
-       if (SystemUtil.isServer()) {
-           this.myFV = await GameObject.asyncSpawn<ForceVolume>("ForceVolume",
-           {
-               replicates: true,
-               transform: new Transform()
-           });
-       }
-
-       // 在服务端修改力区域的位置与缩放
-       if (SystemUtil.isServer()) {
-           let myFVTrans = this.myFV.localTransform;
-           let newPosition = new Vector(500, 0, 250);
-           myFVTrans.position = newPosition;
-           let newScale = new Vector(5, 5, 5);
-           myFVTrans.scale = newScale;
-       }
-
-       // 在服务端修改力区域的具体数据，并绑定进出区域事件输出log
-       if (SystemUtil.isServer()) {
-           this.myFV.enabled = true;
-           this.myFV.forceType = ForceType.Directed;
-           this.myFV.directionalForce = new Vector(0, 0, 300000);
-           this.myFV.radialForce = 300000;
-           this.myFV.stability = 0;
-           this.myFV.onEnter.add(()=>{
-               console.log("Something entered ForceVolume");
-           });
-           this.myFV.onLeave.add(()=>{
-               console.log("Something left ForceVolume");
-           });
-       }
-
-       // 在服务端创建一个方块，客户端按下 Q 开启物理模拟，并将方块移动到力区域内
-       if (SystemUtil.isServer()) {
-           this.myCube = await GameObject.asyncSpawn<Model>("197386",
-           {
-               replicates: true,
-               transform: new Transform()
-           });
-       }
-       InputUtil.onKeyDown(Keys.Q, ()=>{
-           // 客户端通知服务器执行相应操作
-           Event.dispatchToServer("EnablePhysicsAndSetPosition");
-       });
-
-       // 在客户端按数字键 1 来开启/关闭力区域
-       InputUtil.onKeyDown(Keys.One, ()=>{
-           // 客户端通知服务器执行相应操作
-           Event.dispatchToServer("SwitchForceVolumeEnabledStatus");
-       });
-
-       // 在客户端按数字键 2 来切换指向力/径向力区域
-       InputUtil.onKeyDown(Keys.Two, ()=>{
-           // 客户端通知服务器执行相应操作
-           Event.dispatchToServer("SwitchForceVolumeType");
-       });
-
-       // 在客户端按数字键 3 来切换指向力/径向力大小（正常大小与三倍大小）
-       InputUtil.onKeyDown(Keys.Three, ()=>{
-           // 客户端通知服务器执行相应操作
-           Event.dispatchToServer("SwitchForceVolumeIntensity");
-       });
-
-       // 在客户端按数字键 4 来切换稳定性系数（0与50）
-       InputUtil.onKeyDown(Keys.Four, ()=>{
-           // 客户端通知服务器执行相应操作
-           Event.dispatchToServer("SwitchStability");
-       });
-   }
-}
-```
+点光源
 
 ## Hierarchy
 
 - [`GameObject`](mw.GameObject.md)
 
-  ↳ **`ForceVolume`**
+  ↳ **`PointLight`**
 
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onEnter](mw.ForceVolume.md#onenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
-| :-----|
-| 进入物理力区域回调函数|
-| **[onLeave](mw.ForceVolume.md#onleave)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
-| 离开物理力区域回调函数|
 
 
 ::: details click
@@ -195,17 +30,17 @@ export default class ForceVolumeSample extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[directionalForce](mw.ForceVolume.md#directionalforce)**(): [`Vector`](mw.Vector.md)   |
+| **[attenuationExponent](mw.PointLight.md#attenuationexponent)**(): `number` <Badge type="tip" text="other" />  |
 | :-----|
-| 获取物理力区域在指向类型时力的大小|
-| **[enabled](mw.ForceVolume.md#enabled)**(): `boolean`   |
-| 获取是否启用物理力区域|
-| **[forceType](mw.ForceVolume.md#forcetype)**(): [`ForceType`](../enums/mw.ForceType.md)   |
-| 获取物理力区域力的应用方式|
-| **[radialForce](mw.ForceVolume.md#radialforce)**(): `number`   |
-| 获取物理力区域在指向类型时力的大小|
-| **[stability](mw.ForceVolume.md#stability)**(): `number`   |
-| 获取物理力区域的稳定性系数|
+| 获取光照衰减指数|
+| **[attenuationRadius](mw.PointLight.md#attenuationradius)**(): `number` <Badge type="tip" text="other" />  |
+| 获取光照衰减半径|
+| **[color](mw.PointLight.md#color)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />  |
+| 获取光照颜色|
+| **[enabled](mw.PointLight.md#enabled)**(): `boolean` <Badge type="tip" text="other" />  |
+| 获取点光源开关|
+| **[intensity](mw.PointLight.md#intensity)**(): `number` <Badge type="tip" text="other" />  |
+| 获取光照强度|
 
 
 ::: details click
@@ -331,74 +166,22 @@ export default class ForceVolumeSample extends Script {
 
 ## Properties
 
-___
-
-### onEnter <Score text="onEnter" /> 
-
-• **onEnter**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
-
-进入物理力区域回调函数
-
-<span style="font-size: 14px;">
-使用示例:（回调使用）创建一个名为"FVOnEnterSample"的脚本，将脚本挂载到对象管理器中的力区域下，控制角色走进区域，你将会看到服务端和客户端的log输出，代码如下：
-</span>
-
-```ts
-@Component
-export default class FVOnEnterSample extends Script {
-
-   // 当脚本被实例后，会在第一帧更新前调用此函数
-   protected onStart(): void {
-       let FV = this.gameObject as ForceVolume;
-       FV.onEnter.add(()=>{
-           console.log("Something entered ForceVolume");
-       });
-   }
-}
-```
-
-___
-
-### onLeave <Score text="onLeave" /> 
-
-• **onLeave**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
-
-离开物理力区域回调函数
-
-<span style="font-size: 14px;">
-使用示例:（回调使用）创建一个名为"FVOnLeaveSample"的脚本，将脚本挂载到对象管理器中的力区域下，控制角色走进再离开区域，你将会看到服务端和客户端的log输出，代码如下：
-</span>
-
-```ts
-@Component
-export default class FVOnLeaveSample extends Script {
-
-   // 当脚本被实例后，会在第一帧更新前调用此函数
-   protected onStart(): void {
-       let FV = this.gameObject as ForceVolume;
-       FV.onLeave.add(()=>{
-           console.log("Something left ForceVolume");
-       });
-   }
-}
-```
-
 ## Accessors
 
 ___
 
-### directionalForce <Score text="directionalForce" /> 
+### attenuationExponent <Score text="attenuationExponent" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **directionalForce**(): [`Vector`](mw.Vector.md) 
+• `get` **attenuationExponent**(): `number` <Badge type="tip" text="other" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **directionalForce**(`newVector`): `void` <Badge type="tip" text="other" />
+• `set` **attenuationExponent**(`value`): `void` <Badge type="tip" text="other" />
 
 </th>
 </tr></thead>
@@ -406,11 +189,11 @@ ___
 <td style="text-align: left">
 
 
-获取物理力区域在指向类型时力的大小
+获取光照衰减指数
 
 #### Returns
 
-| [`Vector`](mw.Vector.md) | 当前指向力的向量 |
+| `number` | 光照衰减指数 |
 | :------ | :------ |
 
 
@@ -418,11 +201,103 @@ ___
 <td style="text-align: left">
 
 
-设置物理力区域在指向类型时力的大小
+设置光照衰减指数
 
 #### Parameters
 
-| `newVector` [`Vector`](mw.Vector.md) |  指向力向量 |
+| `value` `number` | 光照衰减指数 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### attenuationRadius <Score text="attenuationRadius" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **attenuationRadius**(): `number` <Badge type="tip" text="other" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **attenuationRadius**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取光照衰减半径
+
+#### Returns
+
+| `number` | 光照衰减半径 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置光照衰减半径
+
+#### Parameters
+
+| `value` `number` | 光照衰减半径 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### color <Score text="color" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **color**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **color**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取光照颜色
+
+#### Returns
+
+| [`LinearColor`](mw.LinearColor.md) | 光照颜色值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置光照颜色
+
+#### Parameters
+
+| `value` [`LinearColor`](mw.LinearColor.md) | 光照颜色值 |
 | :------ | :------ |
 
 
@@ -439,12 +314,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **enabled**(): `boolean` 
+• `get` **enabled**(): `boolean` <Badge type="tip" text="other" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **enabled**(`newEnabledStatus`): `void` <Badge type="tip" text="other" />
+• `set` **enabled**(`value`): `void` <Badge type="tip" text="other" />
 
 </th>
 </tr></thead>
@@ -452,11 +327,11 @@ ___
 <td style="text-align: left">
 
 
-获取是否启用物理力区域
+获取点光源开关
 
 #### Returns
 
-| `boolean` | 是否启用物理力区域 |
+| `boolean` | 光照开关 |
 | :------ | :------ |
 
 
@@ -464,11 +339,11 @@ ___
 <td style="text-align: left">
 
 
-设置是否启用物理力区域，禁用状态下，不会应用力到物体上
+设置点光源开关
 
 #### Parameters
 
-| `newEnabledStatus` `boolean` |  是否启用该物理区域，设置为 false 后依然会有碰撞事件，但不会应用力 |
+| `value` `boolean` | 光照开关 |
 | :------ | :------ |
 
 
@@ -479,18 +354,18 @@ ___
 
 ___
 
-### forceType <Score text="forceType" /> 
+### intensity <Score text="intensity" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **forceType**(): [`ForceType`](../enums/mw.ForceType.md) 
+• `get` **intensity**(): `number` <Badge type="tip" text="other" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **forceType**(`newForceType`): `void` <Badge type="tip" text="other" />
+• `set` **intensity**(`value`): `void` <Badge type="tip" text="other" />
 
 </th>
 </tr></thead>
@@ -498,11 +373,11 @@ ___
 <td style="text-align: left">
 
 
-获取物理力区域力的应用方式
+获取光照强度
 
 #### Returns
 
-| [`ForceType`](../enums/mw.ForceType.md) | 当前物理力区域的类型 |
+| `number` | 光照强度值 |
 | :------ | :------ |
 
 
@@ -510,103 +385,11 @@ ___
 <td style="text-align: left">
 
 
-设置物理力区域力的应用方式
+设置光照强度
 
 #### Parameters
 
-| `newForceType` [`ForceType`](../enums/mw.ForceType.md) |  力区域的类型 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### radialForce <Score text="radialForce" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **radialForce**(): `number` 
-
-</th>
-<th style="text-align: left">
-
-• `set` **radialForce**(`newIntensity`): `void` <Badge type="tip" text="other" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取物理力区域在指向类型时力的大小
-
-#### Returns
-
-| `number` | 当前径向力的大小 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置物理力区域在径向类型时力的大小
-
-#### Parameters
-
-| `newIntensity` `number` |  径向力大小 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### stability <Score text="stability" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **stability**(): `number` 
-
-</th>
-<th style="text-align: left">
-
-• `set` **stability**(`newFactor`): `void` <Badge type="tip" text="other" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取物理力区域的稳定性系数
-
-#### Returns
-
-| `number` | 当前稳定性系数大小 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置物理力区域的稳定性系数
-
-#### Parameters
-
-| `newFactor` `number` |  稳定性系数大小 |
+| `value` `number` | 光照强度值 |
 | :------ | :------ |
 
 </td>
