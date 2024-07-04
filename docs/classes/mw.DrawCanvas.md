@@ -1,31 +1,18 @@
-[界面](../groups/界面.界面.md) / ColorPick
+[界面](../groups/界面.界面.md) / DrawCanvas
 
-# ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
+# DrawCanvas <Badge type="tip" text="Class" /> <Score text="DrawCanvas" />
 
-调色板
+UI 画布
 
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
 
-  ↳ **`ColorPick`**
+  ↳ **`DrawCanvas`**
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[color](mw.ColorPick.md#color)**(`inColor`: [`LinearColor`](mw.LinearColor.md)): `void` <Badge type="tip" text="client" />  |
-| :-----|
-| 设置color picker的颜色|
-| **[imageGuid](mw.ColorPick.md#imageguid)**(`inGuid`: `string`): `void` <Badge type="tip" text="client" />  |
-| 设置color picker 的图片|
-| **[onColorChangeFinished](mw.ColorPick.md#oncolorchangefinished)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 颜色改变完成时触发的函数代理|
-| **[onColorChanged](mw.ColorPick.md#oncolorchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 颜色改变时触发的代理|
-| **[onTouchFinished](mw.ColorPick.md#ontouchfinished)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 点击完成时触发的代理函数|
-| **[onTouchStart](mw.ColorPick.md#ontouchstart)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 点击时触发的代理|
 
 
 ::: details click
@@ -83,9 +70,23 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[newObject](mw.ColorPick.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ColorPick`](mw.ColorPick.md) <Badge type="tip" text="client" />  |
+| **[clearDraws](mw.DrawCanvas.md#cleardraws)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 创建 ColorPick 控件|
+| 清除全部绘制|
+| **[drawCubicBezierSpline](mw.DrawCanvas.md#drawcubicbezierspline)**(`p1`: [`Vector2`](mw.Vector2.md), `p2`: [`Vector2`](mw.Vector2.md), `p3`: [`Vector2`](mw.Vector2.md), `p4`: [`Vector2`](mw.Vector2.md), `lineData?`: [`DrawDataBase`](mw.DrawDataBase.md)): `number` <Badge type="tip" text="client" />  |
+| 绘制三阶贝塞尔曲线|
+| **[drawCustom](mw.DrawCanvas.md#drawcustom)**(`vertex`: [`UIDrawCustomVertex`](mw.UIDrawCustomVertex.md)[], `index`: `number`[], `assetId?`: `string`, `drawLayerId?`: `number`): `number` <Badge type="tip" text="client" />  |
+| 自定义绘制图元|
+| **[drawLines](mw.DrawCanvas.md#drawlines)**(`points`: [`Vector2`](mw.Vector2.md)[], `lineData?`: [`DrawDataBase`](mw.DrawDataBase.md)): `number` <Badge type="tip" text="client" />  |
+| 画多段线|
+| **[drawSpline](mw.DrawCanvas.md#drawspline)**(`startPoint`: [`Vector2`](mw.Vector2.md), `startDirection`: [`Vector2`](mw.Vector2.md), `endPoint`: [`Vector2`](mw.Vector2.md), `endDirection`: [`Vector2`](mw.Vector2.md), `lineData?`: [`DrawDataBase`](mw.DrawDataBase.md)): `number` <Badge type="tip" text="client" />  |
+| 画埃尔米特曲线|
+| **[drawText](mw.DrawCanvas.md#drawtext)**(`text`: `string`, `position`: [`Vector2`](mw.Vector2.md), `fontSize`: `number`, `fontColor`: `any`, `drawLayerId?`: `number`): `number` <Badge type="tip" text="client" />  |
+| 画文字|
+| **[removeDrawById](mw.DrawCanvas.md#removedrawbyid)**(`Id`: `number`): `void` <Badge type="tip" text="client" />  |
+| 移除指定的绘制图元|
+| **[newObject](mw.DrawCanvas.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`DrawCanvas`](mw.DrawCanvas.md) <Badge type="tip" text="client" />  |
+| 创建绘画控件|
 
 
 ::: details click
@@ -120,191 +121,154 @@
 
 ## Accessors
 
-___
-
-### color <Score text="color" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `set` **color**(`inColor`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-设置color picker的颜色
-
-#### Parameters
-
-| `inColor` [`LinearColor`](mw.LinearColor.md) | 输入的颜色，Type.LinearColor类型，数据范围0~1 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### imageGuid <Score text="imageGuid" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `set` **imageGuid**(`inGuid`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-设置color picker 的图片
-
-#### Parameters
-
-| `inGuid` | `string` |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onColorChangeFinished <Score text="onColorChangeFinished" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onColorChangeFinished**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-颜色改变完成时触发的函数代理
-
-#### Returns
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onColorChanged <Score text="onColorChanged" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onColorChanged**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-颜色改变时触发的代理
-
-#### Returns
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onTouchFinished <Score text="onTouchFinished" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onTouchFinished**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-点击完成时触发的代理函数
-
-#### Returns
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onTouchStart <Score text="onTouchStart" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onTouchStart**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-点击时触发的代理
-
-#### Returns
-
-</td>
-</tr></tbody>
-</table>
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
-| :------ | :------ |
-
 ## Methods
+
+___
+
+### clearDraws <Score text="clearDraws" /> 
+
+• **clearDraws**(): `void` <Badge type="tip" text="client" />
+
+清除全部绘制
+
+
+___
+
+### drawCubicBezierSpline <Score text="drawCubicBezierSpline" /> 
+
+• **drawCubicBezierSpline**(`p1`, `p2`, `p3`, `p4`, `lineData?`): `number` <Badge type="tip" text="client" />
+
+绘制三阶贝塞尔曲线
+
+#### Parameters
+
+| `p1` [`Vector2`](mw.Vector2.md) | 第一个点 |
+| :------ | :------ |
+| `p2` [`Vector2`](mw.Vector2.md) | 第二个点 |
+| `p3` [`Vector2`](mw.Vector2.md) | 第三个点 |
+| `p4` [`Vector2`](mw.Vector2.md) | 第四个点 |
+| `lineData?` [`DrawDataBase`](mw.DrawDataBase.md) | 绘制图元信息 |
+
+#### Returns
+
+| `number` | 返回drawId |
+| :------ | :------ |
+
+___
+
+### drawCustom <Score text="drawCustom" /> 
+
+• **drawCustom**(`vertex`, `index`, `assetId?`, `drawLayerId?`): `number` <Badge type="tip" text="client" />
+
+自定义绘制图元
+
+#### Parameters
+
+| `vertex` [`UIDrawCustomVertex`](mw.UIDrawCustomVertex.md)[] | 顶点图元数据信息 |
+| :------ | :------ |
+| `index` `number`[] | 顶点图元索引信息 |
+| `assetId?` `string` | - |
+| `drawLayerId?` `number` | - |
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+___
+
+### drawLines <Score text="drawLines" /> 
+
+• **drawLines**(`points`, `lineData?`): `number` <Badge type="tip" text="client" />
+
+画多段线
+
+#### Parameters
+
+| `points` [`Vector2`](mw.Vector2.md)[] | 线的各个点坐标 |
+| :------ | :------ |
+| `lineData?` [`DrawDataBase`](mw.DrawDataBase.md) | 绘制图元信息 |
+
+#### Returns
+
+| `number` | 返回drawId |
+| :------ | :------ |
+
+___
+
+### drawSpline <Score text="drawSpline" /> 
+
+• **drawSpline**(`startPoint`, `startDirection`, `endPoint`, `endDirection`, `lineData?`): `number` <Badge type="tip" text="client" />
+
+画埃尔米特曲线
+
+#### Parameters
+
+| `startPoint` [`Vector2`](mw.Vector2.md) | 开始线位置 |
+| :------ | :------ |
+| `startDirection` [`Vector2`](mw.Vector2.md) | 开始切线方向 |
+| `endPoint` [`Vector2`](mw.Vector2.md) | 结束点位置 |
+| `endDirection` [`Vector2`](mw.Vector2.md) | 结束点切线方向 |
+| `lineData?` [`DrawDataBase`](mw.DrawDataBase.md) | 绘制图元信息 |
+
+#### Returns
+
+| `number` | 返回drawId |
+| :------ | :------ |
+
+___
+
+### drawText <Score text="drawText" /> 
+
+• **drawText**(`text`, `position`, `fontSize`, `fontColor`, `drawLayerId?`): `number` <Badge type="tip" text="client" />
+
+画文字
+
+#### Parameters
+
+| `text` `string` | - |
+| :------ | :------ |
+| `position` [`Vector2`](mw.Vector2.md) | 位置 |
+| `fontSize` `number` | 字体大小 |
+| `fontColor` `any` | 颜色 |
+| `drawLayerId?` `number` | 绘制层级 |
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+___
+
+### removeDrawById <Score text="removeDrawById" /> 
+
+• **removeDrawById**(`Id`): `void` <Badge type="tip" text="client" />
+
+移除指定的绘制图元
+
+#### Parameters
+
+| `Id` `number` | 指定的绘制图元Id |
+| :------ | :------ |
+
 
 ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`, `inName?`): [`ColorPick`](mw.ColorPick.md) <Badge type="tip" text="client" />
+• `Static` **newObject**(`parent?`, `inName?`): [`DrawCanvas`](mw.DrawCanvas.md) <Badge type="tip" text="client" />
 
-创建 ColorPick 控件
+创建绘画控件
 
 #### Parameters
 
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的parent对象 default:null |
+| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default: null |
 | :------ | :------ |
 | `inName?` `string` | 创建控件的名称 default:null range:设置合理的名称即可 |
 
 #### Returns
 
-| [`ColorPick`](mw.ColorPick.md) | 返回创建的对象 |
+| [`DrawCanvas`](mw.DrawCanvas.md) | 返回创建的对象 |
 | :------ | :------ |
 
 当parent和inName与已有的对象相同时，旧的对象会被销毁

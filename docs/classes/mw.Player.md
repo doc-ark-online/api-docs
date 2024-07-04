@@ -17,17 +17,19 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onPawnChange](mw.Player.md#onpawnchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\>   |
+| **[onCharacterAdd](mw.Player.md#oncharacteradd)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`character`: [`Character`](mw.Character.md)) => `void`\>   |
 | :-----|
-| 控制对象变化委托|
+| 玩家的角色创建时，执行绑定函数|
+| **[onCharacterRemove](mw.Player.md#oncharacterremove)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`character`: [`Character`](mw.Character.md)) => `void`\>   |
+| 玩家的角色被移除时，执行绑定函数|
+| **[onPlayerAdd](mw.Player.md#onplayeradd)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
+| 玩家新增时，执行绑定函数|
 | **[onPlayerDisconnect](mw.Player.md#onplayerdisconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
 | 玩家断线委托|
-| **[onPlayerJoin](mw.Player.md#onplayerjoin)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
-| 玩家加入委托|
-| **[onPlayerLeave](mw.Player.md#onplayerleave)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
-| 玩家离开委托|
 | **[onPlayerReconnect](mw.Player.md#onplayerreconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
 | 玩家重连委托|
+| **[onPlayerRemove](mw.Player.md#onplayerremove)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>   |
+| 玩家被移除时，执行绑定函数|
 | **[onUserAvatarUpdated](mw.Player.md#onuseravatarupdated)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 用户平台形象变化时，执行绑定函数|
 
@@ -58,7 +60,7 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 获取 PlayerState 实例|
 | **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\> <Badge type="tip" text="client" />  |
 | 异步获取本地玩家。|
-| **[asyncGetPlayer](mw.Player.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](mw.Player.md)\>   |
+| **[asyncGetPlayer](mw.Player.md#asyncgetplayer)**(`uniqueId`: `string`  `number`): `Promise`<[`Player`](mw.Player.md)\>   |
 | 异步获取玩家|
 | **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[]   |
 | 获取当前所有玩家。|
@@ -68,52 +70,103 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 获取玩家，根据userId找到对应的玩家|
 | **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void` <Badge type="tip" text="client" />  |
 | 覆写控制器的旋转|
-| **[spawnDefaultCharacter](mw.Player.md#spawndefaultcharacter)**(): [`Character`](mw.Character.md)   |
-| 创建默认角色|
 
 ## Properties
 
-### onPawnChange <Score text="onPawnChange" /> 
+### onCharacterAdd <Score text="onCharacterAdd" /> 
 
-• `Readonly` **onPawnChange**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\> 
+• `Readonly` **onCharacterAdd**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`character`: [`Character`](mw.Character.md)) => `void`\> 
 
-控制对象变化委托
+玩家的角色创建时，执行绑定函数
 
 ::: warning Precautions
 
-当玩家控制的角色发生变化时执行绑定函数
+在创建玩家后，会接着创建玩家的角色，当事件触发时角色的骨骼和碰撞体已经创建完毕，可以开始移动，而角色的外观和挂件则可能需要等待一段时间才能创建完成。如果需要等待角色的彻底完成可以使用Character:asyncReady来进行等待，又或者通过监听Character.onDescriptionComplete事件来确保角色拥有完整的外观和挂件。
 
 :::
 
 <span style="font-size: 14px;">
-使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_OnPawnChange"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
+使用示例:创建一个名为"Example_Player_onCharacterAdd"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【新增玩家】事件绑定一个函数：当玩家加入时，监听【新增玩家角色】事件。给【新增角色】事件绑定一个函数：更换角色的头顶显示名称为"John"。代码如下：
 </span>
 
 ```ts
-@Component
-export default class Example_Player_OnPawnChange extends Script {
+export default class Example_Player_onCharacterAdd extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
     protected onStart(): void {
         // 下列代码仅在服务端执行
         if(SystemUtil.isServer()) {
-            // 在服务端添加一个【创建角色并控制】事件监听器
-            mw.Event.addClientListener("SpawnCharacterAndControl", (player) => {
-                let newPawn = Player.spawnDefaultCharacter();
-                newPawn.worldTransform.position = new Vector(200, 0, 500);
-                player.control(newPawn);
+            Player.onPlayerAdd.add((player) => {
+                player.onCharacterAdd.add((character) => {
+                    character.displayName = "John";
+                });
             });
         }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 给本地玩家的【玩家控制对象变化】委托添加一个函数:在生成并控制的新角色位置播放一个特效
-            myPlayer.onPawnChange.add((pawn) => {
-                EffectService.playAtPosition("7750", new Vector(200, 0, 500));
+    }
+}
+```
+
+___
+
+### onCharacterRemove <Score text="onCharacterRemove" /> 
+
+• `Readonly` **onCharacterRemove**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`character`: [`Character`](mw.Character.md)) => `void`\> 
+
+玩家的角色被移除时，执行绑定函数
+
+::: warning Precautions
+
+该事件在移除玩家角色之前触发，此时可以回收玩家角色身上挂载的对象或者访问身上的数据用作存档。
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Player_onCharacterRemove"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【新增玩家】事件绑定一个函数：当玩家加入时，监听【移除玩家角色】事件。给【移除玩家角色】事件绑定一个函数：在玩家角色的当前位置创建一个死亡特效并播放。代码如下：
+</span>
+
+```ts
+export default class Example_Player_onCharacterRemove extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            Player.onPlayerAdd.add((player) => {
+                player.onCharacterRemove.add((character) => {
+                    let effect = GameObject.spawn("298313") as Effect;
+                    effect.worldTransform.position = character.worldTransform.position;
+                    effect.play();
+                });
             });
-            // 添加一个按键方法:按下键盘“1”，向服务端发送事件【创建角色并控制】
-            InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchToServer("SpawnCharacterAndControl");
+        }
+    }
+}
+```
+
+___
+
+### onPlayerAdd <Score text="onPlayerAdd" /> 
+
+▪ `Static` `Readonly` **onPlayerAdd**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> 
+
+玩家新增时，执行绑定函数
+
+::: warning Precautions
+
+当新玩家加入游戏创建Player对象时触发该事件。需注意客户端无法监听到本地玩家的加入，通常建议在服务端给该事件绑定函数。
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Player_onPlayerAdd"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【新增玩家】事件绑定一个函数：在控制台打印玩家加入的提示log包含玩家ID和该玩家的用户ID。代码如下：
+</span>
+
+```ts
+export default class Example_Player_onPlayerAdd extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            Player.onPlayerAdd.add((player) => {
+                console.log("Player ID " + player.playerId + "User ID " + player.userId);
             });
         }
     }
@@ -142,124 +195,6 @@ ___
 ```ts
 @Component
 export default class Example_Player_OnPlayerDisconnect extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 给【玩家加入】委托添加一个函数，打印玩家加入游戏消息
-            Player.onPlayerJoin.add((player) => {
-                console.log("Player " + player.userId + " joined the Game");
-            });
-            // 给【玩家离开】委托添加一个函数，打印玩家离开游戏消息
-            Player.onPlayerLeave.add((player) => {
-                console.log("Player " + player.userId + " Left the Game");
-            });
-            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerDisconnect.add((player) => {
-                console.log("Player " + player.userId + " is disconnected");
-            });
-            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerReconnect.add((player) => {
-                console.log("Player " + player.userId + " is reconnected");
-            });
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myself = Player.localPlayer;
-            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerDisconnect.add((player) => {
-                console.log("Player " + player.userId + " is disconnected");
-            });
-            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerReconnect.add((player) => {
-                console.log("Player " + player.userId + " is reconnected");
-            });
-        }
-    }
-}
-```
-
-___
-
-### onPlayerJoin <Score text="onPlayerJoin" /> 
-
-▪ `Static` `Readonly` **onPlayerJoin**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> 
-
-玩家加入委托
-
-::: warning Precautions
-
-当玩家加入游戏时执行绑定函数
-
-:::
-
-<span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_OnPlayerJoin"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【玩家加入】委托添加一个函数：打印玩家加入游戏消息。在控制台中看到加入玩家的用户ID和加入通知。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_Player_OnPlayerJoin extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 给【玩家加入】委托添加一个函数，打印玩家加入游戏消息
-            Player.onPlayerJoin.add((player) => {
-                console.log("Player " + player.userId + " joined the Game");
-            });
-            // 给【玩家离开】委托添加一个函数，打印玩家离开游戏消息
-            Player.onPlayerLeave.add((player) => {
-                console.log("Player " + player.userId + " Left the Game");
-            });
-            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerDisconnect.add((player) => {
-                console.log("Player " + player.userId + " is disconnected");
-            });
-            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerReconnect.add((player) => {
-                console.log("Player " + player.userId + " is reconnected");
-            });
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myself = Player.localPlayer;
-            // 给【玩家断线】委托添加一个函数，打印玩家断线消息
-            Player.onPlayerDisconnect.add((player) => {
-                console.log("Player " + player.userId + " is disconnected");
-            });
-            // 给【玩家重连】委托添加一个函数，打印玩家重连消息
-            Player.onPlayerReconnect.add((player) => {
-                console.log("Player " + player.userId + " is reconnected");
-            });
-        }
-    }
-}
-```
-
-___
-
-### onPlayerLeave <Score text="onPlayerLeave" /> 
-
-▪ `Static` `Readonly` **onPlayerLeave**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> 
-
-玩家离开委托
-
-::: warning Precautions
-
-当玩家离开游戏时执行绑定函数
-
-:::
-
-<span style="font-size: 14px;">
-使用示例:创建一个名为"Example_Player_OnPlayerLeave"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【玩家离开】委托添加一个函数：打印玩家离开游戏消息。在控制台中看到离开玩家的用户ID和离开通知。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_Player_OnPlayerLeave extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
     protected onStart(): void {
         // 下列代码仅在服务端执行
@@ -351,6 +286,38 @@ export default class Example_Player_OnPlayerReconnect extends Script {
             // 给【玩家重连】委托添加一个函数，打印玩家重连消息
             Player.onPlayerReconnect.add((player) => {
                 console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onPlayerRemove <Score text="onPlayerRemove" /> 
+
+▪ `Static` `Readonly` **onPlayerRemove**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> 
+
+玩家被移除时，执行绑定函数
+
+::: warning Precautions
+
+当玩家退出游戏准备移除Player对象时触发该事件。
+
+:::
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为"Example_Player_onPlayerRemove"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将给【移除玩家】事件绑定一个函数：在控制台打印玩家退出的提示log包含玩家ID和该玩家的用户ID。代码如下：
+</span>
+
+```ts
+export default class Example_Player_onPlayerRemove extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            Player.onPlayerRemove.add((player) => {
+                console.log("Player ID " + player.playerId + "User ID " + player.userId);
             });
         }
     }
@@ -1016,13 +983,13 @@ ___
 
 ### asyncGetPlayer <Score text="asyncGetPlayer" /> 
 
-• `Static` **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](mw.Player.md)\> 
+• `Static` **asyncGetPlayer**(`uniqueId`): `Promise`<[`Player`](mw.Player.md)\> 
 
 异步获取玩家
 
 #### Parameters
 
-| `playerId` `number` | 玩家ID range: 依据玩家 ID 决定 type: 整数 |
+| `uniqueId` `string`  `number` | 玩家ID range: 依据玩家 ID 决定 type: 整数 |
 | :------ | :------ |
 
 #### Returns
@@ -1243,60 +1210,6 @@ export default class Example_Player_SetControllerRotation extends Script {
             // 获取当前控制器输入的旋转并叠加步长进行覆盖
             Player.getControllerRotation(this.rot);
             Player.setControllerRotation(this.rot.add(this.stride));
-        }
-    }
-}
-```
-
-___
-
-### spawnDefaultCharacter <Score text="spawnDefaultCharacter" /> 
-
-• `Static` **spawnDefaultCharacter**(): [`Character`](mw.Character.md) 
-
-创建默认角色
-
-#### Returns
-
-| [`Character`](mw.Character.md) | 角色对象 |
-| :------ | :------ |
-
-::: warning Precautions
-
-默认角色属性由编辑器玩家对象的属性面板决定。
-
-:::
-
-<span style="font-size: 14px;">
-使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在在服务端添加一个【创建角色并控制】事件监听器，当监听到事件时在场景中创建默认角色并控制。按下键盘“1”，向服务端发送事件【创建角色并控制】。给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效。当触发控制对象变化委托时执行绑定函数。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_Player_SpawnDefaultCharacter extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 在服务端添加一个【创建角色并控制】事件监听器
-            mw.Event.addClientListener("SpawnCharacterAndControl", (player) => {
-                let newPawn = Player.spawnDefaultCharacter();
-                newPawn.worldTransform.position = new Vector(200, 0, 500);
-                player.control(newPawn);
-            });
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效
-            myPlayer.onPawnChange.add((pawn) => {
-                EffectService.playAtPosition("7750", new Vector(200, 0, 500));
-            });
-            // 添加一个按键方法：按下键盘“1”，向服务端发送事件【创建角色并控制】
-            InputUtil.onKeyDown(Keys.One, () => {
-                mw.Event.dispatchToServer("SpawnCharacterAndControl");
-            });
         }
     }
 }

@@ -16,6 +16,8 @@
 | 资源是否加载|
 | **[asyncDownloadAsset](mw.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\>   |
 | 资源下载并加载|
+| **[isLocalMaterialAsset](mw.AssetUtil.md#islocalmaterialasset)**(`InAssetId`: `string`): `boolean`   |
+| 判断材质资源是否为本地资源|
 
 ## Methods
 
@@ -104,3 +106,21 @@ export default class AssetExample extends Script {
     }
 }
 ```
+
+___
+
+### isLocalMaterialAsset <Score text="isLocalMaterialAsset" /> 
+
+• `Static` **isLocalMaterialAsset**(`InAssetId`): `boolean` 
+
+判断材质资源是否为本地资源
+
+#### Parameters
+
+| `InAssetId` `string` | 资源 ID range: 字符串大小依据资源 ID 而定 |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 为真时本地资源 |
+| :------ | :------ |

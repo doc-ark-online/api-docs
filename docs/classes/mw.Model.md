@@ -87,11 +87,6 @@ export default class ModelExample extends Script {
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
-| **[onTouch](mw.Model.md#ontouch)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
-| :-----|
-| 进入Model事件|
-| **[onTouchEnd](mw.Model.md#ontouchend)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
-| 离开Model事件|
 
 
 ::: details click
@@ -116,8 +111,12 @@ export default class ModelExample extends Script {
 | 获取是否开启阴影|
 | **[centerOfMass](mw.Model.md#centerofmass)**(): [`Vector`](mw.Vector.md)   |
 | 获取质心偏移|
+| **[collisionEnabled](mw.Model.md#collisionenabled)**(): `boolean`   |
+| 是否开启碰撞|
 | **[collisionGroup](mw.Model.md#collisiongroup)**(): `string`   |
 | 获取对应的碰撞组|
+| **[color](mw.Model.md#color)**(): [`LinearColor`](mw.LinearColor.md)   |
+| Model颜色|
 | **[friction](mw.Model.md#friction)**(): `number`   |
 | 获取摩擦力大小|
 | **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean`   |
@@ -140,14 +139,24 @@ export default class ModelExample extends Script {
 | 获取质量大小|
 | **[massEnabled](mw.Model.md#massenabled)**(): `boolean`   |
 | 获取是否使用质量|
+| **[onTouch](mw.Model.md#ontouch)**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| 进入Model事件|
+| **[onTouchEnd](mw.Model.md#ontouchend)**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
+| 离开Model事件|
+| **[opacity](mw.Model.md#opacity)**(): `number`   |
+| 获取模型单层透明度|
 | **[physicsAngularVelocity](mw.Model.md#physicsangularvelocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取角速度(仅开启模拟时生效)|
 | **[physicsEnabled](mw.Model.md#physicsenabled)**(): `boolean`   |
 | 获取是否模拟物理|
 | **[physicsLinearVelocity](mw.Model.md#physicslinearvelocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取线性速度(仅开启模拟时生效)|
+| **[queryEnabled](mw.Model.md#queryenabled)**(): `boolean`   |
+| 是否开启空间查询|
 | **[restitution](mw.Model.md#restitution)**(): `number`   |
 | 获取弹力大小|
+| **[touchEnabled](mw.Model.md#touchenabled)**(): `boolean`   |
+| Touched和TouchEnded事件是否在模型上触发。|
 
 
 ::: details click
@@ -188,9 +197,13 @@ export default class ModelExample extends Script {
 | 给开启物理模拟的模型添加一个扭力|
 | **[createMaterialInstance](mw.Model.md#creatematerialinstance)**(`Index`: `number`): `void`   |
 | 创建材质实例|
+| **[getAllMaterialSlots](mw.Model.md#getallmaterialslots)**(): [`MaterialSlot`](mw.MaterialSlot.md)[]   |
+| 获取所有材质插槽|
 | **[getMaterialInstance](mw.Model.md#getmaterialinstance)**(): [`MaterialInstance`](mw.MaterialInstance.md)[]   |
 | 返回当前拥有的材质实例|
-| **[resetMaterial](mw.Model.md#resetmaterial)**(): `void`   |
+| **[getMaterialSlot](mw.Model.md#getmaterialslot)**(`index`: `number`): [`MaterialSlot`](mw.MaterialSlot.md)   |
+| 获取指定索引的材质插槽|
+| **[resetMaterial](mw.Model.md#resetmaterial)**(`index?`: `number`): `void`   |
 | 还原物体材质|
 | **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
 | 与玩家之间超出此距离的对象将被剪裁|
@@ -297,22 +310,6 @@ export default class ModelExample extends Script {
 
 
 ## Properties
-
-___
-
-### onTouch <Score text="onTouch" /> 
-
-• **onTouch**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
-
-进入Model事件
-
-___
-
-### onTouchEnd <Score text="onTouchEnd" /> 
-
-• **onTouchEnd**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
-
-离开Model事件
 
 ## Accessors
 
@@ -458,6 +455,86 @@ ___
 
 ___
 
+### collisionEnabled <Score text="collisionEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **collisionEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **collisionEnabled**(`status`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否开启碰撞
+
+#### Returns
+
+| `boolean` | 是否开启碰撞 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+模型是否与其它对象进行碰撞交互。当值为false时，其它对象可以穿过模型而不被其阻挡。
+
+::: warning Precautions
+
+建议双端物体设置碰撞，单端物体设置碰撞可能会导致拉扯的情况
+
+:::
+
+预期效果：进入游戏按1键，角色可以穿过方块，再按1键，角色无法穿过方块。
+
+#### Parameters
+
+| `status` `boolean` |  是否与其它对象进行碰撞交互 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:
+</span>
+
+在场景中拖入一个方块，并创建一个名为Collision的脚本挂载在该方块下，并复制以下代码进入脚本：
+```ts
+@Component
+export default class Collision extends Script {
+    protected onStart(): void {
+
+        if ( SystemUtil.isClient() ) {
+
+            InputUtil.onKeyDown(Keys.One, () => {
+                this.serverSetCollisionEnabled();
+            })
+
+        }
+    }
+
+    @RemoteFunction(Server)
+    serverSetCollisionEnabled() {
+        let model = this.gameObject as Model;
+        model.collisionEnabled = !model.collisionEnabled;
+    }
+}
+```
+___
+
 ### collisionGroup <Score text="collisionGroup" /> 
 
 <table class="get-set-table">
@@ -494,6 +571,52 @@ ___
 #### Parameters
 
 | `value` `string` | 碰撞组 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### color <Score text="color" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **color**(): [`LinearColor`](mw.LinearColor.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **color**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+Model颜色
+
+#### Returns
+
+| [`LinearColor`](mw.LinearColor.md) | Model颜色 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置Model的颜色
+
+#### Parameters
+
+| `value` [`LinearColor`](mw.LinearColor.md) | Model颜色 |
 | :------ | :------ |
 
 
@@ -1010,6 +1133,106 @@ ___
 
 ___
 
+### onTouch <Score text="onTouch" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onTouch**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+进入Model事件
+
+#### Returns
+
+| [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### onTouchEnd <Score text="onTouchEnd" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onTouchEnd**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+离开Model事件
+
+#### Returns
+
+| [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### opacity <Score text="opacity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **opacity**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **opacity**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取模型单层透明度
+
+#### Returns
+
+| `number` | 获取透明度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置模型单层透明度
+
+#### Parameters
+
+| `value` `number` | 透明度[0,1] |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### physicsAngularVelocity <Score text="physicsAngularVelocity" /> 
 
 <table class="get-set-table">
@@ -1148,6 +1371,102 @@ ___
 
 ___
 
+### queryEnabled <Score text="queryEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **queryEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **queryEnabled**(`status`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否开启空间查询
+
+#### Returns
+
+| `boolean` | 是否开启空间查询 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+在空间查询模型是否纳入检测范围。当值为false时，不会被空间查询检测到。
+
+按下1生成特效，被空间查询检测到，再按下1，特效被删除，没有被空间查询检测到。
+
+#### Parameters
+
+| `status` `boolean` |  在空间查询模型是否纳入检测范围。 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:
+</span>
+
+在场景中拖入一个方块，并创建一个名为Query的脚本挂载在该方块下，并复制以下代码进入脚本：
+```ts
+@Component
+export default class Query extends Script {
+    effect : Effect
+
+    protected onStart(): void {
+        if ( SystemUtil.isClient() ) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                this.serverSetQueryEnabled();
+            })
+        }
+    }
+
+    @RemoteFunction(Server)
+    async serverSetQueryEnabled() {
+        let model = this.gameObject as Model;
+
+        let hitGameObjects = PhysicsService.sphereOverlap(this.gameObject.worldTransform.position, 30, {}, {});
+        if (hitGameObjects.length > 0) {
+            const success = await AssetUtil.asyncDownloadAsset("4391");
+            if (success) {
+                const transform = model.worldTransform.clone();
+                transform.position.add(new Vector(0, 0, 150));
+
+                GameObject.asyncSpawn("4391", {
+                    replicates: true,
+                    transform: transform
+                }).then((effect : Effect) => {
+                    this.effect = effect
+                    // 播放特效
+                    effect.play();
+                });
+            }
+        }
+        else {
+            this.effect.destroy();
+            this.effect = undefined;
+        }
+
+        model.queryEnabled = !model.queryEnabled;
+    }
+}
+```
+___
+
 ### restitution <Score text="restitution" /> 
 
 <table class="get-set-table">
@@ -1186,10 +1505,110 @@ ___
 | `value` `number` | 弹力大小 |
 | :------ | :------ |
 
+
+
 </td>
 </tr></tbody>
 </table>
 
+___
+
+### touchEnabled <Score text="touchEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **touchEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **touchEnabled**(`status`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+Touched和TouchEnded事件是否在模型上触发。
+
+#### Returns
+
+| `boolean` | Touched和TouchEnded事件是否在模型上触发。 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+Touched和TouchEnded事件是否在模型上触发。当值为false时，对象在进行交互时不会抛出touch事件。
+
+角色走入方块，生成特效，走出方块，特效消失。按下1，角色走入走出方块无任何变化。
+
+#### Parameters
+
+| `status` `boolean` |  Touched和TouchEnded事件是否在模型上触发。 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:
+</span>
+
+在场景中拖入一个方块，并创建一个名为Touch的脚本挂载在该方块下，并复制以下代码进入脚本：
+```ts
+@Component
+export default class Touch extends Script {
+    effect : Effect
+
+    protected onStart(): void {
+        if ( SystemUtil.isClient() ) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                this.serverSetTouchEnabled();
+            })
+        }
+
+        if ( SystemUtil.isServer() ) {
+            let model = this.gameObject as Model;
+            model.collisionEnabled = false;
+            model.onTouch.add(async () => {
+                const success = await AssetUtil.asyncDownloadAsset("4391");
+                if (success) {
+                    const transform = model.worldTransform.clone();
+                    transform.position.add(new Vector(0, 0, 150));
+
+                    GameObject.asyncSpawn("4391", {
+                        replicates: true,
+                        transform: transform
+                    }).then((effect : Effect) => {
+                        this.effect = effect
+                        // 播放特效
+                        effect.play();
+                    });
+                }
+            });
+            model.onTouchEnd.add(() => {
+                if (this.effect != undefined) {
+                    this.effect.destroy();
+                    this.effect = undefined;
+                }
+            });
+        }
+    }
+
+    @RemoteFunction(Server)
+    async serverSetTouchEnabled() {
+        let model = this.gameObject as Model;
+        model.touchEnabled = !model.touchEnabled;
+    }
+}
+```
 
 
 ## Methods
@@ -1279,6 +1698,19 @@ ___
 
 ___
 
+### getAllMaterialSlots <Score text="getAllMaterialSlots" /> 
+
+• **getAllMaterialSlots**(): [`MaterialSlot`](mw.MaterialSlot.md)[] 
+
+获取所有材质插槽
+
+#### Returns
+
+| [`MaterialSlot`](mw.MaterialSlot.md)[] | 返回材质插槽数组 |
+| :------ | :------ |
+
+___
+
 ### getMaterialInstance <Score text="getMaterialInstance" /> 
 
 • **getMaterialInstance**(): [`MaterialInstance`](mw.MaterialInstance.md)[] 
@@ -1294,11 +1726,34 @@ ___
 
 ___
 
+### getMaterialSlot <Score text="getMaterialSlot" /> 
+
+• **getMaterialSlot**(`index`): [`MaterialSlot`](mw.MaterialSlot.md) 
+
+获取指定索引的材质插槽
+
+#### Parameters
+
+| `index` | `number` |
+| :------ | :------ |
+
+#### Returns
+
+| [`MaterialSlot`](mw.MaterialSlot.md) | 返回指定索引的材质插槽 |
+| :------ | :------ |
+
+___
+
 ### resetMaterial <Score text="resetMaterial" /> 
 
-• **resetMaterial**(): `void` 
+• **resetMaterial**(`index?`): `void` 
 
 还原物体材质
+
+#### Parameters
+
+| `index?` `number` |  材质索引序号 |
+| :------ | :------ |
 
 
 ___

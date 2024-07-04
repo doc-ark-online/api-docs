@@ -1,4 +1,4 @@
-[界面](../groups/Extension.界面.md) / LeaderboardMainPanelBase
+[拓展](../groups/Extension.拓展.md) / LeaderboardMainPanelBase
 
 # LeaderboardMainPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPanelBase<T\>" />
 

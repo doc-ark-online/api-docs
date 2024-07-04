@@ -6,10 +6,17 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+| **[teleportTypeToString](mw.TeleportService.md#teleporttypetostring)**: `any`  |
+| :-----|
+| 传送类型变为字符串|
+
 ### Methods <Score text="Methods" /> 
 | **[asyncGetPlayerRoomInfo](mw.TeleportService.md#asyncgetplayerroominfo)**(`userId`: `string`): `Promise`<[`RoomInfo`](../interfaces/mw.RoomInfo.md)\>   |
 | :-----|
 | 获取指定玩家所在的房间信息|
+| **[asyncTeleportToGame](mw.TeleportService.md#asyncteleporttogame)**(`gameId`: `string`, `userIds`: `string`[], `sceneName?`: `string`, `options?`: [`TeleportOptions`](../interfaces/mw.TeleportOptions.md)): `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> <Badge type="tip" text="server" />  |
+| 异步传送到其它游戏，可以指定子场景，子场景不存在或者不公开则会传送到主场景|
 | **[asyncTeleportToRoom](mw.TeleportService.md#asyncteleporttoroom)**(`roomId`: `string`, `userIds`: `string`[], `options?`: [`TeleportOptions`](../interfaces/mw.TeleportOptions.md)): `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> <Badge type="tip" text="server" />  |
 | 异步传送到指定房间|
 | **[asyncTeleportToScene](mw.TeleportService.md#asyncteleporttoscene)**(`sceneName`: `string`, `userIds`: `string`[], `options?`: [`TeleportOptions`](../interfaces/mw.TeleportOptions.md)): `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> <Badge type="tip" text="server" />  |
@@ -18,6 +25,14 @@
 | 获取传送的来源信息|
 | **[getTeleportData](mw.TeleportService.md#getteleportdata)**(`teleportId`: `string`): [`TeleportData`](../modules/Core.mw.md#teleportdata) <Badge type="tip" text="server" />  |
 | 获取调用传送接口时在TeleportOptions中设置的数据|
+
+## Properties
+
+### teleportTypeToString <Score text="teleportTypeToString" /> 
+
+▪ `Static` `Private` **teleportTypeToString**: `any`
+
+传送类型变为字符串
 
 ## Methods
 
@@ -66,6 +81,90 @@ export default class Server extends Script {
                         TeleportService.asyncTeleportToRoom(roomId, playerToTeleport, opt);
                     });
                 }, 5 * 1000);
+            });
+        }
+    }
+}
+```
+
+___
+
+### asyncTeleportToGame <Score text="asyncTeleportToGame" /> 
+
+• `Static` **asyncTeleportToGame**(`gameId`, `userIds`, `sceneName?`, `options?`): `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> <Badge type="tip" text="server" />
+
+异步传送到其它游戏，可以指定子场景，子场景不存在或者不公开则会传送到主场景
+
+#### Parameters
+
+| `gameId` `string` | 要传送的目标游戏Id，该值可以在创作者平台的游戏详情页找到 default: range: 依据 gameId 的长度决定 |
+| :------ | :------ |
+| `userIds` `string`[] | 要传送的玩家userId数组 default: range: 依据 userIds 的长度决定 |
+| `sceneName?` `string` | 要传送的目标场景名称 default:undefined range: 依据 sceneName 的长度决定 |
+| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息 default:undefined |
+
+#### Returns
+
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | `Promise`<`TeleportResult`\>，本次请求正常则返回resolve，异常则返回reject |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:用编辑器发布过游戏，在创作者平台的游戏详情页拿到了游戏Id为"P_8682"。创建一个名为"TeleportScript"的脚本，放在场景中，设置为双端。代码如下：
+</span>
+
+```ts
+@Component
+export default class TeleportScript extends Script {
+    protected onStart(): void {
+        // 服务端逻辑
+        if (SystemUtil.isServer()) {
+            Player.onPlayerJoin.add((player: Player) => {
+                // 当玩家加入时，倒计时5s后发起传送，避免玩家加入立即传送，不易观察
+                setTimeout(() => {
+                    // 假定已经用编辑器发布过游戏，在创作者平台的游戏详情页拿到了游戏Id为"P_8682"
+                    const gameId: string = "P_8682";
+                    // 将要传送到新场景的玩家加入数组
+                    const playerToTeleport: string[] = [player.userId];
+                    // 可以填充要携带的额外数据
+                    const opt: TeleportOptions = {
+                        teleportData: "This is test data."
+                    }
+
+                    // 声明成功和失败的回调函数，用于处理传送接口的回调结果。
+                    // 成功的情况一般不需要处理，会继续走后续跳转流程。
+                    // 如果失败了，有可能是超时或者有报错，可以从回调的数据中读取信息做进一步处理。
+                    const onSuccess = () => { }
+                    const onFailed = (result: mw.TeleportResult) => {
+                        switch (result.status) {
+                            case mw.TeleportStatus.success:
+                                break;
+                            case mw.TeleportStatus.ignored:
+                                // 触发太频繁了，本次请求被忽略
+                                break;
+                            case mw.TeleportStatus.timeout:
+                                // 超时了，可以选择重试传送或者提示玩家
+                                break;
+                            case mw.TeleportStatus.error:
+                                // 将错误信息发给所有参与的客户端
+                                for (const userId in result.userIds) {
+                                    const player = Player.getPlayer(userId)
+                                    if (player) {
+                                        Event.dispatchToClient(player, "TeleportResult", result);
+                                    }
+                                }
+                        }
+                    };
+
+                    // 传送功能需要在服务端发起，在客户端使用会报错
+                    TeleportService.asyncTeleportToGame(gameId, playerToTeleport, "", opt).then(onSuccess, onFailed);
+                }, 5 * 1000);
+            });
+        } else {
+            // 客户端逻辑
+            Event.addServerListener("TeleportResult", (result: mw.TeleportResult) => {
+                console.error(`Teleport has error:`);
+                console.error(`errorCode: ${result.errorCode}`);
+                console.error(`message: ${result.message}`);
             });
         }
     }

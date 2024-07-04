@@ -23,6 +23,10 @@
 | 添加OnPause开始时执行的回调函数|
 | **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <Badge type="tip" text="client" />  |
 | 添加OnPause结束时执行的回调函数|
+| **[roomId](mw.SystemUtil.md#roomid)**(): `string`   |
+| 获取当前房间Id，如果是单机游戏，则返回null|
+| **[sceneId](mw.SystemUtil.md#sceneid)**(): `string`   |
+| 获取当前场景的SceneId|
 
 ### Methods <Score text="Methods" /> 
 | **[closeLoadingView](mw.SystemUtil.md#closeloadingview)**(): `void` <Badge type="tip" text="client" />  |
@@ -174,11 +178,107 @@ ___
 
 #### Returns
 
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> | 返回一个事件监听器 |
+| :------ | :------ |
+
 </td>
 </tr></tbody>
 </table>
 
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> | 返回一个事件监听器 |
+___
+
+### roomId <Score text="roomId" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **roomId**(): `string` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取当前房间Id，如果是单机游戏，则返回null
+
+
+#### Returns
+
+| `string` | 当前房间Id，如果是单机游戏，则返回null |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前房间Id，如果是单机游戏，则输出null
+</span>
+
+```ts
+@Component
+export default class SystemExample extends Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): `Promise`<`void`\> {
+        if (!SystemUtil.isClient()) return;
+        const roomId = SystemUtil.roomId;
+        console.log(`roomId: ${verroomIdsion}`);
+    }
+
+}
+```
+___
+
+### sceneId <Score text="sceneId" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **sceneId**(): `string` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取当前场景的SceneId
+
+
+#### Returns
+
+</td>
+</tr></tbody>
+</table>
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前场景的SceneId
+</span>
+
+```ts
+@Component
+export default class SystemExample extends Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): `Promise`<`void`\> {
+        if (!SystemUtil.isClient()) return;
+        const sceneId = SystemUtil.sceneId;
+        console.log(`sceneId: ${sceneId}`);
+    }
+
+}
+```
+| `string` | 当前场景的SceneId |
 | :------ | :------ |
 
 ## Methods

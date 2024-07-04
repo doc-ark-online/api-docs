@@ -28,8 +28,8 @@ Classes
 | [BagItemUI](classes/mwext.BagItemUI.md) | 背包道具父类,继承这个类来实现自己的道具格子界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 | [BagModule](classes/mwext.BagModule.md) | 背包实例 | [拓展](groups/拓展.拓展.md) |
 | [BagUI](classes/mwext.BagUI.md) | 背包界面父类,继承这个类来实现自己的背包界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
-| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [界面](groups/界面.界面.md) |
-| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [界面](groups/界面.界面.md) |
+| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [拓展](groups/拓展.拓展.md) |
+| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [拓展](groups/拓展.拓展.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
 | [Button](classes/mw.Button.md) | 按钮 | [界面](groups/界面.界面.md) |
 | [ButtonStyle](classes/mw.ButtonStyle.md) | Button 控件风格类型 | [界面](groups/界面.界面.md) |
@@ -64,6 +64,8 @@ Classes
 | [Delegate](classes/mw.Delegate.md) | 委托 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [界面](groups/界面.界面.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [界面](groups/界面.界面.md) |
+| [DrawCanvas](classes/mw.DrawCanvas.md) | UI 画布 | [界面](groups/界面.界面.md) |
+| [DrawDataBase](classes/mw.DrawDataBase.md) | 图元绘制基础参数 | [界面](groups/界面.界面.md) |
 | [Dropdown](classes/mw.Dropdown.md) | Dropdown | [界面](groups/界面.界面.md) |
 | [DropdownStyle](classes/mw.DropdownStyle.md) | Dropdown 控件风格类型 | [界面](groups/界面.界面.md) |
 
@@ -94,7 +96,6 @@ Classes
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
-| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -143,11 +144,11 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageUtil](classes/mw.LanguageUtil.md) | 多语言工具 | [工具](groups/工具.工具.md) |
-| [LeaderboardItemPanelBase](classes/mwext.LeaderboardItemPanelBase.md) | 排行榜主界面中的子UI，用来显示一条记录 | [界面](groups/界面.界面.md) |
-| [LeaderboardMainPanelBase](classes/mwext.LeaderboardMainPanelBase.md) | 排行榜主界面 | [界面](groups/界面.界面.md) |
-| [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [界面](groups/界面.界面.md) |
-| [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [界面](groups/界面.界面.md) |
-| [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [界面](groups/界面.界面.md) |
+| [LeaderboardItemPanelBase](classes/mwext.LeaderboardItemPanelBase.md) | 排行榜主界面中的子UI，用来显示一条记录 | [拓展](groups/拓展.拓展.md) |
+| [LeaderboardMainPanelBase](classes/mwext.LeaderboardMainPanelBase.md) | 排行榜主界面 | [拓展](groups/拓展.拓展.md) |
+| [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [拓展](groups/拓展.拓展.md) |
+| [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [拓展](groups/拓展.拓展.md) |
+| [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [拓展](groups/拓展.拓展.md) |
 | [Lighting](classes/mw.Lighting.md) | 光照 | [场景](groups/场景.场景.md) |
 | [LinearColor](classes/mw.LinearColor.md) | r, g, b 颜色值的有效范围是 0.0 <= value <= 1.0 | [基础类型](groups/基础类型.基础类型.md) |
 | [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
@@ -162,6 +163,7 @@ Classes
 | [Margin](classes/mw.Margin.md) | 基础的边距，提供4个方向的数值修改 | [界面](groups/界面.界面.md) |
 | [MaskButton](classes/mw.MaskButton.md) | 遮罩按钮 | [界面](groups/界面.界面.md) |
 | [MaterialInstance](classes/mw.MaterialInstance.md) | 材质实例类 | [玩法](groups/玩法.玩法.md) |
+| [MaterialSlot](classes/mw.MaterialSlot.md) | Model插槽，执行材质相关操作 | [玩法](groups/玩法.玩法.md) |
 | [MathUtil](classes/mw.MathUtil.md) | 数学库工具 | [工具](groups/工具.工具.md) |
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
@@ -195,6 +197,7 @@ Classes
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
 | [PlayerState](classes/mw.PlayerState.md) | PlayerState基类 | [角色系统](groups/角色系统.角色系统.md) |
+| [PointLight](classes/mw.PointLight.md) | 点光源 | [场景](groups/场景.场景.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [界面](groups/界面.界面.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [场景](groups/场景.场景.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [场景](groups/场景.场景.md) |
@@ -266,6 +269,7 @@ Classes
 | :-----| :-----| :-----|
 | [UIChildCollation](classes/mw.UIChildCollation.md) | 容器自动布局子项排序规则 | [界面](groups/界面.界面.md) |
 | [UIConstraintAnchors](classes/mw.UIConstraintAnchors.md) | 节点对齐规则 | [界面](groups/界面.界面.md) |
+| [UIDrawCustomVertex](classes/mw.UIDrawCustomVertex.md) | 自定义绘制图元数据 | [界面](groups/界面.界面.md) |
 | [UIFontInfo](classes/mw.UIFontInfo.md) | 字体信息 | [界面](groups/界面.界面.md) |
 | [UILayout](classes/mw.UILayout.md) | 容器自动布局规则 | [界面](groups/界面.界面.md) |
 | [UIObject](classes/mw.UIObject.md) | UI 对象 | [界面](groups/界面.界面.md) |
