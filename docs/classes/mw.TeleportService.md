@@ -105,7 +105,7 @@ ___
 
 #### Returns
 
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | `Promise`<`TeleportResult`\>，本次请求正常则返回resolve，异常则返回reject |
 | :------ | :------ |
 
 <span style="font-size: 14px;">
@@ -188,7 +188,7 @@ ___
 
 #### Returns
 
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | `Promise`<`TeleportResult`\>，本次请求正常则返回resolve，异常则返回reject |
 | :------ | :------ |
 
 ::: warning Precautions
@@ -290,7 +290,7 @@ ___
 
 #### Returns
 
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | `Promise`<`TeleportResult`\>，本次请求正常则返回resolve，异常则返回reject |
 | :------ | :------ |
 
 ::: warning Precautions
