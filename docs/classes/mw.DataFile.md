@@ -44,7 +44,7 @@
 ```ts
 @Component
 export default class DataFileExample extends Script {
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         let data = await DataFile.asyncLoad("level2_3");
         console.log(`data: ${data}`);
     }

@@ -154,6 +154,8 @@
 | 获取角色运动面朝方向\|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md)   |
 | 获取角色运动正方向\|
+| **[opacity](mw.Character.md#opacity)**(): `number`   |
+| 获取角色单层透明度|
 | **[outOfWaterVerticalSpeed](mw.Character.md#outofwaterverticalspeed)**(): `number`   |
 | 出水时垂直方向速度|
 | **[overheadUI](mw.Character.md#overheadui)**(): [`UIWidget`](mw.UIWidget.md) <Badge type="tip" text="client" />  |
@@ -4035,6 +4037,52 @@ export default class Example_Character_MovementDirection extends Script {
     }
 }
 ```
+___
+
+### opacity <Score text="opacity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **opacity**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **opacity**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取角色单层透明度
+
+#### Returns
+
+| `number` | 获取透明度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置角色单层透明度
+
+#### Parameters
+
+| `value` `number` | 透明度[0,1] |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
 ___
 
 ### outOfWaterVerticalSpeed <Score text="outOfWaterVerticalSpeed" /> 

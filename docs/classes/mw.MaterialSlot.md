@@ -28,7 +28,7 @@ Model插槽，执行材质相关操作
 @Component
 export default class ModelExample extends Script {
     //当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if(SystemUtil.isClient())
             {
                 InputUtil.onKeyDown(Keys.F1,()=>{

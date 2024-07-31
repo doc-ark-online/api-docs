@@ -64,6 +64,8 @@
 
 ## Accessors
 
+___
+
 ### autoAdjust <Score text="autoAdjust" /> 
 
 <table class="get-set-table">

@@ -32,6 +32,8 @@
 
   ↳ [`MaskButton`](mw.MaskButton.md)
 
+  ↳ [`Mask`](mw.Mask.md)
+
   ↳ [`PanelWidget`](Core.mw.PanelWidget.md)
 
   ↳ [`ProgressBar`](mw.ProgressBar.md)
@@ -49,8 +51,10 @@
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[autoSizeHorizontalEnable](mw.Widget.md#autosizehorizontalenable)**(): `boolean` <Badge type="tip" text="client" />  |
+| **[alignPosition](mw.Widget.md#alignposition)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | :-----|
+| 获取控件的位置,以对齐为坐标系|
+| **[autoSizeHorizontalEnable](mw.Widget.md#autosizehorizontalenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否自动水平设置大小|
 | **[autoSizeVerticalEnable](mw.Widget.md#autosizeverticalenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否自动垂直设置大小|
@@ -74,6 +78,8 @@
 | 获取最后一次用于渲染Widget的几何信息|
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
+| **[pivot](mw.Widget.md#pivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取控件锚点|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
@@ -127,6 +133,50 @@
 | 立刻移除并添加到根节点 可以再使用|
 
 ## Accessors
+
+### alignPosition <Score text="alignPosition" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **alignPosition**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **alignPosition**(`inFigmaPosition`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取控件的位置,以对齐为坐标系
+
+#### Returns
+
+| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 控件的位置 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置控件的位置,以对齐为坐标系
+
+#### Parameters
+
+| `inFigmaPosition` [`Vector2`](mw.Vector2.md) | 控件的位置 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -567,6 +617,52 @@ ___
 
 | [`Widget`](mw.Widget.md) | 返回父节点 |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### pivot <Score text="pivot" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **pivot**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **pivot**(`inAlignment`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取控件锚点
+
+#### Returns
+
+| [`Vector2`](mw.Vector2.md) | FVector2D |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置控件锚点
+
+#### Parameters
+
+| `inAlignment` | [`Vector2`](mw.Vector2.md) |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>

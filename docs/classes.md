@@ -96,6 +96,7 @@ Classes
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
+| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -161,6 +162,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Margin](classes/mw.Margin.md) | 基础的边距，提供4个方向的数值修改 | [界面](groups/界面.界面.md) |
+| [Mask](classes/mw.Mask.md) | 遮罩容器 | [界面](groups/界面.界面.md) |
 | [MaskButton](classes/mw.MaskButton.md) | 遮罩按钮 | [界面](groups/界面.界面.md) |
 | [MaterialInstance](classes/mw.MaterialInstance.md) | 材质实例类 | [玩法](groups/玩法.玩法.md) |
 | [MaterialSlot](classes/mw.MaterialSlot.md) | Model插槽，执行材质相关操作 | [玩法](groups/玩法.玩法.md) |
@@ -192,6 +194,7 @@ Classes
 ## P
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ParticleEmitter](classes/mw.ParticleEmitter.md) | 粒子特效 | [场景](groups/场景.场景.md) |
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
 | [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [玩法](groups/玩法.玩法.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
@@ -295,4 +298,22 @@ Classes
 | [WaterVolume](classes/mw.WaterVolume.md) | 水体区域 | [玩法](groups/玩法.玩法.md) |
 | [Widget](classes/mw.Widget.md) | 控件的基类 | [界面](groups/界面.界面.md) |
 | [WindowUtil](classes/mw.WindowUtil.md) | 窗口设置工具。 | [工具](groups/工具.工具.md) |
+
+
+## c
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [colorSequencePoint](classes/mw.colorSequencePoint.md) | 特效颜色值曲线节点 | [场景](groups/场景.场景.md) |
+
+
+## n
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [numberSequencePoint](classes/mw.numberSequencePoint.md) | 特效标量值曲线节点 | [场景](groups/场景.场景.md) |
+
+
+## v
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [vectorSequencePoint](classes/mw.vectorSequencePoint.md) | 特效向量值曲线节点 | [场景](groups/场景.场景.md) |
 

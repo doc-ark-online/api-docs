@@ -7,37 +7,21 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string`   |
+| **[addKey](mw.LanguageUtil.md#addkey)**(`textkey`: `string`): `string`   |
 | :-----|
-| 根据key获取翻译内容|
-| **[locText](mw.LanguageUtil.md#loctext)**(`textkey`: `string`): `string`   |
 | 多语言标记|
-| **[useLocalizedLanguage](mw.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean`   |
+| **[getDefaultLocale](mw.LanguageUtil.md#getdefaultlocale)**(): `string`   |
+| 获取默认的语言和地区|
+| **[getText](mw.LanguageUtil.md#gettext)**(`textkey`: `string`): `string`   |
+| 根据key获取翻译内容|
+| **[setLanguage](mw.LanguageUtil.md#setlanguage)**(`type`: [`LanguageCodeType`](../enums/mw.LanguageCodeType.md)): `boolean`   |
 | 游戏语言设置|
 
 ## Methods
 
-### getLocTextValue <Score text="getLocTextValue" /> 
+### addKey <Score text="addKey" /> 
 
-• `Static` **getLocTextValue**(`textkey`): `string` 
-
-根据key获取翻译内容
-
-#### Parameters
-
-| `textkey` `string` | 需要查找的翻译的 key range: 不做限制 |
-| :------ | :------ |
-
-#### Returns
-
-| `string` | 返回Key对应的当前语言环境的翻译内容 |
-| :------ | :------ |
-
-___
-
-### locText <Score text="locText" /> 
-
-• `Static` **locText**(`textkey`): `string` 
+• `Static` **addKey**(`textkey`): `string` 
 
 多语言标记
 
@@ -53,15 +37,67 @@ ___
 
 ___
 
-### useLocalizedLanguage <Score text="useLocalizedLanguage" /> 
+### getDefaultLocale <Score text="getDefaultLocale" /> 
 
-• `Static` **useLocalizedLanguage**(`type`): `boolean` 
+• `Static` **getDefaultLocale**(): `string` 
+
+获取默认的语言和地区
+
+#### Returns
+
+| `string` | 可选ISO 3166-1 国家码 (如, "CN") |
+| :------ | :------ |
+
+<span style="font-size: 14px;">
+使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
+</span>
+
+```ts
+@Component
+export default class LocaleExample extends Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const locale = LocaleUtil.getDefaultLocale();
+        console.log(`locale: ${locale}`);
+// zh-CN
+    }
+}
+```
+
+___
+
+### getText <Score text="getText" /> 
+
+• `Static` **getText**(`textkey`): `string` 
+
+根据key获取翻译内容
+
+#### Parameters
+
+| `textkey` `string` | 需要查找的翻译的 key range: 不做限制 |
+| :------ | :------ |
+
+#### Returns
+
+| `string` | 返回Key对应的当前语言环境的翻译内容 |
+| :------ | :------ |
+
+___
+
+### setLanguage <Score text="setLanguage" /> 
+
+• `Static` **setLanguage**(`type`): `boolean` 
 
 游戏语言设置
 
 #### Parameters
 
-| `type` [`LanguageType`](../enums/mw.LanguageType.md) | 切换游戏语言种类 |
+| `type` [`LanguageCodeType`](../enums/mw.LanguageCodeType.md) | 切换游戏语言种类 |
 | :------ | :------ |
 
 #### Returns

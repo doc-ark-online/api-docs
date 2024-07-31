@@ -128,10 +128,16 @@ mw
 | 输入框回车键功能|
 | [Keys](../enums/mw.Keys.md)  |
 | 按键Key值|
+| [LanguageCodeType](../enums/mw.LanguageCodeType.md)  |
+| 游戏本地化语言|
 | [LanguageType](../enums/mw.LanguageType.md)  |
 | 游戏语言|
+| [LogLevel](../enums/mw.LogLevel.md)  |
+| 日志等级|
 | [MaskButtonType](../enums/mw.MaskButtonType.md)  |
 | 遮罩类型|
+| [MaskType](../enums/mw.MaskType.md)  |
+| 新版遮罩类型|
 | [MenuPlacement](../enums/mw.MenuPlacement.md)  |
 | 菜单呼出位置枚举|
 | [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md)  |
@@ -168,6 +174,10 @@ mw
 | 滚动框类型|
 | [OscillatorWaveform](../enums/mw.OscillatorWaveform.md)  |
 | 振荡器波形|
+| [ParticleEmitterShape](../enums/mw.ParticleEmitterShape.md)  |
+| 特效形状枚举|
+| [ParticleEmitterShapeStyle](../enums/mw.ParticleEmitterShapeStyle.md)  |
+| 特效发射类型|
 | [PlayStatus](../enums/mw.PlayStatus.md)  |
 | 帧动画播放规则|
 | [PostProcessPreset](../enums/mw.PostProcessPreset.md)  |
@@ -178,12 +188,16 @@ mw
 | 投掷物移动状态|
 | [PropertyStatus](../enums/mw.PropertyStatus.md)  |
 | 属性状态|
+| [ReleaseStatus](../enums/mw.ReleaseStatus.md)  |
+| UGC 发布的状态|
 | [RuntimePlatform](../enums/mw.RuntimePlatform.md)  |
 | 运行平台|
 | [ScrollBarDefaultLocation](../enums/mw.ScrollBarDefaultLocation.md)  |
 | 滚动条默认位置|
 | [SelectInfo](../enums/mw.SelectInfo.md)  |
 | 列表视图选择来源信息|
+| [SelectTapType](../enums/mw.SelectTapType.md)  |
+| UGC 选中的单选或者多选|
 | [SelectionMode](../enums/mw.SelectionMode.md)  |
 | 列表视图选择模式|
 | [SkyPreset](../enums/mw.SkyPreset.md)  |
@@ -240,6 +254,8 @@ mw
 | 文本框规则显示规则限制|
 | [UIVerticalCollation](../enums/mw.UIVerticalCollation.md)  |
 | 自动布局子项布局排序 - 垂直排序|
+| [UploadTextureResultType](../enums/mw.UploadTextureResultType.md)  |
+| 移动编辑器上传贴图返回状态|
 | [VehicleDriveMode4WNew](../enums/mw.VehicleDriveMode4WNew.md)  |
 | 四轮载具驱动模式|
 | [VehicleWheelPosition4WNew](../enums/mw.VehicleWheelPosition4WNew.md)  |
@@ -357,6 +373,8 @@ mw
 | 场景中所有实体的基类|
 | [Geometry](../classes/mw.Geometry.md)  |
 | 几何坐标信息|
+| [GestureDelegate](../classes/mw.GestureDelegate.md)  |
+| 手势代理类|
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md)  |
 | 图片画质设置|
 | [HitResult](../classes/mw.HitResult.md)  |
@@ -413,6 +431,8 @@ mw
 | 本地化工具|
 | [Margin](../classes/mw.Margin.md)  |
 | 基础的边距，提供4个方向的数值修改|
+| [Mask](../classes/mw.Mask.md)  |
+| 遮罩容器|
 | [MaskButton](../classes/mw.MaskButton.md)  |
 | 遮罩按钮|
 | [MaterialInstance](../classes/mw.MaterialInstance.md)  |
@@ -439,6 +459,8 @@ mw
 | 投掷物发射器|
 | [PanelWidget](../classes/Core.mw.PanelWidget.md)  |
 | :----- |
+| [ParticleEmitter](../classes/mw.ParticleEmitter.md)  |
+| 粒子特效|
 | [Pawn](../classes/mw.Pawn.md)  |
 | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsService](../classes/mw.PhysicsService.md)  |
@@ -575,6 +597,12 @@ mw
 | 控件的基类|
 | [WindowUtil](../classes/mw.WindowUtil.md)  |
 | 窗口设置工具。|
+| [colorSequencePoint](../classes/mw.colorSequencePoint.md)  |
+| 特效颜色值曲线节点|
+| [numberSequencePoint](../classes/mw.numberSequencePoint.md)  |
+| 特效标量值曲线节点|
+| [vectorSequencePoint](../classes/mw.vectorSequencePoint.md)  |
+| 特效向量值曲线节点|
 
 ### Interfaces <Score text="Interfaces" /> 
 | [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md)  |
@@ -649,6 +677,8 @@ mw
 | 发布成功的UGC消费态游戏信息|
 | **[RedeemResponse](Core.mw.md#redeemresponse)**: `Object`  |
 | status : 兑换状态。|
+| **[ReleaseGameData](Core.mw.md#releasegamedata)**: `Object`  |
+| 已发布的游戏数据，用于继承服务器数据。|
 | **[SetAppearanceDataCallback](Core.mw.md#setappearancedatacallback)**: (`APIName`: `string`) => `void`  |
 | 设置编辑数据完成的回调|
 | **[StringCallback](Core.mw.md#stringcallback)**: (`str`: `string`) => `void`  |
@@ -735,6 +765,8 @@ mw
 | 异步请求资源的ICON信息|
 | **[cancelDragDrop](Core.mw.md#canceldragdrop)**(): `void` <Badge type="tip" text="client" />  |
 | 中断所有的DragDrop|
+| **[convertScreenLocationToWorldSpace](Core.mw.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md)   |
+| 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[createUI](Core.mw.md#createui)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建UIPrefab|
 | **[createUIByName](Core.mw.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <Badge type="tip" text="client" />  |
@@ -755,10 +787,18 @@ mw
 | 返回绝对空间中几何图形的大小|
 | **[getAssetIconDataByAssetID](Core.mw.md#getasseticondatabyassetid)**(`asset`: `string`): [`AssetIconData`](../classes/mw.AssetIconData.md) <Badge type="tip" text="client" />  |
 | 获取资源的 ICON 信息|
+| **[getCPULevel](Core.mw.md#getcpulevel)**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
+| 获取当前CPU画质等级|
 | **[getCurrentMousePosition](Core.mw.md#getcurrentmouseposition)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取当前鼠标所在的绝对位置|
+| **[getDefaultCPULevel](Core.mw.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
+| 获取默认CPU画质等级|
+| **[getDefaultGPULevel](Core.mw.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
+| 获取默认GPU画质等级|
 | **[getDragDroppingContent](Core.mw.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/mw.DragDropOperation.md) <Badge type="tip" text="client" />  |
 | 获取当前的DragDrop事件|
+| **[getGPULevel](Core.mw.md#getgpulevel)**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />  |
+| 获取当前GPU画质等级|
 | **[getLastMousePosition](Core.mw.md#getlastmouseposition)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取上一次鼠标所在的绝对位置|
 | **[getLocalSize](Core.mw.md#getlocalsize)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
@@ -769,10 +809,26 @@ mw
 | 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。|
 | **[getMousePositionOnViewport](Core.mw.md#getmousepositiononviewport)**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 获取平台的鼠标光标在视口控件的本地空间中的位置。|
+| **[getOneFingerMoveGestureDelegate](Core.mw.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取单指滑动的代理|
+| **[getPinchGestureDelegate](Core.mw.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="client" />  |
+| 获取挤压手势的代理|
 | **[getPlayerScreenWidgetGeometry](Core.mw.md#getplayerscreenwidgetgeometry)**(`player`: [`Player`](../classes/mw.Player.md)): [`Geometry`](../classes/mw.Geometry.md) <Badge type="tip" text="client" />  |
 | 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
 | **[getResolutionChanged](Core.mw.md#getresolutionchanged)**(`Delegate`: [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\>): `void` <Badge type="tip" text="client" />  |
 | 分辨率改变时的回调|
+| **[getTapGestureDelegate](Core.mw.md#gettapgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取点击事件的代理|
+| **[getTouchBeganGestureDelegate](Core.mw.md#gettouchbegangesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指按下代理|
+| **[getTouchData](Core.mw.md#gettouchdata)**(): [`Vector`](../classes/mw.Vector.md)[] <Badge type="tip" text="client" />  |
+| 获取touch的数组|
+| **[getTouchEndGestureDelegate](Core.mw.md#gettouchendgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指抬起代理|
+| **[getTouchMoveGestureDelegate](Core.mw.md#gettouchmovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取手指滑动代理|
+| **[getTwoFingerMoveGestureDelegate](Core.mw.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 获取双指滑动的代理|
 | **[getUrlParameter](Core.mw.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string`   |
 | 获取 url 参数|
 | **[getViewportScale](Core.mw.md#getviewportscale)**(): `number` <Badge type="tip" text="client" />  |
@@ -791,6 +847,8 @@ mw
 | 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。|
 | **[localToViewport](Core.mw.md#localtoviewport)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `localPosition`: [`Vector2`](../classes/mw.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/mw.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/mw.Vector2.md)): `void` <Badge type="tip" text="client" />  |
 | 将几何体的局部坐标转换为局部视口坐标。|
+| **[projectWorldPositionToWidgetPosition](Core.mw.md#projectworldpositiontowidgetposition)**(`worldLocation`: [`Vector`](../classes/mw.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md)   |
+| 获取角色在世界中的位置，投射到屏幕上|
 | **[releaseAssetIconTextureFromCache](Core.mw.md#releaseasseticontexturefromcache)**(`asset`: `string`): `void` <Badge type="tip" text="client" />  |
 | 尝试标记资源的 ICON 图为待释放的等待释放|
 | **[screenToViewport](Core.mw.md#screentoviewport)**(`screenPosition`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />  |
@@ -801,12 +859,28 @@ mw
 | 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
 | **[setFocusToGameViewport](Core.mw.md#setfocustogameviewport)**(): `void` <Badge type="tip" text="client" />  |
 | 设置关注游戏窗口|
+| **[setGraphicsCPULevel](Core.mw.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
+| 设置当前CPU画质等级|
+| **[setGraphicsGPULevel](Core.mw.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
+| 设置当前GPU画质等级|
+| **[setGraphicsLevel](Core.mw.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md)): `void` <Badge type="tip" text="client" />  |
+| 设置CPU和GPU的画质等级|
 | **[setInputModeGameAndUI](Core.mw.md#setinputmodegameandui)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md), `hideCursorDuringCapture?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会|
 | **[setInputModeGameOnly](Core.mw.md#setinputmodegameonly)**(): `void` <Badge type="tip" text="client" />  |
 | 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入|
 | **[setInputModeUIOnly](Core.mw.md#setinputmodeuionly)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md)): `void` <Badge type="tip" text="client" />  |
 | 设置只允许UI响应用户输入的输入模式。|
+| **[setMultiSwipeTime](Core.mw.md#setmultiswipetime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
+| 双指移动的时间- 必须大于这个时间才执行双指移动事件|
+| **[setPinchAngleTolerance](Core.mw.md#setpinchangletolerance)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
+| 挤压手势的偏差角度|
+| **[setSingleSwipeTime](Core.mw.md#setsingleswipetime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
+| 单指移动的时间- 必须大于这个时间才会开始执行单指移动|
+| **[setSwipeTolerance](Core.mw.md#setswipetolerance)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
+| 双指移动的偏差量- 值越大误差则可以越大|
+| **[setTapTime](Core.mw.md#settaptime)**(`time`: `number`): `void` <Badge type="tip" text="client" />  |
+| tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move|
 | **[startRecord](Core.mw.md#startrecord)**(`screenX`: `number`, `screenY`: `number`, `screenW`: `number`, `screenH`: `number`): `string` <Badge type="tip" text="client" />  |
 | 录屏|
 | **[stopRecord](Core.mw.md#stoprecord)**(): `void` <Badge type="tip" text="client" />  |
@@ -1266,6 +1340,21 @@ message : 兑换信息
 | :------ | :------ |
 | `player` | [`Player`](../classes/mw.Player.md) |
 | `status` | `number` |
+
+___
+
+### ReleaseGameData <Score text="ReleaseGameData" /> 
+
+Ƭ **ReleaseGameData**: `Object`
+
+已发布的游戏数据，用于继承服务器数据。
+
+#### Type declaration
+
+| `bDownloaded` `boolean` | 是否已下载到本地 |
+| :------ | :------ |
+| `gameCover` `string` | (bDownloaded=true:本地文件路径bDownloaded=false:服务器URL) |
+| `gameName` `string` | 游戏名称 |
 
 ___
 
@@ -1845,6 +1934,25 @@ ___
 
 ___
 
+### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) 
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+#### Parameters
+
+| `ScreenX` `number` |  屏幕X轴坐标值 default: |
+| :------ | :------ |
+| `ScreenY` `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+| [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 |
+| :------ | :------ |
+
+___
+
 ### createUI <Score text="createUI" /> 
 
 • **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="client" />
@@ -2045,6 +2153,19 @@ ___
 
 ___
 
+### getCPULevel <Score text="getCPULevel" /> 
+
+• **getCPULevel**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+
+获取当前CPU画质等级
+
+#### Returns
+
+| [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
 ### getCurrentMousePosition <Score text="getCurrentMousePosition" /> 
 
 • **getCurrentMousePosition**(): [`Vector2`](../classes/mw.Vector2.md) <Badge type="tip" text="client" />
@@ -2058,6 +2179,32 @@ ___
 
 ___
 
+### getDefaultCPULevel <Score text="getDefaultCPULevel" /> 
+
+• **getDefaultCPULevel**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+
+获取默认CPU画质等级
+
+#### Returns
+
+| [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
+### getDefaultGPULevel <Score text="getDefaultGPULevel" /> 
+
+• **getDefaultGPULevel**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+
+获取默认GPU画质等级
+
+#### Returns
+
+| [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
+
+___
+
 ### getDragDroppingContent <Score text="getDragDroppingContent" /> 
 
 • **getDragDroppingContent**(): [`DragDropOperation`](../classes/mw.DragDropOperation.md) <Badge type="tip" text="client" />
@@ -2067,6 +2214,19 @@ ___
 #### Returns
 
 | [`DragDropOperation`](../classes/mw.DragDropOperation.md) | 返回当前的DragDrop事件 |
+| :------ | :------ |
+
+___
+
+### getGPULevel <Score text="getGPULevel" /> 
+
+• **getGPULevel**(): [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) <Badge type="tip" text="client" />
+
+获取当前GPU画质等级
+
+#### Returns
+
+| [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
 | :------ | :------ |
 
 ___
@@ -2146,6 +2306,32 @@ ___
 
 ___
 
+### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
+
+• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取单指滑动的代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回单指滑动的代理 |
+| :------ | :------ |
+
+___
+
+### getPinchGestureDelegate <Score text="getPinchGestureDelegate" /> 
+
+• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="client" />
+
+获取挤压手势的代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> | 返回挤压手势的代理 |
+| :------ | :------ |
+
+___
+
 ### getPlayerScreenWidgetGeometry <Score text="getPlayerScreenWidgetGeometry" /> 
 
 • **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/mw.Geometry.md) <Badge type="tip" text="client" />
@@ -2175,6 +2361,84 @@ ___
 | `Delegate` [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | 传入回调函数 |
 | :------ | :------ |
 
+
+___
+
+### getTapGestureDelegate <Score text="getTapGestureDelegate" /> 
+
+• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取点击事件的代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/mw.SelectTapType.md), `location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回的代理 |
+| :------ | :------ |
+
+___
+
+### getTouchBeganGestureDelegate <Score text="getTouchBeganGestureDelegate" /> 
+
+• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取手指按下代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回手指按下时的代理 |
+| :------ | :------ |
+
+___
+
+### getTouchData <Score text="getTouchData" /> 
+
+• **getTouchData**(): [`Vector`](../classes/mw.Vector.md)[] <Badge type="tip" text="client" />
+
+获取touch的数组
+
+#### Returns
+
+| [`Vector`](../classes/mw.Vector.md)[] | 返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况 |
+| :------ | :------ |
+
+___
+
+### getTouchEndGestureDelegate <Score text="getTouchEndGestureDelegate" /> 
+
+• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />
+
+获取手指抬起代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> | 返回抬起手指时候的代理 |
+| :------ | :------ |
+
+___
+
+### getTouchMoveGestureDelegate <Score text="getTouchMoveGestureDelegate" /> 
+
+• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取手指滑动代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回手指滑动的代理 |
+| :------ | :------ |
+
+___
+
+### getTwoFingerMoveGestureDelegate <Score text="getTwoFingerMoveGestureDelegate" /> 
+
+• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
+
+获取双指滑动的代理
+
+#### Returns
+
+| [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> | 返回双指滑动的代理 |
+| :------ | :------ |
 
 ___
 
@@ -2325,6 +2589,25 @@ ___
 
 ___
 
+### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 
+
+• **projectWorldPositionToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) 
+
+获取角色在世界中的位置，投射到屏幕上
+
+#### Parameters
+
+| `worldLocation` [`Vector`](../classes/mw.Vector.md) |  世界坐标 |
+| :------ | :------ |
+| `playerViewportRelative?` `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+
+#### Returns
+
+| [`ConvertScreenResult`](../classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO |
+| :------ | :------ |
+
+___
+
 ### releaseAssetIconTextureFromCache <Score text="releaseAssetIconTextureFromCache" /> 
 
 • **releaseAssetIconTextureFromCache**(`asset`): `void` <Badge type="tip" text="client" />
@@ -2405,6 +2688,49 @@ ___
 
 ___
 
+### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
+
+• **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="client" />
+
+设置当前CPU画质等级
+
+#### Parameters
+
+| `CPULevel` [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | CPU画质等级 |
+| :------ | :------ |
+
+
+___
+
+### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
+
+• **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="client" />
+
+设置当前GPU画质等级
+
+#### Parameters
+
+| `GPULevel` [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | GPU画质等级 |
+| :------ | :------ |
+
+
+___
+
+### setGraphicsLevel <Score text="setGraphicsLevel" /> 
+
+• **setGraphicsLevel**(`CPULevel`, `GPULevel`): `void` <Badge type="tip" text="client" />
+
+设置CPU和GPU的画质等级
+
+#### Parameters
+
+| `CPULevel` [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | CPU画质等级 |
+| :------ | :------ |
+| `GPULevel` [`GraphicsLevel`](../enums/Core.mw.GraphicsLevel.md) | GPU画质等级 |
+
+
+___
+
 ### setInputModeGameAndUI <Score text="setInputModeGameAndUI" /> 
 
 • **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void` <Badge type="tip" text="client" />
@@ -2441,6 +2767,76 @@ ___
 | `InWidgetToFocus?` [`Widget`](../classes/mw.Widget.md) | 响应输入模式的widget default:null |
 | :------ | :------ |
 | `InMouseLockMode?` [`MouseLockMode`](../enums/mw.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+
+
+___
+
+### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
+
+• **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
+
+双指移动的时间- 必须大于这个时间才执行双指移动事件
+
+#### Parameters
+
+| `time` `number` |  双指移动限定的时间 |
+| :------ | :------ |
+
+
+___
+
+### setPinchAngleTolerance <Score text="setPinchAngleTolerance" /> 
+
+• **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="client" />
+
+挤压手势的偏差角度
+
+#### Parameters
+
+| `time` `number` |  偏差角度 |
+| :------ | :------ |
+
+
+___
+
+### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 
+
+• **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
+
+单指移动的时间- 必须大于这个时间才会开始执行单指移动
+
+#### Parameters
+
+| `time` `number` |  单指移动的限定时间 |
+| :------ | :------ |
+
+
+___
+
+### setSwipeTolerance <Score text="setSwipeTolerance" /> 
+
+• **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="client" />
+
+双指移动的偏差量- 值越大误差则可以越大
+
+#### Parameters
+
+| `time` `number` |  偏差值 |
+| :------ | :------ |
+
+
+___
+
+### setTapTime <Score text="setTapTime" /> 
+
+• **setTapTime**(`time`): `void` <Badge type="tip" text="client" />
+
+tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
+
+#### Parameters
+
+| `time` `number` |  tap限定的时间 |
+| :------ | :------ |
 
 
 ___

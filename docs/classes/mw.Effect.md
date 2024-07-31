@@ -26,7 +26,7 @@ export default class EffectExample extends Script {
     }
 
     @RemoteFunction(Client)
-    public async createEffect(): `Promise`<`void`\> {
+    public async createEffect(): Promise<void> {
         const success = await mw.AssetUtil.asyncDownloadAsset(this.effect.assetID);
             if (success) {
                 // 下载完毕创建特效

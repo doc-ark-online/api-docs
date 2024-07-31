@@ -1010,7 +1010,7 @@ export default class weapon extends Script {
    private hotweapon:HotWeapon;
    private gun:Model;
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
        if(SystemUtil.isServer()) {
            this.hotweapon = await GameObject.asyncSpawn<HotWeapon>("HotWeapon",{
                replicates:true,

@@ -89,7 +89,7 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 ```ts
  @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
@@ -194,7 +194,7 @@ ___
 ```ts
 @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -274,7 +274,7 @@ ___
 ```ts
 @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -324,7 +324,7 @@ ___
 ```ts
 @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -445,7 +445,7 @@ ___
 ```ts
  @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
@@ -493,7 +493,7 @@ ___
 ```ts
  @Component
  export default class EventSample extends Script {
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
          this.useUpdate = true;
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关

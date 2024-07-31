@@ -294,7 +294,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = await  mw.Player.localPlayer;
         await TimeUtil.delaySecond(5);
         let arkCount = PurchaseService.getArkBalance();
@@ -337,7 +337,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = Player.localPlayer;
         PurchaseService.getUserKeyNumber(keyNumber => {
             player.character.displayName = "当前用户剩余钥匙数量：", keyNumber.toString();
@@ -380,7 +380,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = Player.localPlayer;
         PurchaseService.isPremiumMember(isSupport => {
             player.character.displayName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
@@ -422,7 +422,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let player = Player.localPlayer;
         PurchaseService.isPremiumMemberSupported(isSupport => {
             player.character.displayName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
@@ -453,7 +453,7 @@ export default class PurchaseExample extends mw.Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         await TimeUtil.delaySecond(10);
         PurchaseService.openPremiumMemberPurchasePage();
     }
