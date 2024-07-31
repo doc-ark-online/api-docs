@@ -28,7 +28,7 @@
 export default class ImpulseSample extends Script {
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         // 先设置为 false，玩家进入范围后再设置为 true，会有玩家突然凭空被弹开的效果
         impulse.enable = true;
@@ -227,7 +227,7 @@ ___
 export default class ImpulseOnEnterSample extends Script {
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         impulse.onImpulseEnter.add(()=>{
              console.log("Impulse onImpulseEnter")
@@ -294,7 +294,7 @@ ___
 export default class ImpulseSample extends Script {
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         // 先设置为 false，玩家进入范围后再设置为 true，会有玩家突然凭空被弹开的效果
         impulse.enable = true;
@@ -404,7 +404,7 @@ export default class ImpulseRadialForceSample extends Script {
     // 场景中冲量对象的 id
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         // 只有为径向力的情况下，impulseRadialForce 属性才有意义
         impulse.impulseForceType = ImpulseForceType.RadialForce;
@@ -475,7 +475,7 @@ export default class ImpulseTypeSample extends Script {
     // 场景中冲量对象的 id
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         // 绝对冲量应用时会先清空物体自身速度，相对冲量会将冲量和物体当前速度叠加
         impulse.impulseType = ImpulseType.Absolute;
@@ -537,7 +537,7 @@ export default class ImpulseVectorSample extends Script {
     // 场景中冲量对象的 id
     impulseId = "1602E908";
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const impulse = (await GameObject.findGameObjectById(this.impulseId)) as Impulse;
         // 只有为矢量力的情况下，impulseVector 属性才有意义
         impulse.impulseForceType = ImpulseForceType.VectorForce;

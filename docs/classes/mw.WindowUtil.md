@@ -18,7 +18,7 @@ export default class WindowExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         let viewportSize = WindowUtil.getViewportSize();
         // X=1920 Y=1080

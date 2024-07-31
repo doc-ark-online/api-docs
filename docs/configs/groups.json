@@ -1049,6 +1049,15 @@
         },
         "no_children_files": null,
         "children": null
+      },
+      "GestureDelegate": {
+        "file": {
+          "file_name": "mw.GestureDelegate.md",
+          "file_path": "classes/mw.GestureDelegate.md",
+          "name": "GestureDelegate"
+        },
+        "no_children_files": null,
+        "children": null
       }
     }
   },

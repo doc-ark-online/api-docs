@@ -96,6 +96,7 @@ Classes
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
+| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 

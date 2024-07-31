@@ -256,7 +256,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
         }
     }
     //优先启动模块需要在onExecute中调用该函数,编辑器会等待fun执行完毕后再执行其他模块的onStart
-    protected async onExecuteStart(fun: Function): `Promise`<`void`\> {
+    protected async onExecuteStart(fun: Function): Promise<void> {
         await TimeUtil.delaySecond(1);
         console.log("-----------客户端-hud模块准备结束-----------");
         fun();

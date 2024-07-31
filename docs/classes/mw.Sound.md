@@ -22,7 +22,7 @@ export default class SoundExample extends Script {
     }
 
     @mw.RemoteFunction(mw.Client)
-    public async createSound(): `Promise`<`void`\> {
+    public async createSound(): Promise<void> {
         const success = await AssetUtil.asyncDownloadAsset(this.sound.assetID);
             if (success) {
                 // 下载完毕创建音效

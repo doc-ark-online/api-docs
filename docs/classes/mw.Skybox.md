@@ -15,7 +15,7 @@
 @Component
 export default class SkyboxExample extends mw.Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if(Util.SystemUtil.isClient())
         {
             mw.InputUtil.onKeyDown(Type.Keys.Add,()=>{

@@ -72,7 +72,7 @@ export default class NewExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
             let playerPos = Player.localPlayer.character.worldTransform.position;

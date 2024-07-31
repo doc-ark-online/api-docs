@@ -47,7 +47,7 @@
          this.test();
      }
 
-     private async test(): `Promise`<`void`\> {
+     private async test(): Promise<void> {
          let btn = new ButtonUI();
 
          InputUtil.onKeyDown(Keys.F, async () => {

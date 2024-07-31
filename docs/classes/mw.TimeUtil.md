@@ -60,7 +60,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.onEnterFrame.add(this.onEnterFrame, this);
     }
@@ -106,7 +106,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         let id = TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -145,7 +145,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -197,7 +197,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delayExecute(() => {
             //延迟600帧执行 pie环境大概10s
@@ -237,7 +237,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         TimeUtil.delaySecond(5).then(() => {
             console.log("5 seconds later");
@@ -297,7 +297,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         InputUtil.onKeyDown(Keys.F, () => {
             const elapsedTime = TimeUtil.elapsedTime();
@@ -339,7 +339,7 @@ export default class TimeExample extends Script {
        this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
        if (!SystemUtil.isClient()) return;
        const time = TimeUtil.parseTime(new Date());
        console.log(`time:${time}`);
@@ -380,7 +380,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         let isInterval = false;
         let id = 0;
@@ -429,7 +429,7 @@ export default class TimeExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         if (!SystemUtil.isClient()) return;
         const time = TimeUtil.time();
         console.log(`time stamp:${time}`);

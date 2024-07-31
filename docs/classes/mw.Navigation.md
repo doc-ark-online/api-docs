@@ -127,7 +127,7 @@ ___
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -192,7 +192,7 @@ ___
 @Component
 export default class NewScript extends Script {
 
-protected async onStart(): `Promise`<`void`\> {
+protected async onStart(): Promise<void> {
     let player = Player.localPlayer;
     let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
     let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
@@ -237,7 +237,7 @@ ___
 @Component
 export default class NewScript extends Script {
 
-protected async onStart(): `Promise`<`void`\> {
+protected async onStart(): Promise<void> {
     let player = Player.localPlayer;
     let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
     let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
@@ -281,7 +281,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): `Promise`<`void`\> {
+      protected async onStart(): Promise<void> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {
@@ -330,7 +330,7 @@ ___
 ```ts
 @Component
 export default class NewScript extends Script {
-protected async onStart(): `Promise`<`void`\> {
+protected async onStart(): Promise<void> {
     let player = Player.localPlayer;
     let NAVabox = await GameObject.asyncFindGameObjectById("12E74B24") as Model;
     let NAVasphere = await GameObject.asyncFindGameObjectById("05DD737A") as Model;
@@ -368,7 +368,7 @@ ___
  @Component
  export default class Example_Navigation_Follow extends Script {
 
-     protected async onStart(): `Promise`<`void`\> {
+     protected async onStart(): Promise<void> {
 
          // 下列逻辑仅在服务端执行
          if(SystemUtil.isServer()) {
@@ -428,7 +428,7 @@ ___
 @Component
   export default class Example_Navigation_NavigateTo extends Script {
 
-      protected async onStart(): `Promise`<`void`\> {
+      protected async onStart(): Promise<void> {
 
           // 下列逻辑仅在客户端执行
           if(SystemUtil.isClient()) {

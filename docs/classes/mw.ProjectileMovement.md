@@ -614,7 +614,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Destroy extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -703,7 +703,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -818,7 +818,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -923,7 +923,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1027,7 +1027,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1131,7 +1131,7 @@ ___
 @Component
 export default class Example_ProjectileMovement_Launch extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1234,7 +1234,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {
@@ -1330,7 +1330,7 @@ ___
 @Component
 export default class Example_ProjectileMovement extends Script {
 
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 下列逻辑在服务端执行
        if(SystemUtil.isServer()) {

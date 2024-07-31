@@ -11,7 +11,7 @@
 ```ts
  @Component
 export default class InteractorSample extends Script {
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {
@@ -481,7 +481,7 @@ ___
 ```ts
 @Component
 export default class InteractorStartEndSample extends Script {
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {
@@ -524,7 +524,7 @@ ___
 ```ts
 @Component
 export default class InteractorGetInteractCharacterSample extends Script {
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
         interObj.onEnter.add(() => {

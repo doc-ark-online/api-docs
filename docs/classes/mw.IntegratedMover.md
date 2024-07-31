@@ -19,7 +19,7 @@ export default class IMExample1 extends Script {
     IM2;
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
       if (SystemUtil.isClient()) {
           // 创建一个长方体
           this.Obj1 = await GameObject.asyncSpawn("197386") as GameObject;
@@ -716,7 +716,7 @@ export default class IMExample2 extends Script {
     IM2;
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if (SystemUtil.isClient()) {
             // 创建长方体1和长方体2
             this.Obj1 = await GameObject.asyncSpawn( "197386") as GameObject;
@@ -1180,7 +1180,7 @@ export default class IMExample3 extends mw.Script {
     IM2;
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if (Util.SystemUtil.isClient()) {
             // 创建长方体1和长方体2
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
@@ -1548,7 +1548,7 @@ export default class IMExample4 extends mw.Script {
     IM2;
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if (Util.SystemUtil.isClient()) {
             // 创建长方体1和长方体2
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;
@@ -1822,7 +1822,7 @@ export default class IMExample5 extends mw.Script {
     IM2;
 
     // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected async onStart(): `Promise`<`void`\> {
+    protected async onStart(): Promise<void> {
         if (Util.SystemUtil.isClient()) {
             // 创建长方体1和长方体2
             this.Obj1 = await mw.GameObject.asyncSpawn("197386") as mw.GameObject;

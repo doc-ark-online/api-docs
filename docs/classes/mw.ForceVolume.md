@@ -33,7 +33,7 @@ export default class ForceVolumeSample extends Script {
    public myFlag: boolean = true;
 
    // 当脚本被实例后，会在第一帧更新前调用此函数
-   protected async onStart(): `Promise`<`void`\> {
+   protected async onStart(): Promise<void> {
 
        // 在服务端添加一个开启物理模拟并移动位置的监听回调函数
        if (SystemUtil.isServer()) {

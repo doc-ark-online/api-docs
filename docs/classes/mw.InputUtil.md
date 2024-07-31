@@ -144,7 +144,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorInteractWithUI = !InputUtil.isCursorInteractiveWithUI;
@@ -166,7 +166,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改鼠标是否可与屏幕UI交互
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
@@ -236,7 +236,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
@@ -258,7 +258,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，修改shift是否可控制光标显示
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.enableCursorLock = !InputUtil.isCursorLockEnabled;
@@ -328,7 +328,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
@@ -350,7 +350,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，锁定/解锁鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorLocked = !InputUtil.isCursorLocked;
@@ -420,7 +420,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
@@ -442,7 +442,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，显示/隐藏鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.setCursorVisible = !InputUtil.isCursorVisible;
@@ -550,7 +550,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         //按下F键，可以通过shift锁定鼠标
         InputUtil.onKeyDown(Keys.F, () => {
             InputUtil.mouseLockOptionEnabled = true;
@@ -603,7 +603,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyDown(Keys.F, () => {
             const result = InputUtil.convertScreenLocationToWorldSpace(960, 540);
             const startLoc = result.worldPosition;
@@ -648,7 +648,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyDown(Keys.F, () => {
             console.log("F key pressed");
         })
@@ -689,7 +689,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyPress(Keys.F, () => {
             console.log("F key up");
         })
@@ -729,7 +729,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         InputUtil.onKeyUp(Keys.F, () => {
             console.log("F key up");
         })
@@ -881,7 +881,7 @@ export default class InputExample extends Script {
         this.test();
     }
 
-    private async test(): `Promise`<`void`\> {
+    private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
             let playerPos = Player.localPlayer.character.worldTransform.position;
