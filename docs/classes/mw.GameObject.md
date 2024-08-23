@@ -44,7 +44,7 @@ export default class GameObjectExample extends Script {
 
 ## Hierarchy
 
-- [`Base`](mw.Base.md)
+- `Base`
 
   ↳ **`GameObject`**
 
@@ -108,15 +108,8 @@ export default class GameObjectExample extends Script {
 | 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
-
-
-::: details click
-### Properties <Score text="Properties" /> 
-| **[onPropertyChange](mw.Base.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
-| :-----|
+| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
 | 监听系统属性同步事件|
-:::
-
 
 ### Accessors <Score text="Accessors" /> 
 | **[actorFlagValue](mw.GameObject.md#actorflagvalue)**(): `number` <Badge type="tip" text="other" />  |
@@ -185,6 +178,8 @@ export default class GameObjectExample extends Script {
 | 获取自定义属性|
 | **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
 | 给定对象属性修改时触发的事件代理|
+| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
@@ -234,15 +229,6 @@ export default class GameObjectExample extends Script {
 | **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
 | 构造一个物体|
 
-
-::: details click
-### Methods <Score text="Methods" /> 
-| **[getPropertyChangeDelegate](mw.Base.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| :-----|
-| 给定对象属性修改时触发的事件代理|
-:::
-
-
 ## Properties
 
 ### onBeforeDestroyDelegate <Score text="onBeforeDestroyDelegate" /> 
@@ -273,6 +259,19 @@ ___
 
 物体销毁后事件回调
 
+___
+
+### onPropertyChange <Score text="onPropertyChange" /> 
+
+• **onPropertyChange**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>
+
+监听系统属性同步事件
+
+```ts
+this.onPropertyChange.add((path, value, oldValue) => {
+    console.log(`属性 ${path} 改变了，新值为 ${value}，旧值为 ${oldValue}`);
+});
+```
 
 ## Accessors
 
@@ -1092,6 +1091,24 @@ ___
 #### Parameters
 
 | `property` `string` | 对象属性名字 |
+| :------ | :------ |
+
+#### Returns
+
+| `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> | 代理对象 |
+| :------ | :------ |
+
+___
+
+### getPropertyChangeDelegate <Score text="getPropertyChangeDelegate" /> 
+
+• **getPropertyChangeDelegate**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />
+
+给定对象属性修改时触发的事件代理
+
+#### Parameters
+
+| `property` `string` | 对象属性名字 例如：'x' 'rotation.x' |
 | :------ | :------ |
 
 #### Returns

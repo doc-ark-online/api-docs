@@ -292,8 +292,6 @@ mw
 | 资源管理工具|
 | [AvatarSettings](../classes/mw.AvatarSettings.md)  |
 | 控制一些优化项的开启关闭|
-| [Base](../classes/mw.Base.md)  |
-| GameObject的基类|
 | [BlockingVolume](../classes/mw.BlockingVolume.md)  |
 | 禁行区|
 | [Button](../classes/mw.Button.md)  |
