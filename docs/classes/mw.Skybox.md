@@ -53,6 +53,12 @@ export default class SkyboxExample extends mw.Script {
 | 获取云贴图ID|
 | **[cloudVisible](mw.Skybox.md#cloudvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启云|
+| **[disturbanceDensity](mw.Skybox.md#disturbancedensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取扰动密度|
+| **[disturbanceEnabled](mw.Skybox.md#disturbanceenabled)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取扰动开关|
+| **[disturbanceIntensity](mw.Skybox.md#disturbanceintensity)**(): `number` <Badge type="tip" text="client" />  |
+| 获取扰动强度|
 | **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取月亮颜色|
 | **[moonIntensity](mw.Skybox.md#moonintensity)**(): `number` <Badge type="tip" text="client" />  |
@@ -377,6 +383,144 @@ ___
 #### Parameters
 
 | `value` `boolean` | 是否开启云 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### disturbanceDensity <Score text="disturbanceDensity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **disturbanceDensity**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **disturbanceDensity**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取扰动密度
+
+#### Returns
+
+| `number` | 扰动密度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置扰动密度
+
+#### Parameters
+
+| `value` `number` | 扰动密度 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### disturbanceEnabled <Score text="disturbanceEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **disturbanceEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **disturbanceEnabled**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取扰动开关
+
+#### Returns
+
+| `boolean` | 扰动开关 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置扰动开关
+
+#### Parameters
+
+| `value` `boolean` | 扰动开关 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### disturbanceIntensity <Score text="disturbanceIntensity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **disturbanceIntensity**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **disturbanceIntensity**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取扰动强度
+
+#### Returns
+
+| `number` | 扰动强度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置扰动强度
+
+#### Parameters
+
+| `value` `number` | 扰动强度 |
 | :------ | :------ |
 
 

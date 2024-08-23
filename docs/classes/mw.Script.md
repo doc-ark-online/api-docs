@@ -105,7 +105,7 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 
 ## Hierarchy
 
-- `Base`
+- [`Base`](mw.Base.md)
 
   ↳ **`Script`**
 
@@ -114,6 +114,15 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
+
+
+::: details click
+### Properties <Score text="Properties" /> 
+| **[onPropertyChange](mw.Base.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
+| :-----|
+| 监听系统属性同步事件|
+:::
+
 
 ### Accessors <Score text="Accessors" /> 
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
@@ -134,6 +143,15 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 | 生命周期函数 - 脚本开始执行时调用|
 | **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
 | 生命周期函数 - 每帧执行函数|
+
+
+::: details click
+### Methods <Score text="Methods" /> 
+| **[getPropertyChangeDelegate](mw.Base.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| :-----|
+| 给定对象属性修改时触发的事件代理|
+:::
+
 
 ## Properties
 

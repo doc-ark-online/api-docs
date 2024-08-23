@@ -1,41 +1,31 @@
-[界面](../groups/界面.界面.md) / Dropdown
+[界面](../groups/界面.界面.md) / MenuAnchor
 
-# Dropdown <Badge type="tip" text="Class" /> <Score text="Dropdown" />
+# MenuAnchor <Badge type="tip" text="Class" /> <Score text="MenuAnchor" />
 
-Dropdown
+菜单锚点
 
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
 
-  ↳ **`Dropdown`**
+  ↳ **`MenuAnchor`**
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[dropdownStyle](mw.Dropdown.md#dropdownstyle)**(): [`DropdownStyle`](mw.DropdownStyle.md) <Badge type="tip" text="client" />  |
-| :-----|
-| 菜单样式|
-| **[isOpened](mw.Dropdown.md#isopened)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取菜单是否打开|
-| **[menuRowStyle](mw.Dropdown.md#menurowstyle)**(): [`ListItemStyle`](mw.ListItemStyle.md) <Badge type="tip" text="client" />  |
-| ListItemStyle样式|
-| **[onOpeningEvent](mw.Dropdown.md#onopeningevent)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
-| 打开下拉菜单前触发事件|
-| **[onSelectionChangedEvent](mw.Dropdown.md#onselectionchangedevent)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`item`: `string`, `select`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 选中改动事件|
-| **[optionCount](mw.Dropdown.md#optioncount)**(): `number` <Badge type="tip" text="client" />  |
-| 获取菜单项数量|
-| **[options](mw.Dropdown.md#options)**(): `string`[] <Badge type="tip" text="client" />  |
-| 获取所有菜单项|
-| **[scrollbarStyle](mw.Dropdown.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="client" />  |
-| 滚动条样式|
-| **[selectedOption](mw.Dropdown.md#selectedoption)**(): `string` <Badge type="tip" text="client" />  |
-| 获取当前选中项|
-| **[selectedOptionIndex](mw.Dropdown.md#selectedoptionindex)**(): `number` <Badge type="tip" text="client" />  |
-| 获取选中项下拉索引|
-| **[textStyle](mw.Dropdown.md#textstyle)**(): [`TextStyle`](mw.TextStyle.md) <Badge type="tip" text="client" />  |
-| 文本样式|
+| **[contentPadding](mw.MenuAnchor.md#contentpadding)**(): [`Margin`](mw.Margin.md)  |
+| :----- |
+| **[isFitInWindow](mw.MenuAnchor.md#isfitinwindow)**(): `boolean` |
+| **[isRightOpenMenu](mw.MenuAnchor.md#isrightopenmenu)**(): `boolean` |
+| **[itemPadding](mw.MenuAnchor.md#itempadding)**(): [`Margin`](mw.Margin.md) |
+| **[itemStyle](mw.MenuAnchor.md#itemstyle)**(): [`ButtonStyle`](mw.ButtonStyle.md) |
+| **[maxListHeight](mw.MenuAnchor.md#maxlistheight)**(): `number` |
+| **[menuBorderBrush](mw.MenuAnchor.md#menuborderbrush)**(): [`ImageInfo`](mw.ImageInfo.md) |
+| **[onClickMenuItemEvent](mw.MenuAnchor.md#onclickmenuitemevent)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`menuId`: `string`) => `void`\> |
+| **[placement](mw.MenuAnchor.md#placement)**(): [`MenuPlacement`](../enums/mw.MenuPlacement.md) |
+| **[scrollBarPadding](mw.MenuAnchor.md#scrollbarpadding)**(): [`Margin`](mw.Margin.md) |
+| **[scrollBarStyle](mw.MenuAnchor.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) |
+| **[scrollBarThickness](mw.MenuAnchor.md#scrollbarthickness)**(): `number` |
 
 
 ::: details click
@@ -97,25 +87,11 @@ Dropdown
 
 
 ### Methods <Score text="Methods" /> 
-| **[addOption](mw.Dropdown.md#addoption)**(`option`: `string`): `void` <Badge type="tip" text="client" />  |
-| :-----|
-| 添加菜单项|
-| **[clearOptions](mw.Dropdown.md#clearoptions)**(): `void` <Badge type="tip" text="client" />  |
-| 清空所有菜单项|
-| **[clearSelection](mw.Dropdown.md#clearselection)**(): `void` <Badge type="tip" text="client" />  |
-| 清空所有选中|
-| **[findOptionIndex](mw.Dropdown.md#findoptionindex)**(`option`: `string`): `number` <Badge type="tip" text="client" />  |
-| 获取下拉顺序坐标|
-| **[getOptionByIndex](mw.Dropdown.md#getoptionbyindex)**(`index`: `number`): `string` <Badge type="tip" text="client" />  |
-| 菜单项内容|
-| **[getShowTextVisible](mw.Dropdown.md#getshowtextvisible)**(): `boolean` |
-| **[removeOption](mw.Dropdown.md#removeoption)**(`option`: `string`): `void` <Badge type="tip" text="client" />  |
-| 移除菜单项|
-| **[setOptionByIndex](mw.Dropdown.md#setoptionbyindex)**(`index`: `number`, `value`: `string`): `void` <Badge type="tip" text="client" />  |
-| 修改索引处的值|
-| **[setShowTextVisible](mw.Dropdown.md#setshowtextvisible)**(`bVisible`): `void` |
-| **[newObject](mw.Dropdown.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Dropdown`](mw.Dropdown.md) <Badge type="tip" text="client" />  |
-| 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| **[addMenuItem](mw.MenuAnchor.md#addmenuitem)**(`info`: [`MenuItemInfo`](mw.MenuItemInfo.md)): `void`  |
+| :----- |
+| **[addMenuItems](mw.MenuAnchor.md#addmenuitems)**(`info`: [`MenuItemInfo`](mw.MenuItemInfo.md)[]): `void` |
+| **[open](mw.MenuAnchor.md#open)**(`focusMenu?`: `boolean`): `void` |
+| **[toggleOpen](mw.MenuAnchor.md#toggleopen)**(`focusOnOpen?`: `boolean`): `void` |
 
 
 ::: details click
@@ -158,13 +134,18 @@ Dropdown
 
 ___
 
-### dropdownStyle <Score text="dropdownStyle" /> 
+### contentPadding <Score text="contentPadding" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **dropdownStyle**(): [`DropdownStyle`](mw.DropdownStyle.md) <Badge type="tip" text="client" />
+• `get` **contentPadding**(): [`Margin`](mw.Margin.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **contentPadding**(`inPadding`): `void`
 
 </th>
 </tr></thead>
@@ -172,178 +153,11 @@ ___
 <td style="text-align: left">
 
 
-菜单样式
+菜单内容边距
 
 #### Returns
 
-| [`DropdownStyle`](mw.DropdownStyle.md) | 返回菜单样式 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### isOpened <Score text="isOpened" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **isOpened**(): `boolean` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取菜单是否打开
-
-#### Returns
-
-| `boolean` | 菜单是否打开 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### menuRowStyle <Score text="menuRowStyle" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **menuRowStyle**(): [`ListItemStyle`](mw.ListItemStyle.md) <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-ListItemStyle样式
-
-#### Returns
-
-| [`ListItemStyle`](mw.ListItemStyle.md) | 返回ListItemStyle样式 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onOpeningEvent <Score text="onOpeningEvent" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onOpeningEvent**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-打开下拉菜单前触发事件
-
-#### Returns
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回事件 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### onSelectionChangedEvent <Score text="onSelectionChangedEvent" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **onSelectionChangedEvent**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`item`: `string`, `select`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-选中改动事件
-
-#### Returns
-
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`item`: `string`, `select`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> | 返回选中改动事件 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### optionCount <Score text="optionCount" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **optionCount**(): `number` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取菜单项数量
-
-#### Returns
-
-| `number` | 菜单项数量 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### options <Score text="options" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **options**(): `string`[] <Badge type="tip" text="client" />
-
-</th>
-<th style="text-align: left">
-
-• `set` **options**(`value`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取所有菜单项
-
-#### Returns
-
-| `string`[] | 所有菜单项 |
+| [`Margin`](mw.Margin.md) |  |
 | :------ | :------ |
 
 
@@ -351,11 +165,11 @@ ___
 <td style="text-align: left">
 
 
-获取所有菜单项
+菜单内容边距
 
 #### Parameters
 
-| `value` `string`[] |  传进来的字符串数组 <br> range: 不做限制，合理即可。 |
+| `inPadding` | [`Margin`](mw.Margin.md) |
 | :------ | :------ |
 
 
@@ -366,13 +180,344 @@ ___
 
 ___
 
-### scrollbarStyle <Score text="scrollbarStyle" /> 
+### isFitInWindow <Score text="isFitInWindow" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **scrollbarStyle**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="client" />
+• `get` **isFitInWindow**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **isFitInWindow**(`isFit`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `isFit` | `boolean` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### isRightOpenMenu <Score text="isRightOpenMenu" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **isRightOpenMenu**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **isRightOpenMenu**(`isOpen`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `isOpen` | `boolean` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### itemPadding <Score text="itemPadding" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **itemPadding**(): [`Margin`](mw.Margin.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **itemPadding**(`inPadding`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`Margin`](mw.Margin.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `inPadding` | [`Margin`](mw.Margin.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### itemStyle <Score text="itemStyle" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **itemStyle**(): [`ButtonStyle`](mw.ButtonStyle.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+菜单项样式
+
+#### Returns
+
+| [`ButtonStyle`](mw.ButtonStyle.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### maxListHeight <Score text="maxListHeight" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **maxListHeight**(): `number`
+
+</th>
+<th style="text-align: left">
+
+• `set` **maxListHeight**(`inHeight`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `inHeight` | `number` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### menuBorderBrush <Score text="menuBorderBrush" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **menuBorderBrush**(): [`ImageInfo`](mw.ImageInfo.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+菜单背景图
+
+#### Returns
+
+| [`ImageInfo`](mw.ImageInfo.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### onClickMenuItemEvent <Score text="onClickMenuItemEvent" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onClickMenuItemEvent**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`menuId`: `string`) => `void`\>
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`menuId`: `string`) => `void`\> |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### placement <Score text="placement" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **placement**(): [`MenuPlacement`](../enums/mw.MenuPlacement.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **placement**(`inType`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`MenuPlacement`](../enums/mw.MenuPlacement.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `inType` | [`MenuPlacement`](../enums/mw.MenuPlacement.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### scrollBarPadding <Score text="scrollBarPadding" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **scrollBarPadding**(): [`Margin`](mw.Margin.md)
+
+</th>
+<th style="text-align: left">
+
+• `set` **scrollBarPadding**(`inPadding`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| [`Margin`](mw.Margin.md) |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+#### Parameters
+
+| `inPadding` | [`Margin`](mw.Margin.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### scrollBarStyle <Score text="scrollBarStyle" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **scrollBarStyle**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md)
 
 </th>
 </tr></thead>
@@ -384,7 +529,7 @@ ___
 
 #### Returns
 
-| [`ScrollbarStyle`](mw.ScrollbarStyle.md) | 返回滚动条样式 |
+| [`ScrollbarStyle`](mw.ScrollbarStyle.md) |  |
 | :------ | :------ |
 
 </td>
@@ -393,18 +538,18 @@ ___
 
 ___
 
-### selectedOption <Score text="selectedOption" /> 
+### scrollBarThickness <Score text="scrollBarThickness" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **selectedOption**(): `string` <Badge type="tip" text="client" />
+• `get` **scrollBarThickness**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **selectedOption**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **scrollBarThickness**(`inThickness`): `void`
 
 </th>
 </tr></thead>
@@ -412,241 +557,73 @@ ___
 <td style="text-align: left">
 
 
-获取当前选中项
-
 #### Returns
 
-| `string` | 当前选中项 |
+| `number` |  |
 | :------ | :------ |
 
 
 </td>
 <td style="text-align: left">
 
-
-设置前选中项
 
 #### Parameters
 
-| `value` `string` | 传进来的文本 |
+| `inThickness` | `number` |
 | :------ | :------ |
-
-
 
 </td>
 </tr></tbody>
 </table>
 
-___
 
-### selectedOptionIndex <Score text="selectedOptionIndex" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **selectedOptionIndex**(): `number` <Badge type="tip" text="client" />
-
-</th>
-<th style="text-align: left">
-
-• `set` **selectedOptionIndex**(`value`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取选中项下拉索引
-
-#### Returns
-
-| `number` | 选中项下拉索引 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置选中项下拉索引
-
-#### Parameters
-
-| `value` `number` | 设置的索引值 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### textStyle <Score text="textStyle" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **textStyle**(): [`TextStyle`](mw.TextStyle.md) <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-文本样式
-
-#### Returns
-
-</td>
-</tr></tbody>
-</table>
-
-| [`TextStyle`](mw.TextStyle.md) | 返回文本样式 |
-| :------ | :------ |
 
 ## Methods
 
 ___
 
-### addOption <Score text="addOption" /> 
+### addMenuItem <Score text="addMenuItem" /> 
 
-• **addOption**(`option`): `void` <Badge type="tip" text="client" />
-
-添加菜单项
+• **addMenuItem**(`info`): `void`
 
 #### Parameters
 
-| `option` `string` | 菜单项 <br> range: 不做限制，合理即可。 |
+| `info` | [`MenuItemInfo`](mw.MenuItemInfo.md) |
 | :------ | :------ |
 
 
 ___
 
-### clearOptions <Score text="clearOptions" /> 
+### addMenuItems <Score text="addMenuItems" /> 
 
-• **clearOptions**(): `void` <Badge type="tip" text="client" />
-
-清空所有菜单项
-
-
-___
-
-### clearSelection <Score text="clearSelection" /> 
-
-• **clearSelection**(): `void` <Badge type="tip" text="client" />
-
-清空所有选中
-
-
-___
-
-### findOptionIndex <Score text="findOptionIndex" /> 
-
-• **findOptionIndex**(`option`): `number` <Badge type="tip" text="client" />
-
-获取下拉顺序坐标
+• **addMenuItems**(`info`): `void`
 
 #### Parameters
 
-| `option` `string` | 菜单项 <br> range: 不做限制，合理即可。 |
+| `info` | [`MenuItemInfo`](mw.MenuItemInfo.md)[] |
 | :------ | :------ |
 
-#### Returns
-
-| `number` | 下拉顺序坐标 |
-| :------ | :------ |
 
 ___
 
-### getOptionByIndex <Score text="getOptionByIndex" /> 
+### open <Score text="open" /> 
 
-• **getOptionByIndex**(`index`): `string` <Badge type="tip" text="client" />
-
-菜单项内容
+• **open**(`focusMenu?`): `void`
 
 #### Parameters
 
-| `index` `number` | 下拉顺序坐标 <br> range: 不做限制，合理即可。 |
+| `focusMenu?` | `boolean` |
 | :------ | :------ |
 
-#### Returns
-
-| `string` | 获取菜单项内容 |
-| :------ | :------ |
 
 ___
 
-### getShowTextVisible <Score text="getShowTextVisible" /> 
+### toggleOpen <Score text="toggleOpen" /> 
 
-• **getShowTextVisible**(): `boolean`
-
-获取显示的选中文本的可见性
-
-___
-
-### removeOption <Score text="removeOption" /> 
-
-• **removeOption**(`option`): `void` <Badge type="tip" text="client" />
-
-移除菜单项
+• **toggleOpen**(`focusOnOpen?`): `void`
 
 #### Parameters
 
-| `option` `string` | 菜单项 <br> range: 不做限制，合理即可。 |
+| `focusOnOpen?` | `boolean` |
 | :------ | :------ |
-
-
-
-___
-
-### setOptionByIndex <Score text="setOptionByIndex" /> 
-
-• **setOptionByIndex**(`index`, `value`): `void` <Badge type="tip" text="client" />
-
-修改索引处的值
-
-#### Parameters
-
-| `index` `number` |  索引 <br> range: 对应的索引值，不做限制。 <br> type: 整数 |
-| :------ | :------ |
-| `value` `string` |  值 <br> range: 不做限制。 |
-
-
-___
-
-### setShowTextVisible <Score text="setShowTextVisible" /> 
-
-• **setShowTextVisible**(`bVisible`): `void`
-
-设置显示的选中文本的可见性
-
-___
-
-### newObject <Score text="newObject" /> 
-
-• `Static` **newObject**(`parent?`, `inName?`): [`Dropdown`](mw.Dropdown.md) <Badge type="tip" text="client" />
-
-创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
-
-#### Parameters
-
-| `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
-| :------ | :------ |
-| `inName?` `string` | 创建控件的名称 default:null <br> range: 不做限制，合理即可。 |
-
-#### Returns
-
-| [`Dropdown`](mw.Dropdown.md) | 返回创建的对象 |
-| :------ | :------ |
-
-
-| `bVisible` | `boolean` |
-| :------ | :------ |
-
 

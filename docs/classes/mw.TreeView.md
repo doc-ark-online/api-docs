@@ -1,46 +1,48 @@
-[界面](../groups/界面.界面.md) / ListView
+[界面](../groups/界面.界面.md) / TreeView
 
-# ListView <Badge type="tip" text="Class" /> <Score text="ListView" />
+# TreeView <Badge type="tip" text="Class" /> <Score text="TreeView" />
 
-列表视图
+树状视图
 
 ## Hierarchy
 
 - [`Widget`](mw.Widget.md)
 
-  ↳ **`ListView`**
-
-  ↳↳ [`TileView`](mw.TileView.md)
+  ↳ **`TreeView`**
 
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[clearSelectionOnClick](mw.ListView.md#clearselectiononclick)**(`clearSelection`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| **[clearSelectionOnClick](mw.TreeView.md#clearselectiononclick)**(`clearSelection`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 设置是否在点击空白后清除选中项（仅初始化时设置有效）|
-| **[itemPadding](mw.ListView.md#itempadding)**(): [`Margin`](mw.Margin.md)  |
+| **[itemIndentAmount](mw.TreeView.md#itemindentamount)**(): `number` <Badge type="tip" text="client" />  |
+| 获取子项缩进距离|
+| **[itemPadding](mw.TreeView.md#itempadding)**(): [`Margin`](mw.Margin.md)  |
 | 获取视图节点边距|
-| **[listItems](mw.ListView.md#listitems)**(): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
+| **[listItems](mw.TreeView.md#listitems)**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
 | 获取列表数据|
-| **[onItemClicked](mw.ListView.md#onitemclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\>  |
+| **[onItemClicked](mw.TreeView.md#onitemclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | 返回点击代理|
-| **[onItemHoverChanged](mw.ListView.md#onitemhoverchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md), `hovered`: `boolean`) => `void`\>  |
+| **[onItemExpansionChanged](mw.TreeView.md#onitemexpansionchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `expanded`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
+| 展开状态修改代理|
+| **[onItemHoverChanged](mw.TreeView.md#onitemhoverchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md), `hovered`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | 返回悬停状态改变代理|
-| **[onItemRefreshed](mw.ListView.md#onitemrefreshed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]) => `void`\>  |
+| **[onItemRefreshed](mw.TreeView.md#onitemrefreshed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]) => `void`\> <Badge type="tip" text="client" />  |
 | 返回UI刷新生成同步代理|
-| **[onItemReleaseShow](mw.ListView.md#onitemreleaseshow)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\>  |
+| **[onItemReleaseShow](mw.TreeView.md#onitemreleaseshow)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\> <Badge type="tip" text="client" />  |
 | 子控件移除显示时调用，等待复用前|
-| **[onItemSelected](mw.ListView.md#onitemselected)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\>  |
+| **[onItemSelected](mw.TreeView.md#onitemselected)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />  |
 | 返回选择修改代理|
-| **[scrollBarStyle](mw.ListView.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="other" />  |
+| **[scrollBarStyle](mw.TreeView.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="other" />  |
 | 滚动条样式|
-| **[scrollBarVisible](mw.ListView.md#scrollbarvisible)**(): `boolean` <Badge type="tip" text="other" />  |
+| **[scrollBarVisible](mw.TreeView.md#scrollbarvisible)**(): `boolean` <Badge type="tip" text="other" />  |
 | 滚动条可见性|
-| **[scrollOffset](mw.ListView.md#scrolloffset)**(): `number` <Badge type="tip" text="client" />  |
+| **[scrollOffset](mw.TreeView.md#scrolloffset)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前滚动条偏移位置|
-| **[selectionMode](mw.ListView.md#selectionmode)**(): [`SelectionMode`](../enums/mw.SelectionMode.md) <Badge type="tip" text="client" />  |
+| **[selectionMode](mw.TreeView.md#selectionmode)**(): [`SelectionMode`](../enums/mw.SelectionMode.md) <Badge type="tip" text="client" />  |
 | 获取选中模式|
-| **[tableRowStyle](mw.ListView.md#tablerowstyle)**(): [`ListItemStyle`](mw.ListItemStyle.md) <Badge type="tip" text="other" />  |
+| **[tableRowStyle](mw.TreeView.md#tablerowstyle)**(): [`ListItemStyle`](mw.ListItemStyle.md) <Badge type="tip" text="other" />  |
 | Item项目节点样式设置|
 
 
@@ -103,37 +105,41 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[addItems](mw.ListView.md#additems)**(`newListItems`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
+| **[addItems](mw.TreeView.md#additems)**(`newListItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加项目节点数据|
-| **[clearItems](mw.ListView.md#clearitems)**(): `void` <Badge type="tip" text="client" />  |
+| **[clearItems](mw.TreeView.md#clearitems)**(): `void` <Badge type="tip" text="client" />  |
 | 清理数据组|
-| **[clearSelection](mw.ListView.md#clearselection)**(): `void` <Badge type="tip" text="client" />  |
+| **[clearSelection](mw.TreeView.md#clearselection)**(): `void` <Badge type="tip" text="client" />  |
 | 清空列表的选中|
-| **[findItemByIndex](mw.ListView.md#finditembyindex)**(`index`: `number`): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) <Badge type="tip" text="client" />  |
-| 根据索引查找对应的项目节点数据，如果位置越界，则返回空|
-| **[getSelectionIndexs](mw.ListView.md#getselectionindexs)**(): `number`[] <Badge type="tip" text="client" />  |
-| 获取选中节点的索引|
-| **[getSelectionItems](mw.ListView.md#getselectionitems)**(): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
+| **[getExpandedItems](mw.TreeView.md#getexpandeditems)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
+| 获取所有展开的节点|
+| **[getItemExpansion](mw.TreeView.md#getitemexpansion)**(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `boolean` <Badge type="tip" text="client" />  |
+| 获取节点的展开状态|
+| **[getSelectionItems](mw.TreeView.md#getselectionitems)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
 | 获取选中节点的数据|
-| **[insertItem](mw.ListView.md#insertitem)**(`newItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `index`: `number`): `void` <Badge type="tip" text="client" />  |
+| **[getShowItemsCount](mw.TreeView.md#getshowitemscount)**(): `number` <Badge type="tip" text="client" />  |
+| 获取当前展示的条目的数量|
+| **[insertItem](mw.TreeView.md#insertitem)**(`newItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `index`: `number`): `void` <Badge type="tip" text="other" />  |
 | 插入项目节点数据，如果位置越界，则自动插入最后|
-| **[removeItem](mw.ListView.md#removeitem)**(`delItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
+| **[regenerateTreeData](mw.TreeView.md#regeneratetreedata)**(`regenItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
+| 重新生成树刷新数据|
+| **[removeItem](mw.TreeView.md#removeitem)**(`delItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
 | 移除项目节点数据|
-| **[removeItemByIndex](mw.ListView.md#removeitembyindex)**(`delIndex`: `number`): `void` <Badge type="tip" text="client" />  |
-| 根据索引移除项目节点数据，如果位置越界，则移除失败|
-| **[requestRefresh](mw.ListView.md#requestrefresh)**(): `void` <Badge type="tip" text="client" />  |
+| **[requestRefresh](mw.TreeView.md#requestrefresh)**(): `void` <Badge type="tip" text="client" />  |
 | 刷新数据|
-| **[resetListItems](mw.ListView.md#resetlistitems)**(`newListItems`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
+| **[resetListItems](mw.TreeView.md#resetlistitems)**(`newListItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
 | 重新设置项目节点数据组|
-| **[scrollIntoView](mw.ListView.md#scrollintoview)**(`targetItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
+| **[scrollIntoView](mw.TreeView.md#scrollintoview)**(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
 | 滚动条定位到对应项目的位置|
-| **[setSelectionItem](mw.ListView.md#setselectionitem)**(`selectedItems`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)  [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[], `selected`: `boolean`, `selectInfo?`: [`SelectInfo`](../enums/mw.SelectInfo.md)): `void` <Badge type="tip" text="client" />  |
+| **[setItemExpansion](mw.TreeView.md#setitemexpansion)**(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `expandItem`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| 设置节点的展开状态|
+| **[setSelectionItem](mw.TreeView.md#setselectionitem)**(`selectedItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)  [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[], `selected`: `boolean`, `selectInfo?`: [`SelectInfo`](../enums/mw.SelectInfo.md)): `void` <Badge type="tip" text="client" />  |
 | 设置节点选中|
-| **[setSelectionItemByIndex](mw.ListView.md#setselectionitembyindex)**(`selectedIndexs`: `number`  `number`[], `selected`: `boolean`, `selectInfo?`: [`SelectInfo`](../enums/mw.SelectInfo.md)): `void` <Badge type="tip" text="client" />  |
-| 根据索引设置节点选中，如果位置越界，则越界对应的操作无效|
-| **[newObject](mw.ListView.md#newobject)**(`orientation`: [`Orientation`](../enums/mw.Orientation.md), `uiAssetGUID`: `string`, `parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ListView`](mw.ListView.md) <Badge type="tip" text="client" />  |
-| 创建 ListView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| **[toggleItemExpansion](mw.TreeView.md#toggleitemexpansion)**(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
+| 修改节点的展开状态|
+| **[newObject](mw.TreeView.md#newobject)**(`uiAssetGUID`: `string`, `parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`TreeView`](mw.TreeView.md) <Badge type="tip" text="client" />  |
+| 创建 TreeView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details click
@@ -205,6 +211,52 @@ ___
 
 ___
 
+### itemIndentAmount <Score text="itemIndentAmount" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **itemIndentAmount**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **itemIndentAmount**(`itemIndentAmount`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取子项缩进距离
+
+#### Returns
+
+| `number` | 返回子项缩进距离 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置子项缩进距离
+
+#### Parameters
+
+| `itemIndentAmount` `number` | 偏移量, 具体值需>=0, 负数无效果 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### itemPadding <Score text="itemPadding" /> 
 
 <table class="get-set-table">
@@ -257,7 +309,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **listItems**(): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] <Badge type="tip" text="client" />
+• `get` **listItems**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -269,7 +321,7 @@ ___
 
 #### Returns
 
-| [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] | 返回列表数据 |
+| readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回列表数据 |
 | :------ | :------ |
 
 </td>
@@ -284,7 +336,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onItemClicked**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\>
+• `get` **onItemClicked**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -293,11 +345,37 @@ ___
 
 
 返回点击代理
-@effect只在客户端调用生效
 
 #### Returns
 
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> | 返回点击代理 |
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> | 返回点击代理 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### onItemExpansionChanged <Score text="onItemExpansionChanged" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **onItemExpansionChanged**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `expanded`: `boolean`) => `void`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+展开状态修改代理
+
+#### Returns
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `expanded`: `boolean`) => `void`\> | 返回展开状态修改代理 |
 | :------ | :------ |
 
 </td>
@@ -312,7 +390,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onItemHoverChanged**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md), `hovered`: `boolean`) => `void`\>
+• `get` **onItemHoverChanged**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md), `hovered`: `boolean`) => `void`\> <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -321,7 +399,6 @@ ___
 
 
 返回悬停状态改变代理
-@effect只在客户端调用生效
 
 #### Returns
 
@@ -340,7 +417,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onItemRefreshed**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]) => `void`\>
+• `get` **onItemRefreshed**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]) => `void`\> <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -349,11 +426,10 @@ ___
 
 
 返回UI刷新生成同步代理
-@effect只在客户端调用生效
 
 #### Returns
 
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]) => `void`\> | 返回UI刷新生成同步代理 |
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]) => `void`\> | 返回UI刷新生成同步代理 |
 | :------ | :------ |
 
 </td>
@@ -368,7 +444,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onItemReleaseShow**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\>
+• `get` **onItemReleaseShow**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\> <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -377,7 +453,6 @@ ___
 
 
 子控件移除显示时调用，等待复用前
-@effect只在客户端调用生效
 
 #### Returns
 
@@ -396,7 +471,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onItemSelected**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\>
+• `get` **onItemSelected**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -405,11 +480,10 @@ ___
 
 
 返回选择修改代理
-@effect只在客户端调用生效
 
 #### Returns
 
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> | 返回选择修改代理 |
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> | 返回选择修改代理 |
 | :------ | :------ |
 
 </td>
@@ -620,7 +694,7 @@ ___
 
 #### Parameters
 
-| `newListItems` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] | 新的数据组 |
+| `newListItems` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 新的数据组 |
 | :------ | :------ |
 
 
@@ -644,61 +718,88 @@ ___
 
 ___
 
-### findItemByIndex <Score text="findItemByIndex" /> 
+### getExpandedItems <Score text="getExpandedItems" /> 
 
-• **findItemByIndex**(`index`): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) <Badge type="tip" text="client" />
+• **getExpandedItems**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
 
-根据索引查找对应的项目节点数据，如果位置越界，则返回空
-
-#### Parameters
-
-| `index` `number` | 需要查找的数据所在位置 |
-| :------ | :------ |
+获取所有展开的节点
 
 #### Returns
 
-| [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) | 返回找到的数据 |
+| [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回所有展开的节点 |
 | :------ | :------ |
 
 ___
 
-### getSelectionIndexs <Score text="getSelectionIndexs" /> 
+### getItemExpansion <Score text="getItemExpansion" /> 
 
-• **getSelectionIndexs**(): `number`[] <Badge type="tip" text="client" />
+• **getItemExpansion**(`targetItem`): `boolean` <Badge type="tip" text="client" />
 
-获取选中节点的索引
+获取节点的展开状态
+
+#### Parameters
+
+| `targetItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 目标数据 |
+| :------ | :------ |
 
 #### Returns
 
-| `number`[] | 返回选中节点的索引 |
+| `boolean` | 返回节点是否展开 |
 | :------ | :------ |
 
 ___
 
 ### getSelectionItems <Score text="getSelectionItems" /> 
 
-• **getSelectionItems**(): [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] <Badge type="tip" text="client" />
+• **getSelectionItems**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
 
 获取选中节点的数据
 
 #### Returns
 
-| [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] | 返回选中节点的数据 |
+| [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回选中节点的数据 |
+| :------ | :------ |
+
+___
+
+### getShowItemsCount <Score text="getShowItemsCount" /> 
+
+• **getShowItemsCount**(): `number` <Badge type="tip" text="client" />
+
+获取当前展示的条目的数量
+
+#### Returns
+
+| `number` |  |
 | :------ | :------ |
 
 ___
 
 ### insertItem <Score text="insertItem" /> 
 
-• **insertItem**(`newItem`, `index`): `void` <Badge type="tip" text="client" />
+• **insertItem**(`newItem`, `index`): `void` <Badge type="tip" text="other" />
 
 插入项目节点数据，如果位置越界，则自动插入最后
 
 #### Parameters
 
-| `newItem` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) | 需要插入的新数据 |
+| `newItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 需要插入的新数据 |
 | :------ | :------ |
 | `index` `number` | 插入的位置 |
+
+
+___
+
+### regenerateTreeData <Score text="regenerateTreeData" /> 
+
+• **regenerateTreeData**(`regenItems`): `void` <Badge type="tip" text="client" />
+
+重新生成树刷新数据
+
+#### Parameters
+
+| `regenItems` | [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] |
+| :------ | :------ |
 
 
 ___
@@ -711,21 +812,7 @@ ___
 
 #### Parameters
 
-| `delItem` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) | 需要移除的数据 |
-| :------ | :------ |
-
-
-___
-
-### removeItemByIndex <Score text="removeItemByIndex" /> 
-
-• **removeItemByIndex**(`delIndex`): `void` <Badge type="tip" text="client" />
-
-根据索引移除项目节点数据，如果位置越界，则移除失败
-
-#### Parameters
-
-| `delIndex` `number` | 需要移除的数据所在位置 |
+| `delItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 需要移除的数据 |
 | :------ | :------ |
 
 
@@ -748,7 +835,7 @@ ___
 
 #### Parameters
 
-| `newListItems` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] | 用于替换的新数据组 |
+| `newListItems` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 用于替换的新数据组 |
 | :------ | :------ |
 
 
@@ -762,8 +849,23 @@ ___
 
 #### Parameters
 
-| `targetItem` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md) | 目标定位项目 |
+| `targetItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 目标定位项目 |
 | :------ | :------ |
+
+
+___
+
+### setItemExpansion <Score text="setItemExpansion" /> 
+
+• **setItemExpansion**(`targetItem`, `expandItem`): `void` <Badge type="tip" text="client" />
+
+设置节点的展开状态
+
+#### Parameters
+
+| `targetItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 目标数据 |
+| :------ | :------ |
+| `expandItem` `boolean` | 是否展开 |
 
 
 ___
@@ -776,45 +878,42 @@ ___
 
 #### Parameters
 
-| `selectedItems` [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)  [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[] | 需要修改选中的节点数据 |
+| `selectedItems` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)  [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 需要修改选中的节点数据 |
 | :------ | :------ |
 | `selected` `boolean` | 确定修改目标：选中/不选中 |
-| `selectInfo?` [`SelectInfo`](../enums/mw.SelectInfo.md) | 选中方式：键盘/导航/鼠标/直接选中 |
+| `selectInfo?` [`SelectInfo`](../enums/mw.SelectInfo.md) | - |
 
 
 ___
 
-### setSelectionItemByIndex <Score text="setSelectionItemByIndex" /> 
+### toggleItemExpansion <Score text="toggleItemExpansion" /> 
 
-• **setSelectionItemByIndex**(`selectedIndexs`, `selected`, `selectInfo?`): `void` <Badge type="tip" text="client" />
+• **toggleItemExpansion**(`targetItem`): `void` <Badge type="tip" text="client" />
 
-根据索引设置节点选中，如果位置越界，则越界对应的操作无效
+修改节点的展开状态
 
 #### Parameters
 
-| `selectedIndexs` `number`  `number`[] | 需要修改选中的节点所在索引 |
+| `targetItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 目标数据 |
 | :------ | :------ |
-| `selected` `boolean` | 确定修改目标：选中/不选中 |
-| `selectInfo?` [`SelectInfo`](../enums/mw.SelectInfo.md) | 选中方式：键盘/导航/鼠标/直接选中 |
 
 
 ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`orientation`, `uiAssetGUID`, `parent?`, `inName?`): [`ListView`](mw.ListView.md) <Badge type="tip" text="client" />
+• `Static` **newObject**(`uiAssetGUID`, `parent?`, `inName?`): [`TreeView`](mw.TreeView.md) <Badge type="tip" text="client" />
 
-创建 ListView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 TreeView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
 
 #### Parameters
 
-| `orientation` [`Orientation`](../enums/mw.Orientation.md) |  朝向 |
-| :------ | :------ |
 | `uiAssetGUID` `string` |  设置视图绑定的节点UI |
+| :------ | :------ |
 | `parent?` [`Canvas`](mw.Canvas.md) | 创建控件的外parent对象 default:null |
 | `inName?` `string` | 创建控件的名称 default:null |
 
 #### Returns
 
-| [`ListView`](mw.ListView.md) | 创建的对象 |
+| [`TreeView`](mw.TreeView.md) | 创建的对象 |
 | :------ | :------ |

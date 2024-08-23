@@ -472,6 +472,15 @@
         },
         "no_children_files": null,
         "children": null
+      },
+      "MenuItemInfo": {
+        "file": {
+          "file_name": "mw.MenuItemInfo.md",
+          "file_path": "classes/mw.MenuItemInfo.md",
+          "name": "MenuItemInfo"
+        },
+        "no_children_files": null,
+        "children": null
       }
     }
   },

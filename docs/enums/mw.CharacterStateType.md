@@ -7,8 +7,9 @@
 ## Table of contents
 
 ### Enumeration Members <Score text="Enumeration" /> 
-| **[Crouching](mw.CharacterStateType.md#crouching)** = ``8``  |
+| **[Climbing](mw.CharacterStateType.md#climbing)** = ``12``  |
 | :----- |
+| **[Crouching](mw.CharacterStateType.md#crouching)** = ``8`` |
 | **[Dead](mw.CharacterStateType.md#dead)** = ``10`` |
 | **[Flying](mw.CharacterStateType.md#flying)** = ``2`` |
 | **[Freefall](mw.CharacterStateType.md#freefall)** = ``5`` |
@@ -22,6 +23,14 @@
 | **[Swimming](mw.CharacterStateType.md#swimming)** = ``3`` |
 
 ## Enumeration Members
+
+### Climbing <Score text="Climbing" /> 
+
+• **Climbing** = ``12``
+
+攀爬状态
+
+___
 
 ### Crouching <Score text="Crouching" /> 
 
