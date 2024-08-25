@@ -1,6 +1,32 @@
 import type { DefaultTheme } from 'doc-theme-323'
 import { defineConfigWithTheme } from 'vitepress'
-import { dealConfigSidebarV2 } from '../../utils'
+import { Utils } from '../../utils'
+
+/** 当前版本号 */
+export const currentVersion = '0.38'
+
+/** 是否为测试版本 */
+export const isBetaVersion = true;
+
+/** 链接的版本 */
+export const LiknedVersions = [
+  {
+    text: '0.37 版本',
+    link: 'https://api-docs-037.ark.online/',
+    path: true
+  },
+  {
+    text: '0.36 版本',
+    link: 'https://api-docs-036.ark.online/',
+    path: true
+  },
+  {
+    text: '0.35 版本',
+    link: 'https://api-docs-035.ark.online/',
+    path: true
+  }
+];
+
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
   // {
@@ -23,8 +49,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     ]
   },
 
-  ...dealConfigSidebarV2()
+  ...Utils.dealConfigSidebar()
 ]
+
 
 export default defineConfigWithTheme<DefaultTheme.Config>({
   ignoreDeadLinks: true,
@@ -81,7 +108,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   themeConfig: {
     pandora: {
       type: 'api',
-      version: '027'
+      version: currentVersion
     },
     logo: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/kd-logo-black.svg',
     algolia: {
@@ -134,24 +161,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: 'Beta版本(0.38)',
-        items: [
-          {
-            text: '0.37 版本',
-            link: 'https://api-docs-034.ark.online/',
-            path: true
-          },
-          {
-            text: '0.36 版本',
-            link: 'https://api-docs-036.ark.online/',
-            path: true
-          },
-          {
-            text: '0.35 版本',
-            link: 'https://api-docs-035.ark.online/',
-            path: true
-          }
-        ]
+        text: Utils.getDisplayVersionText(currentVersion, isBetaVersion),
+        items: LiknedVersions,
       }
       // {
       //   text: '语言',
