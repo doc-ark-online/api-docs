@@ -215,7 +215,7 @@ export default class TeleportScript extends Script {
                     // 声明成功和失败的回调函数，用于处理传送接口的回调结果。
                     // 成功的情况一般不需要处理，会继续走后续跳转流程。
                     // 如果失败了，有可能是超时或者有报错，可以从回调的数据中读取信息做进一步处理。
-                    const onSuccess = () => `{ }`
+                    const onSuccess = () => { }
                     const onFailed = (result: mw.TeleportResult) => {
                         switch (result.status) {
                             case mw.TeleportStatus.success:
@@ -245,8 +245,8 @@ export default class TeleportScript extends Script {
             // 客户端逻辑
             Event.addServerListener("TeleportResult", (result: mw.TeleportResult) => {
                 console.error(`Teleport has error:`);
-                console.error(`errorCode: $`{result.errorCode}``);
-                console.error(`message: $`{result.message}``);
+                console.error(`errorCode: ${result.errorCode}`);
+                console.error(`message: ${result.message}`);
             });
         }
     }
@@ -286,8 +286,8 @@ export default class Server extends Script {
                 const sourceInfo = TeleportService.getSourceInfo(player.teleportId);
                 if (sourceInfo) {
                     console.log("Teleport from:");
-                    console.log(`GameId: $`{sourceInfo.gameId}``);
-                    console.log(`RoomId: $`{sourceInfo.roomId}``);
+                    console.log(`GameId: ${sourceInfo.gameId}`);
+                    console.log(`RoomId: ${sourceInfo.roomId}`);
                 } else {
                     // 不是传送进入的当前场景，则没有来源信息
                     console.log("Not join by Teleport.")
@@ -330,7 +330,7 @@ export default class Server extends Script {
                 // 用玩家的teleportId属性来查询传送时携带的数据
                 const data = TeleportService.getTeleportData(player.teleportId);
                 if (data) {
-                    console.log(`Teleport data: $`{data}``);
+                    console.log(`Teleport data: ${data}`);
                 } else {
                     // 不是传送进入的当前场景，则没有携带的数据；也可能是传送时未指定数据
                     console.log("Not join by Teleport or no data.")
