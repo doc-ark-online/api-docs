@@ -81,7 +81,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   themeConfig: {
     pandora: {
       type: 'api',
-      version: '027'
+      version: '037'
     },
     logo: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/kd-logo-black.svg',
     algolia: {
