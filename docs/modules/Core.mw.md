@@ -2,13 +2,6 @@ mw
 
 # mw <Badge type="tip" text="Namespace" /> <Score text="mw" />
 
-在调用DataStorage相关接口时，每一个Key的对应值在数据服务器的读取和修改都有频率限制，主要表现在：接口调用时至一分钟前的时间区间内，某个Key的对应值在后端数据服务器上被获取Get、改写Set、删除Remove的总次数不能超过 (60+游戏设定的最大人数×10)次，不管它是在哪个服务器被操作的；如果时间区间内超限，请求会失败，然后Set、Remove会返回 FREQUENCY_OVERRUN(操作失败：请求频率超限) 而Get会catch到error timeout。
-::: warning Precautions
-1. 这些限制是数据服务器层面针对单个Key来的，每个Key之间的限制互相独立，和游戏服务器无关。
-2. Player相关的接口其实也算是一个Key，只不过是和玩家信息强相关的Key，也会受到上述限制；建议用 asyncSetData(属性名+玩家id+其他描述, 要存的值)来分存玩家相关的需要经常存取数据，以免堵塞。
-3. 对于玩家相关的信息，建议在ts层建立数据缓存，进行一定的数据托管；即通过ts脚本逻辑让DS服务器临时缓存玩家数据，只在初始化的时候进行get，在离线或其他必要时set，以减轻对后端数据服务器的压力，保证稳定性
-:::
-
 ## Table of contents
 
 ### Enumerations <Score text="Enumerations" /> 
@@ -77,6 +70,8 @@ mw
 | 事件发送的结果|
 | [DragPivot](../enums/mw.DragPivot.md)  |
 | 拖拽的锚点|
+| [EdActorFlag](../enums/mw.EdActorFlag.md)  |
+| Actor在编辑器中的状态标记|
 | [EventType](../enums/mw.EventType.md)  |
 | :----- |
 | [ExpressionType](../enums/mw.ExpressionType.md)  |
@@ -445,6 +440,10 @@ mw
 | 三维矩阵|
 | [Matrix4x4](../classes/mw.Matrix4x4.md)  |
 | 四维矩阵|
+| [MenuAnchor](../classes/mw.MenuAnchor.md)  |
+| 菜单锚点|
+| [MenuItemInfo](../classes/mw.MenuItemInfo.md)  |
+| 菜单项节点信息|
 | [Model](../classes/mw.Model.md)  |
 | 物理模拟与材质设置|
 | [MulticastDelegate](../classes/mw.MulticastDelegate.md)  |
@@ -550,6 +549,10 @@ mw
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |
 | 三维变换|
+| [TreeView](../classes/mw.TreeView.md)  |
+| 树状视图|
+| [TreeViewItemDataBase](../classes/mw.TreeViewItemDataBase.md)  |
+| 树状视图节点数据基类|
 | [Trigger](../classes/mw.Trigger.md)  |
 | 触发器|
 | [Tween](../classes/mw.Tween.md)  |
@@ -667,7 +670,7 @@ mw
 | 大会员钥匙扣除服务端接收发货通知的消息格式|
 | **[OnMovementModeChange](Core.mw.md#onmovementmodechange)**: (`mode`: [`MovementMode`](../enums/mw.MovementMode.md)) => `void`  |
 | 移动状态切换委托|
-| **[OnOrderDelivered](Core.mw.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`  |
+| **[OnOrderDelivered](Core.mw.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`, `message?`: `string`) => `void`) => `void`  |
 | 服务端接收发货通知的消息格式|
 | **[OnViewLayoutSwitched](Core.mw.md#onviewlayoutswitched)**: (`newState`: `number`) => `void`  |
 | 233中窗口显示模式切换的消息格式|
@@ -1228,7 +1231,7 @@ ___
 
 ### OnOrderDelivered <Score text="OnOrderDelivered" /> 
 
-Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
+Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`, `message?`: `string`) => `void`) => `void`
 
 #### Type declaration
 
@@ -1243,7 +1246,7 @@ ___
 | `orderId` `string` |  订单Id |
 | `commodityId` `string` |  商品Id |
 | `amount` `number` |  数量 |
-| `confirmOrder` (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
+| `confirmOrder` (`bReceived`: `boolean`, `message?`: `string`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
 
 ##### Returns
 

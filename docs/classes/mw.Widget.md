@@ -34,6 +34,8 @@
 
   ↳ [`Mask`](mw.Mask.md)
 
+  ↳ [`MenuAnchor`](mw.MenuAnchor.md)
+
   ↳ [`PanelWidget`](Core.mw.PanelWidget.md)
 
   ↳ [`ProgressBar`](mw.ProgressBar.md)
@@ -44,6 +46,8 @@
 
   ↳ [`TouchPad`](mw.TouchPad.md)
 
+  ↳ [`TreeView`](mw.TreeView.md)
+
   ↳ [`UserWidget`](mw.UserWidget.md)
 
   ↳ [`VirtualJoystickPanel`](mw.VirtualJoystickPanel.md)
@@ -53,7 +57,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[alignPosition](mw.Widget.md#alignposition)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | :-----|
-| 获取控件的位置,以对齐为坐标系|
+| 获取控件的对齐位置,在对齐方式为靠右对齐、靠下对齐、中心对齐时，alignPosition的值与positon不同；|
 | **[autoSizeHorizontalEnable](mw.Widget.md#autosizehorizontalenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否自动水平设置大小|
 | **[autoSizeVerticalEnable](mw.Widget.md#autosizeverticalenable)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -79,7 +83,7 @@
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[pivot](mw.Widget.md#pivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 获取控件锚点|
+| 获取控件锚点位置,这个属性决定了控件图形与锚点的相对位置；(0,0)时，锚点位于控件左上角；(0.5,0.5)时，锚点位于控件正中心|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
@@ -109,6 +113,8 @@
 | **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加子节点|
+| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: `any`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 克隆UI控件及其子节点到指定父控件位置（默认到其父节点）|
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
 | **[equal](mw.Widget.md#equal)**(`that`: [`Widget`](mw.Widget.md)): `boolean` <Badge type="tip" text="client" />  |
@@ -131,6 +137,10 @@
 | 移除第几个节点,会销毁UI无法再使用|
 | **[removeObject](mw.Widget.md#removeobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并添加到根节点 可以再使用|
+| **[serialize](mw.Widget.md#serialize)**(): `string` <Badge type="tip" text="client" />  |
+| 序列化UI控件|
+| **[deserialize](mw.Widget.md#deserialize)**(`Data`: `string`, `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 反序列化UI|
 
 ## Accessors
 
@@ -153,11 +163,13 @@
 <td style="text-align: left">
 
 
-获取控件的位置,以对齐为坐标系
+获取控件的对齐位置,在对齐方式为靠右对齐、靠下对齐、中心对齐时，alignPosition的值与positon不同；
+
+此时，两套位置计算的坐标系不同，例如设置为右下对齐时，该控件的alignPosition以父级右下角为原点来计算
 
 #### Returns
 
-| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 控件的位置 |
+| `Readonly`<[`Vector2`](mw.Vector2.md)\> | 控件的对齐位置 |
 | :------ | :------ |
 
 
@@ -165,11 +177,13 @@
 <td style="text-align: left">
 
 
-设置控件的位置,以对齐为坐标系
+设置控件的对齐位置,在对齐方式为靠右对齐、靠下对齐、中心对齐时，alignPosition的值与positon不同；
+
+此时，两套位置计算的坐标系不同，例如设置为右下对齐时，该控件的alignPosition以父级右下角为原点来计算
 
 #### Parameters
 
-| `inFigmaPosition` [`Vector2`](mw.Vector2.md) | 控件的位置 |
+| `inFigmaPosition` [`Vector2`](mw.Vector2.md) | 控件的对齐位置 |
 | :------ | :------ |
 
 
@@ -635,7 +649,7 @@ ___
 </th>
 <th style="text-align: left">
 
-• `set` **pivot**(`inAlignment`): `void` <Badge type="tip" text="client" />
+• `set` **pivot**(`inPivot`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -643,11 +657,13 @@ ___
 <td style="text-align: left">
 
 
-获取控件锚点
+获取控件锚点位置,这个属性决定了控件图形与锚点的相对位置；(0,0)时，锚点位于控件左上角；(0.5,0.5)时，锚点位于控件正中心
+
+锚点本身的位置由positon或alignPosition决定
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | FVector2D |
+| [`Vector2`](mw.Vector2.md) | 控件的锚点位置 |
 | :------ | :------ |
 
 
@@ -655,11 +671,13 @@ ___
 <td style="text-align: left">
 
 
-设置控件锚点
+设置控件锚点位置,这个属性决定了控件图形与锚点的相对位置；(0,0)时，锚点位于控件左上角；(0.5,0.5)时，锚点位于控件正中心;
+
+锚点本身的位置由positon或alignPosition决定
 
 #### Parameters
 
-| `inAlignment` | [`Vector2`](mw.Vector2.md) |
+| `inPivot` [`Vector2`](mw.Vector2.md) | 输入的锚点位置 |
 | :------ | :------ |
 
 
@@ -1198,6 +1216,25 @@ ___
 
 ___
 
+### clone <Score text="clone" /> 
+
+• **clone**(`position`, `Parent?`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />
+
+克隆UI控件及其子节点到指定父控件位置（默认到其父节点）
+
+#### Parameters
+
+| `position` [`Vector2`](mw.Vector2.md) | 克隆后控件生成的位置 |
+| :------ | :------ |
+| `Parent?` `any` | 克隆后的控件需要在该控件下生成 |
+
+#### Returns
+
+| [`Widget`](mw.Widget.md) | 克隆生成的UI控件 |
+| :------ | :------ |
+
+___
+
 ### destroyObject <Score text="destroyObject" /> 
 
 • **destroyObject**(): `void` <Badge type="tip" text="client" />
@@ -1349,3 +1386,35 @@ ___
 
 立刻移除并添加到根节点 可以再使用
 
+
+___
+
+### serialize <Score text="serialize" /> 
+
+• **serialize**(): `string` <Badge type="tip" text="client" />
+
+序列化UI控件
+
+#### Returns
+
+| `string` | 返回传入控件序列化后的JSON字符串 |
+| :------ | :------ |
+
+___
+
+### deserialize <Score text="deserialize" /> 
+
+• `Static` **deserialize**(`Data`, `Parent?`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />
+
+反序列化UI
+
+#### Parameters
+
+| `Data` `string` | usage：需要反序列化的JSON字符串 |
+| :------ | :------ |
+| `Parent?` [`Widget`](mw.Widget.md) | usage：生成的UI控件的父节点 |
+
+#### Returns
+
+| [`Widget`](mw.Widget.md) | 返回传入JSON字符串反序列化后得到的UI |
+| :------ | :------ |

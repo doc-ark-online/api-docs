@@ -59,6 +59,7 @@ Enums
 ## E
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [EdActorFlag](enums/mw.EdActorFlag.md) | Actor在编辑器中的状态标记 | [基础类型](groups/基础类型.基础类型.md) |
 | [ExpressionType](enums/mw.ExpressionType.md) | 表情类型 | [角色系统](groups/角色系统.角色系统.md) |
 
 

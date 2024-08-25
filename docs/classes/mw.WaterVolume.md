@@ -25,6 +25,18 @@ export default class WaterVolumeExample extends Script {
                 // F1键 通知获取流体摩擦力
                 console.log("当前游泳区流体摩擦力为：" + WaterVolume.fluidFriction);
             });
+            InputUtil.onKeyDown(Keys.F2,()=>{
+                // F2键 通知获取当前是否开启浮力
+                if (WaterVolume.buoyancyEnabled) {
+                    console.log("当前游泳区已开启浮力");
+                } else {
+                    console.log("当前游泳区未开启浮力");
+                }
+            });
+            InputUtil.onKeyDown(Keys.F3,()=>{
+                // F3键 通知获取液体密度（用于计算浮力）
+                console.log("当前游泳区密度为：" + WaterVolume.density);
+            });
         }
     }
 }
@@ -61,9 +73,13 @@ export default class WaterVolumeExample extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[deepColor](mw.WaterVolume.md#deepcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />  |
+| **[buoyancyEnabled](mw.WaterVolume.md#buoyancyenabled)**(): `boolean`   |
 | :-----|
+| 获取是否启用水体浮力|
+| **[deepColor](mw.WaterVolume.md#deepcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="other" />  |
 | 获取水体深层颜色|
+| **[density](mw.WaterVolume.md#density)**(): `number`   |
+| 获取水体密度（用于计算浮力大小）|
 | **[divingEnabled](mw.WaterVolume.md#divingenabled)**(): `boolean`   |
 | 获取潜水|
 | **[flowAngle](mw.WaterVolume.md#flowangle)**(): `number` <Badge type="tip" text="client" />  |
@@ -86,8 +102,12 @@ export default class WaterVolumeExample extends Script {
 
 ::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
+| **[actorFlagValue](mw.GameObject.md#actorflagvalue)**(): `number` <Badge type="tip" text="other" />  |
 | :-----|
+| 获取对象标记|
+| **[actorLevel](mw.GameObject.md#actorlevel)**(): `number` <Badge type="tip" text="other" />  |
+| 获取Actor等级|
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
@@ -158,6 +178,8 @@ export default class WaterVolumeExample extends Script {
 | 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
+| 返回当前物体是否为预制体|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
 | 按给定的速度矢量随时间平滑地移动对象|
 | **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
@@ -227,6 +249,56 @@ ___
 
 ___
 
+### buoyancyEnabled <Score text="buoyancyEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **buoyancyEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **buoyancyEnabled**(`newStatus`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否启用水体浮力
+
+**`Default`**
+
+false
+
+#### Returns
+
+| `boolean` | 当前游泳区是否启用水体浮力 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+开启/关闭区域的浮力效果，在关闭时区域将不再提供"浮力"的物理模拟计算，以节省性能。
+
+#### Parameters
+
+| `newStatus` `boolean` | 设置游泳区是否启用水体浮力 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### deepColor <Score text="deepColor" /> 
 
 <table class="get-set-table">
@@ -263,6 +335,58 @@ ___
 #### Parameters
 
 | `value` [`LinearColor`](mw.LinearColor.md) | 设置游泳区深层颜色 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### density <Score text="density" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **density**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **density**(`newDensity`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取水体密度（用于计算浮力大小）
+
+**`Default`**
+
+10
+
+#### Returns
+
+| `number` | 当前水体密度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置水体密度（用于计算浮力大小），密度越大，浮力越大。
+
+取值范围 [0 - 10000]
+
+#### Parameters
+
+| `newDensity` `number` | 新的水体密度 |
 | :------ | :------ |
 
 

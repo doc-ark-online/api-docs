@@ -41,8 +41,12 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 
 ::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
+| **[actorFlagValue](mw.GameObject.md#actorflagvalue)**(): `number` <Badge type="tip" text="other" />  |
 | :-----|
+| 获取对象标记|
+| **[actorLevel](mw.GameObject.md#actorlevel)**(): `number` <Badge type="tip" text="other" />  |
+| 获取Actor等级|
+| **[assetId](mw.GameObject.md#assetid)**(): `string`   |
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
@@ -118,6 +122,8 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 | 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
+| **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
+| 返回当前物体是否为预制体|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
 | 按给定的速度矢量随时间平滑地移动对象|
 | **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |

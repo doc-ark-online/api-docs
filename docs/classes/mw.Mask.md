@@ -19,11 +19,11 @@
 ### Accessors <Score text="Accessors" /> 
 | **[alphaThreshold](mw.Mask.md#alphathreshold)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取AlphaThreshold值|
+| 获取透明度门槛值|
 | **[cornerRadius](mw.Mask.md#cornerradius)**(): `number` <Badge type="tip" text="client" />  |
-| 获取CornerRadius值|
+| 获取角半径值|
 | **[inverted](mw.Mask.md#inverted)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取CornerRadius值|
+| 获取是否开启反向遮罩|
 | **[maskImageInfo](mw.Mask.md#maskimageinfo)**(): [`ImageInfo`](mw.ImageInfo.md) <Badge type="tip" text="client" />  |
 | 获取MaskImage的ImageInfo|
 | **[type](mw.Mask.md#type)**(): [`MaskType`](../enums/mw.MaskType.md) <Badge [type](mw.Mask.md#type)="tip" text="client" />  |
@@ -34,7 +34,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[alignPosition](mw.Widget.md#alignposition)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | :-----|
-| 获取控件的位置,以对齐为坐标系|
+| 获取控件的对齐位置,在对齐方式为靠右对齐、靠下对齐、中心对齐时，alignPosition的值与positon不同；|
 | **[autoSizeHorizontalEnable](mw.Widget.md#autosizehorizontalenable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否自动水平设置大小|
 | **[autoSizeVerticalEnable](mw.Widget.md#autosizeverticalenable)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -60,7 +60,7 @@
 | **[parent](mw.Widget.md#parent)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 获取父节点|
 | **[pivot](mw.Widget.md#pivot)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| 获取控件锚点|
+| 获取控件锚点位置,这个属性决定了控件图形与锚点的相对位置；(0,0)时，锚点位于控件左上角；(0.5,0.5)时，锚点位于控件正中心|
 | **[position](mw.Widget.md#position)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取控件的位置|
 | **[renderOpacity](mw.Widget.md#renderopacity)**(): `number` <Badge type="tip" text="client" />  |
@@ -99,6 +99,8 @@
 | **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加子节点|
+| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: `any`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 克隆UI控件及其子节点到指定父控件位置（默认到其父节点）|
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
 | **[equal](mw.Widget.md#equal)**(`that`: [`Widget`](mw.Widget.md)): `boolean` <Badge type="tip" text="client" />  |
@@ -121,6 +123,10 @@
 | 移除第几个节点,会销毁UI无法再使用|
 | **[removeObject](mw.Widget.md#removeobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并添加到根节点 可以再使用|
+| **[serialize](mw.Widget.md#serialize)**(): `string` <Badge type="tip" text="client" />  |
+| 序列化UI控件|
+| **[deserialize](mw.Widget.md#deserialize)**(`Data`: `string`, `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| 反序列化UI|
 :::
 
 
@@ -147,11 +153,15 @@ ___
 <td style="text-align: left">
 
 
-获取AlphaThreshold值
+获取透明度门槛值
+
+只有当自定义图片的像素的 alpha 大于等于 alphaThreshold 时，才会绘制内容。当被设置为 1 时，会丢弃所有像素，所以不会显示任何内容
+
+自定义图片遮罩 专属属性
 
 #### Returns
 
-| `number` | AlphaThreshold值 |
+| `number` | 透明度门槛值 |
 | :------ | :------ |
 
 
@@ -159,11 +169,15 @@ ___
 <td style="text-align: left">
 
 
-设置AlphaThreshold值
+设置透明度门槛值
+
+只有当自定义图片的像素的 alpha 大于等于 alphaThreshold 时，才会绘制内容。当被设置为 1 时，会丢弃所有像素，所以不会显示任何内容
+
+自定义图片遮罩 专属属性
 
 #### Parameters
 
-| `inAlphaThreshold` `number` | AlphaThreshold值 |
+| `inAlphaThreshold` `number` | 输入的透明度门槛值 |
 | :------ | :------ |
 
 
@@ -193,11 +207,13 @@ ___
 <td style="text-align: left">
 
 
-获取CornerRadius值
+获取角半径值
+
+矩形遮罩 专有属性
 
 #### Returns
 
-| `number` | CornerRadius值 |
+| `number` | 角半径值 |
 | :------ | :------ |
 
 
@@ -205,11 +221,13 @@ ___
 <td style="text-align: left">
 
 
-设置CornerRadius值
+设置角半径值
+
+矩形遮罩 专有属性
 
 #### Parameters
 
-| `inCornerRadius` `number` | CornerRadius值 |
+| `inCornerRadius` `number` | 角半径值 |
 | :------ | :------ |
 
 
@@ -239,11 +257,11 @@ ___
 <td style="text-align: left">
 
 
-获取CornerRadius值
+获取是否开启反向遮罩
 
 #### Returns
 
-| `boolean` | CornerRadius值 |
+| `boolean` | 是否开启反向遮罩 |
 | :------ | :------ |
 
 
@@ -251,11 +269,11 @@ ___
 <td style="text-align: left">
 
 
-设置CornerRadius值
+设置反向遮罩
 
 #### Parameters
 
-| `inInverted` `boolean` | CornerRadius值 |
+| `inInverted` `boolean` | 是否开启反向遮罩 |
 | :------ | :------ |
 
 
@@ -281,6 +299,8 @@ ___
 
 
 获取MaskImage的ImageInfo
+
+自定义图片遮罩 专属属性
 
 #### Returns
 
