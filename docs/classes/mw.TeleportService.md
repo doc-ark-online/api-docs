@@ -6,11 +6,6 @@
 
 ## Table of contents
 
-### Properties <Score text="Properties" /> 
-| **[teleportTypeToString](mw.TeleportService.md#teleporttypetostring)**: `any`  |
-| :-----|
-| 传送类型变为字符串|
-
 ### Methods <Score text="Methods" /> 
 | **[asyncGetPlayerRoomInfo](mw.TeleportService.md#asyncgetplayerroominfo)**(`userId`: `string`): `Promise`<[`RoomInfo`](../interfaces/mw.RoomInfo.md)\>   |
 | :-----|
@@ -23,14 +18,6 @@
 | 获取传送的来源信息|
 | **[getTeleportData](mw.TeleportService.md#getteleportdata)**(`teleportId`: `string`): [`TeleportData`](../modules/Core.mw.md#teleportdata) <Badge type="tip" text="server" />  |
 | 获取调用传送接口时在TeleportOptions中设置的数据|
-
-## Properties
-
-### teleportTypeToString <Score text="teleportTypeToString" /> 
-
-▪ `Static` `Private` **teleportTypeToString**: `any`
-
-传送类型变为字符串
 
 ## Methods
 
@@ -102,7 +89,7 @@ ___
 
 #### Returns
 
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | 本次请求正常则返回resolve，异常则返回reject |
 | :------ | :------ |
 
 ::: warning Precautions
@@ -121,19 +108,6 @@ ___
 使用示例:创建一个名为"TeleportScript"的脚本，放在场景中，设置为双端。代码如下：
 </span>
 
-
-#### Parameters
-
-| `gameId` | `string` |
-| :------ | :------ |
-| `userIds` | `string`[] |
-| `sceneName?` | `string` |
-| `options?` | [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) |
-
-#### Returns
-
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> |  |
-| :------ | :------ |
 ```ts
 @Component
 export default class TeleportScript extends Script {
@@ -188,18 +162,7 @@ export default class TeleportScript extends Script {
                     })
                 }, 5 * 1000);
             });
-
-#### Parameters
-
-| `roomId` `string` | 要传送的目标游戏Id default:undefined range: 依据 roomid 的长度决定 |
-| :------ | :------ |
-| `userIds` `string`[] | 要传送的玩家userId数组 default:undefined range: 依据 roomid 的长度决定 |
-| `options?` [`TeleportOptions`](../interfaces/mw.TeleportOptions.md) | 可选的额外传送信息. 不支持 createNewPrivateRoom 参数，设置为true也不会创建新房间 default:undefined |
-
-#### Returns
-
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
-| :------ | :------ |
+```
 
 ___
 
@@ -218,7 +181,7 @@ ___
 
 #### Returns
 
-| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | Promise<TeleportResult>，本次请求正常则返回resolve，异常则返回reject |
+| `Promise`<[`TeleportResult`](../interfaces/mw.TeleportResult.md)\> | 本次请求正常则返回resolve，异常则返回reject |
 | :------ | :------ |
 
 ::: warning Precautions
@@ -231,7 +194,7 @@ ___
 使用示例:在编辑器中创建了一个名为"Scene1"的场景。创建一个名为"TeleportScript"的脚本，放在场景中，设置为双端。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class TeleportScript extends Script {
     protected onStart(): void {
@@ -288,7 +251,7 @@ export default class TeleportScript extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -312,7 +275,7 @@ ___
 使用示例:创建一个名为"ServerScript"的脚本，放在场景中。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class Server extends Script {
     protected onStart(): void {
@@ -333,7 +296,7 @@ export default class Server extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -357,7 +320,7 @@ ___
 使用示例:创建一个名为"ServerScript"的脚本，放在场景中。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class Server extends Script {
     protected onStart(): void {
@@ -376,4 +339,4 @@ export default class Server extends Script {
         }
     }
 }
-```ts
+```
