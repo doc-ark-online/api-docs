@@ -10,8 +10,6 @@
 | **[baseGuid](mw.ListViewItemDataBase.md#baseguid)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
 | 该节点数据的唯一标识序号，和位置无关|
-| **[ownerListView](mw.ListViewItemDataBase.md#ownerlistview)**(): `any`  |
-| 获取节点所属的列表视图|
 | **[widgetCanvas](mw.ListViewItemDataBase.md#widgetcanvas)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 该节点数据对应的UI|
 
@@ -36,33 +34,6 @@
 #### Returns
 
 | `number` |  |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### ownerListView <Score text="ownerListView" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **ownerListView**(): `any`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取节点所属的列表视图
-
-#### Returns
-
-| `any` |  |
 | :------ | :------ |
 
 </td>

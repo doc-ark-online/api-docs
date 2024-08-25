@@ -7,10 +7,13 @@
 ## Table of contents
 
 ### Enumeration Members <Score text="Enumeration" /> 
-| **[Failure](mw.DataStorageResultCode.md#failure)** = ``400``  |
+| **[DataLock](mw.DataStorageResultCode.md#datalock)** = ``410``  |
 | :----- |
+| **[DataNotExist](mw.DataStorageResultCode.md#datanotexist)** = ``1016`` |
+| **[Failure](mw.DataStorageResultCode.md#failure)** = ``400`` |
 | **[GameIdError](mw.DataStorageResultCode.md#gameiderror)** = ``1011`` |
 | **[KeyValueError](mw.DataStorageResultCode.md#keyvalueerror)** = ``1010`` |
+| **[OnlyClientCall](mw.DataStorageResultCode.md#onlyclientcall)** = ``403`` |
 | **[OnlyServerCall](mw.DataStorageResultCode.md#onlyservercall)** = ``402`` |
 | **[ParametersException](mw.DataStorageResultCode.md#parametersexception)** = ``1012`` |
 | **[RequestIntervalTooClose](mw.DataStorageResultCode.md#requestintervaltooclose)** = ``423`` |
@@ -23,6 +26,22 @@
 | **[TimeOut](mw.DataStorageResultCode.md#timeout)** = ``408`` |
 
 ## Enumeration Members
+
+### DataLock <Score text="DataLock" /> 
+
+• **DataLock** = ``410``
+
+某条key获取数据异常时数据被锁定，再次获取此key的数据正常时会解锁
+
+___
+
+### DataNotExist <Score text="DataNotExist" /> 
+
+• **DataNotExist** = ``1016``
+
+数据不存在,服务端通用异常状态码，在数据存储中常见于没有授权数据
+
+___
 
 ### Failure <Score text="Failure" /> 
 
@@ -44,7 +63,15 @@ ___
 
 • **KeyValueError** = ``1010``
 
-key或者value格式错误(或后端参数校验失败)，key大小不能大于50字节，value大小不能大于64kb
+key或者value格式错误(或后端参数校验失败)，key大小不能大于50字节，value大小不能大于64kb，且本地存储的总数据大小不可以超过5mb
+
+___
+
+### OnlyClientCall <Score text="OnlyClientCall" /> 
+
+• **OnlyClientCall** = ``403``
+
+非法调用 只可客户端调用
 
 ___
 
@@ -52,7 +79,7 @@ ___
 
 • **OnlyServerCall** = ``402``
 
-非法调用 只可服务器端调用
+非法调用 只可服务端调用
 
 ___
 

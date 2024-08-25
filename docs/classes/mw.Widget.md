@@ -14,6 +14,8 @@
 
 - **`Widget`**
 
+  ↳ [`AdsButton`](mw.AdsButton.md)
+
   ↳ [`Checkbox`](mw.Checkbox.md)
 
   ↳ [`ColorPick`](mw.ColorPick.md)

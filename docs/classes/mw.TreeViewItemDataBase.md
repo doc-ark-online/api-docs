@@ -12,8 +12,6 @@
 | 该节点数据的唯一标识序号，和位置无关|
 | **[children](mw.TreeViewItemDataBase.md#children)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
 | 所有子节点|
-| **[ownerTreeView](mw.TreeViewItemDataBase.md#ownertreeview)**(): [`TreeView`](mw.TreeView.md)  |
-| 获取节点所属的树视图|
 | **[parent](mw.TreeViewItemDataBase.md#parent)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) <Badge type="tip" text="client" />  |
 | 父节点|
 | **[widgetCanvas](mw.TreeViewItemDataBase.md#widgetcanvas)**(): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
@@ -87,33 +85,6 @@ ___
 | :------ | :------ |
 
 
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### ownerTreeView <Score text="ownerTreeView" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **ownerTreeView**(): [`TreeView`](mw.TreeView.md)
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取节点所属的树视图
-
-#### Returns
-
-| [`TreeView`](mw.TreeView.md) |  |
-| :------ | :------ |
 
 </td>
 </tr></tbody>

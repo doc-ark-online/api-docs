@@ -223,6 +223,7 @@ mw
 | 文本排列对齐规则|
 | [TextVerticalJustify](../enums/mw.TextVerticalJustify.md)  |
 | 文本排列垂直对齐规则|
+| [TextureFormat](../enums/mw.TextureFormat.md) |
 | [TouchInputType](../enums/mw.TouchInputType.md)  |
 | 触摸类型|
 | [TriggerShapeType](../enums/mw.TriggerShapeType.md)  |
@@ -635,8 +636,10 @@ mw
 | 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 
 ### Type Aliases <Score text="Type" /> 
-| **[BoolResponse](Core.mw.md#boolresponse)**: (`success`: `boolean`) => `void`  |
+| **[BoolCallback](Core.mw.md#boolcallback)**: (`value`: `boolean`) => `void`  |
 | :-----|
+| 返回Bool的回调|
+| **[BoolResponse](Core.mw.md#boolresponse)**: (`success`: `boolean`) => `void`  |
 | 返回bool的回调|
 | **[BroadcastMessageResult](Core.mw.md#broadcastmessageresult)**: `Object`  |
 | 发送消息的结果|
@@ -900,6 +903,27 @@ mw
 | 振动开关|
 
 ## Type Aliases
+
+### BoolCallback <Score text="BoolCallback" /> 
+
+Ƭ **BoolCallback**: (`value`: `boolean`) => `void`
+
+#### Type declaration
+
+• (`value`): `void`
+
+返回Bool的回调
+
+##### Parameters
+
+| `value` | `boolean` |
+| :------ | :------ |
+
+##### Returns
+
+`void`
+
+___
 
 ### BoolResponse <Score text="BoolResponse" /> 
 

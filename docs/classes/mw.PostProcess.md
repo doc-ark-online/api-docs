@@ -38,32 +38,38 @@ export default class PostProcessExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number`   |
+| **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
 | 获取环境光遮蔽强度|
-| **[ambientOcclusionRadius](mw.PostProcess.md#ambientocclusionradius)**(): `number`   |
+| **[ambientOcclusionRadius](mw.PostProcess.md#ambientocclusionradius)**(): `number` <Badge type="tip" text="client" />  |
 | 获取环境光遮蔽半径|
-| **[bloom](mw.PostProcess.md#bloom)**(): `number`   |
+| **[bloom](mw.PostProcess.md#bloom)**(): `number` <Badge type="tip" text="client" />  |
 | 获取泛光|
-| **[blurEnabled](mw.PostProcess.md#blurenabled)**(): `boolean`   |
+| **[bloomExposureFactor](mw.PostProcess.md#bloomexposurefactor)**(): `number` <Badge type="tip" text="client" />  |
+| 获取泛光曝光系数|
+| **[bloomRange](mw.PostProcess.md#bloomrange)**(): `number` <Badge type="tip" text="client" />  |
+| 获取泛光范围|
+| **[bloomSpread](mw.PostProcess.md#bloomspread)**(): `number` <Badge type="tip" text="client" />  |
+| 获取泛光扩散度|
+| **[blurEnabled](mw.PostProcess.md#blurenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取模糊|
-| **[blurIntensity](mw.PostProcess.md#blurintensity)**(): `number`   |
+| **[blurIntensity](mw.PostProcess.md#blurintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取模糊强度|
-| **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md)   |
+| **[config](mw.PostProcess.md#config)**(): [`PostProcessConfig`](mw.PostProcessConfig.md) <Badge type="tip" text="client" />  |
 | 获取后处理属性配置|
-| **[contrast](mw.PostProcess.md#contrast)**(): `number`   |
+| **[contrast](mw.PostProcess.md#contrast)**(): `number` <Badge type="tip" text="client" />  |
 | 获取全局对比度|
-| **[depthOfFieldEnabled](mw.PostProcess.md#depthoffieldenabled)**(): `boolean`   |
+| **[depthOfFieldEnabled](mw.PostProcess.md#depthoffieldenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取景深开关|
-| **[depthOfFieldIntensity](mw.PostProcess.md#depthoffieldintensity)**(): `number`   |
+| **[depthOfFieldIntensity](mw.PostProcess.md#depthoffieldintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取景深强度|
-| **[focusDistance](mw.PostProcess.md#focusdistance)**(): `number`   |
+| **[focusDistance](mw.PostProcess.md#focusdistance)**(): `number` <Badge type="tip" text="client" />  |
 | 获取焦距距离|
-| **[focusPosition](mw.PostProcess.md#focusposition)**(): `number`   |
+| **[focusPosition](mw.PostProcess.md#focusposition)**(): `number` <Badge type="tip" text="client" />  |
 | 获取焦距位置|
 | **[preset](mw.PostProcess.md#preset)**(): [`PostProcessPreset`](../enums/mw.PostProcessPreset.md) <Badge type="tip" text="client" />  |
 | 获取预设|
-| **[saturation](mw.PostProcess.md#saturation)**(): `number`   |
+| **[saturation](mw.PostProcess.md#saturation)**(): `number` <Badge type="tip" text="client" />  |
 | 获取全局饱和度|
 
 ## Accessors
@@ -74,12 +80,12 @@ export default class PostProcessExample extends mw.Script {
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **ambientOcclusionIntensity**(): `number` 
+• `Static` `get` **ambientOcclusionIntensity**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **ambientOcclusionIntensity**(`Value`): `void` 
+• `Static` `set` **ambientOcclusionIntensity**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -120,12 +126,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **ambientOcclusionRadius**(): `number` 
+• `Static` `get` **ambientOcclusionRadius**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **ambientOcclusionRadius**(`Value`): `void` 
+• `Static` `set` **ambientOcclusionRadius**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -166,12 +172,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **bloom**(): `number` 
+• `Static` `get` **bloom**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **bloom**(`Value`): `void` 
+• `Static` `set` **bloom**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -191,7 +197,145 @@ ___
 <td style="text-align: left">
 
 
-设置泛光（0 ~ 8）
+设置泛光
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### bloomExposureFactor <Score text="bloomExposureFactor" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **bloomExposureFactor**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **bloomExposureFactor**(`Value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取泛光曝光系数
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置泛光曝光系数
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### bloomRange <Score text="bloomRange" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **bloomRange**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **bloomRange**(`Value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取泛光范围
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置泛光范围
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### bloomSpread <Score text="bloomSpread" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **bloomSpread**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **bloomSpread**(`Value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取泛光扩散度
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置泛光扩散度
 
 #### Parameters
 
@@ -212,12 +356,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **blurEnabled**(): `boolean` 
+• `Static` `get` **blurEnabled**(): `boolean` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **blurEnabled**(`Value`): `void` 
+• `Static` `set` **blurEnabled**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -258,12 +402,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **blurIntensity**(): `number` 
+• `Static` `get` **blurIntensity**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **blurIntensity**(`Value`): `void` 
+• `Static` `set` **blurIntensity**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -304,12 +448,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **config**(): [`PostProcessConfig`](mw.PostProcessConfig.md) 
+• `Static` `get` **config**(): [`PostProcessConfig`](mw.PostProcessConfig.md) <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **config**(`newConfig`): `void` 
+• `Static` `set` **config**(`newConfig`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -350,12 +494,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **contrast**(): `number` 
+• `Static` `get` **contrast**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **contrast**(`Value`): `void` 
+• `Static` `set` **contrast**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -396,12 +540,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **depthOfFieldEnabled**(): `boolean` 
+• `Static` `get` **depthOfFieldEnabled**(): `boolean` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **depthOfFieldEnabled**(`Value`): `void` 
+• `Static` `set` **depthOfFieldEnabled**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -442,12 +586,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **depthOfFieldIntensity**(): `number` 
+• `Static` `get` **depthOfFieldIntensity**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **depthOfFieldIntensity**(`Value`): `void` 
+• `Static` `set` **depthOfFieldIntensity**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -488,12 +632,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **focusDistance**(): `number` 
+• `Static` `get` **focusDistance**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **focusDistance**(`Value`): `void` 
+• `Static` `set` **focusDistance**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -534,12 +678,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **focusPosition**(): `number` 
+• `Static` `get` **focusPosition**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **focusPosition**(`Value`): `void` 
+• `Static` `set` **focusPosition**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -626,12 +770,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `Static` `get` **saturation**(): `number` 
+• `Static` `get` **saturation**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `Static` `set` **saturation**(`Value`): `void` 
+• `Static` `set` **saturation**(`Value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>

@@ -20,7 +20,7 @@
 | 获取子项缩进距离|
 | **[itemPadding](mw.TreeView.md#itempadding)**(): [`Margin`](mw.Margin.md)  |
 | 获取视图节点边距|
-| **[listItems](mw.TreeView.md#listitems)**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
+| **[listItems](mw.TreeView.md#listitems)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
 | 获取列表数据|
 | **[onItemClicked](mw.TreeView.md#onitemclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | 返回点击代理|
@@ -33,7 +33,7 @@
 | **[onItemReleaseShow](mw.TreeView.md#onitemreleaseshow)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\> <Badge type="tip" text="client" />  |
 | 子控件移除显示时调用，等待复用前|
 | **[onItemSelected](mw.TreeView.md#onitemselected)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />  |
-| 返回选择修改代理|
+| 返回选择修改代理,取消选中/清空也会触发选中修改，返回参数selectedItem == null, 请注意判断|
 | **[scrollBarStyle](mw.TreeView.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="other" />  |
 | 滚动条样式|
 | **[scrollBarVisible](mw.TreeView.md#scrollbarvisible)**(): `boolean` <Badge type="tip" text="other" />  |
@@ -120,8 +120,6 @@
 | 获取选中节点的数据|
 | **[getShowItemsCount](mw.TreeView.md#getshowitemscount)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前展示的条目的数量|
-| **[insertItem](mw.TreeView.md#insertitem)**(`newItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `index`: `number`): `void` <Badge type="tip" text="other" />  |
-| 插入项目节点数据，如果位置越界，则自动插入最后|
 | **[regenerateTreeData](mw.TreeView.md#regeneratetreedata)**(`regenItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
 | 重新生成树刷新数据|
 | **[removeItem](mw.TreeView.md#removeitem)**(`delItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
@@ -309,7 +307,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **listItems**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
+• `get` **listItems**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -321,7 +319,7 @@ ___
 
 #### Returns
 
-| readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回列表数据 |
+| [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回列表数据 |
 | :------ | :------ |
 
 </td>
@@ -479,7 +477,7 @@ ___
 <td style="text-align: left">
 
 
-返回选择修改代理
+返回选择修改代理,取消选中/清空也会触发选中修改，返回参数selectedItem == null, 请注意判断
 
 #### Returns
 
@@ -772,21 +770,6 @@ ___
 
 | `number` |  |
 | :------ | :------ |
-
-___
-
-### insertItem <Score text="insertItem" /> 
-
-• **insertItem**(`newItem`, `index`): `void` <Badge type="tip" text="other" />
-
-插入项目节点数据，如果位置越界，则自动插入最后
-
-#### Parameters
-
-| `newItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 需要插入的新数据 |
-| :------ | :------ |
-| `index` `number` | 插入的位置 |
-
 
 ___
 
