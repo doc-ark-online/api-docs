@@ -1,50 +1,23 @@
 import { DefaultTheme } from 'doc-theme-323'
-import { readdirSync, readFileSync } from "fs";
-import * as path from "path";
+import { readFileSync } from "fs";
 
+/**
+ * 版本配置信息
+ */
+export interface VersionConfig {
+  /** 版本号，缩写。后面显示的时候会拼接一些内容 */
+  text: string,
+  /** 版本跳转链接 */
+  link: string,
+  /** 是否为测试版本。测试版本会显示Beta的字样 */
+  isBetaVersion?: boolean,
+  /** ToDo：不知道啥作用 */
+  path?: boolean,
+}
 
-// export function typeToNamespace(paths: string[]) {
-//   const targetObjArr = paths
-//     .map((p) => {
-//       const dirs = readdirSync(path.join(process.cwd(), `./docs/${p}`));
-//       return dirs.map((name) => {
-//         const info = getMdNameInfo(name);
-//         return {
-//           ...info,
-//           fullName: name,
-//           link: `/${p}/${name}`,
-//         };
-//       });
-//     })
-//     .flat(2);
-//   let namespaceType: Record<string, typeof targetObjArr | undefined> = {};
-//   targetObjArr.forEach((obj) => {
-//     if (namespaceType[obj.namespace]) {
-//       namespaceType[obj.namespace]!.push(obj);
-//     } else {
-//       namespaceType[obj.namespace] = [obj];
-//     }
-//   });
-//   let sidebar: DefaultTheme.SidebarGroup[] = [];
-//   Object.keys(namespaceType).forEach((key) => {
-//     const value = namespaceType[key];
-//     if (value)
-//       sidebar.push({
-//         text: key,
-//         collapsible: true,
-//         collapsed: true,
-//         items: value.map((s) => {
-//           return {
-//             text: s.name,
-//             link: s.link,
-//           };
-//         }),
-//       });
-//   });
-//   return sidebar;
-// }
-
-
+/**
+ * 目录分组配置信息
+ */
 export interface GroupsConfigV2 {
   [key: string]: {
     file?: {
@@ -55,6 +28,16 @@ export interface GroupsConfigV2 {
     children?: GroupsConfigV2
     no_children_files?: GroupsConfigV2
   }
+}
+
+/**
+ * 从json中解析版本信息
+ * @returns 版本数组，0为当前版本
+ */
+export function parseVersionConfig(): VersionConfig[] {
+  return JSON.parse(
+    readFileSync('./docs/configs/version.json', { encoding: 'utf-8' })
+  ) as VersionConfig[]
 }
 
 /** 根据配置文件生成对应的侧边栏 - 多级目录版本 */
@@ -95,8 +78,8 @@ export function configToSidebarGroup(configs: GroupsConfigV2) {
 /** 获取用于显示的版本信息 */
 export function getDisplayVersionText(version: string, isBetaVersion: boolean): string {
   if (isBetaVersion) {
-    return `Beta版本(${version})`;
+    return `${version}(Beta)`;
   } else {
-    return `主版本(${version})`
+    return `${version}`
   }
 }
