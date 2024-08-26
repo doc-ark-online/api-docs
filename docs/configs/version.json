@@ -1,8 +1,13 @@
 [
     {
-        "text": "0.39",
-        "link": "https://api-docs-039.ark.online/",
+        "text": "0.38",
+        "link": "https://api-docs-038.ark.online/",
         "isBetaVersion": true,
+        "path": true
+    },
+    {
+        "text": "主版本",
+        "link": "https://api-docs.ark.online/",
         "path": true
     },
     {
@@ -13,11 +18,6 @@
     {
         "text": "0.36",
         "link": "https://api-docs-036.ark.online/",
-        "path": true
-    },
-    {
-        "text": "0.35",
-        "link": "https://api-docs-035.ark.online/",
         "path": true
     }
 ]
