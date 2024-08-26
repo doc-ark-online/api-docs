@@ -16,6 +16,8 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 | **[autoLayoutContainerRule](mw.Canvas.md#autolayoutcontainerrule)**(): [`UILayoutType`](../enums/mw.UILayoutType.md) <Badge type="tip" text="client" />  |
 | :-----|
@@ -37,6 +39,8 @@
 | **[newObject](mw.Canvas.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Canvas`](mw.Canvas.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 创建Canvas控件|
+
+## Properties
 
 ## Accessors
 

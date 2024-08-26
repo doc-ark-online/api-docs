@@ -114,7 +114,7 @@ export default class InteractorSample extends Script {
 
 
 ### Methods <Score text="Methods" /> 
-| **[enter](mw.Interactor.md#enter)**(`character`: [`Character`](mw.Character.md), `slot?`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md), `animationId?`: `string`): `boolean` <Badge type="tip" text="other" />  |
+| **[enter](mw.Interactor.md#enter)**(`character`: [`Character`](mw.Character.md), `slot?`: [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md), `animationId?`: `string`): `boolean` <Badge type="tip" text="other" />  |
 | :-----|
 | 开始交互，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现|
 | **[getCurrentCharacter](mw.Interactor.md#getcurrentcharacter)**(): [`Character`](mw.Character.md)   |
@@ -474,7 +474,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
 | :------ | :------ |
-| `slot?` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md) |  交互插槽，不传默认以属性 slot 为准 default: 属性 slot |
+| `slot?` [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  交互插槽，不传默认以属性 slot 为准 default: 属性 slot |
 | `animationId?` `string` |  交互姿态，不传默认以属性 animationId 为准 default: 属性 animationId range: 依据动画资源 ID 决定字符串长度 |
 
 #### Returns

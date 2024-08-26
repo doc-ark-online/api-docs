@@ -12,6 +12,8 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 | **[itemHeight](mw.TileView.md#itemheight)**(`[itemHeight](mw.TileView.md#itemheight)`): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -90,6 +92,8 @@
 | 创建 ListView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
 :::
 
+
+## Properties
 
 ## Accessors
 

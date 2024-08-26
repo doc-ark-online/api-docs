@@ -69,6 +69,8 @@
 | 外观加载细节变化委托|
 | **[onDescriptionComplete](mw.Character.md#ondescriptioncomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionComplete`](../modules/Core.mw.md#ondescriptioncomplete)\>   |
 | 角色外观加载完成时，调用委托|
+| **[onEmergeFromWater](mw.Character.md#onemergefromwater)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
+| 角色向上游泳到达游泳区域水面时，调用委托|
 | **[onStateChanged](mw.Character.md#onstatechanged)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`prevState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `currentState`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)) => `void`\>  |
 | 角色状态改变回调|
 
@@ -80,8 +82,6 @@
 | 获取角色游泳制动速率\|
 | **[brakingDecelerationWalking](mw.Character.md#brakingdecelerationwalking)**(): `number`   |
 | 设置角色行走制动速率。\|
-| **[canJumpOutOfWater](mw.Character.md#canjumpoutofwater)**(): `boolean`   |
-| 获取角色是否可以跳出水面到陆地上|
 | **[canStandOn](mw.Character.md#canstandon)**(): `boolean`   |
 | 获取角色是否可以被其他玩家站立。\|
 | **[capsuleCorrectionEnabled](mw.Character.md#capsulecorrectionenabled)**(): `boolean`   |
@@ -192,7 +192,7 @@
 | 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
 | 沿着给定的方向向量添加移动输入\|
-| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)): `void`   |
+| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
 | 将物体附着到人物角色的指定插槽\|
 | **[cancelHeadFollow](mw.Character.md#cancelheadfollow)**(): `void` <Badge type="tip" text="client" />  |
 | 取消头部追踪|
@@ -232,10 +232,8 @@
 | 设置角色外观数据\|
 | **[setStateEnabled](mw.Character.md#setstateenabled)**(`characterStateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `enabled`: `boolean`): `void`   |
 | 设置角色状态开关|
-| **[swimDown](mw.Character.md#swimdown)**(`speed`: `number`): `void`   |
-| 使角色在水中下潜\|
-| **[swimUp](mw.Character.md#swimup)**(`speed`: `number`): `void`   |
-| 使角色在水中上浮\|
+| **[swimUpDown](mw.Character.md#swimupdown)**(`speed`: `number`): `void`   |
+| 使角色在水中上浮下潜|
 | **[syncDescription](mw.Character.md#syncdescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | 同步角色外观数据\|
 
@@ -417,6 +415,42 @@ export default class Example_Character extends Script {
             // 添加一个按键方法:按下键盘“4”，清空角色外观
             InputUtil.onKeyDown(Keys.Four, () => {
                 myCharacter.clearDescription();
+            });
+        }
+    }
+}
+```
+
+___
+
+### onEmergeFromWater <Score text="onEmergeFromWater" /> 
+
+• **onEmergeFromWater**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> 
+
+角色向上游泳到达游泳区域水面时，调用委托
+
+::: warning Precautions
+
+当角色对象向上游泳到达游泳区域水面时执行绑定函数
+
+:::
+
+```ts
+@Component
+export default class Example_Character extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 给【角色到达游泳区域水面】委托添加函数
+            myCharacter.onDescriptionComplete.add(() => {
+                // 跳跃
+                myCharacter.changeState(CharacterStateType.Jumping);
+                }
             });
         }
     }
@@ -853,144 +887,6 @@ export default class Example_Braking extends Script {
             if(myCharacter.isMoving) {
                 console.log("当前角色速度：" + myCharacter.velocity);
             }
-        }
-    }
-}
-```
-___
-
-### canJumpOutOfWater <Score text="canJumpOutOfWater" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **canJumpOutOfWater**(): `boolean` 
-
-</th>
-<th style="text-align: left">
-
-• `set` **canJumpOutOfWater**(`value`): `void` 
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取角色是否可以跳出水面到陆地上
-
-
-#### Returns
-
-| `boolean` | true表示可以跳出水面，false表示不可以跳出水面，只会浮在水中。<br> 默认是false |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置角色是否可以跳出水面到陆地上\
-角色通过 swimUp 接口上浮到水面时，可打开此属性跳出水面。
-
-#### Parameters
-
-| `value` `boolean` |  true表示可以跳出水面，false表示不可以跳出水面，只会浮在水中。 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-<span style="font-size: 14px;">
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"CanJumpOutOfWater"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，设置角色可以跳出水面，在场景中生成拱形容器并适配游泳区域。按住键盘“2”，角色上浮。你可以看到的角色到达水面并跃出的效果。代码如下：
-</span>
-
-```ts
-@Component
-export default class CanJumpOutOfWater extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("WaterVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法:按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法:按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法:按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
         }
     }
 }
@@ -1582,7 +1478,7 @@ ___
 
 #### Returns
 
-| `boolean` | 返回复杂移动策略是否开启布尔值。当移动时默认值为true，当角色静止时为false。 |
+| `boolean` | 返回复杂移动策略是否开启布尔值。 |
 | :------ | :------ |
 
 
@@ -4930,7 +4826,7 @@ ___
 
 | `gameObject` [`GameObject`](mw.GameObject.md) |  被附着的物体 |
 | :------ | :------ |
-| `slotName` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
+| `slotName` [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
 
 
 
@@ -6083,121 +5979,15 @@ ___
 
 ___
 
-### swimDown <Score text="swimDown" /> 
+### swimUpDown <Score text="swimUpDown" /> 
 
-• **swimDown**(`speed`): `void` 
+• **swimUpDown**(`speed`): `void` 
 
-使角色在水中下潜\
-
-#### Parameters
-
-| `speed` `number` | 下潜速度 <br> range: 不做限制。 type: 浮点数 |
-| :------ | :------ |
-
-
-
-<span style="font-size: 14px;">
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimDown"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在场景中生成拱形容器并适配游泳区域。按下键盘“1”，角色切换游泳。按下键盘“4”，角色修改最大游泳速度进行喷射加速。你可以看到的角色最大游泳速度变化的效果。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_Character_SwimDown extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("WaterVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
-            // 添加一个按键方法：按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法：按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法：按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法：按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作：停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
-        }
-    }
-}
-```
-
-___
-
-### swimUp <Score text="swimUp" /> 
-
-• **swimUp**(`speed`): `void` 
-
-使角色在水中上浮\
+使角色在水中上浮下潜
 
 #### Parameters
 
-| `speed` `number` | 上浮速度 <br> range: 不做限制。 type: 浮点数 |
+| `speed` `number` | 速度,大于0是上浮,小于0是下潜 <br> range: 不做限制。 type: 浮点数 |
 | :------ | :------ |
 
 
@@ -6223,15 +6013,6 @@ export default class Example_Character_SwimUp extends Script {
             let myPlayer = Player.localPlayer;
             // 获取当前玩家控制的角色
             let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
             // 添加一个按键方法：按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Keys.One, () => {
                 if(flag) {
@@ -6243,50 +6024,11 @@ export default class Example_Character_SwimUp extends Script {
             });
             // 添加一个按键方法：按住键盘“2”，角色上浮
             InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
+                myCharacter.swimUpDown(100);
             });
             // 添加一个按键方法：按住键盘“3”，角色下潜
             InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法：按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作：停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
+                myCharacter.swimUpDown(-100);
             });
         }
     }

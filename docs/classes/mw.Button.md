@@ -16,6 +16,8 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 | **[clickMethod](mw.Button.md#clickmethod)**(`inClickMethod`: [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -107,6 +109,8 @@
 | 设置按下颜色|
 | **[newObject](mw.Button.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`Button`](mw.Button.md) <Badge type="tip" text="client" />  |
 | 创建 Button 控件|
+
+## Properties
 
 ## Accessors
 

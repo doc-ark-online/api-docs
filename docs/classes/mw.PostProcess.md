@@ -38,8 +38,10 @@ export default class PostProcessExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number` <Badge type="tip" text="client" />  |
+| **[ambientOcclusionEnabled](mw.PostProcess.md#ambientocclusionenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
+| 获取环境光遮蔽开关|
+| **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取环境光遮蔽强度|
 | **[ambientOcclusionRadius](mw.PostProcess.md#ambientocclusionradius)**(): `number` <Badge type="tip" text="client" />  |
 | 获取环境光遮蔽半径|
@@ -73,6 +75,52 @@ export default class PostProcessExample extends mw.Script {
 | 获取全局饱和度|
 
 ## Accessors
+
+### ambientOcclusionEnabled <Score text="ambientOcclusionEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **ambientOcclusionEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **ambientOcclusionEnabled**(`Value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取环境光遮蔽开关
+
+#### Returns
+
+| `boolean` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置环境光遮蔽开关
+
+#### Parameters
+
+| `Value` `boolean` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
 
 ### ambientOcclusionIntensity <Score text="ambientOcclusionIntensity" /> 
 

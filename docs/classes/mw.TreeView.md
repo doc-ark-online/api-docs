@@ -12,6 +12,17 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
+
+::: details click
+### Properties <Score text="Properties" /> 
+| **[onCustomPropertyChange](mw.Widget.md#oncustompropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| :-----|
+| 监听自定义属性同步事件|
+:::
+
+
 ### Accessors <Score text="Accessors" /> 
 | **[clearSelectionOnClick](mw.TreeView.md#clearselectiononclick)**(`clearSelection`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -20,7 +31,7 @@
 | 获取子项缩进距离|
 | **[itemPadding](mw.TreeView.md#itempadding)**(): [`Margin`](mw.Margin.md)  |
 | 获取视图节点边距|
-| **[listItems](mw.TreeView.md#listitems)**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
+| **[listItems](mw.TreeView.md#listitems)**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />  |
 | 获取列表数据|
 | **[onItemClicked](mw.TreeView.md#onitemclicked)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`clickedItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `doubleClick`: `boolean`) => `void`\> <Badge type="tip" text="client" />  |
 | 返回点击代理|
@@ -120,6 +131,8 @@
 | 获取选中节点的数据|
 | **[getShowItemsCount](mw.TreeView.md#getshowitemscount)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前展示的条目的数量|
+| **[insertItem](mw.TreeView.md#insertitem)**(`newItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md), `index`: `number`): `void` <Badge type="tip" text="other" />  |
+| 插入项目节点数据，如果位置越界，则自动插入最后|
 | **[regenerateTreeData](mw.TreeView.md#regeneratetreedata)**(`regenItems`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[]): `void` <Badge type="tip" text="client" />  |
 | 重新生成树刷新数据|
 | **[removeItem](mw.TreeView.md#removeitem)**(`delItem`: [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)): `void` <Badge type="tip" text="client" />  |
@@ -159,6 +172,12 @@
 | 通过名字查找节点|
 | **[getChildrenCount](mw.Widget.md#getchildrencount)**(): `number` <Badge type="tip" text="client" />  |
 | 获取子节点数量|
+| **[getCustomProperties](mw.Widget.md#getcustomproperties)**(): `string`[] <Badge type="tip" text="client" />  |
+| 获取所有自定义属性|
+| **[getCustomProperty](mw.Widget.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype) <Badge type="tip" text="client" />  |
+| 获取自定义属性|
+| **[getCustomPropertyChangeDelegate](mw.Widget.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| 给定对象属性修改时触发的事件代理|
 | **[invalidateLayoutAndVolatility](mw.Widget.md#invalidatelayoutandvolatility)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻触发重新渲染的和排布计算|
 | **[removeAllChildren](mw.Widget.md#removeallchildren)**(): `void` <Badge type="tip" text="client" />  |
@@ -171,10 +190,14 @@
 | 立刻移除并添加到根节点 可以再使用|
 | **[serialize](mw.Widget.md#serialize)**(): `string` <Badge type="tip" text="client" />  |
 | 序列化UI控件|
+| **[setCustomProperty](mw.Widget.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void` <Badge type="tip" text="client" />  |
+| 设置自定义属性|
 | **[deserialize](mw.Widget.md#deserialize)**(`Data`: `string`, `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 反序列化UI|
 :::
 
+
+## Properties
 
 ## Accessors
 
@@ -307,7 +330,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **listItems**(): [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
+• `get` **listItems**(): readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -319,7 +342,7 @@ ___
 
 #### Returns
 
-| [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回列表数据 |
+| readonly [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md)[] | 返回列表数据 |
 | :------ | :------ |
 
 </td>
@@ -770,6 +793,21 @@ ___
 
 | `number` |  |
 | :------ | :------ |
+
+___
+
+### insertItem <Score text="insertItem" /> 
+
+• **insertItem**(`newItem`, `index`): `void` <Badge type="tip" text="other" />
+
+插入项目节点数据，如果位置越界，则自动插入最后
+
+#### Parameters
+
+| `newItem` [`TreeViewItemDataBase`](mw.TreeViewItemDataBase.md) | 需要插入的新数据 |
+| :------ | :------ |
+| `index` `number` | 插入的位置 |
+
 
 ___
 

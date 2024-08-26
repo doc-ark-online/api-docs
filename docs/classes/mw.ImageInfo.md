@@ -22,12 +22,10 @@
 | 获取ImageInfo的size大小|
 
 ### Methods <Score text="Methods" /> 
-| **[asyncSetByAssetICON](mw.ImageInfo.md#asyncsetbyasseticon)**(`AssetID`: [`AssetIconData`](mw.AssetIconData.md), `bUseSRGB?`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| :-----|
-| 设置图标|
 | **[asyncSetByID](mw.ImageInfo.md#asyncsetbyid)**(`id`: `string`, `bUseSRGB?`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
+| :-----|
 | 通过 ID 设置图片信息|
-| **[setByAssetIcon](mw.ImageInfo.md#setbyasseticon)**(`assetId`: `string`, `size`: [`AssetIconSize`](../enums/mw.AssetIconSize.md), `bUseSRGB?`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| **[setByAssetIcon](mw.ImageInfo.md#setbyasseticon)**(`assetId`: `string`, `size`: [`AssetIconSize`](../enums/mw.AssetIconSize.md), `bUseSRGB?`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 用指定的 id 和分辨率，设置图标|
 
 ## Accessors
@@ -270,23 +268,6 @@ ___
 
 ## Methods
 
-### asyncSetByAssetICON <Score text="asyncSetByAssetICON" /> 
-
-• **asyncSetByAssetICON**(`AssetID`, `bUseSRGB?`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
-
-设置图标
-
-#### Parameters
-
-| `AssetID` [`AssetIconData`](mw.AssetIconData.md) |  传入的 AssetIconData 对象 |
-| :------ | :------ |
-| `bUseSRGB?` `boolean` |  是否使用SRGB |
-
-#### Returns
-
-| `Promise`<`boolean`\> | 是否设置成功 |
-| :------ | :------ |
-
 ___
 
 ### asyncSetByID <Score text="asyncSetByID" /> 
@@ -310,7 +291,7 @@ ___
 
 ### setByAssetIcon <Score text="setByAssetIcon" /> 
 
-• **setByAssetIcon**(`assetId`, `size`, `bUseSRGB?`): `void` <Badge type="tip" text="client" />
+• **setByAssetIcon**(`assetId`, `size`, `bUseSRGB?`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
 
 用指定的 id 和分辨率，设置图标
 
@@ -321,3 +302,7 @@ ___
 | `size` [`AssetIconSize`](../enums/mw.AssetIconSize.md) |  传入图标的分辨率枚举 |
 | `bUseSRGB?` `boolean` |  是否使用SRGB |
 
+#### Returns
+
+| `Promise`<`boolean`\> |  |
+| :------ | :------ |

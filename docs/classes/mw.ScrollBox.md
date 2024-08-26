@@ -12,6 +12,8 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 | **[allowOverscroll](mw.ScrollBox.md#allowoverscroll)**(`isAllowOverscroll`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -69,6 +71,8 @@
 | 滚动到开始位置|
 | **[newObject](mw.ScrollBox.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md), `inName?`: `string`): [`ScrollBox`](mw.ScrollBox.md) <Badge type="tip" text="client" />  |
 | 创建 ScrollBox 控件|
+
+## Properties
 
 ## Accessors
 

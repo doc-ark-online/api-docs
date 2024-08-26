@@ -864,61 +864,6 @@
     },
     "no_children_files": null
   },
-  "设置": {
-    "file": {
-      "file_name": "设置.设置.md",
-      "file_path": "groups/设置.设置.md",
-      "name": "设置"
-    },
-    "children": null,
-    "no_children_files": {
-      "RoomSettings": {
-        "file": {
-          "file_name": "mw.RoomSettings.md",
-          "file_path": "classes/mw.RoomSettings.md",
-          "name": "RoomSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "EnvironmentSettings": {
-        "file": {
-          "file_name": "mw.EnvironmentSettings.md",
-          "file_path": "classes/mw.EnvironmentSettings.md",
-          "name": "EnvironmentSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "AvatarSettings": {
-        "file": {
-          "file_name": "mw.AvatarSettings.md",
-          "file_path": "classes/mw.AvatarSettings.md",
-          "name": "AvatarSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "GraphicsSettings": {
-        "file": {
-          "file_name": "mw.GraphicsSettings.md",
-          "file_path": "classes/mw.GraphicsSettings.md",
-          "name": "GraphicsSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "ScriptingSettings": {
-        "file": {
-          "file_name": "mw.ScriptingSettings.md",
-          "file_path": "classes/mw.ScriptingSettings.md",
-          "name": "ScriptingSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "工具": {
     "file": {
       "file_name": "工具.工具.md",
@@ -1402,6 +1347,61 @@
       }
     }
   },
+  "设置": {
+    "file": {
+      "file_name": "设置.设置.md",
+      "file_path": "groups/设置.设置.md",
+      "name": "设置"
+    },
+    "children": null,
+    "no_children_files": {
+      "RoomSettings": {
+        "file": {
+          "file_name": "mw.RoomSettings.md",
+          "file_path": "classes/mw.RoomSettings.md",
+          "name": "RoomSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "EnvironmentSettings": {
+        "file": {
+          "file_name": "mw.EnvironmentSettings.md",
+          "file_path": "classes/mw.EnvironmentSettings.md",
+          "name": "EnvironmentSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "AvatarSettings": {
+        "file": {
+          "file_name": "mw.AvatarSettings.md",
+          "file_path": "classes/mw.AvatarSettings.md",
+          "name": "AvatarSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GraphicsSettings": {
+        "file": {
+          "file_name": "mw.GraphicsSettings.md",
+          "file_path": "classes/mw.GraphicsSettings.md",
+          "name": "GraphicsSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "ScriptingSettings": {
+        "file": {
+          "file_name": "mw.ScriptingSettings.md",
+          "file_path": "classes/mw.ScriptingSettings.md",
+          "name": "ScriptingSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
+  },
   "输入": {
     "file": {
       "file_name": "输入.输入.md",
@@ -1424,15 +1424,6 @@
           "file_name": "mw.ConvertScreenResult.md",
           "file_path": "classes/mw.ConvertScreenResult.md",
           "name": "ConvertScreenResult"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "GestureDelegate": {
-        "file": {
-          "file_name": "mw.GestureDelegate.md",
-          "file_path": "classes/mw.GestureDelegate.md",
-          "name": "GestureDelegate"
         },
         "no_children_files": null,
         "children": null
