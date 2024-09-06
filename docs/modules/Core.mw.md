@@ -456,8 +456,6 @@ mw
 | 寻路|
 | [ObjectLauncher](../classes/mw.ObjectLauncher.md)  |
 | 投掷物发射器|
-| [PanelWidget](../classes/Core.mw.PanelWidget.md)  |
-| :----- |
 | [ParticleEmitter](../classes/mw.ParticleEmitter.md)  |
 | 粒子特效|
 | [Pawn](../classes/mw.Pawn.md)  |
@@ -530,7 +528,8 @@ mw
 | 字符串工具|
 | [SubStance](../classes/mw.SubStance.md)  |
 | 二级姿态|
-| [SwimmingVolume](../classes/Core.mw.SwimmingVolume.md) |
+| [SwimmingVolume](../classes/Core.mw.SwimmingVolume.md)  |
+| :----- |
 | [SystemUtil](../classes/mw.SystemUtil.md)  |
 | 状态信息获取工具|
 | [TabGroup](../classes/mw.TabGroup.md)  |

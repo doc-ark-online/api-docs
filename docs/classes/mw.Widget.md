@@ -14,6 +14,12 @@
 
 - **`Widget`**
 
+  ↳ [`AdsButton`](mw.AdsButton.md)
+
+  ↳ [`Button`](mw.Button.md)
+
+  ↳ [`Canvas`](mw.Canvas.md)
+
   ↳ [`Checkbox`](mw.Checkbox.md)
 
   ↳ [`ColorPick`](mw.ColorPick.md)
@@ -36,9 +42,9 @@
 
   ↳ [`MenuAnchor`](mw.MenuAnchor.md)
 
-  ↳ [`PanelWidget`](Core.mw.PanelWidget.md)
-
   ↳ [`ProgressBar`](mw.ProgressBar.md)
+
+  ↳ [`ScrollBox`](mw.ScrollBox.md)
 
   ↳ [`StaleButton`](mw.StaleButton.md)
 
