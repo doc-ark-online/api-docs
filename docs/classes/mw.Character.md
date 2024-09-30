@@ -217,7 +217,7 @@
 | **[jump](mw.Character.md#jump)**(): `void`   |
 | 使角色触发一个跳跃行为|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
-| 为角色加载一个动画资源\|
+| 为角色加载一个动画资源。该接口会将给定的动画加载到角色上，返回一个可播放的Animation。|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
 | 为角色加载一个基础姿态\|
 | **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md)   |
@@ -5710,7 +5710,7 @@ ___
 
 • **loadAnimation**(`assetId`): [`Animation`](mw.Animation.md) 
 
-为角色加载一个动画资源\
+为角色加载一个动画资源。该接口会将给定的动画加载到角色上，返回一个可播放的Animation。
 
 #### Parameters
 
@@ -5721,7 +5721,6 @@ ___
 
 | [`Animation`](mw.Animation.md) | 动画对象 |
 | :------ | :------ |
-loadAnimation 会将给定的动画加载到角色上，返回一个可播放的Animation。
 
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Character"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载舞蹈动画，并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，当动画播放完成，出现一个升级特效。按下键盘“1”，开始播放动画。按下键盘“2”，暂停播放动画。按下键盘“3”，继续播放动画。按下键盘“4”，停止播放动画。代码如下：
