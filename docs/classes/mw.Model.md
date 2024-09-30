@@ -98,8 +98,6 @@ export default class ModelExample extends Script {
 | 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
-| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
-| 监听系统属性同步事件|
 :::
 
 
@@ -119,6 +117,8 @@ export default class ModelExample extends Script {
 | 获取对应的碰撞组|
 | **[color](mw.Model.md#color)**(): [`LinearColor`](mw.LinearColor.md)   |
 | Model颜色|
+| **[density](mw.Model.md#density)**(): `number`   |
+| 获取密度大小|
 | **[friction](mw.Model.md#friction)**(): `number`   |
 | 获取摩擦力大小|
 | **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean`   |
@@ -153,6 +153,8 @@ export default class ModelExample extends Script {
 | 获取是否模拟物理|
 | **[physicsLinearVelocity](mw.Model.md#physicslinearvelocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取线性速度(仅开启模拟时生效)|
+| **[physicsMaterial](mw.Model.md#physicsmaterial)**(): `boolean`   |
+| 获取物理材质启用状态|
 | **[queryEnabled](mw.Model.md#queryenabled)**(): `boolean`   |
 | 是否开启空间查询|
 | **[restitution](mw.Model.md#restitution)**(): `number`   |
@@ -263,8 +265,6 @@ export default class ModelExample extends Script {
 | **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
 | 获取自定义属性|
 | **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| 给定对象属性修改时触发的事件代理|
-| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
 | 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
@@ -673,6 +673,52 @@ Model颜色
 #### Parameters
 
 | `value` [`LinearColor`](mw.LinearColor.md) | Model颜色 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### density <Score text="density" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **density**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **density**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取密度大小
+
+#### Returns
+
+| `number` | 密度大小 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置密度大小
+
+#### Parameters
+
+| `value` `number` | 密度大小 |
 | :------ | :------ |
 
 
@@ -1417,6 +1463,52 @@ ___
 #### Parameters
 
 | `value` [`Vector`](mw.Vector.md) | 物理线速度大小 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### physicsMaterial <Score text="physicsMaterial" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **physicsMaterial**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **physicsMaterial**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取物理材质启用状态
+
+#### Returns
+
+| `boolean` | 物理材质启用状态 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置物理材质启用状态
+
+#### Parameters
+
+| `value` `boolean` | 物理材质启用状态 |
 | :------ | :------ |
 
 

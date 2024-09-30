@@ -71,6 +71,8 @@ class UI_Main extends UIScript {
 | 设置点击模式|
 | **[contentColor](mw.StaleButton.md#contentcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 设置字体内容颜色|
+| **[defaultFont](mw.StaleButton.md#defaultfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
+| 获取默认字体|
 | **[disableImageColor](mw.StaleButton.md#disableimagecolor)**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />  |
 | 获取禁用图片颜色|
 | **[disableImageDrawType](mw.StaleButton.md#disableimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />  |
@@ -83,6 +85,8 @@ class UI_Main extends UIScript {
 | 获取禁用图片边距|
 | **[disableImageSize](mw.StaleButton.md#disableimagesize)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取禁用图片大小|
+| **[fallbackFont](mw.StaleButton.md#fallbackfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
+| 获取退却字体|
 | **[focusable](mw.StaleButton.md#focusable)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否获取输入焦点|
 | **[fontColor](mw.StaleButton.md#fontcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
@@ -252,7 +256,7 @@ class UI_Main extends UIScript {
 | **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加子节点|
-| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: `any`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 克隆UI控件及其子节点到指定父控件位置（默认到其父节点）|
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
@@ -364,6 +368,52 @@ ___
 #### Parameters
 
 | `inContentColor` [`LinearColor`](mw.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### defaultFont <Score text="defaultFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **defaultFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **defaultFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取默认字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 默认字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置默认字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的默认字体 |
 | :------ | :------ |
 
 
@@ -621,6 +671,52 @@ ___
 #### Parameters
 
 | `inSize` [`Vector2`](mw.Vector2.md) | 大小 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### fallbackFont <Score text="fallbackFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **fallbackFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **fallbackFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取退却字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 退却字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置退却字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的退却字体 |
 | :------ | :------ |
 
 

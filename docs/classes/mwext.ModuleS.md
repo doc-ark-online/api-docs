@@ -14,10 +14,6 @@ ModuleService.registerModule(YourModS, YourModC, YourData);
 
 继承自 ModuleS 的类也封装了一套生命周期。
 
-继承自 ModuleS 的生命周期为：
-
-![Module](https://cdn.233xyx.com/online/CnYyNlTulPcV1701529193879.png)
-
 <span style="font-size: 14px;">
 使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息。
 </span>

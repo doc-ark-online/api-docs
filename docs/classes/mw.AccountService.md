@@ -9,7 +9,7 @@
 ### Methods <Score text="Methods" /> 
 | **[addFriend](mw.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`, `reason`: `string`): `void`   |
 | :-----|
-| 向233发起addFriend并获得回调|
+| 发起添加好友请求|
 | **[applySharedId](mw.AccountService.md#applysharedid)**(`character`: [`Character`](mw.Character.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 应用分享Id的角色数据|
 | **[checkVIP](mw.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void`   |
@@ -43,11 +43,11 @@
 
 • `Static` **addFriend**(`resp`, `userId`, `reason`): `void` 
 
-向233发起addFriend并获得回调
+发起添加好友请求
 
 #### Parameters
 
-| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | GameService的回调 |
 | :------ | :------ |
 | `userId` `string` | 要加的玩家UserId |
 | `reason` `string` | 申请理由 |
@@ -55,7 +55,7 @@
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+只在移动端生效
 
 :::
 
@@ -154,7 +154,7 @@ ___
 
 ::: warning Precautions
 
-只在由233拉起生效
+只在移动端生效
 
 :::
 
@@ -220,7 +220,7 @@ ___
 
 ::: warning Precautions
 
-只在由233拉起生效
+只在移动端生效
 
 :::
 
@@ -347,14 +347,14 @@ ___
 
 #### Parameters
 
-| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | GameService的回调 |
 | :------ | :------ |
 | `userId` `string` | 要确定的玩家UserId |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+只在移动端生效
 
 :::
 

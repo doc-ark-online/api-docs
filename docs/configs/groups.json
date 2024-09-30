@@ -364,11 +364,11 @@
             "no_children_files": null,
             "children": null
           },
-          "UIWidget": {
+          "WorldUI": {
             "file": {
-              "file_name": "mw.UIWidget.md",
-              "file_path": "classes/mw.UIWidget.md",
-              "name": "UIWidget"
+              "file_name": "mw.WorldUI.md",
+              "file_path": "classes/mw.WorldUI.md",
+              "name": "WorldUI"
             },
             "no_children_files": null,
             "children": null
@@ -446,6 +446,15 @@
       }
     },
     "no_children_files": {
+      "TreeViewItemDataBase": {
+        "file": {
+          "file_name": "mw.TreeViewItemDataBase.md",
+          "file_path": "classes/mw.TreeViewItemDataBase.md",
+          "name": "TreeViewItemDataBase"
+        },
+        "no_children_files": null,
+        "children": null
+      },
       "TabGroup": {
         "file": {
           "file_name": "mw.TabGroup.md",
@@ -573,6 +582,15 @@
             "no_children_files": null,
             "children": null
           },
+          "Spline": {
+            "file": {
+              "file_name": "mw.Spline.md",
+              "file_path": "classes/mw.Spline.md",
+              "name": "Spline"
+            },
+            "no_children_files": null,
+            "children": null
+          },
           "BlockingVolume": {
             "file": {
               "file_name": "mw.BlockingVolume.md",
@@ -602,6 +620,39 @@
               "file_name": "mw.ProjectileMovement.md",
               "file_path": "classes/mw.ProjectileMovement.md",
               "name": "ProjectileMovement"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
+      "寻路系统": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "NavModifierVolume": {
+            "file": {
+              "file_name": "mw.NavModifierVolume.md",
+              "file_path": "classes/mw.NavModifierVolume.md",
+              "name": "NavModifierVolume"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Navigation": {
+            "file": {
+              "file_name": "mw.Navigation.md",
+              "file_path": "classes/mw.Navigation.md",
+              "name": "Navigation"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "NavLink": {
+            "file": {
+              "file_name": "mw.NavLink.md",
+              "file_path": "classes/mw.NavLink.md",
+              "name": "NavLink"
             },
             "no_children_files": null,
             "children": null
@@ -761,30 +812,6 @@
           }
         }
       },
-      "寻路系统": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "NavModifierVolume": {
-            "file": {
-              "file_name": "mw.NavModifierVolume.md",
-              "file_path": "classes/mw.NavModifierVolume.md",
-              "name": "NavModifierVolume"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "Navigation": {
-            "file": {
-              "file_name": "mw.Navigation.md",
-              "file_path": "classes/mw.Navigation.md",
-              "name": "Navigation"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
       "热武器": {
         "file": null,
         "children": {
@@ -863,6 +890,77 @@
       }
     },
     "no_children_files": null
+  },
+  "设置": {
+    "file": {
+      "file_name": "设置.设置.md",
+      "file_path": "groups/设置.设置.md",
+      "name": "设置"
+    },
+    "children": {
+      "设置面板": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "SettingService": {
+            "file": {
+              "file_name": "mw.SettingService.md",
+              "file_path": "classes/mw.SettingService.md",
+              "name": "SettingService"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      }
+    },
+    "no_children_files": {
+      "RoomSettings": {
+        "file": {
+          "file_name": "mw.RoomSettings.md",
+          "file_path": "classes/mw.RoomSettings.md",
+          "name": "RoomSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "EnvironmentSettings": {
+        "file": {
+          "file_name": "mw.EnvironmentSettings.md",
+          "file_path": "classes/mw.EnvironmentSettings.md",
+          "name": "EnvironmentSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "AvatarSettings": {
+        "file": {
+          "file_name": "mw.AvatarSettings.md",
+          "file_path": "classes/mw.AvatarSettings.md",
+          "name": "AvatarSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GraphicsSettings": {
+        "file": {
+          "file_name": "mw.GraphicsSettings.md",
+          "file_path": "classes/mw.GraphicsSettings.md",
+          "name": "GraphicsSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "ScriptingSettings": {
+        "file": {
+          "file_name": "mw.ScriptingSettings.md",
+          "file_path": "classes/mw.ScriptingSettings.md",
+          "name": "ScriptingSettings"
+        },
+        "no_children_files": null,
+        "children": null
+      }
+    }
   },
   "工具": {
     "file": {
@@ -1347,61 +1445,6 @@
       }
     }
   },
-  "设置": {
-    "file": {
-      "file_name": "设置.设置.md",
-      "file_path": "groups/设置.设置.md",
-      "name": "设置"
-    },
-    "children": null,
-    "no_children_files": {
-      "RoomSettings": {
-        "file": {
-          "file_name": "mw.RoomSettings.md",
-          "file_path": "classes/mw.RoomSettings.md",
-          "name": "RoomSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "EnvironmentSettings": {
-        "file": {
-          "file_name": "mw.EnvironmentSettings.md",
-          "file_path": "classes/mw.EnvironmentSettings.md",
-          "name": "EnvironmentSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "AvatarSettings": {
-        "file": {
-          "file_name": "mw.AvatarSettings.md",
-          "file_path": "classes/mw.AvatarSettings.md",
-          "name": "AvatarSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "GraphicsSettings": {
-        "file": {
-          "file_name": "mw.GraphicsSettings.md",
-          "file_path": "classes/mw.GraphicsSettings.md",
-          "name": "GraphicsSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      },
-      "ScriptingSettings": {
-        "file": {
-          "file_name": "mw.ScriptingSettings.md",
-          "file_path": "classes/mw.ScriptingSettings.md",
-          "name": "ScriptingSettings"
-        },
-        "no_children_files": null,
-        "children": null
-      }
-    }
-  },
   "输入": {
     "file": {
       "file_name": "输入.输入.md",
@@ -1424,6 +1467,15 @@
           "file_name": "mw.ConvertScreenResult.md",
           "file_path": "classes/mw.ConvertScreenResult.md",
           "name": "ConvertScreenResult"
+        },
+        "no_children_files": null,
+        "children": null
+      },
+      "GestureDelegate": {
+        "file": {
+          "file_name": "mw.GestureDelegate.md",
+          "file_path": "classes/mw.GestureDelegate.md",
+          "name": "GestureDelegate"
         },
         "no_children_files": null,
         "children": null
@@ -1570,6 +1622,15 @@
         },
         "no_children_files": null,
         "children": null
+      },
+      "Base": {
+        "file": {
+          "file_name": "mw.Base.md",
+          "file_path": "classes/mw.Base.md",
+          "name": "Base"
+        },
+        "no_children_files": null,
+        "children": null
       }
     }
   },
@@ -1585,6 +1646,15 @@
         "file": null,
         "children": null,
         "no_children_files": {
+          "AvatarEditorService": {
+            "file": {
+              "file_name": "mw.AvatarEditorService.md",
+              "file_path": "classes/mw.AvatarEditorService.md",
+              "name": "AvatarEditorService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
           "AdsService": {
             "file": {
               "file_name": "mw.AdsService.md",
@@ -1711,6 +1781,75 @@
     },
     "no_children_files": null,
     "children": {
+      "特效": {
+        "file": null,
+        "children": null,
+        "no_children_files": {
+          "vectorSequencePoint": {
+            "file": {
+              "file_name": "mw.vectorSequencePoint.md",
+              "file_path": "classes/mw.vectorSequencePoint.md",
+              "name": "vectorSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "ParticleEmitter": {
+            "file": {
+              "file_name": "mw.ParticleEmitter.md",
+              "file_path": "classes/mw.ParticleEmitter.md",
+              "name": "ParticleEmitter"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "EffectService": {
+            "file": {
+              "file_name": "mw.EffectService.md",
+              "file_path": "classes/mw.EffectService.md",
+              "name": "EffectService"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "Effect": {
+            "file": {
+              "file_name": "mw.Effect.md",
+              "file_path": "classes/mw.Effect.md",
+              "name": "Effect"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "numberSequencePoint": {
+            "file": {
+              "file_name": "mw.numberSequencePoint.md",
+              "file_path": "classes/mw.numberSequencePoint.md",
+              "name": "numberSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "colorSequencePoint": {
+            "file": {
+              "file_name": "mw.colorSequencePoint.md",
+              "file_path": "classes/mw.colorSequencePoint.md",
+              "name": "colorSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          },
+          "vector2DSequencePoint": {
+            "file": {
+              "file_name": "mw.vector2DSequencePoint.md",
+              "file_path": "classes/mw.vector2DSequencePoint.md",
+              "name": "vector2DSequencePoint"
+            },
+            "no_children_files": null,
+            "children": null
+          }
+        }
+      },
       "音效": {
         "file": null,
         "children": null,
@@ -1789,66 +1928,6 @@
               "file_name": "mw.Lighting.md",
               "file_path": "classes/mw.Lighting.md",
               "name": "Lighting"
-            },
-            "no_children_files": null,
-            "children": null
-          }
-        }
-      },
-      "特效": {
-        "file": null,
-        "children": null,
-        "no_children_files": {
-          "vectorSequencePoint": {
-            "file": {
-              "file_name": "mw.vectorSequencePoint.md",
-              "file_path": "classes/mw.vectorSequencePoint.md",
-              "name": "vectorSequencePoint"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "ParticleEmitter": {
-            "file": {
-              "file_name": "mw.ParticleEmitter.md",
-              "file_path": "classes/mw.ParticleEmitter.md",
-              "name": "ParticleEmitter"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "EffectService": {
-            "file": {
-              "file_name": "mw.EffectService.md",
-              "file_path": "classes/mw.EffectService.md",
-              "name": "EffectService"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "Effect": {
-            "file": {
-              "file_name": "mw.Effect.md",
-              "file_path": "classes/mw.Effect.md",
-              "name": "Effect"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "numberSequencePoint": {
-            "file": {
-              "file_name": "mw.numberSequencePoint.md",
-              "file_path": "classes/mw.numberSequencePoint.md",
-              "name": "numberSequencePoint"
-            },
-            "no_children_files": null,
-            "children": null
-          },
-          "colorSequencePoint": {
-            "file": {
-              "file_name": "mw.colorSequencePoint.md",
-              "file_path": "classes/mw.colorSequencePoint.md",
-              "name": "colorSequencePoint"
             },
             "no_children_files": null,
             "children": null

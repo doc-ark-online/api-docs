@@ -53,6 +53,8 @@ export default class InputExample extends Script {
 | 设置鼠标指针是否可以自由移动或是被锁定|
 | **[mouseLockOptionEnabled](mw.InputUtil.md#mouselockoptionenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 玩家是否可以使用shift,切换鼠标锁定状态|
+| **[mouseSensitivity](mw.InputUtil.md#mousesensitivity)**(): `number` <Badge type="tip" text="client" />  |
+| 玩家鼠标移动镜头的灵敏度|
 
 ### Methods <Score text="Methods" /> 
 | **[convertScreenLocationToWorldSpace](mw.InputUtil.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](mw.ConvertScreenResult.md)   |
@@ -538,6 +540,8 @@ ___
 | `b` `boolean` | 如果为True，玩家在游戏中按下鼠标锁定按键（默认shift）后，玩家可以自行切换鼠标锁定状态 |
 | :------ | :------ |
 
+
+
 </td>
 </tr></tbody>
 </table>
@@ -567,6 +571,50 @@ export default class InputExample extends Script {
     }
 }
 ```
+___
+
+### mouseSensitivity <Score text="mouseSensitivity" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **mouseSensitivity**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **mouseSensitivity**(`InRange`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+玩家鼠标移动镜头的灵敏度
+
+#### Returns
+
+| `number` | 玩家鼠标移动镜头的灵敏度 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置玩家鼠标移动镜头的灵敏度
+
+#### Parameters
+
+| `InRange` `number` | 更改鼠标移动镜头的灵敏度 range:0.1~10 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods

@@ -33,7 +33,7 @@ export default class ClassExample extends Script {
 ### Methods <Score text="Methods" /> 
 | **[setOptimization](mw.AvatarSettings.md#setoptimization)**(`character`: [`Character`](mw.Character.md), `useAnimationBudget`: `boolean`, `useWave`: `boolean`): `void` <Badge type="tip" text="client" />  |
 | :-----|
-| 开启关闭一个角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。|
+| 开启或关闭角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。|
 
 ## Accessors
 
@@ -87,7 +87,7 @@ export default class ClassExample extends Script {
 
 • `Static` **setOptimization**(`character`, `useAnimationBudget`, `useWave`): `void` <Badge type="tip" text="client" />
 
-开启关闭一个角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。
+开启或关闭角色优化:通过动态限制骨架网格体组件的tick频率来限制运行动画数据的时间。
 
 #### Parameters
 

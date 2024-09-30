@@ -28,15 +28,15 @@
 | **[asyncMuteAll](mw.ChatService.md#asyncmuteall)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 一键屏蔽所有玩家的语音。|
 | **[asyncMutePlayer](mw.ChatService.md#asyncmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="other" />  |
-| 屏蔽指定玩家的语音。|
+| 屏蔽指定玩家的声音|
 | **[asyncOpenMic](mw.ChatService.md#asyncopenmic)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 打开自己的语音。|
 | **[asyncSendMessage](mw.ChatService.md#asyncsendmessage)**(`content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="client" />  |
 | 发送快捷语消息，自动携带发送者名称。与聊天框中输入语言一致。不支持富文本。|
 | **[asyncUnmuteAll](mw.ChatService.md#asyncunmuteall)**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| 一键打开所有玩家的语音。|
+| 一键打开所有玩家的声音，取消屏蔽|
 | **[asyncUnmutePlayer](mw.ChatService.md#asyncunmuteplayer)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
-| 打开指定玩家的语音。|
+| 打开指定玩家的声音，取消屏蔽|
 | **[asyncsetUserCanChat](mw.ChatService.md#asyncsetusercanchat)**(`userId`: `string`, `canChat`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 设置指定用户聊天权限|
 | **[getUserCanChat](mw.ChatService.md#getusercanchat)**(`userId`: `string`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
@@ -272,7 +272,7 @@ ___
 
 • `Static` **asyncMutePlayer**(`userId`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
-屏蔽指定玩家的语音。
+屏蔽指定玩家的声音
 
 #### Parameters
 
@@ -350,7 +350,7 @@ ___
 note: 开启聊天框聊天功能，接口才可生效
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"MetaWorld is funny"的效果。代码如下：
+使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"asyncBroadcastMessage is called"的效果。代码如下：
 </span>
 
 ```ts
@@ -450,7 +450,7 @@ ___
 
 • `Static` **asyncUnmuteAll**(): `Promise`<`boolean`\> <Badge type="tip" text="client" />
 
-一键打开所有玩家的语音。
+一键打开所有玩家的声音，取消屏蔽
 
 #### Returns
 
@@ -479,7 +479,7 @@ ___
 
 • `Static` **asyncUnmutePlayer**(`userId`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
 
-打开指定玩家的语音。
+打开指定玩家的声音，取消屏蔽
 
 #### Parameters
 

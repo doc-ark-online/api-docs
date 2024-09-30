@@ -51,10 +51,10 @@ export default class EffectExample extends Script {
          Effect.rate = 100;
          // 不进行边缘裁剪,全部保留,方形
          Effect.maskRadius = 1;
-         // 在球形范围内生成
-         Effect.shape = mw.ParticleEmitterShape.Sphere;
-         // 仅在球形表面生成
+         // 仅在表面生成
          Effect.shapeStyle = mw.ParticleEmitterShapeStyle.OnlySurface;
+         // 生成范围长宽高100
+         Effect.shapeExtents = new Vector(100, 100, 100);
 
          // 生命周期在1~10范围内随机
          Effect.lifetime = new Vector2(1, 10);
@@ -86,8 +86,6 @@ export default class EffectExample extends Script {
 | 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
-| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
-| 监听系统属性同步事件|
 :::
 
 
@@ -95,18 +93,22 @@ export default class EffectExample extends Script {
 | **[acceleration](mw.ParticleEmitter.md#acceleration)**(): [`vectorSequencePoint`](mw.vectorSequencePoint.md)[] <Badge type="tip" text="client" />  |
 | :-----|
 | 获取生命周期内加速度变化曲线|
-| **[brightness](mw.ParticleEmitter.md#brightness)**(): `number` <Badge type="tip" text="client" />  |
+| **[brightness](mw.ParticleEmitter.md#brightness)**(): [`numberSequencePoint`](mw.numberSequencePoint.md)[] <Badge type="tip" text="client" />  |
 | 亮度|
 | **[color](mw.ParticleEmitter.md#color)**(): [`[color](mw.ParticleEmitter.md#color)SequencePoint`](Core.mw.[color](mw.ParticleEmitter.md#color)SequencePoint.md)[] <Badge type="tip" text="client" />  |
 | 获取设置生命周期内颜色变化曲线|
 | **[drag](mw.ParticleEmitter.md#drag)**(): `number` <Badge type="tip" text="client" />  |
 | 阻力|
+| **[isLocalSpace](mw.ParticleEmitter.md#islocalspace)**(): `boolean` <Badge type="tip" text="client" />  |
+| 是否使用局部空间|
 | **[lifetime](mw.ParticleEmitter.md#lifetime)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 生命周期|
 | **[lightInfluence](mw.ParticleEmitter.md#lightinfluence)**(): `number` <Badge type="tip" text="client" />  |
 | 光照影响|
 | **[maskRadius](mw.ParticleEmitter.md#maskradius)**(): `number` <Badge type="tip" text="client" />  |
 | 遮罩半径|
+| **[orientation](mw.ParticleEmitter.md#orientation)**(): [`ParticleEmitterOrientation`](../enums/mw.ParticleEmitterOrientation.md) <Badge type="tip" text="client" />  |
+| 发射取向/对齐方式|
 | **[rate](mw.ParticleEmitter.md#rate)**(): `number` <Badge type="tip" text="client" />  |
 | 速率（即单位时间生成粒子的数量）|
 | **[rotSpeed](mw.ParticleEmitter.md#rotspeed)**(): [`numberSequencePoint`](mw.numberSequencePoint.md)[] <Badge type="tip" text="client" />  |
@@ -117,7 +119,7 @@ export default class EffectExample extends Script {
 | 形状范围|
 | **[shapeStyle](mw.ParticleEmitter.md#shapestyle)**(): [`ParticleEmitterShapeStyle`](../enums/mw.ParticleEmitterShapeStyle.md) <Badge type="tip" text="client" />  |
 | 形状样式|
-| **[size](mw.ParticleEmitter.md#size)**(): [`numberSequencePoint`](mw.numberSequencePoint.md)[] <Badge type="tip" text="client" />  |
+| **[size](mw.ParticleEmitter.md#size)**(): [`vector2DSequencePoint`](mw.vector2DSequencePoint.md)[] <Badge type="tip" text="client" />  |
 | 获取生命周期内大小变化曲线|
 | **[speed](mw.ParticleEmitter.md#speed)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
 | 初始速度|
@@ -210,8 +212,6 @@ export default class EffectExample extends Script {
 | 获取自定义属性|
 | **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
 | 给定对象属性修改时触发的事件代理|
-| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
 | **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
@@ -302,7 +302,7 @@ export default class EffectExample extends Script {
 
 #### Parameters
 
-| `sequence` [`vectorSequencePoint`](mw.vectorSequencePoint.md)[] | 特效向量值曲线节点数组 |
+| `sequence` [`Vector`](mw.Vector.md)  [`vectorSequencePoint`](mw.vectorSequencePoint.md)[] | 特效向量值曲线节点数组 |
 | :------ | :------ |
 
 
@@ -319,12 +319,12 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **brightness**(): `number` <Badge type="tip" text="client" />
+• `get` **brightness**(): [`numberSequencePoint`](mw.numberSequencePoint.md)[] <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **brightness**(`brightness`): `void` <Badge type="tip" text="client" />
+• `set` **brightness**(`sequence`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -336,7 +336,7 @@ ___
 
 #### Returns
 
-| `number` | 特效的亮度 |
+| [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效的亮度 |
 | :------ | :------ |
 
 
@@ -348,7 +348,7 @@ ___
 
 #### Parameters
 
-| `brightness` `number` | 生成粒子的亮度 |
+| `sequence` `number`  [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 生成粒子的亮度 |
 | :------ | :------ |
 
 
@@ -394,7 +394,7 @@ ___
 
 #### Parameters
 
-| `sequence` [`colorSequencePoint`](mw.colorSequencePoint.md)[] | 特效颜色值曲线节点数组 |
+| `sequence` [`LinearColor`](mw.LinearColor.md)  [`colorSequencePoint`](mw.colorSequencePoint.md)[] | 特效颜色值曲线节点数组 |
 | :------ | :------ |
 
 
@@ -441,6 +441,52 @@ ___
 #### Parameters
 
 | `drag` `number` | 生成粒子所受到的的阻力 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### isLocalSpace <Score text="isLocalSpace" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **isLocalSpace**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **isLocalSpace**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+是否使用局部空间
+
+#### Returns
+
+| `boolean` | 特效的空间计算 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+是否使用局部空间
+
+#### Parameters
+
+| `value` `boolean` | 是否使用局部空间 |
 | :------ | :------ |
 
 
@@ -589,6 +635,52 @@ ___
 
 ___
 
+### orientation <Score text="orientation" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **orientation**(): [`ParticleEmitterOrientation`](../enums/mw.ParticleEmitterOrientation.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **orientation**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+发射取向/对齐方式
+
+#### Returns
+
+| [`ParticleEmitterOrientation`](../enums/mw.ParticleEmitterOrientation.md) | 特效的发射取向 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+发射取向/对齐方式
+
+#### Parameters
+
+| `value` [`ParticleEmitterOrientation`](../enums/mw.ParticleEmitterOrientation.md) | 特效的发射取向 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### rate <Score text="rate" /> 
 
 <table class="get-set-table">
@@ -670,7 +762,7 @@ ___
 
 #### Parameters
 
-| `sequence` [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效标量值曲线节点数组 |
+| `sequence` `number`  [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效标量值曲线节点数组 |
 | :------ | :------ |
 
 
@@ -825,7 +917,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **size**(): [`numberSequencePoint`](mw.numberSequencePoint.md)[] <Badge type="tip" text="client" />
+• `get` **size**(): [`vector2DSequencePoint`](mw.vector2DSequencePoint.md)[] <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
@@ -842,7 +934,7 @@ ___
 
 #### Returns
 
-| [`numberSequencePoint`](mw.numberSequencePoint.md)[] |  |
+| [`vector2DSequencePoint`](mw.vector2DSequencePoint.md)[] |  |
 | :------ | :------ |
 
 
@@ -854,7 +946,7 @@ ___
 
 #### Parameters
 
-| `sequence` [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效标量值曲线节点数组 |
+| `sequence` [`Vector2`](mw.Vector2.md)  [`numberSequencePoint`](mw.numberSequencePoint.md)[]  [`vector2DSequencePoint`](mw.vector2DSequencePoint.md)[] | 特效标量值曲线节点数组 numberSequencePoint传参已废弃，请改用vector2DSequencePoint |
 | :------ | :------ |
 
 
@@ -1021,7 +1113,7 @@ ___
 
 #### Parameters
 
-| `sequence` [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效标量值曲线节点数组 |
+| `sequence` `number`  [`numberSequencePoint`](mw.numberSequencePoint.md)[] | 特效标量值曲线节点数组 |
 | :------ | :------ |
 
 </td>

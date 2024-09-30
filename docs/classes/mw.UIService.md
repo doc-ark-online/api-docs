@@ -8,8 +8,6 @@ UI 管理类
 
 - UIPrefab/世界 UI/屏幕 UI/UI 脚本
 
-![界面](https://cdn.233xyx.com/online/XVi27WrsxLq71701944498622.png)
-
 2. 屏幕 UI 是如何使用并启动的呢？
 
 你有三种方式使用并启动你游戏中的屏幕 UI：

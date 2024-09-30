@@ -6,21 +6,13 @@
 
 -----------------------------
 
-当你想从无到有开始做一个好玩的游戏时，便开始构思要做一个什么样子的游戏，首先游戏内容一定是丰富多彩的，有各种各样的人物、物品和场景等等...如何填充你的游戏内容呢？
-
-1. 如何填充游戏内容？
-
-![Script](https://cdn.233xyx.com/online/Mksjb6ptJ2dg1701241789942.png)
-
-2. 脚本是什么？
+1. 脚本是什么？
 
 挂载的脚本就像是给游戏对象赋予了特殊能力或行为。正如灵魂赋予人类生命和个性一样，脚本赋予游戏对象生命和行为。它们定义了游戏对象的特殊能力、动作模式、智能决策和与玩家的互动方式。
 
 你可以编写脚本来实现角色的控制逻辑，敌人的行为模式，道具的效果，关卡的触发条件等等。通过挂载不同的脚本，你可以赋予对象不同的行为和能力，创造出各种有趣和多样化的游戏。
 
-![Script](https://cdn.233xyx.com/online/G0qhbLnwXxTn1701241805135.png)
-
-3. 脚本的分类
+2. 脚本的分类
 
 可以大致分为两类：
 
@@ -79,13 +71,11 @@ class Student extends Person {
 }
 ```
 
-4. 脚本是如何工作的？
+3. 脚本是如何工作的？
 
 - :mushroom: 继承自 Script 的脚本类。
 
 继承自 Script 的脚本类可以复写 onStart(), onUpdate(), 和 onDestroy() 方法。当你的脚本放在对象管理器中之后，编辑器会自动帮你调用这些函数。
-
-![Script](https://cdn.233xyx.com/online/Qwy7xPkAm45J1701529114891.png)
 
 脚本的生命周期中的 onStart、onUpdate 和 onDestroy 方法可以比喻为一个植物的生长过程：
 
@@ -105,7 +95,7 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 
 ## Hierarchy
 
-- `Base`
+- [`Base`](mw.Base.md)
 
   ↳ **`Script`**
 
@@ -114,6 +104,15 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 ## Table of contents
 
 ### Properties <Score text="Properties" /> 
+
+
+::: details click
+### Properties <Score text="Properties" /> 
+| **[onPropertyChange](mw.Base.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
+| :-----|
+| 监听系统属性同步事件|
+:::
+
 
 ### Accessors <Score text="Accessors" /> 
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)   |
@@ -134,6 +133,15 @@ onDestroy 植物的凋谢和结束阶段。当游戏对象被销毁或从场景�
 | 生命周期函数 - 脚本开始执行时调用|
 | **[onUpdate](mw.Script.md#onupdate)**(`dt`: `number`): `void`   |
 | 生命周期函数 - 每帧执行函数|
+
+
+::: details click
+### Methods <Score text="Methods" /> 
+| **[getPropertyChangeDelegate](mw.Base.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
+| :-----|
+| 给定对象属性修改时触发的事件代理|
+:::
+
 
 ## Properties
 

@@ -19,6 +19,7 @@ Classes
 | [Animation](classes/mw.Animation.md) | 动画 | [动画](groups/动画.动画.md) |
 | [AssetIconData](classes/mw.AssetIconData.md) | 资源 icon 信息 | [界面](groups/界面.界面.md) |
 | [AssetUtil](classes/mw.AssetUtil.md) | 资源管理工具 | [工具](groups/工具.工具.md) |
+| [AvatarEditorService](classes/mw.AvatarEditorService.md) | Avatar商城的应用内购服务 | [服务](groups/服务.服务.md) |
 | [AvatarSettings](classes/mw.AvatarSettings.md) | 控制一些优化项的开启关闭 | [设置](groups/设置.设置.md) |
 
 
@@ -28,6 +29,7 @@ Classes
 | [BagItemUI](classes/mwext.BagItemUI.md) | 背包道具父类,继承这个类来实现自己的道具格子界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
 | [BagModule](classes/mwext.BagModule.md) | 背包实例 | [拓展](groups/拓展.拓展.md) |
 | [BagUI](classes/mwext.BagUI.md) | 背包界面父类,继承这个类来实现自己的背包界面，使用BagModule.skin来指定皮肤 | [拓展](groups/拓展.拓展.md) |
+| [Base](classes/mw.Base.md) | GameObject和Script的基类，定义基础能力 | [基类](groups/基类.基类.md) |
 | [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [拓展](groups/拓展.拓展.md) |
 | [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [拓展](groups/拓展.拓展.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区 | [玩法](groups/玩法.玩法.md) |
@@ -96,6 +98,7 @@ Classes
 | [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [基类](groups/基类.基类.md) |
 | [GameObject](classes/mw.GameObject.md) | 场景中所有实体的基类 | [基类](groups/基类.基类.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [界面](groups/界面.界面.md) |
+| [GestureDelegate](classes/mw.GestureDelegate.md) | 手势代理类 | [输入](groups/输入.输入.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [设置](groups/设置.设置.md) |
 
 
@@ -181,6 +184,7 @@ Classes
 ## N
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [NavLink](classes/mw.NavLink.md) | 寻路链接 | [玩法](groups/玩法.玩法.md) |
 | [NavModifierVolume](classes/mw.NavModifierVolume.md) | 寻路动态修饰区 | [玩法](groups/玩法.玩法.md) |
 | [Navigation](classes/mw.Navigation.md) | 寻路 | [玩法](groups/玩法.玩法.md) |
 
@@ -237,10 +241,12 @@ Classes
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [界面](groups/界面.界面.md) |
 | [ScrollbarStyle](classes/mw.ScrollbarStyle.md) | 滚动条风格类型 | [界面](groups/界面.界面.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 描边绘制工具 | [工具](groups/工具.工具.md) |
+| [SettingService](classes/mw.SettingService.md) | 设置面板相关API | [设置](groups/设置.设置.md) |
 | [Skybox](classes/mw.Skybox.md) | 天空盒 | [场景](groups/场景.场景.md) |
 | [SlateColor](classes/mw.SlateColor.md) | 颜色管理 | [界面](groups/界面.界面.md) |
 | [Sound](classes/mw.Sound.md) | 音效 | [场景](groups/场景.场景.md) |
 | [SoundService](classes/mw.SoundService.md) | 音效管理器 | [场景](groups/场景.场景.md) |
+| [Spline](classes/mw.Spline.md) | 样条线 | [玩法](groups/玩法.玩法.md) |
 | [SpringArm](classes/mw.SpringArm.md) | 弹簧臂 | [玩法](groups/玩法.玩法.md) |
 | [StaleButton](classes/mw.StaleButton.md) | 文本按钮 | [界面](groups/界面.界面.md) |
 | [Stance](classes/mw.Stance.md) | 基础姿态 | [动画](groups/动画.动画.md) |
@@ -282,7 +288,6 @@ Classes
 | [UIScript](classes/mw.UIScript.md) | UI 的驱动脚本基类 | [界面](groups/界面.界面.md) |
 | [UIService](classes/mw.UIService.md) | UI 管理类 | [界面](groups/界面.界面.md) |
 | [UITransform](classes/mw.UITransform.md) | Transform | [界面](groups/界面.界面.md) |
-| [UIWidget](classes/mw.UIWidget.md) | 世界 UI | [界面](groups/界面.界面.md) |
 | [UserWidget](classes/mw.UserWidget.md) | 自定义控件 | [界面](groups/界面.界面.md) |
 
 
@@ -301,6 +306,7 @@ Classes
 | [WaterVolume](classes/mw.WaterVolume.md) | 水体区域 | [玩法](groups/玩法.玩法.md) |
 | [Widget](classes/mw.Widget.md) | 控件的基类 | [界面](groups/界面.界面.md) |
 | [WindowUtil](classes/mw.WindowUtil.md) | 窗口设置工具。 | [工具](groups/工具.工具.md) |
+| [WorldUI](classes/mw.WorldUI.md) | 世界 UI | [界面](groups/界面.界面.md) |
 
 
 ## c
@@ -318,5 +324,6 @@ Classes
 ## v
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [vectorSequencePoint](classes/mw.vectorSequencePoint.md) | 特效向量值曲线节点 | [场景](groups/场景.场景.md) |
+| [vector2DSequencePoint](classes/mw.vector2DSequencePoint.md) | 特效二维向量值曲线节点 | [场景](groups/场景.场景.md) |
+| [vectorSequencePoint](classes/mw.vectorSequencePoint.md) | 特效三维向量值曲线节点 | [场景](groups/场景.场景.md) |
 

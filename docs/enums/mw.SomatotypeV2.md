@@ -40,6 +40,9 @@ ___
 
 • **CartoonyFemale** = ``8``
 
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
 美卡女性
 
 ___
@@ -48,6 +51,9 @@ ___
 
 • **CartoonyMale** = ``7``
 
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
 美卡男性
 
 ___
@@ -56,7 +62,10 @@ ___
 
 • **LowpolyAdultFemale** = ``4``
 
-Lowpoly成年女性
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
+ Lowpoly成年女性
 
 ___
 
@@ -64,7 +73,10 @@ ___
 
 • **LowpolyAdultMale** = ``3``
 
-Lowpoly成年男性
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
+ Lowpoly成年男性
 
 ___
 
@@ -80,6 +92,9 @@ ___
 
 • **RealisticAdultFemale** = ``6``
 
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
 写实成年女性
 
 ___
@@ -88,4 +103,7 @@ ___
 
 • **RealisticAdultMale** = ``5``
 
+**`Deprecated`**
+
+info:该枚举已废弃，在该枚举被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:040 reason:下架此风格 replacement:用现存风格替换
 写实成年男性

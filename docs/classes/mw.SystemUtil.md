@@ -104,7 +104,7 @@ ___
 
 ::: warning Precautions
 
-只在233悬浮球退出和PIE关闭窗口时生效。悬浮球退出会计时5s，5s后会强制杀进程.
+只在App悬浮球退出和PIE关闭窗口时生效。悬浮球退出会计时5s，5s后会强制杀进程.
 
 :::
 
@@ -317,7 +317,7 @@ ___
 
 #### Returns
 
-| `string` | 当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza) |
+| `string` | 当前环境 |
 | :------ | :------ |
 
 <span style="font-size: 14px;">

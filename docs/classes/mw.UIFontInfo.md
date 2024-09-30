@@ -10,6 +10,10 @@
 | **[contentColor](mw.UIFontInfo.md#contentcolor)**: [`LinearColor`](mw.LinearColor.md)  |
 | :-----|
 | 内容颜色|
+| **[defaultFontFamily](mw.UIFontInfo.md#defaultfontfamily)**: [`UIFontFamily`](../enums/mw.UIFontFamily.md)  |
+| 默认字体|
+| **[fallbackFontFamily](mw.UIFontInfo.md#fallbackfontfamily)**: [`UIFontFamily`](../enums/mw.UIFontFamily.md)  |
+| 退却字体|
 | **[fontSize](mw.UIFontInfo.md#fontsize)**: `number`  |
 | 大小|
 | **[glyph](mw.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/mw.UIFontGlyph.md)  |
@@ -42,6 +46,22 @@
 • **contentColor**: [`LinearColor`](mw.LinearColor.md)
 
 内容颜色
+
+___
+
+### defaultFontFamily <Score text="defaultFontFamily" /> 
+
+• **defaultFontFamily**: [`UIFontFamily`](../enums/mw.UIFontFamily.md)
+
+默认字体
+
+___
+
+### fallbackFontFamily <Score text="fallbackFontFamily" /> 
+
+• **fallbackFontFamily**: [`UIFontFamily`](../enums/mw.UIFontFamily.md)
+
+退却字体
 
 ___
 

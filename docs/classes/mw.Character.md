@@ -10,8 +10,6 @@
 
 角色是指代表玩家游戏实体。它是游戏中能够在虚拟世界中移动、与环境和其他角色进行交互的主要对象。可以将 Character 看作是游戏中的角色扮演者，它可以是玩家控制的角色或由游戏系统控制的角色。
 
-![角色](https://cdn.233xyx.com/online/V9WvFIuNOivQ1701245655341.gif)
-
 角色具备哪些功能？
 
 移动和交互。Character 具备在游戏世界中移动和与环境进行交互的能力。它可以行走、跑动、跳跃或飞行等，根据游戏规则和角色设计的不同， Character 可以执行各种动作。
@@ -22,15 +20,11 @@
 
 1. 控制角色移动：你可以使用它来指定角色的移动速度、方向和加速度等参数。它允许你以编程的方式控制角色的运动，例如让角色向前移动、旋转或跳跃等。并支持多种移动方式：例如，它可以实现直线运动、旋转、跳跃、游泳、蹲伏和飞行等。根据你的游戏需求，你可以选择合适的移动方式，并使用对应接口来实现。
 
-![角色](https://cdn.233xyx.com/online/Zt8eV42ByG9u1701244956943.png)
-
 2. 处理物理模拟与碰撞：它可以使用物理引擎来模拟角色的重力、碰撞和惯性等效果。通过物理模拟，角色可以与游戏世界中的其他对象进行交互，并受到合理的物理影响。执行碰撞检测：它可以检测角色与墙壁、地面或其他角色的碰撞，并采取相应的行动。这有助于实现更真实和可靠的角色移动和交互。
 
 3. 处理角色外观：可以给角色赋予各种各样的外貌。为角色选择合适的服装、装备和特征。无论是超级英雄的紧身服、中世纪骑士的盔甲还是未来战士的高科技装备，感受到角色的独特风格和个性。
 
 4. 实现生动的动画：还能赋予角色生动的动画效果。能够让角色在游戏中跳跃、奔跑、战斗，甚至是展现出各种特殊技能和动作。
-
-![角色](https://cdn.233xyx.com/online/17KojkcDWZuD1702177797656.png)
 
 其中比较重要的：
 
@@ -49,7 +43,7 @@
  export default class NewExample extends Script {
      protected onStart(): void {
          GameObject.asyncSpawn<Model>("183107",{transform: new Transform(new Vector(100,0,0),new Rotation(0,0,0),new Vector(1,1,1))}).then(()=>{
-             console.log("233娘 success！");
+             console.log("character spawn success！");
          });
      }
 }
@@ -158,7 +152,7 @@
 | 获取角色单层透明度|
 | **[outOfWaterVerticalSpeed](mw.Character.md#outofwaterverticalspeed)**(): `number`   |
 | 出水时垂直方向速度|
-| **[overheadUI](mw.Character.md#overheadui)**(): [`UIWidget`](mw.UIWidget.md) <Badge type="tip" text="client" />  |
+| **[overheadUI](mw.Character.md#overheadui)**(): [`UIWidget`](Core.mw.UIWidget.md) <Badge type="tip" text="client" />  |
 | 获取角色头顶名字的界面|
 | **[physicsEnabled](mw.Character.md#physicsenabled)**(): `boolean`  |
 | 获取角色物理模拟状态|
@@ -192,7 +186,7 @@
 | 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
 | 沿着给定的方向向量添加移动输入\|
-| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
+| **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)): `void`   |
 | 将物体附着到人物角色的指定插槽\|
 | **[cancelHeadFollow](mw.Character.md#cancelheadfollow)**(): `void` <Badge type="tip" text="client" />  |
 | 取消头部追踪|
@@ -204,6 +198,8 @@
 | 将角色插槽附着的对象全部分离\|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 将物体从插槽中分离|
+| **[getAttachmentsFromSlot](mw.Character.md#getattachmentsfromslot)**(`slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)): [`GameObject`](mw.GameObject.md)[]   |
+| 获取附着到人物角色指定插槽的所有物体\|
 | **[getCenterVertexByMorphName](mw.Character.md#getcentervertexbymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)   |
 | 通过头部模型MorphName实时获取中心顶点位置|
 | **[getCurrentState](mw.Character.md#getcurrentstate)**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md)   |
@@ -4124,7 +4120,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **overheadUI**(): [`UIWidget`](mw.UIWidget.md) <Badge type="tip" text="client" />
+• `get` **overheadUI**(): [`UIWidget`](Core.mw.UIWidget.md) <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -4137,7 +4133,7 @@ ___
 
 #### Returns
 
-| [`UIWidget`](mw.UIWidget.md) | 头顶UIWidget对象 |
+| [`UIWidget`](Core.mw.UIWidget.md) | 头顶UIWidget对象 |
 | :------ | :------ |
 
 </td>
@@ -4826,7 +4822,7 @@ ___
 
 | `gameObject` [`GameObject`](mw.GameObject.md) |  被附着的物体 |
 | :------ | :------ |
-| `slotName` [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
+| `slotName` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
 
 
 
@@ -5186,6 +5182,97 @@ export default class Example_Character_DetachFromSlot extends Script {
                 }
             });
         }
+    }
+}
+```
+
+___
+
+### getAttachmentsFromSlot <Score text="getAttachmentsFromSlot" /> 
+
+• **getAttachmentsFromSlot**(`slotName`): [`GameObject`](mw.GameObject.md)[] 
+
+获取附着到人物角色指定插槽的所有物体\
+
+#### Parameters
+
+| `slotName` [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)  [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md) |  插槽名字，被附着到指定的插槽名 |
+| :------ | :------ |
+
+#### Returns
+
+| [`GameObject`](mw.GameObject.md)[] |  |
+| :------ | :------ |
+只适用于人形角色，附加规则是 KeepRelative，会保留物体之前的 localTransform
+
+<span style="font-size: 14px;">
+使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_AttachToSlot"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下：
+</span>
+
+```ts
+@Component
+export default class Example_Character_AttachToSlot extends Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myPlayer = Player.localPlayer;
+            // 获取当前玩家控制的角色
+            let myCharacter = myPlayer.character;
+            let halo = null;
+            // 添加一个按键方法：按下键盘“1”，添加 / 移除角色的头顶光环
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(halo) {
+                    myCharacter.detachFromSlot(halo);
+                    setTimeout(() => {
+                        halo.destroy();
+                        halo = null;
+                    }, 1000);
+                } else {
+                    // 在角色头顶生成一个光环并附加到头顶插槽
+                    halo = GameObject.spawn("27704") as Effect;
+                    myCharacter.attachToSlot(halo, HumanoidSlotType.Rings);
+                    halo.play();
+                }
+            });
+            // 生成三件装备
+            let sword = GameObject.spawn("29052",{transform: new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one)});
+            let shield = GameObject.spawn("118149",{transform: new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one)});
+            let spike = GameObject.spawn("122953",{transform: new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one)});
+            // 添加一个按键方法：按下键盘“2”，给角色插槽增加装备
+            InputUtil.onKeyDown(Keys.Two, () => {
+                myCharacter.attachToSlot(sword, HumanoidSlotType.RightHand);
+                myCharacter.attachToSlot(shield, HumanoidSlotType.LeftHand);
+                myCharacter.attachToSlot(spike, HumanoidSlotType.LeftBack);
+            });
+            // 添加一个按键方法：按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除
+            InputUtil.onKeyDown(Keys.Three, () => {
+                myCharacter.detachAllFromSlot();
+                sword.worldTransform = new Transform(new Vector(300, -100, 100), Rotation.zero, Vector.one);
+                shield.worldTransform = new Transform(new Vector(300, 0, 100), Rotation.zero, Vector.one);
+                spike.worldTransform = new Transform(new Vector(300, 100, 100), Rotation.zero, Vector.one);
+            });
+            // 添加一个按键方法：按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效
+            InputUtil.onKeyDown(Keys.Four, () => {
+                let pos = myCharacter.getVertexPosition(0);
+                if(pos) {
+                    let zzz = GameObject.spawn("26168") as Effect;
+                    zzz.worldTransform.position = pos;
+                    zzz.play(() => {
+                        zzz.destroy();
+                    });
+                }
+                pos = myCharacter.getSlotWorldPosition(HumanoidSlotType.Rings);
+                if(pos) {
+                    let zzz = GameObject.spawn("26168") as Effect;
+                    zzz.worldTransform.position = pos;
+                    zzz.play(() => {
+                        zzz.destroy();
+                    });
+                }
+            });
+        }get
     }
 }
 ```
