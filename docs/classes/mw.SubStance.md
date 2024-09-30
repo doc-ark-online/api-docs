@@ -128,15 +128,6 @@ ___
 
 姿态的混合模式
 
-::: warning Precautions
-
-姿态的播放位置(上半身, 下半身, 全身), 对正在播放的姿态修改时无效.
-如果这个姿态是通过预制姿态资源GUID创建的, 那么它的默认值会自动从资源上获取;
-如果是通过动画资源GUID创建的, 那么它的默认值为StanceBlendMode.WholeBody.
-
-:::
-
-
 #### Returns
 
 | [`StanceBlendMode`](../enums/mw.StanceBlendMode.md) |  |
@@ -167,47 +158,6 @@ ___
 </tr></tbody>
 </table>
 
-<span style="font-size: 14px;">
-使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态，按下键盘“1”， 切换播放瞄准姿态和踢腿姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放姿态。代码如下：
-</span>
-
-```ts
-@Component
-export default class Example_SubStance_BlendMode extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端玩家
-            let myPlayer = Player.localPlayer;
-            // 获取玩家控制角色
-            let myCharacter = myPlayer.character;
-            // 给角色加载仅上半身瞄准姿态
-            let aimStance = myCharacter.loadSubStance("94261");
-            aimStance.blendMode = StanceBlendMode.BlendUpper;
-            console.log("aimStance assetId " + aimStance.assetId);
-            // 给角色加载仅下半身踢腿姿态
-            let kickStance = myCharacter.loadSubStance("14520");
-            kickStance.blendMode = StanceBlendMode.BlendLower;
-            console.log("kickStance assetId " + kickStance.assetId);
-            // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(myCharacter.currentSubStance == aimStance) {
-                    kickStance.play();
-                } else {
-                    aimStance.play();
-                }
-            });
-            // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Keys.Two, () => {
-                if(myCharacter.currentSubStance) {
-                    myCharacter.currentSubStance.stop();
-                }
-            });
-        }
-    }
-}
-```
 <span style="font-size: 14px;">
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态，按下键盘“1”， 切换播放瞄准姿态和踢腿姿态。你将在场景中看到角色不同姿态的效果。按下键盘“2”， 停止播放姿态。代码如下：
 </span>
