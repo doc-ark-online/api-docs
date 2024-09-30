@@ -175,7 +175,7 @@ export default class TeleportScript extends Script {
                     })
                 }, 5 * 1000);
             });
-
+```
 #### Parameters
 
 | `roomId` `string` | 要传送的目标游戏Id |
@@ -218,7 +218,7 @@ ___
 使用示例:在编辑器中创建了一个名为"Scene1"的场景。创建一个名为"TeleportScript"的脚本，放在场景中，设置为双端。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class TeleportScript extends Script {
     protected onStart(): void {
@@ -275,7 +275,7 @@ export default class TeleportScript extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -299,7 +299,7 @@ ___
 使用示例:创建一个名为"ServerScript"的脚本，放在场景中。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class Server extends Script {
     protected onStart(): void {
@@ -320,7 +320,7 @@ export default class Server extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -344,7 +344,7 @@ ___
 使用示例:创建一个名为"ServerScript"的脚本，放在场景中。代码如下：
 </span>
 
-```
+```ts
 @Component
 export default class Server extends Script {
     protected onStart(): void {
@@ -363,4 +363,4 @@ export default class Server extends Script {
         }
     }
 }
-```ts
+```
