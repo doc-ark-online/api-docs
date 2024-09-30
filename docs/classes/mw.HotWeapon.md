@@ -975,37 +975,6 @@ ___
 如果想将武器装备在角色身上，需要在服务端调用此函数。客户端调用不会报错，但不生效。
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为"HotWeaponSample"的脚本，放置在对象管理器中热武器对象子级，并选择一个武器资源放置在热武器子级（记得打开武器资源属性面板，设置碰撞为关闭碰撞）。打开脚本，输入以下代码保存，运行游戏，按E键，一个热武器装备到角色右手上，代码如下：
-</span>
-
-```ts
-@Component
-export default class HotWeaponSample extends Script {
-    protected onStart(): void {
-
-       const hotWeapon = this.gameObject as HotWeapon;
-
-       if (SystemUtil.isServer()) {
-           mw.Event.addClientListener("weaponEquipment", (player) => {
-               // 目前装备方法只能在服务端调用
-               hotWeapon.equip(player.character, HumanoidSlotType.RightHand);
-           });
-       }
-
-       if (SystemUtil.isClient()) {
-           // 装备
-           InputUtil.onKeyDown(Keys.One, () => {
-               mw.Event.dispatchToServer("weaponEquipment");
-           });
-           InputUtil.onKeyDown(Keys.Two, () => {
-               hotWeapon.unequip();
-           });
-       }
-    }
-}
-```
-
-<span style="font-size: 14px;">
 使用示例: 创建一个名为"HotWeaponSample"的脚本，打开脚本，输入以下代码保存，此示例为动态加载热武器与武器模型资源，不需要在右侧栏配置，运行游戏，一个热武器装备到角色右手上，代码如下：
 </span>
 
