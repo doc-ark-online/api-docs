@@ -7,12 +7,12 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[addFriend](mw.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`, `reason`: `string`): `void`   |
+| **[addFriend](mw.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`, `reason`: `string`): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 向233发起addFriend并获得回调|
 | **[applySharedId](mw.AccountService.md#applysharedid)**(`character`: [`Character`](mw.Character.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 应用分享Id的角色数据|
-| **[checkVIP](mw.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void`   |
+| **[checkVIP](mw.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 发起checkVIP并获得回调，查询玩家的vip信息|
 | **[createSharedId](mw.AccountService.md#createsharedid)**(`character`: [`Character`](mw.Character.md), `callback`: [`StringResponse`](../modules/Core.mw.md#stringresponse)): `void` <Badge type="tip" text="client" />  |
 | 生成分享Id|
@@ -28,9 +28,9 @@
 | 获取用户存储在服务器上的角色形象数据|
 | **[getUserId](mw.AccountService.md#getuserid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取平台的用户Id,可以用于getUserData接口|
-| **[getUserInfo](mw.AccountService.md#getuserinfo)**(`userId`: `string`, `gameId`: `string`, `callback`: (`nickname`: `string`, `gender`: `number`) => `void`): `void`   |
+| **[getUserInfo](mw.AccountService.md#getuserinfo)**(`userId`: `string`, `gameId`: `string`, `callback`: (`nickname`: `string`, `gender`: `number`) => `void`): `void` <Badge type="tip" text="client" />  |
 | 发起getUserInfo并获得回调，查询玩家的昵称、性别|
-| **[isFriend](mw.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void`   |
+| **[isFriend](mw.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void` <Badge type="tip" text="client" />  |
 | 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 将角色形象数据应用至角色|
@@ -41,7 +41,7 @@
 
 ### addFriend <Score text="addFriend" /> 
 
-• `Static` **addFriend**(`resp`, `userId`, `reason`): `void` 
+• `Static` **addFriend**(`resp`, `userId`, `reason`): `void` <Badge type="tip" text="client" />
 
 向233发起addFriend并获得回调
 
@@ -49,13 +49,14 @@
 
 | `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
 | :------ | :------ |
-| `userId` `string` | 要加的玩家UserId |
-| `reason` `string` | 申请理由 |
+| `userId` `string` | 要加的玩家UserId range: 无 |
+| `reason` `string` | 申请理由 range: 无 |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+1. 只在移动端生效
+2. 查询的目标玩家需要和当前玩家在同一房间。否则返回的数据会是"参数格式不正确"。
 
 :::
 
@@ -79,17 +80,24 @@ ___
 
 ### checkVIP <Score text="checkVIP" /> 
 
-• `Static` **checkVIP**(`userId`, `gameId`, `callback`): `void` 
+• `Static` **checkVIP**(`userId`, `gameId`, `callback`): `void` <Badge type="tip" text="client" />
 
 发起checkVIP并获得回调，查询玩家的vip信息
 
 #### Parameters
 
-| `userId` `string` | 玩家UserId |
+| `userId` `string` | 玩家UserId range: 无 |
 | :------ | :------ |
-| `gameId` `string` | GameId |
+| `gameId` `string` | GameId range: 无 |
 | `callback` (`result`: `string`) => `void` | 返回 result，玩家的vip是否正常 |
 
+
+::: warning Precautions
+
+1. 只在移动端生效
+2. 查询的目标玩家需要和当前玩家在同一房间。否则返回的数据会是"参数格式不正确"。
+
+:::
 
 ___
 
@@ -325,36 +333,44 @@ ___
 
 ### getUserInfo <Score text="getUserInfo" /> 
 
-• `Static` **getUserInfo**(`userId`, `gameId`, `callback`): `void` 
+• `Static` **getUserInfo**(`userId`, `gameId`, `callback`): `void` <Badge type="tip" text="client" />
 
 发起getUserInfo并获得回调，查询玩家的昵称、性别
 
 #### Parameters
 
-| `userId` `string` | 玩家UserId |
+| `userId` `string` | 玩家UserId range: 无 |
 | :------ | :------ |
-| `gameId` `string` | GameId |
+| `gameId` `string` | GameId range: 无 |
 | `callback` (`nickname`: `string`, `gender`: `number`) => `void` | 返回 nickname(string) 和 gender(number) |
 
+
+::: warning Precautions
+
+1. 只在移动端生效
+2. 查询的目标玩家需要和当前玩家在同一房间。否则返回的数据会是"参数格式不正确"。
+
+:::
 
 ___
 
 ### isFriend <Score text="isFriend" /> 
 
-• `Static` **isFriend**(`resp`, `userId`): `void` 
+• `Static` **isFriend**(`resp`, `userId`): `void` <Badge type="tip" text="client" />
 
 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看
 
 #### Parameters
 
-| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+| `resp` [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | GameService的回调。在收到结果时会触发该回调，参数含义如下： - isSuccess - 正常获取到了查询结果即为true，并不代表为好友关系。false表示请求出错。 - jsonData - 当userId对应的角色和当前玩家不在同一房间，返回值为"参数格式不正确"； 当userId对应的角色和当前玩家在同一房间，且互为好友，返回值为"true"； 当userId对应的角色和当前玩家在同一房间，不为好友，返回值为"false"； |
 | :------ | :------ |
-| `userId` `string` | 要确定的玩家UserId |
+| `userId` `string` | 要确定的玩家UserId range: 无 |
 
 
 ::: warning Precautions
 
-只在移动端由233拉起生效
+1. 只在移动端生效
+2. 查询的目标玩家需要和当前玩家在同一房间。否则返回的数据会是"参数格式不正确"。
 
 :::
 
