@@ -961,6 +961,7 @@ ___
          }
      }
  }
+```
 
 ___
 
@@ -996,7 +997,7 @@ ___
 使用示例:创建一个脚本放置在对象栏中，在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存，运行游戏，场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下：
 </span>
 
-```
+```ts
  @Component
  export default class Example_ObjectLauncher_OnHomingFail extends Script {
 
@@ -1049,4 +1050,4 @@ ___
          }
      }
  }
-```ts
+```
