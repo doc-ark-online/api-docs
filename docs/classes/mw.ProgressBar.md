@@ -41,7 +41,7 @@
 | 获取当前值|
 | **[fillImageColor](mw.ProgressBar.md#fillimagecolor)**(): `Readonly`<[`LinearColor`](mw.LinearColor.md)\> <Badge type="tip" text="client" />  |
 | 获取填充图片颜色|
-| **[fillImageDrawType](mw.ProgressBar.md#fillimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="other" />  |
+| **[fillImageDrawType](mw.ProgressBar.md#fillimagedrawtype)**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />  |
 | 获取填充图片绘制类型|
 | **[fillImageGuid](mw.ProgressBar.md#fillimageguid)**(): `string` <Badge type="tip" text="client" />  |
 | 获取填充区图片id|
@@ -571,7 +571,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **fillImageDrawType**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="other" />
+• `get` **fillImageDrawType**(): `Readonly`<[`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)\> <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
