@@ -40,8 +40,10 @@ export default class SkyboxExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
+| **[affectedByFog](mw.Skybox.md#affectedbyfog)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
+| 设置是否受环境雾影响|
+| **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取云颜色|
 | **[cloudDensity](mw.Skybox.md#clouddensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取云密度|
@@ -59,6 +61,8 @@ export default class SkyboxExample extends mw.Script {
 | 获取扰动开关|
 | **[disturbanceIntensity](mw.Skybox.md#disturbanceintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取扰动强度|
+| **[layerDisturbanceEnabled](mw.Skybox.md#layerdisturbanceenabled)**(): `boolean` <Badge type="tip" text="client" />  |
+| 设置是否开启分层扰动|
 | **[moonColor](mw.Skybox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取月亮颜色|
 | **[moonIntensity](mw.Skybox.md#moonintensity)**(): `number` <Badge type="tip" text="client" />  |
@@ -69,8 +73,12 @@ export default class SkyboxExample extends mw.Script {
 | 获取月亮贴图ID|
 | **[moonVisible](mw.Skybox.md#moonvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启月亮|
+| **[pitchAngle](mw.Skybox.md#pitchangle)**(): `number` <Badge type="tip" text="client" />  |
+| 获取天空盒贴图pitch旋转（度）|
 | **[preset](mw.Skybox.md#preset)**(): [`SkyPreset`](../enums/mw.SkyPreset.md) <Badge type="tip" text="client" />  |
 | 获取预设|
+| **[rollAngle](mw.Skybox.md#rollangle)**(): `number` <Badge type="tip" text="client" />  |
+| 获取天空盒贴图roll旋转（度）|
 | **[skyDomeBaseColor](mw.Skybox.md#skydomebasecolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取天空盒颜色|
 | **[skyDomeBottomColor](mw.Skybox.md#skydomebottomcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
@@ -87,6 +95,8 @@ export default class SkyboxExample extends mw.Script {
 | 获取天空盒贴图资源ID|
 | **[skyDomeTopColor](mw.Skybox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取天空顶层颜色|
+| **[skyboxRotation](mw.Skybox.md#skyboxrotation)**(): [`Rotation`](mw.Rotation.md) <Badge type="tip" text="client" />  |
+| 获取天空球旋转|
 | **[starDensity](mw.Skybox.md#stardensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取星星密度|
 | **[starIntensity](mw.Skybox.md#starintensity)**(): `number` <Badge type="tip" text="client" />  |
@@ -106,7 +116,7 @@ export default class SkyboxExample extends mw.Script {
 | **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取是否开启太阳|
 | **[yawAngle](mw.Skybox.md#yawangle)**(): `number` <Badge type="tip" text="client" />  |
-| 获取天空盒贴图旋转（度）|
+| 获取天空盒贴图yaw旋转（度）|
 
 ### Methods <Score text="Methods" /> 
 | **[refresh](mw.Skybox.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
@@ -116,6 +126,52 @@ export default class SkyboxExample extends mw.Script {
 | 重置为默认参数|
 
 ## Accessors
+
+### affectedByFog <Score text="affectedByFog" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **affectedByFog**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **affectedByFog**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+设置是否受环境雾影响
+
+#### Returns
+
+| `boolean` | 是否受环境雾影响 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否受环境雾影响
+
+#### Parameters
+
+| `value` `boolean` | 是否受环境雾影响 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
 
 ### cloudColor <Score text="cloudColor" /> 
 
@@ -531,6 +587,52 @@ ___
 
 ___
 
+### layerDisturbanceEnabled <Score text="layerDisturbanceEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **layerDisturbanceEnabled**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **layerDisturbanceEnabled**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+设置是否开启分层扰动
+
+#### Returns
+
+| `boolean` | 是否开启分层扰动 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否开启分层扰动
+
+#### Parameters
+
+| `value` `boolean` | 是否开启分层扰动 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### moonColor <Score text="moonColor" /> 
 
 <table class="get-set-table">
@@ -761,6 +863,52 @@ ___
 
 ___
 
+### pitchAngle <Score text="pitchAngle" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **pitchAngle**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **pitchAngle**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取天空盒贴图pitch旋转（度）
+
+#### Returns
+
+| `number` | 天空盒贴图旋转 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置天空盒贴图pitch旋转（度）
+
+#### Parameters
+
+| `value` `number` | 天空盒贴图旋转度(0~360) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### preset <Score text="preset" /> 
 
 <table class="get-set-table">
@@ -797,6 +945,52 @@ ___
 #### Parameters
 
 | `NewPreset` [`SkyPreset`](../enums/mw.SkyPreset.md) | 预设枚举 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### rollAngle <Score text="rollAngle" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **rollAngle**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **rollAngle**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取天空盒贴图roll旋转（度）
+
+#### Returns
+
+| `number` | 天空盒贴图旋转 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置天空盒贴图roll旋转（度）
+
+#### Parameters
+
+| `value` `number` | 天空盒贴图旋转度(0~360) |
 | :------ | :------ |
 
 
@@ -1165,6 +1359,52 @@ ___
 #### Parameters
 
 | `value` [`LinearColor`](mw.LinearColor.md) | 天空顶层颜色值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### skyboxRotation <Score text="skyboxRotation" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **skyboxRotation**(): [`Rotation`](mw.Rotation.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **skyboxRotation**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取天空球旋转
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | 天空球旋转值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置天空球旋转
+
+#### Parameters
+
+| `value` [`Rotation`](mw.Rotation.md) | 天空球旋转值 |
 | :------ | :------ |
 
 
@@ -1608,7 +1848,7 @@ ___
 <td style="text-align: left">
 
 
-获取天空盒贴图旋转（度）
+获取天空盒贴图yaw旋转（度）
 
 #### Returns
 
@@ -1620,11 +1860,11 @@ ___
 <td style="text-align: left">
 
 
-设置天空盒贴图旋转（度）
+设置天空盒贴图yaw旋转（度）
 
 #### Parameters
 
-| `value` `number` | 天空盒贴图旋转度(0~360) |
+| `value` `number` | 天空盒贴图yaw旋转度(0~360) |
 | :------ | :------ |
 
 </td>

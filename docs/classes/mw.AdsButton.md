@@ -16,6 +16,17 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
+
+::: details click
+### Properties <Score text="Properties" /> 
+| **[onCustomPropertyChange](mw.Widget.md#oncustompropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| :-----|
+| 监听自定义属性同步事件|
+:::
+
+
 ### Accessors <Score text="Accessors" /> 
 | **[autoAdjust](mw.AdsButton.md#autoadjust)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
@@ -141,6 +152,12 @@
 | 通过名字查找节点|
 | **[getChildrenCount](mw.Widget.md#getchildrencount)**(): `number` <Badge type="tip" text="client" />  |
 | 获取子节点数量|
+| **[getCustomProperties](mw.Widget.md#getcustomproperties)**(): `string`[] <Badge type="tip" text="client" />  |
+| 获取所有自定义属性|
+| **[getCustomProperty](mw.Widget.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype) <Badge type="tip" text="client" />  |
+| 获取自定义属性|
+| **[getCustomPropertyChangeDelegate](mw.Widget.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| 给定对象属性修改时触发的事件代理|
 | **[invalidateLayoutAndVolatility](mw.Widget.md#invalidatelayoutandvolatility)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻触发重新渲染的和排布计算|
 | **[removeAllChildren](mw.Widget.md#removeallchildren)**(): `void` <Badge type="tip" text="client" />  |
@@ -153,10 +170,14 @@
 | 立刻移除并添加到根节点 可以再使用|
 | **[serialize](mw.Widget.md#serialize)**(): `string` <Badge type="tip" text="client" />  |
 | 序列化UI控件|
+| **[setCustomProperty](mw.Widget.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void` <Badge type="tip" text="client" />  |
+| 设置自定义属性|
 | **[deserialize](mw.Widget.md#deserialize)**(`Data`: `string`, `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 反序列化UI|
 :::
 
+
+## Properties
 
 ## Accessors
 

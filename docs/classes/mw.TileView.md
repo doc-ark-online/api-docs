@@ -12,6 +12,8 @@
 
 ## Table of contents
 
+### Properties <Score text="Properties" /> 
+
 ### Accessors <Score text="Accessors" /> 
 | **[itemHeight](mw.TileView.md#itemheight)**(`[itemHeight](mw.TileView.md#itemheight)`): `void` <Badge type="tip" text="client" />  |
 | :-----|
@@ -33,12 +35,12 @@
 | 返回点击代理|
 | **[onItemHoverChanged](mw.ListView.md#onitemhoverchanged)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md), `hovered`: `boolean`) => `void`\>  |
 | 返回悬停状态改变代理|
-| **[onItemRefreshed](mw.ListView.md#onitemrefreshed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]) => `void`\>  |
+| **[onItemRefreshed](mw.ListView.md#onitemrefreshed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`rowDatas`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md)[]) => `void`\> <Badge type="tip" text="client" />  |
 | 返回UI刷新生成同步代理|
 | **[onItemReleaseShow](mw.ListView.md#onitemreleaseshow)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`targetItem`: [`Widget`](mw.Widget.md)) => `void`\>  |
 | 子控件移除显示时调用，等待复用前|
-| **[onItemSelected](mw.ListView.md#onitemselected)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\>  |
-| 返回选择修改代理|
+| **[onItemSelected](mw.ListView.md#onitemselected)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`selectedItem`: [`ListViewItemDataBase`](mw.ListViewItemDataBase.md), `selectType`: [`SelectInfo`](../enums/mw.SelectInfo.md)) => `void`\> <Badge type="tip" text="client" />  |
+| 返回选择修改代理,取消选中/清空也会触发选中修改，返回参数selectedItem == null, 请注意判断|
 | **[scrollBarStyle](mw.ListView.md#scrollbarstyle)**(): [`ScrollbarStyle`](mw.ScrollbarStyle.md) <Badge type="tip" text="other" />  |
 | 滚动条样式|
 | **[scrollBarVisible](mw.ListView.md#scrollbarvisible)**(): `boolean` <Badge type="tip" text="other" />  |
@@ -90,6 +92,8 @@
 | 创建 ListView 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁|
 :::
 
+
+## Properties
 
 ## Accessors
 

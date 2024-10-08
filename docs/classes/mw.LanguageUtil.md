@@ -7,21 +7,23 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[addKey](mw.LanguageUtil.md#addkey)**(`textkey`: `string`): `string`   |
+| **[addKey](mw.LanguageUtil.md#addkey)**(`textkey`: `string`): `string` <Badge type="tip" text="other" />  |
 | :-----|
 | 多语言标记|
 | **[getDefaultLocale](mw.LanguageUtil.md#getdefaultlocale)**(): `string`   |
 | 获取默认的语言和地区|
-| **[getText](mw.LanguageUtil.md#gettext)**(`textkey`: `string`): `string`   |
+| **[getText](mw.LanguageUtil.md#gettext)**(`textkey`: `string`): `string` <Badge type="tip" text="other" />  |
 | 根据key获取翻译内容|
-| **[setLanguage](mw.LanguageUtil.md#setlanguage)**(`type`: [`LanguageCodeType`](../enums/mw.LanguageCodeType.md)): `boolean`   |
+| **[getlanguage](mw.LanguageUtil.md#getlanguage)**(): [`LanguageCodeType`](../enums/mw.LanguageCodeType.md) <Badge type="tip" text="other" />  |
+| 获取当前本地化语言|
+| **[setLanguage](mw.LanguageUtil.md#setlanguage)**(`type`: [`LanguageCodeType`](../enums/mw.LanguageCodeType.md)): `boolean` <Badge type="tip" text="other" />  |
 | 游戏语言设置|
 
 ## Methods
 
 ### addKey <Score text="addKey" /> 
 
-• `Static` **addKey**(`textkey`): `string` 
+• `Static` **addKey**(`textkey`): `string` <Badge type="tip" text="other" />
 
 多语言标记
 
@@ -73,7 +75,7 @@ ___
 
 ### getText <Score text="getText" /> 
 
-• `Static` **getText**(`textkey`): `string` 
+• `Static` **getText**(`textkey`): `string` <Badge type="tip" text="other" />
 
 根据key获取翻译内容
 
@@ -89,9 +91,22 @@ ___
 
 ___
 
+### getlanguage <Score text="getlanguage" /> 
+
+• `Static` **getlanguage**(): [`LanguageCodeType`](../enums/mw.LanguageCodeType.md) <Badge type="tip" text="other" />
+
+获取当前本地化语言
+
+#### Returns
+
+| [`LanguageCodeType`](../enums/mw.LanguageCodeType.md) | 语言枚举对象 |
+| :------ | :------ |
+
+___
+
 ### setLanguage <Score text="setLanguage" /> 
 
-• `Static` **setLanguage**(`type`): `boolean` 
+• `Static` **setLanguage**(`type`): `boolean` <Badge type="tip" text="other" />
 
 游戏语言设置
 
