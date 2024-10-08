@@ -7,15 +7,15 @@
 ## Table of contents
 
 ### Enumeration Members <Score text="Enumeration" /> 
-| **[Icon\_128px](mw.AssetIconSize.md#icon_128px)** = ``1``  |
+| **[Icon\_128px](mw.AssetIconSize.md#icon_128px)** = ``128``  |
 | :----- |
-| **[Icon\_64px](mw.AssetIconSize.md#icon_64px)** = ``0`` |
+| **[Icon\_64px](mw.AssetIconSize.md#icon_64px)** = ``64`` |
 
 ## Enumeration Members
 
 ### Icon\_128px <Score text="Icon" /> 
 
-• **Icon\_128px** = ``1``
+• **Icon\_128px** = ``128``
 
 128 × 128
 
@@ -23,6 +23,6 @@ ___
 
 ### Icon\_64px <Score text="Icon" /> 
 
-• **Icon\_64px** = ``0``
+• **Icon\_64px** = ``64``
 
 64 × 64

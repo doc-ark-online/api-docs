@@ -154,6 +154,10 @@ class ButtonUI {
 | 初始化UIManger|
 | **[addUILayerMap](mw.UIService.md#adduilayermap)**(`layer`: `number`, `startZOrder`: `number`): `void` <Badge type="tip" text="client" />  |
 | 添加 UI 的管理层|
+| **[asyncCreate](mw.UIService.md#asynccreate)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `Promise`<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\> <Badge type="tip" text="client" />  |
+| 异步创建一个界面,失败返回空|
+| **[asyncShow](mw.UIService.md#asyncshow)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>, `...params`: `any`[]): `Promise`<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\> <Badge type="tip" text="client" />  |
+| 异步显示一个界面，会把界面添加到界面上，从原有父节点移除，失败返回空|
 | **[create](mw.UIService.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <Badge type="tip" text="client" />  |
 | 创建一个界面|
 | **[destroy](mw.UIService.md#destroy)**(): `void` <Badge type="tip" text="client" />  |
@@ -316,6 +320,53 @@ ___
 | :------ | :------ |
 | `startZOrder` `number` | 该层开始的 zOrder range: 不做限制 type:整数 |
 
+
+___
+
+### asyncCreate <Score text="asyncCreate" /> 
+
+• `Static` **asyncCreate**<`T`\>(`PanelClass`): `Promise`<`T`\> <Badge type="tip" text="client" />
+
+异步创建一个界面,失败返回空
+
+#### Parameters
+
+| `PanelClass` () => `T` | 界面的类 |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<`T`\> | 返回创建的UI行为脚本 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
+| :------ | :------ |
+
+___
+
+### asyncShow <Score text="asyncShow" /> 
+
+• `Static` **asyncShow**<`T`\>(`PanelClass`, `...params`): `Promise`<`T`\> <Badge type="tip" text="client" />
+
+异步显示一个界面，会把界面添加到界面上，从原有父节点移除，失败返回空
+
+#### Parameters
+
+| `PanelClass` () => `T` | 界面的类如果类没有UI绑定，会创建一个默认的空UI |
+| :------ | :------ |
+| `...params` `any`[] | 显示参数(这个参数可以传递给界面的onShow方法) |
+
+#### Returns
+
+| `Promise`<`T`\> | 显示的界面 |
+| :------ | :------ |
+
+#### Type parameters
+
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
+| :------ | :------ |
 
 ___
 

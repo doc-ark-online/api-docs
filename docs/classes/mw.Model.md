@@ -107,6 +107,8 @@ export default class ModelExample extends Script {
 | **[angularDamping](mw.Model.md#angulardamping)**(): `number`   |
 | :-----|
 | 角阻尼|
+| **[canAffectNavigation](mw.Model.md#canaffectnavigation)**(): `boolean`  |
+| 获取模型碰撞是否影响动态寻路的导航数据|
 | **[castShadow](mw.Model.md#castshadow)**(): `boolean`   |
 | 获取是否开启阴影|
 | **[centerOfMass](mw.Model.md#centerofmass)**(): [`Vector`](mw.Vector.md)   |
@@ -357,6 +359,52 @@ ___
 #### Parameters
 
 | `value` `number` | 角阻尼大小 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### canAffectNavigation <Score text="canAffectNavigation" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **canAffectNavigation**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **canAffectNavigation**(`bInStatus`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取模型碰撞是否影响动态寻路的导航数据
+
+#### Returns
+
+| `boolean` | 是否影响导航数据 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置模型碰撞是否影响动态寻路的导航数据
+
+#### Parameters
+
+| `bInStatus` `boolean` | 是否影响导航数据 |
 | :------ | :------ |
 
 

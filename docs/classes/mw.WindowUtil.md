@@ -35,11 +35,10 @@ export default class WindowExample extends Script {
 | 用户游戏窗口失焦，显示器当前游戏窗口切出。调用onDefocused。返回一个多播委托类型。可使用多播委托中的Add、remove、clear、broadcast等函数，当出现窗口聚焦时编写你想要的逻辑。|
 | **[onFocus](mw.WindowUtil.md#onfocus)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | 用户游戏窗口聚焦，显示器显示当前游戏窗口。调用onFocused，返回一个多播委托类型。可使用多播委托中的Add、remove、clear、broadcast等函数，当出现窗口聚焦时编写你想要的逻辑。|
+| **[screenSize](mw.WindowUtil.md#screensize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
+| 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
 
 ### Methods <Score text="Methods" /> 
-| **[getViewportSize](mw.WindowUtil.md#getviewportsize)**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />  |
-| :-----|
-| 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
 
 ## Accessors
 
@@ -89,6 +88,9 @@ ___
 
 #### Returns
 
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> |  |
+| :------ | :------ |
+
 </td>
 </tr></tbody>
 </table>
@@ -107,31 +109,44 @@ export default class NewScript extends Script {
      }
  }
 ```
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> |  |
-| :------ | :------ |
+___
 
-## Methods
+### screenSize <Score text="screenSize" /> 
 
-### getViewportSize <Score text="getViewportSize" /> 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
 
-• `Static` **getViewportSize**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+• `Static` `get` **screenSize**(): [`Vector2`](mw.Vector2.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。
 
+此方法仅在客户端调用生效。
+
+
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 返回屏幕的分辨率大小。 |
-| :------ | :------ |
-
-此方法仅在客户端调用生效。
+</td>
+</tr></tbody>
+</table>
 
 <span style="font-size: 14px;">
 使用示例:调用方法
 </span>
 
 ```ts
-let viewportSize = WindowUtil.getViewportSize();
+let viewportSize = WindowUtil.screenSize;
 console.log(`viewportSize ${viewportSize}`);
 
 // 打印输出为：X=1920 Y=1080
 ```
+| [`Vector2`](mw.Vector2.md) | 返回屏幕的分辨率大小。 |
+| :------ | :------ |
+
+## Methods
