@@ -49,7 +49,7 @@
  export default class NewExample extends Script {
      protected onStart(): void {
          GameObject.asyncSpawn<Model>("183107",{transform: new Transform(new Vector(100,0,0),new Rotation(0,0,0),new Vector(1,1,1))}).then(()=>{
-             console.log("233娘 success！");
+             console.log("character spawn success！");
          });
      }
 }
@@ -79,19 +79,19 @@
 | :-----|
 | 获取角色的飞行制动速率|
 | **[brakingDecelerationSwimming](mw.Character.md#brakingdecelerationswimming)**(): `number`   |
-| 获取角色游泳制动速率\|
+| 获取角色游泳制动速率|
 | **[brakingDecelerationWalking](mw.Character.md#brakingdecelerationwalking)**(): `number`   |
-| 设置角色行走制动速率。\|
+| 设置角色行走制动速率。|
 | **[canStandOn](mw.Character.md#canstandon)**(): `boolean`   |
-| 获取角色是否可以被其他玩家站立。\|
+| 获取角色是否可以被其他玩家站立。|
 | **[capsuleCorrectionEnabled](mw.Character.md#capsulecorrectionenabled)**(): `boolean`   |
-| 获取角色当前是否使用胶囊体修正\|
+| 获取角色当前是否使用胶囊体修正|
 | **[characterType](mw.Character.md#charactertype)**(): [`CharacterType`](../enums/mw.CharacterType.md)  |
-| 获取角色是什么类型\|
+| 获取角色是什么类型|
 | **[collisionExtent](mw.Character.md#collisionextent)**(): [`Vector`](mw.Vector.md)   |
-| 获取包裹角色碰撞体的形状大小\|
+| 获取包裹角色碰撞体的形状大小|
 | **[collisionShape](mw.Character.md#collisionshape)**(): [`CustomShapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md)](../enums/mw.CustomShapeType.md)   |
-| 获取角色碰撞形状（胶囊体型、球型、盒型）\|
+| 获取角色碰撞形状（胶囊体型、球型、盒型）|
 | **[collisionWithOtherCharacterEnabled](mw.Character.md#collisionwithothercharacterenabled)**(): `boolean`   |
 | 获取角色当前是否可以与其他角色产生碰撞。|
 | **[complexMovementEnabled](mw.Character.md#complexmovementenabled)**(): `boolean`  |
@@ -105,45 +105,45 @@
 | **[currentSubStance](mw.Character.md#currentsubstance)**(): [`SubStance`](mw.SubStance.md)  |
 | 获取当前正在播放的二级姿态，二级姿态类型为SubStance|
 | **[description](mw.Character.md#description)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 角色外观配置\|
+| 角色外观配置。返回值为 CharacterDescription 类。调用 description 变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。|
 | **[displayName](mw.Character.md#displayname)**(): `string`  |
-| 获取角色名称\|
+| 获取角色名称|
 | **[driftControl](mw.Character.md#driftcontrol)**(): `number`   |
-| 获取角色在空中的灵活度\|
+| 获取角色在空中的灵活度|
 | **[forceUpdateMovement](mw.Character.md#forceupdatemovement)**(`value`: `boolean`): `void`   |
 | 强制更新移动|
 | **[gravityScale](mw.Character.md#gravityscale)**(): `number`   |
-| 获取重力的倍率\|
+| 获取重力的倍率|
 | **[groundFriction](mw.Character.md#groundfriction)**(): `number`   |
 | 获取地面摩檫力|
 | **[groundFrictionEnabled](mw.Character.md#groundfrictionenabled)**(): `boolean`   |
-| 获取单独制动摩擦状态\|
+| 获取单独制动摩擦状态|
 | **[horizontalBrakingDecelerationFalling](mw.Character.md#horizontalbrakingdecelerationfalling)**(): `number`   |
-| 获取角色下落制动速率\|
+| 获取角色下落制动速率|
 | **[isCrouching](mw.Character.md#iscrouching)**(): `boolean`   |
 | 获取角色是否正在蹲下|
 | **[isDescriptionReady](mw.Character.md#isdescriptionready)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取当前角色外观是否准备完毕。\|
+| 获取当前角色外观是否准备完毕。刚进入场景中或角色还未加载出外观衣服等时，isDescriptionReady为false，完全加载完成后变为true。|
 | **[isJumping](mw.Character.md#isjumping)**(): `boolean`   |
 | 获取角色是否正在跳跃|
 | **[isMoving](mw.Character.md#ismoving)**(): `boolean`   |
 | 获取角色是否正在移动|
 | **[jumpMaxCount](mw.Character.md#jumpmaxcount)**(): `number`   |
-| 获取角色最大可跳跃次数\|
+| 获取角色最大可跳跃次数|
 | **[maxAcceleration](mw.Character.md#maxacceleration)**(): `number`   |
-| 获取角色最大加速度\|
+| 获取角色最大加速度|
 | **[maxFallingSpeed](mw.Character.md#maxfallingspeed)**(): `number`   |
-| 设置角色最大下落速度\|
+| 设置角色最大下落速度|
 | **[maxFlySpeed](mw.Character.md#maxflyspeed)**(): `number`   |
-| 获取角色最大飞行速度\|
+| 获取角色最大飞行速度|
 | **[maxJumpHeight](mw.Character.md#maxjumpheight)**(): `number`   |
-| 获取角色最大跳跃高度\|
+| 获取角色最大跳跃高度|
 | **[maxStepHeight](mw.Character.md#maxstepheight)**(): `number`   |
-| 获取角色最大可跨越高度\|
+| 获取角色最大可跨越高度|
 | **[maxSwimSpeed](mw.Character.md#maxswimspeed)**(): `number`   |
-| 获取角色最大游泳速度\|
+| 获取角色最大游泳速度|
 | **[maxWalkSpeed](mw.Character.md#maxwalkspeed)**(): `number`   |
-| 获取角色的最大行走速度\|
+| 获取角色的最大行走速度。角色移动时，并不是直接变为最大速度，而是随着输入或其他控制，速度逐渐增加，最大行走速度为角色可以达到的最大速度。|
 | **[maxWalkSpeedCrouched](mw.Character.md#maxwalkspeedcrouched)**(): `number`   |
 | 获取角色最大蹲伏行走速度|
 | **[meshPositionOffset](mw.Character.md#meshpositionoffset)**(): [`Vector`](mw.Vector.md)   |
@@ -151,9 +151,9 @@
 | **[meshRotationOffset](mw.Character.md#meshrotationoffset)**(): [`Rotation`](mw.Rotation.md)   |
 | 获取mesh相对角色旋转的偏移|
 | **[moveFacingDirection](mw.Character.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md)   |
-| 获取角色运动面朝方向\|
+| 获取角色运动面朝方向|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md)   |
-| 获取角色运动正方向\|
+| 获取角色运动正方向|
 | **[opacity](mw.Character.md#opacity)**(): `number`   |
 | 获取角色单层透明度|
 | **[outOfWaterVerticalSpeed](mw.Character.md#outofwaterverticalspeed)**(): `number`   |
@@ -165,11 +165,11 @@
 | **[ragdollEnabled](mw.Character.md#ragdollenabled)**(): `boolean`  |
 | 启用布娃娃|
 | **[rotateRate](mw.Character.md#rotaterate)**(): `number`   |
-| 获取角色最大转向速度\|
+| 获取角色最大转向速度|
 | **[velocity](mw.Character.md#velocity)**(): [`Vector`](mw.Vector.md)   |
 | 获取角色当前移动速度|
 | **[walkableFloorAngle](mw.Character.md#walkablefloorangle)**(): `number`   |
-| 获取角色可行走的最大角度\|
+| 获取角色可行走的最大角度|
 | **[nameDisplayDistance](mw.Character.md#namedisplaydistance)**(): `number` <Badge type="tip" text="client" />  |
 | 获取当前客户端所有角色头顶显示名称可见距离。|
 | **[nameVisible](mw.Character.md#namevisible)**(): `boolean` <Badge type="tip" text="client" />  |
@@ -189,19 +189,19 @@
 ### Methods <Score text="Methods" /> 
 | **[addImpulse](mw.Character.md#addimpulse)**(`vector`: [`Vector`](mw.Vector.md), `ignoreMass?`: `boolean`): `void` <Badge type="tip" text="server" />  |
 | :-----|
-| 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\|
+| 添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void`   |
-| 沿着给定的方向向量添加移动输入\|
+| 沿着给定的方向向量添加移动输入|
 | **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`NonHumanoidSlotType`](../enums/mw.NonHumanoidSlotType.md)  [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void`   |
-| 将物体附着到人物角色的指定插槽\|
+| 将物体附着到人物角色的指定插槽|
 | **[cancelHeadFollow](mw.Character.md#cancelheadfollow)**(): `void` <Badge type="tip" text="client" />  |
 | 取消头部追踪|
 | **[changeState](mw.Character.md#changestate)**(`stateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md)): `void`   |
 | 改变角色的状态|
 | **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void`   |
-| 清空角色外观数据\|
+| 清空角色外观数据|
 | **[detachAllFromSlot](mw.Character.md#detachallfromslot)**(`param?`: `Object`): `void`   |
-| 将角色插槽附着的对象全部分离\|
+| 将角色插槽附着的对象全部分离|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void`   |
 | 将物体从插槽中分离|
 | **[getCenterVertexByMorphName](mw.Character.md#getcentervertexbymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)   |
@@ -209,13 +209,13 @@
 | **[getCurrentState](mw.Character.md#getcurrentstate)**(): [`CharacterStateType`](../enums/mw.CharacterStateType.md)   |
 | 获取当前角色的状态|
 | **[getDescription](mw.Character.md#getdescription)**(): [`CharacterDescription`](mw.CharacterDescription.md)   |
-| 获取角色外观数据\|
+| 获取角色外观数据|
 | **[getSlotWorldPosition](mw.Character.md#getslotworldposition)**(`slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): [`Vector`](mw.Vector.md)   |
-| 获取角色插槽的世界坐标\|
+| 获取角色插槽的世界坐标|
 | **[getVertexArrayByMorphName](mw.Character.md#getvertexarraybymorphname)**(`morphName`: `string`): [`Vector`](mw.Vector.md)[]   |
 | 通过头部模型MorphName实时获取所有顶点位置|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md)   |
-| 通过头部模型顶点 index 实时获取顶点位置\|
+| 通过头部模型顶点 index 实时获取顶点位置|
 | **[headFollow](mw.Character.md#headfollow)**(`target`: ``null``  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void` <Badge type="tip" text="client" />  |
 | 头部追踪|
 | **[jump](mw.Character.md#jump)**(): `void`   |
@@ -223,19 +223,19 @@
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md)   |
 | 为角色加载一个动画资源。该接口会将给定的动画加载到角色上，返回一个可播放的Animation。|
 | **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md)   |
-| 为角色加载一个基础姿态\|
+| 为角色加载一个基础姿态|
 | **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md)   |
 | 为角色加载一个二级姿态|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void`   |
 | 为角色设置不同形状不同大小的碰撞体|
 | **[setDescription](mw.Character.md#setdescription)**(`data`: `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md)): `void`   |
-| 设置角色外观数据\|
+| 设置角色外观数据|
 | **[setStateEnabled](mw.Character.md#setstateenabled)**(`characterStateType`: [`CharacterStateType`](../enums/mw.CharacterStateType.md), `enabled`: `boolean`): `void`   |
 | 设置角色状态开关|
 | **[swimUpDown](mw.Character.md#swimupdown)**(`speed`: `number`): `void`   |
 | 使角色在水中上浮下潜|
 | **[syncDescription](mw.Character.md#syncdescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 同步角色外观数据\|
+| 同步角色外观数据|
 
 
 ::: details click
@@ -569,7 +569,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色飞行制动速率\
+设置角色飞行制动速率
 角色在空中飞行时减速且不施加加速度。
 
 #### Parameters
@@ -672,7 +672,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色游泳制动速率\
+获取角色游泳制动速率
 角色在游泳状态下移动时受到的减速度。
 
 
@@ -810,8 +810,8 @@ ___
 <td style="text-align: left">
 
 
-设置角色行走制动速率。\
-行走制动速率是指角色在行走状态下的刹车减速度。当角色在行走状态下停止移动或改变方向时，刹车减速度会影响角色减速的速率。\
+设置角色行走制动速率。
+行走制动速率是指角色在行走状态下的刹车减速度。当角色在行走状态下停止移动或改变方向时，刹车减速度会影响角色减速的速率。
 较高的值将导致角色更快地减速，而较低的值将导致角色减速得更慢。
 
 
@@ -912,7 +912,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色是否可以被其他玩家站立。\
+获取角色是否可以被其他玩家站立。
 true表示其他角色可以站到玩家头上。false表示其他角色不可以站到玩家头上。
 
 
@@ -1003,7 +1003,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色当前是否使用胶囊体修正\
+获取角色当前是否使用胶囊体修正
 true代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 
@@ -1089,7 +1089,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色是什么类型\
+获取角色是什么类型
 角色类型分为基础人形、高级人形和四足类型。
 
 
@@ -1196,7 +1196,7 @@ ___
 <td style="text-align: left">
 
 
-获取包裹角色碰撞体的形状大小\
+获取包裹角色碰撞体的形状大小
 角色碰撞盒形状的大小，决定角色与场景对象交互时检测碰撞范围的大小。
 
 
@@ -1287,7 +1287,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色碰撞形状（胶囊体型、球型、盒型）\
+获取角色碰撞形状（胶囊体型、球型、盒型）
 角色碰撞盒形状的大小，决定角色与场景对象交互时检测碰撞范围的大小。球体取xyz最小值，胶囊体半径取xy最小值，z为半长，盒体xyz为半长宽高。
 
 
@@ -1486,8 +1486,8 @@ ___
 <td style="text-align: left">
 
 
-是否启用复杂移动策略\
-当开启复杂移动策略时，会根据当前的移动模式决定应该采取的移动逻辑。它会根据角色的输入、物理属性（如质量、摩擦力等）计算角色在当前帧应该移动的距离和方向。\
+是否启用复杂移动策略
+当开启复杂移动策略时，会根据当前的移动模式决定应该采取的移动逻辑。它会根据角色的输入、物理属性（如质量、摩擦力等）计算角色在当前帧应该移动的距离和方向。
 实现了角色的高级移动逻辑和物理模拟，确保角色在游戏世界中按照预期的方式进行移动，并与周围的环境进行交互。
 
 #### Parameters
@@ -1776,8 +1776,7 @@ ___
 <td style="text-align: left">
 
 
-角色外观配置\
-返回值为 CharacterDescription 类。调用 description 变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。
+角色外观配置。返回值为 CharacterDescription 类。调用 description 变量可以修改角色的外观，可更改角色的外观参数详见 CharacterDescription 类。
 
 
 #### Returns
@@ -1883,7 +1882,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色名称\
+获取角色名称
 角色名称默认会显示在角色头顶上方。
 
 
@@ -1897,7 +1896,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色名称\
+设置角色名称
 名字为随机初始化的一个英文名，可根据自己的喜好随意更换角色名字。
 
 #### Parameters
@@ -1957,7 +1956,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色在空中的灵活度\
+获取角色在空中的灵活度
 角色在空中时, 控制水平方向移动的灵活度；范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
 
 
@@ -2123,7 +2122,7 @@ ___
 <td style="text-align: left">
 
 
-获取重力的倍率\
+获取重力的倍率
 对于角色来说，重力会乘以该值。范围0~10, 过大和过小的值都会被限制。
 
 
@@ -2303,7 +2302,7 @@ ___
 <td style="text-align: left">
 
 
-获取单独制动摩擦状态\
+获取单独制动摩擦状态
 开启后使用行走制动速率进行计算摩擦效果，不开启则使用的是地面摩擦力进行计算摩擦效果。
 
 
@@ -2317,7 +2316,7 @@ ___
 <td style="text-align: left">
 
 
-设置单独制动摩擦状态\
+设置单独制动摩擦状态
 当角色处于运动状态，制动摩擦用于让角色去停止移动（当没有加速时）。
 
 #### Parameters
@@ -2399,7 +2398,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色下落制动速率\
+获取角色下落制动速率
 角色在下落状态下移动时受到的减速度。
 
 
@@ -2546,8 +2545,7 @@ ___
 <td style="text-align: left">
 
 
-获取当前角色外观是否准备完毕。\
-刚进入场景中或角色还未加载出外观衣服等时，isDescriptionReady为false，完全加载完成后变为true。
+获取当前角色外观是否准备完毕。刚进入场景中或角色还未加载出外观衣服等时，isDescriptionReady为false，完全加载完成后变为true。
 
 
 #### Returns
@@ -2789,7 +2787,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大可跳跃次数\
+获取角色最大可跳跃次数
 角色能够执行跳跃的最大次数。
 
 
@@ -2870,7 +2868,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大加速度\
+获取角色最大加速度
 角色移动时，角色可以达到的最大加速度
 
 
@@ -2965,7 +2963,7 @@ ___
 <td style="text-align: left">
 
 
-设置角色最大下落速度\
+设置角色最大下落速度
 角色在下落状态下移动时，角色可达到的最大移动速度
 
 
@@ -3045,7 +3043,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大飞行速度\
+获取角色最大飞行速度
 角色在飞行状态下进行移动时，角色可达到的最大移动速度
 
 
@@ -3161,7 +3159,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大跳跃高度\
+获取角色最大跳跃高度
 角色跳跃时，从起跳位置到最高位置的距离。该值受重力影响。
 
 
@@ -3242,7 +3240,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大可跨越高度\
+获取角色最大可跨越高度
 角色跨越台阶时，台阶的最大高度，大于等于该高度角色均无法跨越。
 
 
@@ -3347,7 +3345,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大游泳速度\
+获取角色最大游泳速度
 角色在游泳状态下，可达到的最大移动速度。
 
 
@@ -3485,8 +3483,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色的最大行走速度\
-角色移动时，并不是直接变为最大速度，而是随着输入或其他控制，速度逐渐增加，最大行走速度为角色可以达到的最大速度。\
+获取角色的最大行走速度。角色移动时，并不是直接变为最大速度，而是随着输入或其他控制，速度逐渐增加，最大行走速度为角色可以达到的最大速度。
 同时也是跌倒时的最大横向速度。
 
 
@@ -3776,10 +3773,10 @@ ___
 <td style="text-align: left">
 
 
-获取角色运动面朝方向\
-角色模型运动时朝向的方向：\
-1. 始终朝向移动方向:主角模型面朝方向始终朝向移动方向。\
-2. 始终朝向固定方向:主角模型面朝方向始终朝向固定方向。\
+获取角色运动面朝方向
+角色模型运动时朝向的方向：
+1. 始终朝向移动方向:主角模型面朝方向始终朝向移动方向。
+2. 始终朝向固定方向:主角模型面朝方向始终朝向固定方向。
 3. 始终朝向控制器方向:主角模型面朝方向始终朝向控制器
 
 
@@ -3864,12 +3861,10 @@ ___
 <td style="text-align: left">
 
 
-获取角色运动正方向\
-角色运动时依据的正方向。\
+获取角色运动正方向
+角色运动时依据的正方向。
 1. 控制器方向，就以控制器坐标系为轴;
-\
 2. 如果是定轴方向，就以世界坐标系中movementAxisDirection为轴;
-\
 3. 如果是视线方向，就以相机坐标系的为轴。在玩家相机不存在Z轴旋转时，控制器方向和视线方向效果一致，人形对象的控制器方向和视线方向效果永远一致。
 
 
@@ -4338,7 +4333,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色最大转向速度\
+获取角色最大转向速度
 角色每秒旋转的最大速度。设置为负值时，转向速度被视为无限大，可以瞬间转向。
 
 
@@ -4514,7 +4509,7 @@ ___
 <td style="text-align: left">
 
 
-获取角色可行走的最大角度\
+获取角色可行走的最大角度
 角色站立在斜坡上时，斜坡的最大角度，超过该角度，角色将无法站立在这个斜坡上，角色会存在坠落的表现。使用范围在0-90之间。
 
 
@@ -4710,7 +4705,7 @@ ___
 
 • **addImpulse**(`vector`, `ignoreMass?`): `void` <Badge type="tip" text="server" />
 
-添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。\
+添加冲量，相同冲量值在布娃娃与正常状态时，力效果会有差异。
 
 #### Parameters
 
@@ -4762,7 +4757,7 @@ ___
 
 • **addMovement**(`direction`): `void` 
 
-沿着给定的方向向量添加移动输入\
+沿着给定的方向向量添加移动输入
 
 #### Parameters
 
@@ -4820,7 +4815,7 @@ ___
 
 • **attachToSlot**(`gameObject`, `slotName`): `void` 
 
-将物体附着到人物角色的指定插槽\
+将物体附着到人物角色的指定插槽
 
 #### Parameters
 
@@ -4931,7 +4926,7 @@ ___
 
 • **clearDescription**(`appearance?`, `slotAndDecoration?`): `void` 
 
-清空角色外观数据\
+清空角色外观数据
 
 #### Parameters
 
@@ -5021,7 +5016,7 @@ ___
 
 • **detachAllFromSlot**(`param?`): `void` 
 
-将角色插槽附着的对象全部分离\
+将角色插槽附着的对象全部分离
 
 #### Parameters
 
@@ -5292,7 +5287,7 @@ ___
 
 • **getDescription**(): [`CharacterDescription`](mw.CharacterDescription.md) 
 
-获取角色外观数据\
+获取角色外观数据
 
 #### Returns
 
@@ -5380,7 +5375,7 @@ ___
 
 • **getSlotWorldPosition**(`slotName`): [`Vector`](mw.Vector.md) 
 
-获取角色插槽的世界坐标\
+获取角色插槽的世界坐标
 
 #### Parameters
 
@@ -5518,7 +5513,7 @@ ___
 
 • **getVertexPosition**(`index`): [`Vector`](mw.Vector.md) 
 
-通过头部模型顶点 index 实时获取顶点位置\
+通过头部模型顶点 index 实时获取顶点位置
 
 #### Parameters
 
@@ -5693,7 +5688,7 @@ ___
 
 • **loadStance**(`assetId`): [`Stance`](mw.Stance.md) 
 
-为角色加载一个基础姿态\
+为角色加载一个基础姿态
 
 #### Parameters
 
@@ -5877,7 +5872,7 @@ ___
 
 • **setDescription**(`data`): `void` 
 
-设置角色外观数据\
+设置角色外观数据
 
 #### Parameters
 
@@ -6040,7 +6035,7 @@ ___
 
 • **syncDescription**(`appearance?`, `slotAndDecoration?`): `void` <Badge type="tip" text="client" />
 
-同步角色外观数据\
+同步角色外观数据
 
 #### Parameters
 

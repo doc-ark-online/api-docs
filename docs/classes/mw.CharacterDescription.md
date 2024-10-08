@@ -18,7 +18,7 @@ CharacterDescription 如何使用呢？
 
 - 在 Character 类中有一个名为 description 的属性，他的返回值类型为 CharacterDescription ，使用角色类中 description 的属性调用。
 
-- 口袋方舟为您提供了大量的美术模型资源，请在左侧栏自助翻找，标有GUID供你使用。
+- 编辑器为您提供了大量的美术模型资源，请在左侧栏自助翻找，标有GUID供你使用。
 
 详情可参考下面列出的参数，开始对你的人性外观自定义修改吧~
 
