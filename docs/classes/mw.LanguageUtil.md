@@ -64,7 +64,7 @@ export default class LocaleExample extends Script {
     }
 
     private async test(): Promise<void> {
-        const locale = LocaleUtil.getDefaultLocale();
+        const locale = LanguageUtil.getDefaultLocale();
         console.log(`locale: ${locale}`);
 // zh-CN
     }
