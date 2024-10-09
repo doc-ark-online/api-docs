@@ -317,7 +317,7 @@ ___
 
 #### Returns
 
-| `string` | 当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza) |
+| `string` | 当前环境 |
 | :------ | :------ |
 
 <span style="font-size: 14px;">

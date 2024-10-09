@@ -24,7 +24,7 @@
 | **[findKeyUsageHistory](mw.PurchaseService.md#findkeyusagehistory)**(`currentPage`: `number`, `pageSize`: `number`, `historyResult`: (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void`): `void`   |
 | 分页查询大会员使用钥匙的历史记录|
 | **[getArkBalance](mw.PurchaseService.md#getarkbalance)**(): `void` <Badge type="tip" text="client" />  |
-| 获取Ark币余额|
+| 获取代币余额|
 | **[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)**(`[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)Result`, `keyType?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 获取用户剩余钥匙数量|
 | **[isPremiumMember](mw.PurchaseService.md#ispremiummember)**(`[isPremiumMember](mw.PurchaseService.md#ispremiummember)Result`): `void` <Badge type="tip" text="client" />  |
@@ -56,15 +56,9 @@
 
 获取 Ark 币余额更新的委托
 
-::: warning Precautions
-
-只在支持 IAP 的 233/Playza/口袋方舟 内使用时生效
-
-:::
-
 #### Returns
 
-| [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> | Ark币余额更新的委托 |
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> | 代币余额更新的委托 |
 | :------ | :------ |
 
 </td>
@@ -91,8 +85,7 @@ ___
 
 ::: warning Precautions
 
-1. 只在支持 IAP 的 233/Playza/口袋方舟 内使用时生效
-2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
+仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 :::
 
@@ -125,8 +118,7 @@ ___
 
 ::: warning Precautions
 
-1. 只在支持大会员的233/Playza/口袋方舟内使用时生效
-2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
+仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 :::
 
@@ -157,12 +149,6 @@ ___
 
 获取大会员状态更新时触发的委托
 
-::: warning Precautions
-
-暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
-
-:::
-
 #### Returns
 
 </td>
@@ -188,12 +174,6 @@ ___
 | `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为 1 <br> default: 1 range: 1 type:整数 |
 | `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status 大会员扣除钥匙下单状态 |
 
-
-::: warning Precautions
-
-暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
-
-:::
 
 <span style="font-size: 14px;">
 使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
@@ -272,22 +252,16 @@ ___
 
 • `Static` **getArkBalance**(): `void` <Badge type="tip" text="client" />
 
-获取Ark币余额
+获取代币余额
 
-
-::: warning Precautions
-
-只在支持IAP的233/Playza/口袋方舟内使用时生效
-
-:::
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示代币余额
 </span>
 
 ```ts
 @Component
-export default class PurchaseExample extends mw.Script {
+export default class PurchaseExample extends Core.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -295,10 +269,14 @@ export default class PurchaseExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await  mw.Player.localPlayer;
-        await TimeUtil.delaySecond(5);
-        let arkCount = PurchaseService.getArkBalance();
-        player.character.name = "ArkCount: " + arkCount;
+        //在客户端注册刷新监听
+        const onArkUpdate = (amount: number) => {
+            //刷新逻辑，amount为当前代币数量
+        }
+        PurchaseService.onArkBalanceUpdated.add(onArkUpdate);
+
+        //触发代币余额刷新。接收更新的值要用PurchaseService.onArkBalanceUpdated监听
+        PurchaseService.getArkBalance();
     }
 }
 ```
@@ -317,12 +295,6 @@ ___
 | :------ | :------ |
 | `keyType?` `number` | 搜索的钥匙类型，暂时只有类型 1 <br> default: 1 range: 1 type: 整数 |
 
-
-::: warning Precautions
-
-暂未考虑单机模式，只在支持大会员的 233/Playza/口袋方舟 内使用时生效
-
-:::
 
 <span style="font-size: 14px;">
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
@@ -363,7 +335,6 @@ ___
 ::: warning Precautions
 
 暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步），
-只在支持大会员的233/Playza/口袋方舟内使用时生效
 
 :::
 
@@ -405,7 +376,7 @@ ___
 
 ::: warning Precautions
 
-暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步）。老版本的233乐园可能出现无回调的情况，需要自行判断超时
+暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步）。老版本的App可能出现无回调的情况，需要自行判断超时
 
 :::
 
@@ -537,7 +508,7 @@ RedeemResponse中message : 兑换信息
 当兑换状态为失败时：兑换信息为失败详情，例如：兑换码不存在。
 
 <span style="font-size: 14px;">
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示代币余额
 </span>
 
 ```ts

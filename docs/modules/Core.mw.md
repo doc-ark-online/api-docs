@@ -133,8 +133,6 @@ mw
 | 新版遮罩类型|
 | [MenuPlacement](../enums/mw.MenuPlacement.md)  |
 | 菜单呼出位置枚举|
-| [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md)  |
-| 枚举各个通道的使用与接收方|
 | [MessageState](../enums/mw.MessageState.md)  |
 | 发送消息的状态|
 | [MessageType](../enums/mw.MessageType.md)  |
@@ -413,6 +411,8 @@ mw
 | 列表视图|
 | [ListViewItemDataBase](../classes/mw.ListViewItemDataBase.md)  |
 | 列表视图节点数据基类|
+| [LocaleUtil](../classes/Core.mw.LocaleUtil.md)  |
+| :----- |
 | [Margin](../classes/mw.Margin.md)  |
 | 基础的边距，提供4个方向的数值修改|
 | [Mask](../classes/mw.Mask.md)  |
@@ -485,6 +485,7 @@ mw
 | 房间设置|
 | [Rotation](../classes/mw.Rotation.md)  |
 | 欧拉角|
+| [RouteService](../classes/Core.mw.RouteService.md) |
 | [ScreenUtil](../classes/mw.ScreenUtil.md)  |
 | 屏幕视口工具|
 | [Script](../classes/mw.Script.md)  |
@@ -515,8 +516,7 @@ mw
 | 字符串工具|
 | [SubStance](../classes/mw.SubStance.md)  |
 | 二级姿态|
-| [SwimmingVolume](../classes/Core.mw.SwimmingVolume.md)  |
-| :----- |
+| [SwimmingVolume](../classes/Core.mw.SwimmingVolume.md) |
 | [SystemUtil](../classes/mw.SystemUtil.md)  |
 | 状态信息获取工具|
 | [TabGroup](../classes/mw.TabGroup.md)  |
@@ -647,7 +647,7 @@ mw
 | **[MGSEvent](Core.mw.md#mgsevent)**: (`jsonData`: `string`) => `void`  |
 | 收到MGS事件调用|
 | **[MGSResponse](Core.mw.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`  |
-| 收到233回复|
+| GameService的回调|
 | **[OnArkBalanceUpdated](Core.mw.md#onarkbalanceupdated)**: (`amount`: `number`) => `void`  |
 | 客户端接收余额更新的消息格式|
 | **[OnDescriptionChange](Core.mw.md#ondescriptionchange)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`  |
@@ -661,9 +661,9 @@ mw
 | **[OnOrderDelivered](Core.mw.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`, `message?`: `string`) => `void`) => `void`  |
 | 服务端接收发货通知的消息格式|
 | **[OnViewLayoutSwitched](Core.mw.md#onviewlayoutswitched)**: (`newState`: `number`) => `void`  |
-| 233中窗口显示模式切换的消息格式|
+| 窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Core.mw.md#onviewrefreshed)**: () => `void`  |
-| 233中窗口刷新的消息格式|
+| 窗口刷新的消息格式|
 | **[PublishedUGCGameInfo](Core.mw.md#publishedugcgameinfo)**: `Object`  |
 | 发布成功的UGC消费态游戏信息|
 | **[RedeemResponse](Core.mw.md#redeemresponse)**: `Object`  |
@@ -1063,7 +1063,7 @@ ___
 
 • (`isSuccess`, `jsonData`): `void`
 
-收到233回复
+GameService的回调
 
 ##### Parameters
 
@@ -1227,7 +1227,7 @@ ___
 
 • (`newState`): `void`
 
-233中窗口显示模式切换的消息格式
+窗口显示模式切换的消息格式
 
 ##### Parameters
 
@@ -1248,7 +1248,7 @@ ___
 
 • (): `void`
 
-233中窗口刷新的消息格式
+窗口刷新的消息格式
 
 ##### Returns
 
