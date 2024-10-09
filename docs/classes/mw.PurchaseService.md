@@ -261,7 +261,7 @@ ___
 
 ```ts
 @Component
-export default class PurchaseExample extends Core.Script {
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
