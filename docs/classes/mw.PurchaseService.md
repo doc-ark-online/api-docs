@@ -261,7 +261,7 @@ ___
 
 ```ts
 @Component
-export default class PurchaseExample extends mw.Script {
+export default class PurchaseExample extends Core.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -269,10 +269,14 @@ export default class PurchaseExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await  mw.Player.localPlayer;
-        await TimeUtil.delaySecond(5);
-        let arkCount = PurchaseService.getArkBalance();
-        player.character.name = "ArkCount: " + arkCount;
+        //在客户端注册刷新监听
+        const onArkUpdate = (amount: number) => {
+            //刷新逻辑，amount为当前代币数量
+        }
+        PurchaseService.onArkBalanceUpdated.add(onArkUpdate);
+
+        //触发代币余额刷新。接收更新的值要用PurchaseService.onArkBalanceUpdated监听
+        PurchaseService.getArkBalance();
     }
 }
 ```
