@@ -126,7 +126,6 @@ Enums
 | [MaskButtonType](enums/mw.MaskButtonType.md) | 遮罩类型 | [界面](groups/界面.界面.md) |
 | [MaskType](enums/mw.MaskType.md) | 新版遮罩类型 | [界面](groups/界面.界面.md) |
 | [MenuPlacement](enums/mw.MenuPlacement.md) | 菜单呼出位置枚举 | [界面](groups/界面.界面.md) |
-| [MessageChannelReceiver](enums/mw.MessageChannelReceiver.md) | 枚举各个通道的使用与接收方 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageState](enums/mw.MessageState.md) | 发送消息的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageType](enums/mw.MessageType.md) | 发送消息的类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [MotionAxis](enums/mw.MotionAxis.md) | 运动坐标系 | [玩法](groups/玩法.玩法.md) |
