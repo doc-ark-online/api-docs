@@ -40,6 +40,8 @@ Rotation 是三个欧拉角Pitch、Yaw、Roll的封装 绕三个轴的旋转值�
 | 克隆当前旋转量|
 | **[equals](mw.Rotation.md#equals)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean`   |
 | 判断当前角度是否在误差范围内与指定向量相等。|
+| **[equalsAuthentic](mw.Rotation.md#equalsauthentic)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean`   |
+| 判断当前真实角度是否在误差范围内与指定向量相等。|
 | **[fromQuaternion](mw.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
 | 转换Quaternion为Rotation|
 | **[fromString](mw.Rotation.md#fromstring)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)   |
@@ -230,6 +232,25 @@ ___
 • **equals**(`other`, `epsilon?`): `boolean` 
 
 判断当前角度是否在误差范围内与指定向量相等。
+
+#### Parameters
+
+| `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
+| :------ | :------ |
+| `epsilon?` `number` | 误差值 <br> default:1.e-7 <br> range: 建议传入小于 1 的值。 type:浮点数 |
+
+#### Returns
+
+| `boolean` | 比对的结果 |
+| :------ | :------ |
+
+___
+
+### equalsAuthentic <Score text="equalsAuthentic" /> 
+
+• **equalsAuthentic**(`other`, `epsilon?`): `boolean` 
+
+判断当前真实角度是否在误差范围内与指定向量相等。
 
 #### Parameters
 

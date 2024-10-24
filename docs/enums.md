@@ -52,6 +52,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [DataStorageResultCode](enums/mw.DataStorageResultCode.md) | 数据储存返回代码 | [数据处理](groups/数据处理.数据处理.md) |
+| [DirectionType](enums/mw.DirectionType.md) | 设置链接线的通行方向 | [玩法](groups/玩法.玩法.md) |
 | [DispatchEventResult](enums/mw.DispatchEventResult.md) | 事件发送的结果 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragPivot](enums/mw.DragPivot.md) | 拖拽的锚点 | [界面](groups/界面.界面.md) |
 
@@ -75,6 +76,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [基类](groups/基类.基类.md) |
+| [GeometryMode](enums/mw.GeometryMode.md) | UI形状枚举 | [界面](groups/界面.界面.md) |
 | [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [基础类型](groups/基础类型.基础类型.md) |
 | [GizmoScaleType](enums/mw.GizmoScaleType.md) | gizmo空间 | [基础类型](groups/基础类型.基础类型.md) |
@@ -91,7 +93,7 @@ Enums
 | [HotWeaponFireMode](enums/mw.HotWeaponFireMode.md) | 热武器开火模式 | [玩法](groups/玩法.玩法.md) |
 | [HotWeaponState](enums/mw.HotWeaponState.md) | 热武器状态 | [玩法](groups/玩法.玩法.md) |
 | [HttpRequestType](enums/mw.HttpRequestType.md) | 开发给用户用的Http请求类型枚举 | [玩法](groups/玩法.玩法.md) |
-| [HttpRequestURL](enums/mw.HttpRequestURL.md) | 开发给用户用的URL枚举，需要与C++层的枚举对应 | [玩法](groups/玩法.玩法.md) |
+| [HttpRequestURL](enums/mw.HttpRequestURL.md) | 开放给用户用的URL枚举，需要与C++层的枚举对应 | [玩法](groups/玩法.玩法.md) |
 | [HumanoidSlotType](enums/mw.HumanoidSlotType.md) | 人形角色插槽类型 | [角色系统](groups/角色系统.角色系统.md) |
 
 
@@ -118,6 +120,7 @@ Enums
 | :-----| :-----| :-----|
 | [LanguageCodeType](enums/mw.LanguageCodeType.md) | 游戏本地化语言 | [基础类型](groups/基础类型.基础类型.md) |
 | [LanguageType](enums/mw.LanguageType.md) | 游戏语言 | [基础类型](groups/基础类型.基础类型.md) |
+| [LinkClassType](enums/mw.LinkClassType.md) | 设置链接区域的寻路类型 | [玩法](groups/玩法.玩法.md) |
 
 
 ## M
@@ -157,9 +160,11 @@ Enums
 ## P
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ParticleEmitterOrientation](enums/mw.ParticleEmitterOrientation.md) | 特效发射取向 | [场景](groups/场景.场景.md) |
 | [ParticleEmitterShape](enums/mw.ParticleEmitterShape.md) | 特效形状枚举 | [场景](groups/场景.场景.md) |
 | [ParticleEmitterShapeStyle](enums/mw.ParticleEmitterShapeStyle.md) | 特效发射类型 | [场景](groups/场景.场景.md) |
 | [PlayStatus](enums/mw.PlayStatus.md) | 帧动画播放规则 | [界面](groups/界面.界面.md) |
+| [PointType](enums/mw.PointType.md) | 样条线 | [玩法](groups/玩法.玩法.md) |
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [场景](groups/场景.场景.md) |
 | [ProgressBarFillType](enums/mw.ProgressBarFillType.md) | 进度条填充规则 | [界面](groups/界面.界面.md) |
 | [ProjectileMovementStatus](enums/mw.ProjectileMovementStatus.md) | 投掷物移动状态 | [玩法](groups/玩法.玩法.md) |
@@ -179,6 +184,7 @@ Enums
 | [SelectInfo](enums/mw.SelectInfo.md) | 列表视图选择来源信息 | [界面](groups/界面.界面.md) |
 | [SelectionMode](enums/mw.SelectionMode.md) | 列表视图选择模式 | [界面](groups/界面.界面.md) |
 | [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [场景](groups/场景.场景.md) |
+| [SkyboxBackgroundSwitchMode](enums/mw.SkyboxBackgroundSwitchMode.md) | 天空盒背景的切换方式枚举 | [场景](groups/场景.场景.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [界面](groups/界面.界面.md) |
 | [SlateBrushTileType](enums/mw.SlateBrushTileType.md) | 图片画刷填充模式 | [界面](groups/界面.界面.md) |
 | [SlateColorStylingMode](enums/mw.SlateColorStylingMode.md) | UI颜色应用模式 | [界面](groups/界面.界面.md) |
@@ -187,6 +193,7 @@ Enums
 | [SomatotypeV1](enums/mw.SomatotypeV1.md) | V1角色体型 | [角色系统](groups/角色系统.角色系统.md) |
 | [SomatotypeV2](enums/mw.SomatotypeV2.md) | 角色体型 | [角色系统](groups/角色系统.角色系统.md) |
 | [SoundPlayState](enums/mw.SoundPlayState.md) | 音效播放状态 | [场景](groups/场景.场景.md) |
+| [SpaceMode](enums/mw.SpaceMode.md) | UI空间位置枚举 | [界面](groups/界面.界面.md) |
 | [StanceBlendMode](enums/mw.StanceBlendMode.md) | 姿态混合模式 | [动画](groups/动画.动画.md) |
 
 
@@ -206,6 +213,7 @@ Enums
 | :-----| :-----| :-----|
 | [UIConstraintHorizontal](enums/mw.UIConstraintHorizontal.md) | 对齐策略水平规则 | [界面](groups/界面.界面.md) |
 | [UIConstraintVertical](enums/mw.UIConstraintVertical.md) | 对齐策略垂直规则 | [界面](groups/界面.界面.md) |
+| [UIFontFamily](enums/mw.UIFontFamily.md) | 字体 | [界面](groups/界面.界面.md) |
 | [UIFontGlyph](enums/mw.UIFontGlyph.md) | 字体类型 | [界面](groups/界面.界面.md) |
 | [UIHorizontalCollation](enums/mw.UIHorizontalCollation.md) | 自动布局子项布局排序 - 水平排序 | [界面](groups/界面.界面.md) |
 | [UIHugContentHorizontally](enums/mw.UIHugContentHorizontally.md) | 自动布局容器水平适应规则 | [界面](groups/界面.界面.md) |

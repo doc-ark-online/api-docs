@@ -31,6 +31,10 @@
 | **[autoAdjust](mw.AdsButton.md#autoadjust)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
 | 获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)|
+| **[defaultFont](mw.AdsButton.md#defaultfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
+| 获取默认字体|
+| **[fallbackFont](mw.AdsButton.md#fallbackfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
+| 获取退却字体|
 | **[fontColor](mw.AdsButton.md#fontcolor)**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />  |
 | 获取字体颜色|
 | **[fontLetterSpace](mw.AdsButton.md#fontletterspace)**(): `number` <Badge type="tip" text="client" />  |
@@ -138,7 +142,7 @@
 | **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加子节点|
-| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: `any`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 克隆UI控件及其子节点到指定父控件位置（默认到其父节点）|
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
@@ -219,6 +223,98 @@ ___
 #### Parameters
 
 | `isAdjust` `boolean` | 字体是否自适应调整大小 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### defaultFont <Score text="defaultFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **defaultFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **defaultFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取默认字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 默认字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置默认字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的默认字体 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### fallbackFont <Score text="fallbackFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **fallbackFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **fallbackFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取退却字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 退却字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置退却字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的退却字体 |
 | :------ | :------ |
 
 

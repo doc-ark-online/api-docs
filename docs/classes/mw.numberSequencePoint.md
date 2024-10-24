@@ -18,6 +18,7 @@
 | `inTimeKey` | `number` |
 | :------ | :------ |
 | `inValue` | `number` |
+| `inTolerance?` | `number` |
 
 ## Properties
 

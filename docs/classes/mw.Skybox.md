@@ -119,11 +119,15 @@ export default class SkyboxExample extends mw.Script {
 | 获取天空盒贴图yaw旋转（度）|
 
 ### Methods <Score text="Methods" /> 
-| **[refresh](mw.Skybox.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
+| **[pausSwitch](mw.Skybox.md#pausswitch)**(): `void` <Badge type="tip" text="client" />  |
 | :-----|
+| 暂停天空盒背景|
+| **[refresh](mw.Skybox.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
 | 天空盒刷新|
 | **[reset](mw.Skybox.md#reset)**(): `void` <Badge type="tip" text="client" />  |
 | 重置为默认参数|
+| **[startSwitch](mw.Skybox.md#startswitch)**(`targetTexture`: `string`, `switchMode`: [`Gradient`](../enums/mw.SkyboxBackgroundSwitchMode.md#gradient), `switchTime`: `number`): `boolean` <Badge type="tip" text="client" />  |
+| 开始切换天空盒背景|
 
 ## Accessors
 
@@ -1875,6 +1879,15 @@ ___
 
 ## Methods
 
+### pausSwitch <Score text="pausSwitch" /> 
+
+• `Static` **pausSwitch**(): `void` <Badge type="tip" text="client" />
+
+暂停天空盒背景
+
+
+___
+
 ### refresh <Score text="refresh" /> 
 
 • `Static` **refresh**(): `void` <Badge type="tip" text="client" />
@@ -1890,3 +1903,23 @@ ___
 
 重置为默认参数
 
+
+___
+
+### startSwitch <Score text="startSwitch" /> 
+
+• `Static` **startSwitch**(`targetTexture`, `switchMode`, `switchTime`): `boolean` <Badge type="tip" text="client" />
+
+开始切换天空盒背景
+
+#### Parameters
+
+| `targetTexture` `string` | 要切换到的天空球贴图 |
+| :------ | :------ |
+| `switchMode` [`Gradient`](../enums/mw.SkyboxBackgroundSwitchMode.md#gradient) | 过渡方式 |
+| `switchTime` `number` | 过渡时间,单位：秒 |
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |

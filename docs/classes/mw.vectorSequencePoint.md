@@ -2,7 +2,7 @@
 
 # vectorSequencePoint <Badge type="tip" text="Class" /> <Score text="vectorSequencePoint" />
 
-特效向量值曲线节点
+特效三维向量值曲线节点
 
 ## Table of contents
 
@@ -18,6 +18,7 @@
 | `inTimeKey` | `number` |
 | :------ | :------ |
 | `inValue` | [`Vector`](mw.Vector.md) |
+| `inTolerance?` | [`Vector`](mw.Vector.md) |
 
 ## Properties
 

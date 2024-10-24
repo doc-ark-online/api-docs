@@ -38,8 +38,10 @@ export default class PostProcessExample extends mw.Script {
 ## Table of contents
 
 ### Accessors <Score text="Accessors" /> 
-| **[ambientOcclusionEnabled](mw.PostProcess.md#ambientocclusionenabled)**(): `boolean` <Badge type="tip" text="client" />  |
+| **[ambientOcclusionAngleBias](mw.PostProcess.md#ambientocclusionanglebias)**(): `number` <Badge type="tip" text="client" />  |
 | :-----|
+| 获取环境光遮蔽角度偏移|
+| **[ambientOcclusionEnabled](mw.PostProcess.md#ambientocclusionenabled)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取环境光遮蔽开关|
 | **[ambientOcclusionIntensity](mw.PostProcess.md#ambientocclusionintensity)**(): `number` <Badge type="tip" text="client" />  |
 | 获取环境光遮蔽强度|
@@ -75,6 +77,52 @@ export default class PostProcessExample extends mw.Script {
 | 获取全局饱和度|
 
 ## Accessors
+
+### ambientOcclusionAngleBias <Score text="ambientOcclusionAngleBias" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **ambientOcclusionAngleBias**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **ambientOcclusionAngleBias**(`Value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取环境光遮蔽角度偏移
+
+#### Returns
+
+| `number` | 获取值 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置环境光遮蔽角度偏移（0 ~ 80）
+
+#### Parameters
+
+| `Value` `number` | 设置值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
 
 ### ambientOcclusionEnabled <Score text="ambientOcclusionEnabled" /> 
 
@@ -199,7 +247,7 @@ ___
 <td style="text-align: left">
 
 
-设置环境光遮蔽半径（0.1 ~ 500.0）数值越小半径越小
+设置环境光遮蔽半径（0 ~ 300.0）数值越小半径越小
 
 #### Parameters
 

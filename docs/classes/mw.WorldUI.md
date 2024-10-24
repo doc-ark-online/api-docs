@@ -1,6 +1,6 @@
-[界面](../groups/界面.界面.md) / UIWidget
+[界面](../groups/界面.界面.md) / WorldUI
 
-# UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
+# WorldUI <Badge type="tip" text="Class" /> <Score text="WorldUI" />
 
 世界 UI
 
@@ -8,30 +8,28 @@
 
 1. UI 界面分为两种：屏幕 UI 和世界 UI。
 
-UIWidget 是专门用来制作世界 UI 的。屏幕 UI 的详细制作方式请参考 UIService 或 UserWidget。
+WorldUI 是专门用来制作世界 UI 的。屏幕 UI 的详细制作方式请参考 UIService 或 UserWidget。
 
-![界面](https://cdn.233xyx.com/online/jf2eFfCbfVmJ1701944462027.png)
-
-2. UIWidget 有两种方式制作世界 UI ：
+2. WorldUI 有两种方式制作世界 UI ：
 
 - :cactus: 动态加载（只使用代码动态创建一个世界 UI）
 
 <span style="font-size: 14px;">
-使用示例: 创建一个名为 NewScript 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个世界 UI - 滑动条
+使用示例: 创建一个名为 WorldUI 的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中生成一个世界 UI - 滑动条
 </span>
 
 ```ts
 @Component
-export default class NewScript extends Script {
+export default class WorldUI extends Script {
 
     user:UserWidget;
-    widget:UIWidget;
+    widget:WorldUI;
     progressBar:ProgressBar;
 
     protected onStart(): void {
         if(SystemUtil.isClient()){
             this.creatUI();
-            this.widget = GameObject.spawn<UIWidget>("UIWidget",{replicates:false});
+            this.widget = GameObject.spawn<WorldUI>("WorldUI",{replicates:false});
             this.widget.worldTransform.position = new Vector(0,0,100);
             this.widget.setTargetUIWidget(this.user);
         }
@@ -41,9 +39,7 @@ export default class NewScript extends Script {
         this.user = UserWidget.newObject();
 
         let rootCanvas = Canvas.newObject();
-        rootCanvas.size = new Vector2(1920, 1080);
         rootCanvas.position = Vector2.zero;
-
         this.user.rootContent = rootCanvas;
 
         this.progressBar = ProgressBar.newObject(rootCanvas);
@@ -53,13 +49,11 @@ export default class NewScript extends Script {
 
 - :cactus: 在对象管理器中提前在物体上挂载世界 UI 逻辑对象，在属性面板中放置对应的 UIPrefab。
 
-![界面](https://cdn.233xyx.com/online/CwCG1XOsbH4V1701944484681.png)
-
 ## Hierarchy
 
 - [`GameObject`](mw.GameObject.md)
 
-  ↳ **`UIWidget`**
+  ↳ **`WorldUI`**
 
 ## Table of contents
 
@@ -75,39 +69,39 @@ export default class NewScript extends Script {
 | 监听自定义属性同步事件|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>   |
 | 物体销毁后事件回调|
-| **[onPropertyChange](mw.GameObject.md#onpropertychange)**: `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\>  |
-| 监听系统属性同步事件|
 :::
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[distanceScaleFactor](mw.UIWidget.md#distancescalefactor)**(): `number`  |
+| **[alwaysFaceCamera](mw.WorldUI.md#alwaysfacecamera)**(): `boolean` <Badge type="tip" text="client" />  |
 | :-----|
-| 获取缩放距离系数|
-| **[drawSize](mw.UIWidget.md#drawsize)**(): [`Vector2`](mw.Vector2.md)  |
-| 获取实际渲染大小|
-| **[extraParam](mw.UIWidget.md#extraparam)**(): `string`  |
-| 获取扩展参数|
-| **[headUIMaxVisibleDistance](mw.UIWidget.md#headuimaxvisibledistance)**(): `number`  |
-| 获取最大头顶UI可见距离|
-| **[hideByDistanceEnable](mw.UIWidget.md#hidebydistanceenable)**(): `boolean`  |
-| 获取是否启用最大可见距离|
-| **[interaction](mw.UIWidget.md#interaction)**(): `boolean` <Badge type="tip" text="client" />  |
-| 获取世界UI交互状态|
-| **[isEnemy](mw.UIWidget.md#isenemy)**(): `boolean`  |
-| 获取是否作为敌方玩家，敌方玩家不显示头顶UI|
-| **[occlusionEnable](mw.UIWidget.md#occlusionenable)**(): `boolean`  |
-| 获取是否可被遮挡|
-| **[pivot](mw.UIWidget.md#pivot)**(): [`Vector2`](mw.Vector2.md)  |
-| 获取锚点位置|
-| **[scaledByDistanceEnable](mw.UIWidget.md#scaledbydistanceenable)**(): `boolean`  |
+| 获取是否保持朝向相机|
+| **[alwaysOnTop](mw.WorldUI.md#alwaysontop)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取是否保持最上显示|
+| **[brightness](mw.WorldUI.md#brightness)**(): `number` <Badge type="tip" text="client" />  |
+| 获取亮度值|
+| **[distanceScaleEnabled](mw.WorldUI.md#distancescaleenabled)**(): `boolean`  |
 | 获取是否开启近大远小|
-| **[selfOcclusion](mw.UIWidget.md#selfocclusion)**(): `boolean`  |
+| **[distanceScaleFactor](mw.WorldUI.md#distancescalefactor)**(): `number`  |
+| 获取缩放距离系数|
+| **[lightInfluence](mw.WorldUI.md#lightinfluence)**(): `number` <Badge type="tip" text="client" />  |
+| 获取光照影响|
+| **[maxVisibleDistance](mw.WorldUI.md#maxvisibledistance)**(): `number`  |
+| 获取最大UI可见距离|
+| **[maxVisibleDistanceEnabled](mw.WorldUI.md#maxvisibledistanceenabled)**(): `boolean`  |
+| 获取是否启用最大可见距离|
+| **[occlusionEnable](mw.WorldUI.md#occlusionenable)**(): `boolean`  |
+| 获取是否可被遮挡|
+| **[pivot](mw.WorldUI.md#pivot)**(): [`Vector2`](mw.Vector2.md)  |
+| 获取锚点位置|
+| **[selfOcclusionEnabled](mw.WorldUI.md#selfocclusionenabled)**(): `boolean`  |
 | 获取是否可被自己遮挡|
-| **[translucentSortPriority](mw.UIWidget.md#translucentsortpriority)**(): `number` <Badge type="tip" text="client" />  |
-| 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
-| **[widgetSpace](mw.UIWidget.md#widgetspace)**(): [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md)  |
+| **[spaceMode](mw.WorldUI.md#spacemode)**(): [`SpaceMode`](../enums/mw.SpaceMode.md)  |
 | 获取显示方式|
+| **[touchEnable](mw.WorldUI.md#touchenable)**(): `boolean` <Badge type="tip" text="client" />  |
+| 获取世界UI交互状态|
+| **[zOrder](mw.WorldUI.md#zorder)**(): `number` <Badge type="tip" text="client" />  |
+| 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
 
 
 ::: details click
@@ -141,14 +135,14 @@ export default class NewScript extends Script {
 
 
 ### Methods <Score text="Methods" /> 
-| **[getTargetUIWidget](mw.UIWidget.md#gettargetuiwidget)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
+| **[getTargetUIWidget](mw.WorldUI.md#gettargetuiwidget)**(): [`UserWidget`](mw.UserWidget.md) <Badge type="tip" text="client" />  |
 | :-----|
 | 获取UI对象资源|
-| **[refresh](mw.UIWidget.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
+| **[refresh](mw.WorldUI.md#refresh)**(): `void` <Badge type="tip" text="client" />  |
 | 请求重新绘制|
-| **[setTargetUIWidget](mw.UIWidget.md#settargetuiwidget)**(`uiUserWidget`: [`UserWidget`](mw.UserWidget.md)): `void` <Badge type="tip" text="client" />  |
+| **[setTargetUIWidget](mw.WorldUI.md#settargetuiwidget)**(`uiUserWidget`: [`UserWidget`](mw.UserWidget.md)): `void` <Badge type="tip" text="client" />  |
 | 设置UI，可以对当前的UI设置UI资源，UI资源可以从路径获取或直接取其他UI组件引用的资源|
-| **[setUIbyID](mw.UIWidget.md#setuibyid)**(`ID`: `string`): `void` <Badge type="tip" text="client" />  |
+| **[setUIbyID](mw.WorldUI.md#setuibyid)**(`ID`: `string`): `void` <Badge type="tip" text="client" />  |
 | 通过 GUID 设置 UI|
 
 
@@ -192,8 +186,6 @@ export default class NewScript extends Script {
 | **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
 | 获取自定义属性|
 | **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| 给定对象属性修改时触发的事件代理|
-| **[getPropertyChangeDelegate](mw.GameObject.md#getpropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
 | 给定对象属性修改时触发的事件代理|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
@@ -252,6 +244,238 @@ export default class NewScript extends Script {
 
 ___
 
+### alwaysFaceCamera <Score text="alwaysFaceCamera" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **alwaysFaceCamera**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **alwaysFaceCamera**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否保持朝向相机
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否保持朝向相机
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Parameters
+
+| `value` `boolean` |  UI是否保持朝向相机 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### alwaysOnTop <Score text="alwaysOnTop" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **alwaysOnTop**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **alwaysOnTop**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否保持最上显示
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Returns
+
+| `boolean` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否保持最上显示
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Parameters
+
+| `value` `boolean` |  UI是否保持最上显示 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### brightness <Score text="brightness" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **brightness**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **brightness**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取亮度值
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置亮度
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
+
+#### Parameters
+
+| `value` `number` |  UI亮度，值范围为 [0, 10] |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### distanceScaleEnabled <Score text="distanceScaleEnabled" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **distanceScaleEnabled**(): `boolean`
+
+</th>
+<th style="text-align: left">
+
+• `set` **distanceScaleEnabled**(`Value`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取是否开启近大远小
+
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
+
+#### Returns
+
+| `boolean` | true：开启 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置是否开启近大远小
+
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
+
+#### Parameters
+
+| `Value` `boolean` | 布尔值 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### distanceScaleFactor <Score text="distanceScaleFactor" /> 
 
 <table class="get-set-table">
@@ -273,6 +497,12 @@ ___
 
 获取缩放距离系数
 
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
+
 #### Returns
 
 | `number` | 距离系数 |
@@ -284,6 +514,12 @@ ___
 
 
 设置缩放距离系数
+
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
 
 #### Parameters
 
@@ -298,18 +534,18 @@ ___
 
 ___
 
-### drawSize <Score text="drawSize" /> 
+### lightInfluence <Score text="lightInfluence" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **drawSize**(): [`Vector2`](mw.Vector2.md)
+• `get` **lightInfluence**(): `number` <Badge type="tip" text="client" />
 
 </th>
 <th style="text-align: left">
 
-• `set` **drawSize**(`newSize`): `void`
+• `set` **lightInfluence**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -317,11 +553,17 @@ ___
 <td style="text-align: left">
 
 
-获取实际渲染大小
+获取光照影响
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
 
 #### Returns
 
-| [`Vector2`](mw.Vector2.md) | 渲染大小2D |
+| `number` |  |
 | :------ | :------ |
 
 
@@ -329,11 +571,17 @@ ___
 <td style="text-align: left">
 
 
-设置实际渲染大小
+设置光照影响
+
+::: warning Precautions
+
+请在客户端调用，世界空间类型专用
+
+:::
 
 #### Parameters
 
-| `newSize` [`Vector2`](mw.Vector2.md) | 渲染大小2D |
+| `value` `number` |  UI光照影响度，值范围为 [0, 1] |
 | :------ | :------ |
 
 
@@ -344,18 +592,18 @@ ___
 
 ___
 
-### extraParam <Score text="extraParam" /> 
+### maxVisibleDistance <Score text="maxVisibleDistance" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **extraParam**(): `string`
+• `get` **maxVisibleDistance**(): `number`
 
 </th>
 <th style="text-align: left">
 
-• `set` **extraParam**(`Value`): `void`
+• `set` **maxVisibleDistance**(`Value`): `void`
 
 </th>
 </tr></thead>
@@ -363,53 +611,7 @@ ___
 <td style="text-align: left">
 
 
-获取扩展参数
-
-#### Returns
-
-| `string` | 扩展参数 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置扩展参数
-
-#### Parameters
-
-| `Value` `string` | 扩展参数 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### headUIMaxVisibleDistance <Score text="headUIMaxVisibleDistance" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **headUIMaxVisibleDistance**(): `number`
-
-</th>
-<th style="text-align: left">
-
-• `set` **headUIMaxVisibleDistance**(`Value`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取最大头顶UI可见距离
+获取最大UI可见距离
 
 #### Returns
 
@@ -421,7 +623,7 @@ ___
 <td style="text-align: left">
 
 
-设置最大头顶UI可见距离
+设置最大UI可见距离
 
 #### Parameters
 
@@ -436,18 +638,18 @@ ___
 
 ___
 
-### hideByDistanceEnable <Score text="hideByDistanceEnable" /> 
+### maxVisibleDistanceEnabled <Score text="maxVisibleDistanceEnabled" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **hideByDistanceEnable**(): `boolean`
+• `get` **maxVisibleDistanceEnabled**(): `boolean`
 
 </th>
 <th style="text-align: left">
 
-• `set` **hideByDistanceEnable**(`Value`): `void`
+• `set` **maxVisibleDistanceEnabled**(`Value`): `void`
 
 </th>
 </tr></thead>
@@ -468,112 +670,6 @@ ___
 
 
 设置是否启用最大可见距离
-
-#### Parameters
-
-| `Value` `boolean` | 布尔值 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### interaction <Score text="interaction" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **interaction**(): `boolean` <Badge type="tip" text="client" />
-
-</th>
-<th style="text-align: left">
-
-• `set` **interaction**(`inInteraction`): `void` <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取世界UI交互状态
-
-::: warning Precautions
-
-对世界UI，头顶UI生效
-
-:::
-
-#### Returns
-
-| `boolean` | 是否可交互 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置世界UI交互状态
-
-::: warning Precautions
-
-对世界UI，头顶UI生效
-
-:::
-
-#### Parameters
-
-| `inInteraction` `boolean` | 是否可交互 |
-| :------ | :------ |
-
-
-是否设置成功
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### isEnemy <Score text="isEnemy" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **isEnemy**(): `boolean`
-
-</th>
-<th style="text-align: left">
-
-• `set` **isEnemy**(`Value`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取是否作为敌方玩家，敌方玩家不显示头顶UI
-
-#### Returns
-
-| `boolean` | 布尔值 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置是否作为敌方玩家，敌方玩家不显示头顶UI
 
 #### Parameters
 
@@ -609,6 +705,12 @@ ___
 
 获取是否可被遮挡
 
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
+
 #### Returns
 
 | `boolean` | true：可被遮挡 |
@@ -620,6 +722,12 @@ ___
 
 
 设置是否可被遮挡
+
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
 
 #### Parameters
 
@@ -680,64 +788,18 @@ ___
 
 ___
 
-### scaledByDistanceEnable <Score text="scaledByDistanceEnable" /> 
+### selfOcclusionEnabled <Score text="selfOcclusionEnabled" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **scaledByDistanceEnable**(): `boolean`
+• `get` **selfOcclusionEnabled**(): `boolean`
 
 </th>
 <th style="text-align: left">
 
-• `set` **scaledByDistanceEnable**(`Value`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取是否开启近大远小
-
-#### Returns
-
-| `boolean` | true：开启 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置是否开启近大远小
-
-#### Parameters
-
-| `Value` `boolean` | 布尔值 |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### selfOcclusion <Score text="selfOcclusion" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **selfOcclusion**(): `boolean`
-
-</th>
-<th style="text-align: left">
-
-• `set` **selfOcclusion**(`Value`): `void`
+• `set` **selfOcclusionEnabled**(`Value`): `void`
 
 </th>
 </tr></thead>
@@ -746,6 +808,12 @@ ___
 
 
 获取是否可被自己遮挡
+
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
 
 #### Returns
 
@@ -759,6 +827,12 @@ ___
 
 设置是否可被自己遮挡
 
+::: warning Precautions
+
+请在客户端调用，屏幕空间类型专用
+
+:::
+
 #### Parameters
 
 | `Value` `boolean` | 布尔值 |
@@ -772,18 +846,124 @@ ___
 
 ___
 
-### translucentSortPriority <Score text="translucentSortPriority" /> 
+### spaceMode <Score text="spaceMode" /> 
 
 <table class="get-set-table">
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **translucentSortPriority**(): `number` <Badge type="tip" text="client" />
+• `get` **spaceMode**(): [`SpaceMode`](../enums/mw.SpaceMode.md)
 
 </th>
 <th style="text-align: left">
 
-• `set` **translucentSortPriority**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **spaceMode**(`spaceMode`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取显示方式
+
+#### Returns
+
+| [`SpaceMode`](../enums/mw.SpaceMode.md) | 显示方式枚举 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置显示方式
+
+#### Parameters
+
+| `spaceMode` | [`SpaceMode`](../enums/mw.SpaceMode.md) |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### touchEnable <Score text="touchEnable" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **touchEnable**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **touchEnable**(`touchEnable`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取世界UI交互状态
+
+::: warning Precautions
+
+对世界UI，头顶UI生效
+
+:::
+
+#### Returns
+
+| `boolean` | 是否可交互 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置世界UI交互状态
+
+::: warning Precautions
+
+对世界UI，头顶UI生效
+
+:::
+
+#### Parameters
+
+| `touchEnable` `boolean` | 是否可交互 |
+| :------ | :------ |
+
+
+是否设置成功
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### zOrder <Score text="zOrder" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **zOrder**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **zOrder**(`value`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
@@ -820,52 +1000,6 @@ ___
 #### Parameters
 
 | `value` `number` |  新的渲染层级，值范围为 [0, 31] |
-| :------ | :------ |
-
-
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
-### widgetSpace <Score text="widgetSpace" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **widgetSpace**(): [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md)
-
-</th>
-<th style="text-align: left">
-
-• `set` **widgetSpace**(`newSpace`): `void`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取显示方式
-
-#### Returns
-
-| [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md) | 显示方式枚举 |
-| :------ | :------ |
-
-
-</td>
-<td style="text-align: left">
-
-
-设置显示方式
-
-#### Parameters
-
-| `newSpace` [`WidgetSpaceMode`](../enums/mw.WidgetSpaceMode.md) | 显示方式 |
 | :------ | :------ |
 
 </td>

@@ -281,7 +281,7 @@ ___
 
 ::: warning Precautions
 
-在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
+在 Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
 
 :::
 

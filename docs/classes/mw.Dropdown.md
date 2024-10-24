@@ -24,9 +24,15 @@ Dropdown
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[dropdownStyle](mw.Dropdown.md#dropdownstyle)**(): [`DropdownStyle`](mw.DropdownStyle.md) <Badge type="tip" text="client" />  |
+| **[defaultFont](mw.Dropdown.md#defaultfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
 | :-----|
+| 获取默认字体|
+| **[dropdownStyle](mw.Dropdown.md#dropdownstyle)**(): [`DropdownStyle`](mw.DropdownStyle.md) <Badge type="tip" text="client" />  |
 | 菜单样式|
+| **[fallbackFont](mw.Dropdown.md#fallbackfont)**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />  |
+| 获取退却字体|
+| **[glyph](mw.Dropdown.md#glyph)**(): [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) <Badge type="tip" text="client" />  |
+| 获取字体字形|
 | **[isOpened](mw.Dropdown.md#isopened)**(): `boolean` <Badge type="tip" text="client" />  |
 | 获取菜单是否打开|
 | **[menuRowStyle](mw.Dropdown.md#menurowstyle)**(): [`ListItemStyle`](mw.ListItemStyle.md) <Badge type="tip" text="client" />  |
@@ -134,7 +140,7 @@ Dropdown
 | **[addChild](mw.Widget.md#addchild)**(`child`: [`Widget`](mw.Widget.md)): `void` <Badge type="tip" text="client" />  |
 | :-----|
 | 添加子节点|
-| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: `any`): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
+| **[clone](mw.Widget.md#clone)**(`position`: [`Vector2`](mw.Vector2.md), `Parent?`: [`Widget`](mw.Widget.md)): [`Widget`](mw.Widget.md) <Badge type="tip" text="client" />  |
 | 克隆UI控件及其子节点到指定父控件位置（默认到其父节点）|
 | **[destroyObject](mw.Widget.md#destroyobject)**(): `void` <Badge type="tip" text="client" />  |
 | 立刻移除并销毁 不可以在使用|
@@ -179,6 +185,52 @@ Dropdown
 
 ___
 
+### defaultFont <Score text="defaultFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **defaultFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **defaultFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取默认字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 默认字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置默认字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的默认字体 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
 ### dropdownStyle <Score text="dropdownStyle" /> 
 
 <table class="get-set-table">
@@ -199,6 +251,98 @@ ___
 
 | [`DropdownStyle`](mw.DropdownStyle.md) | 返回菜单样式 |
 | :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### fallbackFont <Score text="fallbackFont" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **fallbackFont**(): `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **fallbackFont**(`inFont`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取退却字体
+
+#### Returns
+
+| `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 退却字体 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置退却字体
+
+#### Parameters
+
+| `inFont` `string`  [`UIFontFamily`](../enums/mw.UIFontFamily.md) | 需设置的退却字体 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### glyph <Score text="glyph" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **glyph**(): [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取字体字形
+
+#### Returns
+
+| [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) | 字体字形 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置字体字形
+
+#### Parameters
+
+| `inGlyph` [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) | 字体字形的类型 |
+| :------ | :------ |
+
+
 
 </td>
 </tr></tbody>
