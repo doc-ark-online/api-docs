@@ -1,0 +1,7 @@
+[ignore]
+path = [
+    ".vitepress",
+    "public",
+    "index.md",
+    "start.md"
+]
