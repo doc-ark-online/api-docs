@@ -18,7 +18,7 @@
 | 生成分享Id|
 | **[dataShowToOther](mw.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 设置数据是否公开给其他用户|
-| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`): `void` <Badge type="tip" text="client" />  |
+| **[downloadData](mw.AccountService.md#downloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse), `index?`: `number`): `void` <Badge type="tip" text="client" />  |
 | 下载角色形象并应用到当前角色身上|
 | **[fillAvatar](mw.AccountService.md#fillavatar)**(`img`: [`Image`](mw.Image.md)): `void` <Badge type="tip" text="client" />  |
 | 将头像赋值到Image变量上|
@@ -34,8 +34,10 @@
 | 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <Badge type="tip" text="client" />  |
 | 将角色形象数据应用至角色|
-| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse), `index?`: `number`, `openStatus?`: `number`): `void` <Badge type="tip" text="client" />  |
-| 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
+| **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse), `index?`: `number`, `openStatus?`: `number`): `void` <Badge type="tip" text="client" />  |
+| 上传角色形象资源到服务器  Character，Hair, UpperCloth, LowerCloth, Gloves, Shoe|
+| **[useCacheOrDownloadData](mw.AccountService.md#usecacheordownloaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse), `index?`: `number`): `void` <Badge type="tip" text="client" />  |
+| 如果本地有缓存，则优先使用缓存，否则下载角色形象并应用到当前角色身上,|
 
 ## Methods
 
@@ -72,7 +74,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 分享换装数据的角色 |
 | :------ | :------ |
-| `id` `string` | 分享Id |
+| `id` `string` | 分享Id range: 无 |
 | `callback` [`BoolResponse`](../modules/Core.mw.md#boolresponse) |  回调参数，true:应用成功；false:应用失败 |
 
 
@@ -124,10 +126,10 @@ ___
 
 #### Parameters
 
-| `index` `number` | 资源位(0-5) default:0,主角资源位 |
+| `index` `number` | 角色资源位 default:0（主角资源位） range: [0,5] type: 整形 |
 | :------ | :------ |
 | `isOpen` `boolean` | 是否公开 |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:无回调 |
+| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:无 |
 
 
 ___
@@ -142,8 +144,8 @@ ___
 
 | `character` [`Character`](mw.Character.md) | 要应用换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
-| `index?` `number` | 角色位(0-5) default:0,主角资源位 |
+| `callback?` [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:默认没有回调 |
+| `index?` `number` | 角色资源位 default:0（主角资源位） range: [0,5] type: 整形 |
 
 
 ___
@@ -263,9 +265,9 @@ ___
 
 #### Parameters
 
-| `userId` `string` | 用户Id |
+| `userId` `string` | 用户Id range: 无 |
 | :------ | :------ |
-| `index` `number` | 资源位(0-5) |
+| `index` `number` | 角色资源位 default:0（主角资源位） range: [0,5] type: 整形 |
 | `callback` [`StringResponse`](../modules/Core.mw.md#stringresponse) | 返回获取的数据string. |
 
 
@@ -386,7 +388,7 @@ ___
 
 | `character` [`Character`](mw.Character.md) |  用于换装的角色 |
 | :------ | :------ |
-| `dataString` `string` |  返回的数据 |
+| `dataString` `string` |  返回的数据 range: 无 |
 | `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:无回调 |
 
 
@@ -423,13 +425,29 @@ ___
 
 • `Static` **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="client" />
 
-上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
+上传角色形象资源到服务器  Character，Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
 #### Parameters
 
 | `character` [`Character`](mw.Character.md) | 要上传换装数据的角色 |
 | :------ | :------ |
-| `callback?` [`BoolResponse`](../modules/Core.mw.md#boolresponse)  [`VoidResponse`](../modules/Core.mw.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
-| `index?` `number` | 角色位(0-5) default:0,主角资源位 |
-| `openStatus?` `number` | 开发状态 default:1,默认是开放状态 |
+| `callback?` [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:默认没有回调 |
+| `index?` `number` | 角色资源位 default:0（主角资源位） range: [0,5] type: 整形 |
+| `openStatus?` `number` | 开放状态 default:1,默认是开放状态 range: [0,1] type: 整形 |
+
+
+___
+
+### useCacheOrDownloadData <Score text="useCacheOrDownloadData" /> 
+
+• `Static` **useCacheOrDownloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="client" />
+
+如果本地有缓存，则优先使用缓存，否则下载角色形象并应用到当前角色身上,
+
+#### Parameters
+
+| `character` [`Character`](mw.Character.md) | 要应用换装数据的角色 |
+| :------ | :------ |
+| `callback?` [`VoidResponse`](../modules/Core.mw.md#voidresponse)  [`BoolResponse`](../modules/Core.mw.md#boolresponse) | 设置是否成功的回调 default:默认没有回调 |
+| `index?` `number` | 角色资源位 default:0（主角资源位） range: [0,5] type: 整形 |
 

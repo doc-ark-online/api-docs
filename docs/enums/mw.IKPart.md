@@ -7,13 +7,50 @@ IK锚点类型
 ## Table of contents
 
 ### Enumeration Members <Score text="Enumeration" /> 
-| **[LeftFoot](mw.IKPart.md#leftfoot)** = ``2``  |
+| **[FootLeft](mw.IKPart.md#footleft)** = ``6``  |
 | :----- |
+| **[FootRight](mw.IKPart.md#footright)** = ``7`` |
+| **[HandLeft](mw.IKPart.md#handleft)** = ``4`` |
+| **[HandRight](mw.IKPart.md#handright)** = ``5`` |
+| **[LeftFoot](mw.IKPart.md#leftfoot)** = ``2`` |
 | **[LeftHand](mw.IKPart.md#lefthand)** = ``0`` |
+| **[Pelvis](mw.IKPart.md#pelvis)** = ``8`` |
 | **[RightFoot](mw.IKPart.md#rightfoot)** = ``3`` |
 | **[RightHand](mw.IKPart.md#righthand)** = ``1`` |
 
 ## Enumeration Members
+
+### FootLeft <Score text="FootLeft" /> 
+
+• **FootLeft** = ``6``
+
+左脚_新
+
+___
+
+### FootRight <Score text="FootRight" /> 
+
+• **FootRight** = ``7``
+
+右脚_新
+
+___
+
+### HandLeft <Score text="HandLeft" /> 
+
+• **HandLeft** = ``4``
+
+左手_新
+
+___
+
+### HandRight <Score text="HandRight" /> 
+
+• **HandRight** = ``5``
+
+右手_新
+
+___
 
 ### LeftFoot <Score text="LeftFoot" /> 
 
@@ -28,6 +65,14 @@ ___
 • **LeftHand** = ``0``
 
 左手
+
+___
+
+### Pelvis <Score text="Pelvis" /> 
+
+• **Pelvis** = ``8``
+
+盆骨
 
 ___
 

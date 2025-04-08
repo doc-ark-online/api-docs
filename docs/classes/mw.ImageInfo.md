@@ -20,13 +20,17 @@
 | 获取ImageInfo的margin|
 | **[size](mw.ImageInfo.md#size)**(): `Readonly`<[`Vector2`](mw.Vector2.md)\> <Badge type="tip" text="client" />  |
 | 获取ImageInfo的size大小|
+| **[onImageLoadedFailed](mw.ImageInfo.md#onimageloadedfailed)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`resourceName`: `string`) => `void`\> <Badge type="tip" text="other" />  |
+| 获取图片加载失败的回调事件|
 
 ### Methods <Score text="Methods" /> 
 | **[asyncSetByID](mw.ImageInfo.md#asyncsetbyid)**(`id`: `string`, `bUseSRGB?`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | :-----|
-| 通过 ID 设置图片信息|
+| 通过 Id 设置图片信息|
 | **[setByAssetIcon](mw.ImageInfo.md#setbyasseticon)**(`assetId`: `string`, `size`: [`AssetIconSize`](../enums/mw.AssetIconSize.md), `bUseSRGB?`: `boolean`): `Promise`<`boolean`\> <Badge type="tip" text="client" />  |
 | 用指定的 id 和分辨率，设置图标|
+| **[reLoadUIImage](mw.ImageInfo.md#reloaduiimage)**(`resourceName`: `string`): `void` <Badge type="tip" text="client" />  |
+| 通过 resourceName 信息重新触发贴图资源的重新加载|
 
 ## Accessors
 
@@ -260,11 +264,38 @@ ___
 | `value` `Readonly`<[`Vector2`](mw.Vector2.md)\> | 指定的size |
 | :------ | :------ |
 
+
+
 </td>
 </tr></tbody>
 </table>
 
+___
 
+### onImageLoadedFailed <Score text="onImageLoadedFailed" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **onImageLoadedFailed**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`resourceName`: `string`) => `void`\> <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取图片加载失败的回调事件
+
+#### Returns
+
+</td>
+</tr></tbody>
+</table>
+
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`resourceName`: `string`) => `void`\> | 失败事件 |
+| :------ | :------ |
 
 ## Methods
 
@@ -274,13 +305,13 @@ ___
 
 • **asyncSetByID**(`id`, `bUseSRGB?`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
 
-通过 ID 设置图片信息
+通过 Id 设置图片信息
 
 #### Parameters
 
-| `id` `string` | 图片 ID <br> range: 依据 ID 长度而定 |
+| `id` `string` | 图片Id <br> range: 依据 ID 长度而定 |
 | :------ | :------ |
-| `bUseSRGB?` `boolean` | 是否贴图使用SRGB模式 |
+| `bUseSRGB?` `boolean` | 是否贴图使用SRGB模式 default: true range: [true, false] |
 
 #### Returns
 
@@ -297,12 +328,26 @@ ___
 
 #### Parameters
 
-| `assetId` `string` |  传入图标的资源 id |
+| `assetId` `string` |  传入图标的资源 id range: 无 |
 | :------ | :------ |
 | `size` [`AssetIconSize`](../enums/mw.AssetIconSize.md) |  传入图标的分辨率枚举 |
-| `bUseSRGB?` `boolean` |  是否使用SRGB |
+| `bUseSRGB?` `boolean` |  是否使用SRGB default: true range: [true, false] |
 
 #### Returns
 
-| `Promise`<`boolean`\> |  |
+| `Promise`<`boolean`\> | 设置的结果 |
 | :------ | :------ |
+
+___
+
+### reLoadUIImage <Score text="reLoadUIImage" /> 
+
+• `Static` **reLoadUIImage**(`resourceName`): `void` <Badge type="tip" text="client" />
+
+通过 resourceName 信息重新触发贴图资源的重新加载
+
+#### Parameters
+
+| `resourceName` `string` | 失败的图片资源信息，onImageLoadedFailed事件提供 <br> range: 依据 ID 长度而定 |
+| :------ | :------ |
+

@@ -8,6 +8,7 @@ Interfaces
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [CameraShakeInfo](interfaces/mw.CameraShakeInfo.md) | 抖动数据 | [玩法](groups/玩法.玩法.md) |
+| [CollisionQueryParams](interfaces/mw.CollisionQueryParams.md) | 空间查询碰撞参数 | [玩法](groups/玩法.玩法.md) |
 
 
 ## D
@@ -39,12 +40,27 @@ Interfaces
 | [ProjectileMovementConfig](interfaces/mw.ProjectileMovementConfig.md) | 投掷物配置类型 | [玩法](groups/玩法.玩法.md) |
 
 
+## Q
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [QueueReadDataResult](interfaces/mw.QueueReadDataResult.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
+
+
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [RenderQueryParams](interfaces/mw.RenderQueryParams.md) | 空间查询渲染参数 | [玩法](groups/玩法.玩法.md) |
 | [RequestInit](interfaces/mw.RequestInit.md) | HTTP请求信息的对象 | [玩法](groups/玩法.玩法.md) |
 | [Response](interfaces/mw.Response.md) | HTTP响应信息的对象 | [玩法](groups/玩法.玩法.md) |
 | [RoomInfo](interfaces/mw.RoomInfo.md) | 玩家所在的房间信息 | [数据处理](groups/数据处理.数据处理.md) |
+
+
+## S
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [SortedMapGetDataResult](interfaces/mw.SortedMapGetDataResult.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
+| [SortedMapGetRangeDataResult](interfaces/mw.SortedMapGetRangeDataResult.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
+| [SortedMapGetRankResult](interfaces/mw.SortedMapGetRankResult.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 
 
 ## T
