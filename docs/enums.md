@@ -13,6 +13,7 @@ Enums
 | [AnimationBlendMode](enums/mw.AnimationBlendMode.md) | 动画曲线 | [角色系统](groups/角色系统.角色系统.md) |
 | [AnimationMode](enums/mw.AnimationMode.md) | 动画模式 | [动画](groups/动画.动画.md) |
 | [AppearanceType](enums/mw.AppearanceType.md) | 形象类型 | [角色系统](groups/角色系统.角色系统.md) |
+| [AspectRatioAxisConstraint](enums/mw.AspectRatioAxisConstraint.md) | 横纵比约束 | [玩法](groups/玩法.玩法.md) |
 | [AssetIconSize](enums/mw.AssetIconSize.md) | 图标的分辨率 | [界面](groups/界面.界面.md) |
 | [AssetType](enums/mw.AssetType.md) | 资源类型 | [基础类型](groups/基础类型.基础类型.md) |
 | [AttenuationDistanceModel](enums/mw.AttenuationDistanceModel.md) | 音效衰减函数模型 | [场景](groups/场景.场景.md) |
@@ -60,6 +61,7 @@ Enums
 ## E
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [EDynamicAttachmentIndex](enums/mw.EDynamicAttachmentIndex.md) | 动态挂件枚举 | [角色系统](groups/角色系统.角色系统.md) |
 | [EdActorFlag](enums/mw.EdActorFlag.md) | Actor在编辑器中的状态标记 | [基础类型](groups/基础类型.基础类型.md) |
 | [ExpressionType](enums/mw.ExpressionType.md) | 表情类型 | [角色系统](groups/角色系统.角色系统.md) |
 
@@ -128,6 +130,7 @@ Enums
 | :-----| :-----| :-----|
 | [MaskButtonType](enums/mw.MaskButtonType.md) | 遮罩类型 | [界面](groups/界面.界面.md) |
 | [MaskType](enums/mw.MaskType.md) | 新版遮罩类型 | [界面](groups/界面.界面.md) |
+| [MemoryStorageResultCode](enums/mw.MemoryStorageResultCode.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [MenuPlacement](enums/mw.MenuPlacement.md) | 菜单呼出位置枚举 | [界面](groups/界面.界面.md) |
 | [MessageState](enums/mw.MessageState.md) | 发送消息的状态 | [基础类型](groups/基础类型.基础类型.md) |
 | [MessageType](enums/mw.MessageType.md) | 发送消息的类型 | [基础类型](groups/基础类型.基础类型.md) |
@@ -162,7 +165,10 @@ Enums
 | :-----| :-----| :-----|
 | [ParticleEmitterOrientation](enums/mw.ParticleEmitterOrientation.md) | 特效发射取向 | [场景](groups/场景.场景.md) |
 | [ParticleEmitterShape](enums/mw.ParticleEmitterShape.md) | 特效形状枚举 | [场景](groups/场景.场景.md) |
+| [ParticleEmitterShapeInOut](enums/mw.ParticleEmitterShapeInOut.md) | 发射内外朝向 | [场景](groups/场景.场景.md) |
 | [ParticleEmitterShapeStyle](enums/mw.ParticleEmitterShapeStyle.md) | 特效发射类型 | [场景](groups/场景.场景.md) |
+| [ParticleFlipbookLayout](enums/mw.ParticleFlipbookLayout.md) | 序列帧布局 | [场景](groups/场景.场景.md) |
+| [ParticleFlipbookMode](enums/mw.ParticleFlipbookMode.md) | 序列帧播放模式 | [场景](groups/场景.场景.md) |
 | [PlayStatus](enums/mw.PlayStatus.md) | 帧动画播放规则 | [界面](groups/界面.界面.md) |
 | [PointType](enums/mw.PointType.md) | 样条线 | [玩法](groups/玩法.玩法.md) |
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [场景](groups/场景.场景.md) |
@@ -183,6 +189,7 @@ Enums
 | [ScrollBarDefaultLocation](enums/mw.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [界面](groups/界面.界面.md) |
 | [SelectInfo](enums/mw.SelectInfo.md) | 列表视图选择来源信息 | [界面](groups/界面.界面.md) |
 | [SelectionMode](enums/mw.SelectionMode.md) | 列表视图选择模式 | [界面](groups/界面.界面.md) |
+| [SettingsOption](enums/mw.SettingsOption.md) | 设置面板选项 | [设置](groups/设置.设置.md) |
 | [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [场景](groups/场景.场景.md) |
 | [SkyboxBackgroundSwitchMode](enums/mw.SkyboxBackgroundSwitchMode.md) | 天空盒背景的切换方式枚举 | [场景](groups/场景.场景.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [界面](groups/界面.界面.md) |
@@ -195,6 +202,7 @@ Enums
 | [SoundPlayState](enums/mw.SoundPlayState.md) | 音效播放状态 | [场景](groups/场景.场景.md) |
 | [SpaceMode](enums/mw.SpaceMode.md) | UI空间位置枚举 | [界面](groups/界面.界面.md) |
 | [StanceBlendMode](enums/mw.StanceBlendMode.md) | 姿态混合模式 | [动画](groups/动画.动画.md) |
+| [StanceParam](enums/mw.StanceParam.md) | 支持修改的姿态参数 | [动画](groups/动画.动画.md) |
 
 
 ## T
@@ -204,6 +212,7 @@ Enums
 | [TextCommit](enums/mw.TextCommit.md) | 输入提交模式 | [界面](groups/界面.界面.md) |
 | [TextJustify](enums/mw.TextJustify.md) | 文本排列对齐规则 | [界面](groups/界面.界面.md) |
 | [TextVerticalJustify](enums/mw.TextVerticalJustify.md) | 文本排列垂直对齐规则 | [界面](groups/界面.界面.md) |
+| [TextureFormat](enums/mw.TextureFormat.md) | 贴图格式 | [基础类型](groups/基础类型.基础类型.md) |
 | [TouchInputType](enums/mw.TouchInputType.md) | 触摸类型 | [输入](groups/输入.输入.md) |
 | [TriggerShapeType](enums/mw.TriggerShapeType.md) | 碰撞形状 | [玩法](groups/玩法.玩法.md) |
 

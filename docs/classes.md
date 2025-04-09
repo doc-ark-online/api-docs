@@ -50,6 +50,7 @@ Classes
 | [ChatService](classes/mw.ChatService.md) | 聊天服务 | [服务](groups/服务.服务.md) |
 | [Checkbox](classes/mw.Checkbox.md) | 勾选框 | [界面](groups/界面.界面.md) |
 | [CheckboxStyle](classes/mw.CheckboxStyle.md) | Checkbox 控件风格类型 | [界面](groups/界面.界面.md) |
+| [ClothObject](classes/mw.ClothObject.md) | 服装逻辑对象 | [角色系统](groups/角色系统.角色系统.md) |
 | [ColorPick](classes/mw.ColorPick.md) | 调色板 | [界面](groups/界面.界面.md) |
 | [ConvertScreenResult](classes/mw.ConvertScreenResult.md) | 屏幕坐标转换结果 | [输入](groups/输入.输入.md) |
 
@@ -66,6 +67,7 @@ Classes
 | [Delegate](classes/mw.Delegate.md) | 委托 | [基础类型](groups/基础类型.基础类型.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [界面](groups/界面.界面.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [界面](groups/界面.界面.md) |
+| [DrawBoard](classes/mw.DrawBoard.md) | UI 画板 | [界面](groups/界面.界面.md) |
 | [DrawCanvas](classes/mw.DrawCanvas.md) | UI 画布 | [界面](groups/界面.界面.md) |
 | [DrawDataBase](classes/mw.DrawDataBase.md) | 图元绘制基础参数 | [界面](groups/界面.界面.md) |
 | [Dropdown](classes/mw.Dropdown.md) | Dropdown | [界面](groups/界面.界面.md) |
@@ -81,6 +83,7 @@ Classes
 | [Event](classes/mw.Event.md) | 事件 | [基础类型](groups/基础类型.基础类型.md) |
 | [EventListener](classes/mw.EventListener.md) | 事件监听器 | [基础类型](groups/基础类型.基础类型.md) |
 | [EventReply](classes/mw.EventReply.md) | 事件回复 | [界面](groups/界面.界面.md) |
+| [EventWrapper](classes/mw.EventWrapper.md) | 事件包装器 | [服务](groups/服务.服务.md) |
 
 
 ## F
@@ -156,6 +159,7 @@ Classes
 | [ListItemStyle](classes/mw.ListItemStyle.md) | 背景图片风格类型 | [界面](groups/界面.界面.md) |
 | [ListView](classes/mw.ListView.md) | 列表视图 | [界面](groups/界面.界面.md) |
 | [ListViewItemDataBase](classes/mw.ListViewItemDataBase.md) | 列表视图节点数据基类 | [界面](groups/界面.界面.md) |
+| [LocaleUtil](classes/mw.LocaleUtil.md) | 本地化工具 | [工具](groups/工具.工具.md) |
 
 
 ## M
@@ -169,6 +173,9 @@ Classes
 | [MathUtil](classes/mw.MathUtil.md) | 数学库工具 | [工具](groups/工具.工具.md) |
 | [Matrix3x3](classes/mw.Matrix3x3.md) | 三维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [基础类型](groups/基础类型.基础类型.md) |
+| [MemoryStorage](classes/mw.MemoryStorage.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
+| [MemoryStorageQueue](classes/mw.MemoryStorageQueue.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
+| [MemoryStorageSortedMap](classes/mw.MemoryStorageSortedMap.md) | 数据存储 | [数据处理](groups/数据处理.数据处理.md) |
 | [MenuAnchor](classes/mw.MenuAnchor.md) | 菜单锚点 | [界面](groups/界面.界面.md) |
 | [MenuItemInfo](classes/mw.MenuItemInfo.md) | 菜单项节点信息 | [界面](groups/界面.界面.md) |
 | [Model](classes/mw.Model.md) | 物理模拟与材质设置 | [玩法](groups/玩法.玩法.md) |
@@ -199,6 +206,7 @@ Classes
 | :-----| :-----| :-----|
 | [ParticleEmitter](classes/mw.ParticleEmitter.md) | 粒子特效 | [场景](groups/场景.场景.md) |
 | [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [角色系统](groups/角色系统.角色系统.md) |
+| [PhotoStudioService](classes/mw.PhotoStudioService.md) | 拍照组件 | [设置](groups/设置.设置.md) |
 | [PhysicsService](classes/mw.PhysicsService.md) | 碰撞组 | [玩法](groups/玩法.玩法.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [玩法](groups/玩法.玩法.md) |
 | [Player](classes/mw.Player.md) | 角色管理器 | [角色系统](groups/角色系统.角色系统.md) |
@@ -227,6 +235,7 @@ Classes
 | [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [服务](groups/服务.服务.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [设置](groups/设置.设置.md) |
 | [Rotation](classes/mw.Rotation.md) | 欧拉角 | [基础类型](groups/基础类型.基础类型.md) |
+| [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [服务](groups/服务.服务.md) |
 
 
 ## S

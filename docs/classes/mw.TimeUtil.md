@@ -19,6 +19,8 @@
 | 清除 delayExecute|
 | **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`   |
 | 清除 setInterval|
+| **[clearTimerRealTime](mw.TimeUtil.md#cleartimerrealtime)**(`handler`: `number`): `void`   |
+| 清理时间函数|
 | **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`   |
 | 延迟一定帧数执行方法|
 | **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>   |
@@ -27,10 +29,16 @@
 | 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`   |
 | 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
+| **[getRealTimeContext](mw.TimeUtil.md#getrealtimecontext)**(): `Object`   |
+| 在callback函数执行期间调用获取上下文|
 | **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string`   |
 | 格式化时间戳|
 | **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number`   |
 | 按一定时间间隔执行方法|
+| **[setIntervalRealTime](mw.TimeUtil.md#setintervalrealtime)**(`callback`: (`dt`: `number`) => `void`, `millisecond`: `number`): `number`   |
+| 实时设置轮询函数|
+| **[setTimeoutRealTime](mw.TimeUtil.md#settimeoutrealtime)**(`callback`: (`dt`: `number`) => `void`, `millisecond`: `number`): `number`   |
+| 实时设置定时函数|
 | **[time](mw.TimeUtil.md#time)**(): `number`   |
 | 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
 
@@ -90,7 +98,7 @@ ___
 
 #### Parameters
 
-| `id` `number` |  delayExecute 方法返回的 ID <br> range: 根据 ID 长度而定。 type: 整数 |
+| `id` `number` |  delayExecute 方法返回的 ID <br> range: 根据 ID 长度而定。 type: 整形 |
 | :------ | :------ |
 
 
@@ -168,6 +176,20 @@ export default class TimeExample extends Script {
 
 ___
 
+### clearTimerRealTime <Score text="clearTimerRealTime" /> 
+
+• `Static` **clearTimerRealTime**(`handler`): `void` 
+
+清理时间函数
+
+#### Parameters
+
+| `handler` `number` |  时间函数的句柄 range: 不做限制 type: 整数 |
+| :------ | :------ |
+
+
+___
+
 ### delayExecute <Score text="delayExecute" /> 
 
 • `Static` **delayExecute**(`handler`, `frameNum?`): `number` 
@@ -178,7 +200,7 @@ ___
 
 | `handler` () => `void` |  执行的方法 |
 | :------ | :------ |
-| `frameNum?` `number` |  要延迟的帧数 default: 1 <br> range: 根据你想要延迟的帧数而定，不做限制。 type: 整数 |
+| `frameNum?` `number` |  要延迟的帧数 default: 1 <br> range: 根据你想要延迟的帧数而定，不做限制。 type: 整形 |
 
 #### Returns
 
@@ -310,6 +332,19 @@ export default class TimeExample extends Script {
 
 ___
 
+### getRealTimeContext <Score text="getRealTimeContext" /> 
+
+• `Static` **getRealTimeContext**(): `Object` 
+
+在callback函数执行期间调用获取上下文
+
+#### Returns
+
+| `Object` | | `dt` | `number` | |
+| :------ | :------ |
+
+___
+
 ### parseTime <Score text="parseTime" /> 
 
 • `Static` **parseTime**(`timeData`, `format?`): `string` 
@@ -397,6 +432,44 @@ export default class TimeExample extends Script {
 
 }
 ```
+
+___
+
+### setIntervalRealTime <Score text="setIntervalRealTime" /> 
+
+• `Static` **setIntervalRealTime**(`callback`, `millisecond`): `number` 
+
+实时设置轮询函数
+
+#### Parameters
+
+| `callback` (`dt`: `number`) => `void` |  定时器到达时间时执行的绑定函数，dt表示执行回调和定时时间的差值。 |
+| :------ | :------ |
+| `millisecond` `number` |  定时时间 range: 最小为1ms type: 整数 |
+
+#### Returns
+
+| `number` | 时间函数的句柄 |
+| :------ | :------ |
+
+___
+
+### setTimeoutRealTime <Score text="setTimeoutRealTime" /> 
+
+• `Static` **setTimeoutRealTime**(`callback`, `millisecond`): `number` 
+
+实时设置定时函数
+
+#### Parameters
+
+| `callback` (`dt`: `number`) => `void` |  定时器到达时间时执行的绑定函数 ，dt表示执行回调和定时时间的差值。 |
+| :------ | :------ |
+| `millisecond` `number` |  定时时间 range: 不做限制 type: 整数 |
+
+#### Returns
+
+| `number` | 时间函数的句柄 |
+| :------ | :------ |
 
 ___
 
