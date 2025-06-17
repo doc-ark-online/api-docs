@@ -96,6 +96,8 @@ export default class IMExample1 extends Script {
 | 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
 | **[onScaleStart](mw.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onSportStop](mw.IntegratedMover.md#onsportstop)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| 运动停止时间回调|
 | **[onSwingEnable](mw.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | 摆动：延迟启动回调|
 
@@ -113,8 +115,10 @@ export default class IMExample1 extends Script {
 
 
 ### Accessors <Score text="Accessors" /> 
-| **[enable](mw.IntegratedMover.md#enable)**(): `boolean`   |
+| **[duration](mw.IntegratedMover.md#duration)**(): `number`   |
 | :-----|
+| 获取停止运动时间|
+| **[enable](mw.IntegratedMover.md#enable)**(): `boolean`   |
 | 获取启用状态|
 | **[linearDelayStartTime](mw.IntegratedMover.md#lineardelaystarttime)**(): `number`   |
 | 获取延时启动平移运行时间|
@@ -168,12 +172,8 @@ export default class IMExample1 extends Script {
 
 ::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[actorFlagValue](mw.GameObject.md#actorflagvalue)**(): `number` <Badge type="tip" text="other" />  |
-| :-----|
-| 获取对象标记|
-| **[actorLevel](mw.GameObject.md#actorlevel)**(): `number` <Badge type="tip" text="other" />  |
-| 获取Actor等级|
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
+| :-----|
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
@@ -189,6 +189,10 @@ export default class IMExample1 extends Script {
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
 | 获取当前父物体|
+| **[prefabAssetId](mw.GameObject.md#prefabassetid)**(): `string`   |
+| 返回当前物体使用的预制体资源ID，如果当前物体不是预制体，则返回空|
+| **[sceneCaptureTag](mw.GameObject.md#scenecapturetag)**(): `string`   |
+| 获取当前物体的捕捉标签|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
 | 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
@@ -211,7 +215,7 @@ export default class IMExample1 extends Script {
 | 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`CloneInfo`](../interfaces/mw.CloneInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
@@ -227,8 +231,6 @@ export default class IMExample1 extends Script {
 | 根据路径查找子物体|
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
 | **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
@@ -238,15 +240,13 @@ export default class IMExample1 extends Script {
 | **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
 | 获取指定类型的所有组件|
 | **[getCustomProperties](mw.GameObject.md#getcustomproperties)**(): `string`[]   |
-| 获取所有自定义属性|
+| 获取自定义属性名字数组，返回对象所有自定义属性。|
 | **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
-| 获取自定义属性|
-| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| 给定对象属性修改时触发的事件代理|
+| 获取自定义属性的值，服务器客户端均可调用，客户端调用需注意属性同步的延迟。|
+| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| 获取给定自定义属性修改时触发的事件代理。双端对象在服务器修改自定义属性后，双端均会触发事件并执行绑定函数。|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
-| **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
-| 返回当前物体是否为预制体|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
 | 按给定的速度矢量随时间平滑地移动对象|
 | **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
@@ -261,8 +261,8 @@ export default class IMExample1 extends Script {
 | 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
-| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void`   |
-| 设置自定义属性|
+| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void` <Badge type="tip" text="server" />  |
+| 设置自定义属性的值，双端对象需在服务器调用。当设置的属性不存在时会新增自定义属性。|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
@@ -276,7 +276,7 @@ export default class IMExample1 extends Script {
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体|
+| 异步构造一个物体，创建时请尽量把信息通过 gameObjectInfo 传入以达到性能最优化。|
 | **[bulkPivotTo](mw.GameObject.md#bulkpivotto)**(`gameObjects`: [`GameObject`](mw.GameObject.md)[], `transforms`: [`Transform`](mw.Transform.md)[]): `void`   |
 | 批量设置位置|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -290,7 +290,7 @@ export default class IMExample1 extends Script {
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过路径查找物体|
 | **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
-| 构造一个物体|
+| 构造一个物体，创建时请尽量把信息通过 gameObjectInfo 传入以达到性能最优化。|
 :::
 
 
@@ -370,6 +370,14 @@ ___
 
 ___
 
+### onSportStop <Score text="onSportStop" /> 
+
+• **onSportStop**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+
+运动停止时间回调
+
+___
+
 ### onSwingEnable <Score text="onSwingEnable" /> 
 
 • **onSwingEnable**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
@@ -377,6 +385,54 @@ ___
 摆动：延迟启动回调
 
 ## Accessors
+
+___
+
+### duration <Score text="duration" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **duration**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **duration**(`newDuration`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取停止运动时间
+
+#### Returns
+
+| `number` | 停止运动时间 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置停止运动时间，设置为小于等于零的值表示当次运动不会停止
+
+停止运动时间仅针对开始运动前的最后一次设置值生效，开始运动后此设置失效
+
+#### Parameters
+
+| `newDuration` `number` | 停止运动时间 range: (-∞, +∞) type:浮点数 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 

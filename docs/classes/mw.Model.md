@@ -141,8 +141,8 @@ export default class ModelExample extends Script {
 | 获取质量大小|
 | **[massEnabled](mw.Model.md#massenabled)**(): `boolean`   |
 | 获取是否使用质量|
-| **[onTouch](mw.Model.md#ontouch)**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
-| 进入Model事件|
+| **[onTouch](mw.Model.md#ontouch)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`go`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `unknown`\>  |
+| 进入Model事件,HitResult是个临时对象，不要持有他得引用|
 | **[onTouchEnd](mw.Model.md#ontouchend)**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
 | 离开Model事件|
 | **[opacity](mw.Model.md#opacity)**(): `number`   |
@@ -165,12 +165,8 @@ export default class ModelExample extends Script {
 
 ::: details click
 ### Accessors <Score text="Accessors" /> 
-| **[actorFlagValue](mw.GameObject.md#actorflagvalue)**(): `number` <Badge type="tip" text="other" />  |
-| :-----|
-| 获取对象标记|
-| **[actorLevel](mw.GameObject.md#actorlevel)**(): `number` <Badge type="tip" text="other" />  |
-| 获取Actor等级|
 | **[assetId](mw.GameObject.md#assetid)**(): `string`   |
+| :-----|
 | 获取当前物体使用资源的GUID|
 | **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`   |
 | 获取物体的唯一标识（唯一标识一个对象的字符串）。|
@@ -186,6 +182,10 @@ export default class ModelExample extends Script {
 | 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)   |
 | 获取当前父物体|
+| **[prefabAssetId](mw.GameObject.md#prefabassetid)**(): `string`   |
+| 返回当前物体使用的预制体资源ID，如果当前物体不是预制体，则返回空|
+| **[sceneCaptureTag](mw.GameObject.md#scenecapturetag)**(): `string`   |
+| 获取当前物体的捕捉标签|
 | **[tag](mw.GameObject.md#tag)**(): `string`   |
 | 获取当前物体的标签|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)   |
@@ -214,7 +214,7 @@ export default class ModelExample extends Script {
 | **[resetMaterial](mw.Model.md#resetmaterial)**(`index?`: `number`): `void`   |
 | 还原物体材质|
 | **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void` <Badge type="tip" text="client" />  |
-| 与玩家之间超出此距离的对象将被剪裁|
+| 与摄像机之间超出此距离的对象将被剪裁|
 | **[setMaterial](mw.Model.md#setmaterial)**(`MaterialGUID`: `string`): `void`   |
 | 设置物体材质|
 | **[setOutline](mw.Model.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void`   |
@@ -234,7 +234,7 @@ export default class ModelExample extends Script {
 | 异步根据名称查找子物体|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)   |
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`CloneInfo`](../interfaces/mw.CloneInfo.md)): [`GameObject`](mw.GameObject.md)   |
 | 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void`   |
 | 删除对象|
@@ -250,8 +250,6 @@ export default class ModelExample extends Script {
 | 根据路径查找子物体|
 | **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]   |
 | 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)   |
-| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]   |
 | 通过名字查找所有的子物体|
 | **[getComponent](mw.GameObject.md#getcomponent)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>   |
@@ -261,15 +259,13 @@ export default class ModelExample extends Script {
 | **[getComponents](mw.GameObject.md#getcomponents)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`constructor?`: (...`args`: `unknown`[]) => `T`: extends [`Script`](mw.Script.md)<`T`\>): `T`: extends [`Script`](mw.Script.md)<`T`\>[]   |
 | 获取指定类型的所有组件|
 | **[getCustomProperties](mw.GameObject.md#getcustomproperties)**(): `string`[]   |
-| 获取所有自定义属性|
+| 获取自定义属性名字数组，返回对象所有自定义属性。|
 | **[getCustomProperty](mw.GameObject.md#getcustomproperty)**<`T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)\>(`propertyName`: `string`): `T`: extends [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)   |
-| 获取自定义属性|
-| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="other" />  |
-| 给定对象属性修改时触发的事件代理|
+| 获取自定义属性的值，服务器客户端均可调用，客户端调用需注意属性同步的延迟。|
+| **[getCustomPropertyChangeDelegate](mw.GameObject.md#getcustompropertychangedelegate)**(`property`): `Readonly`<[`MulticastDelegate`](mw.MulticastDelegate.md)<(`path`: `string`, `value`: `unknown`, `oldValue`: `unknown`) => `void`\>\> <Badge type="tip" text="client" />  |
+| 获取给定自定义属性修改时触发的事件代理。双端对象在服务器修改自定义属性后，双端均会触发事件并执行绑定函数。|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`   |
 | 获取物体是否被显示|
-| **[isPrefabActor](mw.GameObject.md#isprefabactor)**(): `boolean`   |
-| 返回当前物体是否为预制体|
 | **[moveBy](mw.GameObject.md#moveby)**(`velocity`: [`Vector`](mw.Vector.md), `isLocal?`: `boolean`): `void` <Badge type="tip" text="other" />  |
 | 按给定的速度矢量随时间平滑地移动对象|
 | **[moveTo](mw.GameObject.md#moveto)**(`targetPosition`: [`Vector`](mw.Vector.md), `time`: `number`, `isLocal?`: `boolean`, `onComplete?`: () => `void`): `void` <Badge type="tip" text="other" />  |
@@ -284,8 +280,8 @@ export default class ModelExample extends Script {
 | 在指定时间内从当前缩放平滑变化至目标缩放|
 | **[setAbsolute](mw.GameObject.md#setabsolute)**(`absolutePosition?`: `boolean`, `absoluteRotation?`: `boolean`, `absoluteScale?`: `boolean`): `void`   |
 | 设置物体localTransform是相对于父物体或者世界|
-| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void`   |
-| 设置自定义属性|
+| **[setCustomProperty](mw.GameObject.md#setcustomproperty)**(`propertyName`: `string`, `value`: `undefined`  [`CustomPropertyType`](../modules/Core.mw.md#custompropertytype)): `void` <Badge type="tip" text="server" />  |
+| 设置自定义属性的值，双端对象需在服务器调用。当设置的属性不存在时会新增自定义属性。|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`   |
 | 设置物体是否被显示|
 | **[stopMove](mw.GameObject.md#stopmove)**(): `void` <Badge type="tip" text="other" />  |
@@ -299,7 +295,7 @@ export default class ModelExample extends Script {
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>   |
 | 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>   |
-| 异步构造一个物体|
+| 异步构造一个物体，创建时请尽量把信息通过 gameObjectInfo 传入以达到性能最优化。|
 | **[bulkPivotTo](mw.GameObject.md#bulkpivotto)**(`gameObjects`: [`GameObject`](mw.GameObject.md)[], `transforms`: [`Transform`](mw.Transform.md)[]): `void`   |
 | 批量设置位置|
 | **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)   |
@@ -313,15 +309,13 @@ export default class ModelExample extends Script {
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)   |
 | 通过路径查找物体|
 | **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>   |
-| 构造一个物体|
+| 构造一个物体，创建时请尽量把信息通过 gameObjectInfo 传入以达到性能最优化。|
 :::
 
 
 ## Properties
 
 ## Accessors
-
-___
 
 ### angularDamping <Score text="angularDamping" /> 
 
@@ -550,7 +544,6 @@ ___
 
 :::
 
-预期效果：进入游戏按1键，角色可以穿过方块，再按1键，角色无法穿过方块。
 
 #### Parameters
 
@@ -567,7 +560,8 @@ ___
 使用示例:
 </span>
 
-在场景中拖入一个方块，并创建一个名为Collision的脚本挂载在该方块下，并复制以下代码进入脚本：
+在场景中拖入一个方块，并创建一个名为Collision的脚本挂载在该方块下，并复制以下代码进入脚本。
+预期效果：进入游戏按1键，角色可以穿过方块，再按1键，角色无法穿过方块。
 ```ts
 @Component
 export default class Collision extends Script {
@@ -1241,7 +1235,7 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
-• `get` **onTouch**(): [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+• `get` **onTouch**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`go`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `unknown`\>
 
 </th>
 </tr></thead>
@@ -1249,11 +1243,11 @@ ___
 <td style="text-align: left">
 
 
-进入Model事件
+进入Model事件,HitResult是个临时对象，不要持有他得引用
 
 #### Returns
 
-| [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) |  |
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`go`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `unknown`\> |  |
 | :------ | :------ |
 
 </td>
@@ -1552,7 +1546,6 @@ ___
 
 在空间查询模型是否纳入检测范围。当值为false时，不会被空间查询检测到。
 
-按下1生成特效，被空间查询检测到，再按下1，特效被删除，没有被空间查询检测到。
 
 #### Parameters
 
@@ -1569,7 +1562,8 @@ ___
 使用示例:
 </span>
 
-在场景中拖入一个方块，并创建一个名为Query的脚本挂载在该方块下，并复制以下代码进入脚本：
+在场景中拖入一个方块，并创建一个名为Query的脚本挂载在该方块下，并复制以下代码进入脚本。
+预期效果：按下1生成特效，被空间查询检测到，再按下1，特效被删除，没有被空间查询检测到。
 ```ts
 @Component
 export default class Query extends Script {
@@ -1694,7 +1688,6 @@ Touched和TouchEnded事件是否在模型上触发。
 
 Touched和TouchEnded事件是否在模型上触发。当值为false时，对象在进行交互时不会抛出touch事件。
 
-角色走入方块，生成特效，走出方块，特效消失。按下1，角色走入走出方块无任何变化。
 
 #### Parameters
 
@@ -1709,7 +1702,8 @@ Touched和TouchEnded事件是否在模型上触发。当值为false时，对象�
 使用示例:
 </span>
 
-在场景中拖入一个方块，并创建一个名为Touch的脚本挂载在该方块下，并复制以下代码进入脚本：
+在场景中拖入一个方块，并创建一个名为Touch的脚本挂载在该方块下，并复制以下代码进入脚本。
+预期效果：角色走入方块，生成特效，走出方块，特效消失。按下1，角色走入走出方块无任何变化。
 ```ts
 @Component
 export default class Touch extends Script {
@@ -1840,7 +1834,7 @@ ___
 
 #### Parameters
 
-| `Index` `number` | 第几个材质 <br> range: 不超过材质数 type: 整数 |
+| `Index` `number` | 第几个材质 <br> range: 不超过材质数 type: 整形 |
 | :------ | :------ |
 
 
@@ -1882,7 +1876,7 @@ ___
 
 #### Parameters
 
-| `index` | `number` |
+| `index` `number` | 材质插槽索引 type: Integer usage: 索引 range: 无 |
 | :------ | :------ |
 
 #### Returns
@@ -1900,7 +1894,7 @@ ___
 
 #### Parameters
 
-| `index?` `number` |  材质索引序号 |
+| `index?` `number` |  材质索引序号 type: Integer default: undefined range: 无 |
 | :------ | :------ |
 
 
@@ -1910,7 +1904,7 @@ ___
 
 • **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
 
-与玩家之间超出此距离的对象将被剪裁
+与摄像机之间超出此距离的对象将被剪裁
 
 #### Parameters
 
@@ -1918,7 +1912,7 @@ ___
 | :------ | :------ |
 
 
-最终的裁剪距离会和画质等级有关；修改此属性 ≤0 时，裁剪距离会根据对象尺寸自动调整 (自动启用 CullDistanceVolume 功能)
+此属性 ≤0 时，裁剪距离会根据对象尺寸自动调整 (自动启用 CullDistanceVolume 功能,最终的裁剪距离会和画质等级有关),属性>0 时使用绝对值裁剪距离；
 
 ::: warning Precautions
 

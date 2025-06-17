@@ -20,7 +20,7 @@ CharacterDescription 在 CharacterDescription 高级人形配置有留有 slotAn
 
 ## Hierarchy
 
-- `Array`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>
+- `Array`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\> ; `bSync?`: `boolean`  }`\>
 
   ↳ **`CharacterDecoration`**
 

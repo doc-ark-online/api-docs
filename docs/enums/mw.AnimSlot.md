@@ -9,6 +9,7 @@
 ### Enumeration Members <Score text="Enumeration" /> 
 | **[Default](mw.AnimSlot.md#default)** = ``0``  |
 | :----- |
+| **[FirstPerson](mw.AnimSlot.md#firstperson)** = ``4`` |
 | **[FullyBody](mw.AnimSlot.md#fullybody)** = ``3`` |
 | **[Lower](mw.AnimSlot.md#lower)** = ``2`` |
 | **[Upper](mw.AnimSlot.md#upper)** = ``1`` |
@@ -20,6 +21,14 @@
 • **Default** = ``0``
 
 默认插槽
+
+___
+
+### FirstPerson <Score text="FirstPerson" /> 
+
+• **FirstPerson** = ``4``
+
+第一人称插槽
 
 ___
 

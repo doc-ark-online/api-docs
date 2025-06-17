@@ -34,9 +34,17 @@ Stance 如何工作的呢？
 | 姿态资源GUID|
 
 ### Methods <Score text="Methods" /> 
-| **[play](mw.Stance.md#play)**(): `boolean`   |
+| **[getNumberParameter](mw.Stance.md#getnumberparameter)**(`key`: [`StanceParam`](../enums/mw.StanceParam.md)): `number`   |
 | :-----|
+| 获取姿态的数值类参数|
+| **[getStringParameter](mw.Stance.md#getstringparameter)**(`key`: [`StanceParam`](../enums/mw.StanceParam.md)): `string`   |
+| 获取姿态的字符串参数|
+| **[play](mw.Stance.md#play)**(): `boolean`   |
 | 播放姿态|
+| **[setNumberParameter](mw.Stance.md#setnumberparameter)**(`key`: [`StanceParam`](../enums/mw.StanceParam.md), `value`: `number`): `void`   |
+| 设置姿态的数值类参数，比如修改某个姿态的播放速率。|
+| **[setStringParameter](mw.Stance.md#setstringparameter)**(`key`: [`StanceParam`](../enums/mw.StanceParam.md), `value`: `string`): `void`   |
+| 设置姿态的字符串参数，比如修改某个姿态的动画资源。|
 | **[stop](mw.Stance.md#stop)**(): `boolean`   |
 | 停止姿态|
 
@@ -217,6 +225,42 @@ export default class Example_Stance_AssetId extends Script {
 
 ## Methods
 
+### getNumberParameter <Score text="getNumberParameter" /> 
+
+• **getNumberParameter**(`key`): `number` 
+
+获取姿态的数值类参数
+
+#### Parameters
+
+| `key` [`StanceParam`](../enums/mw.StanceParam.md) |  要查询的参数 |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | 对应参数的值，查询不到则返回undefined |
+| :------ | :------ |
+
+___
+
+### getStringParameter <Score text="getStringParameter" /> 
+
+• **getStringParameter**(`key`): `string` 
+
+获取姿态的字符串参数
+
+#### Parameters
+
+| `key` [`StanceParam`](../enums/mw.StanceParam.md) |  要查询的参数 |
+| :------ | :------ |
+
+#### Returns
+
+| `string` | 对应参数的值，查询不到则返回undefined |
+| :------ | :------ |
+
+___
+
 ### play <Score text="play" /> 
 
 • **play**(): `boolean` 
@@ -278,6 +322,36 @@ export default class Example_Stance_Play extends Script {
     }
 }
 ```
+
+___
+
+### setNumberParameter <Score text="setNumberParameter" /> 
+
+• **setNumberParameter**(`key`, `value`): `void` 
+
+设置姿态的数值类参数，比如修改某个姿态的播放速率。
+
+#### Parameters
+
+| `key` [`StanceParam`](../enums/mw.StanceParam.md) |  要设置的参数 |
+| :------ | :------ |
+| `value` `number` |  要设置的值 type: 浮点型 range: 无 |
+
+
+___
+
+### setStringParameter <Score text="setStringParameter" /> 
+
+• **setStringParameter**(`key`, `value`): `void` 
+
+设置姿态的字符串参数，比如修改某个姿态的动画资源。
+
+#### Parameters
+
+| `key` [`StanceParam`](../enums/mw.StanceParam.md) |  要设置的参数 |
+| :------ | :------ |
+| `value` `string` |  要设置的AssetId range: 无 |
+
 
 ___
 

@@ -7,13 +7,35 @@
 ## Table of contents
 
 ### Methods <Score text="Methods" /> 
-| **[asyncLoad](mw.DataFile.md#asyncload)**(`fileName`: `string`): `Promise`<`string`\>   |
+| **[DirectoryExists](mw.DataFile.md#directoryexists)**(`directoryRelativePath`: `string`): `boolean`   |
 | :-----|
+| 查询指定目录是否存在|
+| **[asyncLoad](mw.DataFile.md#asyncload)**(`fileName`: `string`): `Promise`<`string`\>   |
 | 读取配置|
 | **[exists](mw.DataFile.md#exists)**(`fileName`: `string`): `boolean`   |
 | 判断配置是否存在|
+| **[findDataFiles](mw.DataFile.md#finddatafiles)**(`fileNames`: `string`[], `directoryNames`: `string`[], `targetDirectoryRelativePath`: `string`): `boolean`   |
+| 获取指定目录下所有文件夹和.data文件|
 
 ## Methods
+
+### DirectoryExists <Score text="DirectoryExists" /> 
+
+• `Static` **DirectoryExists**(`directoryRelativePath`): `boolean` 
+
+查询指定目录是否存在
+
+#### Parameters
+
+| `directoryRelativePath` `string` |  要查找的目录于DataFile目录的相对路径(若为空则查找DataFile目录) range: 有效目录路径,末尾带‘/’与否皆可 |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 目标目录是否存在 |
+| :------ | :------ |
+
+___
 
 ### asyncLoad <Score text="asyncLoad" /> 
 
@@ -88,3 +110,27 @@ export default class DataFileExample extends Script {
     }
 }
 ```
+
+___
+
+### findDataFiles <Score text="findDataFiles" /> 
+
+• `Static` **findDataFiles**(`fileNames`, `directoryNames`, `targetDirectoryRelativePath`): `boolean` 
+
+获取指定目录下所有文件夹和.data文件
+
+#### Parameters
+
+| `fileNames` `string`[] |  存储.data文件的数组 default: undefined |
+| :------ | :------ |
+| `directoryNames` `string`[] |  存储文件夹的数组 default: undefined |
+| `targetDirectoryRelativePath` `string` |  要查找的目录于DataFile目录的相对路径(若为空则查找DataFile目录) default: undefined range: 有效目录路径,末尾带‘/’与否皆可 |
+
+#### Returns
+
+| `boolean` | 目标目录是否存在 |
+| :------ | :------ |
+
+::: warning Precautions
+
+指定目录不存在会返回false
