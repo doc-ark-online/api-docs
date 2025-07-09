@@ -12,8 +12,10 @@
 | 收起设置面板，如果设置面板入口隐藏，可以通过此接口收起设置面板|
 | **[promptSettingPanel](mw.SettingService.md#promptsettingpanel)**(): `void` <Badge type="tip" text="client" />  |
 | 展示设置面板，如果设置面板入口隐藏，可以通过此接口展示设置面板|
+| **[setOptionVisibility](mw.SettingService.md#setoptionvisibility)**(`option`: [`SettingsOption`](../enums/mw.SettingsOption.md), `isVisible`: `boolean`): `void` <Badge type="tip" text="client" />  |
+| 控制设置面板指定配置项的显隐状态|
 | **[setSettingButtonVisible](mw.SettingService.md#setsettingbuttonvisible)**(`visible`: `boolean`): `void` <Badge type="tip" text="client" />  |
-| 控制设置面板入口显隐|
+| 控制设置面板与角编组件入口显隐|
 
 ## Methods
 
@@ -35,11 +37,26 @@ ___
 
 ___
 
+### setOptionVisibility <Score text="setOptionVisibility" /> 
+
+• `Static` **setOptionVisibility**(`option`, `isVisible`): `void` <Badge type="tip" text="client" />
+
+控制设置面板指定配置项的显隐状态
+
+#### Parameters
+
+| `option` [`SettingsOption`](../enums/mw.SettingsOption.md) |  要设置的配置项，类型为SettingsOption枚举 |
+| :------ | :------ |
+| `isVisible` `boolean` |  显隐状态，true表示显示，false表示隐藏 |
+
+
+___
+
 ### setSettingButtonVisible <Score text="setSettingButtonVisible" /> 
 
 • `Static` **setSettingButtonVisible**(`visible`): `void` <Badge type="tip" text="client" />
 
-控制设置面板入口显隐
+控制设置面板与角编组件入口显隐
 
 #### Parameters
 

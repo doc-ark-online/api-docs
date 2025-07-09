@@ -18,6 +18,8 @@
 | 资源下载并加载|
 | **[isLocalMaterialAsset](mw.AssetUtil.md#islocalmaterialasset)**(`InAssetId`: `string`): `boolean`   |
 | 判断材质资源是否为本地资源|
+| **[localizeOnlinePrefab](mw.AssetUtil.md#localizeonlineprefab)**(`InAssetId`: `string`, `InPath`: `string`): `Promise`<`string`\>   |
+| 将线上prefab资源本地化|
 
 ## Methods
 
@@ -123,4 +125,23 @@ ___
 #### Returns
 
 | `boolean` | 为真时本地资源 |
+| :------ | :------ |
+
+___
+
+### localizeOnlinePrefab <Score text="localizeOnlinePrefab" /> 
+
+• `Static` **localizeOnlinePrefab**(`InAssetId`, `InPath`): `Promise`<`string`\> 
+
+将线上prefab资源本地化
+
+#### Parameters
+
+| `InAssetId` `string` | 资源 ID range: 依据资源 ID 而定 |
+| :------ | :------ |
+| `InPath` `string` | 本地化路径 range: 依据路径 而定 |
+
+#### Returns
+
+| `Promise`<`string`\> | 转为本地资源后的资源ID |
 | :------ | :------ |

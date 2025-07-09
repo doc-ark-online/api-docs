@@ -53,6 +53,8 @@
 | 获取动画播放循环次数。|
 | **[onFinish](mw.Animation.md#onfinish)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />  |
 | 播放结束委托。|
+| **[position](mw.Animation.md#position)**(): `number`   |
+| 获取当前动画已播放时长，以秒为单位。|
 | **[slot](mw.Animation.md#slot)**(): [`AnimSlot`](../enums/mw.AnimSlot.md)  |
 | 获取动画播放插槽|
 | **[speed](mw.Animation.md#speed)**(): `number`   |
@@ -635,6 +637,52 @@ export default class Example_Animation_OnFinish extends Script {
     }
 }
 ```
+___
+
+### position <Score text="position" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **position**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **position**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取当前动画已播放时长，以秒为单位。
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置当前动画已播放时长，以秒为单位。
+
+#### Parameters
+
+| `value` | `number` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
 ___
 
 ### slot <Score text="slot" /> 
